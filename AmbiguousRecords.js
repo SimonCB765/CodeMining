@@ -26,12 +26,12 @@ d3.tsv("/Data/DisambiguationResults.tsv", dataAccessorFunction, function(error, 
         // Create the figure the type 1 vs type 2 diabetes results.
         var figure1v2 = svg.append("g")
             .attr("transform", "translate(0, 0)");
-        createFigure(figure1v2, []);
+        createFigure(figure1v2, data.map(function(d) { return d.First; }));
 
         // Create the figure for the diabetes vs non-diabetes results.
         var figureDvsND = svg.append("g")
             .attr("transform", "translate(" + (svgWidth / 2) + ", 0)");
-        createFigure(figureDvsND, []);
+        createFigure(figureDvsND, data.map(function(d) { return d.Second; }));
     }
 );
 
