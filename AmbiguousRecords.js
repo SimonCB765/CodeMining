@@ -26,19 +26,19 @@ d3.tsv("/Data/DisambiguationResults.tsv", dataAccessorFunction, function(error, 
         // Create the figure the type 1 vs type 2 diabetes results.
         var figure1v2 = svg.append("g")
             .attr("transform", "translate(0, 0)");
-        createFigure(figure1v2, data.map(function(d, index) { return {datum : d.First, index : index}; }));
+        createFigure(figure1v2, data.map(function(d, index) { return {datum : d.First, index : index}; }), "Type 1 Vs. Type 2 Diabetes");
 
         // Create the figure for the diabetes vs non-diabetes results.
-        var figureDvsND = svg.append("g")
+        var figureDvND = svg.append("g")
             .attr("transform", "translate(" + (svgWidth / 2) + ", 0)");
-        createFigure(figureDvsND, data.map(function(d, index) { return {datum : d.Second, index : index}; }));
+        createFigure(figureDvND, data.map(function(d, index) { return {datum : d.Second, index : index}; }), "Diabetes Vs. Non-diabetes");
     }
 );
 
-function createFigure(figureContainer, dataArray)
+function createFigure(figureContainer, dataArray, figureTitle)
 {
     // Define positioning variables.
-    var figurePadding = {top: 30, right: 30, bottom: 30, left: 30};  // Padding around the graph in the figure to allow for titles and labelling axes.
+    var figurePadding = {top: 40, right: 5, bottom: 50, left: 60};  // Padding around the graph in the figure to allow for titles and labelling axes.
 
     // Create scales for the figure.
     var xScale = d3.scale.linear()
@@ -61,6 +61,31 @@ function createFigure(figureContainer, dataArray)
         .orient("left");
     yAxis = figureContainer.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(" + figurePadding.left + ", " + figurePadding.bottom + ")")
+        .attr("transform", "translate(" + figurePadding.left + ", " + figurePadding.top + ")")
         .call(yAxis);
+
+    // Add the title to the figure.
+    var title = figureContainer.append("text")
+        .attr("class", "title")
+        .attr("text-anchor", "middle")
+        .attr("x", ((figureWidth - figurePadding.left - figurePadding.right) / 2) + figurePadding.left)
+        .attr("y", figurePadding.top * 3 / 4)
+        .text(figureTitle);
+
+    // Add the labels on the axes. To rotate the label on the y axis we use a transformation. As this will alter the coordinate system being used
+    // to place the text, we perform the rotation around the point where the text is centered. This causes the text to rotate but not move.
+    var xAxisLabel = figureContainer.append("text")
+        .attr("class", "label")
+        .attr("text-anchor", "middle")
+        .attr("x", ((figureWidth - figurePadding.left - figurePadding.right) / 2) + figurePadding.left)
+        .attr("y", figureHeight - (figurePadding.bottom / 4))
+        .text("Sample Index");
+    yAxisLabelLoc = { x : figurePadding.left / 3, y : ((figureHeight - figurePadding.top - figurePadding.bottom) / 2) + figurePadding.top };
+    var yAxisLabel = figureContainer.append("text")
+        .attr("class", "label")
+        .attr("text-anchor", "middle")
+        .attr("x", yAxisLabelLoc.x)
+        .attr("y", yAxisLabelLoc.y)
+        .attr("transform", "rotate(-90, " + yAxisLabelLoc.x + ", " + yAxisLabelLoc.y + ")")
+        .text("Posterior Probability");
 }
