@@ -14,21 +14,23 @@ var svg = d3.select("body")
         .attr("transform", "translate(" + svgMargin.left + ", " + svgMargin.top + ")");
 
 // Read the data in.
-var dataParser = function(d)
+var dataAccessorFunction = function(d)
     {
         return {First : +d.FirstModel, Second : +d.SecondModel};
     }
-var data = d3.tsv("Data/DisambiguationResults.tsv", dataParser, function(error, rows) { console.log(rows); });
+d3.tsv("/Data/DisambiguationResults.tsv", dataAccessorFunction, function(data)
+    {
+        // Create the figure the type 1 vs type 2 diabetes results.
+        var figure1v2 = svg.append("g")
+            .attr("transform", "translate(0, 0)");
+        createFigure(figure1v2, []);
 
-// Create the figure the type 1 vs type 2 diabetes results.
-var figure1v2 = svg.append("g")
-    .attr("transform", "translate(0, 0)");
-createFigure(figure1v2, []);
-
-// Create the figure for the diabetes vs non-diabetes results.
-var figureDvsND = svg.append("g")
-    .attr("transform", "translate(" + (svgWidth / 2) + ", 0)");
-createFigure(figureDvsND, []);
+        // Create the figure for the diabetes vs non-diabetes results.
+        var figureDvsND = svg.append("g")
+            .attr("transform", "translate(" + (svgWidth / 2) + ", 0)");
+        createFigure(figureDvsND, []);
+    }
+);
 
 function createFigure(figureContainer)
 {
