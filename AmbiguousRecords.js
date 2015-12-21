@@ -18,8 +18,11 @@ var dataAccessorFunction = function(d)
     {
         return {First : +d.FirstModel, Second : +d.SecondModel};
     }
-d3.tsv("/Data/DisambiguationResults.tsv", dataAccessorFunction, function(data)
+d3.tsv("/Data/DisambiguationResults.tsv", dataAccessorFunction, function(error, data)
     {
+        // Sort the data by the value of the first model.
+        data = data.sort(function(a, b) { return d3.ascending(a.First, b.First); });
+
         // Create the figure the type 1 vs type 2 diabetes results.
         var figure1v2 = svg.append("g")
             .attr("transform", "translate(0, 0)");
@@ -32,6 +35,6 @@ d3.tsv("/Data/DisambiguationResults.tsv", dataAccessorFunction, function(data)
     }
 );
 
-function createFigure(figureContainer)
+function createFigure(figureContainer, dataArray)
 {
 }
