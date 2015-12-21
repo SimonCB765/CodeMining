@@ -13,6 +13,13 @@ var svg = d3.select("body")
     .append("g")
         .attr("transform", "translate(" + svgMargin.left + ", " + svgMargin.top + ")");
 
+// Read the data in.
+var dataParser = function(d)
+    {
+        return {First : +d.FirstModel, Second : +d.SecondModel};
+    }
+var data = d3.tsv("Data/DisambiguationResults.tsv", dataParser, function(error, rows) { console.log(rows); });
+
 // Create the figure the type 1 vs type 2 diabetes results.
 var figure1v2 = svg.append("g")
     .attr("transform", "translate(0, 0)");
@@ -23,6 +30,6 @@ var figureDvsND = svg.append("g")
     .attr("transform", "translate(" + (svgWidth / 2) + ", 0)");
 createFigure(figureDvsND, []);
 
-function createFigure(figureContainer, data)
+function createFigure(figureContainer)
 {
 }
