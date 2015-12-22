@@ -1,6 +1,6 @@
-.data {}
-.firstModel { fill : none; stroke : gray; }
-.secondModel { fill : none; stroke : black; }
+.data { fill : none; stroke : black; stroke-width : 2px; shape-rendering: crispEdges; }
+.firstModel {}
+.secondModel {}
 
 .linelabel {}
 

@@ -109,4 +109,18 @@ function createFigure(figureContainer, dataArray, figureTitle)
         .attr("x", xScaleTop(d3.max(dataArray, function(d) { return d.index; }) / 2))
         .attr("y", 0)
         .text(figureTitle);
+
+    // Add the lines for the data.
+    var dataLineFirstModel = figureContainer.append("g").selectAll(".firstModel")
+        .data(dataArray)
+        .enter()
+            .append("path")
+            .attr("class", "data firstModel")
+            .attr("d", function(d) { return "M" + ((d.index * 4) + 0.5) + "," + yScaleTop(0) + "V" + yScaleTop(d.First) + "h0V" + yScaleTop(0); });
+    var dataLineSecondModel = figureContainer.append("g").selectAll(".secondModel")
+        .data(dataArray)
+        .enter()
+            .append("path")
+            .attr("class", "data secondModel")
+            .attr("d", function(d) { return "M" + xScaleBottom(d.index) + "," + yScaleBottom(0) + "V" + yScaleBottom(d.Second) + "h0V" + yScaleBottom(0); });
 }
