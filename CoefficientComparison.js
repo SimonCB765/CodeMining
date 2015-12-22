@@ -17,8 +17,8 @@ var svg = d3.select("body")
 var dataAccessorFunction = function(d)
     {
         // If there is no entry on a line (because the variable was not used in the model), then the returned value for the coefficient will be 0.
-        return {DisambiguationFirstModel : +d.DisambiguationFirstModel, DisambiguationSecondModel : +d.DisambiguationSecondModel,
-                DiabetesFirstModel : +d.DiabetesFirstModel, DiabetesSecondModel : +d.DiabetesSecondModel};
+        return {DisambiguationFirstModel : Math.abs(+d.DisambiguationFirstModel), DisambiguationSecondModel : Math.abs(+d.DisambiguationSecondModel),
+                DiabetesFirstModel : Math.abs(+d.DiabetesFirstModel), DiabetesSecondModel : Math.abs(+d.DiabetesSecondModel)};
     }
 d3.tsv("/Data/CoefComparisonResults.tsv", dataAccessorFunction, function(error, data)
     {
