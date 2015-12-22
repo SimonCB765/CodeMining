@@ -106,4 +106,18 @@ function createFigure(figureContainer, dataArray, figureTitle)
     var dataLineSecondModel = figureContainer.append("path")
         .attr("class", "data secondModel")
         .attr("d", dataPathSecondModel);
+
+    // Add line labels.
+    var modelOneLineLabel = figureContainer.append("text")
+        .attr("class", "linelabel")
+        .attr("text-anchor", "end")
+        .attr("x", xScale(75))
+        .attr("y", yScale(dataArray[77].First))
+        .text("Model One");
+    var modelTwoLineLabel = figureContainer.append("text")
+        .attr("class", "linelabel")
+        .attr("text-anchor", "start")
+        .attr("x", xScale(87))
+        .attr("y", yScale(dataArray[82].Second))
+        .text("Model Two");
 }
