@@ -29,7 +29,7 @@ d3.tsv("/Data/DisambiguationResults.tsv", dataAccessorFunction, function(error, 
 //REMOVE
         figure1v2.append("rect").attr("height", figureHeight).attr("width", figureWidth).style("opacity", 0.1);
 //REMOVE
-        createFigure(figure1v2, data.map(function(d, index) { return {datum : d.First, index : index}; }), "Type 1 Vs. Type 2 Diabetes");
+        createFigure(figure1v2, data.map(function(d, index) { return {datum : d.First, index : index}; }), "data1v2", "Type 1 Vs. Type 2 Diabetes");
 
         // Create the figure for the diabetes vs non-diabetes results.
         var figureDvND = svg.append("g")
@@ -37,18 +37,18 @@ d3.tsv("/Data/DisambiguationResults.tsv", dataAccessorFunction, function(error, 
 //REMOVE
         figureDvND.append("rect").attr("height", figureHeight).attr("width", figureWidth).style("opacity", 0.1);
 //REMOVE
-        createFigure(figureDvND, data.map(function(d, index) { return {datum : d.Second, index : index}; }), "Diabetes Vs. Non-diabetes");
+        createFigure(figureDvND, data.map(function(d, index) { return {datum : d.Second, index : index}; }), "dataDvND", "Diabetes Vs. Non-diabetes");
     }
 );
 
-function createFigure(figureContainer, dataArray, figureTitle)
+function createFigure(figureContainer, dataArray, dataClass, figureTitle)
 {
     // Define positioning variables.
     var figurePadding = {top: 40, right: 5, bottom: 50, left: 60};  // Padding around the graph in the figure to allow for titles and labelling axes.
 
     // Create scales for the figure.
     var xScale = d3.scale.linear()
-        .domain([0, dataArray.length])
+        .domain([0, dataArray.length + 1])  // Add 1 to allow for the final datapoint to have space for a line.
         .range([0, figureWidth - figurePadding.left - figurePadding.right]);
     var yScale = d3.scale.linear()
         .domain([0.0, 1.0])
@@ -94,4 +94,10 @@ function createFigure(figureContainer, dataArray, figureTitle)
         .attr("y", yAxisLabelLoc.y)
         .attr("transform", "rotate(-90, " + yAxisLabelLoc.x + ", " + yAxisLabelLoc.y + ")")
         .text("Posterior Probability");
+
+    // Add the line for the data.
+    var dataPath = "";
+    var dataLine = figureContainer.append("path")
+        .attr("class", "data " + dataClass)
+        .attr("d", dataPath);
 }

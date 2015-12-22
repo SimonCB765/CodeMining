@@ -1,3 +1,7 @@
+.data {}
+.data1v2 { stroke : black; }
+.dataDvND { stroke : red; }
+
 .axis path, .axis line { fill: none; stroke: black; shape-rendering: crispEdges; }
 .axis text { font-family: sans-serif; font-size: 11px; }
 
