@@ -3,7 +3,7 @@ var figureHeight = 400;  // Width of the entire figure including labels and titl
 var figureMargin = {top: 10, right: 10, bottom: 10, left: 10};  // Margin around each individual figure.
 var svgWidth = 2 * (figureWidth + figureMargin.left + figureMargin.right);  // Width of the SVG element needed to hold both figures and their padding.
 var svgHeight = figureHeight + figureMargin.top + figureMargin.bottom;  // Height of the SVG element needed to hold both figures and their padding.
-var svgMargin = {top: 10, right: 10, bottom: 10, left: 10};  // The margin around the set of figures.
+var svgMargin = {top: 10, right: 10, bottom: 50, left: 60};  // The margin around the set of figures.
 
 // Create the SVG element.
 var svg = d3.select("body")
@@ -14,6 +14,7 @@ var svg = d3.select("body")
         .attr("transform", "translate(" + svgMargin.left + ", " + svgMargin.top + ")");
 
 //REMOVE
+svg.append("rect").attr("x", -svgMargin.left).attr("y", -svgMargin.top).attr("height", svgHeight + svgMargin.top + svgMargin.bottom).attr("width", svgWidth + svgMargin.left + svgMargin.right).style("opacity", 0.1);
 svg.append("rect").attr("height", svgHeight).attr("width", svgWidth).style("opacity", 0.1);
 //REMOVE
 
