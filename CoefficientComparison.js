@@ -29,21 +29,25 @@ d3.tsv("/Data/CoefComparisonResults.tsv", dataAccessorFunction, function(error, 
     {
         // Create the figure the type 1 vs type 2 diabetes results.
         var data1v2 = data.sort(function(a, b) { return d3.descending(a.DisambiguationFirstModel, b.DisambiguationFirstModel); });  // Sort the data by the value of the first model.
+        data1v2 = data1v2.filter(function(d) { return d.DisambiguationFirstModel !== 0 || d.DisambiguationSecondModel !== 0; });
+        data1v2 = data1v2.map(function(d, index) { return {First : d.DisambiguationFirstModel, Second : d.DisambiguationSecondModel, index : index}; })
         var figure1v2 = svg.append("g")
             .attr("transform", "translate(" + figureMargin.left + ", " + figureMargin.top + ")");
 //REMOVE
         figure1v2.append("rect").attr("height", figureHeight).attr("width", figureWidth).style("opacity", 0.1);
 //REMOVE
-        createFigure(figure1v2, data.map(function(d, index) { return {First : d.DisambiguationFirstModel, Second : d.DisambiguationSecondModel, index : index}; }), "Type 1 Vs. Type 2 Diabetes");
+        createFigure(figure1v2, data1v2, "Type 1 Vs. Type 2 Diabetes");
 
         // Create the figure for the diabetes vs non-diabetes results.
         var dataDvND = data.sort(function(a, b) { return d3.descending(a.DiabetesFirstModel, b.DiabetesFirstModel); });  // Sort the data by the value of the first model.
+        dataDvND = dataDvND.filter(function(d) { return d.DiabetesFirstModel !== 0 || d.DiabetesSecondModel !== 0; });
+        dataDvND = dataDvND.map(function(d, index) { return {First : d.DiabetesFirstModel, Second : d.DiabetesSecondModel, index : index}; })
         var figureDvND = svg.append("g")
             .attr("transform", "translate(" + ((2 * figureMargin.left) + figureWidth + figureMargin.right) + ", " + figureMargin.top + ")");
 //REMOVE
         figureDvND.append("rect").attr("height", figureHeight).attr("width", figureWidth).style("opacity", 0.1);
 //REMOVE
-        createFigure(figureDvND, data.map(function(d, index) { return {First : d.DiabetesFirstModel, Second : d.DiabetesSecondModel, index : index}; }), "Diabetes Vs. Non-diabetes");
+        createFigure(figureDvND, dataDvND, "Diabetes Vs. Non-diabetes");
     }
 );
 
@@ -54,9 +58,7 @@ function createFigure(figureContainer, dataArray, figureTitle)
 
     // Determine maximum data values, and round them up to nearest 0.2.
     var maxValue = d3.max(dataArray, function(d) { return Math.max(d.First, d.Second); });
-    console.log(maxValue);
     maxValue = Math.ceil(maxValue * 5) / 5;
-    console.log(maxValue);
 
     // Create scales for the figures.
     var xScaleTop = d3.scale.linear()
