@@ -1,8 +1,8 @@
 var figureWidth = 400;  // Height of the entire figure including labels and title.
 var figureHeight = 400;  // Width of the entire figure including labels and title.
 var figureMargin = {top: 10, right: 10, bottom: 10, left: 10};  // Margin around each individual figure.
-var svgWidth = 2 * (figureWidth + figureMargin.left + figureMargin.right);  // Width of the SVG element needed to hold both figures and their padding.
-var svgHeight = 2 * (figureWidth + figureMargin.top + figureMargin.bottom);  // Height of the SVG element needed to hold both figures and their padding.
+var svgWidth = figureWidth + figureMargin.left + figureMargin.right;  // Width of the SVG element needed to hold both figures and their padding.
+var svgHeight = figureHeight + figureMargin.top + figureMargin.bottom;  // Height of the SVG element needed to hold both figures and their padding.
 var svgMargin = {top: 10, right: 10, bottom: 10, left: 10};  // The margin around the set of figures.
 
 // Create the SVG element.
@@ -27,11 +27,6 @@ d3.tsv("/Data/DisambiguationResults.tsv", dataAccessorFunction, function(error, 
         var figure1v2 = svg.append("g")
             .attr("transform", "translate(0, 0)");
         createFigure(figure1v2, data.map(function(d, index) { return {First : d.First, Second : d.Second, index : index}; }), "Type 1 Vs. Type 2 Diabetes");
-
-        // Create the figure for the diabetes vs non-diabetes results.
-        var figureDvND = svg.append("g")
-            .attr("transform", "translate(" + (svgWidth / 2) + ", 0)");
-        createFigure(figureDvND, data.map(function(d, index) { return {First : d.First, Second : d.Second, index : index}; }), "Diabetes Vs. Non-diabetes");
     }
 );
 
