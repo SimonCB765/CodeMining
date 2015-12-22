@@ -29,7 +29,7 @@ d3.tsv("/Data/DisambiguationResults.tsv", dataAccessorFunction, function(error, 
 //REMOVE
         figure1v2.append("rect").attr("height", figureHeight).attr("width", figureWidth).style("opacity", 0.1);
 //REMOVE
-        createFigure(figure1v2, data.map(function(d, index) { return {datum : d.First, index : index}; }), "data1v2", "Type 1 Vs. Type 2 Diabetes");
+        createFigure(figure1v2, data.map(function(d, index) { return {First : d.First, Second : d.Second, index : index}; }), "Type 1 Vs. Type 2 Diabetes");
 
         // Create the figure for the diabetes vs non-diabetes results.
         var figureDvND = svg.append("g")
@@ -37,11 +37,11 @@ d3.tsv("/Data/DisambiguationResults.tsv", dataAccessorFunction, function(error, 
 //REMOVE
         figureDvND.append("rect").attr("height", figureHeight).attr("width", figureWidth).style("opacity", 0.1);
 //REMOVE
-        createFigure(figureDvND, data.map(function(d, index) { return {datum : d.Second, index : index}; }), "dataDvND", "Diabetes Vs. Non-diabetes");
+        createFigure(figureDvND, data.map(function(d, index) { return {First : d.First, Second : d.Second, index : index}; }), "Diabetes Vs. Non-diabetes");
     }
 );
 
-function createFigure(figureContainer, dataArray, dataClass, figureTitle)
+function createFigure(figureContainer, dataArray, figureTitle)
 {
     // Define positioning variables.
     var figurePadding = {top: 40, right: 5, bottom: 50, left: 60};  // Padding around the graph in the figure to allow for titles and labelling axes.
@@ -95,14 +95,23 @@ function createFigure(figureContainer, dataArray, dataClass, figureTitle)
         .attr("transform", "rotate(-90, " + yAxisLabelLoc.x + ", " + yAxisLabelLoc.y + ")")
         .text("Posterior Probability");
 
-    // Add the line for the data.
-    var dataPath = "M" + xScale(0) + "," + yScale(0);
+    // Add the lines for the data.
+    var dataPathFirstModel = "M" + xScale(0) + "," + yScale(0);
     dataArray.forEach(function(d)
     {
-        dataPath += "L" + xScale(d.index) + "," + yScale(d.datum) + "h1";
+        dataPathFirstModel += "L" + xScale(d.index) + "," + yScale(d.First) + "h1";
     });
-    dataPath += "V" + yScale(0) + "H" + xScale(0);
-    var dataLine = figureContainer.append("path")
-        .attr("class", "data " + dataClass)
-        .attr("d", dataPath);
+    dataPathFirstModel += "V" + yScale(0) + "H" + xScale(0);
+    var dataLineFirstModel = figureContainer.append("path")
+        .attr("class", "data firstModel")
+        .attr("d", dataPathFirstModel);
+    var dataPathSecondModel = "M" + xScale(0) + "," + yScale(0);
+    dataArray.forEach(function(d)
+    {
+        dataPathSecondModel += "L" + xScale(d.index) + "," + yScale(d.Second) + "h1";
+    });
+    dataPathSecondModel += "V" + yScale(0) + "H" + xScale(0);
+    var dataLineSecondModel = figureContainer.append("path")
+        .attr("class", "data secondModel")
+        .attr("d", dataPathSecondModel);
 }
