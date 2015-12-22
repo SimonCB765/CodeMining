@@ -101,7 +101,7 @@ function createFigure(figureContainer, dataArray, figureTitle)
     {
         dataPathFirstModel += "L" + xScale(d.index) + "," + yScale(d.First) + "h1";
     });
-    dataPathFirstModel += "V" + yScale(0) + "H" + xScale(0);
+//    dataPathFirstModel += "V" + yScale(0) + "H" + xScale(0);
     var dataLineFirstModel = figureContainer.append("path")
         .attr("class", "data firstModel")
         .attr("d", dataPathFirstModel);
@@ -110,7 +110,7 @@ function createFigure(figureContainer, dataArray, figureTitle)
     {
         dataPathSecondModel += "L" + xScale(d.index) + "," + yScale(d.Second) + "h1";
     });
-    dataPathSecondModel += "V" + yScale(0) + "H" + xScale(0);
+//    dataPathSecondModel += "V" + yScale(0) + "H" + xScale(0);
     var dataLineSecondModel = figureContainer.append("path")
         .attr("class", "data secondModel")
         .attr("d", dataPathSecondModel);
