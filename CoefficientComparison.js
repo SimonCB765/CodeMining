@@ -13,6 +13,10 @@ var svg = d3.select("body")
     .append("g")
         .attr("transform", "translate(" + svgMargin.left + ", " + svgMargin.top + ")");
 
+//REMOVE
+svg.append("rect").attr("height", svgHeight).attr("width", svgWidth).style("opacity", 0.1);
+//REMOVE
+
 // Read the data in.
 var dataAccessorFunction = function(d)
     {
@@ -27,12 +31,18 @@ d3.tsv("/Data/CoefComparisonResults.tsv", dataAccessorFunction, function(error, 
         var data1v2 = data.sort(function(a, b) { return d3.descending(a.DisambiguationFirstModel, b.DisambiguationFirstModel); });  // Sort the data by the value of the first model.
         var figure1v2 = svg.append("g")
             .attr("transform", "translate(0, 0)");
+//REMOVE
+        figure1v2.append("rect").attr("height", figureHeight).attr("width", figureWidth).style("opacity", 0.1);
+//REMOVE
         createFigure(figure1v2, data.map(function(d, index) { return {First : d.DisambiguationFirstModel, Second : d.DisambiguationSecondModel, index : index}; }), "Type 1 Vs. Type 2 Diabetes");
 
         // Create the figure for the diabetes vs non-diabetes results.
         var dataDvND = data.sort(function(a, b) { return d3.descending(a.DiabetesFirstModel, b.DiabetesFirstModel); });  // Sort the data by the value of the first model.
         var figureDvND = svg.append("g")
             .attr("transform", "translate(" + (svgWidth / 2) + ", 0)");
+//REMOVE
+        figureDvND.append("rect").attr("height", figureHeight).attr("width", figureWidth).style("opacity", 0.1);
+//REMOVE
         createFigure(figureDvND, data.map(function(d, index) { return {First : d.DiabetesFirstModel, Second : d.DiabetesSecondModel, index : index}; }), "Diabetes Vs. Non-diabetes");
     }
 );
