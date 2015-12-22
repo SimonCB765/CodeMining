@@ -1,6 +1,6 @@
 var figureWidth = 400;  // Height of the entire figure including labels and title.
 var figureHeight = 400;  // Width of the entire figure including labels and title.
-var figureMargin = {top: 10, right: 10, bottom: 10, left: 10};  // Margin around each individual figure.
+var figureMargin = {top: 10, right: 10, bottom: 20, left: 30};  // Margin around each individual figure.
 var svgWidth = 2 * (figureWidth + figureMargin.left + figureMargin.right);  // Width of the SVG element needed to hold both figures and their padding.
 var svgHeight = figureHeight + figureMargin.top + figureMargin.bottom;  // Height of the SVG element needed to hold both figures and their padding.
 var svgMargin = {top: 10, right: 10, bottom: 50, left: 60};  // The margin around the set of figures.
@@ -27,7 +27,6 @@ var dataAccessorFunction = function(d)
     }
 d3.tsv("/Data/CoefComparisonResults.tsv", dataAccessorFunction, function(error, data)
     {
-    console.log(data);
         // Create the figure the type 1 vs type 2 diabetes results.
         var data1v2 = data.sort(function(a, b) { return d3.descending(a.DisambiguationFirstModel, b.DisambiguationFirstModel); });  // Sort the data by the value of the first model.
         var figure1v2 = svg.append("g")
@@ -50,4 +49,56 @@ d3.tsv("/Data/CoefComparisonResults.tsv", dataAccessorFunction, function(error, 
 
 function createFigure(figureContainer, dataArray, figureTitle)
 {
+    // Define positioning variables.
+    var spaceBetweenGraphs = 40;
+
+    // Determine maximum data values, and round them up to nearest 0.2.
+    var maxValue = d3.max(dataArray, function(d) { return Math.max(d.First, d.Second); });
+    console.log(maxValue);
+    maxValue = Math.ceil(maxValue * 5) / 5;
+    console.log(maxValue);
+
+    // Create scales for the figures.
+    var xScaleTop = d3.scale.linear()
+        .domain([0, dataArray.length])
+        .range([0, figureWidth]);
+    var xScaleBottom = d3.scale.linear()
+        .domain([0, dataArray.length])
+        .range([0, figureWidth]);
+    var yScaleTop = d3.scale.linear()
+        .domain([0, maxValue])
+        .range([(figureHeight - spaceBetweenGraphs) / 2, 0]);
+    var yScaleBottom = d3.scale.linear()
+        .domain([0, maxValue])
+        .range([figureHeight, (figureHeight + spaceBetweenGraphs) / 2]);
+
+    // Add the axes for the figure.
+    var xAxisTop = d3.svg.axis()
+        .scale(xScaleTop)
+        .orient("bottom");
+    xAxisTop = figureContainer.append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(0, " + (figureHeight - spaceBetweenGraphs) / 2 + ")")
+        .call(xAxisTop);
+    var xAxisBottom = d3.svg.axis()
+        .scale(xScaleBottom)
+        .orient("bottom");
+    xAxisBottom = figureContainer.append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(0, " + figureHeight + ")")
+        .call(xAxisBottom);
+    var yAxisTop = d3.svg.axis()
+        .scale(yScaleTop)
+        .orient("left");
+    yAxisTop = figureContainer.append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(0, 0)")
+        .call(yAxisTop);
+    var yAxisBottom = d3.svg.axis()
+        .scale(yScaleTop)
+        .orient("left");
+    yAxisBottom = figureContainer.append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(0, " + (figureHeight + spaceBetweenGraphs) / 2 + ")")
+        .call(yAxisBottom);
 }
