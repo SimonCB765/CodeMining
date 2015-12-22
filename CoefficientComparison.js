@@ -16,10 +16,24 @@ var svg = d3.select("body")
 // Read the data in.
 var dataAccessorFunction = function(d)
     {
-        return {First : +d.FirstModel, Second : +d.SecondModel};
+        // If there is no entry on a line (because the variable was not used in the model), then the returned value for the coefficient will be 0.
+        return {DisambiguationFirstModel : +d.DisambiguationFirstModel, DisambiguationSecondModel : +d.DisambiguationSecondModel,
+                DiabetesFirstModel : +d.DiabetesFirstModel, DiabetesSecondModel : +d.DiabetesSecondModel};
     }
 d3.tsv("/Data/CoefComparisonResults.tsv", dataAccessorFunction, function(error, data)
     {
+    console.log(data);
+        // Create the figure the type 1 vs type 2 diabetes results.
+        var data1v2 = data.sort(function(a, b) { return d3.ascending(a.DisambiguationFirstModel, b.DisambiguationFirstModel); });  // Sort the data by the value of the first model.
+        var figure1v2 = svg.append("g")
+            .attr("transform", "translate(0, 0)");
+        createFigure(figure1v2, data.map(function(d, index) { return {First : d.DisambiguationFirstModel, Second : d.DisambiguationSecondModel, index : index}; }), "Type 1 Vs. Type 2 Diabetes");
+
+        // Create the figure for the diabetes vs non-diabetes results.
+        var dataDvND = data.sort(function(a, b) { return d3.ascending(a.DiabetesFirstModel, b.DiabetesFirstModel); });  // Sort the data by the value of the first model.
+        var figureDvND = svg.append("g")
+            .attr("transform", "translate(" + (svgWidth / 2) + ", 0)");
+        createFigure(figureDvND, data.map(function(d, index) { return {First : d.DiabetesFirstModel, Second : d.DiabetesSecondModel, index : index}; }), "Diabetes Vs. Non-diabetes");
     }
 );
 
