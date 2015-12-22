@@ -49,10 +49,10 @@ function createFigure(figureContainer, dataArray, dataClass, figureTitle)
     // Create scales for the figure.
     var xScale = d3.scale.linear()
         .domain([0, dataArray.length + 1])  // Add 1 to allow for the final datapoint to have space for a line.
-        .range([0, figureWidth - figurePadding.left - figurePadding.right]);
+        .range([figurePadding.left, figureWidth - figurePadding.right]);
     var yScale = d3.scale.linear()
         .domain([0.0, 1.0])
-        .range([figureHeight - figurePadding.top - figurePadding.bottom, 0]);
+        .range([figureHeight - figurePadding.bottom, figurePadding.top]);
 
     // Add the axes for the figure.
     var xAxis = d3.svg.axis()
@@ -60,14 +60,14 @@ function createFigure(figureContainer, dataArray, dataClass, figureTitle)
         .orient("bottom");
     xAxis = figureContainer.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(" + figurePadding.left + ", " + (figureHeight - figurePadding.bottom) + ")")
+        .attr("transform", "translate(0, " + (figureHeight - figurePadding.bottom) + ")")
         .call(xAxis);
     var yAxis = d3.svg.axis()
         .scale(yScale)
         .orient("left");
     yAxis = figureContainer.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(" + figurePadding.left + ", " + figurePadding.top + ")")
+        .attr("transform", "translate(" + figurePadding.left + ", 0)")
         .call(yAxis);
 
     // Add the title to the figure.
