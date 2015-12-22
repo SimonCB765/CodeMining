@@ -30,7 +30,7 @@ d3.tsv("/Data/CoefComparisonResults.tsv", dataAccessorFunction, function(error, 
         // Create the figure the type 1 vs type 2 diabetes results.
         var data1v2 = data.sort(function(a, b) { return d3.descending(a.DisambiguationFirstModel, b.DisambiguationFirstModel); });  // Sort the data by the value of the first model.
         var figure1v2 = svg.append("g")
-            .attr("transform", "translate(0, 0)");
+            .attr("transform", "translate(" + figureMargin.left + ", " + figureMargin.top + ")");
 //REMOVE
         figure1v2.append("rect").attr("height", figureHeight).attr("width", figureWidth).style("opacity", 0.1);
 //REMOVE
@@ -39,7 +39,7 @@ d3.tsv("/Data/CoefComparisonResults.tsv", dataAccessorFunction, function(error, 
         // Create the figure for the diabetes vs non-diabetes results.
         var dataDvND = data.sort(function(a, b) { return d3.descending(a.DiabetesFirstModel, b.DiabetesFirstModel); });  // Sort the data by the value of the first model.
         var figureDvND = svg.append("g")
-            .attr("transform", "translate(" + (svgWidth / 2) + ", 0)");
+            .attr("transform", "translate(" + ((2 * figureMargin.left) + figureWidth + figureMargin.right) + ", " + figureMargin.top + ")");
 //REMOVE
         figureDvND.append("rect").attr("height", figureHeight).attr("width", figureWidth).style("opacity", 0.1);
 //REMOVE
