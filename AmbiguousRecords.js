@@ -96,7 +96,12 @@ function createFigure(figureContainer, dataArray, dataClass, figureTitle)
         .text("Posterior Probability");
 
     // Add the line for the data.
-    var dataPath = "";
+    var dataPath = "M" + xScale(0) + "," + yScale(0);
+    dataArray.forEach(function(d)
+    {
+        dataPath += "L" + xScale(d.index) + "," + yScale(d.datum) + "h1";
+    });
+    dataPath += "V" + yScale(0) + "H" + xScale(0);
     var dataLine = figureContainer.append("path")
         .attr("class", "data " + dataClass)
         .attr("d", dataPath);
