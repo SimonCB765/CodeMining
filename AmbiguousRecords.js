@@ -25,7 +25,7 @@ d3.tsv("/Data/DisambiguationResults.tsv", dataAccessorFunction, function(error, 
 
         // Create the figure the type 1 vs type 2 diabetes results.
         var figure1v2 = svg.append("g")
-            .attr("transform", "translate(0, 0)");
+            .attr("transform", "translate(" + figureMargin.left + ", " + figureMargin.top + ")");
         createFigure(figure1v2, data.map(function(d, index) { return {First : d.First, Second : d.Second, index : index}; }), "Type 1 Vs. Type 2 Diabetes");
     }
 );
