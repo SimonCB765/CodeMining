@@ -1,6 +1,6 @@
 var figureWidth = 400;  // Height of the entire figure including labels and title.
 var figureHeight = 400;  // Width of the entire figure including labels and title.
-var figureMargin = {top: 10, right: 10, bottom: 20, left: 30};  // Margin around each individual figure.
+var figureMargin = {top: 20, right: 10, bottom: 20, left: 30};  // Margin around each individual figure.
 var svgWidth = 2 * (figureWidth + figureMargin.left + figureMargin.right);  // Width of the SVG element needed to hold both figures and their padding.
 var svgHeight = figureHeight + figureMargin.top + figureMargin.bottom;  // Height of the SVG element needed to hold both figures and their padding.
 var svgMargin = {top: 10, right: 10, bottom: 50, left: 60};  // The margin around the set of figures.
@@ -101,4 +101,12 @@ function createFigure(figureContainer, dataArray, figureTitle)
         .attr("class", "axis")
         .attr("transform", "translate(0, " + (figureHeight + spaceBetweenGraphs) / 2 + ")")
         .call(yAxisBottom);
+
+    // Add the title to the figure.
+    var title = figureContainer.append("text")
+        .attr("class", "title")
+        .attr("text-anchor", "middle")
+        .attr("x", xScaleTop(d3.max(dataArray, function(d) { return d.index; }) / 2))
+        .attr("y", 0)
+        .text(figureTitle);
 }
