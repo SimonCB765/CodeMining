@@ -152,7 +152,7 @@ function createFigure(figureContainer, dataArray, figureTitle, binWidth)
                 .attr("class", "bar")
                 .attr("transform", function(d) { return "translate(" + xScale(d.x) + ", " + yScaleTop(d.y) + ")"; });
     modelOneBars.append("rect")
-        .attr("x", 0)
+        .attr("x", 1)
         .attr("y", 0)
         .attr("width", function(d) { return xScale(maxValue) - xScale(maxValue - d.dx) - 1; })
         .attr("height", function(d) { return yScaleTop(0) - yScaleTop(d.y); });
@@ -165,7 +165,7 @@ function createFigure(figureContainer, dataArray, figureTitle, binWidth)
                 .attr("class", "bar")
                 .attr("transform", function(d) { return "translate(" + xScale(d.x) + ", " + yScaleBottom(d.y) + ")"; });
     modelTwoBars.append("rect")
-        .attr("x", 0)
+        .attr("x", 1)
         .attr("y", 0)
         .attr("width", function(d) { return xScale(maxValue) - xScale(maxValue - d.dx) - 1; })
         .attr("height", function(d) { return yScaleBottom(0) - yScaleBottom(d.y); });
