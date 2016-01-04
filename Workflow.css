@@ -1,7 +1,12 @@
 .arrow { fill : none; stroke : black; stroke-width : 5px; }
 
+.modelData { fill : black; stroke : none; }
+.modelEdge { fill : none; stroke : black; stroke-width : 4px; shape-rendering: crispEdges; }
+.modelInternal { fill : white; stroke : none; }
+.modeLine { fill : none; stroke : black; stroke-width : 2px; }
+
 .tableEdge { fill : none; stroke : black; stroke-width : 4px; shape-rendering: crispEdges; }
-.tableLine { fill : none; stroke : gray; stroke-width : 1px; shape-rendering: crispEdges; }
 .tableInternal { fill : white; stroke : none; }
+.tableLine { fill : none; stroke : gray; stroke-width : 1px; shape-rendering: crispEdges; }
 
 text {}
