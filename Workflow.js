@@ -1,4 +1,4 @@
-svgWidth = 1000;  // The width of the SVG element containing the diagram.
+svgWidth = 1200;  // The width of the SVG element containing the diagram.
 svgHeight = 800;  // The height of the SVG element containing the diagram.
 
 // Create the SVG element.
@@ -33,6 +33,7 @@ var unusedDatasetDimensions = { height : rawDatasetDimensions.height / 3, width 
 var initialModelDimensions = processedDatasetDimensions;
 var correctlyClassifiedDimensions = { height : processedDatasetDimensions.height * 8 / 10, width : processedDatasetDimensions.width };
 var misclassifiedDimensions = { height : processedDatasetDimensions.height * 2 / 10, width : processedDatasetDimensions.width };
+var finalModelDimensions = initialModelDimensions;
 
 // Create the raw data picture.
 var rawDataPosition = { x : xOffset, y : yOffset };
@@ -125,6 +126,22 @@ svg.append("path")
                "Q" + controlRight.x + "," + controlRight.y + "," + thirdArcEnd.x + "," + thirdArcEnd.y +  // Right bottom curve.
                "T" + fourthArcEnd.x + "," + fourthArcEnd.y  // Right top curve.
                );
+
+// Add the final model picture.
+var finalModelPosition = { x : correctlyClassifiedPosition.x + correctlyClassifiedDimensions.width + hGapBetweenPictures,
+                           y : correctlyClassifiedPosition.y + (correctlyClassifiedDimensions.height / 2) - (finalModelDimensions.height / 2)
+                         };
+var containerFinalModel = svg.append("g")
+    .classed("initialModel", true)
+    .attr("transform", "translate(" + finalModelPosition.x + ", " + finalModelPosition.y + ")");
+createModel(containerFinalModel, 0, 0, finalModelDimensions.width, finalModelDimensions.height, "Final Model");
+
+// Add the arrow to the final model picture.
+var arrowToFinalModel = { startX : correctlyClassifiedPosition.x + correctlyClassifiedDimensions.width,
+                          endX : correctlyClassifiedPosition.x + correctlyClassifiedDimensions.width + hGapBetweenPictures,
+                          y : correctlyClassifiedPosition.y + (correctlyClassifiedDimensions.height / 2)
+                        };
+createArrow(svg, arrowToFinalModel.startX, arrowToFinalModel.y, arrowToFinalModel.endX, arrowToFinalModel.y);
 
 function createArrow(selection, startX, startY, endX, endY)
 {
