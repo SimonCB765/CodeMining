@@ -71,8 +71,8 @@ var containerInitialModel = svg.append("g")
 createModel(containerInitialModel, 0, 0, initialModelDimensions.width, initialModelDimensions.height, "Initial Model");
 
 // Create the correctly classified data picture.
-xOffset += initialModelDimensions.width + (hGapBetweenPictures * 3 / 2);
-var correctlyClassifiedPosition = { x : xOffset, y : processedDataPosition.y + ((processedDatasetDimensions.height - correctlyClassifiedDimensions.height) / 2) };
+xOffset += initialModelDimensions.width + (hGapBetweenPictures * 2);
+var correctlyClassifiedPosition = { x : xOffset, y : processedDataPosition.y - (correctlyClassifiedDimensions.height / 2) };
 var containerCorrectlyClassified = svg.append("g")
     .classed("processedData", true)
     .attr("transform", "translate(" + correctlyClassifiedPosition.x + ", " + correctlyClassifiedPosition.y + ")");
@@ -84,6 +84,47 @@ var containerMisclassified = svg.append("g")
     .classed("unusedData", true)
     .attr("transform", "translate(" + misclassifiedPosition.x + ", " + misclassifiedPosition.y + ")");
 createTable(containerMisclassified, 0, 0, misclassifiedDimensions.width, misclassifiedDimensions.height, "Misclassified");
+
+// Create the arrows going in and out of the initial model.
+var processedToInitialArrow = { startX : processedDataPosition.x + processedDatasetDimensions.width,
+                                startY : processedDataPosition.y + (processedDatasetDimensions.height / 2),
+                                endX : initialModelPosition.x,
+                                endY : initialModelPosition.y + (initialModelDimensions.height / 2)
+                              };
+var initialToCorrectArrow = { startX : initialModelPosition.x + initialModelDimensions.width + hGapBetweenPictures,
+                              startY : initialModelPosition.y + (initialModelDimensions.height / 2),
+                              endX : correctlyClassifiedPosition.x,
+                              endY : correctlyClassifiedPosition.y + (correctlyClassifiedDimensions.height / 2)
+                            };
+var initialToMisclassifiedArrow = { startX : initialModelPosition.x + initialModelDimensions.width + hGapBetweenPictures,
+                                    startY : initialModelPosition.y + (initialModelDimensions.height / 2),
+                                    endX : misclassifiedPosition.x,
+                                    endY : misclassifiedPosition.y + (misclassifiedDimensions.height / 2)
+                                  };
+createArrow(svg, processedToInitialArrow.startX, processedToInitialArrow.startY, processedToInitialArrow.endX, processedToInitialArrow.endY);
+createArrow(svg, initialToCorrectArrow.startX, initialToCorrectArrow.startY, initialToCorrectArrow.endX, initialToCorrectArrow.endY);
+svg.append("path")
+    .classed("arrow", true)
+    .attr("d", "M" + (initialModelPosition.x + initialModelDimensions.width) + "," + (initialModelPosition.y + (initialModelDimensions.height / 2)) + "h" + hGapBetweenPictures);
+createArrow(svg, initialToMisclassifiedArrow.startX, initialToMisclassifiedArrow.startY, initialToMisclassifiedArrow.endX, initialToMisclassifiedArrow.endY);
+
+// Create the line looping under the initial model.
+var start = { x : processedToInitialArrow.startX, y : processedToInitialArrow.startY };
+var secondArcEnd = { x : initialModelPosition.x, y : initialModelPosition.y + initialModelDimensions.height + 30 };
+var firstArcEnd = { x : processedToInitialArrow.startX + (hGapBetweenPictures * 2 / 4), y : start.y + ((secondArcEnd.y - start.y) / 2) };
+var controlLeft = { x : firstArcEnd.x, y : start.y };
+var thirdArcEnd = { x : secondArcEnd.x + initialModelDimensions.width + (hGapBetweenPictures * 2 / 4), y : firstArcEnd.y };
+var controlRight = { x : thirdArcEnd.x, y : secondArcEnd.y };
+var fourthArcEnd = { x : secondArcEnd.x + initialModelDimensions.width + hGapBetweenPictures, y : start.y };
+svg.append("path")
+    .classed("arrow", true)
+    .attr("d", "M" + start.x + "," + start.y +  // Starting position.
+               "Q" + controlLeft.x + "," + controlLeft.y + "," + firstArcEnd.x + "," + firstArcEnd.y +  // Left top curve.
+               "T" + secondArcEnd.x + "," + secondArcEnd.y +  // Left bottom curve.
+               "h" + initialModelDimensions.width +
+               "Q" + controlRight.x + "," + controlRight.y + "," + thirdArcEnd.x + "," + thirdArcEnd.y +  // Right bottom curve.
+               "T" + fourthArcEnd.x + "," + fourthArcEnd.y  // Right top curve.
+               );
 
 function createArrow(selection, startX, startY, endX, endY)
 {
@@ -139,7 +180,7 @@ function createModel(selection, x, y, width, height, text)
     var control2 = { x : 50, y : 50 };
     var fitLine = selection.append("path")
         .classed("modeLine", true)
-        .attr("d", "M" + start.x + "," + start.y + "C" + control1.x + "," + control2.y + "," + control2.x + "," + control2.y + "," + end.x + "," + end.y);
+        .attr("d", "M" + start.x + "," + start.y + "C" + control1.x + "," + control1.y + "," + control2.x + "," + control2.y + "," + end.x + "," + end.y);
 }
 
 function createTable(selection, x, y, width, height, text)
