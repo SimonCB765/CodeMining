@@ -30,7 +30,9 @@ var xOffset = 10;
 var rawDatasetDimensions = { height : 150, width : 100 };
 var processedDatasetDimensions = { height : rawDatasetDimensions.height * 2 / 3, width : rawDatasetDimensions.width };
 var unusedDatasetDimensions = { height : rawDatasetDimensions.height / 3, width : rawDatasetDimensions.width };
-var initialModelDimensions = processedDatasetDimensions
+var initialModelDimensions = processedDatasetDimensions;
+var correctlyClassifiedDimensions = { height : processedDatasetDimensions.height * 8 / 10, width : processedDatasetDimensions.width };
+var misclassifiedDimensions = { height : processedDatasetDimensions.height * 2 / 10, width : processedDatasetDimensions.width };
 
 // Create the raw data picture.
 var rawDataPosition = { x : xOffset, y : yOffset };
@@ -60,13 +62,28 @@ var arrowStartY = rawDataPosition.y + (rawDatasetDimensions.height / 2);
 createArrow(svg, arrowStartX, arrowStartY, processedDataPosition.x, processedDataPosition.y + (processedDatasetDimensions.height / 2));
 createArrow(svg, arrowStartX, arrowStartY, unusedDataPosition.x, unusedDataPosition.y + (unusedDatasetDimensions.height / 2));
 
-// Create the initial model.
+// Create the initial model picture.
 xOffset += processedDatasetDimensions.width + hGapBetweenPictures;
 var initialModelPosition = { x : xOffset, y : processedDataPosition.y };
 var containerInitialModel = svg.append("g")
     .classed("initialModel", true)
     .attr("transform", "translate(" + initialModelPosition.x + ", " + initialModelPosition.y + ")");
 createModel(containerInitialModel, 0, 0, initialModelDimensions.width, initialModelDimensions.height, "Initial Model");
+
+// Create the correctly classified data picture.
+xOffset += initialModelDimensions.width + (hGapBetweenPictures * 3 / 2);
+var correctlyClassifiedPosition = { x : xOffset, y : processedDataPosition.y + ((processedDatasetDimensions.height - correctlyClassifiedDimensions.height) / 2) };
+var containerCorrectlyClassified = svg.append("g")
+    .classed("processedData", true)
+    .attr("transform", "translate(" + correctlyClassifiedPosition.x + ", " + correctlyClassifiedPosition.y + ")");
+createTable(containerCorrectlyClassified, 0, 0, correctlyClassifiedDimensions.width, correctlyClassifiedDimensions.height, "Correctly Classified");
+
+// Create the misclassified data picture.
+var misclassifiedPosition = { x : xOffset, y : correctlyClassifiedPosition.y + correctlyClassifiedDimensions.height + (misclassifiedDimensions.height * 2) };
+var containerMisclassified = svg.append("g")
+    .classed("unusedData", true)
+    .attr("transform", "translate(" + misclassifiedPosition.x + ", " + misclassifiedPosition.y + ")");
+createTable(containerMisclassified, 0, 0, misclassifiedDimensions.width, misclassifiedDimensions.height, "Misclassified");
 
 function createArrow(selection, startX, startY, endX, endY)
 {
