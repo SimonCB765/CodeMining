@@ -1,6 +1,8 @@
-.data {}
-.firstModel { fill : none; stroke : gray; }
-.secondModel { fill : none; stroke : black; }
+.firstModel { fill : orange; stroke : orange; }
+.secondModel { fill : purple; stroke : purple; }
+
+.bar { fill-opacity : 0.5; stroke : none; shape-rendering: crispEdges; }
+.line { fill : none; }
 
 .linelabel {}
 
