@@ -1,16 +1,4 @@
-var data = [
-            ["Patient ID", "Code1", "Code2", "Code3", "Code4", "..."],
-            [1, 1, 0, 1, 1, "..."],
-            [2, 1, 0, 1, 0, "..."],
-            [3, 0, 0, 0, 1, "..."],
-            [4, 0, 0, 1, 1, "..."]
-           ];
-
-
-
-
-
-svgWidth = 800;  // The width of the SVG element containing the diagram.
+svgWidth = 1200;  // The width of the SVG element containing the diagram.
 svgHeight = 800;  // The height of the SVG element containing the diagram.
 
 // Create the SVG element.
@@ -33,12 +21,50 @@ var arrowhead = definitions.append("marker")
 arrowhead.append("path")
     .attr("d", "M0,0V" + arrowheadHeight + "L" + arrowheadWidth + "," + (arrowheadHeight / 2) + "Z");
 
-// Create the input data table.
-var inputDataCoords = { x : 10, y : 10 };
-var inputDataTable = svg.append("g")
-    .classed("table", true)
-    .attr("transform", "translate(" + inputDataCoords.x + "," + inputDataCoords.y + ")");
-create_table(inputDataTable, data, 25, 75, 2);
+// Read the data in.
+var dataAccessorFunction = function(d)
+    {
+        return { ID : parseInt(d.PatientID), Codes : (d.Codes).split(",")};
+    }
+d3.tsv("/Data/DataProcessing.txt", dataAccessorFunction, function(error, data)
+    {
+        // Sort the data by patient ID.
+        data = data.sort(function(a, b) { return d3.ascending(a.ID, b.ID); });
+
+        // Create the raw data that will be displayed.
+        var rawData = generate_raw_data(data, 10);
+        rawData = rawData.sort(function(a, b) { return d3.ascending(a[0], b[0]); });
+        rawData.push(["...", "..."]);
+
+        // Process the data.
+        var processedData = process_data(data);
+        var processedDataToDisplay = generate_process_display_data(processedData, 10, 5);
+
+        // Create the final subset.
+        var finalData = subset_data(processedData, 5, 5)
+
+        // Create the input data table.
+        var inputDataCoords = { x : 10, y : 10 };
+        var inputDataTable = svg.append("g")
+            .classed("table", true)
+            .attr("transform", "translate(" + inputDataCoords.x + "," + inputDataCoords.y + ")");
+        create_table(inputDataTable, rawData, 25, 75, 2);
+
+        // Create the processed data table.
+        var processedDataCoords = { x : 200, y : 10 };
+        var processedDataTable = svg.append("g")
+            .classed("table", true)
+            .attr("transform", "translate(" + processedDataCoords.x + "," + processedDataCoords.y + ")");
+        create_table(processedDataTable, processedDataToDisplay, 25, 75, 2);
+
+        // Create the final data table.
+        var finalDataCoords = { x : 700, y : 10 };
+        var finalDataTable = svg.append("g")
+            .classed("table", true)
+            .attr("transform", "translate(" + finalDataCoords.x + "," + finalDataCoords.y + ")");
+        create_table(finalDataTable, finalData, 25, 75, 2);
+    });
+
 
 function create_table(selection, data, cellHeight, cellWidth, headerRows)
 {
@@ -76,7 +102,7 @@ function create_table(selection, data, cellHeight, cellWidth, headerRows)
             .attr("y2", rowY);
         rowY += cellHeight;
     }
-    
+
     // Create the columns.
     for (var i = 1; i < numberCols; i++)
     {
@@ -119,4 +145,120 @@ function create_table(selection, data, cellHeight, cellWidth, headerRows)
         }
     }
     data.forEach(text_adder);
+}
+
+function generate_process_display_data(data, numberOfRecords, codesToDisplay)
+{
+    // Create the header.
+    var header = data[0].slice(0, codesToDisplay);
+    header.push("...");
+
+    // Create the view of the data to display.
+    var newData = [];
+    data.forEach(function(d, i)
+        {
+            if (i < numberOfRecords + 1)
+            {
+                var datapoint = d.slice(0, codesToDisplay);
+                datapoint.push("...");
+                newData.push(datapoint);
+            }
+        });
+
+    // Add the ... as the last row.
+    var footer = ["..."];
+    for (var i = 0; i < codesToDisplay; i++)
+    {
+        footer.push("...");
+    }
+    newData.push(footer);
+
+    return newData;
+}
+
+function generate_raw_data(data, numberOfRecords)
+{
+    var newData = [["Patient ID", "Code"]];
+
+    // Add a random selection of pairs of patient IDs and codes. Only select from the first quarter of the data entries.
+    for (var i = 0; i < numberOfRecords; i++)
+    {
+        var randElement = data[Math.floor(Math.random() * data.length / 4)];
+        var randCode = randElement.Codes[Math.floor(Math.random() * randElement.Codes.length)];
+        newData.push([randElement.ID, randCode]);
+    }
+
+    return newData;
+}
+
+function process_data(data)
+{
+    // Determine which codes are in the dataset.
+    var codes = new Set();
+    data.forEach(function(d)
+        {
+            d.Codes.forEach(function(code)
+                {
+                    codes.add(code);
+                });
+        });
+    codes = Array.from(codes.keys()).sort();
+
+    // Create the header.
+    var header = ["Patient ID"];
+    codes.forEach(function(d) { header.push(d); });
+
+    // Generate the processed data.
+    var newData = [header];
+    data.forEach(function(d)
+        {
+            var datapoint = [d.ID];
+            codes.forEach(function(c)
+                {
+                    if (d.Codes.indexOf(c) > -1)
+                    {
+                        datapoint.push(1);
+                    }
+                    else
+                    {
+                        datapoint.push(0);
+                    }
+                });
+            newData.push(datapoint);
+        });
+
+    return newData;
+}
+
+function subset_data(data, numberOfRecords, codesToDisplay)
+{
+    // Sort the datapoints by the number of codes they contain.
+    var sortedData = data.slice(1).sort(function(a, b) { return d3.descending(d3.sum(a.slice(1)), d3.sum(b.slice(1))); });
+
+    // Create a new dataset containing the numberOfRecords datapoints with the most codes.
+    var newData = [data[0]];
+    newData.push.apply(newData, sortedData.slice(0, numberOfRecords).sort(function(a, b) { return d3.ascending(a[0], b[0]); }));
+    newData = newData.sort(function(a, b) { return d3.ascending(a.ID, b.ID); });
+
+    // Create the view of the data to display.
+    var displayData = [];
+    newData.forEach(function(d, i)
+        {
+            if (i < numberOfRecords + 1)
+            {
+                var datapoint = d.slice(0, codesToDisplay);
+                datapoint.push("...");
+                displayData.push(datapoint);
+            }
+        });
+
+    // Add the ... as the last row.
+    var footer = ["..."];
+    for (var i = 0; i < codesToDisplay; i++)
+    {
+        footer.push("...");
+    }
+    displayData.push(footer);
+
+    return displayData;
 }
