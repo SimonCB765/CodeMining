@@ -4,4 +4,6 @@
 .tableInternal { fill : white; stroke : none; }
 .tableLine { fill : none; stroke : gray; stroke-width : 1px; shape-rendering: crispEdges; }
 
-text {}
+.tableSubtitle {}
+.tableText {}
+.tableTitle { font-size : 20; }
