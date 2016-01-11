@@ -32,40 +32,55 @@ d3.tsv("/Data/DataProcessing.txt", dataAccessorFunction, function(error, data)
         data = data.sort(function(a, b) { return d3.ascending(a.ID, b.ID); });
 
         // Create the raw data that will be displayed.
-        var rawData = generate_raw_data(data, 10);
+        var inputDataRows = 10;
+        var rawData = generate_raw_data(data, inputDataRows);
         rawData = rawData.sort(function(a, b) { return d3.ascending(a[0], b[0]); });
         rawData.push(["...", "..."]);
 
         // Process the data.
+        var processedNumberCols = 5;
+        var processedNumberRows = 10;
         var processedData = process_data(data);
-        var processedDataToDisplay = generate_process_display_data(processedData, 10, 5);
+        var processedDataToDisplay = generate_process_display_data(processedData, processedNumberRows, processedNumberCols);
 
         // Create the final subset.
-        var finalData = subset_data(processedData, 5, 5)
+        var finalNumberCols = 5;
+        var finalNumberRows = 5;
+        var finalData = subset_data(processedData, finalNumberRows, finalNumberCols)
 
-        // Define the widths for the columns. If there are fewer widths than columns, then the widths will be padded using the last value in the widths array.
+        // Define the widths, heights and number of header rows for the tables cells.
+        // If there are fewer widths than columns, then the widths will be padded using the last value in the widths array.
+        var headerRows = 2;
         var cellWidths = [75, 50];
+        var cellHeight = 25;
+
+        // Define table positioning variables.
+        var tableVerticalLocation = 50;
+        var interTableSpacing = 100;  // Spacing between tables.
 
         // Create the input data table.
-        var inputDataCoords = { x : 10, y : 10 };
+        var inputDataCoords = { x : 10, y : tableVerticalLocation };
         var inputDataTable = svg.append("g")
             .classed("table", true)
             .attr("transform", "translate(" + inputDataCoords.x + "," + inputDataCoords.y + ")");
-        create_table(inputDataTable, rawData, 25, cellWidths, 2);
+        create_table(inputDataTable, rawData, cellHeight, cellWidths, headerRows);
 
         // Create the processed data table.
-        var processedDataCoords = { x : 200, y : 10 };
+        var processedDataCoords = { x : d3.sum(cellWidths) + inputDataCoords.x + interTableSpacing, y : tableVerticalLocation };
         var processedDataTable = svg.append("g")
             .classed("table", true)
             .attr("transform", "translate(" + processedDataCoords.x + "," + processedDataCoords.y + ")");
-        create_table(processedDataTable, processedDataToDisplay, 25, cellWidths, 2);
+        create_table(processedDataTable, processedDataToDisplay, cellHeight, cellWidths, headerRows);
 
         // Create the final data table.
-        var finalDataCoords = { x : 700, y : 10 };
+        var processedTableHeight = (headerRows + inputDataRows + 1) * cellHeight;
+        var finalTableHeight = (headerRows + finalNumberRows + 1) * cellHeight;
+        var finalDataCoords = { x : d3.sum(cellWidths) + processedDataCoords.x + interTableSpacing,
+                                y : tableVerticalLocation + (processedTableHeight / 2) - (finalTableHeight / 2) };
         var finalDataTable = svg.append("g")
             .classed("table", true)
             .attr("transform", "translate(" + finalDataCoords.x + "," + finalDataCoords.y + ")");
-        create_table(finalDataTable, finalData, 25, cellWidths, 2);
+        create_table(finalDataTable, finalData, cellHeight, cellWidths, headerRows);
     });
 
 
