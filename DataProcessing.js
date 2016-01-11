@@ -43,37 +43,46 @@ d3.tsv("/Data/DataProcessing.txt", dataAccessorFunction, function(error, data)
         // Create the final subset.
         var finalData = subset_data(processedData, 5, 5)
 
+        // Define the widths for the columns. If there are fewer widths than columns, then the widths will be padded using the last value in the widths array.
+        var cellWidths = [75, 50];
+
         // Create the input data table.
         var inputDataCoords = { x : 10, y : 10 };
         var inputDataTable = svg.append("g")
             .classed("table", true)
             .attr("transform", "translate(" + inputDataCoords.x + "," + inputDataCoords.y + ")");
-        create_table(inputDataTable, rawData, 25, 75, 2);
+        create_table(inputDataTable, rawData, 25, cellWidths, 2);
 
         // Create the processed data table.
         var processedDataCoords = { x : 200, y : 10 };
         var processedDataTable = svg.append("g")
             .classed("table", true)
             .attr("transform", "translate(" + processedDataCoords.x + "," + processedDataCoords.y + ")");
-        create_table(processedDataTable, processedDataToDisplay, 25, 75, 2);
+        create_table(processedDataTable, processedDataToDisplay, 25, cellWidths, 2);
 
         // Create the final data table.
         var finalDataCoords = { x : 700, y : 10 };
         var finalDataTable = svg.append("g")
             .classed("table", true)
             .attr("transform", "translate(" + finalDataCoords.x + "," + finalDataCoords.y + ")");
-        create_table(finalDataTable, finalData, 25, 75, 2);
+        create_table(finalDataTable, finalData, 25, cellWidths, 2);
     });
 
 
-function create_table(selection, data, cellHeight, cellWidth, headerRows)
+function create_table(selection, data, cellHeight, cellWidths, headerRows)
 {
     // Determine the number of rows and columns needed to fit the data.
     var numberRows = data.length - 1 + headerRows;
     var numberCols = data[0].length;
 
+    // Pad the cell widths to ensure that there is one width for each column.
+    while (cellWidths.length < numberCols)
+    {
+        cellWidths.push(cellWidths[cellWidths.length - 1]);
+    }
+
     // Determine the width and height of the table.
-    var width = numberCols * cellWidth;
+    var width = d3.sum(cellWidths);
     var height = numberRows * cellHeight;
 
     // Create the table borders.
@@ -108,41 +117,23 @@ function create_table(selection, data, cellHeight, cellWidth, headerRows)
     {
         selection.append("line")
             .attr("class", "tableLine")
-            .attr("x1", i * cellWidth)
+            .attr("x1", d3.sum(cellWidths.slice(0, i)))
             .attr("y1", 0)
-            .attr("x2", i * cellWidth)
+            .attr("x2", d3.sum(cellWidths.slice(0, i)))
             .attr("y2", height);
     }
 
     // Add text.
-    var headerTextPos = { x : cellWidth / 2, y : headerRows * cellHeight / 2 };
-    var cellTextPos = { x : cellWidth / 2, y : cellHeight / 2 };
     function text_adder(element, index)
     {
-        if (index == 0)
-        {
-            // Adding the header.
-            element.forEach(function(d, i)
+        element.forEach(function(d, i)
             {
                 selection.append("text")
                     .attr("text-anchor", "middle")
-                    .attr("x", headerTextPos.x + (i * cellWidth))
-                    .attr("y", headerTextPos.y)
+                    .attr("x", d3.sum(cellWidths.slice(0, i)) + (cellWidths[i] / 2))
+                    .attr("y", (index == 0) ? (headerRows * cellHeight / 2) : ((headerRows + index - 0.5) * cellHeight))
                     .text(d);
             });
-        }
-        else
-        {
-            // Adding a data row.
-            element.forEach(function(d, i)
-            {
-                selection.append("text")
-                    .attr("text-anchor", "middle")
-                    .attr("x", cellTextPos.x + (i * cellWidth))
-                    .attr("y", cellTextPos.y + (headerRows * cellHeight) + ((index - 1) * cellHeight))
-                    .text(d);
-            });
-        }
     }
     data.forEach(text_adder);
 }
