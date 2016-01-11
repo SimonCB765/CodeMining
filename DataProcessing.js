@@ -56,33 +56,67 @@ d3.tsv("/Data/DataProcessing.txt", dataAccessorFunction, function(error, data)
 
         // Define table positioning variables.
         var tableVerticalLocation = 50;
-        var interTableSpacing = 100;  // Spacing between tables.
+        var interTableSpacing = 150;  // Spacing between tables.
 
         // Create the input data table.
         var inputDataCoords = { x : 40, y : tableVerticalLocation };
         var inputDataTable = svg.append("g")
             .classed("table", true)
             .attr("transform", "translate(" + inputDataCoords.x + "," + inputDataCoords.y + ")");
-        create_table(inputDataTable, rawData, cellHeight, cellWidths, headerRows, "Raw Input Data", "Multiple Rows Per Person");
+        var inputTableDimensions = create_table(inputDataTable, rawData, cellHeight, cellWidths, headerRows, "Raw Input Data", "Multiple Rows Per Person");
 
         // Create the processed data table.
-        var processedDataCoords = { x : d3.sum(cellWidths) + inputDataCoords.x + interTableSpacing, y : tableVerticalLocation };
+        var processedDataCoords = { x : inputTableDimensions.width + inputDataCoords.x + interTableSpacing, y : tableVerticalLocation };
         var processedDataTable = svg.append("g")
             .classed("table", true)
             .attr("transform", "translate(" + processedDataCoords.x + "," + processedDataCoords.y + ")");
-        create_table(processedDataTable, processedDataToDisplay, cellHeight, cellWidths, headerRows, "Processed Data", "One Row Per Person");
+        var processedTableDimensions = create_table(processedDataTable, processedDataToDisplay, cellHeight, cellWidths, headerRows, "Processed Data", "One Row Per Person");
 
         // Create the final data table.
         var processedTableHeight = (headerRows + inputDataRows + 1) * cellHeight;
         var finalTableHeight = (headerRows + finalNumberRows + 1) * cellHeight;
-        var finalDataCoords = { x : d3.sum(cellWidths) + processedDataCoords.x + interTableSpacing,
+        var finalDataCoords = { x : processedTableDimensions.width + processedDataCoords.x + interTableSpacing,
                                 y : tableVerticalLocation + (processedTableHeight / 2) - (finalTableHeight / 2) };
         var finalDataTable = svg.append("g")
             .classed("table", true)
             .attr("transform", "translate(" + finalDataCoords.x + "," + finalDataCoords.y + ")");
-        create_table(finalDataTable, finalData, cellHeight, cellWidths, headerRows, "Final Data Subset", "One Row Per Person");
+        var finalTableDimensions = create_table(finalDataTable, finalData, cellHeight, cellWidths, headerRows, "Final Data Subset", "One Row Per Person");
+
+        // Create the arrow (and its label) between input and processed tables.
+        var arrowStart = { x : inputDataCoords.x + inputTableDimensions.width, y : tableVerticalLocation + (processedTableHeight / 2)};
+        var arrowEnd = { x : processedDataCoords.x, y : tableVerticalLocation + (processedTableHeight / 2)};
+        createArrow(svg, arrowStart.x, arrowStart.y, arrowEnd.x, arrowEnd.y);
+        svg.append("text")
+            .classed("arrowLabel", true)
+            .attr("text-anchor", "middle")
+            .attr("x", arrowStart.x + ((arrowEnd.x - arrowStart.x) / 2))
+            .attr("y", arrowStart.y - 30)
+            .text("Process Data");
+
+        // Create the arrow (and its label) between processed and final tables.
+        var arrowStart = { x : processedDataCoords.x + processedTableDimensions.width, y : tableVerticalLocation + (processedTableHeight / 2)};
+        var arrowEnd = { x : finalDataCoords.x, y : tableVerticalLocation + (processedTableHeight / 2)};
+        createArrow(svg, arrowStart.x, arrowStart.y, arrowEnd.x, arrowEnd.y);
+        svg.append("text")
+            .classed("arrowLabel", true)
+            .attr("text-anchor", "middle")
+            .attr("x", arrowStart.x + ((arrowEnd.x - arrowStart.x) / 2))
+            .attr("y", arrowStart.y - 30)
+            .text("Select Subset");
     });
 
+
+function createArrow(selection, startX, startY, endX, endY)
+{
+    var arrow = selection.append("path")
+        .classed("arrow", true);
+    endX -= (arrowheadWidth * parseInt(arrow.style("stroke-width")));  // Determine the size of the arrowhead and move the end of the arrow's line as needed.
+    var contrl1 = { x : startX + ((endX - startX) / 2), y : startY };
+    var contrl2 = { x : startX + ((endX - startX) / 2), y : endY };
+    arrow
+        .attr("d", "M" + startX + "," + startY + "C" + contrl1.x + "," + contrl1.y + "," + contrl2.x + "," + contrl2.y + "," + endX + "," + endY)
+        .attr("marker-end", "url(#arrowhead)");
+}
 
 function create_table(selection, data, cellHeight, cellWidths, headerRows, tableTitle, tableSubtitle)
 {
@@ -91,13 +125,14 @@ function create_table(selection, data, cellHeight, cellWidths, headerRows, table
     var numberCols = data[0].length;
 
     // Pad the cell widths to ensure that there is one width for each column.
-    while (cellWidths.length < numberCols)
+    var paddedCellWidths = cellWidths.slice(0);
+    while (paddedCellWidths.length < numberCols)
     {
-        cellWidths.push(cellWidths[cellWidths.length - 1]);
+        paddedCellWidths.push(paddedCellWidths[paddedCellWidths.length - 1]);
     }
 
     // Determine the width and height of the table.
-    var width = d3.sum(cellWidths);
+    var width = d3.sum(paddedCellWidths);
     var height = numberRows * cellHeight;
 
     // Create the table borders.
@@ -132,9 +167,9 @@ function create_table(selection, data, cellHeight, cellWidths, headerRows, table
     {
         selection.append("line")
             .attr("class", "tableLine")
-            .attr("x1", d3.sum(cellWidths.slice(0, i)))
+            .attr("x1", d3.sum(paddedCellWidths.slice(0, i)))
             .attr("y1", 0)
-            .attr("x2", d3.sum(cellWidths.slice(0, i)))
+            .attr("x2", d3.sum(paddedCellWidths.slice(0, i)))
             .attr("y2", height);
     }
 
@@ -146,7 +181,7 @@ function create_table(selection, data, cellHeight, cellWidths, headerRows, table
                 selection.append("text")
                     .classed("tableText", true)
                     .attr("text-anchor", "middle")
-                    .attr("x", d3.sum(cellWidths.slice(0, i)) + (cellWidths[i] / 2))
+                    .attr("x", d3.sum(paddedCellWidths.slice(0, i)) + (paddedCellWidths[i] / 2))
                     .attr("y", (index == 0) ? (headerRows * cellHeight / 2) : ((headerRows + index - 0.5) * cellHeight))
                     .text(d);
             });
@@ -157,15 +192,18 @@ function create_table(selection, data, cellHeight, cellWidths, headerRows, table
     selection.append("text")
         .classed("tableTitle", true)
         .attr("text-anchor", "middle")
-        .attr("x", d3.sum(cellWidths) / 2)
+        .attr("x", d3.sum(paddedCellWidths) / 2)
         .attr("y", -30)
         .text(tableTitle);
     selection.append("text")
         .classed("tableSubtitle", true)
         .attr("text-anchor", "middle")
-        .attr("x", d3.sum(cellWidths) / 2)
+        .attr("x", d3.sum(paddedCellWidths) / 2)
         .attr("y", -10)
         .text(tableSubtitle);
+
+    // Return the table's dimensions.
+    return { width : width, height : height };
 }
 
 function generate_process_display_data(data, numberOfRecords, codesToDisplay)

@@ -1,4 +1,5 @@
-.arrow { fill : none; stroke : black; stroke-width : 5px; }
+.arrow { fill : none; stroke : black; stroke-width : 7px; }
+.arrowLabel {}
 
 .tableEdge { fill : none; stroke : black; stroke-width : 4px; shape-rendering: crispEdges; }
 .tableInternal { fill : white; stroke : none; }
