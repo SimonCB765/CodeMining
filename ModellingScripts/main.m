@@ -165,7 +165,6 @@ toc
 
 % Determine the non-zero coefficients and the codes they correspond to.
 indexOfLambdaToUse = initialModelFitInfo.Index1SE;  % Index of largest lambda value with deviance within one standard error of the minimum.
-lambdaToUse = initialModelFitInfo.Lambda1SE;  % Largest lambda value with deviance within one standard error of the minimum.
 modelCoefficients = initialModelCoefficients(:, indexOfLambdaToUse);  % Coefficients of the model with the chosen value of lambda.
 [sortedCoefficients, coefficientReordering] = sort(abs(modelCoefficients), 'descend');  % Sort coefficients so that 0 value coefficients are at the bottom.
 nonZeroCoefficients = modelCoefficients(coefficientReordering(sortedCoefficients ~= 0));  % Non-zero coefficients ordered by absolute value.
@@ -218,7 +217,6 @@ toc
 
 % Determine the non-zero coefficients and the codes they correspond to.
 indexOfLambdaToUse = finalModelFitInfo.Index1SE;  % Index of largest lambda value with deviance within one standard error of the minimum.
-lambdaToUse = finalModelFitInfo.Lambda1SE;  % Largest lambda value with deviance within one standard error of the minimum.
 modelCoefficients = finalModelCoefficients(:, indexOfLambdaToUse);  % Coefficients of the model with the chosen value of lambda.
 [sortedCoefficients, coefficientReordering] = sort(abs(modelCoefficients), 'descend');  % Sort coefficients so that 0 value coefficients are at the bottom.
 nonZeroCoefficients = modelCoefficients(coefficientReordering(sortedCoefficients ~= 0));  % Non-zero coefficients ordered by absolute value.
@@ -250,14 +248,17 @@ fclose(fid);
 
 %% Generate information about model performance, dataset statistics and recodings.
 
-%
-%
-% CALCULATE MODEL PERFORMANCE - K FOLD X VALIDATION FOR BOTH INITIAL AND FINAL MODELS - OBVIOUSLY WILL BE BETTER ON FINAL MODEL
-% GENERATE ROC CURVE, CONFUSION MARIX, ETC.
-% ALSO WRITE OUT THINGS LIKE CHOSEN LAMBDA VALUE, NUMBER OF FEATURES USED IN THE FINAL MODEL
-% MAY NEED TO ALTER THE VARIABLE NAMES IN THE MODEL TRAINING SO THAT THIS INFO IS AVAILABLE HERE
-%
-%
+% Record some statistics about the model performance.
+fid = fopen('ModelPerformance.txt', 'w');
+fprintf(fid, 'Initial model lambda - %d\n', initialModelFitInfo.Lambda);
+fprintf(fid, 'Initial model non-zero coefficients - %d\n', initialModelFitInfo.DF(initialModelFitInfo.Index1SE));
+fprintf(fid, 'Initial model deviance - %d\n', initialModelFitInfo.Lambda1SE);
+fprintf(fid, 'Initial model deviance standard error - %d\n', initialModelFitInfo.SE(initialModelFitInfo.Index1SE));
+fprintf(fid, 'Final model lambda - %d\n', finalModelFitInfo.Lambda);
+fprintf(fid, 'Final model non-zero coefficients - %d\n', finalModelFitInfo.DF(finalModelFitInfo.Index1SE));
+fprintf(fid, 'Final model deviance - %d\n', finalModelFitInfo.Lambda1SE);
+fprintf(fid, 'Final model deviance standard error - %d\n', finalModelFitInfo.SE(finalModelFitInfo.Index1SE));
+fclose(fid);
 
 % Record some statistics about the data.
 fid = fopen('DatasetStats.txt', 'w');
@@ -271,6 +272,7 @@ else
     fprintf(fid, 'Examples meeting both criteria - 0');
 end
 fclose(fid);
+
 
 % Calculate posteriors for examples that may need recoding.
 if (isType1Type2)
