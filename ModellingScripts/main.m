@@ -293,3 +293,24 @@ for i = 1:numel(examplesToRecode)
     fprintf(fid, '%1.4f\t%1.4f\t%d\n', initialModelPosterior, finalModelPosterior, uniquePatientIDs(examplesToRecode(i)));
 end
 fclose(fid);
+
+% Create a medical history for each patient that has had their diabetes type status determined conclusively.
+% This is not needed when differentiating diabetes patients from non-diabetes patients.
+if (isType1Type2)
+    % Create the directory to hold the patient records.
+    patientDir = 'PatientRecords';
+    if (exists(patientDir, 'dir') == 7)
+        % If the directory exists then delete it before creating it.
+        rmdir(patientDir);
+    end
+    mkdir(patientDir);
+    
+    % Create the record for each patient.
+    for i = 1:numel(examplesToRecode)
+        patientID = uniquePatientIDs(examplesToRecode(i);
+        patientRecord = dataMatrix(patientID, :);  % Get the subset of the dataset for the specific patient.
+        fid = fopen([patientDir '/Patient_' patientID '.tsv'], 'w');
+        fprintf(fid, 'Code\tCount\n');
+        fclose(fid);
+    end
+end
