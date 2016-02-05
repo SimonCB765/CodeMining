@@ -9,7 +9,9 @@ load coding
 
 % Flag to indicate which comparison is being done. If set to true, then the comparison is between people with type 1 and
 % type 2 diabetes, else it is between people with diabetes and people without.
+% Also determine the threshold at which recodings will be deemed to be successful. Anything <= recodingCutoff OR >= (1 - recodingCutoff) is considered strong enough evidence for recoding.
 isType1Type2 = true;
+recodingCutoff = 0;
 
 % Load the data on the patients. Each row in the file contains:
 % PatentID\tCode\tOccurences
@@ -289,7 +291,6 @@ fprintf(fid, 'InitialModelPosterior\tFinalModelPosterior\tPatientID\n');
 for i = 1:numel(examplesToRecode)
     initialModelPosterior = initialModelPostProbs(i);
     finalModelPosterior = finalModelPostProbs(i);
-    posterior = posteriorProbabilities(i);
     fprintf(fid, '%1.4f\t%1.4f\t%d\n', initialModelPosterior, finalModelPosterior, uniquePatientIDs(examplesToRecode(i)));
 end
 fclose(fid);
@@ -307,10 +308,12 @@ if (isType1Type2)
     
     % Create the record for each patient.
     for i = 1:numel(examplesToRecode)
-        patientID = uniquePatientIDs(examplesToRecode(i);
-        patientRecord = dataMatrix(patientID, :);  % Get the subset of the dataset for the specific patient.
-        fid = fopen([patientDir '/Patient_' patientID '.tsv'], 'w');
-        fprintf(fid, 'Code\tCount\n');
-        fclose(fid);
+        if ((finalModelPosterior(i) <= recodingCutoff) | (finalModelPosterior(i) >= (1- recodingCutoff)))
+            patientID = uniquePatientIDs(examplesToRecode(i);
+            patientRecord = dataMatrix(patientID, :);  % Get the subset of the dataset for the specific patient.
+            fid = fopen([patientDir '/Patient_' patientID '.tsv'], 'w');
+            fprintf(fid, 'Code\tCount\n');
+            fclose(fid);
+        end
     end
 end
