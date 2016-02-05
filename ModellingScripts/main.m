@@ -34,6 +34,12 @@ patientIndexMap = containers.Map(uniquePatientIDs, 1:numel(uniquePatientIDs));  
 % values (data.counts). The matrix is created by saying that the entry in the matrix M[sparseRows[i], sparseCols[i]] = data.counts[i].
 % This sparse matrix will have a row for each patient ID (10,000 rows) and one column for each Read code in the dataset.
 
+%
+% COUL I JUST REPLACE SPARSEROWS WITH 1:NUMEL(UNIQUEPATIENTIDS) AND SPARSECOLS WITH 1:NUMEL(UNIQUECODES)?????
+%
+
+
+
 % For sparseRows, first generate a cell array with each cell containing a patient
 % ID. The ordering of the IDs in the array is the same as in the dataset
 % file. Next create a second cell array of the same length by mapping each
@@ -273,7 +279,6 @@ else
 end
 fclose(fid);
 
-
 % Calculate posteriors for examples that may need recoding.
 if (isType1Type2)
     % Determine the posterior probabilities of the examples that are marked as both type 1 and type 2.
@@ -310,7 +315,7 @@ if (isType1Type2)
     
     % Create the record for each patient.
     for i = 1:numel(examplesToRecode)
-        if ((finalModelPosterior(i) <= recodingCutoff) | (finalModelPosterior(i) >= (1- recodingCutoff)))
+        if ((finalModelPosterior(i) <= recodingCutoff) | (finalModelPosterior(i) >= (1 - recodingCutoff)))
             patientID = uniquePatientIDs(examplesToRecode(i);
             patientRecord = dataMatrix(patientID, :);  % Get the subset of the dataset for the specific patient.
             fid = fopen([patientDir '/Patient_' patientID '.tsv'], 'w');
