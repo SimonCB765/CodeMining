@@ -1,0 +1,120 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	2
+1361	Teetotaller	1
+137L	Current non-smoker	3
+137S	Ex smoker	1
+13l4	Main spoken language English	1
+14A7	H/O: CVA/stroke	1
+1A13	Nocturia	7
+22A	O/E - weight	11
+22K	Body Mass Index	10
+2469	O/E - Systolic BP reading	24
+29BB	10g monofilament sensation R foot normal	1
+2BB1	O/E - retina normal	1
+2BBD	O/E - Right retina normal	1
+2BBI	O/E - no retinopathy	1
+311A	Monofilament foot sensation test	1
+31280	Fundoscopy normal	1
+423	Haemoglobin estimation	2
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	2
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	12
+42W5	Haemoglobin A1c level - IFCC standardised	1
+43Z2	Prostate specific antigen	1
+44AF	Brain natriuretic peptide level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	15
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	25
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	6
+44Q	Serum triglycerides	11
+44g	Plasma glucose level	5
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	12
+4613	Urinalysis = no abnormality	1
+4615	MSU sent to lab.	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	1
+46M7	Urine creatinine	4
+46TC	Urine albumin:creatinine ratio	10
+46W	Urine microalbumin	1
+58531	Echocardiogram abnormal	2
+585H	Ultrasound scan normal	1
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	4
+66AD	Fundoscopy - diabetic check	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+79385	Coronary arteriography NEC	1
+7B390	Transurethral prostatectomy	2
+8A17	Self monitoring of blood glucose	1
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	2
+8H2	Emergency hospital admission	1
+8H21	Admit medical emergency unsp.	1
+8H44	Cardiological referral	1
+8H72	Refer to district nurse	1
+8H77	Refer to physiotherapist	2
+8H7r	Refer to diabetic foot screener	1
+9N1i	Seen in diabetic foot clinic	1
+9N2Q	Seen by podiatrist	1
+9N2U	Seen by optician	1
+9N2f	Seen by retinal screener	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	4
+A1	Tuberculosis	1
+A53	Herpes zoster	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	6
+ASDI224	Aspirin  Dispersible tablets  75 mg	7
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	11
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	3
+C10	Diabetes mellitus	1
+CAIN4534NEMIS	Calciferol  Injection  300,000 units/ml, 1 ml ampoule	15
+D0130	Combined B12 and folate deficiency anaemia	1
+DEM/22793NEMIS	Detrunorm Xl  M/R capsules  30 mg	3
+DETA32246EMIS	Detrusitol  Tablets  2 mg	6
+DIM/423NEMIS	Diltiazem Hydrochloride  M/R capsules  360 mg	1
+DITA884	Diclofenac Sodium  M/R tablets  100 mg	6
+EMISSPR1	Unknown vendor specific drug	7
+EMISSPR110	Unknown vendor specific drug	10
+F31z	Facial nerve disorder NOS	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	1
+FRTA1248	Frusemide  Tablets  20 mg	21
+Fyu51	[X]Other epilepsy	2
+G12	Rheumatic aortic valve disease	1
+G240	Secondary malignant hypertension	4
+G572z	Paroxysmal tachycardia NOS	3
+G65zz	Transient cerebral ischaemia NOS	1
+GASTOUR6	Unknown vendor specific drug	1
+HYTA1398	Hydrocortisone  Tablets  20 mg	1
+IRIN11056NEMIS	Iron Hydroxide Dextran Complex  Injection  50 mg/ml, 2 ml ampoule	2
+J106	Acquired oesophageal diverticulum	1
+J1212	Chronic duodenal ulcer with perforation	1
+J171	Gastric diverticulum	4
+M21yC	Insulin lipohypertrophy	3
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MANORNO1	Unknown vendor specific drug	13
+MEM/30449NEMIS	Metformin Hydrochloride  M/R tablets  750 mg	2
+META1753	Mefenamic Acid  Tablets  500 mg	21
+N073	Loose body in knee	2
+NICA1987	Nifedipine  Capsules  5 mg	1
+SCCA19035EMIS	Scott  Catheters  10 ch	14
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	10
+SLTA4320	Slow-Fe  Tablets  160 mg	10
+SLTA4321	Slow-Fe Folic  Tablets	4
+VATA26447EMIS	Valaciclovir  Tablets  500 mg	2
+VATA3007	Valium  Tablets  2 mg	5

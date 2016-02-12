@@ -1,0 +1,93 @@
+Code	Description	Count
+135A	Christian	1
+136	Alcohol consumption	8
+1371	Never smoked tobacco	2
+137S	Ex smoker	3
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	8
+1Z1G	Chronic kidney disease stage 3B without proteinuria	8
+229	O/E - height	11
+22A	O/E - weight	21
+22K	Body Mass Index	21
+22N0	Waist circumference	1
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	23
+29B7	10g monofilament sensation present	4
+2BBE	O/E - Left retina normal	1
+2BBF	Retinal abnormality - diabetes related	1
+2BBX	O/E - left eye diabetic maculopathy	1
+32	Electrocardiography	2
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	3
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	9
+42W5	Haemoglobin A1c level - IFCC standardised	2
+43Z2	Prostate specific antigen	2
+44A1	Serum parathyroid hormone	3
+44CS	Serum C reactive protein level	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	14
+44I5	Serum sodium	3
+44I8	Serum calcium	3
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	23
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	2
+44Q	Serum triglycerides	7
+44TB	Haemoglobin A1c level	2
+44TJ	Blood glucose level	2
+451E	GFR calculated abbreviated MDRD	14
+4672	Urine protein test negative	4
+46M7	Urine creatinine	5
+46N4	Urine albumin	7
+46TC	Urine albumin:creatinine ratio	8
+46W0	Urine microalbumin positive	1
+46W1	Urine microalbumin negative	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+67E	Foreign travel advice	1
+6896	Depression screening using questions	3
+68A8	Digital retinal screening	2
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	5
+8CAM	Patient advised about alcohol	3
+8H7	Other referral	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+9N1v	Seen in diabetic eye clinic	4
+9N2e	Seen by ophthalmologist	1
+9S2	Black Caribbean	2
+9iB	Caribbean - ethnic category 2001 census	3
+A79z	Viral infection NOS	2
+ADCH6282NEMIS	Adcal  Chewable tablets  1.5 grams	2
+ALCA74	Alfacalcidol  Capsules  250 nanograms	2
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	20
+ASDI224	Aspirin  Dispersible tablets  75 mg	13
+C104	Diabetes mellitus with renal manifestation	1
+DITA886	Diclofenac Sodium  Tablets  50 mg	19
+E117z	"Unspecified bipolar affective disorder	1
+E3	Mental retardation	1
+F5012	Acute infection of pinna	1
+FRENCJC1	Unknown vendor specific drug	2
+Fyu51	[X]Other epilepsy	5
+H014	Acute rhinosinusitis	1
+H47	Pneumonitis due to inhalation of solids or liquids	1
+HUCA32509EMIS	Humulin M3  Cartridges (3 Ml)	21
+IBFC10455BRIDL	Ibuprofen  Fc tablets  800 mg	20
+K1973	Frank haematuria	1
+META1793	Methylcellulose  Tablets  500 mg	1
+N01zB	Infec arthritis NOS-elbow	1
+N04y0	Rheumatoid lung	1
+NAMASWH1	Unknown vendor specific drug	10
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	2
+PD38	Horseshoe kidney	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	20
+URBL8716BRIDL	Uro-Tainer Suby G  Sachets	17

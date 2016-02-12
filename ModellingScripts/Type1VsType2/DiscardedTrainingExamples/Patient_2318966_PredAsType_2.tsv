@@ -1,0 +1,114 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+136	Alcohol consumption	7
+1362	Trivial drinker - <1u/day	1
+137G	Trying to give up smoking	1
+137P	Cigarette smoker	1
+137S	Ex smoker	2
+1381	Exercise physically impossible	3
+16D1	Recurrent falls	2
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	8
+22A	O/E - weight	8
+22K	Body Mass Index	9
+2469	O/E - Systolic BP reading	19
+29B9	10g monofilament sensation R foot abnormal	1
+29BB	10g monofilament sensation R foot normal	1
+2BBP	O/E - right eye background diabetic retinopathy	2
+2BBQ	O/E - left eye background diabetic retinopathy	1
+2G5G	O/E - Right diabetic foot at high risk	1
+2G5K	O/E - Left diabetic foot at high risk	1
+31280	Fundoscopy normal	1
+3176	Residual urinary volume	1
+32	Electrocardiography	2
+394	Bladder - assessment	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	5
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	8
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	13
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	1
+44Q	Serum triglycerides	9
+44U	Blood glucose result	2
+451E	GFR calculated abbreviated MDRD	6
+4662	Urine glucose test negative	1
+4667	Urine glucose test = ++++	1
+467	Urine protein test	1
+4672	Urine protein test negative	3
+4682	Urine ketone test negative	1
+46N4	Urine albumin	3
+46TC	Urine albumin:creatinine ratio	5
+65720	Pneumococcal vaccination given	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	1
+679L	Health education - diabetes	3
+6896	Depression screening using questions	1
+8A17	Self monitoring of blood glucose	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	3
+8CAL	Smoking cessation advice	2
+8H41	General medical referral	1
+8H51	General surgical referral	1
+8H53	ENT referral	1
+8H7	Other referral	1
+8H77	Refer to physiotherapist	1
+8H7R	Refer to chiropodist	1
+8I24	Aspirin prophylaxis contra-indicated	3
+8I26	Beta blocker contraindicated	2
+8I28	Angiotensin converting enzyme inhibitors contraindicated	2
+8I2H	Angiotensin II receptor antagonists contraindicated	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I66	Aspirin not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	1
+9N1v	Seen in diabetic eye clinic	1
+9N21	Seen by general practitioner	1
+9N22	Seen by practice nurse	1
+9N2Q	Seen by podiatrist	1
+9N2U	Seen by optician	1
+9N31	Telephone encounter	1
+9hE0	Except chronic kidney disease qual indic: Patient unsuitable	2
+AB200	Candidiasis of mouth	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	3
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	4
+ASM/33164EMIS	Asasantin Retard  M/R capsules	6
+ASTA4609	Aspirin  Tablets  75 mg	1
+C10	Diabetes mellitus	1
+C109	Non-insulin dependent diabetes mellitus	4
+F31z	Facial nerve disorder NOS	1
+F4F1	Other lacrimal gland disorders	1
+Fyu51	[X]Other epilepsy	3
+G240	Secondary malignant hypertension	1
+G3400	Single coronary vessel disease	1
+G3401	Double coronary vessel disease	1
+G581	Left ventricular failure	1
+G84	Haemorrhoids	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	3
+IBFC10455BRIDL	Ibuprofen  Fc tablets  800 mg	29
+L264	Intrauterine death	2
+L264z	Intrauterine death NOS	1
+L3511	Rupture of uterus during and after labour - delivered	1
+L357	Obstetric trauma causing pelvic haematoma	9
+MACA8841BRIDL	Maxepa  Capsules  1 gram	2
+META1753	Mefenamic Acid  Tablets  500 mg	11
+N083q	Recurrent subluxation of the patella	1
+NETA34105EMIS	Neomycin Sulphate  Tablets  500 mg	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	28
+SLTA4320	Slow-Fe  Tablets  160 mg	1
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	3
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	3
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	10

@@ -1,0 +1,122 @@
+Code	Description	Count
+136	Alcohol consumption	2
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	1
+137P	Cigarette smoker	2
+137S	Ex smoker	4
+138	Exercise grading	1
+1383	Enjoys light exercise	1
+1A3	Micturition stream	1
+1AA	Prostatism	1
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	2
+22A	O/E - weight	22
+22K	Body Mass Index	22
+246	O/E - blood pressure reading	21
+2465	O/E - BP borderline raised	1
+29B1	O/E - tactile sensation normal	2
+29BB	10g monofilament sensation R foot normal	1
+2BBP	O/E - right eye background diabetic retinopathy	1
+2G5	O/E - foot	2
+311A	Monofilament foot sensation test	2
+3128	Fundoscopy	4
+31280	Fundoscopy normal	1
+3212	Standard ECG	2
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	16
+42W5	Haemoglobin A1c level - IFCC standardised	3
+42c	HbA1 - diabetic control	1
+43Z2	Prostate specific antigen	3
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	16
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	30
+44J7	Albumin / creatinine ratio	1
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	10
+44Q	Serum triglycerides	12
+44U	Blood glucose result	3
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	16
+451F	Glomerular filtration rate	1
+461	Urine exam. - general	2
+4674	Urine protein test = +	1
+467A	24 hour urine protein output	1
+46M8	Urine creatine	2
+46N3	Urine total protein	4
+46N4	Urine albumin	3
+46TC	Urine albumin:creatinine ratio	3
+46TD	Urine microalbumin:creatinine ratio	1
+46W	Urine microalbumin	2
+585B	U-S kidneys	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+6781	Health education offered	1
+6791	Health ed. - smoking	2
+6896	Depression screening using questions	3
+8H	Referral for further care	1
+8H8	Follow-up arranged	5
+8H86	Follow-up 3 weeks	1
+8H8B	Follow-up 1 year	2
+8H8C	Follow up 6 weeks	1
+8HA	No follow-up arranged	4
+8HE3	Discharged from day-case care	1
+8HMK	Listed for Orthopaedic admissn	1
+9N0H	Seen in dietician clinic	3
+9N1p	Seen in orthopaedic clinic	2
+9N1v	Seen in diabetic eye clinic	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	2
+9N2f	Seen by retinal screener	1
+9N3D	Letter received	1
+9ND8	I/patient disch summary rec'vd	1
+9NND	Under care of diabetic foot screener	1
+9h41	Excepted from diabetes qual indicators: Patient unsuitable	1
+AB0	Dermatophytosis including tinea or ringworm	1
+AB05	Dermatophytosis of the body	1
+C10	Diabetes mellitus	1
+F261z	Common migraine NOS	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+Fyu51	[X]Other epilepsy	1
+H0402	Acute catarrhal laryngitis	1
+H0421	Acute laryngotracheitis with obstruction	1
+J162z	Persistent vomiting NOS	1
+J17y7	Deformed duodenal cap (bulb)	1
+N01w	"Reactive arthropathy	2
+PUJINST1	Unknown vendor specific drug	2
+ZV125	[V]Personal history of circulatory system disease	22
+bB1y	IVABRADINE 7.5mg tablets	6
+bh62	DOXAZOSIN 2mg tablets	5
+bh65	CARDURA 2mg tablets	6
+bi94	GOPTEN 500micrograms capsules	3
+bi95	GOPTEN 1mg capsules	21
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	13
+bs14	*WARFARIN WBP 1mg tablets	9
+bx11	BEZALIP 200mg tablets	12
+bxd5	SIMVASTATIN 40mg tablets	8
+bxky	ROSUVASTATIN 20mg tablets	2
+du3f	NICOTINE 10mg inhalator refill pack	1
+eg12	NITROFURANTOIN 100mg tablets	1
+f141	NOVORAPID 100units/mL injection vial	1
+f25Y	HUMAN ISOPHANE INSULIN 100units/mL injection vials	21
+f27g	HUMULIN M4 40/60 cartridges 1.5mL	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	19
+ft4v	ROSIGLITAZONE 4mg / METFORMIN 1000mg tablets	2
+ft4x	ROSIGLITAZONE 1mg / METFORMIN 500mg tablets	2
+gc71	TAMSULOSIN HYDROCHLORIDE 400micrograms m/r capsules	3
+ip3a	CALCIUM AND ERGOCALCIFEROL 400units tablets	1
+ip3o	ADCAL D3 DISSOLVE effervescent tablets	2
+j22a	DICLOFENAC 100mg suppositories	1
+j2cx	NAPROXEN+MISOPROSTOL 500mg/200micrograms tablets	1

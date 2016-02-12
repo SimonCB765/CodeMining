@@ -1,0 +1,111 @@
+Code	Description	Count
+12C5	FH: Myocardial infarction	1
+136	Alcohol consumption	3
+1362	Trivial drinker - <1u/day	2
+1363	Light drinker - 1-2u/day	3
+1371	Never smoked tobacco	1
+137S	Ex smoker	1
+138O	Takes inadequate exercise	2
+1Z12	Chronic kidney disease stage 3	1
+1Z1E	Chronic kidney disease stage 3A without proteinuria	1
+229	O/E - height	6
+22A	O/E - weight	16
+22K	Body Mass Index	15
+22N0	Waist circumference	3
+246	O/E - blood pressure reading	20
+29H2	O/E - vibration sense reduced	1
+2BBJ	O/E - no right diabetic retinopathy	1
+2BBK	O/E - no left diabetic retinopathy	2
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+311A	Monofilament foot sensation test	2
+3217	ECG abnormal	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	2
+42R5	Serum TIBC	2
+42R7	Serum iron level	1
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+42W4	HbA1c level (DCCT aligned)	14
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CB	Serum transferrin	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	1
+44I4	Serum potassium	13
+44I5	Serum sodium	1
+44I8	Serum calcium	1
+44J3	Serum creatinine	17
+44J7	Albumin / creatinine ratio	5
+44J9	Serum urea level	2
+44M4	Serum albumin	1
+44P	Serum cholesterol	14
+44Q	Serum triglycerides	14
+44U	Blood glucose result	1
+44g	Plasma glucose level	9
+451E	GFR calculated abbreviated MDRD	13
+451F	Glomerular filtration rate	2
+4613	Urinalysis = no abnormality	4
+4672	Urine protein test negative	4
+46N4	Urine albumin	7
+46TC	Urine albumin:creatinine ratio	7
+58531	Echocardiogram abnormal	2
+585f	Echocardiogram shows left ventricular systolic dysfunction	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	2
+66Ac	Diabetic peripheral neuropathy screening	1
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	2
+6896	Depression screening using questions	1
+68A7	Diabetic retinopathy screening	1
+68A8	Digital retinal screening	1
+79370	Implantation of cardiac pacemaker system NEC	1
+8A17	Self monitoring of blood glucose	1
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	1
+8I28	Angiotensin converting enzyme inhibitors contraindicated	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I6L	Spirometry not indicated	1
+8I74	Angiotensin converting enzyme inhibitor not tolerated	2
+8I75	Angiotensin II receptor antagonist not tolerated	1
+9N2U	Seen by optician	1
+AHDIAB01	Unknown vendor specific drug	1
+C10	Diabetes mellitus	1
+D0130	Combined B12 and folate deficiency anaemia	2
+EGTON460	Unknown vendor specific drug	1
+EMISNQDO1	Unknown vendor specific drug	1
+F261z	Common migraine NOS	1
+F411	Retinoschisis and retinal cysts	1
+Fyu4	[X]Demyelinating diseases of the central nervous system	2
+G11z	Mitral valve disease NOS	2
+G570	Paroxysmal supraventricular tachycardia	2
+H1y40	Polyp of vocal cord	1
+H1y41	Polyp of larynx	1
+J1y	"Other specified disorders of oesophagus	4
+PCS3589ME1	Unknown vendor specific drug	1
+PCS7073BI1	Unknown vendor specific drug	1
+S106	Closed fracture sacrum	1
+ZV579	[V]Cardiac rehabilitation	3
+bb3P	VERA-TIL SR 240mg m/r tablets	2
+bd6x	METOPROLOL 50mg tablets	15
+bh62	DOXAZOSIN 2mg tablets	1
+bh63	DOXAZOSIN 4mg tablets	1
+bh65	CARDURA 2mg tablets	1
+bi94	GOPTEN 500micrograms capsules	7
+bi95	GOPTEN 1mg capsules	10
+blc5	FELODIPINE 2.5mg m/r tablets	1
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	4
+br2C	000iu/0.4mL syrg"	3
+bx13	BEZAFIBRATE 200mg tablets	14
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	6
+bxky	ROSUVASTATIN 20mg tablets	2
+du3g	NICORETTE 10mg inhalator starter pack	1
+eg6x	CIPROFLOXACIN 250mg tablets	1
+f27g	HUMULIN M4 40/60 cartridges 1.5mL	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	16
+ft11	ACARBOSE 50mg tablets	19

@@ -1,0 +1,108 @@
+Code	Description	Count
+136	Alcohol consumption	4
+1371	Never smoked tobacco	1
+137L	Current non-smoker	2
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+16D1	Recurrent falls	2
+229	O/E - height	4
+22A	O/E - weight	10
+22K	Body Mass Index	9
+2432	O/E - pulse irregularly irreg.	1
+246	O/E - blood pressure reading	18
+29H5	O/E - Vibration sense of right foot normal	1
+29H7	O/E - Vibration sense of left foot normal	3
+32M	24 Hour ECG	1
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	4
+42R4	Serum ferritin	3
+42R7	Serum iron level	3
+42T	Serum vitamin B12	4
+42U5	Serum folate	3
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	3
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44CB	Serum transferrin	1
+44CC	Plasma C reactive protein	6
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	17
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	16
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	13
+44PF	Total cholesterol:HDL ratio	13
+44Q	Serum triglycerides	15
+44TB	Haemoglobin A1c level	7
+44W9	Serum digoxin level	1
+44g	Plasma glucose level	7
+44g1	Plasma fasting glucose level	2
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	11
+451F	Glomerular filtration rate	1
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	2
+46M7	Urine creatinine	3
+46N	Urine protein	1
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	5
+46TD	Urine microalbumin:creatinine ratio	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	1
+6799	Health ed. - diet	1
+67I7	Advice about foot care	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+68A8	Digital retinal screening	1
+8A17	Self monitoring of blood glucose	3
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	3
+8H44	Cardiological referral	1
+8H7n	Referral to retinal screener	1
+8I3X	Diabetic retinopathy screening refused	2
+9N1v	Seen in diabetic eye clinic	2
+9N31	Telephone encounter	1
+9NN0	Under care of podiatrist	1
+9S1	White	1
+9S10	White British	1
+C109	Non-insulin dependent diabetes mellitus	3
+COTA9149BRIDL	Co-Amilofruse 5/40  Tablets	1
+EGTON460	Unknown vendor specific drug	2
+F4K2z	Vitreous disorders NOS	1
+F5012	Acute infection of pinna	1
+Fyu51	[X]Other epilepsy	2
+G3400	Single coronary vessel disease	2
+J120	Acute duodenal ulcer	1
+K5A1	Postmenopausal bleeding	1
+PCS7073IH1	Unknown vendor specific drug	1
+S10A1	Fracture of second cervical vertebra	1
+S201	Open fracture of clavicle	1
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	1
+ZITO9011EMIS	Zineryt  Topical solution	6
+ZV125	[V]Personal history of circulatory system disease	22
+bd6x	METOPROLOL 50mg tablets	3
+bh61	DOXAZOSIN 1mg tablets	2
+bh63	DOXAZOSIN 4mg tablets	3
+bh65	CARDURA 2mg tablets	27
+bl8B	ADIPINE MR 10 m/r tablets	17
+blk6	ISODUR 25XL m/r capsules	2
+blkA	MONOMAX XL 60mg m/r tablets	13
+blkB	XISMOX XL 60 m/r tablets	1
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	1
+du3N	*NICABATE 14mg patches x7	2
+ei1d	ACICLOVIR 800mg dispersible tablets	7
+f12V	EXUBERA 3mg powder for inhalation	5
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	1
+fe4a	EFCORTESOL 500mg/5mL injection	3
+ig1c	CALCIUM CARBONATE 1.25g chewable tablets	4

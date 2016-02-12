@@ -1,0 +1,108 @@
+Code	Description	Count
+03I	Opticians	1
+136	Alcohol consumption	8
+1371	Never smoked tobacco	1
+137L	Current non-smoker	3
+137S	Ex smoker	2
+13l4	Main spoken language English	1
+1A45	Blood in urine - haematuria	2
+1A52	Renal colic	4
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	5
+22A	O/E - weight	18
+22K	Body Mass Index	14
+2469	O/E - Systolic BP reading	23
+2841	Confused	1
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	3
+311A	Monofilament foot sensation test	2
+3128	Fundoscopy	1
+32	Electrocardiography	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	6
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	3
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	24
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	14
+44P6	Serum LDL cholesterol level	13
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	15
+44TB	Haemoglobin A1c level	13
+44TC	Haemoglobin A1 level	2
+44U	Blood glucose result	3
+44g	Plasma glucose level	6
+44g1	Plasma fasting glucose level	3
+44lD	Urine protein/creatinine ratio	5
+451E	GFR calculated abbreviated MDRD	9
+461	Urine exam. - general	3
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	9
+4673	Urine protein test = trace	2
+4682	Urine ketone test negative	3
+46M7	Urine creatinine	4
+46N	Urine protein	2
+46N1	Urine protein normal	1
+46N4	Urine albumin	7
+46N7	Urine protein/creatinine index	1
+46NZ	Urine protein NOS	1
+46TC	Urine albumin:creatinine ratio	8
+4JJ2	MSU sent for bacteriology	3
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	3
+67E	Foreign travel advice	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	7
+8CAM	Patient advised about alcohol	4
+8H7	Other referral	1
+9N11	Seen in GP's surgery	1
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	1
+9i0	British or mixed British - ethnic category 2001 census	4
+AB01	Dermatophytosis of nail	2
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	4
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	6
+C1001	Diab.mell.no comp. - adult	2
+DEIN20067EMIS	Depo-Medrone  Injection  80 mg/2 ml vial	1
+DITA884	Diclofenac Sodium  M/R tablets  100 mg	1
+F132z	Myoclonus NOS	1
+F4J56	Total ophthalmoplegia	1
+F5903	Conductive hearing loss due to disorder of middle ear	1
+Fyu51	[X]Other epilepsy	2
+G573z	Atrial fibrillation and flutter NOS	1
+G5y34	Ventricular hypertrophy	2
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	7
+H037	Recurrent acute tonsillitis	1
+H15	Peritonsillar abscess - quinsy	1
+HYLO5009	Hydrocortisone(As Sodium Succinate)  Lozenges  Sugar Free 2.5 mg	1
+HYRE10904BRIDL	Hypoguard Ga  Reagent strips	3
+IBFC10455BRIDL	Ibuprofen  Fc tablets  800 mg	23
+IMTA8900BRIDL	Imdur  Tablets  60 mg	1
+K08y	Other impaired renal function disorder	1
+L43z4	Obstetric pulmonary embolism NOS with postnatal complication	7
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+N0951	Stiff joint NEC-shoulder	1
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	10
+POFO4257NEMIS	Coloplast Folysil All Silicone  Foley catheter (male)  14ch, AA71	1
+RATA16401NEMIS	Ramipril  Tablets  5 mg	1
+URBL8670BRID	Uro-Tainer Chlorhexidine  Bladder Wash-Out	25
+URCA14420NEMIS	Uro-Tainer Sodium Chloride  Catheter maintenance solution  0.9 %, 50 ml	4

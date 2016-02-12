@@ -1,0 +1,133 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	2
+12C3	FH: Ischaemic heart dis. >60	1
+1345	South American origin	1
+1359	Islam	1
+136	Alcohol consumption	11
+1373	Light smoker - 1-9 cigs/day	1
+137K	Stopped smoking	1
+137L	Current non-smoker	3
+137P	Cigarette smoker	1
+137S	Ex smoker	1
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+1A1	Micturition frequency	1
+229	O/E - height	6
+22A	O/E - weight	12
+22K	Body Mass Index	12
+22N0	Waist circumference	3
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	2
+29B9	10g monofilament sensation R foot abnormal	1
+2G5A	O/E - Right diabetic foot at risk	1
+2G5B	O/E - Left diabetic foot at risk	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	11
+43Z2	Prostate specific antigen	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	6
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	12
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	7
+44P5	Serum HDL cholesterol level	4
+44P6	Serum LDL cholesterol level	4
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	8
+44TJ	Blood glucose level	7
+44U	Blood glucose result	2
+451E	GFR calculated abbreviated MDRD	5
+4618	Urine dipstick test	2
+4662	Urine glucose test negative	1
+4665	Urine glucose test = ++	1
+467	Urine protein test	1
+4672	Urine protein test negative	5
+4673	Urine protein test = trace	3
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	4
+46TC	Urine albumin:creatinine ratio	6
+46W	Urine microalbumin	5
+5858	Doppler studies	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+66C9	Target weight discussed	1
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+8A17	Self monitoring of blood glucose	3
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	5
+8CAL	Smoking cessation advice	2
+8CAM	Patient advised about alcohol	2
+8H7n	Referral to retinal screener	1
+8H7r	Refer to diabetic foot screener	3
+8H7s	Referral to physical activity programme	1
+8I6C	Angiotensin II receptor antagonist not indicated	1
+918F	Has a carer	1
+9N2e	Seen by ophthalmologist	1
+9N31	Telephone encounter	1
+9NNC	Under care of retinal screener	1
+9S3	Black African	1
+9T	Ethnicity and other related nationality data	1
+9i7	Indian or British Indian - ethnic category 2001 census	1
+9iA	Other Asian background - ethnic category 2001 census	4
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	21
+BETA302	Bendrofluazide  Tablets  2.5 mg	3
+CHENJUR22	Unknown vendor specific drug	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+D0130	Combined B12 and folate deficiency anaemia	1
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	1
+E200z	Anxiety state NOS	3
+E3	Mental retardation	4
+EMISNQSI2	Unknown vendor specific drug	1
+EMISQ2W13	Unknown vendor specific drug	1
+F378	Intercostal neuropathy	1
+F42z	Retinal disorder NOS	1
+F5900	"Conductive hearing loss	9
+FECA1203NEMIS	Fenofibrate  Capsules  (Micronised) 267 mg	3
+Fyu51	[X]Other epilepsy	2
+GASTOUN2	Unknown vendor specific drug	4
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	19
+H014	Acute rhinosinusitis	1
+HYLO5009	Hydrocortisone(As Sodium Succinate)  Lozenges  Sugar Free 2.5 mg	6
+IBM/18882EMIS	Ibuprofen  M/R tablets  800 mg	15
+ININ4906NEMIS	Insuman Comb 15  Injection  100 units/ml, 5 ml vial	1
+INTA20286NEMIS	Inegy  Tablets  10 mg/80 mg	1
+J171	Gastric diverticulum	1
+K0D	End-stage renal disease	1
+K100	Chronic pyelonephritis	1
+L443	Other complication of obstetric surgical wound	2
+LETA32002EMIS	Lercanidipine Hydrochloride  Tablets  10 mg	1
+LIIN17712NEMIS	Lidocaine  Injection  2 %, 200 mg/10 ml ampoule	1
+LITA30125EMIS	Lipitor  Tablets  20 mg	2
+LMRGPGP2	Unknown vendor specific drug	26
+MACA8841BRIDL	Maxepa  Capsules  1 gram	20
+NEIN34447EMIS	Neorecormon  Injection (Prefilled Syringe)  10000 units/syringe	1
+NIM/172NEMIS	Nifedipine  M/R capsules  30 mg	2
+NIM/21970EMIS	Nitrofurantoin  M/R capsules  100 mg	3
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	1
+NITR12772NEMIS	Niquitin Clear  Transdermal patches  14 mg/24 hrs	2
+Pyu70	[X]Other cystic kidney diseases	1
+S33x0	Closed #tibia-unspecified NOS	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	25
+SETA2508	Secadrex  Tablets	5
+STTA2717	Stugeron  Tablets  15 mg	5
+U10z	[X]Unspecified fall	5
+Y3544	Unknown vendor specific drug	1

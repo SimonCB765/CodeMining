@@ -1,0 +1,126 @@
+Code	Description	Count
+136	Alcohol consumption	7
+1361	Teetotaller	1
+1362	Trivial drinker - <1u/day	1
+137G	Trying to give up smoking	3
+137P	Cigarette smoker	3
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	3
+13AC	Diabetic weight reducing diet	1
+13l4	Main spoken language English	2
+1A1	Micturition frequency	2
+229	O/E - height	10
+22A	O/E - weight	14
+22K	Body Mass Index	17
+22N0	Waist circumference	8
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	4
+2BBT	O/E - right eye proliferative diabetic retinopathy	1
+3167	Helicobacter pylori breath test	1
+3272	ECG: atrial fibrillation	1
+32M	24 Hour ECG	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	3
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W5	Haemoglobin A1c level - IFCC standardised	2
+42c	HbA1 - diabetic control	1
+43Z2	Prostate specific antigen	2
+44CC	Plasma C reactive protein	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	13
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	11
+44PF	Total cholesterol:HDL ratio	12
+44Q	Serum triglycerides	14
+44TB	Haemoglobin A1c level	16
+44g	Plasma glucose level	1
+44lD	Urine protein/creatinine ratio	4
+4662	Urine glucose test negative	1
+4664	Urine glucose test = +	1
+4672	Urine protein test negative	6
+4682	Urine ketone test negative	2
+46M7	Urine creatinine	3
+46N	Urine protein	3
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	6
+46W0	Urine microalbumin positive	1
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+6791	Health ed. - smoking	6
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+8A17	Self monitoring of blood glucose	3
+8B2B	Nicotine replacement therapy	2
+8B63	Salicylate prophylaxis	1
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	4
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	5
+8H54	Orthopaedic referral	1
+8H7C	 diabetic liaison nurse"	1
+8H7f	Referral to diabetes nurse	1
+8H7i	Referral to smoking cessation advisor	1
+8HTK	Referral to stop-smoking clinic	4
+9N2S	Seen by practice phlebotomist	3
+9N2i	Seen by diabetic liaison nurse	1
+9N42	Did not attend - no reason	1
+9i0	British or mixed British - ethnic category 2001 census	4
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	21
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	9
+ATTA231	Atenolol  Tablets  50 mg	2
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	9
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	6
+BETA4655	Bezafibrate  Tablets  200 mg	1
+BETA4656	Bezafibrate  M/R tablets  400 mg	7
+C10	Diabetes mellitus	6
+C1001	Diab.mell.no comp. - adult	1
+CAIN28236EMIS	Caverject  Injection  10 micrograms/vial	24
+CAIN4534NEMIS	Calciferol  Injection  300,000 units/ml, 1 ml ampoule	3
+DIM/24041EMIS	Dilzem Xl  M/R capsules  180 mg	1
+DIRE4825	Diazepam  Rectal tubes  10 mg dose (4 mg/ml, 2.5 ml tube)	1
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+EMISQ2W2	Unknown vendor specific drug	1
+EMISSPR1	Unknown vendor specific drug	5
+F504	Impacted cerumen (wax in ear)	1
+FRTA1248	Frusemide  Tablets  20 mg	22
+Fyu51	[X]Other epilepsy	2
+G3400	Single coronary vessel disease	2
+GASTOUR2	Unknown vendor specific drug	1
+HEWITDI8	Unknown vendor specific drug	1
+HYIN3742	Hypurin Bovine Isophane  Injection  100 units/ml	1
+HYIN5000	Hydrocortisone  Injection  100 mg/vial	1
+ISTA1519	Isosorbide Dinitrate  Tablets  10 mg	1
+IVTA21631NEMIS	Ivabradine  Tablets  7.5 mg	1
+J1212	Chronic duodenal ulcer with perforation	1
+L245	Cervical incompetence	2
+L2463	Other cervical abn complicating a/n care- baby not delivered	8
+L264z	Intrauterine death NOS	2
+LEIGHTH12	Unknown vendor specific drug	1
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	1
+M130	Ingestion dermatitis due to drugs	4
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	24
+N047	Seropositive errosive rheumatoid arthritis	1
+N083q	Recurrent subluxation of the patella	1
+NIM/16463NEMIS	Nicotinic Acid Titration Starter Pack  M/R tablets  7 x 375 mg, 7 x 500 mg, 7 x 750 mg	1
+NIM/16465NEMIS	Niaspan Titration Starter Pack  M/R tablets  7 x 375 mg, 7 x 500 mg, 7 x 750 mg	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	10
+Pyu70	[X]Other cystic kidney diseases	1
+URNI10806BRIDL	Uriplan  Night drainage bags  D81-3131	3
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	4
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	1

@@ -1,0 +1,97 @@
+Code	Description	Count
+136	Alcohol consumption	9
+137S	Ex smoker	4
+1A1	Micturition frequency	3
+229	O/E - height	1
+22A	O/E - weight	15
+22K	Body Mass Index	15
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	2
+29BB	10g monofilament sensation R foot normal	2
+2BBI	O/E - no retinopathy	3
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	4
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44CC	Plasma C reactive protein	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	3
+44J3	Serum creatinine	12
+44J9	Serum urea level	4
+44M4	Serum albumin	1
+44P	Serum cholesterol	12
+44P3	Serum cholesterol raised	2
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	10
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	14
+44TB	Haemoglobin A1c level	15
+44U	Blood glucose result	3
+44g	Plasma glucose level	8
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	5
+451E	GFR calculated abbreviated MDRD	6
+461	Urine exam. - general	1
+4672	Urine protein test negative	4
+467Z	Urine protein test NOS	1
+46M7	Urine creatinine	4
+46N	Urine protein	3
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	6
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+7B2A	Diagnostic cystoscopy	2
+7B2Az	Diagnostic cystoscopy NOS	1
+7B390	Transurethral prostatectomy	1
+7B3A1	Endoscopic incision of male bladder neck	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	5
+8H37	Non-urgent surgical admission	3
+8H41	General medical referral	1
+8H4K	Referred to endocrinologist	1
+8H53	ENT referral	1
+8HE3	Discharged from day-case care	2
+8I24	Aspirin prophylaxis contra-indicated	1
+9N0M	Seen in radiology department	1
+9N2U	Seen by optician	1
+9N2f	Seen by retinal screener	3
+9N31	Telephone encounter	1
+9N3A	Telephone triage encounter	1
+9OI4	Hypertens.monitor.1st letter	2
+9OI5	Hypertens.monitor 2nd letter	1
+9OI6	Hypertens.monitor 3rd letter	1
+9h32	Excepted from hypertension qual indicators: Informed dissent	1
+9i0	British or mixed British - ethnic category 2001 census	2
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	16
+ATTA230	Atenolol  Tablets  100 mg	9
+C10	Diabetes mellitus	2
+CAM/6442NEMIS	Cardura Xl  M/R tablets  4 mg	7
+CAM/6443NEMIS	Cardura Xl  M/R tablets  8 mg	3
+Eu220	[X]Delusional disorder	1
+F48z	Visual disturbance NOS	1
+F5012	Acute infection of pinna	1
+Fyu51	[X]Other epilepsy	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	4
+H040w	Acute viral laryngitis unspecified	1
+H31	Chronic bronchitis	1
+HEWITPE2	Unknown vendor specific drug	1
+K0A0	Acute nephritic syndrome	1
+K0D	End-stage renal disease	2
+K12z	Urinary calculus NOS	1
+L245	Cervical incompetence	8
+L40	Major puerperal infection	5
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	9
+NITR34938EMIS	Niquitin  Transdermal patches  14 mg/24 hrs	16
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	2
+PK61	Sturge-Weber syndrome	8
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	17

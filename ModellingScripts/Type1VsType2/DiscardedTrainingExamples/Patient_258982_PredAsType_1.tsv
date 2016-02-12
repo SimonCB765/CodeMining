@@ -1,0 +1,112 @@
+Code	Description	Count
+136	Alcohol consumption	7
+1361	Teetotaller	1
+1363	Light drinker - 1-2u/day	1
+1364	Moderate drinker - 3-6u/day	1
+1371	Never smoked tobacco	4
+1383	Enjoys light exercise	4
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	2
+22A	O/E - weight	15
+22K	Body Mass Index	15
+2469	O/E - Systolic BP reading	22
+29B7	10g monofilament sensation present	2
+29B9	10g monofilament sensation R foot abnormal	1
+31283	Camera fundoscopy	2
+32	Electrocardiography	2
+32131	Exercise ECG abnormal	1
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	2
+42U5	Serum folate	1
+43Z2	Prostate specific antigen	8
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44I4	Serum potassium	15
+44I5	Serum sodium	2
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	36
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	6
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	5
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	5
+44TB	Haemoglobin A1c level	17
+44TK	Fasting blood glucose level	1
+44U	Blood glucose result	1
+44g	Plasma glucose level	1
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	17
+451F	Glomerular filtration rate	1
+4661	Urine glucose test not done	4
+4667	Urine glucose test = ++++	1
+467	Urine protein test	1
+4671	Urine protein test not done	4
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+4675	Urine protein test = ++	1
+4676	Urine protein test = +++	1
+4681	Urine ketone test not done	2
+46N3	Urine total protein	2
+46TC	Urine albumin:creatinine ratio	1
+5543	Coronary arteriograph.abnormal	1
+573	Isotope distribut.static scan	1
+573D	Isotope static scan heart	1
+5853	U-S heart scan	1
+585Q	Carotid artery doppler assessment	1
+65720	Pneumococcal vaccination given	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+67I7	Advice about foot care	2
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	2
+68A8	Digital retinal screening	4
+8A17	Self monitoring of blood glucose	2
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	4
+8H	Referral for further care	2
+8H44	Cardiological referral	2
+8H53	ENT referral	1
+8H7n	Referral to retinal screener	1
+8I62	Beta blocker not indicated	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I65	Warfarin not indicated	1
+8I6B	Clopidogrel not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	1
+9N1A	Seen in hospital out-pat.	1
+9N2S	Seen by practice phlebotomist	2
+9S12	Other white ethnic group	1
+9S6	Indian	1
+AB01	Dermatophytosis of nail	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	23
+ASDI224	Aspirin  Dispersible tablets  75 mg	12
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	24
+C10	Diabetes mellitus	2
+C106	Diabetes mellitus with neurological manifestation	1
+E3	Mental retardation	1
+F31z	Facial nerve disorder NOS	1
+F583	Tinnitus	3
+FRTA1247	Frumil  Tablets	1
+Fyu51	[X]Other epilepsy	1
+G84	Haemorrhoids	1
+G846	Unspecified simple haemorrhoids	1
+GASTOUN2	Unknown vendor specific drug	3
+H014	Acute rhinosinusitis	2
+HEWITGB1	Unknown vendor specific drug	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	7
+ININ32907EMIS	Invicorp 2  Injection	12
+K12z	Urinary calculus NOS	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	2
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	14
+S1201	Closed fracture of one rib	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	23
+TCz	Accidental falls NOS	1

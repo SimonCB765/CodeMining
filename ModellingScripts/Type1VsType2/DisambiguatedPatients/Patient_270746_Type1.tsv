@@ -1,0 +1,108 @@
+Code	Description	Count
+03I	Opticians	1
+12C1	FH: Hypertension	1
+136	Alcohol consumption	7
+1362	Trivial drinker - <1u/day	1
+137L	Current non-smoker	3
+137P	Cigarette smoker	1
+137R	Current smoker	1
+137S	Ex smoker	3
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	2
+22A	O/E - weight	11
+22K	Body Mass Index	9
+2469	O/E - Systolic BP reading	14
+29B9	10g monofilament sensation R foot abnormal	3
+29BB	10g monofilament sensation R foot normal	1
+311A	Monofilament foot sensation test	2
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	5
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	12
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	11
+44TC	Haemoglobin A1 level	2
+44g	Plasma glucose level	8
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	5
+451E	GFR calculated abbreviated MDRD	8
+4662	Urine glucose test negative	1
+4665	Urine glucose test = ++	2
+4667	Urine glucose test = ++++	1
+467	Urine protein test	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+4682	Urine ketone test negative	4
+46M7	Urine creatinine	4
+46N	Urine protein	1
+46N4	Urine albumin	7
+46N7	Urine protein/creatinine index	1
+46NZ	Urine protein NOS	1
+46TC	Urine albumin:creatinine ratio	7
+66A5	Diabetic on insulin	2
+6791	Health ed. - smoking	3
+6799	Health ed. - diet	2
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+792	Coronary artery operations	1
+8A17	Self monitoring of blood glucose	2
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	6
+8CAM	Patient advised about alcohol	4
+8H46	Neurological referral	1
+8H54	Orthopaedic referral	1
+8H77	Refer to physiotherapist	1
+9N2e	Seen by ophthalmologist	1
+9N32	Third party encounter	1
+9N42	Did not attend - no reason	1
+9N4p	Did not attend diabetic retinopathy clinic	1
+9h4	Exception reporting: diabetes quality indicators	1
+9i0	British or mixed British - ethnic category 2001 census	3
+A37	Tetanus	1
+AMTA10145BRIDL	Amlodipine Besilate  Tablets  5 mg	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	17
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	16
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	20
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	21
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	20
+C10	Diabetes mellitus	3
+C1001	Diab.mell.no comp. - adult	1
+DIM/24452EMIS	Diclofenac Sodium  M/R capsules  100 mg	1
+E200z	Anxiety state NOS	1
+E3	Mental retardation	1
+EMISNQSM3	Unknown vendor specific drug	1
+F31z	Facial nerve disorder NOS	2
+F35z	Mononeuritis of unspecified site NOS	1
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G12	Rheumatic aortic valve disease	1
+GASTOUN2	Unknown vendor specific drug	3
+HEWITPE2	Unknown vendor specific drug	1
+ISIN33727EMIS	Isophane Insulin (Human Pyr)  Injection  100 units/ml, 10 ml vial	2
+L2442	Other uterine/pelvic floor abn - delivered+postpartum compl	13
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	1
+N051B	"Primary gonarthrosis	2
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	7
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	23
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	1
+SETA4308	Semi-Daonil  Tablets  2.5 mg	1

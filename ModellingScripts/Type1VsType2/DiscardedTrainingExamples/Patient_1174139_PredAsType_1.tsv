@@ -1,0 +1,133 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1371	Never smoked tobacco	4
+137L	Current non-smoker	1
+13A3	Weight reducing diet	1
+13B1	Diabetic diet	1
+1Z13	Chronic kidney disease stage 4	4
+229	O/E - height	13
+22A	O/E - weight	16
+22K	Body Mass Index	14
+2469	O/E - Systolic BP reading	23
+311A	Monofilament foot sensation test	5
+3211	ECG requested	2
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	6
+42W4	HbA1c level (DCCT aligned)	15
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	1
+44J3	Serum creatinine	30
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	2
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	7
+44QZ	Serum triglycerides NOS	1
+44TJ	Blood glucose level	2
+44U	Blood glucose result	4
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	4
+4662	Urine glucose test negative	1
+4665	Urine glucose test = ++	2
+4667	Urine glucose test = ++++	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	1
+4675	Urine protein test = ++	1
+4676	Urine protein test = +++	2
+4677	Urine protein test = ++++	2
+4682	Urine ketone test negative	4
+46M7	Urine creatinine	3
+46N	Urine protein	1
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	3
+46W	Urine microalbumin	3
+554	Coronary arteriogr.-general	1
+5858	Doppler studies	1
+66A5	Diabetic on insulin	3
+66Ac	Diabetic peripheral neuropathy screening	1
+6798	Health ed. - exercise	1
+6879	Hyperlipidaemia screen	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	5
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	1
+8H	Referral for further care	1
+8H4	Referral to physician	1
+8H44	Cardiological referral	1
+8H6	Referral to other doctor	1
+8H75	Refer to social worker	1
+8I73	Beta blocker not tolerated	1
+9180	Carer's details	1
+9NF7	Urgent home visit	2
+9NNC	Under care of retinal screener	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AD20	Pediculus capitis - head lice	1
+ADCH6282NEMIS	Adcal  Chewable tablets  1.5 grams	1
+ALCA74	Alfacalcidol  Capsules  250 nanograms	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	8
+ASDI224	Aspirin  Dispersible tablets  75 mg	14
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	4
+C10	Diabetes mellitus	1
+C104	Diabetes mellitus with renal manifestation	1
+C10FJ	Insulin treated Type 2 diabetes mellitus	1
+CAIN28236EMIS	Caverject  Injection  10 micrograms/vial	5
+CAIN4534NEMIS	Calciferol  Injection  300,000 units/ml, 1 ml ampoule	14
+CAM/18448NEMIS	Cardioplen Xl  M/R tablets  10 mg	6
+CAM/6442NEMIS	Cardura Xl  M/R tablets  4 mg	1
+CAM/6443NEMIS	Cardura Xl  M/R tablets  8 mg	1
+COUR12413NEMIS	Coloplast Simpla 2 Litre S1  Urine drainage bag  311102	1
+DEM/22793NEMIS	Detrunorm Xl  M/R capsules  30 mg	12
+DIM/423NEMIS	Diltiazem Hydrochloride  M/R capsules  360 mg	2
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	1
+DITA856	Diabinese  Tablets  100 mg	12
+E3	Mental retardation	5
+ERIN24326NEMIS	Ergocalciferol  Injection  300,000 units/ml, 2 ml ampoule	10
+F31z	Facial nerve disorder NOS	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F4130	Retinal defect unspecified	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	2
+FECA24144EMIS	Fenofibrate  Capsules  200 mg	1
+FOCA24984EMIS	Foley  Catheter (female)  14 ch	2
+FOCA24991EMIS	Foley  Catheter (male)  12 ch	2
+FRTA1248	Frusemide  Tablets  20 mg	9
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G3400	Single coronary vessel disease	2
+G665	Pure motor lacunar syndrome	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+H0402	Acute catarrhal laryngitis	2
+HUIN3719	Humulin M1  Injection	1
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	2
+K0D	End-stage renal disease	1
+L40	Major puerperal infection	8
+LEIGHTH12	Unknown vendor specific drug	2
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	5
+LESH1642	Lenium  Shampoo  2.5 %	1
+LETA32270EMIS	Levofloxacin  Tablets  500 mg	1
+LITA10719BRIDL	Lipostat  Tablets  10 mg	2
+LITA10721BRIDL	Lipostat  Tablets  20 mg	1
+LITA30125EMIS	Lipitor  Tablets  20 mg	4
+MACA8841BRIDL	Maxepa  Capsules  1 gram	7
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	10
+N051z	Localised primary OA NOS	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	4
+PK61	Sturge-Weber syndrome	1
+PRTA2324	Prazosin Hydrochloride  Tablets  5 mg	2
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	9
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	4
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	3

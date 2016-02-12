@@ -1,0 +1,136 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	2
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	5
+136V	Alcohol units per week	5
+1371	Never smoked tobacco	3
+1381	Exercise physically impossible	2
+1382	Avoids even trivial exercise	1
+1Z13	Chronic kidney disease stage 4	1
+229	O/E - height	5
+22A	O/E - weight	8
+22K	Body Mass Index	7
+22K7	Body mass index 40+ - severely obese	1
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	18
+29B9	10g monofilament sensation R foot abnormal	2
+29BB	10g monofilament sensation R foot normal	1
+2BBL	O/E - diabetic maculopathy present both eyes	1
+2BBO	O/E - Laser photocoagulation scars	1
+2BBT	O/E - right eye proliferative diabetic retinopathy	1
+3211	ECG requested	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	10
+42W5	Haemoglobin A1c level - IFCC standardised	1
+42c2	HbA1 > 10% - bad control	1
+44A1	Serum parathyroid hormone	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	5
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	15
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	5
+44PF	Total cholesterol:HDL ratio	6
+44Q	Serum triglycerides	10
+451E	GFR calculated abbreviated MDRD	8
+4618	Urine dipstick test	1
+4664	Urine glucose test = +	1
+4665	Urine glucose test = ++	1
+467	Urine protein test	1
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	2
+4676	Urine protein test = +++	2
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	2
+46TC	Urine albumin:creatinine ratio	5
+46W	Urine microalbumin	2
+5853	U-S heart scan	1
+58C1	Retinal photography	3
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	1
+66C9	Target weight discussed	2
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	2
+67IK	Advice about psychological well-being	1
+6896	Depression screening using questions	2
+8B63	Salicylate prophylaxis	5
+8B6A	Statin prophylaxis	2
+8BL2	Patient on maximal tolerated therapy for diabetes	3
+8H	Referral for further care	1
+8H52	Ophthalmological referral	2
+8H72	Refer to district nurse	2
+8H76	Refer to dietician	2
+8H7r	Refer to diabetic foot screener	3
+8HB1	Recall arranged	2
+8HHH	Refer to weight management programme	1
+8I3W	Diabetic foot examination declined	1
+8I3X	Diabetic retinopathy screening refused	1
+8I3Y	Blood pressure procedure refused	2
+8I62	Beta blocker not indicated	1
+8I6G	Diabetic foot examination not indicated	1
+8I73	Beta blocker not tolerated	1
+9N1v	Seen in diabetic eye clinic	1
+9N2P	Seen by chiropodist	2
+9N47	Appt cancelled by patient	1
+9NC3	Letter sent to patient	1
+9NDF	Fax received	1
+9NE8	Fax sent to:	1
+9OX5	Influenza vaccination declined	1
+9S10	White British	2
+9h01	Excepted from CHD quality indicators: Patient unsuitable	1
+9h31	Excepted from hypertension qual indicators: Patient unsuit	1
+9h42	Excepted from diabetes quality indicators: Informed dissent	3
+ALCA74	Alfacalcidol  Capsules  250 nanograms	2
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	8
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	5
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	3
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	2
+C1001	Diab.mell.no comp. - adult	1
+CACH9146BRIDL	Calcium Carbonate  Chewable tablets  Sugar Free 1.25 grams	1
+CAIN28236EMIS	Caverject  Injection  10 micrograms/vial	21
+CAIN4534NEMIS	Calciferol  Injection  300,000 units/ml, 1 ml ampoule	3
+CITA15860NEMIS	Cipralex  Tablets  20 mg	1
+DIE/26685EMIS	Diclofenac Sodium  E/C, M/R capsules  75 mg	3
+DIM/22313EMIS	Diclomax Retard  M/R capsules  100 mg	1
+E3	Mental retardation	5
+F	Nervous system and sense organ diseases	1
+F3610	Charcot-Marie-Tooth disease	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	3
+F5921	"Mix cond/sensin hear loss	1
+FECA4915	Ferrous Fumarate  Capsules  305 mg	1
+FECA9492HILLI	Fenofibrate  Capsules  100 mg	15
+FETA4917	Ferrous Fumarate  Tablets  304 mg	4
+FRTA1248	Frusemide  Tablets  20 mg	24
+Fyu51	[X]Other epilepsy	2
+G2	Hypertensive disease	2
+G5703	Paroxysmal nodal tachycardia	1
+G572	Paroxysmal tachycardia unspecified	1
+G84	Haemorrhoids	2
+H014	Acute rhinosinusitis	1
+HYST8709EGTON	Hytrin  Starter pack  7 x 1 mg, 21 x 2 mg	3
+ININ32907EMIS	Invicorp 2  Injection	2
+ININ3759	Pork Insulatard  Injection  100 units/ml, 10 ml vial	1
+INPR6343NEMIS	Insuman Comb 15 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+ISIN33727EMIS	Isophane Insulin (Human Pyr)  Injection  100 units/ml, 10 ml vial	4
+L40	Major puerperal infection	1
+L43z4	Obstetric pulmonary embolism NOS with postnatal complication	6
+MACA8841BRIDL	Maxepa  Capsules  1 gram	4
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	15
+PUJINST1	Unknown vendor specific drug	1

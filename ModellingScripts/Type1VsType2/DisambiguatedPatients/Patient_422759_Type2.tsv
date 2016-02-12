@@ -1,0 +1,117 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+136	Alcohol consumption	5
+1371	Never smoked tobacco	2
+1383	Enjoys light exercise	1
+138J	FITT activity level 1; 1-4 occas of mod/vig activit in 4 wks	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	6
+22A	O/E - weight	11
+22K	Body Mass Index	9
+2469	O/E - Systolic BP reading	18
+29B8	10g monofilament sensation absent	1
+29B9	10g monofilament sensation R foot abnormal	1
+2BBF	Retinal abnormality - diabetes related	3
+2G5F	O/E - Right diabetic foot at moderate risk	1
+2G5J	O/E - Left diabetic foot at moderate risk	1
+31281	Fundoscopy abnormal	2
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	1
+42U4	Red blood cell folate	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	8
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	5
+44I5	Serum sodium	1
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	20
+44M4	Serum albumin	1
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	5
+44Q	Serum triglycerides	5
+44TC	Haemoglobin A1 level	1
+44f1	Serum fasting glucose level	2
+451E	GFR calculated abbreviated MDRD	2
+4615	MSU sent to lab.	1
+4672	Urine protein test negative	1
+46TC	Urine albumin:creatinine ratio	3
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+67	Counselling/health education	1
+6799	Health ed. - diet	1
+6872	Diabetes mellitus screen	1
+6896	Depression screening using questions	1
+68A7	Diabetic retinopathy screening	1
+68A8	Digital retinal screening	1
+79275	Open angioplasty of coronary artery	1
+7B27	Endoscopic extirpation of bladder lesion	1
+7B2A6	Diagnostic cystoscopy using flexible instrument	1
+7B2A8	Check cystoscopy using flexible instrument	1
+7B390	Transurethral prostatectomy	1
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	1
+8CAM	Patient advised about alcohol	1
+8H	Referral for further care	2
+8H2	Emergency hospital admission	1
+8H43	Dermatological referral	1
+8H4B	Referred to rheumatologist	1
+8H5J	Referral to colorectal surgeon	1
+8H77	Refer to physiotherapist	1
+8HTJ	Referral to rapid access chest pain clinic	2
+8Hn0	Fast track referral for suspected skin cancer	1
+8IAG	Pandemic influenza vaccination declined	1
+9N2e	Seen by ophthalmologist	1
+9N32	Third party encounter	1
+9N37	Message given to patient	1
+9NF3	Home visit request by relative	2
+9i0	British or mixed British - ethnic category 2001 census	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	22
+ASDI224	Aspirin  Dispersible tablets  75 mg	15
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	4
+ATTA231	Atenolol  Tablets  50 mg	19
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	13
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	23
+C1001	Diab.mell.no comp. - adult	1
+C10N	Secondary diabetes mellitus	4
+CAIN31971EMIS	Caverject  Injection  5 micrograms/vial	7
+CAIN34034EMIS	Caverject  Injection  40 micrograms/vial	6
+CAIN4534NEMIS	Calciferol  Injection  300,000 units/ml, 1 ml ampoule	10
+CITA34452NEMIS	Unknown vendor specific drug	1
+COLE16434NEMIS	Coloplast Aquasleeve  Leg sleeve  extra large, 783708	1
+EPIN34463EMIS	Epoetin Beta  Injection (Prefilled Syringe)  5000 units/syringe	1
+F524	Purulent otitis media NOS	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	9
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G240	Secondary malignant hypertension	1
+GASTOUN2	Unknown vendor specific drug	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	2
+H037	Recurrent acute tonsillitis	1
+H1y1A	Nasal furuncle	1
+HUCA18384EMIS	Humulin M4  Cartridges (1.5 Ml)	1
+IRIN11056NEMIS	Iron Hydroxide Dextran Complex  Injection  50 mg/ml, 2 ml ampoule	1
+ISDU10518BRIDL	Isosorbide Mononitrate  Durules  60 mg	3
+K0D	End-stage renal disease	1
+LMRGPER1	Unknown vendor specific drug	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	2
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	21
+NICA1986	Nifedipine  Capsules  10 mg	1
+PK250	Aberrant thyroid gland	2
+PK61	Sturge-Weber syndrome	8
+POSH2300	Polytar  Shampoo	5
+QUTA10127BRIDL	Quinapril  Tablets  10 mg	1
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	1
+SCCA19035EMIS	Scott  Catheters  10 ch	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	7
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	2
+STTA2717	Stugeron  Tablets  15 mg	9

@@ -1,0 +1,110 @@
+Code	Description	Count
+03K1	Dietician	1
+136	Alcohol consumption	8
+137M	Rolls own cigarettes	2
+137R	Current smoker	2
+13l4	Main spoken language English	1
+1A57	Pain in testicle	1
+1AA	Prostatism	3
+1Z11	Chronic kidney disease stage 2	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	5
+22A	O/E - weight	16
+22K	Body Mass Index	7
+2469	O/E - Systolic BP reading	17
+29B7	10g monofilament sensation present	3
+29BB	10g monofilament sensation R foot normal	1
+2BBK	O/E - no left diabetic retinopathy	1
+2BBP	O/E - right eye background diabetic retinopathy	2
+311A	Monofilament foot sensation test	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42W	Hb. A1C - diabetic control	1
+42W5	Haemoglobin A1c level - IFCC standardised	6
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	6
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	14
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	21
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	17
+44P5	Serum HDL cholesterol level	16
+44P6	Serum LDL cholesterol level	16
+44PF	Total cholesterol:HDL ratio	15
+44Q	Serum triglycerides	17
+44TB	Haemoglobin A1c level	16
+44g	Plasma glucose level	15
+44lD	Urine protein/creatinine ratio	7
+451E	GFR calculated abbreviated MDRD	12
+451F	Glomerular filtration rate	1
+4673	Urine protein test = trace	2
+46M7	Urine creatinine	4
+46N	Urine protein	4
+46N4	Urine albumin	9
+46TC	Urine albumin:creatinine ratio	8
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+6791	Health ed. - smoking	6
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	4
+68A8	Digital retinal screening	1
+8A17	Self monitoring of blood glucose	3
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	6
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	4
+8H4B	Referred to rheumatologist	1
+8H51	General surgical referral	1
+8H5B	Referred to urologist	1
+8H7i	Referral to smoking cessation advisor	3
+8HQ2	Refer for ultrasound investign	1
+8HTK	Referral to stop-smoking clinic	1
+8IA3	Bowel cancer screening declined	1
+9N1K	Seen in ophthalmology clinic	1
+9N42	Did not attend - no reason	2
+9NC9	Letter sent to Driver and Vehicle Licensing Authority	1
+9i0	British or mixed British - ethnic category 2001 census	4
+A7814	Plain wart	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	13
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	3
+C10	Diabetes mellitus	1
+CATA20429EMIS	Calcium 500  Tablets  1.25 grams	1
+D3z	Clotting or bleeding disorder NOS	1
+E1123	"Single major depressive episode	1
+E200z	Anxiety state NOS	4
+E271	Anorexia nervosa	2
+E3	Mental retardation	2
+EMISSPR460	Unknown vendor specific drug	1
+EPPR23873NEMIS	Epoetin Alfa  Prefilled syringe  20,000 units/0.5 ml	1
+ERCA4890	Erythromycin  Capsules (Gastro-Resistant)  250 mg	3
+F4K21	Vitreous detachment	1
+F4K2z	Vitreous disorders NOS	1
+FECA1203NEMIS	Fenofibrate  Capsules  (Micronised) 267 mg	2
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	1
+G86	Noninfective lymphatic disorders	3
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H014	Acute rhinosinusitis	1
+HEWITNE4	Unknown vendor specific drug	16
+HEWITPE2	Unknown vendor specific drug	7
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	3
+MACA8841BRIDL	Maxepa  Capsules  1 gram	17
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	1
+PETA2207	Persantin  Tablets  25 mg	2
+PH54	Congenital onychauxis	2
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	24
+S13	Fracture or disruption of pelvis	1
+S3zz	Fracture of bones NOS	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	21
+SETA2508	Secadrex  Tablets	1
+SETA4308	Semi-Daonil  Tablets  2.5 mg	1
+STTA2717	Stugeron  Tablets  15 mg	5
+SYIN4367	Synacthen Depot  Injection  1 mg/ml	1

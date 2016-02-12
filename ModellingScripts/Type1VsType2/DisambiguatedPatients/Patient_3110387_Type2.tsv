@@ -1,0 +1,129 @@
+Code	Description	Count
+03I	Opticians	1
+1361	Teetotaller	1
+137R	Current smoker	2
+1BT	Depressed mood	1
+1F2	Dietary fibre intake	1
+229	O/E - height	13
+22A	O/E - weight	15
+22K	Body Mass Index	15
+246	O/E - blood pressure reading	9
+2464	O/E - BP reading normal	2
+2469	O/E - Systolic BP reading	18
+246A	O/E - Diastolic BP reading	18
+24E6	O/E - R.post.tib.pulse present	2
+29B7	10g monofilament sensation present	1
+3128	Fundoscopy	1
+32	Electrocardiography	2
+321	ECG - general	1
+423	Haemoglobin estimation	5
+4258	Haematocrit	1
+426	Red blood cell (RBC) count	2
+428	Mean corpusc. haemoglobin(MCH)	3
+429	Mean corpusc. Hb. conc. (MCHC)	2
+42A	Mean corpuscular volume (MCV)	4
+42B6	Erythrocyte sedimentation rate	2
+42P	Platelet count	1
+42R4	Serum ferritin	1
+42R5	Serum TIBC	1
+42R9	Saturation of iron binding capacity	1
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	4
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CS	Serum C reactive protein level	3
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	21
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	24
+44J9	Serum urea level	3
+44Le	Plasma vitamin B12 level	2
+44M4	Serum albumin	2
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	5
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	7
+44TB	Haemoglobin A1c level	12
+44g	Plasma glucose level	3
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	15
+46	Urine examination	2
+461	Urine exam. - general	2
+4672	Urine protein test negative	5
+46M7	Urine creatinine	7
+46TC	Urine albumin:creatinine ratio	3
+46W	Urine microalbumin	7
+585	Other diagnostic ultrasound	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	2
+6791	Health ed. - smoking	1
+6896	Depression screening using questions	1
+68A7	Diabetic retinopathy screening	1
+7A611	Repair of acquired arteriovenous fistula	2
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	1
+8CA47	Patient advised re low cholesterol diet	1
+8CA5	Patient advised re exercise	1
+8H	Referral for further care	1
+8H44	Cardiological referral	1
+8H76	Refer to dietician	1
+8HBG	Diabetic retinopathy 12 month review	1
+9N1v	Seen in diabetic eye clinic	1
+9N2U	Seen by optician	1
+9SZ	Ethnic groups (census) NOS	1
+9i2B	Italian - ethnic category 2001 census	1
+E	Mental disorders	1
+E0020	Senile dementia with paranoia	1
+E271	Anorexia nervosa	1
+Fyu4	[X]Demyelinating diseases of the central nervous system	2
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	2
+G240	Secondary malignant hypertension	1
+H036	Acute viral tonsillitis	1
+H043	Acute epiglottitis (non strep)	1
+N0951	Stiff joint NEC-shoulder	1
+U60E3	[X]Benzothiadiazine derivs caus advers effect in therap use	2
+UNS/8595EGTON	Univer  M/R capsules  240 mg	2
+X772z	Unknown vendor specific drug	1
+Xa0Xy	Unknown vendor specific drug	1
+Xa3Xp	Unknown vendor specific drug	1
+Xa5um	Unknown vendor specific drug	1
+ZATA22328NEMIS	Zanidip  Tablets  20 mg	1
+ZETA8600EGTON	Zestril  Tablets  10 mg	1
+ZV125	[V]Personal history of circulatory system disease	10
+bb3P	VERA-TIL SR 240mg m/r tablets	22
+bd34	TENORMIN LS 50mg tablets	7
+bdl4	CARVEDILOL 25mg tablets	3
+bk48	CO-DIOVAN 160mg/25mg tablets	11
+bk4w	VALSARTAN 40mg tablets	25
+bl5y	ANGITIL XL 300 m/r capsules	9
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	6
+bly5	ISOSORBIDE DINITRATE 20mg m/r tablets	1
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	1
+br2C	000iu/0.4mL syrg"	10
+bx44	COLESTIPOL orange 5g/sachet granules	29
+d243	CHLORDIAZEPOXIDE HYDROCHLORIDE 5mg tablets	1
+d244	CHLORDIAZEPOXIDE HYDROCHLORIDE 10mg tablets	1
+d71v	AMITRIPTYLINE 50mg m/r capsules	1
+d73v	CLOMIPRAMINE HCL 25mg capsules	1
+daBy	MIRTAZAPINE 45mg tablets	1
+df62	REDUCTIL 10mg capsules	1
+dia3	CO-CODAMOL 8mg/500mg dispersible tablets	1
+dia6	CO-DYDRAMOL tablets	1
+dicz	PARACETAMOL+TRAMADOL HYDROCHLORIDE 325mg/37.5mg tablets	1
+dj1L	MORPHINE SULPHATE 10mg/5mL oral solution	1
+f27g	HUMULIN M4 40/60 cartridges 1.5mL	2
+f321	CHLORPROPAMIDE 100mg tablets	2
+fe5e	DEPO-MEDRONE 120mg/3mL injection	2
+fo8x	IBANDRONIC ACID 150mg tablets	2
+j28B	IBUPROFEN 800mg m/r tablets	1
+j2b2	PONSTAN 250mg capsules	1
+j2e3	FELDENE 10mg capsules	1
+j2q1	KERAL 25mg tablets	3
+j2rz	DICLOFENAC POTASSIUM 50mg tablets	1

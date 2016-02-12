@@ -1,0 +1,111 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1371	Never smoked tobacco	1
+137L	Current non-smoker	1
+137S	Ex smoker	2
+13l4	Main spoken language English	1
+1A1	Micturition frequency	4
+229	O/E - height	3
+22A	O/E - weight	11
+22K	Body Mass Index	11
+246	O/E - blood pressure reading	18
+2465	O/E - BP borderline raised	1
+29B7	10g monofilament sensation present	2
+29H1	O/E - vibration sense normal	1
+3128	Fundoscopy	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	4
+42U5	Serum folate	3
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	2
+42c0	HbA1 < 7% - good control	1
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	6
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	5
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	14
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	6
+44Q	Serum triglycerides	8
+44TB	Haemoglobin A1c level	7
+44g	Plasma glucose level	2
+44g1	Plasma fasting glucose level	3
+44lD	Urine protein/creatinine ratio	3
+451E	GFR calculated abbreviated MDRD	4
+4613	Urinalysis = no abnormality	4
+4618	Urine dipstick test	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+46M7	Urine creatinine	1
+46N	Urine protein	2
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	6
+46U	Urine culture	3
+46W1	Urine microalbumin negative	1
+4JJ1	MSU sent for C/S	6
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+6791	Health ed. - smoking	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	2
+8H4F	Referral to diabetologist	1
+8H52	Ophthalmological referral	1
+8H54	Orthopaedic referral	1
+8H77	Refer to physiotherapist	1
+8H7n	Referral to retinal screener	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N31	Telephone encounter	1
+9OI4	Hypertens.monitor.1st letter	1
+9S1	White	1
+C10	Diabetes mellitus	1
+E2B	Depressive disorder NEC	1
+EGTON460	Unknown vendor specific drug	1
+FLTA1217	Flurbiprofen  Tablets  50 mg	1
+FLTA22563EMIS	Flavoxate Hydrochloride  Tablets  200 mg	1
+Fyu51	[X]Other epilepsy	2
+H03z	Acute tonsillitis NOS	1
+H0421	Acute laryngotracheitis with obstruction	1
+K100	Chronic pyelonephritis	1
+K1012	Acute pyelitis	1
+K12z	Urinary calculus NOS	2
+N050	Generalised osteoarthritis - OA	1
+N07y5	Locked knee	1
+ZV579	[V]Cardiac rehabilitation	10
+bB1y	IVABRADINE 7.5mg tablets	5
+bb1x	AMIODARONE HYDROCHLORIDE 100mg tablets	15
+bdl5	CARVEDILOL 3.125mg tablets	25
+bh61	DOXAZOSIN 1mg tablets	1
+bh62	DOXAZOSIN 2mg tablets	1
+bh63	DOXAZOSIN 4mg tablets	1
+bh65	CARDURA 2mg tablets	31
+bi6	RAMIPRIL	5
+bl5y	ANGITIL XL 300 m/r capsules	1
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	22
+bn5x	MOXISYLYTE 40mg tablets	17
+bx11	BEZALIP 200mg tablets	23
+e781	OXYTETRACYCLINE 250mg capsules	2
+eh8i	FLUCONAZOLE 150mg capsule + CLOTRIMAZOLE 2% cream	13
+f12C	HUMAJECT S 100iu/mL prefilled pen	10
+f41y	METFORMIN HYDROCHLORIDE 500mg tablets	2
+gc6z	ALFUZOSIN HYDROCHLORIDE 10mg m/r tablets	1
+gc71	TAMSULOSIN HYDROCHLORIDE 400micrograms m/r capsules	1
+ip3a	CALCIUM AND ERGOCALCIFEROL 400units tablets	3

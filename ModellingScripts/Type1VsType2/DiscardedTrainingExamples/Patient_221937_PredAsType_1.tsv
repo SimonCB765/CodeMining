@@ -1,0 +1,132 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	10
+137S	Ex smoker	4
+137T	Date ceased smoking	1
+13l4	Main spoken language English	1
+1A53	Lumbar ache - renal	2
+1B17	Depressed	1
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	4
+22A	O/E - weight	16
+22K	Body Mass Index	15
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	27
+2841	Confused	1
+29B1	O/E - tactile sensation normal	1
+29B7	10g monofilament sensation present	2
+29B8	10g monofilament sensation absent	1
+2BB1	O/E - retina normal	1
+2BBA	Examination of retina	1
+2BBE	O/E - Left retina normal	1
+31280	Fundoscopy normal	1
+31281	Fundoscopy abnormal	1
+32	Electrocardiography	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	14
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44AP	Serum pro-brain natriuretic peptide level	1
+44CC	Plasma C reactive protein	6
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	21
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	13
+44U	Blood glucose result	3
+44g	Plasma glucose level	1
+44g1	Plasma fasting glucose level	3
+451E	GFR calculated abbreviated MDRD	10
+4615	MSU sent to lab.	1
+4618	Urine dipstick test	6
+4662	Urine glucose test negative	1
+467	Urine protein test	1
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	2
+4675	Urine protein test = ++	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46A2	Urine pH = 5.0	1
+46M7	Urine creatinine	4
+46N4	Urine albumin	7
+46TC	Urine albumin:creatinine ratio	8
+46TD	Urine microalbumin:creatinine ratio	1
+46W	Urine microalbumin	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	6
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+81H1	Dressing of ulcer	1
+8A17	Self monitoring of blood glucose	1
+8A18	Self monitoring of urine glucose	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	6
+8CAM	Patient advised about alcohol	1
+8H	Referral for further care	1
+8H43	Dermatological referral	2
+8H5F	Refer to maxillofacial surgeon	1
+8H77	Refer to physiotherapist	1
+8H7R	Refer to chiropodist	2
+8H7X	Refer to podiatry	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	2
+9N42	Did not attend - no reason	4
+9N4H	DNA hospital appointment	1
+9h41	Excepted from diabetes qual indicators: Patient unsuitable	2
+9i2	Other White background - ethnic category 2001 census	1
+AB230	Candidal intertrigo	1
+AB23z	Candidiasis of skin and nails NOS	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+ASTA4609	Aspirin  Tablets  75 mg	14
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	11
+CAIN34034EMIS	Caverject  Injection  40 micrograms/vial	1
+CITA18898EMIS	Cilazapril  Tablets  2.5 mg	3
+CONE5708NEMIS	Coloplast Speedicath  Nelaton catheter (male)  14ch, 28414	1
+D4100	Stress polycythaemia	3
+DIRE4825	Diazepam  Rectal tubes  10 mg dose (4 mg/ml, 2.5 ml tube)	1
+E3	Mental retardation	1
+EMISNQRE5	Unknown vendor specific drug	1
+F36z	Hereditary or idiopathic peripheral neuropathy NOS	1
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	2
+G86	Noninfective lymphatic disorders	4
+GASTOUN2	Unknown vendor specific drug	1
+H014	Acute rhinosinusitis	1
+HEWITLE2	Unknown vendor specific drug	1
+HUCA18384EMIS	Humulin M4  Cartridges (1.5 Ml)	6
+ININ32907EMIS	Invicorp 2  Injection	7
+ININ3759	Pork Insulatard  Injection  100 units/ml, 10 ml vial	6
+ININ4906NEMIS	Insuman Comb 15  Injection  100 units/ml, 5 ml vial	6
+ISTA1519	Isosorbide Dinitrate  Tablets  10 mg	1
+L11z	Antepartum haemorrhage NOS	2
+M21yC	Insulin lipohypertrophy	18
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	1
+MAPO12554NEMIS	Manfred Sauer Uribag  Pocket sized reusable urinal, 1.1 litre capacity  Uribag	1
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	16
+MIOR16205NEMIS	Mirtazapine  Orodispersible tablets  30 mg	2
+MIOR16890NEMIS	Mirtazapine  Orodispersible tablets  15 mg	1
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	2
+PG2	Cervical rib	1
+POIN35125EMIS	Pork Actrapid  Injection  100 units/ml, 10 ml vial	12
+PRTA2322	Prazosin Hydrochloride  Tablets  1 mg	2
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	3
+R081	[D]Dysuria	1

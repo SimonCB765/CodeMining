@@ -1,0 +1,95 @@
+Code	Description	Count
+136	Alcohol consumption	9
+1371	Never smoked tobacco	2
+1FA	Diet good	2
+229	O/E - height	4
+22A	O/E - weight	12
+22K	Body Mass Index	12
+2469	O/E - Systolic BP reading	22
+29BB	10g monofilament sensation R foot normal	3
+2BBI	O/E - no retinopathy	1
+3216	ECG normal	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	5
+42W4	HbA1c level (DCCT aligned)	11
+44CC	Plasma C reactive protein	1
+44CS	Serum C reactive protein level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44J3	Serum creatinine	20
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	5
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	2
+44f0	Serum random glucose level	13
+44g1	Plasma fasting glucose level	4
+451E	GFR calculated abbreviated MDRD	8
+467	Urine protein test	2
+4671	Urine protein test not done	2
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	4
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	7
+46W2	Microalbumin excretion rate	5
+58530	Echocardiogram normal	1
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	1
+6896	Depression screening using questions	2
+68A8	Digital retinal screening	2
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	5
+8H44	Cardiological referral	1
+9N1v	Seen in diabetic eye clinic	1
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	2
+9N3G	SMS text message sent to patient	3
+9N42	Did not attend - no reason	1
+9NND	Under care of diabetic foot screener	1
+9S12	Other white ethnic group	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	13
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	6
+AMTA9080EMIS	Amlodipine Besilate  Tablets  10 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	15
+ATTA231	Atenolol  Tablets  50 mg	21
+BUTA434	Bumetanide  Tablets  1 mg	16
+CECA17567NEMIS	Cefalexin  Capsules  250 mg	4
+COTA9346HILLI	Co-Flumactone 50/50  Tablets	2
+CYTA779	Cyclopenthiazide  Tablets  500 micrograms	2
+D0130	Combined B12 and folate deficiency anaemia	1
+DITA884	Diclofenac Sodium  M/R tablets  100 mg	9
+EMISSPR130	Unknown vendor specific drug	15
+F35z	Mononeuritis of unspecified site NOS	1
+F3610	Charcot-Marie-Tooth disease	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	3
+FRTA1247	Frumil  Tablets	3
+FRTA1248	Frusemide  Tablets  20 mg	3
+Fyu51	[X]Other epilepsy	2
+G5700	Paroxysmal atrial tachycardia	2
+GASTOUR2	Unknown vendor specific drug	21
+GLTA5912	Glurenorm  Tablets  30 mg	2
+L264z	Intrauterine death NOS	1
+L43z4	Obstetric pulmonary embolism NOS with postnatal complication	6
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	13
+N07y5	Locked knee	1
+NIM/21970EMIS	Nitrofurantoin  M/R capsules  100 mg	3
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	3
+Pyu70	[X]Other cystic kidney diseases	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	14
+S234B	Closed fracture radial styloid	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	7
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	11
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	1

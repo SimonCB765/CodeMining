@@ -1,0 +1,122 @@
+Code	Description	Count
+136	Alcohol consumption	10
+1361	Teetotaller	1
+1373	Light smoker - 1-9 cigs/day	1
+137P	Cigarette smoker	1
+137R	Current smoker	4
+1382	Avoids even trivial exercise	1
+1384	Enjoys moderate exercise	1
+13HT1	Stress at home	1
+13l4	Main spoken language English	1
+1A55	Dysuria	1
+229	O/E - height	5
+22A	O/E - weight	15
+22K	Body Mass Index	10
+2469	O/E - Systolic BP reading	20
+29BB	10g monofilament sensation R foot normal	3
+29H5	O/E - Vibration sense of right foot normal	1
+2BB1	O/E - retina normal	1
+2BBP	O/E - right eye background diabetic retinopathy	1
+2BBQ	O/E - left eye background diabetic retinopathy	1
+311A	Monofilament foot sensation test	2
+423	Haemoglobin estimation	1
+428	Mean corpusc. haemoglobin(MCH)	1
+42A	Mean corpuscular volume (MCV)	1
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44CC	Plasma C reactive protein	2
+44CC1	C reactive protein abnormal	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	3
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	18
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	9
+44TB	Haemoglobin A1c level	13
+44TC	Haemoglobin A1 level	1
+44U	Blood glucose result	2
+44g	Plasma glucose level	5
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	3
+4618	Urine dipstick test	1
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	3
+4675	Urine protein test = ++	1
+4676	Urine protein test = +++	2
+4679	Urine dipstick for protein	1
+467E	Urine protein level	1
+46M7	Urine creatinine	1
+46N	Urine protein	1
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	1
+46TD	Urine microalbumin:creatinine ratio	3
+58C1	Retinal photography	4
+65720	Pneumococcal vaccination given	1
+66A3	Diabetic on diet only	1
+66A5	Diabetic on insulin	3
+66C9	Target weight discussed	1
+6791	Health ed. - smoking	3
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+6896	Depression screening using questions	3
+68NE	No consent - influenza imm.	1
+7B2Az	Diagnostic cystoscopy NOS	1
+8A17	Self monitoring of blood glucose	2
+8B28	Lipid lowering therapy	1
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	4
+8H21	Admit medical emergency unsp.	1
+8H58	Gynaecological referral	2
+8H7	Other referral	1
+8H7H	Refer to optician	2
+8HA2	Return only if necessary	1
+8HJA	Trauma self-referral	1
+8I5Z	Care/help refused NOS	1
+9N2e	Seen by ophthalmologist	2
+9N32	Third party encounter	1
+9N4H	DNA hospital appointment	1
+9i0	British or mixed British - ethnic category 2001 census	1
+A083	Diarrhoea of presumed infectious origin	1
+AB2	Candidiasis	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	17
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	6
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	15
+BUTA434	Bumetanide  Tablets  1 mg	25
+C10	Diabetes mellitus	10
+DIM/24452EMIS	Diclofenac Sodium  M/R capsules  100 mg	1
+E112	Single major depressive episode	1
+E117	Unspecified bipolar affective disorder	2
+F132z	Myoclonus NOS	1
+F261z	Common migraine NOS	1
+Fyu51	[X]Other epilepsy	4
+G570	Paroxysmal supraventricular tachycardia	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+H036	Acute viral tonsillitis	1
+H037	Recurrent acute tonsillitis	1
+H5y4	Disorders of diaphragm	1
+HEWITAS11	Unknown vendor specific drug	1
+HYLO5009	Hydrocortisone(As Sodium Succinate)  Lozenges  Sugar Free 2.5 mg	1
+Hyu02	[X]Acute tonsillitis due to other specified organisms	13
+ININ32907EMIS	Invicorp 2  Injection	27
+K0D	End-stage renal disease	2
+L40	Major puerperal infection	2
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	2
+LMRGPCH3	Unknown vendor specific drug	2
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	24
+N081B	Loose body in elbow joint	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	6
+S10A1	Fracture of second cervical vertebra	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	3
+TAM/28659EMIS	Tamsulosin Hydrochloride  M/R capsules  400 micrograms	2

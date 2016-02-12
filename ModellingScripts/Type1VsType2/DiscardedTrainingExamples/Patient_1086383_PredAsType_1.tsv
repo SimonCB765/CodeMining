@@ -1,0 +1,111 @@
+Code	Description	Count
+136	Alcohol consumption	6
+137L	Current non-smoker	2
+137S	Ex smoker	1
+1383	Enjoys light exercise	2
+13l4	Main spoken language English	1
+1A1	Micturition frequency	1
+1A33	Micturition stream poor	1
+1B17	Depressed	1
+229	O/E - height	17
+22A	O/E - weight	22
+22K	Body Mass Index	22
+2469	O/E - Systolic BP reading	26
+29B7	10g monofilament sensation present	2
+29BB	10g monofilament sensation R foot normal	1
+2BB1	O/E - retina normal	1
+2BBD	O/E - Right retina normal	1
+2BBP	O/E - right eye background diabetic retinopathy	1
+311A	Monofilament foot sensation test	1
+31280	Fundoscopy normal	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42W	Hb. A1C - diabetic control	6
+42W4	HbA1c level (DCCT aligned)	14
+42W5	Haemoglobin A1c level - IFCC standardised	1
+42c1	HbA1 7 - 10% - borderline control	2
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	3
+44I5	Serum sodium	2
+44J3	Serum creatinine	21
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	9
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	2
+44g	Plasma glucose level	1
+4614	Urinalysis = abnormal	1
+4615	MSU sent to lab.	1
+4667	Urine glucose test = ++++	1
+467	Urine protein test	1
+4672	Urine protein test negative	2
+4674	Urine protein test = +	1
+46M7	Urine creatinine	3
+46TC	Urine albumin:creatinine ratio	7
+46TD	Urine microalbumin:creatinine ratio	1
+46W	Urine microalbumin	2
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	2
+66A5	Diabetic on insulin	1
+66AD	Fundoscopy - diabetic check	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	2
+6896	Depression screening using questions	1
+68A7	Diabetic retinopathy screening	3
+68NE	No consent - influenza imm.	2
+8A17	Self monitoring of blood glucose	1
+8B3T	Over the counter aspirin therapy	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	1
+8H	Referral for further care	1
+8H4	Referral to physician	1
+8H54	Orthopaedic referral	2
+8H78	Refer to counsellor	2
+8HV3	Private referral to orthopaedic surgeon	1
+8HVA	Private referral to urologist	1
+9N1Q	Seen in diabetic clinic	1
+9N2U	Seen by optician	1
+9N42	Did not attend - no reason	1
+9S10	White British	1
+9h41	Excepted from diabetes qual indicators: Patient unsuitable	1
+9i0	British or mixed British - ethnic category 2001 census	4
+ASDI224	Aspirin  Dispersible tablets  75 mg	17
+ATTA231	Atenolol  Tablets  50 mg	23
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	1
+C1000	Diab.mell.no comp. - juvenile	5
+CHENJSE3	Unknown vendor specific drug	4
+COTA21151NEMIS	Cozaar-Comp  Tablets  100 mg + 25 mg	3
+E200z	Anxiety state NOS	3
+F152	Motor neurone disease	1
+F4K21	Vitreous detachment	1
+F5812	Noise-induced hearing loss	6
+G12	Rheumatic aortic valve disease	1
+G21z0	Hypertensive heart disease NOS without CCF	1
+G240	Secondary malignant hypertension	1
+G341	Aneurysm of heart	1
+GASTOTR2	Unknown vendor specific drug	3
+GLCF26905EMIS	Glyceryl Trinitrate  Cfc-free pump spray  400 micrograms/dose	1
+H18	Vasomotor rhinitis	2
+HUCA18384EMIS	Humulin M4  Cartridges (1.5 Ml)	1
+ISIN33727EMIS	Isophane Insulin (Human Pyr)  Injection  100 units/ml, 10 ml vial	1
+K12z	Urinary calculus NOS	3
+L245	Cervical incompetence	8
+MACA8841BRIDL	Maxepa  Capsules  1 gram	9
+MEOR35740NEMIS	Unknown vendor specific drug	3
+META10489BRIDL	Mepacrine Hydrochloride  Tablets  100 mg	6
+N07z	Internal knee derangement NOS	2
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	10
+POFO4257NEMIS	Coloplast Folysil All Silicone  Foley catheter (male)  14ch, AA71	5
+POIN35125EMIS	Pork Actrapid  Injection  100 units/ml, 10 ml vial	8
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	22
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	7
+SETA2508	Secadrex  Tablets	4
+SETA4308	Semi-Daonil  Tablets  2.5 mg	1

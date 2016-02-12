@@ -1,0 +1,113 @@
+Code	Description	Count
+137A	Ex-heavy smoker (20-39/day)	1
+137L	Current non-smoker	3
+137S	Ex smoker	1
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	2
+13lC	Main spoken language Polish	1
+1A23	Incontinence of urine	1
+1AA	Prostatism	1
+1Z12	Chronic kidney disease stage 3	1
+1Z1F	Chronic kidney disease stage 3B with proteinuria	1
+229	O/E - height	3
+22A	O/E - weight	14
+22K	Body Mass Index	14
+2469	O/E - Systolic BP reading	25
+29B7	10g monofilament sensation present	3
+2BB1	O/E - retina normal	2
+2BBZ	O/E - retinal inspection NOS	1
+311A	Monofilament foot sensation test	1
+3211	ECG requested	2
+388B	Pack years	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	15
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	22
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	6
+44U	Blood glucose result	1
+451E	GFR calculated abbreviated MDRD	8
+4662	Urine glucose test negative	1
+467	Urine protein test	1
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+46M7	Urine creatinine	5
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	7
+46W	Urine microalbumin	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+66C9	Target weight discussed	2
+6791	Health ed. - smoking	1
+6798	Health ed. - exercise	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+68A8	Digital retinal screening	3
+792	Coronary artery operations	1
+7939	Catheterisation of heart	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	2
+8H43	Dermatological referral	2
+8H46	Neurological referral	1
+8H52	Ophthalmological referral	1
+8H76	Refer to dietician	1
+8H7f	Referral to diabetes nurse	1
+8I28	Angiotensin converting enzyme inhibitors contraindicated	3
+8I74	Angiotensin converting enzyme inhibitor not tolerated	2
+8I75	Angiotensin II receptor antagonist not tolerated	2
+9N2V	Seen by optometrist	1
+9N42	Did not attend - no reason	1
+9i0	British or mixed British - ethnic category 2001 census	1
+A531	Herpes zoster with other central nervous system complication	1
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	14
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	22
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	8
+BEMO28663EMIS	Betamethasone Valerate  Mousse  0.12 % (= 0.1 % betamethasone)	1
+BUTA434	Bumetanide  Tablets  1 mg	20
+C10	Diabetes mellitus	2
+C109J	Insulin treated Type 2 diabetes mellitus	1
+COLE25200NEMIS	Coloplast Simpla Profile  Leg bag  750 ml, 25 cm tube, 21594	1
+E3	Mental retardation	5
+F426z	Peripheral retinal degeneration NOS	1
+F522	"Chronic suppurative otitis media	1
+Fyu51	[X]Other epilepsy	1
+G12	Rheumatic aortic valve disease	1
+G240	Secondary malignant hypertension	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	10
+H014	Acute rhinosinusitis	1
+HEWITCA1	Unknown vendor specific drug	10
+HYTA8712EGTON	Hytrin  Tablets  5 mg	6
+IRTA18541NEMIS	Irbesartan And Hydrochlorothiazide  Tablets  300 mg + 12.5 mg	1
+LMRGPER1	Unknown vendor specific drug	17
+LMRGPGP2	Unknown vendor specific drug	3
+M2150	Excessive granulation tissue	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MESU11377NEMIS	Metformin Hydrochloride  Suspension  500 mg/5 ml	9
+N083q	Recurrent subluxation of the patella	1
+NATA1940	Nardil  Tablets  15 mg	3
+NICA1986	Nifedipine  Capsules  10 mg	2
+PRTA2322	Prazosin Hydrochloride  Tablets  1 mg	1
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	1
+R1100	[D]Albuminuria	1
+SCCA19035EMIS	Scott  Catheters  10 ch	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	14

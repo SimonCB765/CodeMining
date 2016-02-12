@@ -1,0 +1,129 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	1
+135	Religion	1
+136	Alcohol consumption	8
+1371	Never smoked tobacco	4
+13l4	Main spoken language English	2
+16D1	Recurrent falls	1
+1A12	Frequency of micturition	1
+1A23	Incontinence of urine	1
+1F6	Dietary carbohydrate intake	1
+229	O/E - height	4
+22A	O/E - weight	8
+22K	Body Mass Index	7
+246	O/E - blood pressure reading	24
+29B7	10g monofilament sensation present	1
+29H7	O/E - Vibration sense of left foot normal	1
+311A	Monofilament foot sensation test	1
+3211	ECG requested	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	5
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	4
+42U5	Serum folate	3
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	13
+42c1	HbA1 7 - 10% - borderline control	1
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	1
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	1
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	14
+44J9	Serum urea level	4
+44LA	Serum vitamin D	1
+44M4	Serum albumin	3
+44OE	Plasma total cholesterol level	1
+44P	Serum cholesterol	7
+44P5	Serum HDL cholesterol level	4
+44P6	Serum LDL cholesterol level	3
+44Q	Serum triglycerides	7
+44TJ	Blood glucose level	1
+44g1	Plasma fasting glucose level	2
+451E	GFR calculated abbreviated MDRD	8
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	2
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46TC	Urine albumin:creatinine ratio	2
+4JJ4	Catheter urine -> culture.	1
+58C1	Retinal photography	1
+66A4	Diabetic on oral treatment	2
+6879	Hyperlipidaemia screen	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+68NE	No consent - influenza imm.	1
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	1
+8H21	Admit medical emergency unsp.	1
+8H58	Gynaecological referral	1
+8H72	Refer to district nurse	1
+8HBA	Follow up in outpatient clinic	1
+8HE2	Discharged from inpatient care	2
+8I3W	Diabetic foot examination declined	1
+9N2f	Seen by retinal screener	1
+9NU1	Interpreter not needed	1
+9NY1	First outpatient appointment date	1
+9S1	White	1
+9i7	Indian or British Indian - ethnic category 2001 census	1
+9i8	Pakistani or British Pakistani - ethnic category 2001 census	1
+9iA	Other Asian background - ethnic category 2001 census	1
+AB211	Candidiasis of vagina	1
+AD20	Pediculus capitis - head lice	1
+C1001	Diab.mell.no comp. - adult	1
+E3	Mental retardation	1
+EGTON460	Unknown vendor specific drug	1
+F261	Common migraine	1
+F48z	Visual disturbance NOS	1
+Fyu51	[X]Other epilepsy	3
+G551	Hypertrophic obstructive cardiomyopathy	1
+G581	Left ventricular failure	1
+H1y1A	Nasal furuncle	1
+J17y9	Gastric angiodysplasia	1
+MOTA8433BRID	Monocor  Tablets  5 mg	1
+N050	Generalised osteoarthritis - OA	2
+PATELNO1	Unknown vendor specific drug	1
+PAYNENO26	Unknown vendor specific drug	1
+PUJINST1	Unknown vendor specific drug	2
+Pyu70	[X]Other cystic kidney diseases	2
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	1
+ZV125	[V]Personal history of circulatory system disease	1
+ZV579	[V]Cardiac rehabilitation	2
+bdfw	BISOPROLOL FUMARATE 1.25mg tablets	1
+bdl5	CARVEDILOL 3.125mg tablets	7
+bdmz	NEBIVOLOL 5mg tablets	5
+be3x	MINOXIDIL 2.5mg tablets	4
+bi2x	ENALAPRIL MALEATE 10mg tablets x28	1
+bi2y	ENALAPRIL MALEATE 20mg tablets	1
+bi2z	ENALAPRIL MALEATE 20mg tablets x28	13
+bi33	LISINOPRIL 10mg tablets	18
+bl5y	ANGITIL XL 300 m/r capsules	13
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	6
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	15
+e3zq	AMOXICILLIN powder 3g/sachet	1
+e772	*MINOCIN 100mg tablets	2
+f27e	HUMULIN M3 30/70 cartridges 1.5mL	7
+f27g	HUMULIN M4 40/60 cartridges 1.5mL	12
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	22
+f321	CHLORPROPAMIDE 100mg tablets	1
+f35y	GLICLAZIDE 30mg m/r tablets	1
+ft9z	EXENATIDE 5micrograms/0.02mL injection prefilled pen	1
+he51	*ZOLADEX 3.6mg implant	6
+ig1c	CALCIUM CARBONATE 1.25g chewable tablets	4
+ip3a	CALCIUM AND ERGOCALCIFEROL 400units tablets	5
+j22v	DICLOFENAC SODIUM 50mg tablets	1
+j282	IBUPROFEN 400mg tablets	1
+j2cu	NAPROXEN tablet+MISOPROSTOL tablet 500mg/200micrograms pack	1
+j2e2	PIROXICAM 20mg capsules	1

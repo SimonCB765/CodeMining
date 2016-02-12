@@ -1,0 +1,108 @@
+Code	Description	Count
+1361	Teetotaller	2
+1362	Trivial drinker - <1u/day	3
+1363	Light drinker - 1-2u/day	1
+136Z	Alcohol consumption NOS	2
+1372	Trivial smoker - < 1 cig/day	1
+1373	Light smoker - 1-9 cigs/day	1
+137L	Current non-smoker	4
+137S	Ex smoker	1
+1381	Exercise physically impossible	5
+1A1	Micturition frequency	1
+1BT	Depressed mood	1
+1FC	Diet average	4
+229	O/E - height	8
+22A	O/E - weight	17
+22K	Body Mass Index	14
+22K2	Body Mass Index high K/M2	1
+22N0	Waist circumference	1
+246	O/E - blood pressure reading	20
+2464	O/E - BP reading normal	1
+29B7	10g monofilament sensation present	1
+32	Electrocardiography	1
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	19
+42W5	Haemoglobin A1c level - IFCC standardised	2
+42c	HbA1 - diabetic control	1
+44CC	Plasma C reactive protein	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	15
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	23
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	1
+44Q	Serum triglycerides	6
+44U	Blood glucose result	5
+44U5	Blood glucose 7-9.9 mmol/L	2
+44g	Plasma glucose level	4
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	16
+4618	Urine dipstick test	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	1
+4675	Urine protein test = ++	1
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	1
+46W	Urine microalbumin	1
+46W0	Urine microalbumin positive	3
+46W1	Urine microalbumin negative	1
+585Z	Other diagn. ultrasound NOS	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+66AD	Fundoscopy - diabetic check	2
+66Ac	Diabetic peripheral neuropathy screening	3
+6791	Health ed. - smoking	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+67H1	Lifestyle advice regarding smoking	1
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+8B63	Salicylate prophylaxis	1
+8BL2	Patient on maximal tolerated therapy for diabetes	2
+8H2	Emergency hospital admission	2
+8H7H	Refer to optician	4
+8H7R	Refer to chiropodist	1
+8H7X	Refer to podiatry	1
+8H8Z	Follow-up arranged NOS	1
+8I26	Beta blocker contraindicated	1
+8I62	Beta blocker not indicated	2
+8IA3	Bowel cancer screening declined	1
+9N31	Telephone encounter	5
+9N4l	Did not attend dietetic clinic	1
+C10	Diabetes mellitus	1
+C109J	Insulin treated Type 2 diabetes mellitus	1
+C109K	Hyperosmolar non-ketotic state in type 2 diabetes mellitus	1
+F48z	Visual disturbance NOS	1
+G240	Secondary malignant hypertension	1
+J171	Gastric diverticulum	1
+N050	Generalised osteoarthritis - OA	2
+b28z	INDAPAMIDE 2.5mg tablets	6
+bi27	INNOVACE 20mg tablets x28	8
+bi2y	ENALAPRIL MALEATE 20mg tablets	8
+bkFy	ALISKIREN 300mg tablets	1
+bl1D	NITRO-DUR 15mg/24hr patches	1
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	16
+bx13	BEZAFIBRATE 200mg tablets	15
+bx63	GEMFIBROZIL 600mg tablets	7
+da32	FLUVOXAMINE MALEATE 50mg tablets	1
+da7I	VENLAFAXINE 75mg m/r tablets	4
+f25p	HUMAN INSULATARD ge injection 10mL	9
+f25w	HYPURIN PORCINE ISOPHANE 100iu/mL injection 10mL	10
+f27g	HUMULIN M4 40/60 cartridges 1.5mL	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	24
+f321	CHLORPROPAMIDE 100mg tablets	1
+ft38	PRANDIN 1mg tablets	1
+ft4v	ROSIGLITAZONE 4mg / METFORMIN 1000mg tablets	1
+j22R	DICLOFENAC 75mg e/c+m/r capsules	3

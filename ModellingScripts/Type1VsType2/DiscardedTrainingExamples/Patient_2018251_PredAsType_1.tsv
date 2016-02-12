@@ -1,0 +1,156 @@
+Code	Description	Count
+136	Alcohol consumption	8
+137G	Trying to give up smoking	1
+137L	Current non-smoker	1
+137R	Current smoker	1
+137S	Ex smoker	2
+137T	Date ceased smoking	1
+1384	Enjoys moderate exercise	3
+13l6	Main spoken language Gujerati	1
+1Z12	Chronic kidney disease stage 3	1
+1Z13	Chronic kidney disease stage 4	3
+1Z14	Chronic kidney disease stage 5	3
+229	O/E - height	9
+22A	O/E - weight	10
+22K	Body Mass Index	14
+22N0	Waist circumference	6
+2469	O/E - Systolic BP reading	26
+29B7	10g monofilament sensation present	2
+2BBF	Retinal abnormality - diabetes related	1
+2BBV	O/E - left eye proliferative diabetic retinopathy	1
+2BBW	O/E - right eye diabetic maculopathy	1
+311A	Monofilament foot sensation test	1
+315B	Ambulatory blood pressure recording	1
+3167	Helicobacter pylori breath test	1
+32131	Exercise ECG abnormal	1
+3216	ECG normal	1
+3217	ECG abnormal	1
+423	Haemoglobin estimation	19
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	2
+42R7	Serum iron level	2
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44A1	Serum parathyroid hormone	2
+44CC	Plasma C reactive protein	5
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	17
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	4
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	36
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	17
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	11
+44PF	Total cholesterol:HDL ratio	17
+44Q	Serum triglycerides	12
+44TB	Haemoglobin A1c level	15
+44U6	Blood glucose 10-13.9 mmol/L	1
+44g	Plasma glucose level	4
+44lD	Urine protein/creatinine ratio	5
+451E	GFR calculated abbreviated MDRD	26
+4662	Urine glucose test negative	1
+4664	Urine glucose test = +	1
+4665	Urine glucose test = ++	1
+467	Urine protein test	1
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	5
+4676	Urine protein test = +++	1
+4677	Urine protein test = ++++	2
+4678	Proteinuria	1
+4682	Urine ketone test negative	2
+46M7	Urine creatinine	3
+46N	Urine protein	2
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	6
+5853	U-S heart scan	1
+65720	Pneumococcal vaccination given	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+6791	Health ed. - smoking	2
+67I8	Advice about taking aspirin	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+7L1A2	Haemodialysis NEC	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	3
+8H	Referral for further care	1
+8H21	Admit medical emergency unsp.	5
+8H52	Ophthalmological referral	2
+8H78	Refer to counsellor	1
+8HC1	Refer to A. & E. department	2
+8I74	Angiotensin converting enzyme inhibitor not tolerated	1
+8I75	Angiotensin II receptor antagonist not tolerated	1
+9N1v	Seen in diabetic eye clinic	1
+9N2S	Seen by practice phlebotomist	3
+9N2U	Seen by optician	1
+9N42	Did not attend - no reason	1
+9N4p	Did not attend diabetic retinopathy clinic	1
+9OX5	Influenza vaccination declined	1
+9i7	Indian or British Indian - ethnic category 2001 census	3
+A1y	Other specified tuberculosis	1
+A79z	Viral infection NOS	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	2
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	7
+ASDI224	Aspirin  Dispersible tablets  75 mg	11
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	1
+C10	Diabetes mellitus	6
+C1001	Diab.mell.no comp. - adult	1
+C104	Diabetes mellitus with renal manifestation	1
+CAM/18448NEMIS	Cardioplen Xl  M/R tablets  10 mg	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	3
+COSH12399NEMIS	Coloplast Simpla Trident T2  Short tube leg bags  500ml, 376138	1
+COTA9149BRIDL	Co-Amilofruse 5/40  Tablets	1
+COTA9301EMIS	Co-Amilofruse 2.5/20  Tablets	1
+DIM/22313EMIS	Diclomax Retard  M/R capsules  100 mg	1
+DITA886	Diclofenac Sodium  Tablets  50 mg	9
+E200z	Anxiety state NOS	3
+E3	Mental retardation	1
+EMISSPR1	Unknown vendor specific drug	9
+EROR29918NEMIS	Ergocalciferol  Oral drops  20,000 units/ml	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F4K21	Vitreous detachment	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	2
+F5910	"Perceptive hearing loss	2
+FECA9492HILLI	Fenofibrate  Capsules  100 mg	1
+FRTA1248	Frusemide  Tablets  20 mg	8
+Fyu51	[X]Other epilepsy	5
+G11z	Mitral valve disease NOS	2
+G240	Secondary malignant hypertension	2
+G303	Acute inferoposterior infarction	1
+G84	Haemorrhoids	3
+GACA10300BRIDL	Galenamox  Capsules  250 mg	7
+H014	Acute rhinosinusitis	1
+H037	Recurrent acute tonsillitis	1
+HUIN3719	Humulin M1  Injection	5
+ISTA1519	Isosorbide Dinitrate  Tablets  10 mg	1
+J1212	Chronic duodenal ulcer with perforation	2
+K0D	End-stage renal disease	1
+L264	Intrauterine death	3
+LACH24088NEMIS	Lanthanum  Chewable tablets  500 mg	2
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	3
+MAST17955NEMIS	Manfred Sauer Nephsys  Sterile Drainage Bag  500 ml 20cm inlet, NS721.1720S	1
+N05z3	Osteoarthritis NOS-forearm	1
+NIM/21970EMIS	Nitrofurantoin  M/R capsules  100 mg	5
+NITR34946EMIS	Nicotine  Transdermal patches  7 mg/24 hrs	1
+NITR34951EMIS	Nicotine  Transdermal patches  15 mg/16 hrs	1
+PF66	Other congenital anomalies of toe	1
+Pyu70	[X]Other cystic kidney diseases	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	3
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	2
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	7
+R00zW	"[D]State of emotional shock and stress	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	12
+TETA18567NEMIS	Telmisartan And Hydrochlorothiazide  Tablets  80 mg + 12.5 mg	1

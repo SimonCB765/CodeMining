@@ -1,0 +1,101 @@
+Code	Description	Count
+136	Alcohol consumption	6
+1362	Trivial drinker - <1u/day	1
+1363	Light drinker - 1-2u/day	3
+137L	Current non-smoker	3
+137R	Current smoker	1
+137T	Date ceased smoking	1
+1381	Exercise physically impossible	3
+16D	Falls	1
+1FA	Diet good	1
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	15
+22A	O/E - weight	17
+22K	Body Mass Index	17
+22N0	Waist circumference	4
+246	O/E - blood pressure reading	24
+29B9	10g monofilament sensation R foot abnormal	1
+29BA	10g monofilament sensation L foot abnormal	3
+2G5G	O/E - Right diabetic foot at high risk	1
+2G5K	O/E - Left diabetic foot at high risk	1
+423	Haemoglobin estimation	2
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	2
+42W4	HbA1c level (DCCT aligned)	14
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	2
+44J3	Serum creatinine	17
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	5
+44Q	Serum triglycerides	8
+44TB	Haemoglobin A1c level	1
+44g	Plasma glucose level	1
+451E	GFR calculated abbreviated MDRD	10
+4613	Urinalysis = no abnormality	1
+4672	Urine protein test negative	4
+46M7	Urine creatinine	3
+46TC	Urine albumin:creatinine ratio	5
+46W	Urine microalbumin	5
+5513	Carotid A angiogram abnormal	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+67I7	Advice about foot care	3
+6896	Depression screening using questions	3
+8B63	Salicylate prophylaxis	4
+8CA4	Patient advised re diet	1
+8HBA	Follow up in outpatient clinic	8
+8I26	Beta blocker contraindicated	3
+8I6F	Diabetic retinopathy screening not indicated	1
+9N1v	Seen in diabetic eye clinic	3
+9N2Q	Seen by podiatrist	1
+9N2e	Seen by ophthalmologist	1
+9NND	Under care of diabetic foot screener	2
+9h01	Excepted from CHD quality indicators: Patient unsuitable	1
+9h51	Excepted from COPD quality indicators: Patient unsuitable	1
+AB0	Dermatophytosis including tinea or ringworm	1
+EGTON460	Unknown vendor specific drug	1
+EMISASC2	Unknown vendor specific drug	1
+F367	Peripheral neuropathy	2
+Fyu4	[X]Demyelinating diseases of the central nervous system	1
+G11z	Mitral valve disease NOS	1
+G572z	Paroxysmal tachycardia NOS	1
+G581	Left ventricular failure	1
+G65zz	Transient cerebral ischaemia NOS	1
+H27z	Influenza NOS	2
+PCSDT11883MA13	Unknown vendor specific drug	2
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	1
+ZV579	[V]Cardiac rehabilitation	12
+bh61	DOXAZOSIN 1mg tablets	13
+bh62	DOXAZOSIN 2mg tablets	4
+bk71	CANDESARTAN CILEXETIL 2mg tablets	1
+bl3v	ISOSORBIDE MONONITRATE 10mg tablets	10
+bl51	TILDIEM 60mg tablets	4
+bl8u	NIFEDIPINE 10mg m/r capsules	3
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	10
+bw34	TRANEXAMIC ACID 500mg tablets	1
+bx13	BEZAFIBRATE 200mg tablets	26
+d246	*CHLORDIAZEPOXIDE 5mg tablets	1
+d76x	DOXEPIN 25mg capsules	1
+du3N	*NICABATE 14mg patches x7	1
+e618	CEFACLOR 500mg capsules	1
+egD1	MOXIFLOXACIN 400mg tablets	1
+egD2	AVELOX 400mg tablets	1
+ei1o	ACICLOVIR 800mg tablets	12
+ej81	MEFLOQUINE HYDROCHLORIDE 250mg tablets	2
+f25p	HUMAN INSULATARD ge injection 10mL	2
+f25w	HYPURIN PORCINE ISOPHANE 100iu/mL injection 10mL	4
+fe4a	EFCORTESOL 500mg/5mL injection	1
+ig1d	CALCICHEW 1.25g chewable tablets	3
+ip3f	CALCICHEW D3 FORTE tablets	1
+ip3o	ADCAL D3 DISSOLVE effervescent tablets	1
+j22R	DICLOFENAC 75mg e/c+m/r capsules	1
+j22y	DICLOFENAC SODIUM 75mg m/r tablets	1

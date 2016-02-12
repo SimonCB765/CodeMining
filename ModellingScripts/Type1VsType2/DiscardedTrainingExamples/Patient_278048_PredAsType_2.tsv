@@ -1,0 +1,98 @@
+Code	Description	Count
+136	Alcohol consumption	9
+1371	Never smoked tobacco	5
+137P	Cigarette smoker	2
+1383	Enjoys light exercise	1
+1384	Enjoys moderate exercise	2
+13l	Main spoken language	1
+229	O/E - height	6
+22A	O/E - weight	13
+22K	Body Mass Index	11
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	17
+29B7	10g monofilament sensation present	2
+29BB	10g monofilament sensation R foot normal	2
+2BB1	O/E - retina normal	1
+2BBD	O/E - Right retina normal	1
+2BBE	O/E - Left retina normal	1
+31280	Fundoscopy normal	1
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	14
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44J3	Serum creatinine	17
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	1
+44Q	Serum triglycerides	7
+44TB	Haemoglobin A1c level	1
+44Z1	Serum fructosamine	2
+44g	Plasma glucose level	14
+451E	GFR calculated abbreviated MDRD	3
+4662	Urine glucose test negative	1
+4663	Urine glucose test = trace	1
+467	Urine protein test	2
+4672	Urine protein test negative	2
+4682	Urine ketone test negative	2
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	3
+66A5	Diabetic on insulin	2
+6798	Health ed. - exercise	1
+67IA	Advice about impotence	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	4
+8A17	Self monitoring of blood glucose	2
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	2
+8CA41	Pt advised re diabetic diet	3
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	2
+8H46	Neurological referral	1
+8H51	General surgical referral	1
+8H52	Ophthalmological referral	1
+8H54	Orthopaedic referral	2
+8H7	Other referral	1
+8HBD	Retinopathy follow up	1
+9N2U	Seen by optician	1
+9N2V	Seen by optometrist	1
+9NN0	Under care of podiatrist	1
+9Na1	Consultation for minor injury	1
+9OLD	Diabetic patient unsuitable for digital retinal photography	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	2
+AB2	Candidiasis	2
+AMCA17510NEMIS	Amoxicillin  Capsules  250 mg	2
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	17
+ATTA231	Atenolol  Tablets  50 mg	23
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	3
+CITA15860NEMIS	Cipralex  Tablets  20 mg	1
+DITA885	Diclofenac Sodium  Tablets  25 mg	24
+E200z	Anxiety state NOS	2
+G12	Rheumatic aortic valve disease	1
+GASTOUR6	Unknown vendor specific drug	2
+H037	Recurrent acute tonsillitis	1
+H1y10	Nasal septum abscess	1
+HUCA18384EMIS	Humulin M4  Cartridges (1.5 Ml)	1
+HYLO5009	Hydrocortisone(As Sodium Succinate)  Lozenges  Sugar Free 2.5 mg	3
+MACA8841BRIDL	Maxepa  Capsules  1 gram	5
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	21
+N050	Generalised osteoarthritis - OA	2
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	28
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	15
+SETA2508	Secadrex  Tablets	4
+SETA2517	Securon Sr  Tablets  240 mg	1
+TEGE25620NEMIS	Testosterone  Gel  2 %, 3 x 60 gram Multi-Dose Dispenser	1
+URCA14421NEMIS	Uro-Tainer Sodium Chloride  Catheter maintenance solution  0.9 %, 100 ml	4

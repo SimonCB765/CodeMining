@@ -1,0 +1,115 @@
+Code	Description	Count
+136	Alcohol consumption	4
+1362	Trivial drinker - <1u/day	5
+1371	Never smoked tobacco	1
+137J	Cigar smoker	1
+137R	Current smoker	1
+137S	Ex smoker	2
+13l4	Main spoken language English	2
+1A1	Micturition frequency	1
+1A52	Renal colic	2
+229	O/E - height	4
+22A	O/E - weight	13
+22K	Body Mass Index	12
+2469	O/E - Systolic BP reading	18
+29B7	10g monofilament sensation present	2
+2BB	O/E - retinal inspection	2
+311A	Monofilament foot sensation test	1
+3128	Fundoscopy	1
+423	Haemoglobin estimation	1
+428	Mean corpusc. haemoglobin(MCH)	1
+42A	Mean corpuscular volume (MCV)	1
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	1
+44F	Serum alkaline phosphatase	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	30
+44J7	Albumin / creatinine ratio	1
+44J9	Serum urea level	2
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	3
+44P6	Serum LDL cholesterol level	3
+44Q	Serum triglycerides	12
+44TB	Haemoglobin A1c level	18
+44U	Blood glucose result	3
+44g	Plasma glucose level	10
+451E	GFR calculated abbreviated MDRD	5
+4615	MSU sent to lab.	2
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	5
+4675	Urine protein test = ++	3
+4682	Urine ketone test negative	3
+4695	Urine blood test = +	1
+4696	Urine blood test = ++	2
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	2
+46W	Urine microalbumin	1
+46X0	Urine nitrite positive	3
+46f3	Urine leucocyte test = ++	3
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	1
+6798	Health ed. - exercise	1
+6896	Depression screening using questions	2
+7B153	Middle third ureterolithotomy	1
+7B390	Transurethral prostatectomy	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	1
+8D74	Indwelling urethral catheter	2
+8H54	Orthopaedic referral	2
+8H61	Referral to private doctor	1
+8H69	Refer to pain clinic	1
+8H7Q	Refer to surgical fitter	2
+8HTY	Referral to memory clinic	1
+8Hk1	Referral to falls service	3
+9N08	Seen in chiropody clinic	1
+9N42	Did not attend - no reason	1
+9S10	White British	4
+9i0	British or mixed British - ethnic category 2001 census	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	2
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	3
+BAFL30203EMIS	Bard  Flip-flo catheter valve  bff5	3
+C10	Diabetes mellitus	3
+CACH19101NEMIS	Calcium Carbonate And Colecalciferol  Chewable tablets  1.25 grams + 5 micrograms (200 units)	1
+CATA2342NEMIS	Cardicor  Tablets  5 mg	1
+CLTA4749	Clomipramine Hydrochloride  M/R tablets  75 mg	2
+COSP739	Coro-Nitro  Spray  400 micrograms/dose	1
+COTA28963NEMIS	Cozaar-Comp  Tablets  100 mg + 12.5 mg	2
+COTA697	Co-Trimoxazole  Tablets  960 mg	3
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	6
+EMISSPR101	Unknown vendor specific drug	3
+EMISSPR130	Unknown vendor specific drug	1
+Eu01	[X]Vascular dementia	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	5
+FLCR1181	Flamazine  Cream  1 %	8
+Fyu51	[X]Other epilepsy	2
+GACA10300BRIDL	Galenamox  Capsules  250 mg	3
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+INCA1454	Inderal La  M/R capsules  160 mg	2
+ININ32907EMIS	Invicorp 2  Injection	15
+ININ4906NEMIS	Insuman Comb 15  Injection  100 units/ml, 5 ml vial	3
+L264	Intrauterine death	11
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	7
+NOIN12698NEMIS	Novomix 30 Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	6
+OLCA9765HILLI	Olbetam  Capsules  250 mg	1
+PK61	Sturge-Weber syndrome	18
+PUJINST1	Unknown vendor specific drug	6
+RATA16400NEMIS	Ramipril  Tablets  2.5 mg	1
+RUFO12106NEMIS	Rusch Brilliant Aquaflate  Foley catheter 10ml balloon (female)  12ch, DA210112	1
+S200	Closed fracture of clavicle	1
+SPTA2667	Spironolactone  Tablets  25 mg	1
+SPTA2668	Spironolactone  Tablets  50 mg	1
+TETA6416NEMIS	Telmisartan  Tablets  20 mg	3
+TETA9419BRIDL	Tenormin  Tablets  25 mg	5
+URCA23172EMIS	Uro-Tainer M  Catheter patency solution  0.9 %	1

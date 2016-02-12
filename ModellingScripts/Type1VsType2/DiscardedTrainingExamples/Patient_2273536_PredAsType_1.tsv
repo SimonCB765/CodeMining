@@ -1,0 +1,129 @@
+Code	Description	Count
+03I	Opticians	1
+136	Alcohol consumption	5
+1362	Trivial drinker - <1u/day	1
+1367	Stopped drinking alcohol	1
+136Z	Alcohol consumption NOS	1
+1371	Never smoked tobacco	4
+138	Exercise grading	3
+13A	Diet - patient initiated	3
+13l4	Main spoken language English	1
+229	O/E - height	1
+22A	O/E - weight	7
+22K	Body Mass Index	7
+22N0	Waist circumference	1
+246	O/E - blood pressure reading	22
+29B9	10g monofilament sensation R foot abnormal	1
+29BA	10g monofilament sensation L foot abnormal	1
+29BC	10g monofilament sensation L foot normal	1
+2G5F	O/E - Right diabetic foot at moderate risk	1
+2G5J	O/E - Left diabetic foot at moderate risk	1
+3128	Fundoscopy	2
+31B1	Direct microscopy	2
+32	Electrocardiography	1
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	9
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	21
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	3
+44Q	Serum triglycerides	5
+44TB	Haemoglobin A1c level	4
+44U	Blood glucose result	1
+451E	GFR calculated abbreviated MDRD	10
+461	Urine exam. - general	1
+467	Urine protein test	2
+4672	Urine protein test negative	1
+467A	24 hour urine protein output	1
+46DZ	Urine microscopy - general NOS	1
+46M7	Urine creatinine	3
+46N8	Urine microalbumin profile	1
+46TC	Urine albumin:creatinine ratio	4
+46U	Urine culture	3
+46W	Urine microalbumin	4
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+671E	Discussed with carer	1
+6781	Health education offered	1
+679	Health education - subject	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+81H1	Dressing of ulcer	2
+8H7R	Refer to chiropodist	1
+8H8	Follow-up arranged	3
+8HE	Discharged from hospital	3
+8HKT	Phlebotomy D.V. requested	1
+8Hd	Admission to hospital	2
+8I24	Aspirin prophylaxis contra-indicated	1
+8I6D	Influenza vaccination not indicated	1
+8I73	Beta blocker not tolerated	1
+9N1C	Seen in own home	1
+9N1P	Seen in cardiac clinic	1
+9N1g	Seen in gastroenterology clinic	1
+9N32	Third party encounter	2
+9NDG	Letter actioned by GP	1
+9S10	White British	1
+9h4	Exception reporting: diabetes quality indicators	1
+9h41	Excepted from diabetes qual indicators: Patient unsuitable	1
+C109	Non-insulin dependent diabetes mellitus	2
+Fyu51	[X]Other epilepsy	1
+G3400	Single coronary vessel disease	1
+G570	Paroxysmal supraventricular tachycardia	2
+H014	Acute rhinosinusitis	2
+J120	Acute duodenal ulcer	1
+K0D	End-stage renal disease	2
+K1012	Acute pyelitis	1
+S201	Open fracture of clavicle	1
+U10z	[X]Unspecified fall	1
+ZV57	[V]Care involving use of rehabilitation procedures	3
+ZV579	[V]Cardiac rehabilitation	10
+ab21	FYBOGEL 3.5g plain sugar free granules	2
+bd1r	INDERAL-LA 160mg m/r capsules	3
+bd34	TENORMIN LS 50mg tablets	3
+bd35	ATENOLOL 50mg tablets	12
+bd3x	ATENOLOL 25mg/5mL syrup	3
+bdl5	CARVEDILOL 3.125mg tablets	1
+bh63	DOXAZOSIN 4mg tablets	3
+bh65	CARDURA 2mg tablets	3
+bi2y	ENALAPRIL MALEATE 20mg tablets	12
+bi71	FOSINOPRIL 10mg tablets	12
+bl7w	NICARDIPINE 45mg m/r capsules	2
+blk6	ISODUR 25XL m/r capsules	4
+blkA	MONOMAX XL 60mg m/r tablets	4
+blkJ	TRANGINA XL 60mg m/r tablets	1
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	3
+br2C	000iu/0.4mL syrg"	3
+bxa7	OMACOR 1g capsules	13
+e222	FLUCLOXACILLIN 500mg capsules	1
+e618	CEFACLOR 500mg capsules	1
+e711	TETRACYCLINE 250mg capsules	1
+e921	CLARITHROMYCIN 250mg tablets	2
+f211	RAPITARD MC 100iu/mL injection 10mL	1
+f25Z	Unknown vendor specific drug	9
+f27j	HUMAN MIXTARD 30/70 injection 10mL	6
+f27z	HUMULIN M3 30/70 cartridges 3mL	1
+f282	MIXTARD 20 (HUMAN) PENFILL cartridges 3mL	3
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	5
+ft38	PRANDIN 1mg tablets	3
+gh72	TADALAFIL 20mg tablets	5
+h82C	NEORAL 100mg capsules	4
+ig1d	CALCICHEW 1.25g chewable tablets	3
+j22e	DICLOFENAC 50mg e/c tablets	4
+j2cu	NAPROXEN tablet+MISOPROSTOL tablet 500mg/200micrograms pack	1
+j2ec	FELDENE MELT 20mg tablets	1

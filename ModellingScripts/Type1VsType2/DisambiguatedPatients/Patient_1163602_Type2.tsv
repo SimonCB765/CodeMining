@@ -1,0 +1,137 @@
+Code	Description	Count
+03DC	General medical practitioner	1
+1351	Church of England	1
+136	Alcohol consumption	9
+1371	Never smoked tobacco	1
+137S	Ex smoker	5
+1381	Exercise physically impossible	1
+13l4	Main spoken language English	1
+1Z13	Chronic kidney disease stage 4	2
+229	O/E - height	12
+22A	O/E - weight	19
+22K	Body Mass Index	16
+2469	O/E - Systolic BP reading	30
+29B7	10g monofilament sensation present	2
+29B8	10g monofilament sensation absent	1
+2BBD	O/E - Right retina normal	1
+2BBE	O/E - Left retina normal	1
+2BBI	O/E - no retinopathy	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+311A	Monofilament foot sensation test	3
+32	Electrocardiography	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	5
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	12
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44A1	Serum parathyroid hormone	2
+44CS	Serum C reactive protein level	5
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44J3	Serum creatinine	23
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	2
+44Q	Serum triglycerides	9
+44TB	Haemoglobin A1c level	3
+44TJ	Blood glucose level	4
+451E	GFR calculated abbreviated MDRD	8
+4614	Urinalysis = abnormal	2
+4672	Urine protein test negative	4
+46M7	Urine creatinine	4
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	6
+46W	Urine microalbumin	1
+46W0	Urine microalbumin positive	1
+5542	Coronary arteriography normal	1
+58531	Echocardiogram abnormal	1
+58C1	Retinal photography	2
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	2
+6791	Health ed. - smoking	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+68A8	Digital retinal screening	2
+7B2C4	Distension of bladder NEC	1
+7B390	Transurethral prostatectomy	3
+8A17	Self monitoring of blood glucose	1
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	2
+8H	Referral for further care	1
+8H44	Cardiological referral	1
+8H76	Refer to dietician	1
+8I65	Warfarin not indicated	1
+8I6B	Clopidogrel not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	2
+8I6a	Dipyridamole not indicated	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9S2	Black Caribbean	1
+9h51	Excepted from COPD quality indicators: Patient unsuitable	1
+9iB	Caribbean - ethnic category 2001 census	4
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	15
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	9
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	4
+CHRSPLE5	Unknown vendor specific drug	2
+CITA15860NEMIS	Cipralex  Tablets  20 mg	1
+CYPO4560NEMIS	Cystoleve  Powder sachets	1
+D0121	Folate-deficiency anaemia due to dietary causes	1
+DEM/22793NEMIS	Detrunorm Xl  M/R capsules  30 mg	13
+DEPO18483NEMIS	Decapeptyl Sr  Powder and solvent for injection  3 mg/dose	9
+DITA856	Diabinese  Tablets  100 mg	23
+DOCA981	Doxepin  Capsules  50 mg	1
+E3	Mental retardation	2
+EMISSPR1	Unknown vendor specific drug	17
+Eu01	[X]Vascular dementia	2
+F31z	Facial nerve disorder NOS	1
+F35z	Mononeuritis of unspecified site NOS	1
+F581	Noise effects on inner ear	9
+F5812	Noise-induced hearing loss	3
+F5900	"Conductive hearing loss	9
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	1
+FRENCJC1	Unknown vendor specific drug	2
+FRTA1248	Frusemide  Tablets  20 mg	15
+Fyu51	[X]Other epilepsy	3
+G240	Secondary malignant hypertension	1
+G24z0	Secondary renovascular hypertension NOS	1
+G65zz	Transient cerebral ischaemia NOS	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	26
+GLTA1304	Glibenese  Tablets  5 mg	1
+H1y40	Polyp of vocal cord	1
+HEWITAS12	Unknown vendor specific drug	1
+IBFC10455BRIDL	Ibuprofen  Fc tablets  800 mg	6
+IRIN11056NEMIS	Iron Hydroxide Dextran Complex  Injection  50 mg/ml, 2 ml ampoule	1
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	1
+J17y7	Deformed duodenal cap (bulb)	9
+K1973	Frank haematuria	1
+L264	Intrauterine death	6
+LATA1582	Labetalol Hydrochloride  Tablets  100 mg	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MITA19793NEMIS	Mirtazapine  Tablets  15 mg	3
+MOTA8433BRID	Monocor  Tablets  5 mg	1
+N01zB	Infec arthritis NOS-elbow	1
+N05	Osteoarthritis and allied disorders	1
+NATA1940	Nardil  Tablets  15 mg	2
+NITR34946EMIS	Nicotine  Transdermal patches  7 mg/24 hrs	3
+PE1	Congenital sternomastoid torticollis	3
+PK250	Aberrant thyroid gland	6
+PRTA2321	Prazosin Hydrochloride  Tablets  500 micrograms	3
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	28
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1
+SITA15258NEMIS	Sirolimus  Tablets  2 mg	2
+TETA23675EMIS	Terazosin Hydrochloride  Tablets  2 mg	1

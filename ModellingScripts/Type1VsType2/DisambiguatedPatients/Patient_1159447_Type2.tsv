@@ -1,0 +1,136 @@
+Code	Description	Count
+136	Alcohol consumption	9
+137S	Ex smoker	5
+1382	Avoids even trivial exercise	1
+138O	Takes inadequate exercise	1
+13A5	Low salt diet	1
+13HT1	Stress at home	1
+1465	H/O: depression	2
+16D	Falls	1
+1A	Genitourinary symptoms	3
+1A1	Micturition frequency	1
+1A23	Incontinence of urine	2
+1A25	Urgency	1
+1A55	Dysuria	1
+1AA	Prostatism	2
+1BT	Depressed mood	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	7
+22A	O/E - weight	9
+22A5	O/E - weight > 20% over ideal	1
+22K	Body Mass Index	9
+22N0	Waist circumference	2
+246	O/E - blood pressure reading	12
+29B8	10g monofilament sensation absent	2
+29H1	O/E - vibration sense normal	1
+29H7	O/E - Vibration sense of left foot normal	1
+423	Haemoglobin estimation	1
+428	Mean corpusc. haemoglobin(MCH)	1
+42A	Mean corpuscular volume (MCV)	1
+42W5	Haemoglobin A1c level - IFCC standardised	3
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	6
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	5
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	5
+44PF	Total cholesterol:HDL ratio	4
+44Q	Serum triglycerides	5
+44TB	Haemoglobin A1c level	8
+44g	Plasma glucose level	1
+44lD	Urine protein/creatinine ratio	5
+451E	GFR calculated abbreviated MDRD	6
+4615	MSU sent to lab.	1
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	3
+4674	Urine protein test = +	2
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	1
+46C2	Urine urobilinogen negative	1
+46M7	Urine creatinine	2
+46N	Urine protein	1
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	5
+46U	Urine culture	2
+46X1	Urine nitrite negative	1
+4JJ1	MSU sent for C/S	2
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	1
+6792	Health ed. - alcohol	4
+6798	Health ed. - exercise	4
+6799	Health ed. - diet	4
+67I7	Advice about foot care	1
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+8A17	Self monitoring of blood glucose	1
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8CA48	Pt advised re low salt diet	5
+8GEA	Care from relatives	2
+8H1	Admit to intensive care unit	1
+8H46	Neurological referral	1
+8H49	Psychiatric referral	2
+8H7X	Refer to podiatry	1
+8H9	Planned telephone contact	1
+8I26	Beta blocker contraindicated	1
+9N28	Seen by physiotherapist	1
+9N2U	Seen by optician	2
+9N31	Telephone encounter	1
+9N73	Repeat medication check	1
+9NJY	In-house ophthalmology first appointment	1
+9S10	White British	2
+9i2	Other White background - ethnic category 2001 census	1
+Ayu0E	[X]Other viral enteritis	1
+E1123	"Single major depressive episode	1
+E118	Seasonal affective disorder	1
+E200z	Anxiety state NOS	2
+EMISNQAN12	Unknown vendor specific drug	1
+ERSU25265EMIS	Erythromycin Ethyl Succinate  Sugar-free suspension  250 mg/5 ml	1
+Eu454	[X]Persistent somatoform pain disorder	3
+Eu460	[X]Neurasthenia	1
+Fyu51	[X]Other epilepsy	1
+G12	Rheumatic aortic valve disease	3
+G5700	Paroxysmal atrial tachycardia	1
+G57y9	Supraventricular tachycardia NOS	1
+G60	Subarachnoid haemorrhage	1
+ISTA3782	Isoniazid  Tablets  100 mg	1
+IVTA21631NEMIS	Ivabradine  Tablets  7.5 mg	1
+J120z	Acute duodenal ulcer NOS	1
+K1021	Perinephric abscess	1
+K423	Abscess of Bartholin's gland	1
+MOTA8433BRID	Monocor  Tablets  5 mg	1
+N0516	Local.primary OA-lower leg	2
+OLTA15760NEMIS	Olmesartan Medoxomil  Tablets  20 mg	1
+PE30z	Congenital dislocation of hip NOS	1
+RUFO12128NEMIS	Rusch Sympacath Aquaflate  Foley catheter 10ml balloon (female)  12ch, DH210112	1
+S2610	"Open fracture of phalanx or phalanges	1
+ab21	FYBOGEL 3.5g plain sugar free granules	8
+aw11	ORLISTAT 120mg capsules	16
+bd35	ATENOLOL 50mg tablets	17
+bh65	CARDURA 2mg tablets	23
+bkFy	ALISKIREN 300mg tablets	5
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	9
+br2C	000iu/0.4mL syrg"	10
+bx13	BEZAFIBRATE 200mg tablets	18
+du7N	NICORETTE INVISI 15mg patches	1
+f2A1	LEVEMIR PENFILL 100iu/mL injection cartridges 3mL	7
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	4
+f321	CHLORPROPAMIDE 100mg tablets	9
+f41y	METFORMIN HYDROCHLORIDE 500mg tablets	1
+ft34	*NOVONORM 0.5mg tablets	1
+ft38	PRANDIN 1mg tablets	15
+ft4v	ROSIGLITAZONE 4mg / METFORMIN 1000mg tablets	2
+fw16	HUMALOG MIX50 KWIKPEN 100iu/mL prefilled pen 3mL	1
+o425	FENTANYL 50micrograms/hr patches	2

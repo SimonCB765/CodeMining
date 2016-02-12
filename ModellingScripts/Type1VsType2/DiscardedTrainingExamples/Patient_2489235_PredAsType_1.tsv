@@ -1,0 +1,131 @@
+Code	Description	Count
+12C	FH: Cardiovascular disease	1
+12C2	FH: Ischaemic heart dis. <60	1
+1361	Teetotaller	3
+1373	Light smoker - 1-9 cigs/day	1
+137P	Cigarette smoker	2
+137R	Current smoker	1
+137S	Ex smoker	1
+1382	Avoids even trivial exercise	1
+1384	Enjoys moderate exercise	2
+16D	Falls	1
+1A1	Micturition frequency	1
+1A55	Dysuria	1
+1B1L	Stress related problem	1
+1FA	Diet good	3
+1FC	Diet average	1
+229	O/E - height	2
+22A	O/E - weight	10
+22K	Body Mass Index	6
+246	O/E - blood pressure reading	13
+2464	O/E - BP reading normal	1
+29B7	10g monofilament sensation present	1
+32	Electrocardiography	3
+3216	ECG normal	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	2
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	2
+42W2	Hb. A1C 7-10% - borderline	2
+42W3	Hb. A1C > 10% - bad control	1
+42W4	HbA1c level (DCCT aligned)	12
+42W5	Haemoglobin A1c level - IFCC standardised	2
+43Z2	Prostate specific antigen	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	16
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	2
+44PZ	Serum cholesterol NOS	3
+44Q	Serum triglycerides	10
+44U6	Blood glucose 10-13.9 mmol/L	1
+44g	Plasma glucose level	7
+451E	GFR calculated abbreviated MDRD	10
+461	Urine exam. - general	1
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	1
+46O3	Urine: Bence Jones' protein	1
+46W0	Urine microalbumin positive	2
+46W1	Urine microalbumin negative	3
+55	Cardiovascular sys.angiography	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+66AD	Fundoscopy - diabetic check	2
+66Ac	Diabetic peripheral neuropathy screening	2
+6791	Health ed. - smoking	2
+6799	Health ed. - diet	1
+67H1	Lifestyle advice regarding smoking	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+7928	Transluminal balloon angioplasty of coronary artery	2
+8BL2	Patient on maximal tolerated therapy for diabetes	2
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	2
+8H2	Emergency hospital admission	1
+8H77	Refer to physiotherapist	1
+8H7H	Refer to optician	2
+8H7o	Fast track referral	1
+8HTJ	Referral to rapid access chest pain clinic	2
+8Hc0	Referral to community mental health team	3
+8I26	Beta blocker contraindicated	2
+8I6Z	Treatment not indicated NOS	1
+8I70	Aspirin not tolerated	1
+9N0f	Seen in rapid access chest pain clinic	1
+9N1P	Seen in cardiac clinic	1
+9N1Q	Seen in diabetic clinic	1
+9N31	Telephone encounter	1
+9N35	Letter encounter to patient	1
+9N3Z	Indirect encounter NOS	1
+9N4H	DNA hospital appointment	1
+9OLD	Diabetic patient unsuitable for digital retinal photography	1
+A994	Nonspecific urethritis	1
+AB0	Dermatophytosis including tinea or ringworm	1
+C10	Diabetes mellitus	2
+C109	Non-insulin dependent diabetes mellitus	1
+E12z	Paranoid psychosis NOS	1
+E2613	Psychogenic hyperventilation	1
+E271	Anorexia nervosa	1
+E2742	Persistent insomnia	1
+F115	Hydrocephalus	1
+F516	Eustachian tube obstruction	1
+G21z0	Hypertensive heart disease NOS without CCF	1
+GLTA5912	Glurenorm  Tablets  30 mg	1
+H1y41	Polyp of larynx	1
+ISM/35445EMIS	Isotard 60 Xl  M/R tablets  60 mg	1
+ISTA1519	Isosorbide Dinitrate  Tablets  10 mg	1
+N07z	Internal knee derangement NOS	1
+S22z	Fracture of humerus NOS	1
+bi27	INNOVACE 20mg tablets x28	7
+bi28	INNOZIDE 20/12.5mg tablets	12
+bi2v	ENALAPRIL MALEATE 5mg tablets x28	8
+bkFy	ALISKIREN 300mg tablets	1
+bl3j	ISOSORBIDE MONONITRATE 40mg m/r tablets	9
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	3
+br2C	000iu/0.4mL syrg"	13
+bx11	BEZALIP 200mg tablets	3
+bx13	BEZAFIBRATE 200mg tablets	10
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	7
+bxdx	SIMVASTATIN 40mg/EZETIMIBE 10mg tablets	1
+du37	NICOTINELL TTS 30 patches	2
+e222	FLUCLOXACILLIN 500mg capsules	1
+e3zq	AMOXICILLIN powder 3g/sachet	2
+egD2	AVELOX 400mg tablets	1
+ei1o	ACICLOVIR 800mg tablets	15
+f25o	HUMULIN I 100iu/mL cartridges 3mL	6
+f2Ay	INSULIN DETEMIR 100iu/mL prefilled pen	18
+f321	CHLORPROPAMIDE 100mg tablets	1
+f417	GLUCOPHAGE SR 500mg m/r tablets	6
+fw21	NOVOMIX 30 PENFILL 100units/mL injection cartridges 3mL	6
+h141	CYCLOPHOSPHAMIDE 50mg tablets	1
+j22R	DICLOFENAC 75mg e/c+m/r capsules	3
+j22a	DICLOFENAC 100mg suppositories	3

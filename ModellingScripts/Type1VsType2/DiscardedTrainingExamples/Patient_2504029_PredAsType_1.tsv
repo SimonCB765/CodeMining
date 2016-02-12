@@ -1,0 +1,118 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+136	Alcohol consumption	9
+1371	Never smoked tobacco	3
+13l4	Main spoken language English	1
+229	O/E - height	11
+22A	O/E - weight	14
+22K	Body Mass Index	10
+2432	O/E - pulse irregularly irreg.	1
+246	O/E - blood pressure reading	19
+246A	O/E - Diastolic BP reading	1
+29H4	O/E - Vibration sense of right foot abnormal	1
+29H7	O/E - Vibration sense of left foot normal	2
+32	Electrocardiography	1
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	4
+42R4	Serum ferritin	3
+42R7	Serum iron level	4
+42T	Serum vitamin B12	4
+42U5	Serum folate	3
+42W	Hb. A1C - diabetic control	8
+42W1	Hb. A1C < 7% - good control	1
+42W4	HbA1c level (DCCT aligned)	4
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44CB	Serum transferrin	3
+44CC	Plasma C reactive protein	6
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	21
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	17
+44P5	Serum HDL cholesterol level	16
+44P6	Serum LDL cholesterol level	15
+44PF	Total cholesterol:HDL ratio	13
+44PH	Total cholesterol measurement	1
+44Q	Serum triglycerides	16
+44QZ	Serum triglycerides NOS	1
+44TB	Haemoglobin A1c level	8
+44TC	Haemoglobin A1 level	2
+44U	Blood glucose result	3
+44g	Plasma glucose level	8
+44lD	Urine protein/creatinine ratio	6
+451E	GFR calculated abbreviated MDRD	8
+4613	Urinalysis = no abnormality	2
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+4676	Urine protein test = +++	1
+46M7	Urine creatinine	3
+46N	Urine protein	1
+46N3	Urine total protein	1
+46N4	Urine albumin	8
+46TC	Urine albumin:creatinine ratio	6
+46TD	Urine microalbumin:creatinine ratio	1
+46W	Urine microalbumin	2
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+6799	Health ed. - diet	3
+67H	Lifestyle counselling	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+68A8	Digital retinal screening	1
+8A17	Self monitoring of blood glucose	3
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	3
+8H7n	Referral to retinal screener	3
+8I74	Angiotensin converting enzyme inhibitor not tolerated	1
+8IAG	Pandemic influenza vaccination declined	1
+9N2f	Seen by retinal screener	3
+9N31	Telephone encounter	1
+9N4C	Failed encounter - no answer when rang back	2
+9OX5	Influenza vaccination declined	1
+9S1	White	1
+9S10	White British	1
+C10	Diabetes mellitus	1
+C101	Diabetes mellitus with ketoacidosis	1
+E2B	Depressive disorder NEC	1
+EGTON460	Unknown vendor specific drug	1
+F31	Facial nerve disorders	1
+F31z	Facial nerve disorder NOS	1
+F4257	Drusen	1
+Fyu51	[X]Other epilepsy	2
+G3400	Single coronary vessel disease	2
+PCS7073IH1	Unknown vendor specific drug	1
+PCS7073IN11	Unknown vendor specific drug	1
+ZITA31476EMIS	Zispin  Tablets  30 mg	6
+ZV125	[V]Personal history of circulatory system disease	24
+b212	BENDROFLUMETHIAZIDE 5mg tablets	3
+bB1z	IVABRADINE 5mg tablets	6
+bd1x	PROPRANOLOL 160mg m/r capsules	16
+bi33	LISINOPRIL 10mg tablets	1
+bi6w	TRITACE 10mg tablets	4
+bi71	FOSINOPRIL 10mg tablets	26
+bl8B	ADIPINE MR 10 m/r tablets	1
+blk6	ISODUR 25XL m/r capsules	8
+blkA	MONOMAX XL 60mg m/r tablets	12
+blkB	XISMOX XL 60 m/r tablets	1
+bn5x	MOXISYLYTE 40mg tablets	2
+bxa7	OMACOR 1g capsules	7
+bxb2	ACIPIMOX 250mg capsules	11
+du3F	NICOTINE 5mg/16hours patches	1
+du3N	*NICABATE 14mg patches x7	1
+f12C	HUMAJECT S 100iu/mL prefilled pen	13
+f271	*MIXTARD 30/70 injection 10mL	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	1
+f321	CHLORPROPAMIDE 100mg tablets	24
+ft38	PRANDIN 1mg tablets	8

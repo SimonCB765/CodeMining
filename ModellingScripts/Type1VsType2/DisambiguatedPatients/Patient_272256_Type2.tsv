@@ -1,0 +1,106 @@
+Code	Description	Count
+03I	Opticians	1
+136	Alcohol consumption	8
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	2
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+1A45	Blood in urine - haematuria	2
+1A7	Vaginal discharge symptom	1
+229	O/E - height	4
+22A	O/E - weight	15
+22K	Body Mass Index	11
+2469	O/E - Systolic BP reading	20
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	3
+2BBI	O/E - no retinopathy	1
+311A	Monofilament foot sensation test	2
+3128	Fundoscopy	1
+3216	ECG normal	1
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	1
+42W	Hb. A1C - diabetic control	4
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CB	Serum transferrin	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	3
+44J3	Serum creatinine	14
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	12
+44TC	Haemoglobin A1 level	2
+44U	Blood glucose result	1
+44g	Plasma glucose level	6
+44g1	Plasma fasting glucose level	2
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	3
+4614	Urinalysis = abnormal	1
+4662	Urine glucose test negative	3
+467	Urine protein test	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	2
+4682	Urine ketone test negative	2
+46M7	Urine creatinine	4
+46N	Urine protein	3
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	5
+4JJ2	MSU sent for bacteriology	1
+62	Patient pregnant	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+6791	Health ed. - smoking	2
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+792	Coronary artery operations	1
+79392	Catheterisation of left side of heart NEC	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	5
+8CAM	Patient advised about alcohol	4
+8H4K	Referred to endocrinologist	1
+8H57	Obstetric referral	1
+9515	FP24 paid by FPC - checked	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N7D	Phlebotomy generated from secondary care done by practice	1
+9i0	British or mixed British - ethnic category 2001 census	2
+9m0A	Declined diabetic retinopathy screening	1
+AD30	Scabies	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	16
+ASTA4609	Aspirin  Tablets  75 mg	1
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	23
+C10	Diabetes mellitus	3
+C109	Non-insulin dependent diabetes mellitus	1
+E3	Mental retardation	1
+F35z	Mononeuritis of unspecified site NOS	1
+F5603	Active vestibular Meniere's disease	1
+FLCR1181	Flamazine  Cream  1 %	1
+G11z	Mitral valve disease NOS	1
+G12	Rheumatic aortic valve disease	1
+G240	Secondary malignant hypertension	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	3
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+HYLO5009	Hydrocortisone(As Sodium Succinate)  Lozenges  Sugar Free 2.5 mg	1
+ISIN33727EMIS	Isophane Insulin (Human Pyr)  Injection  100 units/ml, 10 ml vial	1
+J1212	Chronic duodenal ulcer with perforation	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	2
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	22
+NETAEGTON6665	Neo-Naclex-K  Tablets	1
+PD3	Other specified renal anomaly	1
+PRLE16671NEMIS	Prosys  Leg bag straps  P10LS	1
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	29
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	24
+TOTA2876	Tolbutamide  Tablets  500 mg	1

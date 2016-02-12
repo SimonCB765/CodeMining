@@ -1,0 +1,134 @@
+Code	Description	Count
+136	Alcohol consumption	10
+1371	Never smoked tobacco	4
+13l4	Main spoken language English	1
+1A53	Lumbar ache - renal	2
+229	O/E - height	2
+22A	O/E - weight	11
+22K	Body Mass Index	10
+22N0	Waist circumference	2
+246	O/E - blood pressure reading	7
+2469	O/E - Systolic BP reading	15
+24E6	O/E - R.post.tib.pulse present	1
+24EA	O/E - Absent right foot pulses	1
+29B7	10g monofilament sensation present	2
+2BBI	O/E - no retinopathy	1
+2BBV	O/E - left eye proliferative diabetic retinopathy	1
+32M	24 Hour ECG	1
+423	Haemoglobin estimation	12
+4258	Haematocrit	2
+426	Red blood cell (RBC) count	4
+4266	Nucleated red blood cell count	3
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	6
+42P	Platelet count	1
+42R4	Serum ferritin	1
+42R7	Serum iron level	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	3
+42W5	Haemoglobin A1c level - IFCC standardised	4
+44CC	Plasma C reactive protein	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	24
+44J9	Serum urea level	2
+44Le	Plasma vitamin B12 level	2
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	10
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	9
+44U	Blood glucose result	2
+44g	Plasma glucose level	4
+44lD	Urine protein/creatinine ratio	8
+451E	GFR calculated abbreviated MDRD	13
+451G	GFR calculated abbreviated MDRD adj for African Americ orign	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	3
+4674	Urine protein test = +	1
+467E	Urine protein level	1
+46M7	Urine creatinine	4
+46N	Urine protein	3
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	6
+58530	Echocardiogram normal	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	5
+8CAM	Patient advised about alcohol	1
+8H21	Admit medical emergency unsp.	1
+8H52	Ophthalmological referral	1
+8H53	ENT referral	1
+8H7J	Refer to occupational therap.	1
+8H88	Follow-up 2-3 months	1
+8H89	Follow-up 4-6 months	2
+8H8C	Follow up 6 weeks	1
+8HBA	Follow up in outpatient clinic	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	2
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	1
+9S2	Black Caribbean	1
+9SA1	Brit. ethnic minor. spec.(NMO)	1
+9iB	Caribbean - ethnic category 2001 census	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	2
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	6
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ASTA4609	Aspirin  Tablets  75 mg	7
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	2
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	4
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	7
+C10	Diabetes mellitus	5
+CAM/6443NEMIS	Cardura Xl  M/R tablets  8 mg	2
+CHTA23546NEMIS	Champix  Tablets  1 mg	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	6
+D4100	Stress polycythaemia	3
+D410z	Secondary polycythaemia NOS	1
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	1
+DITA856	Diabinese  Tablets  100 mg	1
+DITA885	Diclofenac Sodium  Tablets  25 mg	3
+E2613	Psychogenic hyperventilation	1
+FECA4915	Ferrous Fumarate  Capsules  305 mg	1
+FRTA1248	Frusemide  Tablets  20 mg	1
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G12	Rheumatic aortic valve disease	1
+G2	Hypertensive disease	1
+G202	Systolic hypertension	1
+G572z	Paroxysmal tachycardia NOS	2
+HEWITPE1	Unknown vendor specific drug	1
+ISDU10518BRIDL	Isosorbide Mononitrate  Durules  60 mg	2
+K1006	Calculous pyelonephritis	2
+L43z4	Obstetric pulmonary embolism NOS with postnatal complication	3
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	2
+M21yC	Insulin lipohypertrophy	7
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MEOR11311NEMIS	Metoprolol Tartrate  Oral solution  12.5 mg/5 ml	3
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	3
+NIPA17944EMIS	Nitro-Dur  Patches  5 mg	1
+PK61	Sturge-Weber syndrome	2
+PRLE16387NEMIS	Prosys  Leg Bag Long Tube With Straps  500 ml, P500L	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	10
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	1
+R1431	[D]Electrocardiogram (ECG) abnormal	3
+TETA1042NEMIS	Telmisartan  Tablets  40 mg	1
+bf41	MOXONIDINE 200micrograms tablets	1
+bi2y	ENALAPRIL MALEATE 20mg tablets	3
+bi33	LISINOPRIL 10mg tablets	15
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	2
+j22R	DICLOFENAC 75mg e/c+m/r capsules	1
+j2e3	FELDENE 10mg capsules	2
+ja1y	PIROXICAM 0.5% topical gel	1

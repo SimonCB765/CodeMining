@@ -1,0 +1,120 @@
+Code	Description	Count
+12C	FH: Cardiovascular disease	1
+136	Alcohol consumption	5
+1371	Never smoked tobacco	3
+1383	Enjoys light exercise	3
+1Z14	Chronic kidney disease stage 5	1
+22A	O/E - weight	4
+22K	Body Mass Index	12
+2469	O/E - Systolic BP reading	16
+29B7	10g monofilament sensation present	3
+31281	Fundoscopy abnormal	2
+3216	ECG normal	1
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+43Z2	Prostate specific antigen	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44I4	Serum potassium	7
+44I5	Serum sodium	1
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	33
+44J9	Serum urea level	2
+44M4	Serum albumin	1
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	5
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	5
+44TB	Haemoglobin A1c level	12
+451E	GFR calculated abbreviated MDRD	1
+451F	Glomerular filtration rate	2
+4614	Urinalysis = abnormal	2
+4666	Urine glucose test = +++	1
+4672	Urine protein test negative	1
+4676	Urine protein test = +++	1
+467A	24 hour urine protein output	1
+4682	Urine ketone test negative	1
+5542	Coronary arteriography normal	1
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	2
+67I7	Advice about foot care	2
+6896	Depression screening using questions	2
+68A8	Digital retinal screening	3
+7B002	Transplantation of kidney from cadaver	1
+7B060	Open renal biopsy	1
+7B1A2	Endoscopic removal of ureteric stent	1
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	2
+8D74	Indwelling urethral catheter	1
+8H	Referral for further care	4
+8H4	Referral to physician	2
+8H4F	Referral to diabetologist	1
+8H77	Refer to physiotherapist	1
+8I28	Angiotensin converting enzyme inhibitors contraindicated	1
+8IAG	Pandemic influenza vaccination declined	1
+9N11	Seen in GP's surgery	1
+9N7B	Follow up visit	1
+9NN0	Under care of podiatrist	1
+9OX5	Influenza vaccination declined	1
+9S10	White British	1
+A0812	Gastroenteritis - presumed infectious origin	1
+AB0	Dermatophytosis including tinea or ringworm	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	7
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	16
+ASDI224	Aspirin  Dispersible tablets  75 mg	10
+ASTA4609	Aspirin  Tablets  75 mg	2
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	4
+C10	Diabetes mellitus	1
+C101	Diabetes mellitus with ketoacidosis	1
+C104	Diabetes mellitus with renal manifestation	2
+C11y0	Steroid induced diabetes	1
+CAIN28236EMIS	Caverject  Injection  10 micrograms/vial	3
+CAIN31971EMIS	Caverject  Injection  5 micrograms/vial	2
+CAIN34034EMIS	Caverject  Injection  40 micrograms/vial	2
+CAIN4534NEMIS	Calciferol  Injection  300,000 units/ml, 1 ml ampoule	6
+DITA4858	Distigmine Bromide  Tablets  5 mg	1
+DITA856	Diabinese  Tablets  100 mg	8
+DITA886	Diclofenac Sodium  Tablets  50 mg	6
+E3	Mental retardation	2
+EMISNQNE2	Unknown vendor specific drug	1
+EMISNQSM3	Unknown vendor specific drug	1
+F31z	Facial nerve disorder NOS	1
+F35z	Mononeuritis of unspecified site NOS	1
+F5900	"Conductive hearing loss	3
+FECA4915	Ferrous Fumarate  Capsules  305 mg	1
+FECA9492HILLI	Fenofibrate  Capsules  100 mg	18
+FRTA1247	Frumil  Tablets	5
+FRTA1248	Frusemide  Tablets  20 mg	10
+Fyu51	[X]Other epilepsy	1
+H014	Acute rhinosinusitis	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	2
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	1
+J1512	Chronic superficial gastritis	1
+J17y7	Deformed duodenal cap (bulb)	1
+J1y	"Other specified disorders of oesophagus	1
+JAEU3719NEMIS	Jade-Euro-Med  Eurosleeve  medium, JES3	1
+K017	Nephrotic syn difus mesangial prolifertiv glomerulonephritis	1
+K0A2	Recurrent and persistent haematuria	1
+K1012	Acute pyelitis	1
+L43z4	Obstetric pulmonary embolism NOS with postnatal complication	10
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	3
+MITA19793NEMIS	Mirtazapine  Tablets  15 mg	3
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	1
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	5
+PK13	Hypoplasia of adrenal gland	3
+PK61	Sturge-Weber syndrome	12
+PUJINST1	Unknown vendor specific drug	2
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1
+SPOR9102BRIDL	Spironolactone  Oral suspension  10 mg/5 ml	3
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	3
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	2
+VETA6809	Verapamil Hydrochloride  Tablets  80 mg	2

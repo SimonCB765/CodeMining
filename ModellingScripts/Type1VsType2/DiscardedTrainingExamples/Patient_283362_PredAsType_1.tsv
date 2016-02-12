@@ -1,0 +1,97 @@
+Code	Description	Count
+0EZ5	Jeweller	1
+136	Alcohol consumption	2
+1371	Never smoked tobacco	5
+229	O/E - height	4
+22A	O/E - weight	10
+22K	Body Mass Index	10
+22K5	Body mass index 30+ - obesity	1
+2469	O/E - Systolic BP reading	20
+29B7	10g monofilament sensation present	1
+29B8	10g monofilament sensation absent	1
+2BB7	O/E - retinal vascular prolif.	2
+2BBF	Retinal abnormality - diabetes related	1
+31281	Fundoscopy abnormal	1
+3217	ECG abnormal	1
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42T	Serum vitamin B12	2
+42T2	Serum vitamin B12 low	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	12
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	5
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44J3	Serum creatinine	7
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	5
+44Q	Serum triglycerides	5
+44TB	Haemoglobin A1c level	1
+44TJ	Blood glucose level	1
+451E	GFR calculated abbreviated MDRD	7
+4671	Urine protein test not done	2
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	1
+46M7	Urine creatinine	4
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	6
+66A5	Diabetic on insulin	2
+6792	Health ed. - alcohol	1
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+68NE	No consent - influenza imm.	2
+8BL2	Patient on maximal tolerated therapy for diabetes	3
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	2
+8H	Referral for further care	2
+8H44	Cardiological referral	2
+8H52	Ophthalmological referral	1
+8H76	Refer to dietician	1
+8H7n	Referral to retinal screener	1
+8H7r	Refer to diabetic foot screener	1
+8HBD	Retinopathy follow up	2
+8I3W	Diabetic foot examination declined	1
+9N1v	Seen in diabetic eye clinic	1
+9N2U	Seen by optician	1
+9NNC	Under care of retinal screener	6
+9i0	British or mixed British - ethnic category 2001 census	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	2
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	7
+ASDI224	Aspirin  Dispersible tablets  75 mg	13
+ATTA231	Atenolol  Tablets  50 mg	2
+C10	Diabetes mellitus	3
+C109	Non-insulin dependent diabetes mellitus	1
+CAM/25482NEMIS	Cardioplen Xl  M/R tablets  2.5 mg	4
+COSH12392NEMIS	Coloplast Simpla Trident T1  Short tube leg bags  500ml, 370807	21
+DITA885	Diclofenac Sodium  Tablets  25 mg	18
+E200z	Anxiety state NOS	2
+E3	Mental retardation	3
+F35z	Mononeuritis of unspecified site NOS	2
+FRTA1248	Frusemide  Tablets  20 mg	3
+Fyu51	[X]Other epilepsy	3
+G3400	Single coronary vessel disease	1
+G5415	Aortic stenosis	1
+GASTOUN2	Unknown vendor specific drug	1
+HUIN3719	Humulin M1  Injection	6
+IBSO22325NEMIS	Ibandronic Acid  Solution for injection  3 mg/3 ml, 3 ml pre-filled syringe	1
+IBTA1430	Ibuprofen  Tablets  400 mg	21
+ININ3759	Pork Insulatard  Injection  100 units/ml, 10 ml vial	14
+J1212	Chronic duodenal ulcer with perforation	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	25
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	1
+PH5	Specified anomalies of nails	1
+Pyu70	[X]Other cystic kidney diseases	2
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	6
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	18
+SETA4308	Semi-Daonil  Tablets  2.5 mg	7

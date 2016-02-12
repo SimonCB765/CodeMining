@@ -1,0 +1,120 @@
+Code	Description	Count
+136	Alcohol consumption	4
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	1
+137S	Ex smoker	4
+1383	Enjoys light exercise	1
+138O	Takes inadequate exercise	2
+13A	Diet - patient initiated	1
+13JM	Problems at work	1
+1A52	Renal colic	2
+1B17	Depressed	1
+1FC	Diet average	2
+229	O/E - height	6
+22A	O/E - weight	18
+22K	Body Mass Index	19
+22K2	Body Mass Index high K/M2	4
+246	O/E - blood pressure reading	20
+29BB	10g monofilament sensation R foot normal	4
+3128	Fundoscopy	3
+32G2	ECG: U wave abnormal	2
+423	Haemoglobin estimation	13
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42W	Hb. A1C - diabetic control	9
+42W4	HbA1c level (DCCT aligned)	9
+42W5	Haemoglobin A1c level - IFCC standardised	3
+43Z2	Prostate specific antigen	1
+44CB	Serum transferrin	1
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G40	Gamma glutamyl transferase level normal	1
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	22
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	11
+44Q	Serum triglycerides	12
+44TB	Haemoglobin A1c level	1
+44TJ	Blood glucose level	4
+44U	Blood glucose result	1
+44f1	Serum fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	4
+451F	Glomerular filtration rate	2
+4618	Urine dipstick test	2
+467	Urine protein test	2
+46G2	Urine microscopy:RBC's present	1
+46M7	Urine creatinine	3
+46N8	Urine microalbumin profile	2
+46TC	Urine albumin:creatinine ratio	7
+46U	Urine culture	1
+46W	Urine microalbumin	6
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	1
+679	Health education - subject	2
+6891	Depression screen	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+8B63	Salicylate prophylaxis	6
+8H62	Referral to G.P.	1
+8H77	Refer to physiotherapist	1
+8H8	Follow-up arranged	1
+8H9	Planned telephone contact	3
+8HE	Discharged from hospital	1
+8Hd	Admission to hospital	1
+9N19	Seen in hospital casualty	1
+9N1I	Seen in urology clinic	1
+9N1Q	Seen in diabetic clinic	1
+9N2U	Seen by optician	1
+9N2f	Seen by retinal screener	1
+9N31	Telephone encounter	1
+9N3A	Telephone triage encounter	1
+9N4C	Failed encounter - no answer when rang back	1
+9h41	Excepted from diabetes qual indicators: Patient unsuitable	1
+A7814	Plain wart	1
+AB10	Pityriasis versicolor	1
+C10	Diabetes mellitus	2
+C1001	Diab.mell.no comp. - adult	1
+C108	Insulin dependent diabetes mellitus	1
+E0020	Senile dementia with paranoia	4
+E12	Paranoid states	1
+E200z	Anxiety state NOS	3
+EllioBR1	Unknown vendor specific drug	1
+F2611	Sick headache	1
+F261z	Common migraine NOS	1
+G12	Rheumatic aortic valve disease	1
+G20	Essential hypertension	1
+GLTA1304	Glibenese  Tablets  5 mg	1
+H014	Acute rhinosinusitis	1
+K08y	Other impaired renal function disorder	1
+S227	Fracture of shaft of humerus	1
+bb1x	AMIODARONE HYDROCHLORIDE 100mg tablets	18
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	16
+bx13	BEZAFIBRATE 200mg tablets	5
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	1
+bxa7	OMACOR 1g capsules	23
+bxdI	INEGY 10mg/40mg tablets	1
+bxdx	SIMVASTATIN 40mg/EZETIMIBE 10mg tablets	1
+d71v	AMITRIPTYLINE 50mg m/r capsules	6
+du3M	*NICABATE 7mg patches x7	1
+ed42	ISONIAZID 100mg tablets	1
+ei1k	ACICLOVIR 400mg dispersible tablets	1
+ei1o	ACICLOVIR 800mg tablets	2
+f25Y	HUMAN ISOPHANE INSULIN 100units/mL injection vials	1
+f25f	*HUMULIN M2 injection 10mL	5
+f25m	HUMAN INSULATARD 100iu/mL preloaded injection pen 3mL	4
+f25o	HUMULIN I 100iu/mL cartridges 3mL	4
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	4
+ft11	ACARBOSE 50mg tablets	4
+gc6z	ALFUZOSIN HYDROCHLORIDE 10mg m/r tablets	1
+gc71	TAMSULOSIN HYDROCHLORIDE 400micrograms m/r capsules	4
+ip3a	CALCIUM AND ERGOCALCIFEROL 400units tablets	3
+j22R	DICLOFENAC 75mg e/c+m/r capsules	1
+j281	IBUPROFEN 200mg tablets	1

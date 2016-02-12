@@ -1,0 +1,133 @@
+Code	Description	Count
+08	Selling occupations	1
+136	Alcohol consumption	5
+1371	Never smoked tobacco	1
+137S	Ex smoker	5
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+1A	Genitourinary symptoms	1
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	2
+22A	O/E - weight	16
+22K	Body Mass Index	9
+2469	O/E - Systolic BP reading	19
+29B7	10g monofilament sensation present	1
+29H4	O/E - Vibration sense of right foot abnormal	2
+2BBF	Retinal abnormality - diabetes related	3
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+312F	Camera fundoscopy	4
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	4
+42U4	Red blood cell folate	1
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	10
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	19
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	10
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	12
+44Q3	Serum triglycerides raised	3
+44TB	Haemoglobin A1c level	5
+44U	Blood glucose result	1
+451E	GFR calculated abbreviated MDRD	12
+4672	Urine protein test negative	3
+4678	Proteinuria	1
+46M7	Urine creatinine	4
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	6
+46W	Urine microalbumin	4
+479Z	Faecal occult blood NOS	1
+554	Coronary arteriogr.-general	1
+585f	Echocardiogram shows left ventricular systolic dysfunction	1
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A5	Diabetic on insulin	3
+66AD	Fundoscopy - diabetic check	2
+6872	Diabetes mellitus screen	1
+6896	Depression screening using questions	3
+68A8	Digital retinal screening	1
+79375	Implantation of internal cardiac defibrillator	1
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	3
+8H41	General medical referral	3
+8H44	Cardiological referral	1
+8H46	Neurological referral	1
+8H54	Orthopaedic referral	2
+8H77	Refer to physiotherapist	1
+8IAG	Pandemic influenza vaccination declined	5
+9N1P	Seen in cardiac clinic	1
+9N1v	Seen in diabetic eye clinic	2
+9N2e	Seen by ophthalmologist	1
+9NNC	Under care of retinal screener	1
+9NND	Under care of diabetic foot screener	2
+9OX5	Influenza vaccination declined	2
+9S10	White British	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	17
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	4
+ASDI224	Aspirin  Dispersible tablets  75 mg	13
+ASTA4609	Aspirin  Tablets  75 mg	1
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA6253NEMIS	Atorvastatin  Tablets  80 mg	5
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	15
+BETA4655	Bezafibrate  Tablets  200 mg	13
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	5
+C10	Diabetes mellitus	1
+CETA512	Celevac  Tablets  500 mg	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	2
+COTA29342NEMIS	Coversyl Arginine  Tablets  5 mg	1
+COTA696	Co-Trimoxazole  Tablets  480 mg	2
+COUR12416NEMIS	Coloplast Simpla 2 Litre S2  Urine drainage bag  320902	2
+DIM/30235EMIS	Diltiazem Hydrochloride  M/R tablets  60 mg	2
+DITA856	Diabinese  Tablets  100 mg	7
+DITA886	Diclofenac Sodium  Tablets  50 mg	10
+E3	Mental retardation	2
+EMISQRE4	Unknown vendor specific drug	1
+F35z	Mononeuritis of unspecified site NOS	1
+F4218	Retinal microaneurysms NOS	1
+F5921	"Mix cond/sensin hear loss	1
+FRTA1248	Frusemide  Tablets  20 mg	5
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	2
+G201	Benign essential hypertension	1
+G3400	Single coronary vessel disease	2
+G572z	Paroxysmal tachycardia NOS	2
+G84	Haemorrhoids	1
+HEWITAS11	Unknown vendor specific drug	1
+HUIN3719	Humulin M1  Injection	1
+L245	Cervical incompetence	2
+L2463	Other cervical abn complicating a/n care- baby not delivered	11
+LEIGHTH12	Unknown vendor specific drug	2
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	20
+MACA8841BRIDL	Maxepa  Capsules  1 gram	6
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	9
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	1
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	4
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	4
+R1100	[D]Albuminuria	2
+S2602	"Cls # distal phalanx or phalanges	1
+S3z2	Stress fracture	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	5
+SLTA4320	Slow-Fe  Tablets  160 mg	5
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	1
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	1
+VETA6809	Verapamil Hydrochloride  Tablets  80 mg	3

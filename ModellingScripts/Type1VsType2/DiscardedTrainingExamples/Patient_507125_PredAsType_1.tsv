@@ -1,0 +1,125 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	2
+136	Alcohol consumption	6
+1361	Teetotaller	4
+1379	Ex-moderate smoker (10-19/day)	2
+137L	Current non-smoker	1
+137P	Cigarette smoker	2
+137S	Ex smoker	3
+137T	Date ceased smoking	1
+13l4	Main spoken language English	1
+1A57	Pain in testicle	2
+1AA	Prostatism	1
+229	O/E - height	10
+22A	O/E - weight	14
+22K	Body Mass Index	15
+2469	O/E - Systolic BP reading	23
+29BB	10g monofilament sensation R foot normal	3
+29H1	O/E - vibration sense normal	1
+2BBM	O/E - diabetic maculopathy absent both eyes	3
+31283	Camera fundoscopy	2
+321C	ECG sinus rhythm	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42C	RBC - red blood cell size	3
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44CC	Plasma C reactive protein	2
+44CS	Serum C reactive protein level	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	26
+44M4	Serum albumin	2
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	8
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	9
+44TB	Haemoglobin A1c level	17
+44U	Blood glucose result	4
+44g	Plasma glucose level	1
+451E	GFR calculated abbreviated MDRD	1
+4661	Urine glucose test not done	5
+4663	Urine glucose test = trace	1
+4666	Urine glucose test = +++	1
+4671	Urine protein test not done	5
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	1
+4691	Urine blood test not done	1
+4692	Urine blood test = negative	1
+46TC	Urine albumin:creatinine ratio	5
+46TD	Urine microalbumin:creatinine ratio	1
+46X1	Urine nitrite negative	1
+55	Cardiovascular sys.angiography	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	2
+66AD	Fundoscopy - diabetic check	5
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	3
+6896	Depression screening using questions	3
+68A8	Digital retinal screening	1
+7B390	Transurethral prostatectomy	1
+8A44	Pulse oximetry monitoring	1
+8B3T	Over the counter aspirin therapy	2
+8CAL	Smoking cessation advice	1
+8H	Referral for further care	2
+8H44	Cardiological referral	1
+8H51	General surgical referral	1
+8H54	Orthopaedic referral	1
+8H7V	Refer to audiologist	1
+8H7X	Refer to podiatry	1
+8HT3	Referral to audiology clinic	1
+8I62	Beta blocker not indicated	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	4
+9N42	Did not attend - no reason	1
+9S1	White	1
+ADM/22258EMIS	Adizem-Sr  M/R capsules  90 mg	11
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	13
+ASTA4609	Aspirin  Tablets  75 mg	2
+BESC348	Betamethasone Valerate  Scalp application  0.1 %	1
+C10	Diabetes mellitus	7
+C109	Non-insulin dependent diabetes mellitus	1
+CHTA23546NEMIS	Champix  Tablets  1 mg	4
+CITA15860NEMIS	Cipralex  Tablets  20 mg	6
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	1
+DEPO18483NEMIS	Decapeptyl Sr  Powder and solvent for injection  3 mg/dose	2
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	1
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	1
+Dyu22	[X]Anaemia in other chronic diseases classified elsewhere	3
+F35z	Mononeuritis of unspecified site NOS	2
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G240	Secondary malignant hypertension	3
+G573z	Atrial fibrillation and flutter NOS	1
+G581	Left ventricular failure	1
+G668	Right sided CVA	2
+GASTOUR11	Unknown vendor specific drug	1
+H27z	Influenza NOS	1
+HEWITCA1	Unknown vendor specific drug	13
+Hyu1	[X]Other acute lower respiratory infections	7
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	1
+J1212	Chronic duodenal ulcer with perforation	2
+K12z	Urinary calculus NOS	2
+L264	Intrauterine death	1
+M07z1	Infection toe	2
+MACA8841BRIDL	Maxepa  Capsules  1 gram	10
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	15
+N083q	Recurrent subluxation of the patella	2
+OLCA9765HILLI	Olbetam  Capsules  250 mg	1
+PK61	Sturge-Weber syndrome	7
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	16
+QUTA10127BRIDL	Quinapril  Tablets  10 mg	2
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	23
+STTA2717	Stugeron  Tablets  15 mg	2
+TETA3341NEMIS	Teveten  Tablets  600 mg	1

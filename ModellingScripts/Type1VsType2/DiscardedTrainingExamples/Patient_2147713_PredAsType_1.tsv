@@ -1,0 +1,118 @@
+Code	Description	Count
+1351	Church of England	1
+136	Alcohol consumption	7
+1379	Ex-moderate smoker (10-19/day)	1
+137S	Ex smoker	2
+13l4	Main spoken language English	1
+1A33	Micturition stream poor	1
+1Z12	Chronic kidney disease stage 3	1
+1Z1G	Chronic kidney disease stage 3B without proteinuria	1
+229	O/E - height	8
+22A	O/E - weight	11
+22K	Body Mass Index	9
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	23
+29BB	10g monofilament sensation R foot normal	3
+2BBF	Retinal abnormality - diabetes related	2
+2BBL	O/E - diabetic maculopathy present both eyes	1
+31280	Fundoscopy normal	1
+31281	Fundoscopy abnormal	1
+32	Electrocardiography	2
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	8
+42W4	HbA1c level (DCCT aligned)	8
+42W5	Haemoglobin A1c level - IFCC standardised	1
+42c	HbA1 - diabetic control	1
+44E3	Total bilirubin	1
+44EC	Serum total bilirubin level	1
+44F	Serum alkaline phosphatase	1
+44FZ	Serum alkaline phosphatase NOS	1
+44I4	Serum potassium	11
+44I5	Serum sodium	2
+44I8	Serum calcium	2
+44J3	Serum creatinine	18
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	2
+44Q	Serum triglycerides	5
+44U	Blood glucose result	2
+44Z1	Serum fructosamine	1
+44g	Plasma glucose level	6
+44g0	Plasma random glucose level	1
+451E	GFR calculated abbreviated MDRD	9
+4671	Urine protein test not done	1
+4676	Urine protein test = +++	1
+4696	Urine blood test = ++	1
+46N4	Urine albumin	6
+46N6	24 hour urine albumin output	1
+46TC	Urine albumin:creatinine ratio	7
+5853	U-S heart scan	2
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	1
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+68A8	Digital retinal screening	1
+68NE	No consent - influenza imm.	1
+8A17	Self monitoring of blood glucose	1
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	2
+8CAM	Patient advised about alcohol	3
+8H4F	Referral to diabetologist	1
+8H51	General surgical referral	2
+8H52	Ophthalmological referral	1
+8H72	Refer to district nurse	1
+8HT	Referral to clinic	3
+8I28	Angiotensin converting enzyme inhibitors contraindicated	1
+8I3	Procedure refused	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	1
+8I76	Statin not tolerated	1
+9N1v	Seen in diabetic eye clinic	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9NE8	Fax sent to:	2
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AB0	Dermatophytosis including tinea or ringworm	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	4
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	1
+ASTA4609	Aspirin  Tablets  75 mg	11
+ATTA230	Atenolol  Tablets  100 mg	3
+ATTA231	Atenolol  Tablets  50 mg	18
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	1
+BETA302	Bendrofluazide  Tablets  2.5 mg	5
+C109	Non-insulin dependent diabetes mellitus	1
+D0121	Folate-deficiency anaemia due to dietary causes	1
+DITA886	Diclofenac Sodium  Tablets  50 mg	20
+E3	Mental retardation	3
+F3721	Chronic painful diabetic neuropathy	1
+F4	Disorders of eye and adnexa	1
+FOCA24991EMIS	Foley  Catheter (male)  12 ch	8
+FRTA1248	Frusemide  Tablets  20 mg	4
+Fyu51	[X]Other epilepsy	1
+G86	Noninfective lymphatic disorders	19
+GASTOTR2	Unknown vendor specific drug	1
+LACH24088NEMIS	Lanthanum  Chewable tablets  500 mg	14
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	1
+NIM/21927EMIS	Nicardipine Hydrochloride  M/R capsules  45 mg	19
+PD44	Double ureter	20
+PD601	Stenosis of bladder neck	1
+PE1	Congenital sternomastoid torticollis	1
+PUJINST1	Unknown vendor specific drug	1
+Pyu70	[X]Other cystic kidney diseases	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	2
+SITA25228NEMIS	Sitagliptin  Tablets  100 mg	1
+SLTA4320	Slow-Fe  Tablets  160 mg	2
+U600	[X]Systemic antibiotic caus adv effects in therapeutic use	1

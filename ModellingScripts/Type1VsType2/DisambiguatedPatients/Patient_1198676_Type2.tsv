@@ -1,0 +1,110 @@
+Code	Description	Count
+136	Alcohol consumption	10
+1371	Never smoked tobacco	4
+1Z10	Chronic kidney disease stage 1	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	5
+22A	O/E - weight	8
+22K	Body Mass Index	7
+2469	O/E - Systolic BP reading	18
+29B1	O/E - tactile sensation normal	1
+311A	Monofilament foot sensation test	1
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	13
+44F	Serum alkaline phosphatase	2
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44J3	Serum creatinine	19
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	5
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	12
+44g	Plasma glucose level	1
+44g1	Plasma fasting glucose level	5
+451E	GFR calculated abbreviated MDRD	6
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	2
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	1
+46M7	Urine creatinine	3
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	4
+46W2	Microalbumin excretion rate	3
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+79275	Open angioplasty of coronary artery	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	3
+8H43	Dermatological referral	1
+8H5D	Referred to vascular surgeon	1
+8H75	Refer to social worker	1
+8H7J	Refer to occupational therap.	1
+8H7r	Refer to diabetic foot screener	1
+8HC	Refer to hospital casualty	1
+8HHB	Referral to Social Services	1
+9NND	Under care of diabetic foot screener	1
+9h31	Excepted from hypertension qual indicators: Patient unsuit	1
+9h42	Excepted from diabetes quality indicators: Informed dissent	4
+9i0	British or mixed British - ethnic category 2001 census	1
+A53	Herpes zoster	1
+AB	Mycoses	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	9
+AMTA9080EMIS	Amlodipine Besilate  Tablets  10 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	6
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	7
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	6
+C10	Diabetes mellitus	2
+CACH30077EMIS	Calceos  Chewable tablets  Sugar Free	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	4
+COTA9149BRIDL	Co-Amilofruse 5/40  Tablets	1
+DIM/24452EMIS	Diclofenac Sodium  M/R capsules  100 mg	1
+E112	Single major depressive episode	1
+E112z	Single major depressive episode NOS	1
+E3	Mental retardation	3
+EGTON269	Unknown vendor specific drug	1
+EMISNOFH3	Unknown vendor specific drug	1
+EMISNQHO1	Unknown vendor specific drug	1
+F35z	Mononeuritis of unspecified site NOS	1
+F4K2z	Vitreous disorders NOS	1
+F5872	Referred ear pain	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	3
+FOTA5746NEMIS	Fosamax Once Weekly  Tablets  70 mg	1
+Fyu51	[X]Other epilepsy	2
+G65zz	Transient cerebral ischaemia NOS	2
+G660	Middle cerebral artery syndrome	1
+GASTOUN2	Unknown vendor specific drug	1
+H02	Acute pharyngitis	1
+H037	Recurrent acute tonsillitis	1
+HUCA32498EMIS	Humulin I  Cartridges (3 Ml)  100 units/ml	1
+Hyu02	[X]Acute tonsillitis due to other specified organisms	18
+Hyu20	[X]Other seasonal allergic rhinitis	1
+ININ32907EMIS	Invicorp 2  Injection	26
+J1212	Chronic duodenal ulcer with perforation	2
+L264z	Intrauterine death NOS	2
+MACA8841BRIDL	Maxepa  Capsules  1 gram	16
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	3
+NECA26624EMIS	Neoral  Capsules  25 mg	3
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	10
+TAOR1702NEMIS	Tamoxifen Citrate  Oral solution  Sugar Free 10 mg/5 ml	1
+U6000	[X]Penicillins causing adverse effects in therapeutic use	1
+VITA34202EMIS	Viagra  Tablets  25 mg	2
+VITA474NEMIS	Vioxx  Tablets  12.5 mg	2
+VITA475NEMIS	Vioxx  Tablets  25 mg	1
+WATA3069	Warfarin Sodium  Tablets  3 mg	1

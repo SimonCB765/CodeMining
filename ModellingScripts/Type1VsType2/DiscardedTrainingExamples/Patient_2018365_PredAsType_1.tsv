@@ -1,0 +1,113 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1371	Never smoked tobacco	2
+1383	Enjoys light exercise	2
+13A3	Weight reducing diet	1
+13l6	Main spoken language Gujerati	1
+229	O/E - height	8
+22A	O/E - weight	9
+22K	Body Mass Index	10
+22N0	Waist circumference	6
+2469	O/E - Systolic BP reading	20
+29B7	10g monofilament sensation present	3
+2BB1	O/E - retina normal	2
+2BBI	O/E - no retinopathy	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	2
+42R7	Serum iron level	2
+42T	Serum vitamin B12	3
+42U5	Serum folate	1
+42W5	Haemoglobin A1c level - IFCC standardised	2
+42c1	HbA1 7 - 10% - borderline control	1
+44CC	Plasma C reactive protein	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44J3	Serum creatinine	13
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P3	Serum cholesterol raised	1
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	12
+44PF	Total cholesterol:HDL ratio	12
+44Q	Serum triglycerides	13
+44TB	Haemoglobin A1c level	21
+44U	Blood glucose result	2
+44U5	Blood glucose 7-9.9 mmol/L	1
+44g	Plasma glucose level	4
+44lD	Urine protein/creatinine ratio	3
+451E	GFR calculated abbreviated MDRD	6
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	1
+4675	Urine protein test = ++	1
+4682	Urine ketone test negative	2
+46M7	Urine creatinine	2
+46N	Urine protein	2
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	5
+46W	Urine microalbumin	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	1
+67E	Foreign travel advice	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	4
+8H	Referral for further care	1
+8H7C	 diabetic liaison nurse"	1
+8H7f	Referral to diabetes nurse	2
+8HC1	Refer to A. & E. department	5
+8IA3	Bowel cancer screening declined	1
+8IAG	Pandemic influenza vaccination declined	1
+9N1v	Seen in diabetic eye clinic	1
+9N2S	Seen by practice phlebotomist	2
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	1
+9i7	Indian or British Indian - ethnic category 2001 census	3
+AB211	Candidiasis of vagina	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	16
+ASDI224	Aspirin  Dispersible tablets  75 mg	17
+BREY3934NEMIS	Brinzolamide  Eye drops  10 mg/ml	2
+C10	Diabetes mellitus	5
+C1001	Diab.mell.no comp. - adult	1
+CODR10352BRIDL	Coloplast Conveen  Drainage bag  1.5 litres, 5062	1
+COVE2318NEMIS	Coloplast  Velcrobands  5050	3
+E3	Mental retardation	1
+E310	Moderate mental ret. IQ 35-49	1
+F4K21	Vitreous detachment	1
+F5030	"Disorder of pinna	1
+F5872	Referred ear pain	3
+F5921	"Mix cond/sensin hear loss	3
+Fyu51	[X]Other epilepsy	2
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+H014	Acute rhinosinusitis	1
+H0616	Acute bronchiolitis due to other specified organisms	1
+HEWITAS9	Unknown vendor specific drug	6
+HEWITFL2	Unknown vendor specific drug	1
+HUIN3719	Humulin M1  Injection	1
+M21yC	Insulin lipohypertrophy	17
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	7
+N047	Seropositive errosive rheumatoid arthritis	1
+NIM/21970EMIS	Nitrofurantoin  M/R capsules  100 mg	16
+PJ63	Turner's syndrome	1
+R1431	[D]Electrocardiogram (ECG) abnormal	7
+S3320	Closed fracture shaft of tibia	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	17
+SLTA4320	Slow-Fe  Tablets  160 mg	1
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	1
+TETA5426	Tetracycline Hydrochloride  Tablets  250 mg	24
+TETA9419BRIDL	Tenormin  Tablets  25 mg	2
+TETA9941HILLI	Terazosin Hydrochloride  Tablets  10 mg	1

@@ -1,0 +1,90 @@
+Code	Description	Count
+136	Alcohol consumption	2
+137S	Ex smoker	3
+1382	Avoids even trivial exercise	4
+229	O/E - height	5
+22A	O/E - weight	15
+22K	Body Mass Index	14
+2469	O/E - Systolic BP reading	18
+311A	Monofilament foot sensation test	2
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	1
+42W	Hb. A1C - diabetic control	9
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	15
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	8
+44PF	Total cholesterol:HDL ratio	9
+44Q	Serum triglycerides	14
+44TB	Haemoglobin A1c level	8
+44g	Plasma glucose level	1
+44lD	Urine protein/creatinine ratio	3
+451E	GFR calculated abbreviated MDRD	7
+4662	Urine glucose test negative	1
+467	Urine protein test	1
+4672	Urine protein test negative	5
+4692	Urine blood test = negative	4
+46M7	Urine creatinine	3
+46N	Urine protein	1
+46N4	Urine albumin	3
+46N8	Urine microalbumin profile	1
+46TC	Urine albumin:creatinine ratio	5
+585b	Left dorsalis pedis ABPI	1
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	3
+66Ac	Diabetic peripheral neuropathy screening	1
+6791	Health ed. - smoking	1
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	1
+8CAM	Patient advised about alcohol	1
+8H	Referral for further care	2
+8H76	Refer to dietician	1
+8I26	Beta blocker contraindicated	1
+9N2e	Seen by ophthalmologist	4
+9NNB	Under care of ophthalmologist	1
+9NS2	Patient offered choice of provider	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	13
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	15
+BESC348	Betamethasone Valerate  Scalp application  0.1 %	1
+C10	Diabetes mellitus	6
+D0130	Combined B12 and folate deficiency anaemia	2
+DEIN20067EMIS	Depo-Medrone  Injection  80 mg/2 ml vial	3
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	2
+E230z	Acute alcoholic intoxication in alcoholism NOS	1
+EMISSPR110	Unknown vendor specific drug	13
+EMISSPR130	Unknown vendor specific drug	17
+ERIN24326NEMIS	Ergocalciferol  Injection  300,000 units/ml, 2 ml ampoule	8
+F31z	Facial nerve disorder NOS	1
+F35z	Mononeuritis of unspecified site NOS	1
+F42z	Retinal disorder NOS	1
+F5900	"Conductive hearing loss	4
+FRTA1247	Frumil  Tablets	12
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	2
+G300	Acute anterolateral infarction	1
+H014	Acute rhinosinusitis	1
+HEWITPO11	Unknown vendor specific drug	1
+HUCA18378EMIS	Humulin M2  Cartridges (1.5 Ml)	6
+MACA8841BRIDL	Maxepa  Capsules  1 gram	23
+N0516	Local.primary OA-lower leg	2
+NIM/21927EMIS	Nicardipine Hydrochloride  M/R capsules  45 mg	15
+SCCA19035EMIS	Scott  Catheters  10 ch	1
+TETA1042NEMIS	Telmisartan  Tablets  40 mg	1

@@ -1,0 +1,139 @@
+Code	Description	Count
+136	Alcohol consumption	9
+1371	Never smoked tobacco	1
+1375	Heavy smoker - 20-39 cigs/day	1
+137G	Trying to give up smoking	1
+137P	Cigarette smoker	1
+137R	Current smoker	2
+1383	Enjoys light exercise	2
+13J5	Retired	1
+13l4	Main spoken language English	1
+229	O/E - height	10
+22A	O/E - weight	15
+22K	Body Mass Index	14
+22K5	Body mass index 30+ - obesity	1
+2469	O/E - Systolic BP reading	20
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	1
+2BBK	O/E - no left diabetic retinopathy	1
+2BBP	O/E - right eye background diabetic retinopathy	1
+2BBW	O/E - right eye diabetic maculopathy	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5J	O/E - Left diabetic foot at moderate risk	1
+3242	ECG: shows LVH	1
+329A	ECG: left bundle branch block	1
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42QE	International normalised ratio	3
+42R4	Serum ferritin	1
+42R7	Serum iron level	2
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	15
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	3
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	16
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	5
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	11
+44g	Plasma glucose level	3
+451E	GFR calculated abbreviated MDRD	5
+451F	Glomerular filtration rate	2
+467	Urine protein test	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	3
+46M7	Urine creatinine	3
+46TC	Urine albumin:creatinine ratio	4
+46W	Urine microalbumin	3
+55	Cardiovascular sys.angiography	1
+5543	Coronary arteriograph.abnormal	1
+5853	U-S heart scan	1
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+6791	Health ed. - smoking	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+7936	Introduction of cardiac pacemaker system via vein	1
+79366	Implantation of permanent intravenous cardiac pacemaker	1
+8A17	Self monitoring of blood glucose	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	2
+8CAM	Patient advised about alcohol	3
+8H21	Admit medical emergency unsp.	1
+8H43	Dermatological referral	1
+8H44	Cardiological referral	1
+8H4F	Referral to diabetologist	1
+8H52	Ophthalmological referral	1
+8H77	Refer to physiotherapist	1
+8H7n	Referral to retinal screener	1
+8HBD	Retinopathy follow up	1
+8HRA	Referral for exercise ECG	1
+9N2P	Seen by chiropodist	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	2
+9NNC	Under care of retinal screener	1
+9S1	White	2
+9i0	British or mixed British - ethnic category 2001 census	3
+AMTA112	Amiodarone  Tablets  100 mg	1
+AMTA8388EGTON	Amitriptyline Hydrochloride  Tablets  50 mg	3
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	3
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	19
+C10	Diabetes mellitus	1
+C1001	Diab.mell.no comp. - adult	1
+CAEF9656BRIDL	Cacit  Effervescent tablet  1.25 grams	9
+CAGR22795EMIS	Calcidrink  Granules  2.52 grams/sachet	14
+CAM/6443NEMIS	Cardura Xl  M/R tablets  8 mg	3
+DIM/30235EMIS	Diltiazem Hydrochloride  M/R tablets  60 mg	1
+DITA885	Diclofenac Sodium  Tablets  25 mg	2
+DITA886	Diclofenac Sodium  Tablets  50 mg	14
+E200z	Anxiety state NOS	2
+E3	Mental retardation	1
+EGTON1027	Unknown vendor specific drug	1
+EGTON415	Unknown vendor specific drug	5
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F48z	Visual disturbance NOS	1
+FRTA1247	Frumil  Tablets	6
+FRTA1248	Frusemide  Tablets  20 mg	9
+Fyu51	[X]Other epilepsy	3
+G11z	Mitral valve disease NOS	2
+G3400	Single coronary vessel disease	2
+G572z	Paroxysmal tachycardia NOS	1
+G5731	Atrial flutter	1
+G84	Haemorrhoids	2
+GASTOUR9	Unknown vendor specific drug	6
+H037	Recurrent acute tonsillitis	1
+H0614	Obliterating fibrous bronchiolitis	1
+ISIN33727EMIS	Isophane Insulin (Human Pyr)  Injection  100 units/ml, 10 ml vial	1
+J1y	"Other specified disorders of oesophagus	2
+L43z4	Obstetric pulmonary embolism NOS with postnatal complication	10
+MACA8841BRIDL	Maxepa  Capsules  1 gram	4
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	2
+NIM/21970EMIS	Nitrofurantoin  M/R capsules  100 mg	1
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	9
+NITR34946EMIS	Nicotine  Transdermal patches  7 mg/24 hrs	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	29
+R00zW	"[D]State of emotional shock and stress	3
+SLTA4320	Slow-Fe  Tablets  160 mg	23
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	5
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	8
+VETA6809	Verapamil Hydrochloride  Tablets  80 mg	3
+VICA4504	Vibramycin  Capsules  50 mg	2

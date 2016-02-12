@@ -1,0 +1,160 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	2
+1362	Trivial drinker - <1u/day	1
+1363	Light drinker - 1-2u/day	1
+1367	Stopped drinking alcohol	1
+1371	Never smoked tobacco	1
+1374	Moderate smoker - 10-19 cigs/d	1
+137P	Cigarette smoker	2
+137S	Ex smoker	2
+1A	Genitourinary symptoms	1
+1A53	Lumbar ache - renal	1
+1AE	Vaginal discomfort	1
+1BT	Depressed mood	1
+229	O/E - height	2
+22A	O/E - weight	9
+22K	Body Mass Index	11
+246	O/E - blood pressure reading	26
+2464	O/E - BP reading normal	1
+2465	O/E - BP borderline raised	1
+29B9	10g monofilament sensation R foot abnormal	1
+29BB	10g monofilament sensation R foot normal	1
+2BBA	Examination of retina	1
+2G5F	O/E - Right diabetic foot at moderate risk	1
+3128	Fundoscopy	1
+3148	Sleep studies	2
+32	Electrocardiography	2
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	3
+42U4	Red blood cell folate	1
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	2
+42W1	Hb. A1C < 7% - good control	1
+42W4	HbA1c level (DCCT aligned)	12
+42W5	Haemoglobin A1c level - IFCC standardised	4
+42c	HbA1 - diabetic control	1
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	1
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44J3	Serum creatinine	15
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P3	Serum cholesterol raised	1
+44P4	Serum cholesterol very high	1
+44P5	Serum HDL cholesterol level	15
+44P6	Serum LDL cholesterol level	4
+44PD	Serum fasting LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	12
+44Q1	Serum triglycerides normal	1
+44Q3	Serum triglycerides raised	2
+44TK	Fasting blood glucose level	1
+44U	Blood glucose result	2
+44U4	Blood glucose 5-6.9 mmol/L	1
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	10
+4618	Urine dipstick test	2
+467	Urine protein test	1
+4671	Urine protein test not done	1
+46LQ	Urine free cortisol level	1
+46M7	Urine creatinine	2
+46N3	Urine total protein	2
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	5
+46TD	Urine microalbumin:creatinine ratio	2
+46TE	24 hour urine 5-hydroxyindole acetic acid output	1
+46W	Urine microalbumin	1
+46W0	Urine microalbumin positive	1
+46g	Urine ratio	1
+5855	U-S abdominal scan	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	1
+66Ac	Diabetic peripheral neuropathy screening	1
+677B	Advice about treatment given	2
+6791	Health ed. - smoking	1
+67IM	Advice to GP to change patient medication	1
+6896	Depression screening using questions	3
+8BL2	Patient on maximal tolerated therapy for diabetes	3
+8CAL	Smoking cessation advice	4
+8G	Psychotherapy/sociotherapy	2
+8H44	Cardiological referral	1
+8H76	Refer to dietician	1
+8HE	Discharged from hospital	9
+8I73	Beta blocker not tolerated	1
+8I76	Statin not tolerated	1
+9N1Q	Seen in diabetic clinic	2
+9N1p	Seen in orthopaedic clinic	1
+9N2U	Seen by optician	1
+9N2V	Seen by optometrist	1
+9N2e	Seen by ophthalmologist	1
+9N31	Telephone encounter	1
+9N33	Letter encounter from patient	1
+9NN7	Under care of mental health team	1
+9S10	White British	1
+9h41	Excepted from diabetes qual indicators: Patient unsuitable	1
+9i0	British or mixed British - ethnic category 2001 census	1
+C10	Diabetes mellitus	4
+E0020	Senile dementia with paranoia	2
+E1123	"Single major depressive episode	1
+Eu	[X]Mental and behavioural disorders	1
+F20	Multiple sclerosis	1
+F4610	Senile cataract unspecified	1
+Fyu51	[X]Other epilepsy	1
+G11z	Mitral valve disease NOS	1
+G221	Benign hypertensive renal disease	1
+H0614	Obliterating fibrous bronchiolitis	1
+H22	Other bacterial pneumonia	1
+K08y	Other impaired renal function disorder	1
+K1800	Urethral stricture due to unspecified infection	1
+N05	Osteoarthritis and allied disorders	1
+N07y2	Old anterior cruciate ligament disruption	1
+PETA2207	Persantin  Tablets  25 mg	2
+PRTA4197	Precortisyl Forte  Tablets  25 mg	1
+ZV125	[V]Personal history of circulatory system disease	3
+bB1y	IVABRADINE 7.5mg tablets	8
+bdl5	CARVEDILOL 3.125mg tablets	6
+be3x	MINOXIDIL 2.5mg tablets	7
+bi2z	ENALAPRIL MALEATE 20mg tablets x28	10
+bi33	LISINOPRIL 10mg tablets	4
+bk38	COZAAR 100mg tablets	14
+bl5y	ANGITIL XL 300 m/r capsules	2
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	10
+blc5	FELODIPINE 2.5mg m/r tablets	3
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	12
+br2C	000iu/0.4mL syrg"	2
+bx11	BEZALIP 200mg tablets	7
+bx13	BEZAFIBRATE 200mg tablets	4
+bxa7	OMACOR 1g capsules	3
+bxb2	ACIPIMOX 250mg capsules	4
+bxd1	SIMVASTATIN 10mg tablets	6
+bxdx	SIMVASTATIN 40mg/EZETIMIBE 10mg tablets	1
+bxky	ROSUVASTATIN 20mg tablets	1
+d73w	CLOMIPRAMINE HCL 50mg capsules	2
+d771	IMIPRAMINE 10mg tabs	1
+da51	SERTRALINE 50mg tablets	2
+di12	ASPIRIN [CNS] 300mg dispersible tablets	2
+di1f	ASPIRIN 300mg e/c tablets	1
+dia7	*CO-PROXAMOL tablets	1
+du38	NICOTINE 7mg/24hours patches	1
+du3A	NICOTINE 21mg/24hours patches	1
+e772	*MINOCIN 100mg tablets	1
+e912	ERYTHROMYCIN 500mg tablets	1
+e913	ERYTHROMYCIN STEARATE 250mg tablets	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	4
+fo6x	RISEDRONATE SODIUM 35mg tablets	1
+ft11	ACARBOSE 50mg tablets	3
+ft12	ACARBOSE 100mg tablets	8
+ft38	PRANDIN 1mg tablets	8
+fw21	NOVOMIX 30 PENFILL 100units/mL injection cartridges 3mL	1
+ip3a	CALCIUM AND ERGOCALCIFEROL 400units tablets	6
+j22p	DICLOFENAC SODIUM+MISOPROSTOL 50mg/200micrograms tablets	1

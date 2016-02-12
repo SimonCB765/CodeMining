@@ -1,0 +1,109 @@
+Code	Description	Count
+1361	Teetotaller	2
+1362	Trivial drinker - <1u/day	4
+1367	Stopped drinking alcohol	1
+1371	Never smoked tobacco	1
+1379	Ex-moderate smoker (10-19/day)	1
+137S	Ex smoker	2
+1384	Enjoys moderate exercise	1
+13l4	Main spoken language English	1
+229	O/E - height	2
+22A	O/E - weight	14
+22K	Body Mass Index	15
+22N0	Waist circumference	2
+246	O/E - blood pressure reading	16
+2464	O/E - BP reading normal	2
+2465	O/E - BP borderline raised	2
+29B1	O/E - tactile sensation normal	1
+29BB	10g monofilament sensation R foot normal	2
+2G5	O/E - foot	1
+3128	Fundoscopy	3
+32	Electrocardiography	1
+3212	Standard ECG	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42W4	HbA1c level (DCCT aligned)	14
+42W5	Haemoglobin A1c level - IFCC standardised	4
+44AP	Serum pro-brain natriuretic peptide level	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	10
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44J3	Serum creatinine	15
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	9
+44Q	Serum triglycerides	12
+44TB	Haemoglobin A1c level	1
+451E	GFR calculated abbreviated MDRD	11
+467	Urine protein test	2
+4671	Urine protein test not done	1
+4672	Urine protein test negative	1
+4676	Urine protein test = +++	1
+46M7	Urine creatinine	3
+46N	Urine protein	2
+46TC	Urine albumin:creatinine ratio	8
+46TD	Urine microalbumin:creatinine ratio	3
+46W	Urine microalbumin	10
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A4	Diabetic on oral treatment	1
+66AD	Fundoscopy - diabetic check	1
+67	Counselling/health education	1
+6781	Health education offered	1
+6791	Health ed. - smoking	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+8H52	Ophthalmological referral	6
+8H76	Refer to dietician	2
+8H7O	Refer to Radiology department	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N31	Telephone encounter	1
+9N33	Letter encounter from patient	1
+9Nd7	Consent given for electronic record sharing	1
+9i1	Irish - ethnic category 2001 census	1
+A54	Herpes simplex	1
+A542	Herpetic gingivostomatitis	1
+C10	Diabetes mellitus	4
+E200z	Anxiety state NOS	1
+F42z	Retinal disorder NOS	1
+Fyu4	[X]Demyelinating diseases of the central nervous system	1
+Fyu51	[X]Other epilepsy	1
+GLTA1302	Glibenclamide  Tablets  2.5 mg	1
+H037	Recurrent acute tonsillitis	1
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	1
+N07y2	Old anterior cruciate ligament disruption	1
+ROTA15069NEMIS	Rosuvastatin  Tablets  10 mg	1
+S10B3	Fracture of ilium	1
+ZV125	[V]Personal history of circulatory system disease	22
+bd1r	INDERAL-LA 160mg m/r capsules	5
+bd35	ATENOLOL 50mg tablets	1
+bdl4	CARVEDILOL 25mg tablets	21
+bh62	DOXAZOSIN 2mg tablets	1
+bh65	CARDURA 2mg tablets	24
+bk92	TEVETEN 400mg tablets	1
+bk93	TEVETEN 600mg tablets	2
+bl5y	ANGITIL XL 300 m/r capsules	1
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	22
+blc5	FELODIPINE 2.5mg m/r tablets	1
+bn5x	MOXISYLYTE 40mg tablets	7
+br2C	000iu/0.4mL syrg"	2
+bx13	BEZAFIBRATE 200mg tablets	23
+bxdI	INEGY 10mg/40mg tablets	1
+bxdx	SIMVASTATIN 40mg/EZETIMIBE 10mg tablets	1
+du7N	NICORETTE INVISI 15mg patches	1
+e693	CEFALEXIN 250mg tablets	1
+ei1o	ACICLOVIR 800mg tablets	8
+f25Y	HUMAN ISOPHANE INSULIN 100units/mL injection vials	7
+f25x	INSULATARD (HUMAN) PENFILL cartridges 3mL	7
+f27S	HUMAN MIXTARD 40 prefilled pen	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	4
+gc6z	ALFUZOSIN HYDROCHLORIDE 10mg m/r tablets	1

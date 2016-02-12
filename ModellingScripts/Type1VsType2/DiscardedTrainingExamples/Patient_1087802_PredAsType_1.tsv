@@ -1,0 +1,91 @@
+Code	Description	Count
+1371	Never smoked tobacco	2
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	2
+229	O/E - height	3
+22A	O/E - weight	12
+22K	Body Mass Index	9
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	3
+2BB1	O/E - retina normal	2
+315B	Ambulatory blood pressure recording	1
+32	Electrocardiography	2
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42QE	International normalised ratio	4
+42T	Serum vitamin B12	1
+42U4	Red blood cell folate	1
+42W	Hb. A1C - diabetic control	9
+42W4	HbA1c level (DCCT aligned)	9
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	3
+44J3	Serum creatinine	24
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	8
+44PF	Total cholesterol:HDL ratio	9
+44Q	Serum triglycerides	6
+44TB	Haemoglobin A1c level	2
+44U	Blood glucose result	1
+44g	Plasma glucose level	2
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	4
+467	Urine protein test	1
+4672	Urine protein test negative	1
+46M7	Urine creatinine	4
+46TC	Urine albumin:creatinine ratio	11
+46W	Urine microalbumin	4
+4JJ	Urine sample for organism	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+66AD	Fundoscopy - diabetic check	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+8H	Referral for further care	2
+8H6Z	Refer to other doctor NOS	2
+8HV0	Private referral to general surgeon	1
+9N1v	Seen in diabetic eye clinic	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	3
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	1
+A5324	Herpes zoster ophthalmicus	1
+AB04	Dermatophytosis of foot	1
+AMTA113	Amiodarone  Tablets  200 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	14
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	23
+BETA335	Beta-Cardone  Tablets  200 mg	3
+C10	Diabetes mellitus	4
+C107	Diabetes mellitus with peripheral circulatory disorder	1
+F426	Peripheral retinal degeneration	1
+F48z	Visual disturbance NOS	1
+Fyu51	[X]Other epilepsy	2
+G341	Aneurysm of heart	1
+GLM/6638NEMIS	Gliclazide  M/R tablets  30 mg	4
+HEWITPE1	Unknown vendor specific drug	1
+ININ32907EMIS	Invicorp 2  Injection	11
+ININ3759	Pork Insulatard  Injection  100 units/ml, 10 ml vial	13
+L245	Cervical incompetence	11
+L264	Intrauterine death	1
+LACH24088NEMIS	Lanthanum  Chewable tablets  500 mg	1
+LAIN13572NEMIS	Lantus  Injection  100 units/ml, 3 ml cartridge	20
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	4
+MANI22913NEMIS	Manfred Sauer Smartflow  Night drainage bags  2.6 litre, NB26	3
+MATA1721	Marevan  Tablets  3 mg	2
+N04y	Other specified inflammatory polyarthropathy	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	8
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	3
+TESTSET2	Unknown vendor specific drug	3
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	4
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	3

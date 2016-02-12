@@ -1,0 +1,120 @@
+Code	Description	Count
+135A	Christian	1
+136	Alcohol consumption	6
+137L	Current non-smoker	1
+137P	Cigarette smoker	1
+137R	Current smoker	1
+137S	Ex smoker	5
+1381	Exercise physically impossible	3
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	2
+1B1V	C/O - panic attack	1
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	13
+22A	O/E - weight	19
+22K	Body Mass Index	16
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	22
+29B7	10g monofilament sensation present	1
+29B9	10g monofilament sensation R foot abnormal	3
+2BBI	O/E - no retinopathy	1
+2BBJ	O/E - no right diabetic retinopathy	1
+2BBK	O/E - no left diabetic retinopathy	1
+311A	Monofilament foot sensation test	2
+3216	ECG normal	2
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	23
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42C	RBC - red blood cell size	3
+42QE	International normalised ratio	2
+42U4	Red blood cell folate	1
+42W4	HbA1c level (DCCT aligned)	12
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44CC	Plasma C reactive protein	7
+44CS	Serum C reactive protein level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44I4	Serum potassium	21
+44I5	Serum sodium	3
+44I8	Serum calcium	3
+44J3	Serum creatinine	43
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	1
+44Q	Serum triglycerides	5
+44U	Blood glucose result	2
+44W9	Serum digoxin level	1
+44g	Plasma glucose level	5
+451E	GFR calculated abbreviated MDRD	36
+4614	Urinalysis = abnormal	1
+4662	Urine glucose test negative	2
+4667	Urine glucose test = ++++	3
+467	Urine protein test	2
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	3
+4674	Urine protein test = +	1
+4682	Urine ketone test negative	3
+46N4	Urine albumin	3
+46TC	Urine albumin:creatinine ratio	8
+55	Cardiovascular sys.angiography	1
+5853	U-S heart scan	1
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A5	Diabetic on insulin	2
+6791	Health ed. - smoking	6
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+68A8	Digital retinal screening	1
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	2
+8H41	General medical referral	1
+8H44	Cardiological referral	2
+8H53	ENT referral	2
+8H7R	Refer to chiropodist	1
+8HE	Discharged from hospital	1
+8HE3	Discharged from day-case care	1
+8Hd	Admission to hospital	1
+9N1A	Seen in hospital out-pat.	2
+9N2U	Seen by optician	1
+9ND6	Communication from:	2
+9S10	White British	3
+9i0	British or mixed British - ethnic category 2001 census	2
+A53z	Herpes zoster NOS	1
+AB230	Candidal intertrigo	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	17
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	6
+BUTA434	Bumetanide  Tablets  1 mg	9
+CAIN4534NEMIS	Calciferol  Injection  300,000 units/ml, 1 ml ampoule	2
+CAIN4919NEMIS	Caverject Dual Chamber  Injection  20 micrograms/dose	3
+D4100	Stress polycythaemia	2
+DIM/24452EMIS	Diclofenac Sodium  M/R capsules  100 mg	1
+DIM/30235EMIS	Diltiazem Hydrochloride  M/R tablets  60 mg	2
+Eu	[X]Mental and behavioural disorders	1
+F4K21	Vitreous detachment	1
+F4K2z	Vitreous disorders NOS	1
+FLCA8419EGTON	Fluconazole  Capsules  150 mg	9
+FRTA1247	Frumil  Tablets	1
+FRTA1248	Frusemide  Tablets  20 mg	6
+G3400	Single coronary vessel disease	1
+G5700	Paroxysmal atrial tachycardia	3
+G7321	Gangrene of foot	1
+G733	Ischaemic foot	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+IRIN11056NEMIS	Iron Hydroxide Dextran Complex  Injection  50 mg/ml, 2 ml ampoule	4
+J1y	"Other specified disorders of oesophagus	1
+MECA1815	Mexiletine Hydrochloride  Capsules  200 mg	2
+META5128	Mesterolone  Tablets  25 mg	1
+MOTA8433BRID	Monocor  Tablets  5 mg	1
+N000z	Systemic lupus erythematosus NOS	1
+NIM/21970EMIS	Nitrofurantoin  M/R capsules  100 mg	13
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	2
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	6
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	9
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	2
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	17
+SLTA4320	Slow-Fe  Tablets  160 mg	7
+SLTA4321	Slow-Fe Folic  Tablets	12

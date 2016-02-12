@@ -1,0 +1,144 @@
+Code	Description	Count
+12C	FH: Cardiovascular disease	1
+136	Alcohol consumption	3
+1363	Light drinker - 1-2u/day	1
+1364	Moderate drinker - 3-6u/day	1
+1371	Never smoked tobacco	5
+137F	Ex-smoker - amount unknown	1
+137P	Cigarette smoker	2
+138	Exercise grading	1
+1384	Enjoys moderate exercise	1
+1AA	Prostatism	1
+1B1U	Symptoms of depression	1
+1BT	Depressed mood	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	8
+22A	O/E - weight	18
+22K	Body Mass Index	18
+246	O/E - blood pressure reading	22
+2464	O/E - BP reading normal	1
+29B1	O/E - tactile sensation normal	1
+29B7	10g monofilament sensation present	1
+29BC	10g monofilament sensation L foot normal	1
+2BBP	O/E - right eye background diabetic retinopathy	1
+2BBQ	O/E - left eye background diabetic retinopathy	1
+2G5	O/E - foot	2
+311A	Monofilament foot sensation test	1
+3128	Fundoscopy	4
+3212	Standard ECG	1
+321B	12 lead ECG	2
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	11
+42W4	HbA1c level (DCCT aligned)	5
+42c	HbA1 - diabetic control	2
+43Z2	Prostate specific antigen	5
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	24
+44J9	Serum urea level	4
+44M4	Serum albumin	1
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	5
+44Q	Serum triglycerides	9
+44TB	Haemoglobin A1c level	2
+451E	GFR calculated abbreviated MDRD	11
+4613	Urinalysis = no abnormality	1
+4616	MSU = no abnormality	1
+46J9	Urine free testosterone titre	1
+46N3	Urine total protein	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	5
+553	Contrast heart radiog.-general	1
+5853	U-S heart scan	2
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	1
+677B	Advice about treatment given	2
+67E	Foreign travel advice	1
+6896	Depression screening using questions	3
+792	Coronary artery operations	2
+8CAL	Smoking cessation advice	2
+8H2	Emergency hospital admission	1
+8H44	Cardiological referral	1
+8H8	Follow-up arranged	3
+8H86	Follow-up 3 weeks	1
+8H89	Follow-up 4-6 months	2
+8H8B	Follow-up 1 year	1
+8H8G	Follow-up 3 months	2
+8HA	No follow-up arranged	1
+8HE2	Discharged from inpatient care	1
+8HQ7	Referral for echocardiography	2
+8I62	Beta blocker not indicated	1
+8I73	Beta blocker not tolerated	1
+9N1y8	Seen in oncology clinic	1
+9N27	Seen by dietician	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N31	Telephone encounter	1
+9N3D	Letter received	1
+9ND8	I/patient disch summary rec'vd	1
+9NJ	In-house services	1
+9h21	Excepted from stroke quality indicators: Patient unsuitable	1
+9h41	Excepted from diabetes qual indicators: Patient unsuitable	1
+B46	Malignant neoplasm of prostate	1
+C108	Insulin dependent diabetes mellitus	1
+C109	Non-insulin dependent diabetes mellitus	1
+Dyu22	[X]Anaemia in other chronic diseases classified elsewhere	1
+E2005	Recurrent anxiety	1
+F528	Acute bilateral otitis media	1
+G11z	Mitral valve disease NOS	2
+G570	Paroxysmal supraventricular tachycardia	1
+G572z	Paroxysmal tachycardia NOS	1
+G581	Left ventricular failure	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H036	Acute viral tonsillitis	1
+N070B	Old tear of posterior horn of medial meniscus	1
+N083q	Recurrent subluxation of the patella	1
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	1
+TETA1042NEMIS	Telmisartan  Tablets  40 mg	1
+ZV578	[V]Rehabilitation following other hospital encounter	7
+ZV579	[V]Cardiac rehabilitation	4
+ab2J	ISPAGHULA HUSK 3.4g/sachet sugar free powder	4
+bd34	TENORMIN LS 50mg tablets	1
+bi2x	ENALAPRIL MALEATE 10mg tablets x28	2
+bi33	LISINOPRIL 10mg tablets	3
+bi6w	TRITACE 10mg tablets	20
+bkD3	AMLODIPINE+VALSARTAN 10mg/160mg tablets	3
+bl5y	ANGITIL XL 300 m/r capsules	3
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	9
+br2C	000iu/0.4mL syrg"	1
+bw34	TRANEXAMIC ACID 500mg tablets	8
+bx13	BEZAFIBRATE 200mg tablets	8
+bxa7	OMACOR 1g capsules	4
+d7fx	TRIMIPRAMINE 50mg capsules	3
+d7fz	TRIMIPRAMINE 25mg tablets	2
+du74	NICORETTE 15mg patches x2	1
+du81	CHAMPIX 1mg tablets	1
+ei92	FAMCICLOVIR 250mg tablets	12
+f141	NOVORAPID 100units/mL injection vial	1
+f271	*MIXTARD 30/70 injection 10mL	2
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	1
+f321	CHLORPROPAMIDE 100mg tablets	18
+fo1z	DISODIUM ETIDRONATE 200mg tablets	10
+ft38	PRANDIN 1mg tablets	6
+ft4v	ROSIGLITAZONE 4mg / METFORMIN 1000mg tablets	2
+gc6z	ALFUZOSIN HYDROCHLORIDE 10mg m/r tablets	1
+gc71	TAMSULOSIN HYDROCHLORIDE 400micrograms m/r capsules	2
+gd42	URISPAS 200mg tablets	1
+ip3a	CALCIUM AND ERGOCALCIFEROL 400units tablets	4
+j22R	DICLOFENAC 75mg e/c+m/r capsules	1
+j28y	IBUPROFEN 300mg m/r capsules	2
+j29A	*INDOMETACIN 75mg m/r tablets	1
+j2k1	RELIFEX 500mg tablets	1

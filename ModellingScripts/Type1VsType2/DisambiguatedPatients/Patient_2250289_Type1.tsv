@@ -1,0 +1,103 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	6
+1363	Light drinker - 1-2u/day	2
+1371	Never smoked tobacco	4
+14A4	H/O: myocardial infarct >60	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	1
+22A	O/E - weight	14
+22K	Body Mass Index	13
+2469	O/E - Systolic BP reading	19
+29BB	10g monofilament sensation R foot normal	2
+2BB	O/E - retinal inspection	2
+311A	Monofilament foot sensation test	1
+44F	Serum alkaline phosphatase	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	26
+44J7	Albumin / creatinine ratio	3
+44J9	Serum urea level	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	1
+44P6	Serum LDL cholesterol level	1
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	15
+44U	Blood glucose result	1
+44g	Plasma glucose level	12
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	9
+4662	Urine glucose test negative	2
+467	Urine protein test	2
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	2
+46N	Urine protein	1
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	7
+46X1	Urine nitrite negative	1
+46f1	Urine leucocyte test = negative	1
+65720	Pneumococcal vaccination given	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+66AD	Fundoscopy - diabetic check	1
+6798	Health ed. - exercise	1
+6896	Depression screening using questions	2
+792	Coronary artery operations	1
+8A17	Self monitoring of blood glucose	3
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	5
+8H44	Cardiological referral	1
+8H46	Neurological referral	1
+8H51	General surgical referral	1
+8H54	Orthopaedic referral	1
+8H61	Referral to private doctor	1
+8H77	Refer to physiotherapist	2
+9N2P	Seen by chiropodist	1
+9N42	Did not attend - no reason	1
+AB03	Dermatophytosis of groin and perianal area	1
+AC74	Enterobiasis - threadworm	1
+ALIN24410EMIS	Alprostadil  Injection  20 micrograms/vial	1
+ALIN28238EMIS	Alprostadil  Injection  10 micrograms/vial	1
+ALIN34036EMIS	Alprostadil  Injection  40 micrograms/vial	4
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	14
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	17
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	4
+CITA15860NEMIS	Cipralex  Tablets  20 mg	1
+E2005	Recurrent anxiety	1
+E200z	Anxiety state NOS	1
+EMISSPR101	Unknown vendor specific drug	2
+F36	Hereditary and idiopathic peripheral neuropathy	1
+Fyu51	[X]Other epilepsy	2
+G240	Secondary malignant hypertension	1
+G61	Intracerebral haemorrhage	1
+G65zz	Transient cerebral ischaemia NOS	1
+GACA10300BRIDL	Galenamox  Capsules  250 mg	6
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+GLTA1303	Glibenclamide  Tablets  5 mg	1
+ISCA8793BRIDL	Isosorbide Mononitrate  M/R capsules  50 mg	1
+ISM/35445EMIS	Isotard 60 Xl  M/R tablets  60 mg	1
+L264	Intrauterine death	13
+LAIN13572NEMIS	Lantus  Injection  100 units/ml, 3 ml cartridge	17
+LEIGHTH12	Unknown vendor specific drug	6
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	9
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	9
+MACA8841BRIDL	Maxepa  Capsules  1 gram	4
+NETA26643EMIS	Nefazodone Hydrochloride  Tablets  100 mg	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	5
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	1
+NITR22499EMIS	Nicorette  Transdermal patches  5 mg/16 hrs	1
+PH5	Specified anomalies of nails	7
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	16
+SETA2508	Secadrex  Tablets	1
+SPTA2667	Spironolactone  Tablets  25 mg	1
+SPTA2668	Spironolactone  Tablets  50 mg	1

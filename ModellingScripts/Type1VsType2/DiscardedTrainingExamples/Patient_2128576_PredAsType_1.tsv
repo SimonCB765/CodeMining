@@ -1,0 +1,162 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	10
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	1
+137S	Ex smoker	5
+1383	Enjoys light exercise	4
+1384	Enjoys moderate exercise	1
+1A1	Micturition frequency	3
+1A13	Nocturia	1
+1Z12	Chronic kidney disease stage 3	1
+1Z13	Chronic kidney disease stage 4	1
+229	O/E - height	6
+22A	O/E - weight	12
+22K	Body Mass Index	12
+22N0	Waist circumference	6
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	22
+29B7	10g monofilament sensation present	1
+29B8	10g monofilament sensation absent	2
+29H2	O/E - vibration sense reduced	1
+2BB5	O/E - retinal haemorrhages	1
+2BBD	O/E - Right retina normal	1
+2BBF	Retinal abnormality - diabetes related	1
+2G5F	O/E - Right diabetic foot at moderate risk	1
+2G5J	O/E - Left diabetic foot at moderate risk	1
+31281	Fundoscopy abnormal	2
+32131	Exercise ECG abnormal	1
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42W4	HbA1c level (DCCT aligned)	12
+42W5	Haemoglobin A1c level - IFCC standardised	1
+43Z2	Prostate specific antigen	3
+43Z21	Prostate specific antigen abnormal	1
+44CS	Serum C reactive protein level	3
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	3
+44I9	Serum inorganic phosphate	3
+44J3	Serum creatinine	23
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	16
+44P5	Serum HDL cholesterol level	15
+44P6	Serum LDL cholesterol level	15
+44PF	Total cholesterol:HDL ratio	18
+44Q	Serum triglycerides	15
+44TB	Haemoglobin A1c level	11
+44TC	Haemoglobin A1 level	1
+44U	Blood glucose result	3
+44g	Plasma glucose level	15
+451E	GFR calculated abbreviated MDRD	13
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	5
+4674	Urine protein test = +	1
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	3
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	2
+46W	Urine microalbumin	3
+46W0	Urine microalbumin positive	3
+46W1	Urine microalbumin negative	2
+57	Diagnostic nuclear medicine	2
+585	Other diagnostic ultrasound	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+66i	Chronic kidney disease monitoring	1
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	3
+6799	Health ed. - diet	5
+67D2	Cancer information offered to patient	2
+6896	Depression screening using questions	3
+792	Coronary artery operations	2
+7939	Catheterisation of heart	1
+7B2A6	Diagnostic cystoscopy using flexible instrument	1
+7B2A8	Check cystoscopy using flexible instrument	1
+7B2B1	Change of urethral catheter	1
+7B2C1	Change of suprapubic catheter	1
+7B390	Transurethral prostatectomy	1
+7B396	Endoscopic resection of prostate using laser	1
+8A17	Self monitoring of blood glucose	3
+8B63	Salicylate prophylaxis	4
+8B6A	Statin prophylaxis	2
+8CA4	Patient advised re diet	3
+8CAM	Patient advised about alcohol	6
+8H4B	Referred to rheumatologist	2
+8H5	Referral to surgeon	1
+8H51	General surgical referral	1
+8H52	Ophthalmological referral	2
+8H76	Refer to dietician	1
+8H77	Refer to physiotherapist	1
+8H7Q	Refer to surgical fitter	1
+8HTQ	Referral to stroke clinic	1
+8I3E	Warfarin declined	1
+8I3X	Diabetic retinopathy screening refused	1
+8I62	Beta blocker not indicated	5
+8I65	Warfarin not indicated	1
+8I6B	Clopidogrel not indicated	2
+8I6C	Angiotensin II receptor antagonist not indicated	3
+8I6F	Diabetic retinopathy screening not indicated	1
+8I6N	Anticoagulation not indicated	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	4
+9NNB	Under care of ophthalmologist	2
+9S1	White	2
+9i0	British or mixed British - ethnic category 2001 census	3
+A0743	Campylobacter gastrointestinal tract infection	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	16
+B46	Malignant neoplasm of prostate	1
+BACA19948EMIS	Bard Biocath Hydrogel Coated  Catheter (male)  16 ch, D2265	1
+BAFL30203EMIS	Bard  Flip-flo catheter valve  bff5	5
+BAPR19963EMIS	Bard Biocath Hydrogel Coated  Prefilled male catheter  Aquamatic, 16 ch, D2264	1
+C10	Diabetes mellitus	1
+CAIN4534NEMIS	Calciferol  Injection  300,000 units/ml, 1 ml ampoule	2
+COTA9149BRIDL	Co-Amilofruse 5/40  Tablets	1
+D3z	Clotting or bleeding disorder NOS	1
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+ERIN24326NEMIS	Ergocalciferol  Injection  300,000 units/ml, 2 ml ampoule	22
+F36z	Hereditary or idiopathic peripheral neuropathy NOS	1
+F4F5z	Stenosis and insufficiency of lacrimal passages NOS	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	3
+FECA1203NEMIS	Fenofibrate  Capsules  (Micronised) 267 mg	1
+FETA3589	Fersaday  Tablets  322 mg	1
+FRTA1247	Frumil  Tablets	9
+FRTA1248	Frusemide  Tablets  20 mg	9
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G240	Secondary malignant hypertension	1
+G3400	Single coronary vessel disease	1
+G60	Subarachnoid haemorrhage	1
+GASTOUR8	Unknown vendor specific drug	2
+GECA4956	Gemfibrozil  Capsules  300 mg	1
+IRIN11056NEMIS	Iron Hydroxide Dextran Complex  Injection  50 mg/ml, 2 ml ampoule	2
+K0D	End-stage renal disease	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MALE15830NEMIS	Manfred Sauer Comfort  Leg Bag 'XR' 1000 ml  R711.1445SOadj	3
+META1753	Mefenamic Acid  Tablets  500 mg	20
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	2
+OLCA9765HILLI	Olbetam  Capsules  250 mg	1
+PK61	Sturge-Weber syndrome	3
+PUJINST1	Unknown vendor specific drug	1
+Pyu70	[X]Other cystic kidney diseases	2
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	19
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	6
+R00zW	"[D]State of emotional shock and stress	1
+SCCA19035EMIS	Scott  Catheters  10 ch	1
+STTA2717	Stugeron  Tablets  15 mg	2
+SUTA17824NEMIS	Sulfinpyrazone  Tablets  100 mg	1
+TETA18566NEMIS	Telmisartan And Hydrochlorothiazide  Tablets  40 mg + 12.5 mg	2
+TETA3340NEMIS	Teveten  Tablets  400 mg	1
+TOTA2876	Tolbutamide  Tablets  500 mg	1
+U600	[X]Systemic antibiotic caus adv effects in therapeutic use	3
+U6093	[X]Phenothiaz antipsychot/neurolep caus advers ef therap use	1

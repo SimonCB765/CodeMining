@@ -1,0 +1,100 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1371	Never smoked tobacco	3
+1382	Avoids even trivial exercise	1
+1383	Enjoys light exercise	1
+1384	Enjoys moderate exercise	1
+13l4	Main spoken language English	2
+22A	O/E - weight	13
+22K	Body Mass Index	14
+22N0	Waist circumference	6
+2469	O/E - Systolic BP reading	21
+29BB	10g monofilament sensation R foot normal	2
+29H5	O/E - Vibration sense of right foot normal	1
+2BBE	O/E - Left retina normal	1
+2BBP	O/E - right eye background diabetic retinopathy	1
+2BBQ	O/E - left eye background diabetic retinopathy	1
+2G5	O/E - foot	1
+2G5E	O/E - Right diabetic foot at low risk	1
+3129	Eye fundus photography	3
+423	Haemoglobin estimation	2
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42W4	HbA1c level (DCCT aligned)	17
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	6
+44I5	Serum sodium	2
+44J3	Serum creatinine	20
+44J7	Albumin / creatinine ratio	1
+44J9	Serum urea level	3
+44M4	Serum albumin	1
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	13
+44Q	Serum triglycerides	14
+44TJ	Blood glucose level	1
+44TK	Fasting blood glucose level	1
+44U	Blood glucose result	1
+451E	GFR calculated abbreviated MDRD	5
+4615	MSU sent to lab.	4
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	4
+4675	Urine protein test = ++	1
+467Z	Urine protein test NOS	1
+46M7	Urine creatinine	2
+46N8	Urine microalbumin profile	1
+46TC	Urine albumin:creatinine ratio	5
+46W	Urine microalbumin	4
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A4	Diabetic on oral treatment	2
+66AD	Fundoscopy - diabetic check	1
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+7L041	Disarticulation of shoulder	1
+8CA5	Patient advised re exercise	1
+8H	Referral for further care	1
+8H22	Admit surgical emergency unsp.	2
+8H52	Ophthalmological referral	4
+8H76	Refer to dietician	1
+8I24	Aspirin prophylaxis contra-indicated	1
+9N2V	Seen by optometrist	3
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	1
+9S1	White	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	23
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	6
+BETA363	Bezalip-Mono  M/R tablets  400 mg	1
+C10	Diabetes mellitus	9
+C109	Non-insulin dependent diabetes mellitus	1
+D4100	Stress polycythaemia	1
+F261z	Common migraine NOS	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+Fyu4	[X]Demyelinating diseases of the central nervous system	1
+Fyu51	[X]Other epilepsy	1
+Fyu56	[X]Other lacunar syndromes	1
+GASTOTR2	Unknown vendor specific drug	1
+GLTA5912	Glurenorm  Tablets  30 mg	1
+H037	Recurrent acute tonsillitis	1
+HUIN3718	Humulin I  Injection  100 units/ml	3
+IBFC10455BRIDL	Ibuprofen  Fc tablets  800 mg	26
+J120	Acute duodenal ulcer	1
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	31
+MACA8841BRIDL	Maxepa  Capsules  1 gram	4
+N073	Loose body in knee	2
+RAM/34748NEMIS	Unknown vendor specific drug	9
+S200	Closed fracture of clavicle	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	17
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	1
+SUTA5645NEMIS	Supralip  Tablets  160 mg	1
+TALORUN1	Unknown vendor specific drug	1

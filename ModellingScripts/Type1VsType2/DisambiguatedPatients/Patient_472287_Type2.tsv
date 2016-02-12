@@ -1,0 +1,117 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+12C4	FH: CVA/stroke	1
+1341	European origin	1
+136	Alcohol consumption	9
+1371	Never smoked tobacco	4
+1382	Avoids even trivial exercise	1
+1383	Enjoys light exercise	4
+13A4	Low fat diet	1
+13l4	Main spoken language English	1
+229	O/E - height	2
+22A	O/E - weight	14
+22K	Body Mass Index	20
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	20
+29B7	10g monofilament sensation present	4
+2BB1	O/E - retina normal	3
+3212	Standard ECG	1
+32131	Exercise ECG abnormal	1
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	2
+43Z2	Prostate specific antigen	5
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	21
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	11
+44Q4	Serum fasting triglyceride level	1
+44TB	Haemoglobin A1c level	2
+44U	Blood glucose result	1
+44g	Plasma glucose level	8
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	3
+4661	Urine glucose test not done	1
+4662	Urine glucose test negative	4
+4671	Urine protein test not done	1
+4672	Urine protein test negative	5
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+4695	Urine blood test = +	1
+46M7	Urine creatinine	4
+46TC	Urine albumin:creatinine ratio	8
+46W	Urine microalbumin	6
+4JJ2	MSU sent for bacteriology	1
+5543	Coronary arteriograph.abnormal	1
+58C1	Retinal photography	2
+66A4	Diabetic on oral treatment	4
+66AD	Fundoscopy - diabetic check	1
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	5
+6799	Health ed. - diet	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+7928	Transluminal balloon angioplasty of coronary artery	1
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	1
+8CAL	Smoking cessation advice	1
+8H	Referral for further care	6
+8H43	Dermatological referral	1
+8H77	Refer to physiotherapist	1
+9N1Q	Seen in diabetic clinic	1
+9N27	Seen by dietician	1
+9N2Q	Seen by podiatrist	1
+9NS2	Patient offered choice of provider	1
+9OIA	Hypertension monitor.chck done	2
+9S10	White British	1
+A75	Infectious mononucleosis	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	3
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	2
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	9
+ASTA4609	Aspirin  Tablets  75 mg	1
+ATTA230	Atenolol  Tablets  100 mg	9
+ATTA231	Atenolol  Tablets  50 mg	14
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	4
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	20
+CAM/6442NEMIS	Cardura Xl  M/R tablets  4 mg	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	10
+DAPR11348NEMIS	Darbepoetin Alfa  Pre-Filled Syringe  20 micrograms/0.5 ml	1
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	2
+DITA4858	Distigmine Bromide  Tablets  5 mg	1
+DITA856	Diabinese  Tablets  100 mg	23
+E117	Unspecified bipolar affective disorder	1
+E200z	Anxiety state NOS	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+FRTA1247	Frumil  Tablets	3
+Fyu51	[X]Other epilepsy	2
+G240	Secondary malignant hypertension	1
+GASTOSE4	Unknown vendor specific drug	3
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	24
+H1y32	Unilateral total vocal cord paralysis	1
+IBFC10455BRIDL	Ibuprofen  Fc tablets  800 mg	5
+INCA17688NEMIS	Indometacin  Capsules  25 mg	1
+INPR13771NEMIS	Insulatard Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	2
+LAIN13572NEMIS	Lantus  Injection  100 units/ml, 3 ml cartridge	17
+MACA8841BRIDL	Maxepa  Capsules  1 gram	6
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	18
+N050	Generalised osteoarthritis - OA	2
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	1
+PD44	Double ureter	30
+PE1	Congenital sternomastoid torticollis	3
+S3z2	Stress fracture	1

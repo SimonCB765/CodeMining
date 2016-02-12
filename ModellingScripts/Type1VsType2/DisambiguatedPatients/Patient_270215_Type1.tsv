@@ -1,0 +1,126 @@
+Code	Description	Count
+03I	Opticians	1
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	6
+1361	Teetotaller	1
+1371	Never smoked tobacco	2
+13l4	Main spoken language English	1
+229	O/E - height	4
+22A	O/E - weight	14
+22K	Body Mass Index	11
+2469	O/E - Systolic BP reading	20
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	3
+311A	Monofilament foot sensation test	2
+3128	Fundoscopy	1
+33B93	Exercise tolerance test normal	1
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42W	Hb. A1C - diabetic control	5
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44J3	Serum creatinine	18
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	12
+44PF	Total cholesterol:HDL ratio	9
+44Q	Serum triglycerides	12
+44TB	Haemoglobin A1c level	12
+44U	Blood glucose result	3
+44g	Plasma glucose level	5
+44g1	Plasma fasting glucose level	3
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	7
+461	Urine exam. - general	1
+4662	Urine glucose test negative	3
+4666	Urine glucose test = +++	1
+4672	Urine protein test negative	8
+4675	Urine protein test = ++	1
+4676	Urine protein test = +++	1
+4682	Urine ketone test negative	4
+46M7	Urine creatinine	4
+46N	Urine protein	2
+46N4	Urine albumin	6
+46N7	Urine protein/creatinine index	1
+46NZ	Urine protein NOS	1
+46TC	Urine albumin:creatinine ratio	6
+46TD	Urine microalbumin:creatinine ratio	1
+46W	Urine microalbumin	1
+4JJ2	MSU sent for bacteriology	1
+585	Other diagnostic ultrasound	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+6791	Health ed. - smoking	2
+67E	Foreign travel advice	1
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+7B2A6	Diagnostic cystoscopy using flexible instrument	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	6
+8CA40	Pt advised re wt reducing diet	1
+8CA5	Patient advised re exercise	7
+8CAM	Patient advised about alcohol	4
+8H	Referral for further care	2
+8H41	General medical referral	1
+8H43	Dermatological referral	1
+8H44	Cardiological referral	1
+8H4K	Referred to endocrinologist	1
+8H51	General surgical referral	1
+8H53	ENT referral	1
+8H7	Other referral	1
+8HQ7	Referral for echocardiography	1
+8I3X	Diabetic retinopathy screening refused	1
+8I65	Warfarin not indicated	1
+8I6B	Clopidogrel not indicated	1
+9N2e	Seen by ophthalmologist	2
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	1
+9i0	British or mixed British - ethnic category 2001 census	3
+AB230	Candidal intertrigo	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	15
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	4
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	1
+BETA363	Bezalip-Mono  M/R tablets  400 mg	1
+C10	Diabetes mellitus	2
+C1001	Diab.mell.no comp. - adult	1
+CATA20429EMIS	Calcium 500  Tablets  1.25 grams	1
+CITA32609EMIS	Cipramil  Tablets  10 mg	1
+CONE12292NEMIS	Coloplast Speedicath  Nelaton catheter (female)  16ch, 28516	1
+E3	Mental retardation	1
+EMISSPR1	Unknown vendor specific drug	20
+F31z	Facial nerve disorder NOS	1
+F35z	Mononeuritis of unspecified site NOS	1
+F52	Suppurative and unspecified otitis media	1
+F5870	 unspecified"	21
+FRTA1247	Frumil  Tablets	23
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G240	Secondary malignant hypertension	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	4
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H02	Acute pharyngitis	1
+HEWITPE2	Unknown vendor specific drug	1
+HUCA32506EMIS	Humulin M2  Cartridges (3 Ml)	2
+HYTA3724	Hydrocortisone  Tablets  10 mg	10
+Hyu02	[X]Acute tonsillitis due to other specified organisms	10
+IRIN11056NEMIS	Iron Hydroxide Dextran Complex  Injection  50 mg/ml, 2 ml ampoule	3
+ISTA1519	Isosorbide Dinitrate  Tablets  10 mg	1
+K0D	End-stage renal disease	1
+K19W	"Urethral disord	1
+LATA1582	Labetalol Hydrochloride  Tablets  100 mg	9
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	6
+N050	Generalised osteoarthritis - OA	1
+POIN35125EMIS	Pork Actrapid  Injection  100 units/ml, 10 ml vial	10
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	1
+TETA23675EMIS	Terazosin Hydrochloride  Tablets  2 mg	7
+URCA14420NEMIS	Uro-Tainer Sodium Chloride  Catheter maintenance solution  0.9 %, 50 ml	21

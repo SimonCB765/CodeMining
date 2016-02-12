@@ -1,0 +1,93 @@
+Code	Description	Count
+136	Alcohol consumption	5
+137P	Cigarette smoker	2
+137S	Ex smoker	3
+138	Exercise grading	5
+13A	Diet - patient initiated	5
+229	O/E - height	6
+22A	O/E - weight	7
+22K	Body Mass Index	7
+22K5	Body mass index 30+ - obesity	1
+22N0	Waist circumference	2
+246	O/E - blood pressure reading	20
+29BB	10g monofilament sensation R foot normal	1
+29H1	O/E - vibration sense normal	1
+2BBD	O/E - Right retina normal	1
+2BBF	Retinal abnormality - diabetes related	1
+2G5	O/E - foot	2
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	4
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	1
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44J3	Serum creatinine	12
+44J9	Serum urea level	3
+44JF	Plasma creatinine level	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	7
+44P5	Serum HDL cholesterol level	7
+44Q	Serum triglycerides	7
+44U	Blood glucose result	1
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	9
+467	Urine protein test	1
+46N3	Urine total protein	3
+46N4	Urine albumin	9
+46TC	Urine albumin:creatinine ratio	11
+553	Contrast heart radiog.-general	1
+585d	Left posterior tibial ABPI	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+66Ac	Diabetic peripheral neuropathy screening	1
+6781	Health education offered	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CAL	Smoking cessation advice	2
+8H53	ENT referral	1
+8H5H	Referral for cataract extraction	1
+8HBF	Chiropody follow-up	1
+8HBG	Diabetic retinopathy 12 month review	1
+8I6F	Diabetic retinopathy screening not indicated	1
+9N2U	Seen by optician	1
+9N2V	Seen by optometrist	1
+9N2e	Seen by ophthalmologist	1
+9N33	Letter encounter from patient	1
+9Nd	Obtaining consent	2
+9T	Ethnicity and other related nationality data	1
+9iF2	Filipino - ethnic category 2001 census	1
+C10	Diabetes mellitus	3
+C109	Non-insulin dependent diabetes mellitus	1
+F35z	Mononeuritis of unspecified site NOS	1
+F482	Diplopia (double vision)	1
+G12	Rheumatic aortic valve disease	1
+GLSR10170BRIDL	Glyceryl Trinitrate  S/r tablets  6.4 mg	1
+H01	Acute sinusitis	1
+M07z1	Infection toe	1
+N083C	Recurrent subluxation of shoulder - anterior	1
+N083q	Recurrent subluxation of the patella	1
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	2
+ZV579	[V]Cardiac rehabilitation	10
+bB1y	IVABRADINE 7.5mg tablets	23
+bh62	DOXAZOSIN 2mg tablets	1
+bh65	CARDURA 2mg tablets	24
+bkCy	OLMESARTAN + HYDROCHLOROTHIAZIDE 20mg/25mg tablets	1
+bkFz	ALISKIREN 150mg tablets	4
+bl5y	ANGITIL XL 300 m/r capsules	3
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	19
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	1
+bn5x	MOXISYLYTE 40mg tablets	10
+br2C	000iu/0.4mL syrg"	1
+bx11	BEZALIP 200mg tablets	22
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	2
+dia7	*CO-PROXAMOL tablets	2
+du3g	NICORETTE 10mg inhalator starter pack	2
+f25Y	HUMAN ISOPHANE INSULIN 100units/mL injection vials	22
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	19

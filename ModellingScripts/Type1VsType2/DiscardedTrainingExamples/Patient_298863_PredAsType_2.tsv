@@ -1,0 +1,110 @@
+Code	Description	Count
+0822	Shop assistant	1
+12CZ	FH: CVS disease NOS	1
+136	Alcohol consumption	11
+1374	Moderate smoker - 10-19 cigs/d	1
+137P	Cigarette smoker	1
+137S	Ex smoker	5
+137T	Date ceased smoking	1
+13l4	Main spoken language English	1
+1A7Z	Vaginal discharge NOS	1
+1BT	Depressed mood	1
+1Z12	Chronic kidney disease stage 3	2
+22A	O/E - weight	16
+22K	Body Mass Index	15
+2469	O/E - Systolic BP reading	19
+29B1	O/E - tactile sensation normal	1
+29B8	10g monofilament sensation absent	2
+2BBI	O/E - no retinopathy	1
+311A	Monofilament foot sensation test	2
+3212	Standard ECG	1
+3217	ECG abnormal	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	2
+42W4	HbA1c level (DCCT aligned)	15
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	22
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	1
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	8
+451E	GFR calculated abbreviated MDRD	4
+4672	Urine protein test negative	4
+46M7	Urine creatinine	4
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	7
+46W	Urine microalbumin	2
+5853	U-S heart scan	1
+5858	Doppler studies	1
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A4	Diabetic on oral treatment	2
+66A5	Diabetic on insulin	1
+6791	Health ed. - smoking	3
+67H0	Lifestyle advice regarding alcohol	3
+67H1	Lifestyle advice regarding smoking	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	4
+8A17	Self monitoring of blood glucose	3
+8B63	Salicylate prophylaxis	2
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	4
+8CAM	Patient advised about alcohol	3
+8H	Referral for further care	1
+8H4	Referral to physician	1
+8H44	Cardiological referral	1
+8H54	Orthopaedic referral	1
+8H5D	Referred to vascular surgeon	1
+8H77	Refer to physiotherapist	2
+8H7f	Referral to diabetes nurse	1
+9N2Q	Seen by podiatrist	1
+9N57	Admin reason for encounter	1
+9i	Ethnic category - 2001 census	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	19
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+C10	Diabetes mellitus	1
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	1
+DIM/24452EMIS	Diclofenac Sodium  M/R capsules  100 mg	1
+EMISQ2W2	Unknown vendor specific drug	1
+EZTA20282NEMIS	Ezetimibe And Simvastatin  Tablets  10 mg + 80 mg	2
+F261z	Common migraine NOS	1
+F31z	Facial nerve disorder NOS	1
+FOCA24991EMIS	Foley  Catheter (male)  12 ch	5
+FRTA1248	Frusemide  Tablets  20 mg	22
+Fyu51	[X]Other epilepsy	4
+G11z	Mitral valve disease NOS	1
+G24	Secondary hypertension	1
+G65zz	Transient cerebral ischaemia NOS	2
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+INTA20286NEMIS	Inegy  Tablets  10 mg/80 mg	1
+J1y	"Other specified disorders of oesophagus	1
+K0D	End-stage renal disease	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	24
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	21
+N071	Lateral meniscus derangement	1
+N094D	Arthralgia of elbow	1
+P766	Peripheral arterio-venous aneurysm	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	30
+S1021	"Clsd # thoracic vert	1
+S30y	Closed fracture of neck of femur NOS	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	24
+SUTA2750	Surmontil  Tablets  25 mg	1
+TAM/21090NEMIS	Tamsulosin Hydrochloride  M/R tablets  400 micrograms	1

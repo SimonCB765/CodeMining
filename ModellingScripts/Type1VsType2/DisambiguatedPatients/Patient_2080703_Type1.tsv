@@ -1,0 +1,123 @@
+Code	Description	Count
+136	Alcohol consumption	5
+1362	Trivial drinker - <1u/day	1
+1364	Moderate drinker - 3-6u/day	1
+1367	Stopped drinking alcohol	2
+137P	Cigarette smoker	5
+138	Exercise grading	3
+1383	Enjoys light exercise	1
+1B1U	Symptoms of depression	1
+1FB	Diet poor	2
+1FC	Diet average	1
+22A	O/E - weight	16
+22K	Body Mass Index	16
+22N0	Waist circumference	1
+246	O/E - blood pressure reading	18
+2464	O/E - BP reading normal	1
+2465	O/E - BP borderline raised	2
+29B1	O/E - tactile sensation normal	1
+29B7	10g monofilament sensation present	2
+29H1	O/E - vibration sense normal	1
+2G5	O/E - foot	2
+3128	Fundoscopy	4
+32M	24 Hour ECG	1
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44AN	Plasma pro-brain natriuretic peptide level	1
+44AP	Serum pro-brain natriuretic peptide level	2
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44J3	Serum creatinine	24
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	18
+44P5	Serum HDL cholesterol level	3
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	16
+44TB	Haemoglobin A1c level	4
+44U	Blood glucose result	4
+44g	Plasma glucose level	2
+44g0	Plasma random glucose level	7
+451E	GFR calculated abbreviated MDRD	11
+4618	Urine dipstick test	2
+4671	Urine protein test not done	2
+4672	Urine protein test negative	1
+4679	Urine dipstick for protein	1
+46M7	Urine creatinine	3
+46N	Urine protein	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	6
+46W	Urine microalbumin	5
+5858	Doppler studies	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	1
+679	Health education - subject	4
+6792	Health ed. - alcohol	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	3
+68A8	Digital retinal screening	1
+68NE	No consent - influenza imm.	1
+7B2A	Diagnostic cystoscopy	1
+8A17	Self monitoring of blood glucose	1
+8CAL	Smoking cessation advice	4
+8H52	Ophthalmological referral	1
+8H54	Orthopaedic referral	1
+8HE	Discharged from hospital	1
+8HNZ	In-patient stay NOS	1
+8HTK	Referral to stop-smoking clinic	1
+8I3X	Diabetic retinopathy screening refused	2
+9N19	Seen in hospital casualty	1
+9N1K	Seen in ophthalmology clinic	1
+9N1Q	Seen in diabetic clinic	1
+9N2e	Seen by ophthalmologist	1
+9N36	Letter from specialist	2
+9N3A	Telephone triage encounter	1
+AB04	Dermatophytosis of foot	1
+C101	Diabetes mellitus with ketoacidosis	2
+EZTA20282NEMIS	Ezetimibe And Simvastatin  Tablets  10 mg + 80 mg	2
+F261z	Common migraine NOS	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+Fyu51	[X]Other epilepsy	1
+G130	Mitral and aortic stenosis	1
+G5700	Paroxysmal atrial tachycardia	1
+G5752	Electromechanical dissociation with successful resuscitation	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H01	Acute sinusitis	1
+ISM/35445EMIS	Isotard 60 Xl  M/R tablets  60 mg	1
+J1212	Chronic duodenal ulcer with perforation	2
+K0D	End-stage renal disease	1
+M05	Impetigo	2
+ZV171	[V]Family history of stroke (cerebrovascular)	15
+ZV578	[V]Rehabilitation following other hospital encounter	1
+ZV579	[V]Cardiac rehabilitation	3
+ab2J	ISPAGHULA HUSK 3.4g/sachet sugar free powder	3
+bi2x	ENALAPRIL MALEATE 10mg tablets x28	4
+bi2y	ENALAPRIL MALEATE 20mg tablets	1
+bi33	LISINOPRIL 10mg tablets	14
+bk31	LOSARTAN POTASSIUM 25mg tablets	17
+bl81	ADALAT 5mg capsules	4
+bl84	ADALAT RETARD 10mg m/r tablets	14
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	13
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	1
+bxb2	ACIPIMOX 250mg capsules	25
+bxkz	ROSUVASTATIN 40mg tablets	6
+dj42	CODEINE PHOSPHATE 30mg tablets	1
+eg6w	CIPROFLOXACIN 500mg tablets	2
+ei1o	ACICLOVIR 800mg tablets	2
+f25m	HUMAN INSULATARD 100iu/mL preloaded injection pen 3mL	1
+f25q	HUMAN INSULATARD PENFILL cartridges 1.5mL	16
+ip3a	CALCIUM AND ERGOCALCIFEROL 400units tablets	1
+j22R	DICLOFENAC 75mg e/c+m/r capsules	1
+j22a	DICLOFENAC 100mg suppositories	1
+j2ew	PIROXICAM 20mg melt in the mouth tablets	2

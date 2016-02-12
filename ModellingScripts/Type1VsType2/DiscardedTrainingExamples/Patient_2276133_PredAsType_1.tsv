@@ -1,0 +1,131 @@
+Code	Description	Count
+0	Occupations	1
+136	Alcohol consumption	4
+1362	Trivial drinker - <1u/day	1
+1367	Stopped drinking alcohol	3
+137S	Ex smoker	4
+138	Exercise grading	5
+13A	Diet - patient initiated	4
+1A53	Lumbar ache - renal	1
+229	O/E - height	1
+22A	O/E - weight	13
+22K	Body Mass Index	13
+22N0	Waist circumference	3
+246	O/E - blood pressure reading	25
+29B7	10g monofilament sensation present	1
+29BC	10g monofilament sensation L foot normal	2
+2G5I	O/E - Left diabetic foot at low risk	1
+3117	Nerve conduction testing	1
+3128	Fundoscopy	2
+32	Electrocardiography	1
+388B	Pack years	1
+423	Haemoglobin estimation	15
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	4
+42R4	Serum ferritin	3
+42R5	Serum TIBC	1
+42R7	Serum iron level	1
+42R9	Saturation of iron binding capacity	1
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	2
+42c	HbA1 - diabetic control	1
+44AF	Brain natriuretic peptide level	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	21
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	6
+44Q	Serum triglycerides	7
+44TB	Haemoglobin A1c level	4
+44U	Blood glucose result	1
+44g	Plasma glucose level	4
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	11
+461	Urine exam. - general	4
+4618	Urine dipstick test	3
+466	Urine test for glucose	1
+467	Urine protein test	2
+4672	Urine protein test negative	1
+4679	Urine dipstick for protein	1
+4688	Urine dipstick for ketones	2
+46M7	Urine creatinine	3
+46N	Urine protein	3
+46TC	Urine albumin:creatinine ratio	7
+46U	Urine culture	4
+46W	Urine microalbumin	3
+5858	Doppler studies	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+679	Health education - subject	1
+6791	Health ed. - smoking	1
+6792	Health ed. - alcohol	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+68A8	Digital retinal screening	1
+7K23	Prosthetic cemented hemiarthroplasty of hip	1
+81H1	Dressing of ulcer	2
+8H7H	Refer to optician	1
+8H8	Follow-up arranged	6
+8Hd	Admission to hospital	1
+8I24	Aspirin prophylaxis contra-indicated	1
+9N1b	Seen in chest clinic	2
+9N32	Third party encounter	1
+9i0	British or mixed British - ethnic category 2001 census	1
+A78y0	Epidemic vertigo	1
+AB01	Dermatophytosis of nail	1
+C109	Non-insulin dependent diabetes mellitus	1
+COTA9149BRIDL	Co-Amilofruse 5/40  Tablets	1
+Fyu51	[X]Other epilepsy	1
+H22	Other bacterial pneumonia	1
+H27z	Influenza NOS	1
+K0D	End-stage renal disease	2
+N05z	Osteoarthritis NOS	1
+N083q	Recurrent subluxation of the patella	1
+Pyu70	[X]Other cystic kidney diseases	1
+ROTA4764NEMIS	Rosiglitazone Maleate  Tablets  8 mg	1
+ZV125	[V]Personal history of circulatory system disease	10
+bi28	INNOZIDE 20/12.5mg tablets	5
+bi2v	ENALAPRIL MALEATE 5mg tablets x28	16
+bi2z	ENALAPRIL MALEATE 20mg tablets x28	1
+bi61	RAMIPRIL 1.25mg capsules	5
+bi67	RAMIPRIL 10mg capsules	6
+bl5y	ANGITIL XL 300 m/r capsules	1
+blk6	ISODUR 25XL m/r capsules	4
+blkA	MONOMAX XL 60mg m/r tablets	6
+blkB	XISMOX XL 60 m/r tablets	8
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	1
+bxb2	ACIPIMOX 250mg capsules	24
+bxdI	INEGY 10mg/40mg tablets	1
+bxdx	SIMVASTATIN 40mg/EZETIMIBE 10mg tablets	1
+du3g	NICORETTE 10mg inhalator starter pack	2
+e222	FLUCLOXACILLIN 500mg capsules	1
+e912	ERYTHROMYCIN 500mg tablets	1
+eb3z	COLISTIMETHATE SODIUM 1million units injection	1
+ei1o	ACICLOVIR 800mg tablets	8
+f25e	*HUMULIN M1 injection 10mL	1
+f25f	*HUMULIN M2 injection 10mL	7
+f25m	HUMAN INSULATARD 100iu/mL preloaded injection pen 3mL	6
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	18
+f321	CHLORPROPAMIDE 100mg tablets	1
+f417	GLUCOPHAGE SR 500mg m/r tablets	1
+fe62	PREDNISOLONE 5mg tablets	1
+gc71	TAMSULOSIN HYDROCHLORIDE 400micrograms m/r capsules	2
+gc73	TAMSULOSIN HYDROCHLORIDE 400micrograms m/r tablets	1
+gh72	TADALAFIL 20mg tablets	1
+h82C	NEORAL 100mg capsules	1
+ip34	"CALCIFEROL 300	1
+j22R	DICLOFENAC 75mg e/c+m/r capsules	1
+j2ec	FELDENE MELT 20mg tablets	1
+j2k1	RELIFEX 500mg tablets	1

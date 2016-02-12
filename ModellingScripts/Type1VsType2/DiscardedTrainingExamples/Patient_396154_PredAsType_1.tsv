@@ -1,0 +1,102 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	5
+1361	Teetotaller	1
+1371	Never smoked tobacco	2
+1381	Exercise physically impossible	2
+1383	Enjoys light exercise	2
+13l4	Main spoken language English	2
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	5
+22A	O/E - weight	5
+22K	Body Mass Index	4
+2469	O/E - Systolic BP reading	16
+29BB	10g monofilament sensation R foot normal	2
+2BB1	O/E - retina normal	3
+3217	ECG abnormal	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	1
+42W4	HbA1c level (DCCT aligned)	9
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	2
+44J3	Serum creatinine	11
+44J9	Serum urea level	3
+44M4	Serum albumin	1
+44P	Serum cholesterol	6
+44P5	Serum HDL cholesterol level	3
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	4
+44TB	Haemoglobin A1c level	2
+44U	Blood glucose result	1
+44g	Plasma glucose level	6
+451E	GFR calculated abbreviated MDRD	5
+4612	Urinalysis requested	1
+4662	Urine glucose test negative	1
+4666	Urine glucose test = +++	1
+467	Urine protein test	1
+4672	Urine protein test negative	4
+4674	Urine protein test = +	1
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	1
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	3
+46U	Urine culture	1
+46W	Urine microalbumin	2
+46X1	Urine nitrite negative	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+6721	Patient counselled	1
+6792	Health ed. - alcohol	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	4
+8A17	Self monitoring of blood glucose	1
+8B63	Salicylate prophylaxis	1
+8CAL	Smoking cessation advice	2
+8H4	Referral to physician	1
+8H62	Referral to G.P.	1
+8HHC	Referred for wheelchair assessment	1
+8I74	Angiotensin converting enzyme inhibitor not tolerated	1
+9N2U	Seen by optician	1
+9N2f	Seen by retinal screener	1
+9N4F	Failed encounter - message left on answer machine	1
+9h31	Excepted from hypertension qual indicators: Patient unsuit	1
+9h41	Excepted from diabetes qual indicators: Patient unsuitable	2
+9i0	British or mixed British - ethnic category 2001 census	2
+A53	Herpes zoster	1
+A531	Herpes zoster with other central nervous system complication	1
+AMTA10145BRIDL	Amlodipine Besilate  Tablets  5 mg	3
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	19
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	2
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	16
+ATTA230	Atenolol  Tablets  100 mg	22
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	23
+C10	Diabetes mellitus	5
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	1
+E271	Anorexia nervosa	1
+E3	Mental retardation	5
+EMISQLE12	Unknown vendor specific drug	1
+F152	Motor neurone disease	1
+F42z	Retinal disorder NOS	1
+FRTA1248	Frusemide  Tablets  20 mg	24
+Fyu51	[X]Other epilepsy	2
+G5700	Paroxysmal atrial tachycardia	2
+GLTA1307	Glucophage  Tablets  500 mg	1
+H014	Acute rhinosinusitis	1
+H570	Rheumatoid lung	2
+H580	Pulmonary collapse with atelectasis	1
+H584z	Acute pulmonary oedema NOS	1
+IBM/18882EMIS	Ibuprofen  M/R tablets  800 mg	22
+ISTA3782	Isoniazid  Tablets  100 mg	1
+J171	Gastric diverticulum	1
+LEIGHTH12	Unknown vendor specific drug	18
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	14
+N04X	"Seroposit rheum arthr	2
+PK61	Sturge-Weber syndrome	5
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	1

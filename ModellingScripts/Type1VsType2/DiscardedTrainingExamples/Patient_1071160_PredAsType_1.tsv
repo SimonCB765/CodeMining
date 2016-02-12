@@ -1,0 +1,155 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+12C5	FH: Myocardial infarction	1
+135B	Sikh	1
+136	Alcohol consumption	11
+1371	Never smoked tobacco	5
+137P	Cigarette smoker	1
+1383	Enjoys light exercise	2
+13AZ	Patient initiated diet NOS	1
+13lE	Main spoken language Punjabi	1
+1Z11	Chronic kidney disease stage 2	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	13
+22A	O/E - weight	14
+22K	Body Mass Index	14
+2469	O/E - Systolic BP reading	19
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	1
+29BC	10g monofilament sensation L foot normal	1
+2BBA	Examination of retina	2
+2BBJ	O/E - no right diabetic retinopathy	1
+311A	Monofilament foot sensation test	1
+31280	Fundoscopy normal	1
+322	ECG: myocardial ischaemia	1
+32M	24 Hour ECG	1
+33B93	Exercise tolerance test normal	1
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42W	Hb. A1C - diabetic control	1
+42W2	Hb. A1C 7-10% - borderline	1
+42W4	HbA1c level (DCCT aligned)	5
+42W5	Haemoglobin A1c level - IFCC standardised	1
+43Z2	Prostate specific antigen	1
+43Z20	Prostate specific antigen normal	1
+44CC	Plasma C reactive protein	3
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	19
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	14
+44P1	Serum cholesterol normal	1
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	7
+44Q	Serum triglycerides	11
+44Q3	Serum triglycerides raised	1
+44TB	Haemoglobin A1c level	7
+44U	Blood glucose result	1
+44g	Plasma glucose level	5
+44g1	Plasma fasting glucose level	2
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	7
+467	Urine protein test	1
+4672	Urine protein test negative	3
+46M7	Urine creatinine	1
+46N	Urine protein	2
+46N4	Urine albumin	3
+46TC	Urine albumin:creatinine ratio	3
+55	Cardiovascular sys.angiography	1
+5543	Coronary arteriograph.abnormal	1
+5853	U-S heart scan	1
+5855	U-S abdominal scan	1
+58C1	Retinal photography	2
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	2
+66AV	Diabetic on insulin and oral treatment	1
+6791	Health ed. - smoking	5
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+792	Coronary artery operations	3
+792A	Diagnostic transluminal operations on coronary artery	1
+79375	Implantation of internal cardiac defibrillator	3
+8A17	Self monitoring of blood glucose	2
+8B28	Lipid lowering therapy	1
+8B3T	Over the counter aspirin therapy	1
+8B63	Salicylate prophylaxis	1
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	5
+8H	Referral for further care	2
+8H4F	Referral to diabetologist	1
+8HBD	Retinopathy follow up	1
+8Hd	Admission to hospital	1
+8I3W	Diabetic foot examination declined	1
+9N1L	Seen in ENT clinic	1
+9N2f	Seen by retinal screener	2
+9N2s	Seen by health care assistant	1
+9N38	Message from patient	1
+9S6	Indian	2
+9i7	Indian or British Indian - ethnic category 2001 census	4
+ADCH6282NEMIS	Adcal  Chewable tablets  1.5 grams	3
+AMTA113	Amiodarone  Tablets  200 mg	2
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	16
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	8
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	9
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	3
+BUTA434	Bumetanide  Tablets  1 mg	26
+C10	Diabetes mellitus	1
+CAIN28236EMIS	Caverject  Injection  10 micrograms/vial	1
+CAIN31971EMIS	Caverject  Injection  5 micrograms/vial	7
+CAIN34034EMIS	Caverject  Injection  40 micrograms/vial	10
+CAIN4919NEMIS	Caverject Dual Chamber  Injection  20 micrograms/dose	13
+CITA15860NEMIS	Cipralex  Tablets  20 mg	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+CROSLOR1	Unknown vendor specific drug	1
+D3z	Clotting or bleeding disorder NOS	1
+DIM/24041EMIS	Dilzem Xl  M/R capsules  180 mg	6
+DOCA982	Doxepin  Capsules  75 mg	2
+E200z	Anxiety state NOS	1
+E3	Mental retardation	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F5421	Tympanic membrane central perforation	1
+F5900	"Conductive hearing loss	4
+F5921	"Mix cond/sensin hear loss	3
+Fyu51	[X]Other epilepsy	1
+G11z	Mitral valve disease NOS	1
+G240	Secondary malignant hypertension	1
+G570	Paroxysmal supraventricular tachycardia	1
+G572z	Paroxysmal tachycardia NOS	1
+GASTOSE4	Unknown vendor specific drug	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	3
+H040	Acute laryngitis	2
+HEWITGB1	Unknown vendor specific drug	1
+HYST30079EMIS	Hytrin Bph  Starter pack  7 x 1 mg, 14 x 2 mg, 7 x 5 mg	1
+IRTA18540NEMIS	Irbesartan And Hydrochlorothiazide  Tablets  150 mg + 12.5 mg	2
+J17y7	Deformed duodenal cap (bulb)	1
+LEIGHTH12	Unknown vendor specific drug	1
+LMRGPDU3	Unknown vendor specific drug	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	1
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	20
+N0906	Joint effusion of the lower leg	1
+NAMASWH1	Unknown vendor specific drug	3
+NICA1986	Nifedipine  Capsules  10 mg	1
+NITR34951EMIS	Nicotine  Transdermal patches  15 mg/16 hrs	2
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	4
+POCA4188	Ponderax  Capsules  60 mg	1
+R1431	[D]Electrocardiogram (ECG) abnormal	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	4
+SETA4308	Semi-Daonil  Tablets  2.5 mg	1
+SOCA2890NEMIS	Sodium Chloride  Catheter maintenance solution  0.9 %, 50ml sachet	1
+SOTA2639	Soluble Aspirin Paediatric  Tablets  75 mg	1
+STSU19061NEMIS	Strontium Ranelate  Sugar free granules  2 grams/sachet	8
+SUTA17824NEMIS	Sulfinpyrazone  Tablets  100 mg	1
+TOM/30094NEMIS	Toviaz  M/R tablets  4 mg	2

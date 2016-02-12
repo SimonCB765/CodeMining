@@ -1,0 +1,127 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+1361	Teetotaller	1
+1371	Never smoked tobacco	1
+1FB	Diet poor	1
+229	O/E - height	8
+22A	O/E - weight	9
+22K	Body Mass Index	9
+22N0	Waist circumference	1
+246	O/E - blood pressure reading	6
+2469	O/E - Systolic BP reading	11
+246A	O/E - Diastolic BP reading	10
+246N	Standing systolic blood pressure	4
+246P	Standing diastolic blood pressure	2
+24EA	O/E - Absent right foot pulses	1
+29B8	10g monofilament sensation absent	1
+2BBW	O/E - right eye diabetic maculopathy	1
+3212	Standard ECG	1
+321B	12 lead ECG	1
+33B95	Exercise tolerance test abnormal	1
+423	Haemoglobin estimation	2
+4258	Haematocrit	3
+426	Red blood cell (RBC) count	1
+428	Mean corpusc. haemoglobin(MCH)	5
+42A	Mean corpuscular volume (MCV)	5
+42H7	Total white blood count	1
+42R4	Serum ferritin	1
+42W4	HbA1c level (DCCT aligned)	3
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44CC	Plasma C reactive protein	6
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	1
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	12
+44J9	Serum urea level	1
+44M4	Serum albumin	1
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	5
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	12
+44T1	Random blood sugar	1
+44TB	Haemoglobin A1c level	12
+44TK	Fasting blood glucose level	1
+44g	Plasma glucose level	8
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	6
+451F	Glomerular filtration rate	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	2
+46M7	Urine creatinine	3
+46TC	Urine albumin:creatinine ratio	5
+46U	Urine culture	2
+5853	U-S heart scan	1
+58531	Echocardiogram abnormal	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	1
+6791	Health ed. - smoking	2
+6896	Depression screening using questions	2
+68A8	Digital retinal screening	1
+8CA40	Pt advised re wt reducing diet	1
+8CA4z	Pt advised re diet NOS	1
+8CA5	Patient advised re exercise	3
+8H76	Refer to dietician	1
+8HTQ	Referral to stroke clinic	1
+8Hl1	Referral for diabetic retinopathy screening	1
+8I24	Aspirin prophylaxis contra-indicated	2
+8I3Y	Blood pressure procedure refused	1
+8I62	Beta blocker not indicated	2
+8I65	Warfarin not indicated	3
+8I6B	Clopidogrel not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	4
+9N1v	Seen in diabetic eye clinic	1
+9N2e	Seen by ophthalmologist	1
+9S6	Indian	1
+9h32	Excepted from hypertension qual indicators: Informed dissent	1
+9h42	Excepted from diabetes quality indicators: Informed dissent	1
+9i7	Indian or British Indian - ethnic category 2001 census	2
+AB2y1	Candidal otitis externa	1
+C1092	Non-insulin-dependent diabetes mellitus with neuro comps	1
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	2
+G60	Subarachnoid haemorrhage	1
+K0D	End-stage renal disease	1
+K1006	Calculous pyelonephritis	1
+K140	Bladder calculus	1
+XAM/3799NEMIS	Xatral Xl  M/R tablets  10 mg	8
+Xa5um	Unknown vendor specific drug	1
+Xa7Ht	Unknown vendor specific drug	2
+ZATA32000EMIS	Zanidip  Tablets  10 mg	1
+ZV579	[V]Cardiac rehabilitation	1
+bd1r	INDERAL-LA 160mg m/r capsules	4
+bd34	TENORMIN LS 50mg tablets	1
+bd35	ATENOLOL 50mg tablets	2
+bdl3	CARVEDILOL 12.5mg tablets	1
+bdl4	CARVEDILOL 25mg tablets	1
+bdl5	CARVEDILOL 3.125mg tablets	21
+bh61	DOXAZOSIN 1mg tablets	2
+bh62	DOXAZOSIN 2mg tablets	1
+bh63	DOXAZOSIN 4mg tablets	10
+bh65	CARDURA 2mg tablets	16
+bi33	LISINOPRIL 10mg tablets	11
+bl5y	ANGITIL XL 300 m/r capsules	7
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	14
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	2
+br2C	000iu/0.4mL syrg"	7
+bx13	BEZAFIBRATE 200mg tablets	20
+bx23	COLESTYRAMINE powder 4g/sachet	7
+bxd5	SIMVASTATIN 40mg tablets	1
+d263	CLOBAZAM 10mg tablets	2
+da81	NEFAZODONE HYDROCHLORIDE 100mg tablets	3
+egD2	AVELOX 400mg tablets	1
+eh3y	GRISEOFULVIN 1% topical spray	1
+eh77	000u/mL s/f susp"	1
+ei1o	ACICLOVIR 800mg tablets	3
+ej71	QUININE BISULPHATE 300mg tablets	2
+f2Ay	INSULIN DETEMIR 100iu/mL prefilled pen	6
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	1
+j24C	ECCOXOLAC 300mg capsules	1
+j2ec	FELDENE MELT 20mg tablets	2

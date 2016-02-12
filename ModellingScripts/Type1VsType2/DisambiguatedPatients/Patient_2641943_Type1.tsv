@@ -1,0 +1,127 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C3	FH: Ischaemic heart dis. >60	1
+12C4	FH: CVA/stroke	1
+12C5	FH: Myocardial infarction	1
+136	Alcohol consumption	8
+1371	Never smoked tobacco	2
+13l4	Main spoken language English	1
+1A23	Incontinence of urine	1
+1A55	Dysuria	2
+229	O/E - height	6
+22A	O/E - weight	19
+22K	Body Mass Index	19
+22K5	Body mass index 30+ - obesity	1
+22N0	Waist circumference	2
+246	O/E - blood pressure reading	7
+2469	O/E - Systolic BP reading	15
+24E8	O/E - R.dorsalis pedis present	1
+29B7	10g monofilament sensation present	1
+29B9	10g monofilament sensation R foot abnormal	1
+2BBI	O/E - no retinopathy	3
+33B9	Exercise tolerance test	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42P	Platelet count	2
+42QE	International normalised ratio	13
+42R4	Serum ferritin	1
+42R7	Serum iron level	1
+42W	Hb. A1C - diabetic control	3
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44CC	Plasma C reactive protein	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	29
+44J9	Serum urea level	2
+44Le	Plasma vitamin B12 level	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	11
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	13
+44TB	Haemoglobin A1c level	9
+44U	Blood glucose result	3
+44g	Plasma glucose level	4
+44lD	Urine protein/creatinine ratio	9
+451E	GFR calculated abbreviated MDRD	12
+4671	Urine protein test not done	2
+4673	Urine protein test = trace	2
+4674	Urine protein test = +	3
+4675	Urine protein test = ++	2
+4676	Urine protein test = +++	2
+467E	Urine protein level	1
+46M7	Urine creatinine	4
+46N	Urine protein	3
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	7
+46W	Urine microalbumin	1
+5543	Coronary arteriograph.abnormal	1
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	1
+6896	Depression screening using questions	1
+68A7	Diabetic retinopathy screening	1
+7910	Plastic repair of mitral valve	2
+79200	Saphenous vein graft replacement of one coronary artery	1
+7930	Open operations on conducting system of heart	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	5
+8H5	Referral to surgeon	1
+8H5F	Refer to maxillofacial surgeon	1
+8H7o	Fast track referral	1
+8HA	No follow-up arranged	1
+8HE1	Discharged from outpatients	3
+8I26	Beta blocker contraindicated	1
+9N2e	Seen by ophthalmologist	2
+9N2f	Seen by retinal screener	1
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	1
+9NU1	Interpreter not needed	1
+9S1	White	1
+9S12	Other white ethnic group	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	5
+BUTA434	Bumetanide  Tablets  1 mg	9
+C10	Diabetes mellitus	3
+C1000	Diab.mell.no comp. - juvenile	2
+CITA32609EMIS	Cipramil  Tablets  10 mg	1
+COSH12399NEMIS	Coloplast Simpla Trident T2  Short tube leg bags  500ml, 376138	1
+D4100	Stress polycythaemia	1
+DITA4858	Distigmine Bromide  Tablets  5 mg	1
+DITA856	Diabinese  Tablets  100 mg	9
+FETA3589	Fersaday  Tablets  322 mg	1
+Fyu51	[X]Other epilepsy	3
+G11z	Mitral valve disease NOS	3
+G240	Secondary malignant hypertension	1
+G3400	Single coronary vessel disease	2
+GASTOSE4	Unknown vendor specific drug	1
+HEWITPE2	Unknown vendor specific drug	1
+HUIN3721	Humulin S  Injection  100 units/ml	9
+MITA19793NEMIS	Mirtazapine  Tablets  15 mg	3
+NUTA2039	Nu-Seals Aspirin  E/c tablets  300 mg	2
+PRTA18432EMIS	Prednisolone  Tablets  25 mg	1
+PUJINST1	Unknown vendor specific drug	1
+Pyu70	[X]Other cystic kidney diseases	2
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	7
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	9
+TETA1042NEMIS	Telmisartan  Tablets  40 mg	1
+TETA9419BRIDL	Tenormin  Tablets  25 mg	6
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	9
+bi2z	ENALAPRIL MALEATE 20mg tablets x28	3
+bi33	LISINOPRIL 10mg tablets	12
+bi3p	LISINOPRIL+HYDROCHLOROTHIAZIDE 20mg/12.5mg tablets	1
+bi3t	LISINOPRIL+HYDROCHLOROTHIAZIDE 10mg/12.5mg tablets	3
+jA11	*VIOXX 12.5mg tablets	1

@@ -1,0 +1,121 @@
+Code	Description	Count
+0822	Shop assistant	1
+12C2	FH: Ischaemic heart dis. <60	1
+136	Alcohol consumption	1
+1371	Never smoked tobacco	2
+137L	Current non-smoker	3
+1383	Enjoys light exercise	3
+13l4	Main spoken language English	1
+1B17	Depressed	1
+229	O/E - height	16
+22A	O/E - weight	22
+22K	Body Mass Index	22
+2469	O/E - Systolic BP reading	25
+29B7	10g monofilament sensation present	1
+29B9	10g monofilament sensation R foot abnormal	1
+29BB	10g monofilament sensation R foot normal	1
+2BBD	O/E - Right retina normal	1
+2BBE	O/E - Left retina normal	1
+31280	Fundoscopy normal	1
+423	Haemoglobin estimation	1
+428	Mean corpusc. haemoglobin(MCH)	1
+42A	Mean corpuscular volume (MCV)	1
+42QE	International normalised ratio	1
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	11
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	2
+44J3	Serum creatinine	11
+44J8	Blood urea	1
+44J9	Serum urea level	2
+44M4	Serum albumin	2
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	9
+451E	GFR calculated abbreviated MDRD	2
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	1
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	4
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	5
+46W	Urine microalbumin	1
+554	Coronary arteriogr.-general	1
+65720	Pneumococcal vaccination given	1
+66A3	Diabetic on diet only	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	1
+66UA	HRT stopped	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+68A8	Digital retinal screening	2
+8A17	Self monitoring of blood glucose	2
+8B3T	Over the counter aspirin therapy	1
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	1
+8H4	Referral to physician	2
+8H43	Dermatological referral	1
+8H54	Orthopaedic referral	1
+8H76	Refer to dietician	2
+8H77	Refer to physiotherapist	1
+8H7C	 diabetic liaison nurse"	1
+8I27	Statins contraindicated	4
+8I3C	Statin declined	1
+8I62	Beta blocker not indicated	2
+8I73	Beta blocker not tolerated	2
+8I76	Statin not tolerated	2
+9N1v	Seen in diabetic eye clinic	2
+9N2P	Seen by chiropodist	1
+9N2V	Seen by optometrist	1
+9N2e	Seen by ophthalmologist	1
+9N41	Did not attend - reason given	1
+9NC3	Letter sent to patient	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	1
+9i2	Other White background - ethnic category 2001 census	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	7
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+C10	Diabetes mellitus	2
+C109	Non-insulin dependent diabetes mellitus	1
+CHTA23546NEMIS	Champix  Tablets  1 mg	1
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	1
+DIRE4825	Diazepam  Rectal tubes  10 mg dose (4 mg/ml, 2.5 ml tube)	1
+E3	Mental retardation	8
+EMISNQRE53	Unknown vendor specific drug	1
+EMISQDO2	Unknown vendor specific drug	1
+ERIN24326NEMIS	Ergocalciferol  Injection  300,000 units/ml, 2 ml ampoule	1
+F5421	Tympanic membrane central perforation	1
+FOCA24984EMIS	Foley  Catheter (female)  14 ch	3
+FOTA1220	Folic Acid  Tablets  5 mg	1
+FRTA1247	Frumil  Tablets	22
+G11z	Mitral valve disease NOS	1
+G2y	Other specified hypertensive disease	1
+G665	Pure motor lacunar syndrome	1
+GASTOSE4	Unknown vendor specific drug	2
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+GLTA5912	Glurenorm  Tablets  30 mg	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	14
+LEIGHTH12	Unknown vendor specific drug	2
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	25
+LMRGPCH3	Unknown vendor specific drug	1
+M21yC	Insulin lipohypertrophy	7
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+N050	Generalised osteoarthritis - OA	1
+N07z	Internal knee derangement NOS	1
+NATA19446NEMIS	Naproxen And Misoprostol  Tablets  500 mg + 200 micrograms	1
+NATA6621NEMIS	Nateglinide  Tablets  120 mg	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	7
+NIM/21927EMIS	Nicardipine Hydrochloride  M/R capsules  45 mg	1
+S3z2	Stress fracture	2
+SCCA19035EMIS	Scott  Catheters  10 ch	1
+SITA25228NEMIS	Sitagliptin  Tablets  100 mg	1
+U10z	[X]Unspecified fall	1
+VATA28964NEMIS	Valsartan  Tablets  320 mg	22

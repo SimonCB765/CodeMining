@@ -1,0 +1,145 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	1
+12C4	FH: CVA/stroke	1
+12C5	FH: Myocardial infarction	2
+136	Alcohol consumption	7
+1361	Teetotaller	1
+1371	Never smoked tobacco	3
+1465	H/O: depression	1
+1B1A	Memory loss - amnesia	1
+1BT	Depressed mood	1
+229	O/E - height	2
+22A	O/E - weight	18
+22K	Body Mass Index	18
+22K5	Body mass index 30+ - obesity	1
+22N0	Waist circumference	2
+246	O/E - blood pressure reading	7
+2469	O/E - Systolic BP reading	15
+24E9	O/E - R.dorsalis pedis absent	1
+29B7	10g monofilament sensation present	2
+2BBE	O/E - Left retina normal	1
+33B94	Exercise toler test equivocal	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	6
+4258	Haematocrit	2
+426	Red blood cell (RBC) count	2
+4266	Nucleated red blood cell count	2
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+42H7	Total white blood count	1
+42N	Monocyte count	3
+42P	Platelet count	3
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42W	Hb. A1C - diabetic control	5
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44CC	Plasma C reactive protein	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	23
+44J9	Serum urea level	2
+44LA	Serum vitamin D	1
+44Le	Plasma vitamin B12 level	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	8
+44PF	Total cholesterol:HDL ratio	7
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	7
+44U	Blood glucose result	1
+44g	Plasma glucose level	4
+44lD	Urine protein/creatinine ratio	11
+451E	GFR calculated abbreviated MDRD	12
+4673	Urine protein test = trace	2
+4674	Urine protein test = +	1
+467E	Urine protein level	1
+46M7	Urine creatinine	3
+46N	Urine protein	3
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	6
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6751	Bereavement counselling	1
+67E2	Travel vaccination given	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+79392	Catheterisation of left side of heart NEC	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	5
+8H2	Emergency hospital admission	1
+8H43	Dermatological referral	1
+8H44	Cardiological referral	1
+8H48	Gastroenterological referral	1
+8H52	Ophthalmological referral	1
+8H76	Refer to dietician	1
+8H77	Refer to physiotherapist	1
+8H89	Follow-up 4-6 months	1
+8H8C	Follow up 6 weeks	2
+8HB2	Medical follow-up	1
+8HE1	Discharged from outpatients	1
+8I24	Aspirin prophylaxis contra-indicated	2
+8I25	Warfarin contraindicated	1
+8I2R	Anticoagulation contraindicated	1
+8I6B	Clopidogrel not indicated	1
+8I74	Angiotensin converting enzyme inhibitor not tolerated	1
+9N1K	Seen in ophthalmology clinic	1
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	1
+9NF1	Home visit request by patient	1
+9NS2	Patient offered choice of provider	1
+9S6	Indian	1
+9iA	Other Asian background - ethnic category 2001 census	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	3
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	2
+ASDI223	Aspirin  Dispersible tablets  300 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	6
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	4
+ATTA231	Atenolol  Tablets  50 mg	5
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	8
+BESC348	Betamethasone Valerate  Scalp application  0.1 %	1
+BESC358	Betnovate  Scalp application  0.1 %	1
+C10	Diabetes mellitus	3
+C104	Diabetes mellitus with renal manifestation	2
+CITA15860NEMIS	Cipralex  Tablets  20 mg	1
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	1
+E2613	Psychogenic hyperventilation	1
+F31z	Facial nerve disorder NOS	1
+F583z	Tinnitus NOS	3
+F5900	"Conductive hearing loss	1
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	2
+FRTA1248	Frusemide  Tablets  20 mg	11
+G11z	Mitral valve disease NOS	3
+G21z1	Hypertensive heart disease NOS with CCF	1
+G5752	Electromechanical dissociation with successful resuscitation	2
+G60	Subarachnoid haemorrhage	2
+G84	Haemorrhoids	2
+HEWITPE2	Unknown vendor specific drug	3
+HYTA8711EGTON	Hytrin  Tablets  2 mg	1
+K1006	Calculous pyelonephritis	1
+L264z	Intrauterine death NOS	4
+LMRGPER1	Unknown vendor specific drug	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	13
+N331D	Collapsed vertebra NOS	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	2
+Pyu70	[X]Other cystic kidney diseases	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	4
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	4
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	1
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	1
+TC51	Fall on same level from tripping	4
+bB1y	IVABRADINE 7.5mg tablets	3
+bf42	MOXONIDINE 400micrograms tablets	1
+bi2y	ENALAPRIL MALEATE 20mg tablets	6
+bi33	LISINOPRIL 10mg tablets	7
+bk37	LOSARTAN POTASSIUM 100mg tablets	6
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	2
+ig1y	ADCAL 600mg chewable tablets	1

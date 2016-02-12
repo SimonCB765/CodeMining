@@ -1,0 +1,110 @@
+Code	Description	Count
+136	Alcohol consumption	12
+1371	Never smoked tobacco	1
+137A	Ex-heavy smoker (20-39/day)	1
+137L	Current non-smoker	1
+137S	Ex smoker	3
+137T	Date ceased smoking	1
+1AA	Prostatism	10
+1B1A	Memory loss - amnesia	2
+229	O/E - height	8
+22A	O/E - weight	16
+22K	Body Mass Index	18
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	23
+29BB	10g monofilament sensation R foot normal	4
+2BBI	O/E - no retinopathy	2
+2BBM	O/E - diabetic maculopathy absent both eyes	1
+31283	Camera fundoscopy	2
+312E	Direct fundoscopy following mydriatic	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42C	RBC - red blood cell size	2
+42R4	Serum ferritin	1
+42W5	Haemoglobin A1c level - IFCC standardised	2
+43Z2	Prostate specific antigen	4
+44CC	Plasma C reactive protein	1
+44CS	Serum C reactive protein level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44J3	Serum creatinine	15
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	7
+44TB	Haemoglobin A1c level	19
+44TJ	Blood glucose level	1
+44U	Blood glucose result	1
+44g	Plasma glucose level	2
+451E	GFR calculated abbreviated MDRD	2
+4662	Urine glucose test negative	1
+467	Urine protein test	2
+4672	Urine protein test negative	2
+46TC	Urine albumin:creatinine ratio	6
+46TD	Urine microalbumin:creatinine ratio	1
+46W1	Urine microalbumin negative	1
+5543	Coronary arteriograph.abnormal	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	3
+66AD	Fundoscopy - diabetic check	4
+67E	Foreign travel advice	1
+67E1	Recommend travel vaccinations	1
+6896	Depression screening using questions	3
+68A8	Digital retinal screening	1
+7928	Transluminal balloon angioplasty of coronary artery	2
+8A44	Pulse oximetry monitoring	1
+8B28	Lipid lowering therapy	4
+8B3T	Over the counter aspirin therapy	3
+8H	Referral for further care	1
+8H4	Referral to physician	1
+8H43	Dermatological referral	1
+8H44	Cardiological referral	1
+8H52	Ophthalmological referral	1
+8H59	Referred to plastic surgeon	2
+8H7	Other referral	1
+8H76	Refer to dietician	1
+8I26	Beta blocker contraindicated	5
+9N2U	Seen by optician	2
+9N2V	Seen by optometrist	1
+9N2e	Seen by ophthalmologist	1
+9N42	Did not attend - no reason	2
+ALTA7117	Alprazolam  Tablets  250 micrograms	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	16
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	17
+C109	Non-insulin dependent diabetes mellitus	2
+CHENJSE3	Unknown vendor specific drug	1
+CHTA23546NEMIS	Champix  Tablets  1 mg	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	1
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+DITA885	Diclofenac Sodium  Tablets  25 mg	18
+E117	Unspecified bipolar affective disorder	3
+E200z	Anxiety state NOS	2
+E2A11	Organic memory impairment	1
+F4250	Unspecified senile macular degeneration	1
+F42z	Retinal disorder NOS	1
+FECA1203NEMIS	Fenofibrate  Capsules  (Micronised) 267 mg	3
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	2
+G11z	Mitral valve disease NOS	2
+G240	Secondary malignant hypertension	1
+G84	Haemorrhoids	1
+GACA10300BRIDL	Galenamox  Capsules  250 mg	18
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+H22	Other bacterial pneumonia	1
+J1212	Chronic duodenal ulcer with perforation	1
+M21yC	Insulin lipohypertrophy	17
+NATA1940	Nardil  Tablets  15 mg	1
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	2
+PK61	Sturge-Weber syndrome	7
+PRTA2322	Prazosin Hydrochloride  Tablets  1 mg	1
+PRTA4200	Prednesol  Soluble tablets  5 mg	1
+SETA4308	Semi-Daonil  Tablets  2.5 mg	3
+STTA2717	Stugeron  Tablets  15 mg	4
+URNI10806BRIDL	Uriplan  Night drainage bags  D81-3131	1
+URTA22561EMIS	Urispas  Tablets  200 mg	1

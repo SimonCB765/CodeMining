@@ -1,0 +1,103 @@
+Code	Description	Count
+136	Alcohol consumption	4
+1371	Never smoked tobacco	1
+137S	Ex smoker	1
+13A	Diet - patient initiated	2
+229	O/E - height	1
+22A	O/E - weight	10
+22K	Body Mass Index	10
+246	O/E - blood pressure reading	18
+29BB	10g monofilament sensation R foot normal	2
+29H5	O/E - Vibration sense of right foot normal	1
+29H7	O/E - Vibration sense of left foot normal	1
+2G5	O/E - foot	2
+3128	Fundoscopy	2
+312E	Direct fundoscopy following mydriatic	2
+32	Electrocardiography	2
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	1
+42WZ	Hb. A1C - diabetic control NOS	2
+42bE	Percentage hypochromic cells	2
+43Z2	Prostate specific antigen	4
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	21
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	14
+44P6	Serum LDL cholesterol level	14
+44Q	Serum triglycerides	15
+44TB	Haemoglobin A1c level	2
+44g	Plasma glucose level	9
+44lD	Urine protein/creatinine ratio	3
+451E	GFR calculated abbreviated MDRD	8
+461	Urine exam. - general	2
+4669	Urine dipstick for glucose	1
+4672	Urine protein test negative	1
+4679	Urine dipstick for protein	5
+4698	Urine dipstick for blood	1
+46I	24 hour urine volume	1
+46M7	Urine creatinine	1
+46MD	24 hour urine creatinine output	1
+46N3	Urine total protein	3
+46N4	Urine albumin	3
+46N6	24 hour urine albumin output	3
+46TC	Urine albumin:creatinine ratio	5
+46W	Urine microalbumin	3
+46Z1	Urine microscopy	2
+55	Cardiovascular sys.angiography	1
+5853	U-S heart scan	4
+6572	Pneumococcal vaccination	1
+6781	Health education offered	2
+679	Health education - subject	1
+6896	Depression screening using questions	3
+68A8	Digital retinal screening	1
+7911	Plastic repair of aortic valve	1
+79113	Replacement of aortic valve NEC	1
+7920y	Saphenous vein graft replacement of coronary artery OS	1
+8HD	Refer to hospital OPD	1
+8HE	Discharged from hospital	3
+8I3X	Diabetic retinopathy screening refused	1
+8I6G	Diabetic foot examination not indicated	2
+918	Patient reg. misc. data	1
+9N1I	Seen in urology clinic	2
+9N3A	Telephone triage encounter	2
+9N3D	Letter received	1
+9N57	Admin reason for encounter	1
+AB220	Candidal balanitis	1
+C10	Diabetes mellitus	2
+C106z	Diabetes mellitus NOS with neurological manifestation	1
+C109	Non-insulin dependent diabetes mellitus	1
+F4K21	Vitreous detachment	2
+Fyu51	[X]Other epilepsy	1
+G303	Acute inferoposterior infarction	1
+G668	Right sided CVA	1
+H037	Recurrent acute tonsillitis	2
+K1012	Acute pyelitis	1
+ZV125	[V]Personal history of circulatory system disease	8
+bi2y	ENALAPRIL MALEATE 20mg tablets	9
+bi2z	ENALAPRIL MALEATE 20mg tablets x28	1
+bi33	LISINOPRIL 10mg tablets	19
+bl5y	ANGITIL XL 300 m/r capsules	1
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	8
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	13
+bw34	TRANEXAMIC ACID 500mg tablets	10
+bx13	BEZAFIBRATE 200mg tablets	12
+du3f	NICOTINE 10mg inhalator refill pack	1
+e772	*MINOCIN 100mg tablets	1
+ei1o	ACICLOVIR 800mg tablets	7
+f25Y	HUMAN ISOPHANE INSULIN 100units/mL injection vials	1
+f27H	HUMAN MIXTARD 30 ge injection 10mL	12
+f27S	HUMAN MIXTARD 40 prefilled pen	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	20
+ft4v	ROSIGLITAZONE 4mg / METFORMIN 1000mg tablets	2
+ft4x	ROSIGLITAZONE 1mg / METFORMIN 500mg tablets	1

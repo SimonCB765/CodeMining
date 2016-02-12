@@ -1,0 +1,100 @@
+Code	Description	Count
+137L	Current non-smoker	4
+137S	Ex smoker	1
+1382	Avoids even trivial exercise	1
+1383	Enjoys light exercise	3
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	18
+22A	O/E - weight	22
+22K	Body Mass Index	22
+2469	O/E - Systolic BP reading	26
+29BB	10g monofilament sensation R foot normal	3
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	11
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44A1	Serum parathyroid hormone	1
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	1
+44I4	Serum potassium	7
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	12
+44J8	Blood urea	1
+44J9	Serum urea level	2
+44LA	Serum vitamin D	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	7
+44P5	Serum HDL cholesterol level	5
+44Q	Serum triglycerides	6
+44U	Blood glucose result	1
+451E	GFR calculated abbreviated MDRD	6
+4665	Urine glucose test = ++	1
+4672	Urine protein test negative	4
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	3
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	5
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+68A8	Digital retinal screening	1
+792	Coronary artery operations	2
+8A17	Self monitoring of blood glucose	3
+8B63	Salicylate prophylaxis	3
+8B6A	Statin prophylaxis	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	2
+8H52	Ophthalmological referral	1
+8H77	Refer to physiotherapist	1
+8I26	Beta blocker contraindicated	3
+8I62	Beta blocker not indicated	3
+8I6B	Clopidogrel not indicated	1
+8I93	Patient referral choice not available	2
+9N1v	Seen in diabetic eye clinic	1
+9N2P	Seen by chiropodist	2
+9N2U	Seen by optician	1
+9N2V	Seen by optometrist	2
+9N2e	Seen by ophthalmologist	1
+9S10	White British	1
+9h41	Excepted from diabetes qual indicators: Patient unsuitable	1
+9i0	British or mixed British - ethnic category 2001 census	1
+9i2	Other White background - ethnic category 2001 census	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	3
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	12
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	22
+C10	Diabetes mellitus	3
+C109	Non-insulin dependent diabetes mellitus	1
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	1
+DIE/1994NEMIS	Diclofenac Sodium  E/c tablets  25 mg	3
+E3	Mental retardation	10
+EMISNQBO15	Unknown vendor specific drug	1
+EMISNQRE53	Unknown vendor specific drug	1
+EMISNQSM3	Unknown vendor specific drug	1
+EMISQDO2	Unknown vendor specific drug	1
+FOCA24984EMIS	Foley  Catheter (female)  14 ch	3
+FRTA1247	Frumil  Tablets	21
+Fyu51	[X]Other epilepsy	1
+G240	Secondary malignant hypertension	1
+G84	Haemorrhoids	1
+H014	Acute rhinosinusitis	1
+HUCA18372EMIS	Humulin I  Cartridges (1.5 Ml)  100 units/ml	1
+INPR13809NEMIS	Insulin Glargine  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+IRIN11056NEMIS	Iron Hydroxide Dextran Complex  Injection  50 mg/ml, 2 ml ampoule	4
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	1
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	28
+M21yC	Insulin lipohypertrophy	9
+N050	Generalised osteoarthritis - OA	1
+NIM/21927EMIS	Nicardipine Hydrochloride  M/R capsules  45 mg	17
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	2
+NITA25527EMIS	Nicorandil  Tablets  20 mg	1
+TESTSDI1	Unknown vendor specific drug	17

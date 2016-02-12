@@ -1,0 +1,111 @@
+Code	Description	Count
+136	Alcohol consumption	4
+1371	Never smoked tobacco	4
+137G	Trying to give up smoking	1
+137P	Cigarette smoker	1
+137S	Ex smoker	1
+1384	Enjoys moderate exercise	1
+13A3	Weight reducing diet	1
+13l4	Main spoken language English	1
+1Z14	Chronic kidney disease stage 5	2
+229	O/E - height	10
+22A	O/E - weight	12
+22K	Body Mass Index	12
+2469	O/E - Systolic BP reading	20
+29B7	10g monofilament sensation present	1
+29B8	10g monofilament sensation absent	2
+2BB1	O/E - retina normal	1
+2BBD	O/E - Right retina normal	1
+2BBE	O/E - Left retina normal	1
+31280	Fundoscopy normal	1
+3129	Eye fundus photography	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	10
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	17
+44J8	Blood urea	1
+44J9	Serum urea level	2
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	1
+44U	Blood glucose result	1
+44f0	Serum random glucose level	1
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	10
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4675	Urine protein test = ++	1
+4676	Urine protein test = +++	1
+4677	Urine protein test = ++++	1
+4678	Proteinuria	2
+46M7	Urine creatinine	4
+46N3	Urine total protein	6
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	9
+46W0	Urine microalbumin positive	2
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+7A601	Creation of arteriovenous fistula NEC	1
+8A17	Self monitoring of blood glucose	2
+8A18	Self monitoring of urine glucose	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	2
+8H4L	Referred to nephrologist	1
+8H52	Ophthalmological referral	2
+8H7i	Referral to smoking cessation advisor	1
+8HBD	Retinopathy follow up	1
+8HJA	Trauma self-referral	1
+8I6C	Angiotensin II receptor antagonist not indicated	7
+9N2U	Seen by optician	1
+9N4H	DNA hospital appointment	1
+9SA8	Other Asian (NMO)	1
+9i7	Indian or British Indian - ethnic category 2001 census	2
+ALCA74	Alfacalcidol  Capsules  250 nanograms	1
+AMCA135	Amoxycillin  Capsules  500 mg	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	5
+ASDI224	Aspirin  Dispersible tablets  75 mg	18
+C10	Diabetes mellitus	5
+CITA15860NEMIS	Cipralex  Tablets  20 mg	2
+D0	Deficiency anaemias	1
+E200z	Anxiety state NOS	2
+E3	Mental retardation	9
+FRTA1248	Frusemide  Tablets  20 mg	1
+Fyu51	[X]Other epilepsy	1
+G110	Mitral stenosis	1
+GASTOUN2	Unknown vendor specific drug	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	12
+IBTA1431	Ibuprofen  Tablets  600 mg	9
+J17y7	Deformed duodenal cap (bulb)	2
+J17y8	Healed gastric ulcer leaving a scar	4
+LMRGPAP3	Unknown vendor specific drug	7
+LMRGPER1	Unknown vendor specific drug	1
+LMRGPGP2	Unknown vendor specific drug	6
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	1
+PH54	Congenital onychauxis	3
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	19
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	4
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	21
+SETA4308	Semi-Daonil  Tablets  2.5 mg	1
+STTA9316EMIS	Staril  Tablets  10 mg	8

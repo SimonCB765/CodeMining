@@ -1,0 +1,126 @@
+Code	Description	Count
+03I	Opticians	2
+136	Alcohol consumption	10
+137L	Current non-smoker	1
+137S	Ex smoker	3
+1381	Exercise physically impossible	1
+1383	Enjoys light exercise	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	13
+22A	O/E - weight	13
+22K	Body Mass Index	13
+22N0	Waist circumference	6
+2469	O/E - Systolic BP reading	18
+29B7	10g monofilament sensation present	1
+29B9	10g monofilament sensation R foot abnormal	2
+2BBI	O/E - no retinopathy	3
+3212	Standard ECG	1
+3216	ECG normal	1
+423	Haemoglobin estimation	21
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+42W	Hb. A1C - diabetic control	1
+42W5	Haemoglobin A1c level - IFCC standardised	6
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	3
+44CS	Serum C reactive protein level	3
+44EC	Serum total bilirubin level	1
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	1
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	16
+44I5	Serum sodium	3
+44I8	Serum calcium	4
+44J3	Serum creatinine	36
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	8
+44P3	Serum cholesterol raised	1
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	6
+44Q	Serum triglycerides	6
+44Q5	Serum random triglyceride level	4
+44TB	Haemoglobin A1c level	15
+44f1	Serum fasting glucose level	8
+451E	GFR calculated abbreviated MDRD	28
+4615	MSU sent to lab.	2
+4662	Urine glucose test negative	2
+4667	Urine glucose test = ++++	1
+467	Urine protein test	1
+4672	Urine protein test negative	6
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	2
+467A	24 hour urine protein output	1
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	2
+46A2	Urine pH = 5.0	2
+46M7	Urine creatinine	4
+46MD	24 hour urine creatinine output	1
+46N	Urine protein	1
+46N4	Urine albumin	7
+46TC	Urine albumin:creatinine ratio	8
+46U	Urine culture	2
+46W	Urine microalbumin	6
+46X1	Urine nitrite negative	1
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A4	Diabetic on oral treatment	1
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+8A17	Self monitoring of blood glucose	3
+8B63	Salicylate prophylaxis	3
+8CA4	Patient advised re diet	5
+8CA41	Pt advised re diabetic diet	1
+8CA5	Patient advised re exercise	4
+8CAM	Patient advised about alcohol	1
+8H41	General medical referral	1
+8H53	ENT referral	1
+8H7	Other referral	1
+8H72	Refer to district nurse	1
+8I2Q	Metformin contraindicated	1
+9N1Q	Seen in diabetic clinic	1
+9N2U	Seen by optician	4
+9N2f	Seen by retinal screener	1
+9N36	Letter from specialist	3
+9i0	British or mixed British - ethnic category 2001 census	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	9
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	12
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	6
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	11
+ASE/24522EMIS	Aspirin  E/c tablets  300 mg	1
+ASHBYUR1	Unknown vendor specific drug	5
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	7
+DICA876	Diazepam  Capsules  2 mg	8
+E200z	Anxiety state NOS	3
+EMISSPR130	Unknown vendor specific drug	12
+ERIN24326NEMIS	Ergocalciferol  Injection  300,000 units/ml, 2 ml ampoule	11
+F36	Hereditary and idiopathic peripheral neuropathy	1
+FLCA8419EGTON	Fluconazole  Capsules  150 mg	9
+FLLE1080NEMIS	Flexicare  Leg bags, short tube  500 ml, 00-1502	1
+Fyu51	[X]Other epilepsy	2
+G5800	Acute congestive heart failure	2
+G581	Left ventricular failure	1
+GACA10300BRIDL	Galenamox  Capsules  250 mg	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	17
+H1y10	Nasal septum abscess	1
+H22	Other bacterial pneumonia	1
+HUPR35541EMIS	Humalog Mix25  Preloaded pen	1
+IBM/18882EMIS	Ibuprofen  M/R tablets  800 mg	7
+ININ3759	Pork Insulatard  Injection  100 units/ml, 10 ml vial	19
+J1y	"Other specified disorders of oesophagus	1
+L443	Other complication of obstetric surgical wound	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	7
+META1753	Mefenamic Acid  Tablets  500 mg	2
+MOTA8433BRID	Monocor  Tablets  5 mg	2
+N04z	Inflammatory polyarthropathy NOS	2
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	3
+PH54	Congenital onychauxis	2
+POSH2300	Polytar  Shampoo	6
+PRFO5322	Prednisolone  Foam  20 mg/application	8
+Pyu70	[X]Other cystic kidney diseases	1
+SETA4308	Semi-Daonil  Tablets  2.5 mg	1
+U10z	[X]Unspecified fall	1

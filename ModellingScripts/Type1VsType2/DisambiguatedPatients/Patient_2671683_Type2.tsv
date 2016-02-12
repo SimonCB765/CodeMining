@@ -1,0 +1,105 @@
+Code	Description	Count
+229	O/E - height	15
+22A	O/E - weight	21
+22K	Body Mass Index	21
+22K5	Body mass index 30+ - obesity	1
+22K7	Body mass index 40+ - severely obese	2
+22N0	Waist circumference	2
+246	O/E - blood pressure reading	7
+2469	O/E - Systolic BP reading	11
+246A	O/E - Diastolic BP reading	12
+246N	Standing systolic blood pressure	1
+246P	Standing diastolic blood pressure	1
+24E1	O/E -R.-leg pulses all present	1
+24EB	O/E - right foot pulses present	1
+29H4	O/E - Vibration sense of right foot abnormal	1
+2BBR	O/E - right eye preproliferative diabetic retinopathy	1
+2BBW	O/E - right eye diabetic maculopathy	1
+2BBX	O/E - left eye diabetic maculopathy	1
+423	Haemoglobin estimation	2
+4258	Haematocrit	3
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42H7	Total white blood count	1
+42N	Monocyte count	1
+42P	Platelet count	1
+42R4	Serum ferritin	2
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	2
+42W5	Haemoglobin A1c level - IFCC standardised	2
+42d	Blood haematinic levels	1
+44CC	Plasma C reactive protein	3
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44G9	Serum gamma-glutamyl transferase level	1
+44I4	Serum potassium	7
+44I5	Serum sodium	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	14
+44J9	Serum urea level	1
+44Le	Plasma vitamin B12 level	2
+44M4	Serum albumin	1
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	4
+44PF	Total cholesterol:HDL ratio	4
+44Q	Serum triglycerides	9
+44Q4	Serum fasting triglyceride level	1
+44TB	Haemoglobin A1c level	10
+44g	Plasma glucose level	6
+44lD	Urine protein/creatinine ratio	3
+451E	GFR calculated abbreviated MDRD	8
+46	Urine examination	1
+461	Urine exam. - general	1
+4672	Urine protein test negative	1
+46M7	Urine creatinine	2
+46TC	Urine albumin:creatinine ratio	5
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+66C	Obesity monitoring	1
+6791	Health ed. - smoking	2
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+68A8	Digital retinal screening	1
+8B2B	Nicotine replacement therapy	1
+8CA	Patient given advice	1
+8CA41	Pt advised re diabetic diet	1
+8CA5	Patient advised re exercise	2
+8H7i	Referral to smoking cessation advisor	1
+8HBD	Retinopathy follow up	1
+9N1v	Seen in diabetic eye clinic	1
+9N2e	Seen by ophthalmologist	1
+9S6	Indian	1
+COUR12416NEMIS	Coloplast Simpla 2 Litre S2  Urine drainage bag  320902	1
+E200z	Anxiety state NOS	2
+Fyu51	[X]Other epilepsy	3
+LYONSOU1	Unknown vendor specific drug	1
+M07z2	Infection finger	1
+PRTA4213	Pro-Viron  Tablets  25 mg	2
+U60E3	[X]Benzothiadiazine derivs caus advers effect in therap use	1
+X20CN	Unknown vendor specific drug	1
+XAM/3799NEMIS	Xatral Xl  M/R tablets  10 mg	6
+ZV125	[V]Personal history of circulatory system disease	12
+ZV579	[V]Cardiac rehabilitation	2
+ab2J	ISPAGHULA HUSK 3.4g/sachet sugar free powder	10
+bdl3	CARVEDILOL 12.5mg tablets	21
+bdl4	CARVEDILOL 25mg tablets	2
+bi94	GOPTEN 500micrograms capsules	28
+bl5y	ANGITIL XL 300 m/r capsules	2
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	27
+bx13	BEZAFIBRATE 200mg tablets	17
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	10
+bxa7	OMACOR 1g capsules	3
+da79	VENLAFAXINE 150mg m/r capsules	2
+da81	NEFAZODONE HYDROCHLORIDE 100mg tablets	2
+da91	CITALOPRAM 20mg tablets	1
+dia3	CO-CODAMOL 8mg/500mg dispersible tablets	1
+dia6	CO-DYDRAMOL tablets	1
+gc6z	ALFUZOSIN HYDROCHLORIDE 10mg m/r tablets	2
+gc71	TAMSULOSIN HYDROCHLORIDE 400micrograms m/r capsules	4
+ip3a	CALCIUM AND ERGOCALCIFEROL 400units tablets	1

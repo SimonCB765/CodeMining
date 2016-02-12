@@ -1,0 +1,85 @@
+Code	Description	Count
+136	Alcohol consumption	11
+1371	Never smoked tobacco	1
+1378	Ex-light smoker (1-9/day)	1
+137L	Current non-smoker	3
+1381	Exercise physically impossible	3
+1382	Avoids even trivial exercise	1
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	4
+22A	O/E - weight	15
+22K	Body Mass Index	15
+2469	O/E - Systolic BP reading	20
+2BB6	O/E - retinal exudates	1
+311A	Monofilament foot sensation test	4
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42c	HbA1 - diabetic control	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44I4	Serum potassium	7
+44I5	Serum sodium	3
+44J3	Serum creatinine	17
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	7
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	5
+44Q4	Serum fasting triglyceride level	1
+44TB	Haemoglobin A1c level	14
+44U	Blood glucose result	2
+44g	Plasma glucose level	1
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	6
+4661	Urine glucose test not done	3
+467	Urine protein test	1
+4671	Urine protein test not done	3
+4672	Urine protein test negative	1
+4681	Urine ketone test not done	3
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	2
+6791	Health ed. - smoking	3
+67I7	Advice about foot care	3
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+68A8	Digital retinal screening	2
+8B28	Lipid lowering therapy	6
+8B63	Salicylate prophylaxis	6
+8CA41	Pt advised re diabetic diet	6
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	3
+8H54	Orthopaedic referral	1
+8H5B	Referred to urologist	1
+8H76	Refer to dietician	3
+8H7R	Refer to chiropodist	2
+8I63	Statin not indicated	1
+9N1K	Seen in ophthalmology clinic	1
+9N2U	Seen by optician	1
+9N4H	DNA hospital appointment	1
+9N4I	DNA - Did not attend diabetic clinic	1
+9N4p	Did not attend diabetic retinopathy clinic	1
+9S2	Black Caribbean	2
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	25
+ASDI224	Aspirin  Dispersible tablets  75 mg	4
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	24
+BETA302	Bendrofluazide  Tablets  2.5 mg	3
+F36z	Hereditary or idiopathic peripheral neuropathy NOS	1
+F4238	Central retinal vein occlusion	1
+FLLE1083NEMIS	Flexicare  Leg bags, long tube  500 ml, 00-2502	3
+FOTA9320EMIS	Fosinopril Sodium  Tablets  10 mg	1
+Fyu51	[X]Other epilepsy	2
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	24
+M21yC	Insulin lipohypertrophy	22
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+N06z7	Arthropathy NOS-ankle/foot	1
+N09AX	"Disorder of patella	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	35
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	23
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	1
+TETA30443NEMIS	Telmisartan And Hydrochlorothiazide  Tablets  80 mg + 25 mg	1

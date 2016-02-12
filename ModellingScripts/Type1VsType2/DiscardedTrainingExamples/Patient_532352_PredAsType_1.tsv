@@ -1,0 +1,107 @@
+Code	Description	Count
+136	Alcohol consumption	4
+1371	Never smoked tobacco	3
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+22A	O/E - weight	18
+22K	Body Mass Index	17
+22K5	Body mass index 30+ - obesity	3
+22K7	Body mass index 40+ - severely obese	1
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	30
+29B7	10g monofilament sensation present	4
+2BBF	Retinal abnormality - diabetes related	1
+2BBW	O/E - right eye diabetic maculopathy	1
+2BBX	O/E - left eye diabetic maculopathy	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+3129	Eye fundus photography	3
+312F	Camera fundoscopy	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	1
+42U4	Red blood cell folate	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	16
+42W5	Haemoglobin A1c level - IFCC standardised	3
+43Z2	Prostate specific antigen	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44J3	Serum creatinine	16
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	14
+44P1	Serum cholesterol normal	1
+44P5	Serum HDL cholesterol level	14
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	4
+44Q	Serum triglycerides	13
+44Q3	Serum triglycerides raised	1
+44U	Blood glucose result	3
+451E	GFR calculated abbreviated MDRD	7
+4674	Urine protein test = +	2
+4675	Urine protein test = ++	6
+4676	Urine protein test = +++	3
+4677	Urine protein test = ++++	1
+46M7	Urine creatinine	2
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	3
+46TD	Urine microalbumin:creatinine ratio	1
+46W0	Urine microalbumin positive	8
+4JJ1	MSU sent for C/S	1
+585V	Left dorsalis pedis doppler pressure	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+65720	Pneumococcal vaccination given	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+66AD	Fundoscopy - diabetic check	2
+67I9	Advice about weight	3
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+8A17	Self monitoring of blood glucose	1
+8B63	Salicylate prophylaxis	1
+8BL2	Patient on maximal tolerated therapy for diabetes	3
+8CA4	Patient advised re diet	3
+8CA48	Pt advised re low salt diet	3
+8CA5	Patient advised re exercise	6
+8H77	Refer to physiotherapist	1
+9N1Q	Seen in diabetic clinic	5
+9i0	British or mixed British - ethnic category 2001 census	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	16
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	12
+C10	Diabetes mellitus	1
+C1001	Diab.mell.no comp. - adult	1
+COTA9149BRIDL	Co-Amilofruse 5/40  Tablets	1
+D0130	Combined B12 and folate deficiency anaemia	1
+DICA877	Diazepam  Capsules  5 mg	2
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	1
+DITA885	Diclofenac Sodium  Tablets  25 mg	13
+DITA886	Diclofenac Sodium  Tablets  50 mg	10
+Eu3	[X]Mood - affective disorders	1
+F36	Hereditary and idiopathic peripheral neuropathy	2
+F5902	Conductive hearing loss due to disorder of tympanic membrane	4
+Fyu51	[X]Other epilepsy	2
+GASTOUN2	Unknown vendor specific drug	1
+H331	Intrinsic asthma	1
+HUIN3719	Humulin M1  Injection	2
+HYTA8712EGTON	Hytrin  Tablets  5 mg	21
+IBSY1428	Ibuprofen  Syrup  100 mg/5 ml	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	24
+MANORRE1	Unknown vendor specific drug	24
+PD44	Double ureter	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	2
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	1
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	2
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	19
+TC52	Fall on same level from stumbling	9
+TC6	"Fall on same level-push	12
+VATA9150EMIS	Vascace  Tablets  1 mg	19

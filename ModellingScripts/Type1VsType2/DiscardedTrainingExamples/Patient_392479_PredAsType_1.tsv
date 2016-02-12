@@ -1,0 +1,109 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	4
+136	Alcohol consumption	1
+137P	Cigarette smoker	4
+137R	Current smoker	1
+1383	Enjoys light exercise	4
+1384	Enjoys moderate exercise	1
+13l4	Main spoken language English	1
+1A23	Incontinence of urine	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	11
+22A	O/E - weight	11
+22K	Body Mass Index	11
+2469	O/E - Systolic BP reading	15
+29BB	10g monofilament sensation R foot normal	3
+2BB1	O/E - retina normal	3
+31280	Fundoscopy normal	1
+423	Haemoglobin estimation	2
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	3
+44J3	Serum creatinine	18
+44J9	Serum urea level	4
+44M4	Serum albumin	1
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	4
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	5
+44TB	Haemoglobin A1c level	3
+44U	Blood glucose result	3
+44g	Plasma glucose level	6
+451E	GFR calculated abbreviated MDRD	5
+4614	Urinalysis = abnormal	1
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	4
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	1
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	3
+46N4	Urine albumin	3
+46TC	Urine albumin:creatinine ratio	8
+46W	Urine microalbumin	5
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	2
+6791	Health ed. - smoking	4
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+7B312	Colposuspension of bladder neck	1
+8A17	Self monitoring of blood glucose	3
+8B3T	Over the counter aspirin therapy	2
+8B6A	Statin prophylaxis	1
+8BL2	Patient on maximal tolerated therapy for diabetes	2
+8CA4	Patient advised re diet	1
+8CA41	Pt advised re diabetic diet	1
+8CAL	Smoking cessation advice	1
+8H	Referral for further care	1
+8H62	Referral to G.P.	3
+8H76	Refer to dietician	1
+8HT2	Referral to hearing aid clinic	1
+8HV	Private referral	1
+8I26	Beta blocker contraindicated	1
+9N1K	Seen in ophthalmology clinic	1
+9N2f	Seen by retinal screener	2
+9NNC	Under care of retinal screener	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AMCA17510NEMIS	Amoxicillin  Capsules  250 mg	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	20
+AMTA9080EMIS	Amlodipine Besilate  Tablets  10 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	6
+C10	Diabetes mellitus	2
+CHTA23546NEMIS	Champix  Tablets  1 mg	1
+CHTA600	Chlorpropamide  Tablets  100 mg	1
+E1121	"Single major depressive episode	1
+E2C11	Solitary stealing	1
+E3	Mental retardation	9
+EMISHGT63	Unknown vendor specific drug	1
+EMISQUR1	Unknown vendor specific drug	1
+EMISSCE2	Unknown vendor specific drug	1
+F4K2z	Vitreous disorders NOS	1
+Fyu51	[X]Other epilepsy	1
+G11z	Mitral valve disease NOS	2
+GASTOUN2	Unknown vendor specific drug	3
+H037	Recurrent acute tonsillitis	1
+H0612	Acute bronchiolitis with bronchospasm	1
+H570	Rheumatoid lung	2
+H58y3	Interstitial lung disease NEC	3
+H5y4	Disorders of diaphragm	1
+ISDU10518BRIDL	Isosorbide Mononitrate  Durules  60 mg	7
+K0D	End-stage renal disease	2
+MACA8841BRIDL	Maxepa  Capsules  1 gram	2
+MEOR11311NEMIS	Metoprolol Tartrate  Oral solution  12.5 mg/5 ml	21
+N0500	Generalised osteoarthritis of unspecified site	1
+NATA1939	Naproxen  Tablets  500 mg	1
+Pyu70	[X]Other cystic kidney diseases	1
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	18
+RATA16400NEMIS	Ramipril  Tablets  2.5 mg	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	24
+TEGE25620NEMIS	Testosterone  Gel  2 %, 3 x 60 gram Multi-Dose Dispenser	1

@@ -1,0 +1,116 @@
+Code	Description	Count
+136	Alcohol consumption	5
+1362	Trivial drinker - <1u/day	7
+1363	Light drinker - 1-2u/day	1
+1371	Never smoked tobacco	4
+137L	Current non-smoker	1
+1383	Enjoys light exercise	5
+1B17	Depressed	1
+1FA	Diet good	1
+1FC	Diet average	2
+229	O/E - height	13
+22A	O/E - weight	16
+22K	Body Mass Index	16
+22N0	Waist circumference	6
+246	O/E - blood pressure reading	24
+29BA	10g monofilament sensation L foot abnormal	2
+29BB	10g monofilament sensation R foot normal	1
+29H	O/E - vibration sense	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+3128	Fundoscopy	1
+31281	Fundoscopy abnormal	2
+32	Electrocardiography	1
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	2
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	2
+42QE	International normalised ratio	6
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	15
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44J3	Serum creatinine	23
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	14
+44P6	Serum LDL cholesterol level	8
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	1
+44g	Plasma glucose level	1
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	12
+4613	Urinalysis = no abnormality	2
+4615	MSU sent to lab.	1
+463	Urine specific gravity	1
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46A	Urine pH test	1
+46M7	Urine creatinine	3
+46TC	Urine albumin:creatinine ratio	7
+46W	Urine microalbumin	7
+4JJ1	MSU sent for C/S	1
+585d	Left posterior tibial ABPI	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6798	Health ed. - exercise	2
+67I7	Advice about foot care	3
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+68A8	Digital retinal screening	1
+8B63	Salicylate prophylaxis	4
+8H	Referral for further care	1
+8HBA	Follow up in outpatient clinic	5
+8I3X	Diabetic retinopathy screening refused	1
+9N1v	Seen in diabetic eye clinic	1
+9N2e	Seen by ophthalmologist	3
+9N4	Failed encounter	1
+9N4H	DNA hospital appointment	1
+9OI	Hypertension monitoring admin.	1
+C10	Diabetes mellitus	2
+EGTON460	Unknown vendor specific drug	1
+EMISASC2	Unknown vendor specific drug	1
+F366	Polyneuropathy	1
+F36z	Hereditary or idiopathic peripheral neuropathy NOS	1
+Fyu5E	[X]Chronic headache disorder	3
+G3400	Single coronary vessel disease	1
+H014	Acute rhinosinusitis	1
+H037	Recurrent acute tonsillitis	1
+K0D	End-stage renal disease	1
+N07y5	Locked knee	2
+PCSDT11883MA13	Unknown vendor specific drug	2
+ZITO9011EMIS	Zineryt  Topical solution	3
+ZV148	[V]Personal history of aspirin allergy	2
+ZV578	[V]Rehabilitation following other hospital encounter	1
+ab21	FYBOGEL 3.5g plain sugar free granules	1
+bB1y	IVABRADINE 7.5mg tablets	22
+bi2x	ENALAPRIL MALEATE 10mg tablets x28	8
+bi2z	ENALAPRIL MALEATE 20mg tablets x28	4
+bi33	LISINOPRIL 10mg tablets	15
+bk38	COZAAR 100mg tablets	1
+bl5y	ANGITIL XL 300 m/r capsules	2
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	9
+blk6	ISODUR 25XL m/r capsules	3
+blkA	MONOMAX XL 60mg m/r tablets	5
+blkJ	TRANGINA XL 60mg m/r tablets	2
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	12
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	7
+bxa7	OMACOR 1g capsules	18
+bxc1	*FENOFIBRATE 100mg capsules	1
+du3f	NICOTINE 10mg inhalator refill pack	1
+e772	*MINOCIN 100mg tablets	1
+f12T	HYPURIN PORCINE NEUTRAL 100iu/mL injection cartridge 3mL	1
+f27g	HUMULIN M4 40/60 cartridges 1.5mL	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	23
+ft11	ACARBOSE 50mg tablets	14
+ip3i	CALCIUM CARBONATE+COLECALCIFEROL 1.5g/10mcg chewable tablets	3
+j29z	*INDOMETACIN 25mg m/r capsules	1

@@ -1,0 +1,129 @@
+Code	Description	Count
+03I1	Ophthalmic optician	1
+1351	Church of England	1
+136	Alcohol consumption	9
+1371	Never smoked tobacco	3
+137G	Trying to give up smoking	1
+137P	Cigarette smoker	1
+1383	Enjoys light exercise	1
+1A82	Breast lump present	1
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	7
+22A	O/E - weight	14
+22K	Body Mass Index	14
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	1
+29H2	O/E - vibration sense reduced	1
+2BB1	O/E - retina normal	1
+2BBF	Retinal abnormality - diabetes related	1
+2BBL	O/E - diabetic maculopathy present both eyes	1
+311A	Monofilament foot sensation test	2
+3242	ECG: shows LVH	1
+423	Haemoglobin estimation	1
+428	Mean corpusc. haemoglobin(MCH)	1
+42A	Mean corpuscular volume (MCV)	1
+42W2	Hb. A1C 7-10% - borderline	3
+42W4	HbA1c level (DCCT aligned)	6
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44I4	Serum potassium	1
+44I5	Serum sodium	2
+44J3	Serum creatinine	15
+44J9	Serum urea level	2
+44P	Serum cholesterol	12
+44P1	Serum cholesterol normal	2
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	12
+44TB	Haemoglobin A1c level	6
+44TJ	Blood glucose level	1
+44U	Blood glucose result	1
+44g	Plasma glucose level	1
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	3
+451E	GFR calculated abbreviated MDRD	3
+451F	Glomerular filtration rate	2
+451G	GFR calculated abbreviated MDRD adj for African Americ orign	2
+467	Urine protein test	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	1
+46M7	Urine creatinine	2
+46N	Urine protein	3
+46N4	Urine albumin	3
+46TC	Urine albumin:creatinine ratio	4
+46W	Urine microalbumin	1
+46W1	Urine microalbumin negative	1
+5542	Coronary arteriography normal	1
+5855	U-S abdominal scan	1
+58C1	Retinal photography	2
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+66AD	Fundoscopy - diabetic check	1
+6791	Health ed. - smoking	3
+6792	Health ed. - alcohol	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+8A17	Self monitoring of blood glucose	1
+8B28	Lipid lowering therapy	1
+8BL2	Patient on maximal tolerated therapy for diabetes	2
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	2
+8H4F	Referral to diabetologist	1
+8H52	Ophthalmological referral	3
+8H7r	Refer to diabetic foot screener	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I3W	Diabetic foot examination declined	1
+9N2L	Seen by deputising doctor	3
+9N2V	Seen by optometrist	1
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	1
+9N4	Failed encounter	1
+9N42	Did not attend - no reason	1
+9S2	Black Caribbean	2
+9i7	Indian or British Indian - ethnic category 2001 census	2
+9iB	Caribbean - ethnic category 2001 census	1
+A77X	"Viral conjunctivitis	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	8
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	4
+ASDI224	Aspirin  Dispersible tablets  75 mg	16
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	1
+C10	Diabetes mellitus	2
+C104	Diabetes mellitus with renal manifestation	1
+CAIN4919NEMIS	Caverject Dual Chamber  Injection  20 micrograms/dose	1
+CAM/18447NEMIS	Cardioplen Xl  M/R tablets  5 mg	23
+CAM/21923EMIS	Cardene Sr  M/R capsules  45 mg	1
+COTA9316HILLI	Co-Amilozide 2.5/25  Tablets	1
+DITA4858	Distigmine Bromide  Tablets  5 mg	2
+DITA884	Diclofenac Sodium  M/R tablets  100 mg	13
+E3	Mental retardation	1
+F35z	Mononeuritis of unspecified site NOS	1
+F42z	Retinal disorder NOS	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	3
+F5921	"Mix cond/sensin hear loss	3
+FOCA24991EMIS	Foley  Catheter (male)  12 ch	3
+FRTA1248	Frusemide  Tablets  20 mg	8
+Fyu4	[X]Demyelinating diseases of the central nervous system	1
+Fyu51	[X]Other epilepsy	1
+G11z	Mitral valve disease NOS	2
+G572z	Paroxysmal tachycardia NOS	2
+G84	Haemorrhoids	3
+GASTOUR3	Unknown vendor specific drug	1
+GASTOUR8	Unknown vendor specific drug	1
+GECA4956	Gemfibrozil  Capsules  300 mg	1
+H014	Acute rhinosinusitis	2
+HUCA18384EMIS	Humulin M4  Cartridges (1.5 Ml)	1
+ISTA1519	Isosorbide Dinitrate  Tablets  10 mg	1
+J1212	Chronic duodenal ulcer with perforation	2
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	24
+LMRGPAP3	Unknown vendor specific drug	2
+LMRGPER1	Unknown vendor specific drug	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	2
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	21
+SCCA19035EMIS	Scott  Catheters  10 ch	4
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	17
+SLTA4320	Slow-Fe  Tablets  160 mg	22
+TOTA2876	Tolbutamide  Tablets  500 mg	1

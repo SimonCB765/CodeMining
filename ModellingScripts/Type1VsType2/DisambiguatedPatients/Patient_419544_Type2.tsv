@@ -1,0 +1,99 @@
+Code	Description	Count
+12C5	FH: Myocardial infarction	1
+136	Alcohol consumption	3
+137I	Passive smoker	1
+137K	Stopped smoking	1
+137S	Ex smoker	3
+1383	Enjoys light exercise	1
+13A3	Weight reducing diet	1
+229	O/E - height	8
+22A	O/E - weight	20
+22K	Body Mass Index	16
+2469	O/E - Systolic BP reading	16
+29B7	10g monofilament sensation present	3
+2BBF	Retinal abnormality - diabetes related	1
+2BBI	O/E - no retinopathy	2
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+31280	Fundoscopy normal	1
+31281	Fundoscopy abnormal	1
+32131	Exercise ECG abnormal	1
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	1
+42U4	Red blood cell folate	2
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	15
+44JF	Plasma creatinine level	2
+44M4	Serum albumin	2
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	4
+44P6	Serum LDL cholesterol level	3
+44Q	Serum triglycerides	4
+44h8	Plasma potassium level	1
+451E	GFR calculated abbreviated MDRD	5
+4618	Urine dipstick test	1
+46M7	Urine creatinine	4
+46N8	Urine microalbumin profile	2
+46TC	Urine albumin:creatinine ratio	6
+46TD	Urine microalbumin:creatinine ratio	1
+46W	Urine microalbumin	5
+66A4	Diabetic on oral treatment	3
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+68A8	Digital retinal screening	1
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	1
+8CAL	Smoking cessation advice	1
+8H	Referral for further care	2
+8H46	Neurological referral	1
+8H4F	Referral to diabetologist	1
+8H54	Orthopaedic referral	1
+8H68	Referral to haematologist	1
+8H76	Refer to dietician	1
+8H77	Refer to physiotherapist	1
+8H7R	Refer to chiropodist	1
+9N1v	Seen in diabetic eye clinic	1
+9N2U	Seen by optician	1
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	1
+9NC	Letter sent to outside agency	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	15
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	23
+C1001	Diab.mell.no comp. - adult	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	2
+D2y	Other specified anaemias	1
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	1
+EROR24307NEMIS	Ergocalciferol  Oral solution  3000 units/ml	12
+F152	Motor neurone disease	1
+F4250	Unspecified senile macular degeneration	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	1
+F5z	Ear and mastoid disease NOS	8
+G11z	Mitral valve disease NOS	1
+G84	Haemorrhoids	2
+GACA10300BRIDL	Galenamox  Capsules  250 mg	9
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	13
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	1
+L40	Major puerperal infection	5
+MACA8841BRIDL	Maxepa  Capsules  1 gram	22
+NIM/16460NEMIS	Niaspan  M/R tablets  750 mg	1
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	2
+PE06	Congenital nasal septum deviation	26
+PH5	Specified anomalies of nails	1
+PRTA2322	Prazosin Hydrochloride  Tablets  1 mg	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1
+Y2453	Unknown vendor specific drug	3

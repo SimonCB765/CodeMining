@@ -1,0 +1,128 @@
+Code	Description	Count
+1341	European origin	1
+135R	Religion not recorded	1
+136	Alcohol consumption	9
+1371	Never smoked tobacco	3
+137F	Ex-smoker - amount unknown	1
+137L	Current non-smoker	2
+137P	Cigarette smoker	1
+1382	Avoids even trivial exercise	1
+13l0	Main spoken language Arabic	1
+1465	H/O: depression	1
+1A	Genitourinary symptoms	1
+1B17	Depressed	1
+229	O/E - height	13
+22A	O/E - weight	15
+22K	Body Mass Index	13
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	25
+29B7	10g monofilament sensation present	1
+29BA	10g monofilament sensation L foot abnormal	1
+2BB1	O/E - retina normal	1
+2G5F	O/E - Right diabetic foot at moderate risk	1
+2G5J	O/E - Left diabetic foot at moderate risk	1
+311A	Monofilament foot sensation test	3
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	3
+42U5	Serum folate	3
+42W	Hb. A1C - diabetic control	7
+42W4	HbA1c level (DCCT aligned)	13
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	3
+44I9	Serum inorganic phosphate	3
+44J3	Serum creatinine	26
+44J9	Serum urea level	4
+44LA	Serum vitamin D	1
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	4
+44P6	Serum LDL cholesterol level	4
+44Q	Serum triglycerides	10
+44TJ	Blood glucose level	10
+44U	Blood glucose result	2
+451E	GFR calculated abbreviated MDRD	8
+4662	Urine glucose test negative	1
+4664	Urine glucose test = +	1
+4665	Urine glucose test = ++	1
+467	Urine protein test	1
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	2
+4675	Urine protein test = ++	1
+4676	Urine protein test = +++	2
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	4
+46TC	Urine albumin:creatinine ratio	9
+46W	Urine microalbumin	8
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	4
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+7B390	Transurethral prostatectomy	1
+8A17	Self monitoring of blood glucose	2
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	2
+8CAL	Smoking cessation advice	2
+8H48	Gastroenterological referral	1
+8H49	Psychiatric referral	1
+8H7n	Referral to retinal screener	1
+8H7r	Refer to diabetic foot screener	1
+8H7s	Referral to physical activity programme	1
+9N1v	Seen in diabetic eye clinic	1
+9N2e	Seen by ophthalmologist	1
+9N58	Emergency appointment	1
+9NNC	Under care of retinal screener	1
+9NU0	Interpreter needed	1
+9OI5	Hypertens.monitor 2nd letter	1
+9OI6	Hypertens.monitor 3rd letter	1
+9SA8	Other Asian (NMO)	1
+9T	Ethnicity and other related nationality data	1
+9iA	Other Asian background - ethnic category 2001 census	4
+AB031	Dermatophytosis of the perianal area	1
+AMCA135	Amoxycillin  Capsules  500 mg	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ASTA4609	Aspirin  Tablets  75 mg	11
+AZTA34169EMIS	Azithromycin  Tablets  500 mg	1
+C10	Diabetes mellitus	1
+DICA876	Diazepam  Capsules  2 mg	6
+DOTA9429BRIDL	Doralese  Tablets  20 mg	2
+E200z	Anxiety state NOS	2
+E250z	Nondependent alcohol abuse NOS	1
+E2741	Transient insomnia	2
+E3	Mental retardation	5
+F4K2z	Vitreous disorders NOS	1
+FUNDHME3	Unknown vendor specific drug	1
+Fyu51	[X]Other epilepsy	3
+G573z	Atrial fibrillation and flutter NOS	1
+G581	Left ventricular failure	2
+GASTOUN2	Unknown vendor specific drug	1
+H014	Acute rhinosinusitis	1
+H26	 organism unspecif."	1
+HEWITGB1	Unknown vendor specific drug	1
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	1
+LECA1645	Lentizol  Capsules  25 mg	2
+LETA32002EMIS	Lercanidipine Hydrochloride  Tablets  10 mg	1
+LEWINFU1	Unknown vendor specific drug	1
+LINDEBO1	Unknown vendor specific drug	1
+LITA30125EMIS	Lipitor  Tablets  20 mg	3
+MACA8841BRIDL	Maxepa  Capsules  1 gram	16
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	20
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	11
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	11
+SCCA19035EMIS	Scott  Catheters  10 ch	8
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	14
+Ua1Nz	Unknown vendor specific drug	5
+Y3221	Unknown vendor specific drug	1

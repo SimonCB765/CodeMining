@@ -1,0 +1,121 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+136	Alcohol consumption	5
+1361	Teetotaller	2
+137P	Cigarette smoker	3
+137R	Current smoker	3
+13l4	Main spoken language English	1
+1A1	Micturition frequency	2
+1A55	Dysuria	1
+1B17	Depressed	1
+229	O/E - height	2
+22A	O/E - weight	19
+22K	Body Mass Index	19
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	22
+29BB	10g monofilament sensation R foot normal	2
+2BB	O/E - retinal inspection	2
+311A	Monofilament foot sensation test	1
+3212	Standard ECG	1
+3213	Exercise ECG	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	2
+42QE	International normalised ratio	1
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	2
+42U5	Serum folate	1
+44F	Serum alkaline phosphatase	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	24
+44J7	Albumin / creatinine ratio	3
+44J9	Serum urea level	2
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	1
+44P6	Serum LDL cholesterol level	1
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	18
+44U	Blood glucose result	1
+44g	Plasma glucose level	12
+451E	GFR calculated abbreviated MDRD	13
+4618	Urine dipstick test	1
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	3
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	2
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	6
+46X1	Urine nitrite negative	1
+5853	U-S heart scan	1
+66A4	Diabetic on oral treatment	4
+66AD	Fundoscopy - diabetic check	1
+6791	Health ed. - smoking	5
+6896	Depression screening using questions	2
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	4
+8CAL	Smoking cessation advice	2
+8H41	General medical referral	2
+8H49	Psychiatric referral	1
+8H4E	Referral to oncologist	2
+8H54	Orthopaedic referral	1
+8H77	Refer to physiotherapist	1
+8Hl2	Referral to orthopaedic physiotherapist practitioner	1
+9N4C	Failed encounter - no answer when rang back	1
+9N4F	Failed encounter - message left on answer machine	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AB211	Candidiasis of vagina	1
+AD30	Scabies	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	11
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	4
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	3
+ATTA230	Atenolol  Tablets  100 mg	15
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	4
+C10	Diabetes mellitus	4
+CACH30077EMIS	Calceos  Chewable tablets  Sugar Free	1
+DATO10836BRIDL	Dalacin T  Topical solution  1 %	1
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	2
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	1
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	1
+E117	Unspecified bipolar affective disorder	1
+E251	Tobacco dependence	1
+E271	Anorexia nervosa	2
+E3	Mental retardation	2
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F4560	Glaucoma due to unspecified ocular disorder	1
+FyuF4	[X]Other retinal detachments	1
+FyuU1	[X]Other specified hearing loss	1
+G84	Haemorrhoids	1
+GACA10300BRIDL	Galenamox  Capsules  250 mg	3
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	3
+GLTA1304	Glibenese  Tablets  5 mg	2
+HUIN3719	Humulin M1  Injection	3
+HYST8709EGTON	Hytrin  Starter pack  7 x 1 mg, 21 x 2 mg	1
+J1212	Chronic duodenal ulcer with perforation	1
+K19C	Other obstructive and reflux uropathy	1
+LAIN13572NEMIS	Lantus  Injection  100 units/ml, 3 ml cartridge	1
+LEIGHTH12	Unknown vendor specific drug	5
+LEIGHUS10	Unknown vendor specific drug	2
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	13
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	1
+M21yC	Insulin lipohypertrophy	16
+MACA8841BRIDL	Maxepa  Capsules  1 gram	4
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	1
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	2
+PH00	Congenital lymphoedema	3
+PH5	Specified anomalies of nails	1
+PH54	Congenital onychauxis	1
+PK61	Sturge-Weber syndrome	1
+S3xz	Other/mult.#lower limb NOS	3
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	18
+SISH2295NEMIS	Coloplast Tri-Form  Short tube leg bags  500ml, 5500	3
+SITA10078BRIDL	Simvastatin  Tablets  20 mg	1
+SPTA2667	Spironolactone  Tablets  25 mg	1
+TETA23675EMIS	Terazosin Hydrochloride  Tablets  2 mg	1
+TETA3341NEMIS	Teveten  Tablets  600 mg	1

@@ -1,0 +1,133 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+136	Alcohol consumption	10
+1371	Never smoked tobacco	6
+13A3	Weight reducing diet	1
+1B1L	Stress related problem	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	13
+22A	O/E - weight	18
+22K	Body Mass Index	17
+22K5	Body mass index 30+ - obesity	1
+2469	O/E - Systolic BP reading	26
+29B7	10g monofilament sensation present	3
+2BBA	Examination of retina	2
+2BBL	O/E - diabetic maculopathy present both eyes	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+32	Electrocardiography	1
+32130	Exercise ECG normal	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	16
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44J3	Serum creatinine	22
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	10
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	12
+44g	Plasma glucose level	3
+451E	GFR calculated abbreviated MDRD	8
+451F	Glomerular filtration rate	2
+4667	Urine glucose test = ++++	1
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+4678	Proteinuria	2
+467A	24 hour urine protein output	2
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46I	24 hour urine volume	1
+46M7	Urine creatinine	3
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	8
+46W2	Microalbumin excretion rate	4
+46X1	Urine nitrite negative	1
+46f1	Urine leucocyte test = negative	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+677B	Advice about treatment given	1
+6791	Health ed. - smoking	1
+6798	Health ed. - exercise	1
+67E	Foreign travel advice	1
+6896	Depression screening using questions	3
+8A17	Self monitoring of blood glucose	3
+8B63	Salicylate prophylaxis	2
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA4	Patient advised re diet	8
+8CA5	Patient advised re exercise	8
+8CAM	Patient advised about alcohol	5
+8H	Referral for further care	1
+8H44	Cardiological referral	1
+8H4a	Referral to renal physician	1
+8H51	General surgical referral	1
+8H5B	Referred to urologist	1
+8H7H	Refer to optician	1
+8H7R	Refer to chiropodist	3
+8I36	Beta blocker therapy refused	2
+8I62	Beta blocker not indicated	1
+9N1v	Seen in diabetic eye clinic	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	4
+9N42	Did not attend - no reason	2
+9S41	Black British	1
+9i3	White and Black Caribbean - ethnic category 2001 census	1
+AB04	Dermatophytosis of foot	2
+AMMI117	Amitriptyline Hydrochloride  Mixture  Sugar Free 10 mg/5 ml	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	21
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+AMTA9080EMIS	Amlodipine Besilate  Tablets  10 mg	3
+APTA10808NEMIS	Apomorphine Hydrochloride  Sublingual tablets  2 mg	1
+ASTA4609	Aspirin  Tablets  75 mg	18
+CITA22180EMIS	Ciproxin  Tablets  500 mg	1
+DITA856	Diabinese  Tablets  100 mg	15
+E2005	Recurrent anxiety	2
+E3	Mental retardation	2
+F4274	Other vitreoretinal dystrophy	1
+Fyu51	[X]Other epilepsy	2
+G12	Rheumatic aortic valve disease	1
+G240	Secondary malignant hypertension	1
+G86	Noninfective lymphatic disorders	2
+GASTOSE4	Unknown vendor specific drug	3
+GASTOUR2	Unknown vendor specific drug	1
+H037	Recurrent acute tonsillitis	1
+H0402	Acute catarrhal laryngitis	1
+HACA1337	Half Inderal La  M/R capsules  80 mg	1
+HEWITAS13	Unknown vendor specific drug	2
+IBFC10455BRIDL	Ibuprofen  Fc tablets  800 mg	8
+INCA17688NEMIS	Indometacin  Capsules  25 mg	13
+INTA20286NEMIS	Inegy  Tablets  10 mg/80 mg	9
+J1212	Chronic duodenal ulcer with perforation	2
+L40	Major puerperal infection	5
+MACA8841BRIDL	Maxepa  Capsules  1 gram	4
+N071	Lateral meniscus derangement	1
+N074	Chondromalacia patellae	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	3
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	1
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	1
+PH54	Congenital onychauxis	3
+Pyu70	[X]Other cystic kidney diseases	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	32
+R081	[D]Dysuria	1
+RATA16401NEMIS	Ramipril  Tablets  5 mg	1
+S130	Closed fracture acetabulum	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	19
+SETA2517	Securon Sr  Tablets  240 mg	1
+SETA4308	Semi-Daonil  Tablets  2.5 mg	1
+VIM/31934EMIS	Viazem Xl  M/R capsules  240 mg	1
+VITA475NEMIS	Vioxx  Tablets  25 mg	1

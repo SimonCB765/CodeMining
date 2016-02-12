@@ -1,0 +1,102 @@
+Code	Description	Count
+03K9	Pharmacy technician	1
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	1
+137P	Cigarette smoker	1
+137S	Ex smoker	3
+137T	Date ceased smoking	1
+138I	FITT activity level 0; no mod/vig activity of 20 mins duratn	1
+229	O/E - height	4
+22A	O/E - weight	8
+22K	Body Mass Index	7
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	2
+29BA	10g monofilament sensation L foot abnormal	1
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	10
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44AP	Serum pro-brain natriuretic peptide level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44F3	Total alkaline phosphatase	1
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44J3	Serum creatinine	14
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	6
+44Q	Serum triglycerides	6
+44TJ	Blood glucose level	2
+44U	Blood glucose result	2
+44g	Plasma glucose level	1
+451E	GFR calculated abbreviated MDRD	4
+4667	Urine glucose test = ++++	1
+4672	Urine protein test negative	1
+4678	Proteinuria	1
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	3
+46TC	Urine albumin:creatinine ratio	6
+46W	Urine microalbumin	5
+5542	Coronary arteriography normal	1
+58531	Echocardiogram abnormal	2
+6896	Depression screening using questions	3
+68NE	No consent - influenza imm.	2
+7B36z	Open excision of prostate NOS	1
+8H	Referral for further care	1
+8H21	Admit medical emergency unsp.	1
+8H5D	Referred to vascular surgeon	1
+8H72	Refer to district nurse	1
+8H7n	Referral to retinal screener	2
+8I24	Aspirin prophylaxis contra-indicated	1
+8I26	Beta blocker contraindicated	2
+8I65	Warfarin not indicated	1
+8I66	Aspirin not indicated	1
+8I6B	Clopidogrel not indicated	1
+8I6F	Diabetic retinopathy screening not indicated	1
+8I6a	Dipyridamole not indicated	1
+9180	Carer's details	1
+9N19	Seen in hospital casualty	2
+9N1A	Seen in hospital out-pat.	1
+9N1B	Seen in hospital ward	2
+9h31	Excepted from hypertension qual indicators: Patient unsuit	1
+ADM/19822EMIS	Adalat La  M/R tablets  30 mg	7
+ADM/19823EMIS	Adalat La  M/R tablets  60 mg	3
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	6
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	8
+ASDI224	Aspirin  Dispersible tablets  75 mg	18
+BITA1018NEMIS	Bicalutamide  Tablets  150 mg	1
+BUTA434	Bumetanide  Tablets  1 mg	26
+C10	Diabetes mellitus	2
+DITA856	Diabinese  Tablets  100 mg	3
+E3	Mental retardation	1
+EMISSPR1	Unknown vendor specific drug	14
+F372	Polyneuropathy in diabetes	1
+F462	Traumatic cataract	1
+FECA1203NEMIS	Fenofibrate  Capsules  (Micronised) 267 mg	3
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	6
+Fyu51	[X]Other epilepsy	3
+G12	Rheumatic aortic valve disease	1
+G5700	Paroxysmal atrial tachycardia	2
+G5733	Non-rheumatic atrial fibrillation	1
+G5752	Electromechanical dissociation with successful resuscitation	1
+G60	Subarachnoid haemorrhage	1
+G84	Haemorrhoids	2
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H22	Other bacterial pneumonia	1
+HUCA18372EMIS	Humulin I  Cartridges (1.5 Ml)  100 units/ml	1
+HYST8709EGTON	Hytrin  Starter pack  7 x 1 mg, 21 x 2 mg	3
+LMRGPAP3	Unknown vendor specific drug	25
+LMRGPGP2	Unknown vendor specific drug	4
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	1
+META1753	Mefenamic Acid  Tablets  500 mg	20
+NETA34105EMIS	Neomycin Sulphate  Tablets  500 mg	1
+PE00	Asymmetry of face	1
+PRFO5322	Prednisolone  Foam  20 mg/application	11
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	13

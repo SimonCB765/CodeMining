@@ -1,0 +1,106 @@
+Code	Description	Count
+136	Alcohol consumption	11
+1371	Never smoked tobacco	4
+1B1L	Stress related problem	1
+229	O/E - height	9
+22A	O/E - weight	17
+22K	Body Mass Index	17
+2469	O/E - Systolic BP reading	21
+29B9	10g monofilament sensation R foot abnormal	2
+29BB	10g monofilament sensation R foot normal	1
+2BBI	O/E - no retinopathy	2
+2BBM	O/E - diabetic maculopathy absent both eyes	1
+31283	Camera fundoscopy	2
+423	Haemoglobin estimation	13
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42C	RBC - red blood cell size	3
+42R4	Serum ferritin	2
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44CC	Plasma C reactive protein	2
+44CS	Serum C reactive protein level	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	19
+44M4	Serum albumin	2
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	10
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	18
+44U	Blood glucose result	2
+44g	Plasma glucose level	1
+451E	GFR calculated abbreviated MDRD	1
+4661	Urine glucose test not done	1
+4662	Urine glucose test negative	1
+4663	Urine glucose test = trace	1
+467	Urine protein test	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	2
+4674	Urine protein test = +	1
+4694	Urine: trace haemolysed blood	1
+46G4	Urine micr.:leucocytes present	1
+46TC	Urine albumin:creatinine ratio	6
+46W0	Urine microalbumin positive	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	4
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+68A8	Digital retinal screening	1
+8B28	Lipid lowering therapy	7
+8H48	Gastroenterological referral	1
+8H4C	Referred to chest physician	2
+8H52	Ophthalmological referral	1
+8H76	Refer to dietician	1
+8H77	Refer to physiotherapist	1
+8H7O	Refer to Radiology department	3
+8H7X	Refer to podiatry	1
+8H7f	Referral to diabetes nurse	1
+8I24	Aspirin prophylaxis contra-indicated	5
+9N2U	Seen by optician	2
+9N42	Did not attend - no reason	4
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	3
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	4
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	4
+BRTA427	Brufen  Tablets  200 mg	2
+C10	Diabetes mellitus	6
+C109	Non-insulin dependent diabetes mellitus	1
+CAEF1326NEMIS	Calcium Carbonate  Effervescent tablets  1.25 grams	4
+CITA13088NEMIS	Cipralex  Tablets  10 mg	1
+DITA896	Diflunisal  Tablets  250 mg	1
+E117	Unspecified bipolar affective disorder	1
+F36z	Hereditary or idiopathic peripheral neuropathy NOS	1
+F4430	Anterior uveitis	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	1
+GASTOUR2	Unknown vendor specific drug	1
+H1y40	Polyp of vocal cord	1
+H22	Other bacterial pneumonia	1
+HEWITLE2	Unknown vendor specific drug	6
+HYIN5000	Hydrocortisone  Injection  100 mg/vial	1
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	3
+K0D	End-stage renal disease	1
+L2442	Other uterine/pelvic floor abn - delivered+postpartum compl	7
+L264z	Intrauterine death NOS	8
+MACA8841BRIDL	Maxepa  Capsules  1 gram	3
+META10489BRIDL	Mepacrine Hydrochloride  Tablets  100 mg	1
+N083q	Recurrent subluxation of the patella	1
+N0951	Stiff joint NEC-shoulder	1
+PE06	Congenital nasal septum deviation	8
+PK61	Sturge-Weber syndrome	1
+POFO4257NEMIS	Coloplast Folysil All Silicone  Foley catheter (male)  14ch, AA71	1
+POSH2300	Polytar  Shampoo	5
+PUJINST3	Unknown vendor specific drug	2
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	7
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	19
+TETA30443NEMIS	Telmisartan And Hydrochlorothiazide  Tablets  80 mg + 25 mg	1
+TOTA2876	Tolbutamide  Tablets  500 mg	1

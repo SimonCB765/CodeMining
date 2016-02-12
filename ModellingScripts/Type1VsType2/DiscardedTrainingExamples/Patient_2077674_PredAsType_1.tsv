@@ -1,0 +1,126 @@
+Code	Description	Count
+1361	Teetotaller	1
+1371	Never smoked tobacco	4
+138	Exercise grading	1
+13HT1	Stress at home	2
+1A1	Micturition frequency	1
+1A23	Incontinence of urine	1
+1A24	Stress incontinence	1
+1A55	Dysuria	1
+1A7	Vaginal discharge symptom	4
+1B17	Depressed	1
+1FA	Diet good	2
+229	O/E - height	4
+22A	O/E - weight	23
+22K	Body Mass Index	21
+246	O/E - blood pressure reading	18
+2464	O/E - BP reading normal	1
+29B2	O/E - anaesthesia present	1
+29B7	10g monofilament sensation present	2
+29H1	O/E - vibration sense normal	1
+2G5	O/E - foot	2
+3128	Fundoscopy	4
+3212	Standard ECG	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CS	Serum C reactive protein level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44J3	Serum creatinine	16
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P3	Serum cholesterol raised	1
+44P5	Serum HDL cholesterol level	2
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	14
+44TB	Haemoglobin A1c level	1
+44U	Blood glucose result	3
+44g0	Plasma random glucose level	6
+451E	GFR calculated abbreviated MDRD	12
+4613	Urinalysis = no abnormality	1
+4618	Urine dipstick test	1
+467	Urine protein test	4
+46G4	Urine micr.:leucocytes present	1
+46M7	Urine creatinine	3
+46N	Urine protein	2
+46TC	Urine albumin:creatinine ratio	6
+46W	Urine microalbumin	5
+46X	Urine nitrite	1
+46Z1	Urine microscopy	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66UB	HRT: unopposed oestrogen	1
+677B	Advice about treatment given	1
+679	Health education - subject	3
+6799	Health ed. - diet	1
+6896	Depression screening using questions	3
+68A8	Digital retinal screening	1
+8A17	Self monitoring of blood glucose	2
+8BAH	Exercise on prescription	1
+8H21	Admit medical emergency unsp.	1
+8H41	General medical referral	1
+8H7H	Refer to optician	1
+8H8D	Follow up (wait and see)	2
+8HA	No follow-up arranged	2
+8HZ0	Referral needed	1
+8I26	Beta blocker contraindicated	2
+8I3X	Diabetic retinopathy screening refused	1
+8I62	Beta blocker not indicated	2
+9N1p	Seen in orthopaedic clinic	1
+9N2U	Seen by optician	1
+9N36	Letter from specialist	1
+9N3A	Telephone triage encounter	2
+9N4	Failed encounter	1
+9N7	Provider initiated encounter	1
+AB21	Candidal vulvovaginitis	2
+C106	Diabetes mellitus with neurological manifestation	1
+E251	Tobacco dependence	1
+Eu01	[X]Vascular dementia	1
+F4A	Keratitis	1
+F4J51	Partial oculomotor nerve palsy	1
+GLTA1303	Glibenclamide  Tablets  5 mg	1
+H0616	Acute bronchiolitis due to other specified organisms	1
+J10y6	Unknown vendor specific drug	1
+K0D	End-stage renal disease	2
+K423	Abscess of Bartholin's gland	1
+M07z1	Infection toe	2
+N0516	Local.primary OA-lower leg	1
+N070B	Old tear of posterior horn of medial meniscus	1
+PETA2207	Persantin  Tablets  25 mg	1
+S33x0	Closed #tibia-unspecified NOS	1
+ZETA9096EMIS	Zestoretic 20  Tablets	3
+ZV14D	[V]PH angiotensin-converting-enzyme inhibitor allergy	31
+bl8K	TENSIPINE MR 20 m/r tablets	2
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	4
+bx13	BEZAFIBRATE 200mg tablets	24
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	4
+bxdx	SIMVASTATIN 40mg/EZETIMIBE 10mg tablets	1
+bxh1	ISPAGHULA HUSK 3.5g orange sugar free granules	1
+d7c8	NORTRIPTYLINE 25mg tablets	6
+da7I	VENLAFAXINE 75mg m/r tablets	2
+du3g	NICORETTE 10mg inhalator starter pack	1
+e77y	MINOCYCLINE 50mg tablets	1
+eb3z	COLISTIMETHATE SODIUM 1million units injection	1
+ei1o	ACICLOVIR 800mg tablets	11
+f25f	*HUMULIN M2 injection 10mL	11
+f25m	HUMAN INSULATARD 100iu/mL preloaded injection pen 3mL	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	4
+f3A7	AMARYL 3mg tablets	2
+f417	GLUCOPHAGE SR 500mg m/r tablets	5
+ft81	JANUVIA 100mg tablets	1
+j22R	DICLOFENAC 75mg e/c+m/r capsules	6
+j22g	*VOLRAMAN 50mg tablets	4
+j282	IBUPROFEN 400mg tablets	1
+j2k2	NABUMETONE 500mg tablets	1

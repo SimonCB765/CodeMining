@@ -1,0 +1,120 @@
+Code	Description	Count
+136	Alcohol consumption	7
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	1
+137L	Current non-smoker	2
+137P	Cigarette smoker	1
+137S	Ex smoker	1
+13l4	Main spoken language English	2
+1A53	Lumbar ache - renal	1
+1B17	Depressed	2
+229	O/E - height	5
+22A	O/E - weight	13
+22K	Body Mass Index	12
+22K2	Body Mass Index high K/M2	1
+246	O/E - blood pressure reading	18
+29B7	10g monofilament sensation present	2
+29H1	O/E - vibration sense normal	1
+3128	Fundoscopy	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	5
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	5
+42T	Serum vitamin B12	5
+42U5	Serum folate	4
+42W	Hb. A1C - diabetic control	5
+42W4	HbA1c level (DCCT aligned)	2
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44CC	Plasma C reactive protein	7
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	20
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	10
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	9
+44g	Plasma glucose level	2
+44g1	Plasma fasting glucose level	4
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	8
+4613	Urinalysis = no abnormality	1
+4672	Urine protein test negative	4
+4674	Urine protein test = +	1
+46M7	Urine creatinine	3
+46N	Urine protein	2
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	5
+4JJ	Urine sample for organism	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	2
+66A5	Diabetic on insulin	1
+6791	Health ed. - smoking	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+68A8	Digital retinal screening	1
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	3
+8H	Referral for further care	1
+8H54	Orthopaedic referral	1
+8H58	Gynaecological referral	2
+8H76	Refer to dietician	1
+8H7C	 diabetic liaison nurse"	1
+8I24	Aspirin prophylaxis contra-indicated	1
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	1
+9Na1	Consultation for minor injury	1
+9OX5	Influenza vaccination declined	1
+9S1	White	1
+9i0	British or mixed British - ethnic category 2001 census	1
+A7811	Verruca plantaris	1
+AB21	Candidal vulvovaginitis	1
+C10	Diabetes mellitus	2
+E271	Anorexia nervosa	1
+E2B	Depressive disorder NEC	1
+EGTON460	Unknown vendor specific drug	1
+F52	Suppurative and unspecified otitis media	1
+FLTA1217	Flurbiprofen  Tablets  50 mg	1
+Fyu51	[X]Other epilepsy	2
+GLTA1304	Glibenese  Tablets  5 mg	1
+GLTA1305	Glipizide  Tablets  5 mg	1
+L1805	"Pre-existing diabetes mellitus	1
+TRTA2939	Trimethoprim  Tablets  200 mg	1
+bi2z	ENALAPRIL MALEATE 20mg tablets x28	8
+bi33	LISINOPRIL 10mg tablets	13
+bi34	LISINOPRIL 20mg tablets	1
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	7
+bx13	BEZAFIBRATE 200mg tablets	1
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	4
+bxa7	OMACOR 1g capsules	8
+d71v	AMITRIPTYLINE 50mg m/r capsules	1
+du3g	NICORETTE 10mg inhalator starter pack	1
+e772	*MINOCIN 100mg tablets	1
+f12C	HUMAJECT S 100iu/mL prefilled pen	1
+f25q	HUMAN INSULATARD PENFILL cartridges 1.5mL	11
+f25w	HYPURIN PORCINE ISOPHANE 100iu/mL injection 10mL	4
+f27g	HUMULIN M4 40/60 cartridges 1.5mL	1
+f2Ay	INSULIN DETEMIR 100iu/mL prefilled pen	5
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	1
+f321	CHLORPROPAMIDE 100mg tablets	7
+fe5y	METHYLPREDNISOLONE 80mg/2mL injection	1
+fi71	DUTASTERIDE 500micrograms capsules	1
+ft38	PRANDIN 1mg tablets	3
+j22P	VOLSAID RETARD 75mg m/r tablets	1
+j282	IBUPROFEN 400mg tablets	1
+j28B	IBUPROFEN 800mg m/r tablets	1
+j28y	IBUPROFEN 300mg m/r capsules	1

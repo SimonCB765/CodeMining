@@ -1,0 +1,132 @@
+Code	Description	Count
+12C5	FH: Myocardial infarction	1
+1362	Trivial drinker - <1u/day	1
+1366	Very heavy drinker - >9u/day	1
+136M	Current non drinker	2
+1371	Never smoked tobacco	4
+1374	Moderate smoker - 10-19 cigs/d	1
+137P	Cigarette smoker	1
+137S	Ex smoker	1
+138I	FITT activity level 0; no mod/vig activity of 20 mins duratn	1
+13l	Main spoken language	1
+1Z12	Chronic kidney disease stage 3	1
+1Z13	Chronic kidney disease stage 4	1
+229	O/E - height	3
+22A	O/E - weight	15
+22K	Body Mass Index	16
+22N0	Waist circumference	1
+246	O/E - blood pressure reading	25
+29BA	10g monofilament sensation L foot abnormal	1
+29BB	10g monofilament sensation R foot normal	1
+29H1	O/E - vibration sense normal	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+311A	Monofilament foot sensation test	2
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	9
+42W5	Haemoglobin A1c level - IFCC standardised	1
+42c	HbA1 - diabetic control	7
+43Z2	Prostate specific antigen	2
+44A1	Serum parathyroid hormone	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	21
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	4
+44P6	Serum LDL cholesterol level	4
+44Q	Serum triglycerides	10
+44TL	Total glycosylated haemoglobin level	2
+44g	Plasma glucose level	1
+44g1	Plasma fasting glucose level	6
+451E	GFR calculated abbreviated MDRD	6
+451F	Glomerular filtration rate	2
+467	Urine protein test	1
+4675	Urine protein test = ++	3
+46M5	Urine urate	1
+46M7	Urine creatinine	2
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	8
+46W0	Urine microalbumin positive	1
+5858	Doppler studies	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	1
+6791	Health ed. - smoking	2
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+7L08	Amputation of toe	1
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	1
+8H22	Admit surgical emergency unsp.	1
+8H52	Ophthalmological referral	2
+8H76	Refer to dietician	2
+8I3Q	Pneumococcal vaccination declined	1
+9N1m	Seen in nephrology clinic	1
+9N1v	Seen in diabetic eye clinic	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	1
+9N31	Telephone encounter	1
+9N36	Letter from specialist	1
+9N7	Provider initiated encounter	1
+9NE8	Fax sent to:	1
+9NND	Under care of diabetic foot screener	1
+9SH	Other Asian ethnic group	1
+9iA	Other Asian background - ethnic category 2001 census	1
+A75	Infectious mononucleosis	1
+C10	Diabetes mellitus	2
+C104	Diabetes mellitus with renal manifestation	1
+C106	Diabetes mellitus with neurological manifestation	1
+D0130	Combined B12 and folate deficiency anaemia	1
+F3610	Charcot-Marie-Tooth disease	1
+F443	Iridocyclitis unspecified	1
+Fyu51	[X]Other epilepsy	1
+G65z	Transient cerebral ischaemia NOS	2
+G65zz	Transient cerebral ischaemia NOS	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H014	Acute rhinosinusitis	1
+J10y5	Laryngopharyngeal reflux	1
+J1212	Chronic duodenal ulcer with perforation	2
+OPCA5595NEMIS	Optiflo R  Catheter Solution Citric Acid (Solution R)  6.0%, 50ml	1
+Y3545	Unknown vendor specific drug	1
+ZV579	[V]Cardiac rehabilitation	3
+bd6x	METOPROLOL 50mg tablets	15
+bh61	DOXAZOSIN 1mg tablets	2
+bi2z	ENALAPRIL MALEATE 20mg tablets x28	6
+bi33	LISINOPRIL 10mg tablets	10
+biC8	PERINDOPRIL ARGININE+INDAPAMIDE 5mg/1.25mg tablets	1
+bk32	LOSARTAN POTASSIUM 50mg tablets	5
+bl3j	ISOSORBIDE MONONITRATE 40mg m/r tablets	3
+bl5y	ANGITIL XL 300 m/r capsules	5
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	8
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	13
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	22
+du3g	NICORETTE 10mg inhalator starter pack	2
+eh77	000u/mL s/f susp"	3
+ei1o	ACICLOVIR 800mg tablets	8
+f133	INSULIN LISPRO 100iu/mL cartridges	2
+f25Y	HUMAN ISOPHANE INSULIN 100units/mL injection vials	3
+f25x	INSULATARD (HUMAN) PENFILL cartridges 3mL	5
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	1
+f321	CHLORPROPAMIDE 100mg tablets	9
+fe5y	METHYLPREDNISOLONE 80mg/2mL injection	1
+h82C	NEORAL 100mg capsules	1
+he51	*ZOLADEX 3.6mg implant	1
+j22P	VOLSAID RETARD 75mg m/r tablets	1
+j22R	DICLOFENAC 75mg e/c+m/r capsules	1
+j2b2	PONSTAN 250mg capsules	2

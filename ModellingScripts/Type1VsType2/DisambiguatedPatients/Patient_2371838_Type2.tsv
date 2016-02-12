@@ -1,0 +1,105 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+136	Alcohol consumption	6
+136V	Alcohol units per week	2
+1371	Never smoked tobacco	4
+1383	Enjoys light exercise	1
+1389	Aerobic exercise 1 time/week	1
+229	O/E - height	11
+22A	O/E - weight	14
+22K	Body Mass Index	13
+22N0	Waist circumference	5
+2469	O/E - Systolic BP reading	20
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	1
+2BB1	O/E - retina normal	1
+2BBQ	O/E - left eye background diabetic retinopathy	2
+2G5E	O/E - Right diabetic foot at low risk	2
+315B	Ambulatory blood pressure recording	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42QE	International normalised ratio	8
+42R4	Serum ferritin	2
+42R7	Serum iron level	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	5
+42W4	HbA1c level (DCCT aligned)	10
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	13
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	6
+44PF	Total cholesterol:HDL ratio	4
+44Q	Serum triglycerides	12
+44TJ	Blood glucose level	2
+44U	Blood glucose result	3
+451E	GFR calculated abbreviated MDRD	5
+467	Urine protein test	1
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	2
+4676	Urine protein test = +++	1
+46M7	Urine creatinine	4
+46TC	Urine albumin:creatinine ratio	5
+46W	Urine microalbumin	6
+58C1	Retinal photography	2
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	3
+66AD	Fundoscopy - diabetic check	1
+66C9	Target weight discussed	2
+6791	Health ed. - smoking	1
+6798	Health ed. - exercise	3
+6799	Health ed. - diet	4
+6896	Depression screening using questions	2
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	2
+8H51	General surgical referral	1
+8H7R	Refer to chiropodist	1
+8I3W	Diabetic foot examination declined	1
+8I76	Statin not tolerated	1
+9N1v	Seen in diabetic eye clinic	1
+9NNC	Under care of retinal screener	1
+9S6	Indian	2
+9i7	Indian or British Indian - ethnic category 2001 census	1
+9iA	Other Asian background - ethnic category 2001 census	2
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	22
+BETA302	Bendrofluazide  Tablets  2.5 mg	3
+E200z	Anxiety state NOS	1
+E2C01	Anger reaction	1
+E3	Mental retardation	4
+Eu531	[X]Severe mental and behav disorder assoc wth puerperium NEC	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+Fyu51	[X]Other epilepsy	1
+HEWITCA1	Unknown vendor specific drug	12
+HONE13988NEMIS	Hollister Advance  Nelaton catheter (female)  14 ch, 92142	1
+HYLO5009	Hydrocortisone(As Sodium Succinate)  Lozenges  Sugar Free 2.5 mg	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	1
+L245	Cervical incompetence	5
+MACA8841BRIDL	Maxepa  Capsules  1 gram	22
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	2
+NIM/21927EMIS	Nicardipine Hydrochloride  M/R capsules  45 mg	1
+PRTA2324	Prazosin Hydrochloride  Tablets  5 mg	1
+Pyu70	[X]Other cystic kidney diseases	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	19
+QUTA10127BRIDL	Quinapril  Tablets  10 mg	5
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	2
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	20
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	1
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	2
+VETA6809	Verapamil Hydrochloride  Tablets  80 mg	10
+VICA4504	Vibramycin  Capsules  50 mg	3

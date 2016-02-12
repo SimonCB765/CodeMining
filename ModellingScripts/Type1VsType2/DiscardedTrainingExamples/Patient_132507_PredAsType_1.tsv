@@ -1,0 +1,108 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1371	Never smoked tobacco	2
+13l6	Main spoken language Gujerati	1
+1Z12	Chronic kidney disease stage 3	3
+229	O/E - height	8
+22A	O/E - weight	12
+22K	Body Mass Index	12
+2469	O/E - Systolic BP reading	26
+29B7	10g monofilament sensation present	2
+29B9	10g monofilament sensation R foot abnormal	1
+2BBI	O/E - no retinopathy	1
+2BBJ	O/E - no right diabetic retinopathy	1
+2BBK	O/E - no left diabetic retinopathy	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+311A	Monofilament foot sensation test	1
+31280	Fundoscopy normal	1
+3211	ECG requested	1
+3216	ECG normal	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	1
+42T	Serum vitamin B12	2
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	9
+42W5	Haemoglobin A1c level - IFCC standardised	1
+43Z2	Prostate specific antigen	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	16
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	11
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	10
+44g	Plasma glucose level	2
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	9
+451F	Glomerular filtration rate	1
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	3
+46M7	Urine creatinine	5
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	7
+46W	Urine microalbumin	2
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A4	Diabetic on oral treatment	1
+67I8	Advice about taking aspirin	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+68A8	Digital retinal screening	1
+68NE	No consent - influenza imm.	1
+8A18	Self monitoring of urine glucose	1
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	3
+8H44	Cardiological referral	1
+8H4L	Referred to nephrologist	1
+8H7V	Refer to audiologist	1
+8H7r	Refer to diabetic foot screener	1
+8HBD	Retinopathy follow up	3
+9N2U	Seen by optician	1
+9N2f	Seen by retinal screener	1
+9NF4	Visit out of hours	1
+9S6	Indian	1
+9i7	Indian or British Indian - ethnic category 2001 census	2
+AB0	Dermatophytosis including tinea or ringworm	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	4
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	17
+BITA26636EMIS	Bicalutamide  Tablets  50 mg	1
+CAIN4919NEMIS	Caverject Dual Chamber  Injection  20 micrograms/dose	18
+CHTA576	Chloroquine Phosphate  Tablets  250 mg (equivalent to 155 mg chloroquine base)	2
+CITA15860NEMIS	Cipralex  Tablets  20 mg	2
+CONE12324NEMIS	Coloplast Aquacath  Nelaton catheter (male)  14ch, G1014	21
+COSH12399NEMIS	Coloplast Simpla Trident T2  Short tube leg bags  500ml, 376138	2
+EPTA3295NEMIS	Eprosartan  Tablets  400 mg	3
+F5603	Active vestibular Meniere's disease	1
+F563z	Labyrinthitis NOS	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	4
+F5921	"Mix cond/sensin hear loss	2
+FLCA1195	Flucloxacillin  Capsules  250 mg	3
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	2
+G240	Secondary malignant hypertension	1
+G57y9	Supraventricular tachycardia NOS	1
+G60	Subarachnoid haemorrhage	2
+ININ32907EMIS	Invicorp 2  Injection	9
+ISIN33727EMIS	Isophane Insulin (Human Pyr)  Injection  100 units/ml, 10 ml vial	4
+J1y	"Other specified disorders of oesophagus	1
+LEIGHTH12	Unknown vendor specific drug	11
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	7
+M21A	Acquired xeroderma	1
+N051z	Localised primary OA NOS	2
+PRTA4205	Pregaday  Tablets	2
+Pyu70	[X]Other cystic kidney diseases	1
+TETA3341NEMIS	Teveten  Tablets  600 mg	3

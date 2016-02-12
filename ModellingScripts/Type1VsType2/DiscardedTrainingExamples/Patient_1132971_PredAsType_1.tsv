@@ -1,0 +1,122 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1371	Never smoked tobacco	1
+137R	Current smoker	1
+137S	Ex smoker	6
+1381	Exercise physically impossible	3
+1AE	Vaginal discomfort	2
+229	O/E - height	1
+22A	O/E - weight	7
+22K	Body Mass Index	7
+2469	O/E - Systolic BP reading	19
+29B9	10g monofilament sensation R foot abnormal	4
+311A	Monofilament foot sensation test	1
+3148	Sleep studies	1
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42W4	HbA1c level (DCCT aligned)	11
+42W5	Haemoglobin A1c level - IFCC standardised	3
+42c	HbA1 - diabetic control	1
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44J3	Serum creatinine	16
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P3	Serum cholesterol raised	2
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	7
+44lD	Urine protein/creatinine ratio	3
+451E	GFR calculated abbreviated MDRD	11
+451F	Glomerular filtration rate	2
+461	Urine exam. - general	4
+4614	Urinalysis = abnormal	1
+4662	Urine glucose test negative	1
+4666	Urine glucose test = +++	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	3
+4676	Urine protein test = +++	1
+4682	Urine ketone test negative	2
+4697	Urine blood test = +++	2
+46G4	Urine micr.:leucocytes present	2
+46M7	Urine creatinine	1
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	6
+46W	Urine microalbumin	1
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+67I	Advice	1
+6896	Depression screening using questions	3
+8A17	Self monitoring of blood glucose	3
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	3
+8H43	Dermatological referral	1
+8H5	Referral to surgeon	1
+8H51	General surgical referral	1
+8H59	Referred to plastic surgeon	1
+8H5B	Referred to urologist	1
+8H6	Referral to other doctor	1
+8HC1	Refer to A. & E. department	1
+8I3X	Diabetic retinopathy screening refused	1
+8I62	Beta blocker not indicated	2
+8I65	Warfarin not indicated	3
+8I6B	Clopidogrel not indicated	2
+8I6C	Angiotensin II receptor antagonist not indicated	3
+9N2S	Seen by practice phlebotomist	2
+9N2e	Seen by ophthalmologist	2
+9N42	Did not attend - no reason	1
+9N4H	DNA hospital appointment	1
+9N4p	Did not attend diabetic retinopathy clinic	1
+9h01	Excepted from CHD quality indicators: Patient unsuitable	1
+9i0	British or mixed British - ethnic category 2001 census	2
+A53	Herpes zoster	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	6
+ASDI224	Aspirin  Dispersible tablets  75 mg	13
+CATA20429EMIS	Calcium 500  Tablets  1.25 grams	1
+DEM/6708NEMIS	Defanac Sr  M/R tablets  75 mg	21
+DIM/30235EMIS	Diltiazem Hydrochloride  M/R tablets  60 mg	2
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+DITA886	Diclofenac Sodium  Tablets  50 mg	19
+E1123	"Single major depressive episode	1
+F	Nervous system and sense organ diseases	1
+F36z	Hereditary or idiopathic peripheral neuropathy NOS	1
+FLCA1195	Flucloxacillin  Capsules  250 mg	4
+FRTA1248	Frusemide  Tablets  20 mg	19
+Fyu51	[X]Other epilepsy	2
+G12	Rheumatic aortic valve disease	1
+G221	Benign hypertensive renal disease	1
+G60	Subarachnoid haemorrhage	1
+G84	Haemorrhoids	3
+H037	Recurrent acute tonsillitis	1
+H3y1	"Chr obs pulm dis+ac exac	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	5
+J10y5	Laryngopharyngeal reflux	1
+J171	Gastric diverticulum	1
+K08y	Other impaired renal function disorder	1
+K0D	End-stage renal disease	2
+K1012	Acute pyelitis	3
+L264z	Intrauterine death NOS	4
+N050	Generalised osteoarthritis - OA	1
+N05z	Osteoarthritis NOS	1
+NETAEGTON6665	Neo-Naclex-K  Tablets	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	9
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	1
+PK61	Sturge-Weber syndrome	5
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	9
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	9
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	7
+R1431	[D]Electrocardiogram (ECG) abnormal	5
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	8
+TALOROB1	Unknown vendor specific drug	1
+TESTSRE2	Unknown vendor specific drug	1

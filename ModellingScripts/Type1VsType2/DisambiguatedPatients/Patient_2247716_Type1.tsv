@@ -1,0 +1,117 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+136	Alcohol consumption	7
+137S	Ex smoker	3
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	5
+22A	O/E - weight	14
+22K	Body Mass Index	14
+246	O/E - blood pressure reading	4
+2469	O/E - Systolic BP reading	15
+24E6	O/E - R.post.tib.pulse present	1
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	2
+2BB	O/E - retinal inspection	3
+2G5Q	O/E - No left foot ulcer	1
+2G5R	O/E - No right foot ulcer	1
+3128	Fundoscopy	1
+423	Haemoglobin estimation	5
+4258	Haematocrit	3
+4266	Nucleated red blood cell count	1
+428	Mean corpusc. haemoglobin(MCH)	3
+429	Mean corpusc. Hb. conc. (MCHC)	2
+42A	Mean corpuscular volume (MCV)	5
+42N	Monocyte count	1
+42P	Platelet count	1
+42R	Serum iron tests	1
+42R4	Serum ferritin	1
+42Z5	Mean platelet volume	1
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44G9	Serum gamma-glutamyl transferase level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	32
+44J7	Albumin / creatinine ratio	1
+44J9	Serum urea level	3
+44M4	Serum albumin	1
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	2
+44P6	Serum LDL cholesterol level	2
+44Q	Serum triglycerides	13
+44TB	Haemoglobin A1c level	16
+44U	Blood glucose result	2
+44g	Plasma glucose level	10
+44l2	Cholesterol/HDL ratio	1
+451E	GFR calculated abbreviated MDRD	8
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	4
+467A	24 hour urine protein output	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46I	24 hour urine volume	1
+46M7	Urine creatinine	2
+46N	Urine protein	1
+46TC	Urine albumin:creatinine ratio	3
+46X1	Urine nitrite negative	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	1
+6791	Health ed. - smoking	2
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	3
+68A8	Digital retinal screening	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	4
+8H44	Cardiological referral	1
+8H52	Ophthalmological referral	1
+8H7R	Refer to chiropodist	2
+918F	Has a carer	1
+9N08	Seen in chiropody clinic	1
+9N2P	Seen by chiropodist	1
+9N2e	Seen by ophthalmologist	1
+9OI4	Hypertens.monitor.1st letter	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	21
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	4
+C10	Diabetes mellitus	3
+CITA15860NEMIS	Cipralex  Tablets  20 mg	15
+COTA9149BRIDL	Co-Amilofruse 5/40  Tablets	1
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	3
+E117	Unspecified bipolar affective disorder	2
+E2001	Panic disorder	1
+E3	Mental retardation	1
+EPIN34463EMIS	Epoetin Beta  Injection (Prefilled Syringe)  5000 units/syringe	6
+ERIN24326NEMIS	Ergocalciferol  Injection  300,000 units/ml, 2 ml ampoule	12
+F35z	Mononeuritis of unspecified site NOS	1
+F3700	Guillain-Barre syndrome	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	3
+Fyu4	[X]Demyelinating diseases of the central nervous system	1
+Fyu5E	[X]Chronic headache disorder	1
+G5800	Acute congestive heart failure	1
+G5802	Decompensated cardiac failure	1
+GASTOUN2	Unknown vendor specific drug	1
+H06z0	Chest infection NOS	1
+IBSY1428	Ibuprofen  Syrup  100 mg/5 ml	1
+ISTA1519	Isosorbide Dinitrate  Tablets  10 mg	1
+J17y7	Deformed duodenal cap (bulb)	1
+L245	Cervical incompetence	10
+LEIGHTH12	Unknown vendor specific drug	7
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	3
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	3
+MACA8841BRIDL	Maxepa  Capsules  1 gram	3
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	11
+PCSDT8940TE4	Unknown vendor specific drug	1
+PH54	Congenital onychauxis	1
+PUJINST1	Unknown vendor specific drug	5
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	6
+SETA4308	Semi-Daonil  Tablets  2.5 mg	3
+bh62	DOXAZOSIN 2mg tablets	5
+bh63	DOXAZOSIN 4mg tablets	3
+bh65	CARDURA 2mg tablets	3

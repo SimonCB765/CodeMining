@@ -1,0 +1,101 @@
+Code	Description	Count
+136	Alcohol consumption	5
+1361	Teetotaller	1
+1371	Never smoked tobacco	2
+137S	Ex smoker	1
+229	O/E - height	6
+22A	O/E - weight	12
+22K	Body Mass Index	8
+2469	O/E - Systolic BP reading	20
+29B7	10g monofilament sensation present	3
+2BBF	Retinal abnormality - diabetes related	2
+2BBI	O/E - no retinopathy	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+31280	Fundoscopy normal	1
+312F	Camera fundoscopy	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	2
+42c1	HbA1 7 - 10% - borderline control	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	26
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	12
+44g	Plasma glucose level	2
+451E	GFR calculated abbreviated MDRD	3
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	1
+46W	Urine microalbumin	1
+46W0	Urine microalbumin positive	1
+46W1	Urine microalbumin negative	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	2
+6791	Health ed. - smoking	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+8A17	Self monitoring of blood glucose	2
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	4
+8CAM	Patient advised about alcohol	1
+8H41	General medical referral	1
+8H7	Other referral	1
+8HBD	Retinopathy follow up	3
+8I74	Angiotensin converting enzyme inhibitor not tolerated	2
+8I75	Angiotensin II receptor antagonist not tolerated	1
+9N1A	Seen in hospital out-pat.	1
+9N2U	Seen by optician	2
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	1
+9OLD	Diabetic patient unsuitable for digital retinal photography	1
+9i0	British or mixed British - ethnic category 2001 census	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	12
+C10	Diabetes mellitus	1
+C109	Non-insulin dependent diabetes mellitus	1
+D3z	Clotting or bleeding disorder NOS	1
+DITA4858	Distigmine Bromide  Tablets  5 mg	6
+DITA885	Diclofenac Sodium  Tablets  25 mg	1
+DITA886	Diclofenac Sodium  Tablets  50 mg	2
+E3	Mental retardation	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F4510	Unspecified open-angle glaucoma	1
+FECA31990EMIS	Fenofibrate  Capsules  (Micronised) 67 mg	1
+Fyu51	[X]Other epilepsy	2
+H06z0	Chest infection NOS	1
+HEWITAS12	Unknown vendor specific drug	1
+HEWITCA1	Unknown vendor specific drug	11
+ININ32907EMIS	Invicorp 2  Injection	1
+ININ3759	Pork Insulatard  Injection  100 units/ml, 10 ml vial	23
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	2
+J120	Acute duodenal ulcer	1
+L2442	Other uterine/pelvic floor abn - delivered+postpartum compl	11
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	5
+MACA8841BRIDL	Maxepa  Capsules  1 gram	21
+N0907	Joint effusion of the ankle and foot	2
+S3z2	Stress fracture	1
+S3zz	Fracture of bones NOS	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	25
+SLTA4320	Slow-Fe  Tablets  160 mg	17

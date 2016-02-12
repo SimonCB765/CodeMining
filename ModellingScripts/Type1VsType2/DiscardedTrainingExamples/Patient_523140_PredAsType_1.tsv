@@ -1,0 +1,109 @@
+Code	Description	Count
+135A	Christian	2
+136	Alcohol consumption	10
+137P	Cigarette smoker	2
+137S	Ex smoker	4
+13l4	Main spoken language English	2
+1BT	Depressed mood	1
+229	O/E - height	16
+22A	O/E - weight	21
+22K	Body Mass Index	19
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	25
+29B7	10g monofilament sensation present	3
+2BB1	O/E - retina normal	1
+2BBF	Retinal abnormality - diabetes related	2
+3216	ECG normal	1
+3217	ECG abnormal	1
+423	Haemoglobin estimation	2
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	2
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	11
+44I5	Serum sodium	2
+44J3	Serum creatinine	20
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	17
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	7
+44U	Blood glucose result	1
+44Z1	Serum fructosamine	1
+44g	Plasma glucose level	1
+451E	GFR calculated abbreviated MDRD	6
+4672	Urine protein test negative	5
+4696	Urine blood test = ++	1
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	7
+5853	U-S heart scan	1
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	5
+6792	Health ed. - alcohol	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+68A8	Digital retinal screening	1
+79113	Replacement of aortic valve NEC	4
+792z	Coronary artery operations NOS	1
+8A17	Self monitoring of blood glucose	2
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	5
+8CAM	Patient advised about alcohol	4
+8H21	Admit medical emergency unsp.	1
+8H41	General medical referral	1
+8H43	Dermatological referral	2
+8H44	Cardiological referral	1
+8H5B	Referred to urologist	1
+8H5K	Referral to upper gastrointestinal surgeon	1
+8I26	Beta blocker contraindicated	1
+9N1A	Seen in hospital out-pat.	2
+9N1v	Seen in diabetic eye clinic	1
+9N2e	Seen by ophthalmologist	1
+9ND6	Communication from:	3
+9S10	White British	3
+9i0	British or mixed British - ethnic category 2001 census	4
+A53	Herpes zoster	1
+AB000	Dermatophytosis of scalp	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	14
+ASDI224	Aspirin  Dispersible tablets  75 mg	16
+ASE/24522EMIS	Aspirin  E/c tablets  300 mg	1
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	23
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	18
+C1001	Diab.mell.no comp. - adult	1
+D0130	Combined B12 and folate deficiency anaemia	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F41y0	Traction retinal detachment	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	7
+FRTA1248	Frusemide  Tablets  20 mg	2
+Fyu56	[X]Other lacunar syndromes	2
+G12	Rheumatic aortic valve disease	1
+G240	Secondary malignant hypertension	1
+G572z	Paroxysmal tachycardia NOS	2
+G668	Right sided CVA	1
+G733	Ischaemic foot	1
+G844	External thrombosed haemorrhoids	1
+GASTOUR6	Unknown vendor specific drug	1
+H322	Centrilobular emphysema	2
+HEWITCC1	Unknown vendor specific drug	21
+HEWITPO12	Unknown vendor specific drug	1
+J1212	Chronic duodenal ulcer with perforation	2
+N03	Arthropathy associated with disorders EC	1
+N06z5	Arthropathy NOS-pelvic/thigh	1
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	1
+PD44	Double ureter	25
+PE06	Congenital nasal septum deviation	1
+PE1	Congenital sternomastoid torticollis	3
+PJ632	"Turner's pheno.	1
+PK61	Sturge-Weber syndrome	4
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	2
+R00z0	[D]Amnesia (retrograde)	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1
+SLTA4320	Slow-Fe  Tablets  160 mg	5
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	2

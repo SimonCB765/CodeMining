@@ -1,0 +1,121 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	5
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	1
+1383	Enjoys light exercise	1
+13JM	Problems at work	1
+229	O/E - height	2
+22A	O/E - weight	6
+22K	Body Mass Index	7
+246	O/E - blood pressure reading	25
+29B7	10g monofilament sensation present	2
+29BB	10g monofilament sensation R foot normal	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	15
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	9
+44PD	Serum fasting LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	7
+44Q	Serum triglycerides	7
+44Q4	Serum fasting triglyceride level	3
+44TB	Haemoglobin A1c level	8
+44TK	Fasting blood glucose level	2
+44U	Blood glucose result	2
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	9
+46N3	Urine total protein	1
+46TC	Urine albumin:creatinine ratio	2
+5543	Coronary arteriograph.abnormal	1
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	2
+6791	Health ed. - smoking	2
+6792	Health ed. - alcohol	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	2
+6891	Depression screen	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+7928	Transluminal balloon angioplasty of coronary artery	3
+79294	Insertion of coronary artery stent	2
+8A17	Self monitoring of blood glucose	1
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	2
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	2
+8H4	Referral to physician	1
+8H54	Orthopaedic referral	1
+8H76	Refer to dietician	1
+8H7H	Refer to optician	1
+8HBA	Follow up in outpatient clinic	2
+8I26	Beta blocker contraindicated	1
+9N19	Seen in hospital casualty	4
+9N1P	Seen in cardiac clinic	1
+9S6	Indian	2
+9h0	Exception reporting: CHD quality indicators	1
+9i7	Indian or British Indian - ethnic category 2001 census	1
+AB0	Dermatophytosis including tinea or ringworm	1
+AB220	Candidal balanitis	1
+C108	Insulin dependent diabetes mellitus	1
+C109	Non-insulin dependent diabetes mellitus	2
+E200z	Anxiety state NOS	1
+EGTON52	Unknown vendor specific drug	1
+EMISFR3	Unknown vendor specific drug	1
+F4J51	Partial oculomotor nerve palsy	1
+Fyu51	[X]Other epilepsy	3
+G11z	Mitral valve disease NOS	1
+G21z0	Hypertensive heart disease NOS without CCF	1
+G240	Secondary malignant hypertension	1
+G65z	Transient cerebral ischaemia NOS	1
+H014	Acute rhinosinusitis	2
+J120	Acute duodenal ulcer	1
+J1212	Chronic duodenal ulcer with perforation	1
+Y3762	Unknown vendor specific drug	2
+be3x	MINOXIDIL 2.5mg tablets	1
+bi2y	ENALAPRIL MALEATE 20mg tablets	2
+bi33	LISINOPRIL 10mg tablets	25
+bi3c	ZESTRIL 2.5mg tablets 28CP	2
+bi93	TRANDOLAPRIL 2mg capsules	1
+bl5y	ANGITIL XL 300 m/r capsules	14
+bl8K	TENSIPINE MR 20 m/r tablets	3
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	15
+br2k	000iu/mL syrg 0.2mL"	1
+bx11	BEZALIP 200mg tablets	5
+bx62	LOPID 600mg tablets	5
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	5
+bxa7	OMACOR 1g capsules	8
+bxdx	SIMVASTATIN 40mg/EZETIMIBE 10mg tablets	1
+e3zq	AMOXICILLIN powder 3g/sachet	1
+e618	CEFACLOR 500mg capsules	1
+e712	TETRACYCLINE 250mg tablets	1
+e921	CLARITHROMYCIN 250mg tablets	1
+ei1o	ACICLOVIR 800mg tablets	11
+f12T	HYPURIN PORCINE NEUTRAL 100iu/mL injection cartridge 3mL	1
+f133	INSULIN LISPRO 100iu/mL cartridges	1
+f25m	HUMAN INSULATARD 100iu/mL preloaded injection pen 3mL	10
+f27S	HUMAN MIXTARD 40 prefilled pen	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	26
+f3A1	GLIMEPIRIDE 2mg tablets	1
+gc6z	ALFUZOSIN HYDROCHLORIDE 10mg m/r tablets	1
+gd42	URISPAS 200mg tablets	7
+j22P	VOLSAID RETARD 75mg m/r tablets	2
+j2cq	NAPROSYN EC 500mg e/c tablets	1

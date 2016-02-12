@@ -1,0 +1,95 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1379	Ex-moderate smoker (10-19/day)	3
+137L	Current non-smoker	2
+137S	Ex smoker	1
+137T	Date ceased smoking	1
+1381	Exercise physically impossible	1
+1384	Enjoys moderate exercise	3
+229	O/E - height	3
+22A	O/E - weight	19
+22K	Body Mass Index	19
+2469	O/E - Systolic BP reading	22
+29BB	10g monofilament sensation R foot normal	3
+2BBD	O/E - Right retina normal	2
+2BBE	O/E - Left retina normal	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+42C	RBC - red blood cell size	1
+42T	Serum vitamin B12	1
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	17
+42W5	Haemoglobin A1c level - IFCC standardised	3
+43Z2	Prostate specific antigen	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	2
+44J3	Serum creatinine	19
+44J8	Blood urea	1
+44J9	Serum urea level	2
+44M4	Serum albumin	2
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	4
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	11
+44U	Blood glucose result	4
+4662	Urine glucose test negative	1
+467	Urine protein test	1
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	1
+46M7	Urine creatinine	3
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	7
+46TD	Urine microalbumin:creatinine ratio	3
+46W	Urine microalbumin	3
+65720	Pneumococcal vaccination given	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+67E	Foreign travel advice	1
+6896	Depression screening using questions	3
+68A8	Digital retinal screening	2
+7920	Saphenous vein graft replacement of coronary artery	1
+8A17	Self monitoring of blood glucose	3
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	1
+8H43	Dermatological referral	1
+8H46	Neurological referral	1
+8H52	Ophthalmological referral	1
+8H76	Refer to dietician	1
+8I26	Beta blocker contraindicated	3
+8I62	Beta blocker not indicated	1
+8I6B	Clopidogrel not indicated	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9NE4	Awaiting collection:letter to	1
+9NNB	Under care of ophthalmologist	3
+9S1	White	1
+9S10	White British	1
+ASDI223	Aspirin  Dispersible tablets  300 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	12
+E3	Mental retardation	8
+EMISQDO2	Unknown vendor specific drug	1
+F4106	Recent subtotal retinal detachment	1
+F426	Peripheral retinal degeneration	2
+F5902	Conductive hearing loss due to disorder of tympanic membrane	3
+FOCA24984EMIS	Foley  Catheter (female)  14 ch	2
+FRTA1247	Frumil  Tablets	10
+G11z	Mitral valve disease NOS	2
+G12	Rheumatic aortic valve disease	2
+G581	Left ventricular failure	1
+GASTOUN2	Unknown vendor specific drug	1
+GASTOUR6	Unknown vendor specific drug	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	2
+GLCF26905EMIS	Glyceryl Trinitrate  Cfc-free pump spray  400 micrograms/dose	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	16
+LMRGPGP2	Unknown vendor specific drug	13
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+N06z	Arthropathy NOS	1
+N07y2	Old anterior cruciate ligament disruption	1
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	9
+SCCA19035EMIS	Scott  Catheters  10 ch	17
+SLTA4320	Slow-Fe  Tablets  160 mg	16

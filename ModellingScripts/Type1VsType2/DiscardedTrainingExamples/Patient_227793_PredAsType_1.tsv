@@ -1,0 +1,148 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C2	FH: Ischaemic heart dis. <60	1
+136	Alcohol consumption	8
+1374	Moderate smoker - 10-19 cigs/d	1
+137S	Ex smoker	5
+137T	Date ceased smoking	1
+1381	Exercise physically impossible	1
+1383	Enjoys light exercise	2
+1465	H/O: depression	1
+1AA	Prostatism	1
+1B1L	Stress related problem	1
+229	O/E - height	9
+22A	O/E - weight	13
+22K	Body Mass Index	12
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	17
+29B7	10g monofilament sensation present	2
+29B8	10g monofilament sensation absent	1
+2BBF	Retinal abnormality - diabetes related	1
+2BBI	O/E - no retinopathy	1
+2BBP	O/E - right eye background diabetic retinopathy	1
+3213	Exercise ECG	1
+32131	Exercise ECG abnormal	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42W4	HbA1c level (DCCT aligned)	9
+42W5	Haemoglobin A1c level - IFCC standardised	1
+43Z2	Prostate specific antigen	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	13
+44J9	Serum urea level	4
+44M4	Serum albumin	1
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	9
+44U	Blood glucose result	2
+451E	GFR calculated abbreviated MDRD	3
+4618	Urine dipstick test	1
+4661	Urine glucose test not done	2
+4667	Urine glucose test = ++++	1
+467	Urine protein test	1
+4671	Urine protein test not done	3
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	1
+4675	Urine protein test = ++	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	2
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	4
+46X1	Urine nitrite negative	1
+5855	U-S abdominal scan	1
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	2
+6791	Health ed. - smoking	4
+6799	Health ed. - diet	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	1
+8H44	Cardiological referral	2
+8H46	Neurological referral	1
+8H49	Psychiatric referral	1
+8H4F	Referral to diabetologist	2
+8H52	Ophthalmological referral	3
+8H53	ENT referral	1
+8HBJ	Stroke / transient ischaemic attack referral	1
+8HT3	Referral to audiology clinic	1
+8I26	Beta blocker contraindicated	1
+8I62	Beta blocker not indicated	1
+9N42	Did not attend - no reason	2
+9N4H	DNA hospital appointment	2
+9h01	Excepted from CHD quality indicators: Patient unsuitable	2
+9h11	Excepted from LVD quality indicators: Patient unsuitable	1
+9h21	Excepted from stroke quality indicators: Patient unsuitable	1
+9h41	Excepted from diabetes qual indicators: Patient unsuitable	4
+9i0	British or mixed British - ethnic category 2001 census	1
+9i2	Other White background - ethnic category 2001 census	1
+A0812	Gastroenteritis - presumed infectious origin	1
+AB0	Dermatophytosis including tinea or ringworm	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	4
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	5
+ASDI224	Aspirin  Dispersible tablets  75 mg	11
+ATSY4612	Atenolol  Syrup  Sugar Free 25 mg/5 ml	3
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	2
+BEGE19510NEMIS	Benzoyl Peroxide And Clindamycin  Gel  5 % + 1 %	1
+BETA4656	Bezafibrate  M/R tablets  400 mg	1
+C10	Diabetes mellitus	4
+CETA10999BRIDL	Cefuroxime  Tablets  250 mg	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	1
+DETA32246EMIS	Detrusitol  Tablets  2 mg	3
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	1
+DIM/24452EMIS	Diclofenac Sodium  M/R capsules  100 mg	2
+DIM/4780NEMIS	Ditropan Xl  M/R tablets  5 mg	9
+E3	Mental retardation	1
+EMISQRI11	Unknown vendor specific drug	1
+ERIN24326NEMIS	Ergocalciferol  Injection  300,000 units/ml, 2 ml ampoule	2
+Eu	[X]Mental and behavioural disorders	1
+Eu01	[X]Vascular dementia	1
+F152	Motor neurone disease	1
+F5603	Active vestibular Meniere's disease	1
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	1
+FECA24144EMIS	Fenofibrate  Capsules  200 mg	1
+G11z	Mitral valve disease NOS	1
+G240	Secondary malignant hypertension	1
+G303	Acute inferoposterior infarction	1
+G581	Left ventricular failure	2
+G84	Haemorrhoids	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H0614	Obliterating fibrous bronchiolitis	1
+HEWITCA1	Unknown vendor specific drug	2
+IRIN11056NEMIS	Iron Hydroxide Dextran Complex  Injection  50 mg/ml, 2 ml ampoule	4
+ISTA1519	Isosorbide Dinitrate  Tablets  10 mg	2
+L43z4	Obstetric pulmonary embolism NOS with postnatal complication	12
+M05	Impetigo	1
+M21yC	Insulin lipohypertrophy	1
+M28z	Urticaria NOS	2
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	1
+MESU22038NEMIS	Metformin Hydrochloride  Sugar free suspension  500 mg/5 ml	1
+MIOR16205NEMIS	Mirtazapine  Orodispersible tablets  30 mg	1
+N01zB	Infec arthritis NOS-elbow	1
+N083q	Recurrent subluxation of the patella	1
+NICA1986	Nifedipine  Capsules  10 mg	1
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	9
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	1
+PF662	Congenital hammer toe	1
+PRTA2322	Prazosin Hydrochloride  Tablets  1 mg	1
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	6
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	6
+QUTA4244	Quinine Bisulphate  Tablets  300 mg	3
+R1431	[D]Electrocardiogram (ECG) abnormal	3
+RACA57NEMIS	Ramipril  Capsules  10 mg	6
+S36	Fracture of one or more phalanges of foot	1
+TETA3341NEMIS	Teveten  Tablets  600 mg	4
+XE0RS	Unknown vendor specific drug	1

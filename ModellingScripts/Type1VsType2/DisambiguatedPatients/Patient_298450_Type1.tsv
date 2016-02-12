@@ -1,0 +1,136 @@
+Code	Description	Count
+136	Alcohol consumption	10
+1371	Never smoked tobacco	1
+137S	Ex smoker	4
+13l4	Main spoken language English	1
+1A1	Micturition frequency	1
+1BT	Depressed mood	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	3
+22A	O/E - weight	11
+22K	Body Mass Index	9
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	23
+29B7	10g monofilament sensation present	2
+29BB	10g monofilament sensation R foot normal	1
+311A	Monofilament foot sensation test	2
+3212	Standard ECG	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	1
+42R4	Serum ferritin	3
+42W4	HbA1c level (DCCT aligned)	17
+42W5	Haemoglobin A1c level - IFCC standardised	2
+43Z2	Prostate specific antigen	5
+44AP	Serum pro-brain natriuretic peptide level	1
+44CC	Plasma C reactive protein	6
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	31
+44J7	Albumin / creatinine ratio	1
+44J9	Serum urea level	4
+44LP	Serum 25-Hydroxy vitamin D3 level	1
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	8
+44f1	Serum fasting glucose level	1
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	9
+4672	Urine protein test negative	5
+4692	Urine blood test = negative	3
+46M7	Urine creatinine	3
+46N3	Urine total protein	2
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	5
+46W0	Urine microalbumin positive	2
+55Z	Cardiovascular angiography NOS	1
+5853	U-S heart scan	1
+58530	Echocardiogram normal	1
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	2
+67H0	Lifestyle advice regarding alcohol	2
+67H1	Lifestyle advice regarding smoking	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+7939	Catheterisation of heart	1
+79392	Catheterisation of left side of heart NEC	1
+7B3C2	Transrectal needle biopsy of prostate	1
+8A17	Self monitoring of blood glucose	2
+8B3T	Over the counter aspirin therapy	1
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	4
+8CA48	Pt advised re low salt diet	2
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	3
+8H44	Cardiological referral	2
+8H4B	Referred to rheumatologist	1
+8H5B	Referred to urologist	2
+8H77	Refer to physiotherapist	2
+8HTJ	Referral to rapid access chest pain clinic	1
+9N2Q	Seen by podiatrist	1
+9N2e	Seen by ophthalmologist	2
+9NNC	Under care of retinal screener	1
+9i	Ethnic category - 2001 census	1
+9i0	British or mixed British - ethnic category 2001 census	1
+9i2	Other White background - ethnic category 2001 census	1
+A0812	Gastroenteritis - presumed infectious origin	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	1
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ASTA4609	Aspirin  Tablets  75 mg	10
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	25
+B46	Malignant neoplasm of prostate	4
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	12
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	6
+C10F4	Type 2 diabetes mellitus with ulcer	1
+C10FN	Type 2 diabetes mellitus with ketoacidosis	3
+CHSU15277NEMIS	Cholestyramine  Sugar Free Powder  4 grams/sachet	2
+CITA15860NEMIS	Cipralex  Tablets  20 mg	1
+DAPR11350NEMIS	Darbepoetin Alfa  Pre-Filled Syringe  40 micrograms/0.4 ml	14
+E112	Single major depressive episode	1
+E200z	Anxiety state NOS	1
+EMISSPR1	Unknown vendor specific drug	6
+EZTA20282NEMIS	Ezetimibe And Simvastatin  Tablets  10 mg + 80 mg	3
+F3701	Postinfectious polyneuritis	1
+F5421	Tympanic membrane central perforation	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	2
+FOCA24984EMIS	Foley  Catheter (female)  14 ch	5
+FRTA1247	Frumil  Tablets	17
+Fyu51	[X]Other epilepsy	4
+G11z	Mitral valve disease NOS	4
+GASTOSE4	Unknown vendor specific drug	2
+GASTOTR2	Unknown vendor specific drug	1
+H037	Recurrent acute tonsillitis	1
+H1y2z	Other pharyngeal disease NOS	1
+HONI879NEMIS	Hollister Urostomy  Night drainage bags  5550	1
+INPR13771NEMIS	Insulatard Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+J120	Acute duodenal ulcer	1
+J1212	Chronic duodenal ulcer with perforation	1
+J1y	"Other specified disorders of oesophagus	1
+K137	Vesicoureteric reflux	1
+LAIN13572NEMIS	Lantus  Injection  100 units/ml, 3 ml cartridge	19
+LEIGHTH12	Unknown vendor specific drug	3
+LEIGHUS10	Unknown vendor specific drug	7
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	21
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	1
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	19
+N0516	Local.primary OA-lower leg	1
+NIM/21970EMIS	Nitrofurantoin  M/R capsules  100 mg	3
+PK250	Aberrant thyroid gland	1
+PK61	Sturge-Weber syndrome	1
+POSH2300	Polytar  Shampoo	2
+SCCA19035EMIS	Scott  Catheters  10 ch	1
+SETA2517	Securon Sr  Tablets  240 mg	1
+SITA15258NEMIS	Sirolimus  Tablets  2 mg	7
+Y1202	Unknown vendor specific drug	3

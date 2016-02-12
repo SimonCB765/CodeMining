@@ -1,0 +1,121 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	9
+1371	Never smoked tobacco	2
+1A55	Dysuria	8
+1A7	Vaginal discharge symptom	2
+1A82	Breast lump present	2
+1FA	Diet good	2
+229	O/E - height	6
+22A	O/E - weight	20
+22K	Body Mass Index	16
+2469	O/E - Systolic BP reading	26
+29BB	10g monofilament sensation R foot normal	3
+2BBI	O/E - no retinopathy	3
+32	Electrocardiography	1
+321B	12 lead ECG	1
+32M	24 Hour ECG	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	6
+42W1	Hb. A1C < 7% - good control	1
+42W4	HbA1c level (DCCT aligned)	7
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44J3	Serum creatinine	22
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	5
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	2
+44f0	Serum random glucose level	9
+44g	Plasma glucose level	3
+451E	GFR calculated abbreviated MDRD	8
+4618	Urine dipstick test	1
+467	Urine protein test	1
+4672	Urine protein test negative	2
+46M7	Urine creatinine	4
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	4
+46W2	Microalbumin excretion rate	6
+55Z	Cardiovascular angiography NOS	1
+573D	Isotope static scan heart	1
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+6774	Medication counselling	1
+679J	Health education - asthma	1
+6879	Hyperlipidaemia screen	1
+6896	Depression screening using questions	2
+68A8	Digital retinal screening	2
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	4
+8H	Referral for further care	6
+8H44	Cardiological referral	1
+8H76	Refer to dietician	1
+8I70	Aspirin not tolerated	1
+9N1v	Seen in diabetic eye clinic	1
+9N27	Seen by dietician	1
+9N2f	Seen by retinal screener	1
+9N4H	DNA hospital appointment	1
+9NND	Under care of diabetic foot screener	1
+9OX5	Influenza vaccination declined	1
+9S2	Black Caribbean	1
+9S46	Black Indian sub-continent	1
+A0743	Campylobacter gastrointestinal tract infection	1
+A3B7	Pseudomonas infection	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	5
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	8
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	8
+C102	Diabetes mellitus with hyperosmolar coma	1
+CECA17567NEMIS	Cefalexin  Capsules  250 mg	1
+CECA4202NEMIS	Celebrex  Capsules  100 mg	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	1
+D0130	Combined B12 and folate deficiency anaemia	2
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	1
+DITA886	Diclofenac Sodium  Tablets  50 mg	24
+E112	Single major depressive episode	1
+E250z	Nondependent alcohol abuse NOS	1
+EMISSPR110	Unknown vendor specific drug	1
+F4250	Unspecified senile macular degeneration	1
+F48z	Visual disturbance NOS	1
+F58z	Ear disorder NOS	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	1
+FOCA24991EMIS	Foley  Catheter (male)  12 ch	4
+FRTA1248	Frusemide  Tablets  20 mg	1
+Fyu51	[X]Other epilepsy	4
+G560	Complete atrioventricular block	1
+G65z	Transient cerebral ischaemia NOS	3
+G84	Haemorrhoids	2
+H014	Acute rhinosinusitis	1
+H22	Other bacterial pneumonia	1
+ISTA1519	Isosorbide Dinitrate  Tablets  10 mg	2
+J1201	Acute duodenal ulcer with haemorrhage	1
+K0D	End-stage renal disease	2
+K1021	Perinephric abscess	1
+LMRGPCH3	Unknown vendor specific drug	1
+N047	Seropositive errosive rheumatoid arthritis	2
+PH311	Port wine stain	1
+PK61	Sturge-Weber syndrome	2
+POCA4188	Ponderax  Capsules  60 mg	1
+POSH2300	Polytar  Shampoo	2
+S3z	Fracture of unspecified bones	2
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	13
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	1
+SETA8968EMIS	Seroxat  Tablets  20 mg	9
+SISI4591NEMIS	Mentor Medical Transcath Clear Standard  Silicone foley catheter male/female 10ml  12ch, TC2125	1
+TETA5426	Tetracycline Hydrochloride  Tablets  250 mg	33
+TETA9419BRIDL	Tenormin  Tablets  25 mg	4
+Ua1CJ	Unknown vendor specific drug	20
+VATA18545NEMIS	Valsartan And Hydrochlorothiazide  Tablets  160 mg + 12.5 mg	3

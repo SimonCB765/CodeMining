@@ -1,0 +1,103 @@
+Code	Description	Count
+1352	Roman Catholic	1
+136	Alcohol consumption	9
+1371	Never smoked tobacco	5
+13l	Main spoken language	1
+229	O/E - height	2
+22A	O/E - weight	16
+22K	Body Mass Index	15
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	20
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	2
+2BBB	O/E - Right retina not seen	1
+2BBC	O/E - Left retina not seen	1
+2BBL	O/E - diabetic maculopathy present both eyes	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+31280	Fundoscopy normal	1
+3171	Special urinary test not done	1
+423	Haemoglobin estimation	2
+428	Mean corpusc. haemoglobin(MCH)	1
+42A	Mean corpuscular volume (MCV)	1
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	11
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44I8	Serum calcium	2
+44J3	Serum creatinine	18
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	1
+44TB	Haemoglobin A1c level	2
+44U5	Blood glucose 7-9.9 mmol/L	1
+44U6	Blood glucose 10-13.9 mmol/L	1
+44g	Plasma glucose level	3
+451E	GFR calculated abbreviated MDRD	7
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	5
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	2
+46A2	Urine pH = 5.0	2
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	5
+4JJ	Urine sample for organism	2
+66A5	Diabetic on insulin	4
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+679L	Health education - diabetes	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+68A8	Digital retinal screening	1
+8A17	Self monitoring of blood glucose	2
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	4
+8CAM	Patient advised about alcohol	2
+8H41	General medical referral	1
+8H52	Ophthalmological referral	1
+8H77	Refer to physiotherapist	1
+8H7P	Refer to pathology department	1
+8H7R	Refer to chiropodist	1
+8HB2	Medical follow-up	3
+8HBD	Retinopathy follow up	1
+8I3Q	Pneumococcal vaccination declined	1
+8I6C	Angiotensin II receptor antagonist not indicated	7
+9N2U	Seen by optician	1
+9N2V	Seen by optometrist	1
+9N2e	Seen by ophthalmologist	2
+9NE8	Fax sent to:	2
+9OX5	Influenza vaccination declined	2
+9S11	White Irish	2
+9i1	Irish - ethnic category 2001 census	1
+A52	Chickenpox - varicella	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	18
+ASDI224	Aspirin  Dispersible tablets  75 mg	15
+ATTA231	Atenolol  Tablets  50 mg	25
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	8
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	8
+F4430	Anterior uveitis	1
+F4A0	Corneal ulcer	1
+Fyu4	[X]Demyelinating diseases of the central nervous system	1
+Fyu51	[X]Other epilepsy	2
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+H0616	Acute bronchiolitis due to other specified organisms	1
+H1y41	Polyp of larynx	1
+HEWITAS9	Unknown vendor specific drug	17
+L43z4	Obstetric pulmonary embolism NOS with postnatal complication	4
+LECA24122EMIS	Lescol  Capsules  40 mg	22
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	8
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	1
+M21yC	Insulin lipohypertrophy	8
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	2
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	8
+Y073a	Unknown vendor specific drug	3

@@ -1,0 +1,123 @@
+Code	Description	Count
+03I1	Ophthalmic optician	1
+12C2	FH: Ischaemic heart dis. <60	1
+134B	RACE: Caucasian	1
+136	Alcohol consumption	11
+1371	Never smoked tobacco	4
+1384	Enjoys moderate exercise	1
+13A4	Low fat diet	3
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+1Z1D	Chronic kidney disease stage 3A with proteinuria	1
+229	O/E - height	2
+22A	O/E - weight	12
+22K	Body Mass Index	15
+22N0	Waist circumference	3
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	3
+2BB1	O/E - retina normal	2
+315B	Ambulatory blood pressure recording	2
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	17
+42W5	Haemoglobin A1c level - IFCC standardised	2
+43Z2	Prostate specific antigen	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44J3	Serum creatinine	29
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	16
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	14
+44Q4	Serum fasting triglyceride level	1
+44TB	Haemoglobin A1c level	2
+44g	Plasma glucose level	14
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	5
+451E	GFR calculated abbreviated MDRD	6
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	2
+4676	Urine protein test = +++	1
+46M7	Urine creatinine	3
+46N	Urine protein	2
+46TC	Urine albumin:creatinine ratio	5
+46W	Urine microalbumin	2
+58531	Echocardiogram abnormal	1
+58C1	Retinal photography	3
+66A3	Diabetic on diet only	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	1
+6792	Health ed. - alcohol	6
+6798	Health ed. - exercise	3
+6799	Health ed. - diet	3
+6891	Depression screen	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+79294	Insertion of coronary artery stent	1
+792z	Coronary artery operations NOS	1
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	2
+8CAL	Smoking cessation advice	3
+8H	Referral for further care	2
+8H5B	Referred to urologist	1
+8I3A	Referral to dietician declined	1
+9N1Q	Seen in diabetic clinic	1
+9N27	Seen by dietician	1
+9N2Q	Seen by podiatrist	1
+9OIA	Hypertension monitor.chck done	2
+9S1	White	1
+ALTA26382NEMIS	Aliskiren  Tablets  300 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	14
+ASTA225	Aspirin  Tablets  300 mg	1
+ATTA230	Atenolol  Tablets  100 mg	6
+BA418738EMIS	Unknown vendor specific drug	1
+BACA10733BRIDL	Bard Biocath Hydrogel Coated  Prefilled male catheter  Aquamatic, 14 ch, D2264	2
+BANI18316NEMIS	Bard Uriplan One Mt  Night Drainage Bag With Tap  2 litre, D1MT	1
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	14
+CITA15860NEMIS	Cipralex  Tablets  20 mg	4
+DITA4858	Distigmine Bromide  Tablets  5 mg	2
+DITA856	Diabinese  Tablets  100 mg	18
+E200z	Anxiety state NOS	1
+EMISSPR1	Unknown vendor specific drug	3
+F587	Otalgia	2
+F5870	 unspecified"	1
+FECA1203NEMIS	Fenofibrate  Capsules  (Micronised) 267 mg	3
+FUNDHAU1	Unknown vendor specific drug	1
+Fyu51	[X]Other epilepsy	1
+FyuF7	[X]Other proliferative retinopathy	1
+G221	Benign hypertensive renal disease	1
+G240	Secondary malignant hypertension	1
+G5733	Non-rheumatic atrial fibrillation	1
+G836	Varicose vein of leg with phlebitis	2
+GASTOSE5	Unknown vendor specific drug	2
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+IBFC10455BRIDL	Ibuprofen  Fc tablets  800 mg	12
+INCA17688NEMIS	Indometacin  Capsules  25 mg	2
+IRIN11056NEMIS	Iron Hydroxide Dextran Complex  Injection  50 mg/ml, 2 ml ampoule	3
+K08y	Other impaired renal function disorder	1
+L43z4	Obstetric pulmonary embolism NOS with postnatal complication	16
+LACH24088NEMIS	Lanthanum  Chewable tablets  500 mg	6
+LAIN13572NEMIS	Lantus  Injection  100 units/ml, 3 ml cartridge	14
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	25
+META1807	Metoprolol Tartrate  Tablets  50 mg	4
+N0999	Clicking hip	3
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	6
+NITR34938EMIS	Niquitin  Transdermal patches  14 mg/24 hrs	19
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	1
+PUJINST1	Unknown vendor specific drug	1
+R1431	[D]Electrocardiogram (ECG) abnormal	23
+SCCA19035EMIS	Scott  Catheters  10 ch	1
+SLTA4320	Slow-Fe  Tablets  160 mg	10
+U6050	[X]Opioids + relat analgesics caus advers eff in therap use	1

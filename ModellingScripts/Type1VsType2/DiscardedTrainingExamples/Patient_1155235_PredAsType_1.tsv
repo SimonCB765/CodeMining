@@ -1,0 +1,109 @@
+Code	Description	Count
+136	Alcohol consumption	5
+137G	Trying to give up smoking	1
+137P	Cigarette smoker	4
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	7
+22A	O/E - weight	13
+22K	Body Mass Index	13
+246	O/E - blood pressure reading	17
+2466	O/E - BP reading raised	1
+29B7	10g monofilament sensation present	2
+29H2	O/E - vibration sense reduced	1
+29H8	O/E - vibration sense left foot reduced	1
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	1
+42W3	Hb. A1C > 10% - bad control	1
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	17
+44J7	Albumin / creatinine ratio	3
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	6
+44PF	Total cholesterol:HDL ratio	6
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	15
+44U5	Blood glucose 7-9.9 mmol/L	1
+44g	Plasma glucose level	2
+44lD	Urine protein/creatinine ratio	5
+451E	GFR calculated abbreviated MDRD	9
+451F	Glomerular filtration rate	2
+4613	Urinalysis = no abnormality	3
+4671	Urine protein test not done	2
+4672	Urine protein test negative	1
+46M7	Urine creatinine	2
+46N	Urine protein	2
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	8
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+6791	Health ed. - smoking	5
+6792	Health ed. - alcohol	4
+6798	Health ed. - exercise	4
+6799	Health ed. - diet	4
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+8A17	Self monitoring of blood glucose	2
+8B2B	Nicotine replacement therapy	2
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	1
+8CA48	Pt advised re low salt diet	1
+8CAL	Smoking cessation advice	2
+8H76	Refer to dietician	2
+8H7i	Referral to smoking cessation advisor	1
+8H7n	Referral to retinal screener	2
+8H8Z	Follow-up arranged NOS	3
+8HTK	Referral to stop-smoking clinic	2
+9N1v	Seen in diabetic eye clinic	2
+9N2e	Seen by ophthalmologist	1
+9OI1	Attends hypertension monitor.	2
+9OIA	Hypertension monitor.chck done	1
+A53	Herpes zoster	1
+COTA9149BRIDL	Co-Amilofruse 5/40  Tablets	1
+D0130	Combined B12 and folate deficiency anaemia	1
+EGTON460	Unknown vendor specific drug	1
+EGTON4K270	Unknown vendor specific drug	1
+F36z	Hereditary or idiopathic peripheral neuropathy NOS	1
+F4C60	Granuloma of conjunctiva	1
+Fyu51	[X]Other epilepsy	2
+G65z	Transient cerebral ischaemia NOS	1
+H1y41	Polyp of larynx	1
+H22	Other bacterial pneumonia	1
+PCSDT11883MR2	Unknown vendor specific drug	1
+PCSDT11883UN3	Unknown vendor specific drug	1
+be31	LONITEN 2.5mg tablets	15
+be3x	MINOXIDIL 2.5mg tablets	11
+bi2x	ENALAPRIL MALEATE 10mg tablets x28	18
+bl5V	CALCICARD CR 90mg m/r tablets	5
+bl5r	VIAZEM XL 300mg m/r capsules	1
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	11
+bx11	BEZALIP 200mg tablets	6
+bx13	BEZAFIBRATE 200mg tablets	7
+bxc6	FENOFIBRATE 67mg capsules	1
+bxky	ROSUVASTATIN 20mg tablets	1
+du3A	NICOTINE 21mg/24hours patches	1
+du3g	NICORETTE 10mg inhalator starter pack	1
+e772	*MINOCIN 100mg tablets	1
+ei1k	ACICLOVIR 400mg dispersible tablets	15
+f25o	HUMULIN I 100iu/mL cartridges 3mL	8
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	20
+ft9y	EXENATIDE 10micrograms/0.04mL injection prefilled pen	1
+h141	CYCLOPHOSPHAMIDE 50mg tablets	1

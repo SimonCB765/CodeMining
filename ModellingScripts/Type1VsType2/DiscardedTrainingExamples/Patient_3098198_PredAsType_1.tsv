@@ -1,0 +1,124 @@
+Code	Description	Count
+1363	Light drinker - 1-2u/day	2
+1371	Never smoked tobacco	1
+1FA	Diet good	1
+1FE0	Number of portions of fruit and vegetables daily	1
+1FE1	Intake of fruit and vegetables at least 5 portions daily	1
+1Z1	Chronic renal impairment	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	10
+22A	O/E - weight	11
+22K	Body Mass Index	10
+246	O/E - blood pressure reading	7
+2469	O/E - Systolic BP reading	20
+246A	O/E - Diastolic BP reading	20
+29B1	O/E - tactile sensation normal	1
+29BC	10g monofilament sensation L foot normal	1
+2BBJ	O/E - no right diabetic retinopathy	1
+2BBK	O/E - no left diabetic retinopathy	1
+2BBP	O/E - right eye background diabetic retinopathy	1
+3242	ECG: shows LVH	1
+423	Haemoglobin estimation	8
+4258	Haematocrit	2
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	5
+42B6	Erythrocyte sedimentation rate	1
+42H7	Total white blood count	2
+42I	Differential white cell count	1
+42N	Monocyte count	1
+42P	Platelet count	2
+42W4	HbA1c level (DCCT aligned)	4
+42W5	Haemoglobin A1c level - IFCC standardised	1
+42d4	Plasma ferritin level	1
+44CC	Plasma C reactive protein	3
+44CS	Serum C reactive protein level	1
+44G3	ALT/SGPT serum level	1
+44G7	Plasma gamma-glutamyl transferase level	2
+44I4	Serum potassium	4
+44J3	Serum creatinine	19
+44J9	Serum urea level	1
+44JA	Plasma urea level	2
+44JF	Plasma creatinine level	7
+44Lc	Vitamin B12 level	1
+44Le	Plasma vitamin B12 level	2
+44MI	Plasma albumin level	2
+44P	Serum cholesterol	4
+44P5	Serum HDL cholesterol level	3
+44PJ	Serum total cholesterol level	4
+44Q	Serum triglycerides	4
+44TB	Haemoglobin A1c level	3
+44TK	Fasting blood glucose level	2
+44dA	Plasma HDL cholesterol level	4
+44dB	Plasma LDL cholesterol level	4
+44e	Plasma triglyceride level	5
+44f1	Serum fasting glucose level	1
+44g	Plasma glucose level	2
+44g1	Plasma fasting glucose level	3
+44h6	Plasma sodium level	2
+44h7	Plasma calcium level	1
+44h8	Plasma potassium level	7
+44h9	Plasma corrected calcium level	1
+44lD	Urine protein/creatinine ratio	2
+44lG	Plasma cholesterol/HDL ratio	4
+451E	GFR calculated abbreviated MDRD	9
+46M7	Urine creatinine	4
+46TC	Urine albumin:creatinine ratio	3
+46W	Urine microalbumin	9
+4Q31	Transferrin level	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	1
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	3
+6799	Health ed. - diet	1
+6896	Depression screening using questions	1
+68A7	Diabetic retinopathy screening	1
+7L1A0	Renal dialysis	1
+8CAK	Patient given telephone advice out of hours	1
+8HBG	Diabetic retinopathy 12 month review	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I27	Statins contraindicated	1
+8I29	Fibrates contraindicated	1
+9N2U	Seen by optician	1
+9NND	Under care of diabetic foot screener	1
+9SZ	Ethnic groups (census) NOS	1
+A38z	Septicaemia NOS	1
+A53	Herpes zoster	1
+Fyu4	[X]Demyelinating diseases of the central nervous system	2
+Fyu51	[X]Other epilepsy	1
+G341	Aneurysm of heart	1
+G573z	Atrial fibrillation and flutter NOS	1
+G581	Left ventricular failure	1
+G662	Posterior cerebral artery syndrome	1
+J1y	"Other specified disorders of oesophagus	1
+K0D	End-stage renal disease	1
+UNS/8595EGTON	Univer  M/R capsules  240 mg	2
+WITLYLE1	Unknown vendor specific drug	1
+XAM/3799NEMIS	Xatral Xl  M/R tablets  10 mg	5
+XE0Wo	Unknown vendor specific drug	1
+Xa3j2	Unknown vendor specific drug	1
+ZITA31476EMIS	Zispin  Tablets  30 mg	4
+ZV125	[V]Personal history of circulatory system disease	12
+ZV579	[V]Cardiac rehabilitation	2
+bB1y	IVABRADINE 7.5mg tablets	10
+bB1z	IVABRADINE 5mg tablets	16
+bd35	ATENOLOL 50mg tablets	3
+bdeg	TENORET-50 tablets	3
+bdl3	CARVEDILOL 12.5mg tablets	3
+bdl4	CARVEDILOL 25mg tablets	2
+bi2y	ENALAPRIL MALEATE 20mg tablets	8
+bi33	LISINOPRIL 10mg tablets	14
+bi3c	ZESTRIL 2.5mg tablets 28CP	22
+bk37	LOSARTAN POTASSIUM 100mg tablets	1
+bk38	COZAAR 100mg tablets	1
+bl5y	ANGITIL XL 300 m/r capsules	10
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	2
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	7
+bx13	BEZAFIBRATE 200mg tablets	11
+bxa7	OMACOR 1g capsules	3
+ei1o	ACICLOVIR 800mg tablets	6
+f27g	HUMULIN M4 40/60 cartridges 1.5mL	4
+fe4a	EFCORTESOL 500mg/5mL injection	2
+fo1z	DISODIUM ETIDRONATE 200mg tablets	1
+gdA2	TOLTERODINE L-TARTRATE 2mg tablets	2
+ig1y	ADCAL 600mg chewable tablets	1
+j22R	DICLOFENAC 75mg e/c+m/r capsules	1

@@ -1,0 +1,93 @@
+Code	Description	Count
+136	Alcohol consumption	5
+1362	Trivial drinker - <1u/day	2
+1371	Never smoked tobacco	4
+1383	Enjoys light exercise	1
+1384	Enjoys moderate exercise	1
+1512	Menopause	1
+1A82	Breast lump present	1
+229	O/E - height	6
+22A	O/E - weight	12
+22K	Body Mass Index	15
+2469	O/E - Systolic BP reading	22
+29BB	10g monofilament sensation R foot normal	2
+29H1	O/E - vibration sense normal	1
+2BBI	O/E - no retinopathy	1
+2BBM	O/E - diabetic maculopathy absent both eyes	2
+31283	Camera fundoscopy	2
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44A1	Serum parathyroid hormone	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	12
+44J9	Serum urea level	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	8
+44PF	Total cholesterol:HDL ratio	7
+44Q	Serum triglycerides	8
+44TB	Haemoglobin A1c level	14
+451E	GFR calculated abbreviated MDRD	3
+4661	Urine glucose test not done	2
+4671	Urine protein test not done	2
+4672	Urine protein test negative	3
+4675	Urine protein test = ++	1
+4691	Urine blood test not done	2
+46TC	Urine albumin:creatinine ratio	6
+62	Patient pregnant	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+66AD	Fundoscopy - diabetic check	4
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	2
+6896	Depression screening using questions	3
+68A8	Digital retinal screening	1
+8B28	Lipid lowering therapy	1
+8CAL	Smoking cessation advice	1
+8H	Referral for further care	1
+8H49	Psychiatric referral	1
+8H4B	Referred to rheumatologist	1
+8H4F	Referral to diabetologist	2
+8H4K	Referred to endocrinologist	1
+8H51	General surgical referral	2
+8H77	Refer to physiotherapist	1
+8I24	Aspirin prophylaxis contra-indicated	1
+9514	FP24 sent to FPC	1
+9N42	Did not attend - no reason	2
+AB2	Candidiasis	1
+AB21	Candidal vulvovaginitis	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	7
+C10	Diabetes mellitus	1
+CACA9743BRIDL	Calcitriol  Capsules  500 nanograms	17
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	3
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+DITA884	Diclofenac Sodium  M/R tablets  100 mg	3
+E23	Alcohol dependence syndrome	1
+F35z	Mononeuritis of unspecified site NOS	1
+F5012	Acute infection of pinna	1
+F587	Otalgia	16
+Fyu51	[X]Other epilepsy	2
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H220	Pneumonia due to klebsiella pneumoniae	1
+HONE13988NEMIS	Hollister Advance  Nelaton catheter (female)  14 ch, 92142	1
+IBFC10455BRIDL	Ibuprofen  Fc tablets  800 mg	25
+K0D	End-stage renal disease	2
+L2442	Other uterine/pelvic floor abn - delivered+postpartum compl	14
+N096F	Other symptoms - wrist	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	7
+PIGE8758BRIDL	Piroxicam  Gel  0.5 %	7
+S224x	"Cls # dist humerus	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	17
+TC51	Fall on same level from tripping	1
+TC52	Fall on same level from stumbling	24
+URBL8670BRID	Uro-Tainer Chlorhexidine  Bladder Wash-Out	3

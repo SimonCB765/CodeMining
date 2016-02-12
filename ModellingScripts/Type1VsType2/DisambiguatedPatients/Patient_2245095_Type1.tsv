@@ -1,0 +1,118 @@
+Code	Description	Count
+0	Occupations	1
+136	Alcohol consumption	1
+1363	Light drinker - 1-2u/day	3
+1371	Never smoked tobacco	1
+137S	Ex smoker	6
+1383	Enjoys light exercise	3
+1FC	Diet average	3
+229	O/E - height	6
+22A	O/E - weight	14
+22K	Body Mass Index	15
+22K1	Body Mass Index normal K/M2	7
+246	O/E - blood pressure reading	18
+29BB	10g monofilament sensation R foot normal	4
+3128	Fundoscopy	2
+32G1	ECG: U wave normal	2
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42R	Serum iron tests	1
+42R4	Serum ferritin	1
+42R7	Serum iron level	1
+42W	Hb. A1C - diabetic control	10
+42W4	HbA1c level (DCCT aligned)	8
+42W5	Haemoglobin A1c level - IFCC standardised	3
+42c	HbA1 - diabetic control	1
+44CB	Serum transferrin	1
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	26
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	11
+44Q	Serum triglycerides	12
+44TJ	Blood glucose level	5
+44TK	Fasting blood glucose level	1
+44Z1	Serum fructosamine	1
+44f1	Serum fasting glucose level	2
+451E	GFR calculated abbreviated MDRD	5
+451F	Glomerular filtration rate	2
+4618	Urine dipstick test	5
+467	Urine protein test	1
+4672	Urine protein test negative	1
+46M7	Urine creatinine	3
+46N8	Urine microalbumin profile	2
+46TC	Urine albumin:creatinine ratio	5
+46U	Urine culture	1
+46W	Urine microalbumin	4
+46W2	Microalbumin excretion rate	1
+4JJ	Urine sample for organism	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+8B63	Salicylate prophylaxis	1
+8H4	Referral to physician	1
+8H62	Referral to G.P.	1
+8H71	Refer to practice nurse	1
+8H7n	Referral to retinal screener	1
+8H8	Follow-up arranged	1
+8H85	Follow-up 2 weeks	1
+8HQ1	Refer for X-Ray	1
+8HT3	Referral to audiology clinic	1
+8Hd	Admission to hospital	1
+9N0Q	Seen in speech and language clinic	1
+9N1y8	Seen in oncology clinic	2
+9N2U	Seen by optician	1
+9N31	Telephone encounter	1
+9N3A	Telephone triage encounter	1
+9hA1	Excepted from asthma quality indicators: Patient unsuitable	1
+9i20	English - ethnic category 2001 census	1
+A53	Herpes zoster	2
+C10	Diabetes mellitus	1
+C1000	Diab.mell.no comp. - juvenile	1
+C108	Insulin dependent diabetes mellitus	3
+F4A40	Unspecified keratoconjunctivitis	1
+F5603	Active vestibular Meniere's disease	1
+Fyu51	[X]Other epilepsy	1
+Fyu5E	[X]Chronic headache disorder	1
+H037	Recurrent acute tonsillitis	1
+H22	Other bacterial pneumonia	1
+ISTA10053BRIDL	Ismo  Tablets  10 mg	1
+M0150	Boil of anus	2
+N047	Seropositive errosive rheumatoid arthritis	1
+P42z1	Darwin's tubercle	1
+ZV125	[V]Personal history of circulatory system disease	3
+bh63	DOXAZOSIN 4mg tablets	2
+bh65	CARDURA 2mg tablets	2
+bi61	RAMIPRIL 1.25mg capsules	3
+bi67	RAMIPRIL 10mg capsules	11
+bk32	LOSARTAN POTASSIUM 50mg tablets	22
+bl1v	*GLYTRIN 400micrograms spray	4
+bl39	ISMO 10mg tablets	6
+bl5h	DILTIAZEM HYDROCHLORIDE 200mg m/r capsules	1
+bl8h	*NIFENSAR XL 20mg m/r tablets	12
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	7
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	3
+bx11	BEZALIP 200mg tablets	25
+bx85	NICOTINIC ACID 500mg m/r tablets	1
+bxkz	ROSUVASTATIN 40mg tablets	1
+du73	NIQUITIN CQ 4mg mint chewing gum	1
+e74y	DEMECLOCYCLINE HCL 150mg capsules	1
+f141	NOVORAPID 100units/mL injection vial	19
+f252	HYPURIN ISOPHANE 100iu/mL injection 10mL	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	1
+f321	CHLORPROPAMIDE 100mg tablets	3
+f334	*SEMI-DAONIL 2.5mg tablets	1
+f417	GLUCOPHAGE SR 500mg m/r tablets	1
+j2ew	PIROXICAM 20mg melt in the mouth tablets	2

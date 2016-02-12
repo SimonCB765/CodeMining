@@ -1,0 +1,110 @@
+Code	Description	Count
+136	Alcohol consumption	6
+1371	Never smoked tobacco	4
+1381	Exercise physically impossible	2
+1383	Enjoys light exercise	1
+1Z13	Chronic kidney disease stage 4	1
+229	O/E - height	5
+22A	O/E - weight	12
+22K	Body Mass Index	11
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	3
+29BB	10g monofilament sensation R foot normal	1
+2BB4	O/E - retinal microaneurysms	1
+2BBF	Retinal abnormality - diabetes related	2
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42R	Serum iron tests	1
+42R5	Serum TIBC	2
+42R7	Serum iron level	1
+42T	Serum vitamin B12	1
+42U4	Red blood cell folate	1
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	9
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44J3	Serum creatinine	15
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	6
+44Q	Serum triglycerides	5
+44g	Plasma glucose level	6
+451E	GFR calculated abbreviated MDRD	10
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	2
+4675	Urine protein test = ++	1
+4692	Urine blood test = negative	2
+46M7	Urine creatinine	3
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	5
+46X1	Urine nitrite negative	1
+46f1	Urine leucocyte test = negative	1
+5853	U-S heart scan	1
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	4
+66AD	Fundoscopy - diabetic check	1
+6791	Health ed. - smoking	3
+67I7	Advice about foot care	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+68A8	Digital retinal screening	1
+792	Coronary artery operations	3
+8A17	Self monitoring of blood glucose	2
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	2
+8Hd	Admission to hospital	1
+8I26	Beta blocker contraindicated	2
+8I64	Angiotensin converting enzyme inhibitor not indicated	3
+8I65	Warfarin not indicated	3
+8I6B	Clopidogrel not indicated	2
+8I6C	Angiotensin II receptor antagonist not indicated	2
+8I6a	Dipyridamole not indicated	1
+8I74	Angiotensin converting enzyme inhibitor not tolerated	2
+9180	Carer's details	1
+9N1Q	Seen in diabetic clinic	1
+9N2e	Seen by ophthalmologist	2
+9N42	Did not attend - no reason	1
+A53	Herpes zoster	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	17
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	22
+BUTA434	Bumetanide  Tablets  1 mg	19
+C10	Diabetes mellitus	4
+C10FJ	Insulin treated Type 2 diabetes mellitus	1
+CAEF9656BRIDL	Cacit  Effervescent tablet  1.25 grams	6
+CAGR22795EMIS	Calcidrink  Granules  2.52 grams/sachet	16
+CAM/18447NEMIS	Cardioplen Xl  M/R tablets  5 mg	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+E201	Hysteria	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F4430	Anterior uveitis	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	7
+FRTA1248	Frusemide  Tablets  20 mg	4
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G240	Secondary malignant hypertension	1
+G570	Paroxysmal supraventricular tachycardia	1
+G572z	Paroxysmal tachycardia NOS	1
+G57y3	Sick sinus syndrome	1
+G581	Left ventricular failure	1
+GASTOLO2	Unknown vendor specific drug	1
+H014	Acute rhinosinusitis	2
+HUPE31301EMIS	Human Insulatard Ge  Penfill cartridges (3 ml)  100 units/ml	4
+J10y5	Laryngopharyngeal reflux	1
+LMRGPAP3	Unknown vendor specific drug	4
+MIM/19546EMIS	Minocycline  M/R capsules  100 mg	3
+N0941	Arthralgia of the shoulder region	1
+NIM/21970EMIS	Nitrofurantoin  M/R capsules  100 mg	22
+Pyu70	[X]Other cystic kidney diseases	1
+S23	Fracture of radius and ulna	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	2
+SLTA4320	Slow-Fe  Tablets  160 mg	6

@@ -1,0 +1,109 @@
+Code	Description	Count
+134A	West Indian origin	1
+136	Alcohol consumption	9
+1371	Never smoked tobacco	5
+1383	Enjoys light exercise	1
+229	O/E - height	16
+22A	O/E - weight	20
+22K	Body Mass Index	19
+22N0	Waist circumference	4
+2469	O/E - Systolic BP reading	28
+29BB	10g monofilament sensation R foot normal	1
+2G5F	O/E - Right diabetic foot at moderate risk	1
+2G5J	O/E - Left diabetic foot at moderate risk	1
+311A	Monofilament foot sensation test	3
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	17
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	7
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44J3	Serum creatinine	25
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	4
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	7
+44TJ	Blood glucose level	6
+44U	Blood glucose result	1
+44g	Plasma glucose level	1
+451E	GFR calculated abbreviated MDRD	7
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	4
+4674	Urine protein test = +	2
+4675	Urine protein test = ++	2
+4682	Urine ketone test negative	2
+46M7	Urine creatinine	3
+46TC	Urine albumin:creatinine ratio	7
+46W	Urine microalbumin	3
+58C1	Retinal photography	1
+66A5	Diabetic on insulin	4
+66Ac	Diabetic peripheral neuropathy screening	2
+6792	Health ed. - alcohol	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	5
+8A17	Self monitoring of blood glucose	3
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	4
+8CAL	Smoking cessation advice	2
+8CAM	Patient advised about alcohol	1
+8H7R	Refer to chiropodist	1
+8I6C	Angiotensin II receptor antagonist not indicated	1
+9N2V	Seen by optometrist	1
+9N2e	Seen by ophthalmologist	2
+9N4	Failed encounter	1
+9N41	Did not attend - reason given	2
+9N43	Patient too late	1
+9NNC	Under care of retinal screener	1
+9i3	White and Black Caribbean - ethnic category 2001 census	1
+9iB	Caribbean - ethnic category 2001 census	4
+AB230	Candidal intertrigo	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	15
+AMTA9080EMIS	Amlodipine Besilate  Tablets  10 mg	3
+ASTA4609	Aspirin  Tablets  75 mg	17
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	9
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	20
+BETA302	Bendrofluazide  Tablets  2.5 mg	4
+CONI10141BRIDL	Convatec  Night drainage bags  s320	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+DITA884	Diclofenac Sodium  M/R tablets  100 mg	9
+DITA885	Diclofenac Sodium  Tablets  25 mg	3
+DITA886	Diclofenac Sodium  Tablets  50 mg	5
+E3	Mental retardation	5
+EMISSPR101	Unknown vendor specific drug	1
+EMISSPR110	Unknown vendor specific drug	28
+F35z	Mononeuritis of unspecified site NOS	1
+F42z	Retinal disorder NOS	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	1
+F5921	"Mix cond/sensin hear loss	1
+Fyu51	[X]Other epilepsy	2
+Hz	Respiratory system diseases NOS	10
+K19C	Other obstructive and reflux uropathy	1
+L43z4	Obstetric pulmonary embolism NOS with postnatal complication	1
+LEIGHTH12	Unknown vendor specific drug	1
+LETA32002EMIS	Lercanidipine Hydrochloride  Tablets  10 mg	4
+LETA32270EMIS	Levofloxacin  Tablets  500 mg	1
+LITA30125EMIS	Lipitor  Tablets  20 mg	5
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+N0516	Local.primary OA-lower leg	1
+NEIN34448EMIS	Neorecormon  Injection (Prefilled Syringe)  2000 units/syringe	1
+NIM/21970EMIS	Nitrofurantoin  M/R capsules  100 mg	12
+POTA2309	Ponstan  Tablets forte  500 mg	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	4
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	7
+U10z	[X]Unspecified fall	3
+U6000	[X]Penicillins causing adverse effects in therapeutic use	2

@@ -1,0 +1,118 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	8
+1371	Never smoked tobacco	3
+1A23	Incontinence of urine	1
+229	O/E - height	2
+22A	O/E - weight	15
+22K	Body Mass Index	11
+22N0	Waist circumference	2
+246	O/E - blood pressure reading	7
+2469	O/E - Systolic BP reading	12
+24E8	O/E - R.dorsalis pedis present	1
+29B7	10g monofilament sensation present	2
+2BBJ	O/E - no right diabetic retinopathy	2
+2BBQ	O/E - left eye background diabetic retinopathy	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	6
+42QE	International normalised ratio	1
+42R4	Serum ferritin	2
+42W	Hb. A1C - diabetic control	5
+42W4	HbA1c level (DCCT aligned)	3
+42W5	Haemoglobin A1c level - IFCC standardised	2
+43Z20	Prostate specific antigen normal	1
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	5
+44I5	Serum sodium	2
+44J3	Serum creatinine	21
+44J9	Serum urea level	2
+44Le	Plasma vitamin B12 level	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	16
+44TB	Haemoglobin A1c level	11
+44TC	Haemoglobin A1 level	1
+44U	Blood glucose result	1
+44g	Plasma glucose level	2
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	10
+4614	Urinalysis = abnormal	1
+4671	Urine protein test not done	1
+4676	Urine protein test = +++	1
+4678	Proteinuria	1
+46M7	Urine creatinine	1
+46N	Urine protein	1
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	5
+5853	U-S heart scan	1
+585W	Right dorsalis pedis doppler pressure	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+66Ae	HBA1c target	2
+6791	Health ed. - smoking	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+792	Coronary artery operations	2
+79294	Insertion of coronary artery stent	1
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	4
+8H	Referral for further care	2
+8H44	Cardiological referral	1
+8H54	Orthopaedic referral	1
+8H5B	Referred to urologist	1
+9N2S	Seen by practice phlebotomist	2
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	1
+9N42	Did not attend - no reason	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	11
+ATTA231	Atenolol  Tablets  50 mg	10
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	2
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	9
+C1000	Diab.mell.no comp. - juvenile	1
+C106	Diabetes mellitus with neurological manifestation	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	2
+CLM/30085EMIS	Clarithromycin  M/R tablets  500 mg	2
+CLTA9105EMIS	Clarithromycin  Tablets  250 mg	2
+E3	Mental retardation	1
+EllioBR1	Unknown vendor specific drug	3
+F5921	"Mix cond/sensin hear loss	3
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	3
+FOCA24991EMIS	Foley  Catheter (male)  12 ch	1
+FRTA1248	Frusemide  Tablets  20 mg	10
+Fyu51	[X]Other epilepsy	1
+G11z	Mitral valve disease NOS	2
+G121	Rheumatic aortic insufficiency	1
+G240	Secondary malignant hypertension	1
+G5700	Paroxysmal atrial tachycardia	1
+Hz	Respiratory system diseases NOS	1
+ISDU10518BRIDL	Isosorbide Mononitrate  Durules  60 mg	1
+J1y	"Other specified disorders of oesophagus	1
+L2463	Other cervical abn complicating a/n care- baby not delivered	4
+LMRGPAP3	Unknown vendor specific drug	2
+LMRGPGP2	Unknown vendor specific drug	2
+M21yC	Insulin lipohypertrophy	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	10
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	5
+NIM/21927EMIS	Nicardipine Hydrochloride  M/R capsules  45 mg	1
+OLCA9765HILLI	Olbetam  Capsules  250 mg	2
+PE1	Congenital sternomastoid torticollis	10
+PK61	Sturge-Weber syndrome	1
+TETA3341NEMIS	Teveten  Tablets  600 mg	1
+bB1y	IVABRADINE 7.5mg tablets	3
+bi28	INNOZIDE 20/12.5mg tablets	23
+bi67	RAMIPRIL 10mg capsules	1
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	2

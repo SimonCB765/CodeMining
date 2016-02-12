@@ -1,0 +1,109 @@
+Code	Description	Count
+1359	Islam	1
+136	Alcohol consumption	14
+1371	Never smoked tobacco	2
+137G	Trying to give up smoking	2
+137S	Ex smoker	4
+13A5	Low salt diet	1
+13l6	Main spoken language Gujerati	1
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	5
+22A	O/E - weight	20
+22K	Body Mass Index	20
+22N0	Waist circumference	3
+2469	O/E - Systolic BP reading	23
+29B7	10g monofilament sensation present	4
+2BB1	O/E - retina normal	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	11
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44J3	Serum creatinine	13
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	9
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	8
+44TC	Haemoglobin A1 level	2
+44g	Plasma glucose level	1
+44g1	Plasma fasting glucose level	3
+44lD	Urine protein/creatinine ratio	8
+451E	GFR calculated abbreviated MDRD	8
+451F	Glomerular filtration rate	1
+461	Urine exam. - general	1
+467	Urine protein test	1
+4672	Urine protein test negative	3
+4674	Urine protein test = +	1
+46M7	Urine creatinine	6
+46N	Urine protein	6
+46N4	Urine albumin	10
+46TC	Urine albumin:creatinine ratio	10
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	7
+67I8	Advice about taking aspirin	2
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	4
+792	Coronary artery operations	2
+8A17	Self monitoring of blood glucose	3
+8B2B	Nicotine replacement therapy	1
+8CA4	Patient advised re diet	8
+8CA5	Patient advised re exercise	9
+8H44	Cardiological referral	1
+8H7i	Referral to smoking cessation advisor	2
+8H7n	Referral to retinal screener	6
+8HBH	Diabetic retinopathy 6 month review	1
+8I3Q	Pneumococcal vaccination declined	2
+9N1v	Seen in diabetic eye clinic	1
+9N2S	Seen by practice phlebotomist	4
+9N2f	Seen by retinal screener	1
+9N42	Did not attend - no reason	1
+9S	Ethnic groups (census)	1
+9S6	Indian	2
+9i7	Indian or British Indian - ethnic category 2001 census	6
+A0803	Infectious gastroenteritis	1
+AB2	Candidiasis	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	2
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	4
+ASTA4609	Aspirin  Tablets  75 mg	12
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	19
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	8
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	10
+C10	Diabetes mellitus	5
+C1000	Diab.mell.no comp. - juvenile	1
+F4K2z	Vitreous disorders NOS	2
+FOCA24991EMIS	Foley  Catheter (male)  12 ch	2
+Fyu4	[X]Demyelinating diseases of the central nervous system	1
+G303	Acute inferoposterior infarction	1
+G570	Paroxysmal supraventricular tachycardia	2
+G65zz	Transient cerebral ischaemia NOS	3
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+H037	Recurrent acute tonsillitis	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	7
+IBSY1428	Ibuprofen  Syrup  100 mg/5 ml	4
+L264z	Intrauterine death NOS	6
+MACA8841BRIDL	Maxepa  Capsules  1 gram	4
+N050	Generalised osteoarthritis - OA	2
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	6
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	8
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	10
+R00zW	"[D]State of emotional shock and stress	2
+SCCA19035EMIS	Scott  Catheters  10 ch	2
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1
+SETA2517	Securon Sr  Tablets  240 mg	5
+SLTA4320	Slow-Fe  Tablets  160 mg	1
+SLTA4321	Slow-Fe Folic  Tablets	2

@@ -1,0 +1,138 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C2	FH: Ischaemic heart dis. <60	1
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	8
+1371	Never smoked tobacco	2
+1381	Exercise physically impossible	1
+1383	Enjoys light exercise	2
+13l4	Main spoken language English	1
+1AZ2	Fertility problem	2
+22A	O/E - weight	13
+22K	Body Mass Index	12
+22N0	Waist circumference	6
+2469	O/E - Systolic BP reading	25
+29BB	10g monofilament sensation R foot normal	2
+29H5	O/E - Vibration sense of right foot normal	1
+2BBP	O/E - right eye background diabetic retinopathy	2
+2BBQ	O/E - left eye background diabetic retinopathy	1
+2G5	O/E - foot	1
+2G5F	O/E - Right diabetic foot at moderate risk	1
+3129	Eye fundus photography	4
+3213	Exercise ECG	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42W4	HbA1c level (DCCT aligned)	22
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	28
+44J7	Albumin / creatinine ratio	1
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	20
+44P5	Serum HDL cholesterol level	19
+44P6	Serum LDL cholesterol level	18
+44Q	Serum triglycerides	20
+44TJ	Blood glucose level	1
+4614	Urinalysis = abnormal	1
+4615	MSU sent to lab.	2
+4621	Urine = normal on inspection	2
+4662	Urine glucose test negative	1
+4666	Urine glucose test = +++	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	1
+467Z	Urine protein test NOS	1
+46M7	Urine creatinine	4
+46N4	Urine albumin	1
+46N8	Urine microalbumin profile	3
+46TC	Urine albumin:creatinine ratio	6
+46W	Urine microalbumin	5
+58C1	Retinal photography	1
+6219	Patient ? pregnant	1
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A5	Diabetic on insulin	1
+66AD	Fundoscopy - diabetic check	1
+66U7	HRT started	1
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	3
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+79275	Open angioplasty of coronary artery	1
+79294	Insertion of coronary artery stent	7
+8B63	Salicylate prophylaxis	1
+8CA5	Patient advised re exercise	1
+8H	Referral for further care	1
+8H21	Admit medical emergency unsp.	1
+8H44	Cardiological referral	1
+8H5	Referral to surgeon	1
+8H53	ENT referral	1
+8Hd	Admission to hospital	3
+8I27	Statins contraindicated	1
+8I6F	Diabetic retinopathy screening not indicated	1
+8I73	Beta blocker not tolerated	3
+8I74	Angiotensin converting enzyme inhibitor not tolerated	3
+8I76	Statin not tolerated	1
+9N2V	Seen by optometrist	3
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	1
+9N42	Did not attend - no reason	1
+9S1	White	1
+9S10	White British	1
+A781	Viral warts	1
+A79z	Viral infection NOS	1
+ALTA69	Aldomet  Tablets  250 mg	3
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	11
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	2
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	3
+C10	Diabetes mellitus	11
+C109	Non-insulin dependent diabetes mellitus	1
+CACA8311EGTON	Catheter Foley5/ 10Ml Balloon Silast  Catheter  5.3mm	2
+CAEF19099NEMIS	Calcium Carbonate And Colecalciferol  Effervescent granules  1.25 grams + 11 micrograms (440 units)	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	12
+D403	Eosinophilia	1
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+DITA4858	Distigmine Bromide  Tablets  5 mg	1
+DITA929	Dipyridamole  Tablets  100 mg	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F4B	Corneal opacity and other disorders of cornea	1
+FECA24144EMIS	Fenofibrate  Capsules  200 mg	1
+FLCA8419EGTON	Fluconazole  Capsules  150 mg	9
+Fyu51	[X]Other epilepsy	5
+G11z	Mitral valve disease NOS	2
+G84	Haemorrhoids	3
+GASTOSE5	Unknown vendor specific drug	1
+GASTOUN2	Unknown vendor specific drug	4
+GASTOUR3	Unknown vendor specific drug	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H1y1A	Nasal furuncle	1
+HEWITCA1	Unknown vendor specific drug	3
+HUCA32498EMIS	Humulin I  Cartridges (3 Ml)  100 units/ml	1
+HUCA35540EMIS	Humalog Mix25  Cartridges (3 Ml)  100 units/ml	1
+IBSY1428	Ibuprofen  Syrup  100 mg/5 ml	1
+ISTA1519	Isosorbide Dinitrate  Tablets  10 mg	1
+K0D	End-stage renal disease	2
+LEIGHTH12	Unknown vendor specific drug	3
+N0513	Local.primary OA-forearm	1
+N0516	Local.primary OA-lower leg	1
+NATA31094EMIS	Naratriptan Hydrochloride  Tablets  2.5 mg	5
+NITR22499EMIS	Nicorette  Transdermal patches  5 mg/16 hrs	1
+Pyu70	[X]Other cystic kidney diseases	1
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	1
+QUTA4249	Quinine Sulphate  Tablets  200 mg	1
+R1431	[D]Electrocardiogram (ECG) abnormal	2
+S3034	 intertrochant"	1
+URBL8716BRIDL	Uro-Tainer Suby G  Sachets	8
+URCA14420NEMIS	Uro-Tainer Sodium Chloride  Catheter maintenance solution  0.9 %, 50 ml	2
+Y2383	Unknown vendor specific drug	1

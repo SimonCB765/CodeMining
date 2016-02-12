@@ -1,0 +1,112 @@
+Code	Description	Count
+136	Alcohol consumption	9
+1374	Moderate smoker - 10-19 cigs/d	1
+137G	Trying to give up smoking	1
+137S	Ex smoker	3
+229	O/E - height	4
+22A	O/E - weight	17
+22K	Body Mass Index	17
+22N0	Waist circumference	1
+246	O/E - blood pressure reading	6
+2469	O/E - Systolic BP reading	15
+24E8	O/E - R.dorsalis pedis present	1
+24E9	O/E - R.dorsalis pedis absent	1
+29B7	10g monofilament sensation present	1
+423	Haemoglobin estimation	8
+4258	Haematocrit	3
+426	Red blood cell (RBC) count	1
+428	Mean corpusc. haemoglobin(MCH)	5
+42A	Mean corpuscular volume (MCV)	5
+42N	Monocyte count	2
+42P	Platelet count	3
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	3
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G9	Serum gamma-glutamyl transferase level	1
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	20
+44J9	Serum urea level	2
+44Le	Plasma vitamin B12 level	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	10
+44PF	Total cholesterol:HDL ratio	9
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	13
+44g	Plasma glucose level	4
+44lD	Urine protein/creatinine ratio	9
+451E	GFR calculated abbreviated MDRD	11
+4667	Urine glucose test = ++++	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	2
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	3
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	7
+46W	Urine microalbumin	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	3
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+8A17	Self monitoring of blood glucose	1
+8B2B	Nicotine replacement therapy	2
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	4
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	4
+8H48	Gastroenterological referral	1
+8H71	Refer to practice nurse	1
+8H76	Refer to dietician	1
+8H7F	Referred to dentist	1
+8H7n	Referral to retinal screener	1
+8H7o	Fast track referral	1
+8H8C	Follow up 6 weeks	1
+8HE1	Discharged from outpatients	1
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	1
+9N31	Telephone encounter	1
+9NU1	Interpreter not needed	1
+9S1	White	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	7
+BESC348	Betamethasone Valerate  Scalp application  0.1 %	1
+C10	Diabetes mellitus	2
+CAIN4534NEMIS	Calciferol  Injection  300,000 units/ml, 1 ml ampoule	8
+CHRSPLE5	Unknown vendor specific drug	2
+CITA15860NEMIS	Cipralex  Tablets  20 mg	12
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+E200z	Anxiety state NOS	1
+F5900	"Conductive hearing loss	3
+HEWITCA1	Unknown vendor specific drug	5
+HYTA8712EGTON	Hytrin  Tablets  5 mg	1
+L43z4	Obstetric pulmonary embolism NOS with postnatal complication	2
+LEIGHTH12	Unknown vendor specific drug	1
+NICA6970	Nitrofurantoin  Capsules  50 mg	1
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	5
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	4
+SETA2517	Securon Sr  Tablets  240 mg	1
+SETA4308	Semi-Daonil  Tablets  2.5 mg	1
+SUE/17828NEMIS	Sulfasalazine  E/c tablets  500 mg	3
+TEGE25620NEMIS	Testosterone  Gel  2 %, 3 x 60 gram Multi-Dose Dispenser	1
+URNI10806BRIDL	Uriplan  Night drainage bags  D81-3131	2
+Ua0Z8	Unknown vendor specific drug	1
+bh62	DOXAZOSIN 2mg tablets	1
+bh63	DOXAZOSIN 4mg tablets	3
+bk31	LOSARTAN POTASSIUM 25mg tablets	6
+bk32	LOSARTAN POTASSIUM 50mg tablets	3
+br2C	000iu/0.4mL syrg"	2
+ja1y	PIROXICAM 0.5% topical gel	1

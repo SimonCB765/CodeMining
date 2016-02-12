@@ -1,0 +1,111 @@
+Code	Description	Count
+03I	Opticians	1
+12C3	FH: Ischaemic heart dis. >60	1
+1F91	Regularly eats 3 meals/day	1
+1Z12	Chronic kidney disease stage 3	2
+1Z13	Chronic kidney disease stage 4	2
+229	O/E - height	12
+22A	O/E - weight	14
+22K	Body Mass Index	12
+22N0	Waist circumference	1
+246	O/E - blood pressure reading	7
+2469	O/E - Systolic BP reading	11
+246A	O/E - Diastolic BP reading	11
+24E8	O/E - R.dorsalis pedis present	2
+29B1	O/E - tactile sensation normal	1
+29BC	10g monofilament sensation L foot normal	1
+2BB	O/E - retinal inspection	1
+2BB1	O/E - retina normal	1
+3128	Fundoscopy	1
+32	Electrocardiography	3
+423	Haemoglobin estimation	5
+4258	Haematocrit	1
+426	Red blood cell (RBC) count	1
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	6
+42N	Monocyte count	2
+42P	Platelet count	4
+42QE	International normalised ratio	1
+42R	Serum iron tests	1
+42R4	Serum ferritin	2
+42R5	Serum TIBC	1
+42R7	Serum iron level	1
+42R9	Saturation of iron binding capacity	1
+44CS	Serum C reactive protein level	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	19
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	24
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	5
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	8
+44TB	Haemoglobin A1c level	12
+44TK	Fasting blood glucose level	1
+44g	Plasma glucose level	6
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	17
+4672	Urine protein test negative	2
+4674	Urine protein test = +	2
+46M7	Urine creatinine	6
+46TC	Urine albumin:creatinine ratio	3
+46W	Urine microalbumin	4
+46W0	Urine microalbumin positive	1
+554	Coronary arteriogr.-general	1
+6572	Pneumococcal vaccination	1
+6896	Depression screening using questions	1
+68A7	Diabetic retinopathy screening	1
+7M332	Epidural anaesthesic using sacral approach	1
+8A52	Continuous ECG monitoring	1
+8B57	Weight reducing diet	1
+8B63	Salicylate prophylaxis	3
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	1
+8CB	Had a chat to patient	2
+8H	Referral for further care	1
+8HBG	Diabetic retinopathy 12 month review	1
+8Hl1	Referral for diabetic retinopathy screening	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I26	Beta blocker contraindicated	1
+9SZ	Ethnic groups (census) NOS	1
+9h0	Exception reporting: CHD quality indicators	1
+9h1	Exception reporting: LVD quality indicators	1
+9i20	English - ethnic category 2001 census	1
+C10	Diabetes mellitus	1
+Fyu4	[X]Demyelinating diseases of the central nervous system	2
+G11z	Mitral valve disease NOS	1
+G12	Rheumatic aortic valve disease	1
+H00	Acute nasopharyngitis	1
+H036	Acute viral tonsillitis	1
+U60J8	[X]Pneumococcal vacc causing adverse effects therapeutic use	1
+Xa0rp	Unknown vendor specific drug	1
+Xa2h7	Unknown vendor specific drug	1
+b51A	CO-TRIAMTERZIDE 50/25mg tablets	1
+bB1y	IVABRADINE 7.5mg tablets	5
+bdl4	CARVEDILOL 25mg tablets	2
+be3y	MINOXIDIL 5mg tablets	2
+bi2y	ENALAPRIL MALEATE 20mg tablets	13
+bi33	LISINOPRIL 10mg tablets	14
+bi3c	ZESTRIL 2.5mg tablets 28CP	1
+bx11	BEZALIP 200mg tablets	24
+ei92	FAMCICLOVIR 250mg tablets	8
+f27e	HUMULIN M3 30/70 cartridges 1.5mL	2
+f27g	HUMULIN M4 40/60 cartridges 1.5mL	8
+fe4a	EFCORTESOL 500mg/5mL injection	2
+fi71	DUTASTERIDE 500micrograms capsules	1
+fo1z	DISODIUM ETIDRONATE 200mg tablets	5
+heGz	EXEMESTANE 25mg tablets	1
+i112	*FERSAMAL 200mg tablets	1
+j282	IBUPROFEN 400mg tablets	1
+j28B	IBUPROFEN 800mg m/r tablets	2
+j2e3	FELDENE 10mg capsules	2
+jA58	ETORICOXIB 30mg tablets	1

@@ -1,0 +1,110 @@
+Code	Description	Count
+03I	Opticians	1
+12C2	FH: Ischaemic heart dis. <60	1
+1371	Never smoked tobacco	1
+13A4	Low fat diet	1
+229	O/E - height	15
+22A	O/E - weight	26
+22K	Body Mass Index	25
+246	O/E - blood pressure reading	10
+2464	O/E - BP reading normal	1
+2465	O/E - BP borderline raised	1
+2466	O/E - BP reading raised	1
+2469	O/E - Systolic BP reading	18
+246A	O/E - Diastolic BP reading	17
+24E6	O/E - R.post.tib.pulse present	1
+24E8	O/E - R.dorsalis pedis present	1
+29B7	10g monofilament sensation present	1
+29H1	O/E - vibration sense normal	1
+2BB	O/E - retinal inspection	2
+2BB1	O/E - retina normal	1
+2G5A	O/E - Right diabetic foot at risk	1
+2G5B	O/E - Left diabetic foot at risk	1
+3129	Eye fundus photography	1
+321	ECG - general	1
+3212	Standard ECG	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	1
+426	Red blood cell (RBC) count	1
+428	Mean corpusc. haemoglobin(MCH)	1
+429	Mean corpusc. Hb. conc. (MCHC)	1
+42A	Mean corpuscular volume (MCV)	3
+42N	Monocyte count	1
+42P	Platelet count	1
+42W4	HbA1c level (DCCT aligned)	3
+42W5	Haemoglobin A1c level - IFCC standardised	2
+42c	HbA1 - diabetic control	3
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44J3	Serum creatinine	15
+44J9	Serum urea level	3
+44JF	Plasma creatinine level	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	5
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	9
+44Q4	Serum fasting triglyceride level	1
+44TB	Haemoglobin A1c level	14
+44TK	Fasting blood glucose level	1
+44e	Plasma triglyceride level	3
+44f0	Serum random glucose level	2
+44f1	Serum fasting glucose level	2
+451E	GFR calculated abbreviated MDRD	9
+46	Urine examination	5
+4672	Urine protein test negative	5
+46M7	Urine creatinine	6
+46N8	Urine microalbumin profile	1
+46TC	Urine albumin:creatinine ratio	3
+46W	Urine microalbumin	5
+554	Coronary arteriogr.-general	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+7P0H0	Transthoracic echocardiography	1
+8A52	Continuous ECG monitoring	1
+8CA4	Patient advised re diet	2
+8CB	Had a chat to patient	1
+8H	Referral for further care	1
+8HBG	Diabetic retinopathy 12 month review	1
+9N2U	Seen by optician	1
+9SZ	Ethnic groups (census) NOS	1
+9i0	British or mixed British - ethnic category 2001 census	1
+C10	Diabetes mellitus	1
+E0020	Senile dementia with paranoia	1
+E01y	Other alcoholic psychosis	1
+Eu002	"[X]Dementia in Alzheimer's dis	1
+Fyu4	[X]Demyelinating diseases of the central nervous system	2
+Fyu51	[X]Other epilepsy	1
+G11z	Mitral valve disease NOS	1
+G20	Essential hypertension	1
+G3400	Single coronary vessel disease	1
+U60E3	[X]Benzothiadiazine derivs caus advers effect in therap use	2
+WEPRSFH2	Unknown vendor specific drug	1
+X00vV	Unknown vendor specific drug	1
+XM06b	Unknown vendor specific drug	1
+Xa0rp	Unknown vendor specific drug	1
+ZETA8602EGTON	Zestril  Tablets  20 mg	1
+ZV125	[V]Personal history of circulatory system disease	9
+bd35	ATENOLOL 50mg tablets	18
+bh61	DOXAZOSIN 1mg tablets	11
+bh62	DOXAZOSIN 2mg tablets	2
+bh63	DOXAZOSIN 4mg tablets	4
+bi33	LISINOPRIL 10mg tablets	44
+blk6	ISODUR 25XL m/r capsules	3
+blkA	MONOMAX XL 60mg m/r tablets	3
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	3
+bn5x	MOXISYLYTE 40mg tablets	1
+br2C	000iu/0.4mL syrg"	10
+bx13	BEZAFIBRATE 200mg tablets	20
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	7
+d7fz	TRIMIPRAMINE 25mg tablets	2
+da81	NEFAZODONE HYDROCHLORIDE 100mg tablets	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	19
+jA16	*VIOXXACUTE 50mg tablets	1

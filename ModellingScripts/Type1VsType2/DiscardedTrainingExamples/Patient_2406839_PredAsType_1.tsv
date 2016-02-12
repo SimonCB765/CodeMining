@@ -1,0 +1,121 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	1
+1351	Church of England	1
+1361	Teetotaller	9
+1374	Moderate smoker - 10-19 cigs/d	3
+1375	Heavy smoker - 20-39 cigs/day	1
+1379	Ex-moderate smoker (10-19/day)	1
+137R	Current smoker	1
+137T	Date ceased smoking	1
+137V	Smoking reduced	1
+1381	Exercise physically impossible	3
+1383	Enjoys light exercise	1
+1384	Enjoys moderate exercise	2
+13A3	Weight reducing diet	1
+13AC	Diabetic weight reducing diet	1
+229	O/E - height	13
+22A	O/E - weight	17
+22K	Body Mass Index	17
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	22
+29BC	10g monofilament sensation L foot normal	3
+2BB1	O/E - retina normal	1
+2BBF	Retinal abnormality - diabetes related	2
+31280	Fundoscopy normal	1
+3216	ECG normal	2
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	15
+42W5	Haemoglobin A1c level - IFCC standardised	3
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44I4	Serum potassium	11
+44I5	Serum sodium	2
+44I8	Serum calcium	2
+44J3	Serum creatinine	18
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	1
+44Q	Serum triglycerides	4
+44U	Blood glucose result	1
+44g	Plasma glucose level	1
+451E	GFR calculated abbreviated MDRD	9
+4665	Urine glucose test = ++	1
+467	Urine protein test	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	2
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	6
+65720	Pneumococcal vaccination given	1
+6799	Health ed. - diet	8
+6891	Depression screen	2
+6896	Depression screening using questions	2
+8B2B	Nicotine replacement therapy	5
+8B6A	Statin prophylaxis	2
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	6
+8CAM	Patient advised about alcohol	5
+8H	Referral for further care	4
+8H52	Ophthalmological referral	1
+8H5B	Referred to urologist	1
+8H7i	Referral to smoking cessation advisor	2
+8HTJ	Referral to rapid access chest pain clinic	1
+8I24	Aspirin prophylaxis contra-indicated	8
+8I74	Angiotensin converting enzyme inhibitor not tolerated	2
+9N0l	Seen in out of hours centre	1
+9N19	Seen in hospital casualty	2
+9N2k	Seen by smoking cessation advisor	2
+9N36	Letter from specialist	1
+9S10	White British	4
+A083	Diarrhoea of presumed infectious origin	1
+AB200	Candidiasis of mouth	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	2
+C10	Diabetes mellitus	3
+C10N	Secondary diabetes mellitus	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	9
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	3
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	2
+E200z	Anxiety state NOS	1
+E3	Mental retardation	1
+EMISNQSM3	Unknown vendor specific drug	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	2
+FRTA1247	Frumil  Tablets	10
+Fyu51	[X]Other epilepsy	1
+G221	Benign hypertensive renal disease	1
+G84	Haemorrhoids	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+H014	Acute rhinosinusitis	1
+H224	Pneumonia due to staphylococcus	1
+HEWITCA1	Unknown vendor specific drug	12
+HUCA18384EMIS	Humulin M4  Cartridges (1.5 Ml)	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	6
+ININ32907EMIS	Invicorp 2  Injection	9
+J1212	Chronic duodenal ulcer with perforation	1
+M21yC	Insulin lipohypertrophy	13
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	3
+NIM/16465NEMIS	Niaspan Titration Starter Pack  M/R tablets  7 x 375 mg, 7 x 500 mg, 7 x 750 mg	2
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	3
+PALFRAS1	Unknown vendor specific drug	1
+PJ63	Turner's syndrome	3
+PK61	Sturge-Weber syndrome	7
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	3
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	10
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	3
+R0820	[D]Clot retention of urine	1
+S233	"Open fracture of radius and ulna	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	13
+SETA2508	Secadrex  Tablets	2
+SETA8968EMIS	Seroxat  Tablets  20 mg	8
+TATA5414	Tamoxifen  Tablets  20 mg	1
+TC	Accidental falls	1
+U6040	[X]Fe prep/oth anti-hypochr-anaem prep caus adv eff ther use	1
+URNI10806BRIDL	Uriplan  Night drainage bags  D81-3131	5
+URTA22561EMIS	Urispas  Tablets  200 mg	1
+XE0Sy	Unknown vendor specific drug	1

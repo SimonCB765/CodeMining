@@ -1,0 +1,104 @@
+Code	Description	Count
+136	Alcohol consumption	8
+137P	Cigarette smoker	2
+137S	Ex smoker	4
+138	Exercise grading	4
+13A	Diet - patient initiated	4
+13l4	Main spoken language English	2
+229	O/E - height	1
+22A	O/E - weight	13
+22K	Body Mass Index	15
+22N0	Waist circumference	4
+246	O/E - blood pressure reading	18
+29B7	10g monofilament sensation present	1
+29BC	10g monofilament sensation L foot normal	2
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+3128	Fundoscopy	3
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	14
+42W5	Haemoglobin A1c level - IFCC standardised	3
+43Z2	Prostate specific antigen	1
+44AF	Brain natriuretic peptide level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44J3	Serum creatinine	15
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	16
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	13
+44Q	Serum triglycerides	16
+44TB	Haemoglobin A1c level	4
+451E	GFR calculated abbreviated MDRD	9
+461	Urine exam. - general	1
+4618	Urine dipstick test	4
+467	Urine protein test	4
+46M7	Urine creatinine	3
+46N8	Urine microalbumin profile	2
+46TC	Urine albumin:creatinine ratio	9
+46U	Urine culture	2
+46W	Urine microalbumin	7
+5853	U-S heart scan	2
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	1
+6781	Health education offered	1
+6791	Health ed. - smoking	3
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+8B63	Salicylate prophylaxis	1
+8H7H	Refer to optician	2
+8H7R	Refer to chiropodist	1
+9N1K	Seen in ophthalmology clinic	1
+9N1Q	Seen in diabetic clinic	1
+9N2U	Seen by optician	1
+9N31	Telephone encounter	1
+9N32	Third party encounter	1
+9N36	Letter from specialist	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	3
+C10	Diabetes mellitus	1
+C109	Non-insulin dependent diabetes mellitus	1
+F4J51	Partial oculomotor nerve palsy	1
+FUNDHAU1	Unknown vendor specific drug	1
+Fyu51	[X]Other epilepsy	1
+H014	Acute rhinosinusitis	1
+H02	Acute pharyngitis	1
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	1
+K1012	Acute pyelitis	1
+N01w	"Reactive arthropathy	1
+bi3f	ZESTRIL 5mg tablets	3
+bi3g	ZESTRIL 10mg tablets 28CP	24
+ble3	MOTENS 2mg tablets	1
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	11
+bx63	GEMFIBROZIL 600mg tablets	5
+bxa7	OMACOR 1g capsules	5
+bxd1	SIMVASTATIN 10mg tablets	14
+e222	FLUCLOXACILLIN 500mg capsules	1
+eg14	FURADANTIN 100mg tablets	2
+ei1o	ACICLOVIR 800mg tablets	10
+f25Y	HUMAN ISOPHANE INSULIN 100units/mL injection vials	1
+f25g	*HUMULIN M3 injection 10mL	9
+f25m	HUMAN INSULATARD 100iu/mL preloaded injection pen 3mL	3
+f27p	PENMIX 30/70 preloaded injection pen	1
+f2Ay	INSULIN DETEMIR 100iu/mL prefilled pen	13
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	1
+fi62	FINASTERIDE 5mg tablets	9
+fo14	DIDRONEL PMO tablets	11
+gc6z	ALFUZOSIN HYDROCHLORIDE 10mg m/r tablets	1
+gc81	Unknown vendor specific drug	2
+h141	CYCLOPHOSPHAMIDE 50mg tablets	3
+h82C	NEORAL 100mg capsules	3
+ig1d	CALCICHEW 1.25g chewable tablets	1
+ip3a	CALCIUM AND ERGOCALCIFEROL 400units tablets	1
+j291	INDOMETACIN 25mg capsules	4

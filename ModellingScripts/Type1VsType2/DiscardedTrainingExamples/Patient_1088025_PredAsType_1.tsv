@@ -1,0 +1,122 @@
+Code	Description	Count
+059	Mechanical engineers	1
+136	Alcohol consumption	3
+137L	Current non-smoker	3
+137S	Ex smoker	1
+137T	Date ceased smoking	1
+1A13	Nocturia	4
+1A55	Dysuria	1
+1A57	Pain in testicle	2
+1B17	Depressed	2
+1Z12	Chronic kidney disease stage 3	5
+229	O/E - height	7
+22A	O/E - weight	12
+22K	Body Mass Index	11
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	3
+2BB1	O/E - retina normal	1
+2BBD	O/E - Right retina normal	1
+2BBE	O/E - Left retina normal	1
+31280	Fundoscopy normal	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	2
+42U4	Red blood cell folate	2
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	1
+43Z2	Prostate specific antigen	2
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	36
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	6
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	2
+44U	Blood glucose result	2
+44g	Plasma glucose level	5
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	11
+4613	Urinalysis = no abnormality	1
+467	Urine protein test	2
+4672	Urine protein test negative	2
+46M7	Urine creatinine	3
+46N	Urine protein	1
+46TC	Urine albumin:creatinine ratio	4
+46W	Urine microalbumin	1
+55	Cardiovascular sys.angiography	1
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	4
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	2
+8H2	Emergency hospital admission	1
+8H4C	Referred to chest physician	1
+8H53	ENT referral	1
+8H54	Orthopaedic referral	1
+8H77	Refer to physiotherapist	1
+8H7r	Refer to diabetic foot screener	4
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	1
+9N2U	Seen by optician	3
+9N42	Did not attend - no reason	1
+9i0	British or mixed British - ethnic category 2001 census	3
+A79z	Viral infection NOS	1
+AB220	Candidal balanitis	1
+ADM/22255EMIS	Adizem-Sr  M/R capsules  120 mg	24
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	10
+ATTA229	Atarax  Tablets  25 mg	2
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	11
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	13
+C1000	Diab.mell.no comp. - juvenile	4
+CHRSPLE5	Unknown vendor specific drug	2
+CITA15860NEMIS	Cipralex  Tablets  20 mg	9
+D0130	Combined B12 and folate deficiency anaemia	2
+D4100	Stress polycythaemia	1
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	2
+DIM/24452EMIS	Diclofenac Sodium  M/R capsules  100 mg	1
+E200z	Anxiety state NOS	1
+EPIN34461EMIS	Epoetin Beta  Injection (Prefilled Syringe)  3000 units/syringe	2
+F41y0	Traction retinal detachment	1
+F5603	Active vestibular Meniere's disease	1
+FOM/30026EMIS	Fortipine La  M/R tablets  40 mg	1
+FRTA1247	Frumil  Tablets	5
+Fyu51	[X]Other epilepsy	4
+G240	Secondary malignant hypertension	3
+G84	Haemorrhoids	1
+GASTOTR2	Unknown vendor specific drug	1
+H02	Acute pharyngitis	2
+HUCA18384EMIS	Humulin M4  Cartridges (1.5 Ml)	1
+HUIN3719	Humulin M1  Injection	3
+IRIN11056NEMIS	Iron Hydroxide Dextran Complex  Injection  50 mg/ml, 2 ml ampoule	3
+J1212	Chronic duodenal ulcer with perforation	3
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	24
+MALA14087NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Large- 32mm, 97.32	1
+MANORRE1	Unknown vendor specific drug	20
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	22
+N073	Loose body in knee	1
+N07z	Internal knee derangement NOS	1
+NETA34105EMIS	Neomycin Sulphate  Tablets  500 mg	1
+NISP2003	Nitrolingual  Spray  400 micrograms/dose	1
+PK61	Sturge-Weber syndrome	1
+PUJINST1	Unknown vendor specific drug	1
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	18
+SCCA19035EMIS	Scott  Catheters  10 ch	1
+TETA23675EMIS	Terazosin Hydrochloride  Tablets  2 mg	2

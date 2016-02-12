@@ -1,0 +1,116 @@
+Code	Description	Count
+136	Alcohol consumption	6
+1371	Never smoked tobacco	1
+137L	Current non-smoker	2
+137S	Ex smoker	1
+1383	Enjoys light exercise	3
+13HT1	Stress at home	1
+13l6	Main spoken language Gujerati	1
+1A52	Renal colic	1
+1A57	Pain in testicle	1
+229	O/E - height	8
+22A	O/E - weight	8
+22K	Body Mass Index	10
+22N0	Waist circumference	5
+2469	O/E - Systolic BP reading	13
+29B7	10g monofilament sensation present	4
+2BB1	O/E - retina normal	1
+2BBF	Retinal abnormality - diabetes related	1
+32130	Exercise ECG normal	1
+3217	ECG abnormal	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	5
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	1
+42R7	Serum iron level	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	11
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	9
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	13
+44U	Blood glucose result	2
+44g	Plasma glucose level	1
+44lD	Urine protein/creatinine ratio	3
+451E	GFR calculated abbreviated MDRD	8
+4661	Urine glucose test not done	1
+4664	Urine glucose test = +	1
+4665	Urine glucose test = ++	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	2
+4674	Urine protein test = +	2
+4675	Urine protein test = ++	1
+4678	Proteinuria	1
+4681	Urine ketone test not done	1
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	2
+46N	Urine protein	2
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	5
+554	Coronary arteriogr.-general	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	3
+67E	Foreign travel advice	1
+67I8	Advice about taking aspirin	3
+6896	Depression screening using questions	3
+8A17	Self monitoring of blood glucose	3
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	4
+8H41	General medical referral	1
+8H44	Cardiological referral	1
+8H52	Ophthalmological referral	1
+8H76	Refer to dietician	3
+8H7f	Referral to diabetes nurse	1
+8HC1	Refer to A. & E. department	1
+8I21	Medical C/I to procedure	1
+9N2S	Seen by practice phlebotomist	1
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	3
+9OX5	Influenza vaccination declined	1
+9i7	Indian or British Indian - ethnic category 2001 census	4
+A11	Pulmonary tuberculosis	1
+AB220	Candidal balanitis	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	13
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	14
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	2
+C10	Diabetes mellitus	6
+E200z	Anxiety state NOS	4
+E3	Mental retardation	2
+FRTA1248	Frusemide  Tablets  20 mg	24
+Fyu51	[X]Other epilepsy	2
+G12	Rheumatic aortic valve disease	2
+G570	Paroxysmal supraventricular tachycardia	1
+G57y9	Supraventricular tachycardia NOS	1
+G5803	Compensated cardiac failure	1
+G84	Haemorrhoids	3
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+HEWITAS12	Unknown vendor specific drug	1
+LEIGHUS10	Unknown vendor specific drug	1
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	21
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	19
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	20
+NISP2003	Nitrolingual  Spray  400 micrograms/dose	1
+PRFO5322	Prednisolone  Foam  20 mg/application	1
+PRTA18800NEMIS	Proguanil And Atovaquone  Tablets  100 mg + 250 mg	3
+PRTA21633NEMIS	Procoralan  Tablets  5 mg	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	19

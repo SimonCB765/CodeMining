@@ -1,0 +1,122 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+136	Alcohol consumption	7
+136E	Ex-very heavy drinker-(>9u/d)	1
+1374	Moderate smoker - 10-19 cigs/d	1
+137G	Trying to give up smoking	3
+137P	Cigarette smoker	1
+137R	Current smoker	1
+1383	Enjoys light exercise	1
+1384	Enjoys moderate exercise	1
+13B1	Diabetic diet	1
+1A1	Micturition frequency	1
+1AA	Prostatism	1
+1B17	Depressed	1
+229	O/E - height	11
+22A	O/E - weight	16
+22K	Body Mass Index	13
+2469	O/E - Systolic BP reading	18
+29B8	10g monofilament sensation absent	1
+2BBJ	O/E - no right diabetic retinopathy	3
+311A	Monofilament foot sensation test	2
+3212	Standard ECG	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U	Blood folate	1
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	14
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	21
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	12
+44TJ	Blood glucose level	8
+44U	Blood glucose result	2
+451E	GFR calculated abbreviated MDRD	9
+4662	Urine glucose test negative	1
+4665	Urine glucose test = ++	2
+467	Urine protein test	1
+4672	Urine protein test negative	5
+4682	Urine ketone test negative	2
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	2
+46W	Urine microalbumin	3
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	3
+6773	Investig. result counselling	1
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	4
+8A17	Self monitoring of blood glucose	1
+8B2B	Nicotine replacement therapy	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	3
+8H7i	Referral to smoking cessation advisor	3
+8H7r	Refer to diabetic foot screener	1
+8HRC	Referral for spirometry	1
+8I4	Patient self discharge	1
+8I62	Beta blocker not indicated	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	2
+8I74	Angiotensin converting enzyme inhibitor not tolerated	1
+8I75	Angiotensin II receptor antagonist not tolerated	1
+9N19	Seen in hospital casualty	1
+9N27	Seen by dietician	1
+9NNC	Under care of retinal screener	1
+9Nd4	Consent for Primary Care Trust to review patients records	1
+9i0	British or mixed British - ethnic category 2001 census	2
+ALM/3798NEMIS	Alfuzosin Hydrochloride  M/R tablets  10 mg	3
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+AMTA8388EGTON	Amitriptyline Hydrochloride  Tablets  50 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	10
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	6
+C10	Diabetes mellitus	2
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	2
+E200z	Anxiety state NOS	1
+E3	Mental retardation	5
+F31	Facial nerve disorders	2
+Fyu51	[X]Other epilepsy	1
+G12	Rheumatic aortic valve disease	1
+G33z6	New onset angina	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	4
+H1y40	Polyp of vocal cord	2
+HYTA1421	Hypovase  Tablets  500 micrograms	7
+INTA20286NEMIS	Inegy  Tablets  10 mg/80 mg	1
+ISM/35445EMIS	Isotard 60 Xl  M/R tablets  60 mg	1
+IVTA21631NEMIS	Ivabradine  Tablets  7.5 mg	1
+J120	Acute duodenal ulcer	1
+L264z	Intrauterine death NOS	5
+LETA32002EMIS	Lercanidipine Hydrochloride  Tablets  10 mg	4
+LEWINFU1	Unknown vendor specific drug	1
+LIIN17712NEMIS	Lidocaine  Injection  2 %, 200 mg/10 ml ampoule	1
+LITA30125EMIS	Lipitor  Tablets  20 mg	5
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	7
+NIM/16459NEMIS	Niaspan  M/R tablets  500 mg	1
+NIM/19537EMIS	Nifedipine  M/R tablets  20 mg	2
+PJ63	Turner's syndrome	1
+PK61	Sturge-Weber syndrome	5
+S200	Closed fracture of clavicle	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	14
+STTA9316EMIS	Staril  Tablets  10 mg	1
+STTA9317EMIS	Staril  Tablets  20 mg	6

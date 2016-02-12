@@ -1,0 +1,117 @@
+Code	Description	Count
+06Z	Other managers	1
+136	Alcohol consumption	6
+136K	Alcohol intake above recommended sensible limits	2
+137P	Cigarette smoker	6
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	3
+1384	Enjoys moderate exercise	1
+1AA	Prostatism	1
+229	O/E - height	4
+22A	O/E - weight	12
+22K	Body Mass Index	12
+2469	O/E - Systolic BP reading	19
+29BB	10g monofilament sensation R foot normal	2
+29H5	O/E - Vibration sense of right foot normal	1
+2BB4	O/E - retinal microaneurysms	1
+2BBD	O/E - Right retina normal	2
+33B91	Exercise tolerance test done	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42W4	HbA1c level (DCCT aligned)	14
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	5
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	12
+44J8	Blood urea	1
+44J9	Serum urea level	2
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	9
+44Q	Serum triglycerides	9
+451E	GFR calculated abbreviated MDRD	1
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	1
+46M7	Urine creatinine	4
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	5
+4JJ1	MSU sent for C/S	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	1
+6792	Health ed. - alcohol	1
+67K5	Relapse stage	1
+6896	Depression screening using questions	3
+68A8	Digital retinal screening	1
+79294	Insertion of coronary artery stent	6
+8A17	Self monitoring of blood glucose	3
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	2
+8CAL	Smoking cessation advice	4
+8H21	Admit medical emergency unsp.	1
+8H44	Cardiological referral	1
+8H49	Psychiatric referral	1
+8H4B	Referred to rheumatologist	2
+8H5B	Referred to urologist	1
+8H7V	Refer to audiologist	1
+8HRC	Referral for spirometry	1
+8I27	Statins contraindicated	1
+9N2P	Seen by chiropodist	1
+9N2U	Seen by optician	1
+9N42	Did not attend - no reason	1
+9NE4	Awaiting collection:letter to	1
+9NE7	Via external post:letter to	2
+9NNC	Under care of retinal screener	1
+9S10	White British	1
+9h91	Except from mental health quality indicators: Patient unsuit	1
+AB220	Candidal balanitis	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	10
+ASTA4609	Aspirin  Tablets  75 mg	10
+ATTA231	Atenolol  Tablets  50 mg	15
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+BESHEGTON8229	Betadine  Shampoo  4 %	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	3
+CONE5709NEMIS	Coloplast Speedicath  Nelaton catheter (female)  10ch, 28510	1
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	1
+Dyu22	[X]Anaemia in other chronic diseases classified elsewhere	2
+E	Mental disorders	1
+E117z	"Unspecified bipolar affective disorder	1
+E200z	Anxiety state NOS	2
+E3	Mental retardation	6
+EMISNQSM3	Unknown vendor specific drug	2
+ERIN24326NEMIS	Ergocalciferol  Injection  300,000 units/ml, 2 ml ampoule	7
+F5801	Presbyacusis	3
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	5
+FECA31990EMIS	Fenofibrate  Capsules  (Micronised) 67 mg	1
+Fyu5E	[X]Chronic headache disorder	1
+G12	Rheumatic aortic valve disease	1
+G21z1	Hypertensive heart disease NOS with CCF	1
+G240	Secondary malignant hypertension	1
+G84	Haemorrhoids	2
+GLTA1307	Glucophage  Tablets  500 mg	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	14
+ISDU10518BRIDL	Isosorbide Mononitrate  Durules  60 mg	1
+ISM/35445EMIS	Isotard 60 Xl  M/R tablets  60 mg	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	13
+MEM/35043NEMIS	Unknown vendor specific drug	1
+N083q	Recurrent subluxation of the patella	1
+N0907	Joint effusion of the ankle and foot	1
+NIM/16465NEMIS	Niaspan Titration Starter Pack  M/R tablets  7 x 375 mg, 7 x 500 mg, 7 x 750 mg	1
+PH5	Specified anomalies of nails	1
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	19
+R1431	[D]Electrocardiogram (ECG) abnormal	9
+SETA2508	Secadrex  Tablets	4
+SETA4308	Semi-Daonil  Tablets  2.5 mg	1
+STTA9316EMIS	Staril  Tablets  10 mg	1

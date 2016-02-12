@@ -1,0 +1,115 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+136	Alcohol consumption	6
+1371	Never smoked tobacco	2
+1A	Genitourinary symptoms	1
+1A1	Micturition frequency	1
+1A45	Blood in urine - haematuria	2
+1A52	Renal colic	2
+1A7	Vaginal discharge symptom	2
+22A	O/E - weight	16
+22K	Body Mass Index	15
+2469	O/E - Systolic BP reading	22
+29BB	10g monofilament sensation R foot normal	4
+2BBI	O/E - no retinopathy	3
+32	Electrocardiography	1
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	14
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	12
+44I41	Raised serum potassium level	1
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	24
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	2
+44Q	Serum triglycerides	9
+44TB	Haemoglobin A1c level	1
+44g	Plasma glucose level	1
+451E	GFR calculated abbreviated MDRD	2
+4613	Urinalysis = no abnormality	1
+4615	MSU sent to lab.	2
+4618	Urine dipstick test	3
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	6
+46M7	Urine creatinine	4
+46TC	Urine albumin:creatinine ratio	7
+46W	Urine microalbumin	2
+585	Other diagnostic ultrasound	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6798	Health ed. - exercise	2
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+7B2A	Diagnostic cystoscopy	1
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	1
+8BAH	Exercise on prescription	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	1
+8H	Referral for further care	1
+8H21	Admit medical emergency unsp.	2
+8H4	Referral to physician	1
+8H41	General medical referral	1
+8H46	Neurological referral	1
+8H53	ENT referral	3
+8H54	Orthopaedic referral	2
+9N1Q	Seen in diabetic clinic	4
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	12
+ASDI224	Aspirin  Dispersible tablets  75 mg	14
+BINSCFU2	Unknown vendor specific drug	2
+BINSCOP2	Unknown vendor specific drug	2
+BINSCRE6	Unknown vendor specific drug	1
+BINSCUR2	Unknown vendor specific drug	3
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	6
+C10	Diabetes mellitus	1
+C1000	Diab.mell.no comp. - juvenile	1
+C1001	Diab.mell.no comp. - adult	2
+CATA23159EMIS	Calcium And Ergocalciferol  Tablets	2
+D410	Secondary polycythaemia	1
+D4100	Stress polycythaemia	5
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+E3	Mental retardation	5
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F500	Perichondritis of pinna	1
+Fyu51	[X]Other epilepsy	1
+G86	Noninfective lymphatic disorders	9
+GLTA1304	Glibenese  Tablets  5 mg	1
+H014	Acute rhinosinusitis	1
+HEWITPE1	Unknown vendor specific drug	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	12
+Hyu02	[X]Acute tonsillitis due to other specified organisms	1
+J120	Acute duodenal ulcer	1
+K0D	End-stage renal disease	2
+K1800	Urethral stricture due to unspecified infection	1
+L1421	Early onset of delivery - delivered	2
+L40	Major puerperal infection	1
+M21A	Acquired xeroderma	1
+M21yC	Insulin lipohypertrophy	15
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+N07y5	Locked knee	1
+N083C	Recurrent subluxation of shoulder - anterior	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	8
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	1
+PE1	Congenital sternomastoid torticollis	10
+POFO4257NEMIS	Coloplast Folysil All Silicone  Foley catheter (male)  14ch, AA71	1
+QUTA10127BRIDL	Quinapril  Tablets  10 mg	3
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	3
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	4
+SCCA19035EMIS	Scott  Catheters  10 ch	4
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	20

@@ -1,0 +1,96 @@
+Code	Description	Count
+136	Alcohol consumption	7
+1371	Never smoked tobacco	3
+1381	Exercise physically impossible	1
+229	O/E - height	12
+22A	O/E - weight	17
+22K	Body Mass Index	15
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	22
+29B7	10g monofilament sensation present	2
+2BBI	O/E - no retinopathy	1
+2BBJ	O/E - no right diabetic retinopathy	1
+2BBK	O/E - no left diabetic retinopathy	1
+311A	Monofilament foot sensation test	2
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	19
+42W5	Haemoglobin A1c level - IFCC standardised	1
+42c	HbA1 - diabetic control	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44J3	Serum creatinine	27
+44J7	Albumin / creatinine ratio	2
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	9
+44TB	Haemoglobin A1c level	2
+44U	Blood glucose result	1
+44g	Plasma glucose level	4
+451E	GFR calculated abbreviated MDRD	2
+4615	MSU sent to lab.	2
+467	Urine protein test	1
+4672	Urine protein test negative	3
+46M7	Urine creatinine	3
+46TC	Urine albumin:creatinine ratio	8
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+66AD	Fundoscopy - diabetic check	1
+6791	Health ed. - smoking	1
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+67E	Foreign travel advice	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	1
+8H54	Orthopaedic referral	1
+8I6C	Angiotensin II receptor antagonist not indicated	1
+9N1v	Seen in diabetic eye clinic	1
+9N2U	Seen by optician	3
+9N42	Did not attend - no reason	1
+9i0	British or mixed British - ethnic category 2001 census	3
+AB04	Dermatophytosis of foot	1
+ASTA4609	Aspirin  Tablets  75 mg	14
+C10	Diabetes mellitus	3
+C109	Non-insulin dependent diabetes mellitus	1
+CATA5686	Camcolit 400  M/R tablets  400 mg	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+D0130	Combined B12 and folate deficiency anaemia	1
+E3	Mental retardation	2
+EMISNQHE32	Unknown vendor specific drug	1
+F4C03	Acute mucopurulent conjunctivitis	1
+F500	Perichondritis of pinna	1
+F5921	"Mix cond/sensin hear loss	4
+GASTOUN2	Unknown vendor specific drug	1
+H025	Allergic pharyngitis	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	22
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	1
+K0D	End-stage renal disease	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	19
+META1753	Mefenamic Acid  Tablets  500 mg	1
+N01zB	Infec arthritis NOS-elbow	1
+N0237	Gouty arthritis of the ankle and foot	1
+PD601	Stenosis of bladder neck	10
+PDz0	Unspecified anomaly of kidney	14
+PE06	Congenital nasal septum deviation	1
+PE1	Congenital sternomastoid torticollis	2
+SCCA19035EMIS	Scott  Catheters  10 ch	23
+U10z	[X]Unspecified fall	1

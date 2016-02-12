@@ -1,0 +1,110 @@
+Code	Description	Count
+136	Alcohol consumption	1
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	4
+1A82	Breast lump present	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	6
+22A	O/E - weight	16
+22K	Body Mass Index	16
+246	O/E - blood pressure reading	20
+2464	O/E - BP reading normal	1
+29B1	O/E - tactile sensation normal	3
+2BBP	O/E - right eye background diabetic retinopathy	1
+2G4	O/E - legs	1
+2G5	O/E - foot	2
+3128	Fundoscopy	4
+32	Electrocardiography	1
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	11
+42W4	HbA1c level (DCCT aligned)	6
+42W5	Haemoglobin A1c level - IFCC standardised	2
+42c	HbA1 - diabetic control	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	17
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	6
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	1
+44U	Blood glucose result	1
+451E	GFR calculated abbreviated MDRD	6
+461	Urine exam. - general	1
+4616	MSU = no abnormality	1
+4617	MSU = abnormal	1
+46N3	Urine total protein	1
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	6
+55	Cardiovascular sys.angiography	1
+5856	U-S pelvic scan	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	1
+66AV	Diabetic on insulin and oral treatment	1
+66Ac	Diabetic peripheral neuropathy screening	1
+677B	Advice about treatment given	1
+6798	Health ed. - exercise	1
+6896	Depression screening using questions	2
+79275	Open angioplasty of coronary artery	1
+7928	Transluminal balloon angioplasty of coronary artery	1
+7939	Catheterisation of heart	1
+8H8	Follow-up arranged	3
+8H89	Follow-up 4-6 months	2
+8H8B	Follow-up 1 year	3
+8HA	No follow-up arranged	1
+8HTJ	Referral to rapid access chest pain clinic	1
+9N1Q	Seen in diabetic clinic	1
+9N2U	Seen by optician	3
+9N2e	Seen by ophthalmologist	3
+9h41	Excepted from diabetes qual indicators: Patient unsuitable	1
+A79z	Viral infection NOS	1
+C10	Diabetes mellitus	1
+Dyu22	[X]Anaemia in other chronic diseases classified elsewhere	1
+F261z	Common migraine NOS	1
+F4K2z	Vitreous disorders NOS	1
+Fyu51	[X]Other epilepsy	1
+G11z	Mitral valve disease NOS	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H02	Acute pharyngitis	1
+K18	Urethral stricture	1
+K5A1	Postmenopausal bleeding	1
+L11z	Antepartum haemorrhage NOS	1
+PETA2207	Persantin  Tablets  25 mg	1
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	1
+ZV579	[V]Cardiac rehabilitation	13
+bdl4	CARVEDILOL 25mg tablets	2
+bi3g	ZESTRIL 10mg tablets 28CP	9
+bk31	LOSARTAN POTASSIUM 25mg tablets	23
+bl1H	NITROMIN 400micrograms CFC-free spray	22
+bl3v	ISOSORBIDE MONONITRATE 10mg tablets	3
+blc5	FELODIPINE 2.5mg m/r tablets	1
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	13
+bx11	BEZALIP 200mg tablets	2
+bx13	BEZAFIBRATE 200mg tablets	22
+bx84	NICOTINIC ACID 375mg+500mg+750mg m/r tablets starter pack	1
+bxdI	INEGY 10mg/40mg tablets	1
+d243	CHLORDIAZEPOXIDE HYDROCHLORIDE 5mg tablets	1
+d244	CHLORDIAZEPOXIDE HYDROCHLORIDE 10mg tablets	1
+eg6x	CIPROFLOXACIN 250mg tablets	2
+ei92	FAMCICLOVIR 250mg tablets	7
+f137	HUMALOG-PEN 100iu/mL prefilled pen 3mL	1
+f25e	*HUMULIN M1 injection 10mL	6
+f25o	HUMULIN I 100iu/mL cartridges 3mL	9
+f27g	HUMULIN M4 40/60 cartridges 1.5mL	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	24
+fi71	DUTASTERIDE 500micrograms capsules	3
+ip17	ALFACALCIDOL 1microgram capsules	1
+ip3a	CALCIUM AND ERGOCALCIFEROL 400units tablets	2

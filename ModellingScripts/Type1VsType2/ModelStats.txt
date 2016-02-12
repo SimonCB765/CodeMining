@@ -1,0 +1,9 @@
+CV folds used - 10
+Initial model lambda - 2.815161e-03
+Initial model non-zero coefficients - 57
+Initial model deviance - 2.815161e-03
+Initial model deviance standard error - 2.130041e+01
+Final model lambda - 1.485026e-03
+Final model non-zero coefficients - 62
+Final model deviance - 1.485026e-03
+Final model deviance standard error - 2.262002e+01

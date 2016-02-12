@@ -1,0 +1,127 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+136	Alcohol consumption	12
+1371	Never smoked tobacco	6
+1388	Aerobic exercise 0 times/week	3
+13l4	Main spoken language English	2
+1A23	Incontinence of urine	1
+1Z1E	Chronic kidney disease stage 3A without proteinuria	1
+229	O/E - height	3
+22A	O/E - weight	27
+22K	Body Mass Index	22
+2469	O/E - Systolic BP reading	27
+29B1	O/E - tactile sensation normal	1
+29BB	10g monofilament sensation R foot normal	2
+2BB1	O/E - retina normal	1
+2BBB	O/E - Right retina not seen	1
+2BBC	O/E - Left retina not seen	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+3128	Fundoscopy	1
+31280	Fundoscopy normal	1
+312E	Direct fundoscopy following mydriatic	1
+32	Electrocardiography	1
+3216	ECG normal	1
+321Z	ECG - general - NOS	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	5
+42A	Mean corpuscular volume (MCV)	6
+42T	Serum vitamin B12	2
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	14
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44CC	Plasma C reactive protein	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44J3	Serum creatinine	24
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	4
+44TB	Haemoglobin A1c level	2
+44U	Blood glucose result	1
+44Z1	Serum fructosamine	1
+44g	Plasma glucose level	7
+451E	GFR calculated abbreviated MDRD	11
+4672	Urine protein test negative	3
+4675	Urine protein test = ++	1
+4692	Urine blood test = negative	1
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	4
+46f1	Urine leucocyte test = negative	1
+58C1	Retinal photography	2
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	4
+66U4	"Menopause: LH	1
+6799	Health ed. - diet	1
+679L	Health education - diabetes	1
+67H0	Lifestyle advice regarding alcohol	1
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	3
+8A17	Self monitoring of blood glucose	1
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	7
+8CA5	Patient advised re exercise	5
+8CAM	Patient advised about alcohol	1
+8H4	Referral to physician	1
+8H41	General medical referral	1
+8H44	Cardiological referral	3
+8H52	Ophthalmological referral	1
+8H58	Gynaecological referral	1
+8H76	Refer to dietician	1
+8H78	Refer to counsellor	1
+8I26	Beta blocker contraindicated	1
+8I73	Beta blocker not tolerated	3
+9N2V	Seen by optometrist	1
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	1
+9N42	Did not attend - no reason	5
+9S1	White	1
+9S10	White British	2
+9i0	British or mixed British - ethnic category 2001 census	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	17
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+BEMO28663EMIS	Betamethasone Valerate  Mousse  0.12 % (= 0.1 % betamethasone)	1
+C10	Diabetes mellitus	1
+CHRSPLE5	Unknown vendor specific drug	4
+CHSU15277NEMIS	Cholestyramine  Sugar Free Powder  4 grams/sachet	2
+E113	Recurrent major depressive episode	1
+EMISQUR3	Unknown vendor specific drug	1
+Eu	[X]Mental and behavioural disorders	1
+Eu01	[X]Vascular dementia	6
+F31z	Facial nerve disorder NOS	1
+F4Fz	Lacrimal system disorder NOS	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	2
+FRTA1248	Frusemide  Tablets  20 mg	4
+Fyu51	[X]Other epilepsy	2
+G111	Rheumatic mitral insufficiency	2
+G240	Secondary malignant hypertension	1
+GASTOSE4	Unknown vendor specific drug	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	11
+H1y63	Reinke's oedema of the vocal cords	1
+H50	Empyema	1
+HUIN3719	Humulin M1  Injection	4
+IBFC10455BRIDL	Ibuprofen  Fc tablets  800 mg	19
+L398	Caesarean delivery	2
+LMRGPAP3	Unknown vendor specific drug	18
+LMRGPER1	Unknown vendor specific drug	1
+LMRGPGP2	Unknown vendor specific drug	11
+MACA8841BRIDL	Maxepa  Capsules  1 gram	23
+MIM/19544EMIS	Minocin  M/R capsules  100 mg	4
+N0514	Local.primary OA-hand	2
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	4
+NUTA2039	Nu-Seals Aspirin  E/c tablets  300 mg	1
+OLTA15758NEMIS	Olmesartan Medoxomil  Tablets  10 mg	1
+PK61	Sturge-Weber syndrome	2
+R1431	[D]Electrocardiogram (ECG) abnormal	22
+SITA15258NEMIS	Sirolimus  Tablets  2 mg	1
+SP257	Postoperative wound infection-superficial	1

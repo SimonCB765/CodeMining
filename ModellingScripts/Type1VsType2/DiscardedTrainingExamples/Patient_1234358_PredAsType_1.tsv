@@ -1,0 +1,119 @@
+Code	Description	Count
+136	Alcohol consumption	3
+1361	Teetotaller	1
+137R	Current smoker	2
+137S	Ex smoker	3
+13l4	Main spoken language English	2
+229	O/E - height	5
+22A	O/E - weight	13
+22K	Body Mass Index	12
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	18
+2841	Confused	1
+29B7	10g monofilament sensation present	4
+2BBF	Retinal abnormality - diabetes related	2
+2BBI	O/E - no retinopathy	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+31281	Fundoscopy abnormal	2
+3216	ECG normal	1
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R5	Serum TIBC	1
+42R7	Serum iron level	1
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	18
+42W5	Haemoglobin A1c level - IFCC standardised	1
+42bE	Percentage hypochromic cells	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44J3	Serum creatinine	22
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	2
+44P6	Serum LDL cholesterol level	1
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	1
+44U	Blood glucose result	4
+44g	Plasma glucose level	3
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	4
+451F	Glomerular filtration rate	1
+4616	MSU = no abnormality	1
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	2
+46M7	Urine creatinine	2
+46N3	Urine total protein	2
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	2
+46W0	Urine microalbumin positive	2
+46W1	Urine microalbumin negative	3
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+8A17	Self monitoring of blood glucose	2
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA4	Patient advised re diet	7
+8CA5	Patient advised re exercise	6
+8CAL	Smoking cessation advice	2
+8CAM	Patient advised about alcohol	2
+8H44	Cardiological referral	1
+8H4F	Referral to diabetologist	1
+8H5	Referral to surgeon	1
+8H5B	Referred to urologist	1
+8H7A	Refer to mental health worker	1
+8H7i	Referral to smoking cessation advisor	1
+8HBD	Retinopathy follow up	2
+8HE	Discharged from hospital	1
+8I28	Angiotensin converting enzyme inhibitors contraindicated	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	1
+9N1v	Seen in diabetic eye clinic	2
+9N2a	Seen by community psychiatric nurse	1
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	1
+9N31	Telephone encounter	1
+9N37	Message given to patient	1
+9N4I	DNA - Did not attend diabetic clinic	1
+9N4p	Did not attend diabetic retinopathy clinic	1
+9N7	Provider initiated encounter	1
+9OLD	Diabetic patient unsuitable for digital retinal photography	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	3
+CHTA23546NEMIS	Champix  Tablets  1 mg	4
+E113	Recurrent major depressive episode	1
+E3	Mental retardation	1
+EMISSPR460	Unknown vendor specific drug	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F504	Impacted cerumen (wax in ear)	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	6
+G3400	Single coronary vessel disease	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	4
+HIOS17296NEMIS	Hi-Line  Ostomy girdle/pantie brief with suspenders  Res 1	1
+J120	Acute duodenal ulcer	1
+LEIGHTH12	Unknown vendor specific drug	7
+LEIGHUS10	Unknown vendor specific drug	11
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	6
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	18
+MOTA11562NEMIS	Moxonidine  Tablets  300 micrograms	1
+PRCA4138NEMIS	Prograf  Capsules  500 micrograms	1
+PUJINST1	Unknown vendor specific drug	1
+Pyu70	[X]Other cystic kidney diseases	2
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	17
+SITA34209EMIS	Sildenafil Citrate  Tablets  50 mg	6
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	3
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	6
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	13
+VETA6809	Verapamil Hydrochloride  Tablets  80 mg	1
+Y3545	Unknown vendor specific drug	1

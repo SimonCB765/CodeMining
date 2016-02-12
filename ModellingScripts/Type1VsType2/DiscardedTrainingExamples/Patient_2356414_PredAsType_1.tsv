@@ -1,0 +1,103 @@
+Code	Description	Count
+136	Alcohol consumption	7
+1371	Never smoked tobacco	3
+16D	Falls	2
+1FA	Diet good	2
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	3
+22A	O/E - weight	13
+22K	Body Mass Index	13
+2469	O/E - Systolic BP reading	25
+29B9	10g monofilament sensation R foot abnormal	2
+32	Electrocardiography	2
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	2
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	5
+42W1	Hb. A1C < 7% - good control	3
+42W4	HbA1c level (DCCT aligned)	8
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44I8	Serum calcium	2
+44J3	Serum creatinine	16
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	5
+44Q	Serum triglycerides	12
+44f0	Serum random glucose level	9
+44g	Plasma glucose level	2
+44g1	Plasma fasting glucose level	6
+451E	GFR calculated abbreviated MDRD	6
+467	Urine protein test	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	2
+46M7	Urine creatinine	4
+46N4	Urine albumin	7
+46TC	Urine albumin:creatinine ratio	6
+46W2	Microalbumin excretion rate	6
+5853	U-S heart scan	2
+6572	Pneumococcal vaccination	1
+66Ac	Diabetic peripheral neuropathy screening	1
+679J	Health education - asthma	1
+6896	Depression screening using questions	2
+81H1	Dressing of ulcer	1
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	4
+8I24	Aspirin prophylaxis contra-indicated	3
+8I25	Warfarin contraindicated	3
+8I2K	Clopidogrel contraindicated	2
+8I2b	Dipyridamole contraindicated	1
+8I7A	Anticoagulation not tolerated	1
+9N1K	Seen in ophthalmology clinic	2
+9N1v	Seen in diabetic eye clinic	1
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	1
+9NND	Under care of diabetic foot screener	2
+9S10	White British	1
+A3By8	Coliform bacteria	1
+AMTA10145BRIDL	Amlodipine Besilate  Tablets  5 mg	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	2
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	16
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	6
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	6
+BETA302	Bendrofluazide  Tablets  2.5 mg	3
+BETA4656	Bezafibrate  M/R tablets  400 mg	1
+CACA9745BRIDL	Calcitriol  Capsules  250 nanograms	1
+CAEF1326NEMIS	Calcium Carbonate  Effervescent tablets  1.25 grams	4
+CAIN4919NEMIS	Caverject Dual Chamber  Injection  20 micrograms/dose	15
+CECA17567NEMIS	Cefalexin  Capsules  250 mg	2
+CECA4688	Cefadroxil  Capsules  500 mg	1
+CITA630	Cinnarizine  Tablets  15 mg	1
+D0130	Combined B12 and folate deficiency anaemia	2
+DIM/4780NEMIS	Ditropan Xl  M/R tablets  5 mg	1
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	3
+DITA886	Diclofenac Sodium  Tablets  50 mg	2
+F425z	Degeneration of macula or posterior pole NOS	2
+F5902	Conductive hearing loss due to disorder of tympanic membrane	1
+FRTA1248	Frusemide  Tablets  20 mg	8
+Fyu51	[X]Other epilepsy	2
+G3401	Double coronary vessel disease	1
+G551	Hypertrophic obstructive cardiomyopathy	1
+G581	Left ventricular failure	1
+H22	Other bacterial pneumonia	2
+J1y	"Other specified disorders of oesophagus	2
+K0D	End-stage renal disease	1
+LMRGPAP3	Unknown vendor specific drug	10
+LMRGPGP2	Unknown vendor specific drug	4
+N0516	Local.primary OA-lower leg	2
+POTA2309	Ponstan  Tablets forte  500 mg	1
+SCCA19035EMIS	Scott  Catheters  10 ch	18
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	4
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	2
+TETA9419BRIDL	Tenormin  Tablets  25 mg	20

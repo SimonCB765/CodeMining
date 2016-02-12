@@ -1,0 +1,135 @@
+Code	Description	Count
+136	Alcohol consumption	7
+137S	Ex smoker	5
+137T	Date ceased smoking	1
+1381	Exercise physically impossible	2
+13A3	Weight reducing diet	1
+13AC	Diabetic weight reducing diet	1
+13l4	Main spoken language English	1
+1Z13	Chronic kidney disease stage 4	3
+229	O/E - height	4
+22A	O/E - weight	20
+22K	Body Mass Index	20
+2469	O/E - Systolic BP reading	23
+29B8	10g monofilament sensation absent	2
+2BBF	Retinal abnormality - diabetes related	1
+2BBP	O/E - right eye background diabetic retinopathy	1
+2BBQ	O/E - left eye background diabetic retinopathy	1
+2G5F	O/E - Right diabetic foot at moderate risk	1
+2G5J	O/E - Left diabetic foot at moderate risk	1
+31281	Fundoscopy abnormal	1
+3173	Special urinary test normal	1
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	1
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	14
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	14
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	31
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	6
+44Q	Serum triglycerides	6
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	13
+451F	Glomerular filtration rate	2
+4618	Urine dipstick test	1
+4664	Urine glucose test = +	1
+467	Urine protein test	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	1
+4676	Urine protein test = +++	1
+4678	Proteinuria	2
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	3
+46N4	Urine albumin	3
+46TC	Urine albumin:creatinine ratio	3
+46W0	Urine microalbumin positive	4
+4794	Faecal occult blood: positive	1
+5543	Coronary arteriograph.abnormal	1
+5853	U-S heart scan	2
+58531	Echocardiogram abnormal	1
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	4
+6799	Health ed. - diet	1
+67I8	Advice about taking aspirin	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+7L08	Amputation of toe	1
+81H1	Dressing of ulcer	1
+8A13	Diabetic stabilisation	1
+8A17	Self monitoring of blood glucose	1
+8B6A	Statin prophylaxis	1
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	2
+8H21	Admit medical emergency unsp.	2
+8H44	Cardiological referral	1
+8H4C	Referred to chest physician	1
+8H77	Refer to physiotherapist	1
+8I26	Beta blocker contraindicated	1
+8I28	Angiotensin converting enzyme inhibitors contraindicated	1
+8I2H	Angiotensin II receptor antagonists contraindicated	1
+8I62	Beta blocker not indicated	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	4
+9N31	Telephone encounter	1
+9i0	British or mixed British - ethnic category 2001 census	2
+A0812	Gastroenteritis - presumed infectious origin	1
+A3B11	Meticillin resistant staphylococcus aureus	1
+ALCA74	Alfacalcidol  Capsules  250 nanograms	3
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	2
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	7
+BUTA434	Bumetanide  Tablets  1 mg	9
+C10	Diabetes mellitus	2
+CAM/6443NEMIS	Cardura Xl  M/R tablets  8 mg	3
+E3	Mental retardation	2
+EMISNQNE2	Unknown vendor specific drug	1
+F3722	Asymptomatic diabetic neuropathy	2
+FOCA24991EMIS	Foley  Catheter (male)  12 ch	1
+FRTA1248	Frusemide  Tablets  20 mg	2
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	2
+G572z	Paroxysmal tachycardia NOS	2
+HEWITAS12	Unknown vendor specific drug	2
+HEWITCA1	Unknown vendor specific drug	6
+HUCA35540EMIS	Humalog Mix25  Cartridges (3 Ml)  100 units/ml	3
+IBTA1430	Ibuprofen  Tablets  400 mg	7
+ISDU10518BRIDL	Isosorbide Mononitrate  Durules  60 mg	5
+J17y0	Pylorospasm	1
+J17y7	Deformed duodenal cap (bulb)	4
+K0D	End-stage renal disease	1
+L11z	Antepartum haemorrhage NOS	2
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	2
+MIOR16890NEMIS	Mirtazapine  Orodispersible tablets  15 mg	1
+N083q	Recurrent subluxation of the patella	2
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	4
+PD3	Other specified renal anomaly	1
+PE06	Congenital nasal septum deviation	13
+Pyu70	[X]Other cystic kidney diseases	2
+S240B	"Cls # scaphoid	1
+S352F	"Closed # metatarsal	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	17
+SITA10078BRIDL	Simvastatin  Tablets  20 mg	1
+SLTA4320	Slow-Fe  Tablets  160 mg	9
+TETA23675EMIS	Terazosin Hydrochloride  Tablets  2 mg	1
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	2
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	2
+VETA6809	Verapamil Hydrochloride  Tablets  80 mg	1

@@ -1,0 +1,120 @@
+Code	Description	Count
+1361	Teetotaller	3
+1362	Trivial drinker - <1u/day	3
+1367	Stopped drinking alcohol	1
+1371	Never smoked tobacco	1
+137B	Ex-very heavy smoker (40+/day)	1
+137S	Ex smoker	4
+138	Exercise grading	3
+13A	Diet - patient initiated	1
+229	O/E - height	1
+22A	O/E - weight	20
+22K	Body Mass Index	20
+246	O/E - blood pressure reading	25
+29BB	10g monofilament sensation R foot normal	3
+2G5	O/E - foot	2
+3128	Fundoscopy	3
+3217	ECG abnormal	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	1
+42U	Blood folate	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	5
+42W4	HbA1c level (DCCT aligned)	12
+42W5	Haemoglobin A1c level - IFCC standardised	2
+42c	HbA1 - diabetic control	1
+44AP	Serum pro-brain natriuretic peptide level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	19
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	9
+44Q	Serum triglycerides	12
+44U	Blood glucose result	13
+44g	Plasma glucose level	1
+44g0	Plasma random glucose level	5
+44g1	Plasma fasting glucose level	4
+451E	GFR calculated abbreviated MDRD	9
+467	Urine protein test	5
+46M7	Urine creatinine	3
+46N	Urine protein	1
+46TC	Urine albumin:creatinine ratio	6
+46TD	Urine microalbumin:creatinine ratio	4
+46W	Urine microalbumin	5
+6572	Pneumococcal vaccination	1
+6781	Health education offered	2
+6799	Health ed. - diet	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+792	Coronary artery operations	2
+7B1B	Diagnostic endoscopic examination of ureter	1
+7B2A6	Diagnostic cystoscopy using flexible instrument	1
+8A17	Self monitoring of blood glucose	1
+8B63	Salicylate prophylaxis	1
+8H44	Cardiological referral	1
+8H52	Ophthalmological referral	1
+8HE1	Discharged from outpatients	4
+8HE5	Removed from waiting list	1
+8HM	Listed for admission to hosp.	1
+8I26	Beta blocker contraindicated	1
+8I62	Beta blocker not indicated	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I74	Angiotensin converting enzyme inhibitor not tolerated	2
+9N1P	Seen in cardiac clinic	1
+9N1Q	Seen in diabetic clinic	2
+9N2Q	Seen by podiatrist	1
+9N47	Appt cancelled by patient	1
+9N4H	DNA hospital appointment	1
+C10	Diabetes mellitus	2
+C1001	Diab.mell.no comp. - adult	1
+C108	Insulin dependent diabetes mellitus	1
+COTA9149BRIDL	Co-Amilofruse 5/40  Tablets	2
+F3720	Acute painful diabetic neuropathy	1
+F4257	Drusen	1
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G240	Secondary malignant hypertension	2
+G570	Paroxysmal supraventricular tachycardia	2
+H22	Other bacterial pneumonia	2
+ISM/35445EMIS	Isotard 60 Xl  M/R tablets  60 mg	2
+J1212	Chronic duodenal ulcer with perforation	1
+K1012	Acute pyelitis	1
+M07z1	Infection toe	1
+Pyu70	[X]Other cystic kidney diseases	1
+QUCR2426	Quinoderm  Cream	1
+ZITO9011EMIS	Zineryt  Topical solution	6
+ZV579	[V]Cardiac rehabilitation	8
+ab21	FYBOGEL 3.5g plain sugar free granules	7
+bi28	INNOZIDE 20/12.5mg tablets	1
+bi2y	ENALAPRIL MALEATE 20mg tablets	1
+bk31	LOSARTAN POTASSIUM 25mg tablets	7
+bkB2	OLMESARTAN MEDOXOMIL 20mg tablets	1
+blc5	FELODIPINE 2.5mg m/r tablets	2
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	9
+bn5x	MOXISYLYTE 40mg tablets	7
+bx11	BEZALIP 200mg tablets	1
+bxa7	OMACOR 1g capsules	21
+bxb2	ACIPIMOX 250mg capsules	5
+du3f	NICOTINE 10mg inhalator refill pack	1
+du3s	NIQUITIN CQ 21mg/24hours clear patches	1
+f135	HUMALOG 100iu/mL cartridges 3mL	1
+f25Y	HUMAN ISOPHANE INSULIN 100units/mL injection vials	20
+f27g	HUMULIN M4 40/60 cartridges 1.5mL	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	23
+f417	GLUCOPHAGE SR 500mg m/r tablets	1
+f41y	METFORMIN HYDROCHLORIDE 500mg tablets	2
+h82C	NEORAL 100mg capsules	8
+ig1y	ADCAL 600mg chewable tablets	1

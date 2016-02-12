@@ -1,0 +1,114 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C4	FH: CVA/stroke	1
+12C5	FH: Myocardial infarction	1
+1361	Teetotaller	6
+1371	Never smoked tobacco	1
+1FA	Diet good	1
+1FE2	Intake of fruit and vegetables less than 5 portions daily	1
+229	O/E - height	16
+22A	O/E - weight	17
+22K	Body Mass Index	16
+246	O/E - blood pressure reading	6
+2469	O/E - Systolic BP reading	19
+246A	O/E - Diastolic BP reading	19
+24E6	O/E - R.post.tib.pulse present	1
+29BB	10g monofilament sensation R foot normal	1
+2BBJ	O/E - no right diabetic retinopathy	2
+2BBK	O/E - no left diabetic retinopathy	2
+321	ECG - general	1
+38DP	QRISK2 cardiovascular disease 10 year risk score	1
+423	Haemoglobin estimation	4
+4258	Haematocrit	4
+426	Red blood cell (RBC) count	1
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42B6	Erythrocyte sedimentation rate	3
+42I	Differential white cell count	1
+42N	Monocyte count	1
+42P	Platelet count	3
+42W4	HbA1c level (DCCT aligned)	4
+42W5	Haemoglobin A1c level - IFCC standardised	2
+42d4	Plasma ferritin level	1
+44CC	Plasma C reactive protein	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44G7	Plasma gamma-glutamyl transferase level	1
+44I4	Serum potassium	5
+44J3	Serum creatinine	16
+44J9	Serum urea level	2
+44JF	Plasma creatinine level	10
+44MI	Plasma albumin level	2
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	1
+44PJ	Serum total cholesterol level	5
+44PK	Serum fasting total cholesterol	1
+44Q	Serum triglycerides	5
+44Q5	Serum random triglyceride level	1
+44T1	Random blood sugar	2
+44TB	Haemoglobin A1c level	7
+44TK	Fasting blood glucose level	5
+44U4	Blood glucose 5-6.9 mmol/L	1
+44dA	Plasma HDL cholesterol level	6
+44dB	Plasma LDL cholesterol level	3
+44e	Plasma triglyceride level	3
+44f1	Serum fasting glucose level	1
+44g	Plasma glucose level	6
+44g1	Plasma fasting glucose level	1
+44h6	Plasma sodium level	2
+44h8	Plasma potassium level	8
+44lD	Urine protein/creatinine ratio	1
+44lG	Plasma cholesterol/HDL ratio	5
+451E	GFR calculated abbreviated MDRD	9
+4618	Urine dipstick test	1
+4672	Urine protein test negative	2
+46M7	Urine creatinine	2
+46TC	Urine albumin:creatinine ratio	2
+46W	Urine microalbumin	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6872	Diabetes mellitus screen	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+8CB	Had a chat to patient	1
+8HBG	Diabetic retinopathy 12 month review	1
+9N2U	Seen by optician	1
+9S3	Black African	1
+9SZ	Ethnic groups (census) NOS	1
+9h41	Excepted from diabetes qual indicators: Patient unsuitable	1
+AyuF1	"[X]Plasmod falcprm malari	1
+E1132	"Recurrent major depressive episodes	1
+Eu2z	[X]Unspecified nonorganic psychosis	1
+Fyu4	[X]Demyelinating diseases of the central nervous system	2
+Lyu5	[X]Delivery	1
+PE6	Valgus deformities of feet	1
+U60K4	[X]Influenza vaccine causing adverse effects therapeutic use	1
+UNS/8595EGTON	Univer  M/R capsules  240 mg	2
+X20CN	Unknown vendor specific drug	2
+XAM/3799NEMIS	Xatral Xl  M/R tablets  10 mg	3
+ZV125	[V]Personal history of circulatory system disease	1
+ab21	FYBOGEL 3.5g plain sugar free granules	1
+ab2J	ISPAGHULA HUSK 3.4g/sachet sugar free powder	7
+ab2M	ISPAGEL 3.5g/sachet sugar free powder	1
+bB1y	IVABRADINE 7.5mg tablets	2
+bB1z	IVABRADINE 5mg tablets	18
+bb1x	AMIODARONE HYDROCHLORIDE 100mg tablets	4
+bden	CO-TENIDONE 100/25mg tablets	1
+bdey	ATENOLOL+CO-AMILOZIDE 50mg/2.5mg/25mg capsules	2
+bi61	RAMIPRIL 1.25mg capsules	7
+bi64	*TRITACE 1.25mg capsules	12
+bi94	GOPTEN 500micrograms capsules	2
+bi95	GOPTEN 1mg capsules	12
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	10
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	7
+bxky	ROSUVASTATIN 20mg tablets	3
+d282	ATARAX 25mg tablets	1
+da81	NEFAZODONE HYDROCHLORIDE 100mg tablets	1
+daC2	CIPRALEX 10mg tablets	2
+fi62	FINASTERIDE 5mg tablets	1
+fi71	DUTASTERIDE 500micrograms capsules	7
+fo1z	DISODIUM ETIDRONATE 200mg tablets	11
+j22R	DICLOFENAC 75mg e/c+m/r capsules	1
+j282	IBUPROFEN 400mg tablets	1

@@ -1,0 +1,141 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	1
+1341	European origin	1
+136	Alcohol consumption	4
+1371	Never smoked tobacco	1
+1379	Ex-moderate smoker (10-19/day)	1
+137B	Ex-very heavy smoker (40+/day)	1
+137F	Ex-smoker - amount unknown	1
+137L	Current non-smoker	2
+1381	Exercise physically impossible	1
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+229	O/E - height	15
+22A	O/E - weight	14
+22K	Body Mass Index	17
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	2
+29B9	10g monofilament sensation R foot abnormal	1
+2BB4	O/E - retinal microaneurysms	1
+2BBA	Examination of retina	1
+2BBF	Retinal abnormality - diabetes related	1
+31281	Fundoscopy abnormal	2
+32	Electrocardiography	1
+3212	Standard ECG	1
+3213	Exercise ECG	1
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	6
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	20
+42W5	Haemoglobin A1c level - IFCC standardised	2
+43Z2	Prostate specific antigen	2
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	12
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	32
+44J8	Blood urea	1
+44J9	Serum urea level	2
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	4
+44Q	Serum triglycerides	9
+44TB	Haemoglobin A1c level	2
+44TC	Haemoglobin A1 level	2
+44U	Blood glucose result	2
+44g	Plasma glucose level	11
+451E	GFR calculated abbreviated MDRD	2
+4661	Urine glucose test not done	1
+4664	Urine glucose test = +	1
+4666	Urine glucose test = +++	1
+4667	Urine glucose test = ++++	2
+4671	Urine protein test not done	1
+4672	Urine protein test negative	2
+4675	Urine protein test = ++	1
+4676	Urine protein test = +++	1
+4695	Urine blood test = +	1
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	1
+46W	Urine microalbumin	1
+554	Coronary arteriogr.-general	1
+5543	Coronary arteriograph.abnormal	1
+5853	U-S heart scan	1
+58531	Echocardiogram abnormal	1
+58C1	Retinal photography	2
+66A3	Diabetic on diet only	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	3
+6792	Health ed. - alcohol	2
+6798	Health ed. - exercise	3
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+79294	Insertion of coronary artery stent	1
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	4
+8CAL	Smoking cessation advice	3
+8CAM	Patient advised about alcohol	1
+8H	Referral for further care	3
+8H5B	Referred to urologist	1
+8H76	Refer to dietician	1
+8HBD	Retinopathy follow up	3
+8I25	Warfarin contraindicated	1
+8I3X	Diabetic retinopathy screening refused	1
+8IA3	Bowel cancer screening declined	1
+9N1Q	Seen in diabetic clinic	1
+9N2e	Seen by ophthalmologist	1
+9N42	Did not attend - no reason	2
+9OIA	Hypertension monitor.chck done	2
+9S1	White	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	16
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	5
+C10	Diabetes mellitus	1
+C1000	Diab.mell.no comp. - juvenile	1
+CAIN34034EMIS	Caverject  Injection  40 micrograms/vial	14
+CITA15860NEMIS	Cipralex  Tablets  20 mg	1
+COSH12399NEMIS	Coloplast Simpla Trident T2  Short tube leg bags  500ml, 376138	21
+DIM/30709EMIS	Dipyridamole  M/R capsules  200 mg	1
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	3
+DITA885	Diclofenac Sodium  Tablets  25 mg	23
+E200z	Anxiety state NOS	2
+F326z	Multiple cranial nerve palsies NOS	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+Fyu51	[X]Other epilepsy	1
+Fyu5E	[X]Chronic headache disorder	1
+G3400	Single coronary vessel disease	1
+G581	Left ventricular failure	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+GLTA1304	Glibenese  Tablets  5 mg	1
+H037	Recurrent acute tonsillitis	1
+HUCA18384EMIS	Humulin M4  Cartridges (1.5 Ml)	1
+HUIN10443BRIDL	Humulin M3 (Lilly)  Injection	19
+HUIN1377	Human Insulatard Ge  Injection  100 units/ml	2
+MACA8841BRIDL	Maxepa  Capsules  1 gram	26
+MOTA28875EMIS	Mobic  Tablets  7.5 mg	1
+N0500	Generalised osteoarthritis of unspecified site	1
+PD44	Double ureter	7
+PE06	Congenital nasal septum deviation	2
+PE1	Congenital sternomastoid torticollis	5
+PK61	Sturge-Weber syndrome	5
+POFO4257NEMIS	Coloplast Folysil All Silicone  Foley catheter (male)  14ch, AA71	1
+PUJINST1	Unknown vendor specific drug	1
+Pyu70	[X]Other cystic kidney diseases	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	18
+SLTA4320	Slow-Fe  Tablets  160 mg	8
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	3
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	8
+VETA6809	Verapamil Hydrochloride  Tablets  80 mg	1
+VICA4504	Vibramycin  Capsules  50 mg	6

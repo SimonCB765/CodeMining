@@ -1,0 +1,116 @@
+Code	Description	Count
+136	Alcohol consumption	11
+137L	Current non-smoker	1
+137S	Ex smoker	4
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+1Z15	Chronic kidney disease stage 3A	1
+229	O/E - height	7
+22A	O/E - weight	13
+22K	Body Mass Index	11
+246	O/E - blood pressure reading	28
+29B8	10g monofilament sensation absent	2
+29H2	O/E - vibration sense reduced	2
+3128	Fundoscopy	1
+321	ECG - general	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	5
+42A	Mean corpuscular volume (MCV)	6
+42R4	Serum ferritin	6
+42T	Serum vitamin B12	6
+42U5	Serum folate	5
+42W	Hb. A1C - diabetic control	8
+42W2	Hb. A1C 7-10% - borderline	1
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	3
+42c1	HbA1 7 - 10% - borderline control	1
+44CC	Plasma C reactive protein	8
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	27
+44J7	Albumin / creatinine ratio	1
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	11
+44PF	Total cholesterol:HDL ratio	11
+44Q	Serum triglycerides	14
+44TB	Haemoglobin A1c level	11
+44TC	Haemoglobin A1 level	1
+44U	Blood glucose result	2
+44g	Plasma glucose level	7
+44g1	Plasma fasting glucose level	2
+44lD	Urine protein/creatinine ratio	6
+451E	GFR calculated abbreviated MDRD	13
+451F	Glomerular filtration rate	1
+4613	Urinalysis = no abnormality	3
+4618	Urine dipstick test	4
+4665	Urine glucose test = ++	1
+4672	Urine protein test negative	6
+4682	Urine ketone test negative	1
+4695	Urine blood test = +	1
+46M7	Urine creatinine	3
+46N	Urine protein	2
+46N4	Urine albumin	8
+46TC	Urine albumin:creatinine ratio	7
+46U	Urine culture	1
+46X1	Urine nitrite negative	1
+4JJ	Urine sample for organism	1
+4JJ1	MSU sent for C/S	1
+65720	Pneumococcal vaccination given	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+67H2	Lifestyle advice regarding exercise	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+68A8	Digital retinal screening	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	4
+8CAM	Patient advised about alcohol	2
+8H41	General medical referral	1
+8H49	Psychiatric referral	1
+8H4F	Referral to diabetologist	1
+8H76	Refer to dietician	2
+8H7R	Refer to chiropodist	2
+9N2f	Seen by retinal screener	1
+9N7D	Phlebotomy generated from secondary care done by practice	3
+9S1	White	1
+A5411	Herpetic vulvovaginitis	1
+C10	Diabetes mellitus	2
+COUR12413NEMIS	Coloplast Simpla 2 Litre S1  Urine drainage bag  311102	1
+E200z	Anxiety state NOS	2
+E2B	Depressive disorder NEC	1
+EGTON460	Unknown vendor specific drug	1
+F31z	Facial nerve disorder NOS	2
+F42z	Retinal disorder NOS	1
+F464z	Cataract due to other disorder NOS	1
+Fyu51	[X]Other epilepsy	2
+ZV125	[V]Personal history of circulatory system disease	27
+bB1y	IVABRADINE 7.5mg tablets	21
+bb1x	AMIODARONE HYDROCHLORIDE 100mg tablets	1
+bdl5	CARVEDILOL 3.125mg tablets	5
+be31	LONITEN 2.5mg tablets	17
+be3x	MINOXIDIL 2.5mg tablets	2
+bh62	DOXAZOSIN 2mg tablets	1
+bh63	DOXAZOSIN 4mg tablets	2
+bh65	CARDURA 2mg tablets	26
+bx13	BEZAFIBRATE 200mg tablets	23
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	2
+bxkz	ROSUVASTATIN 40mg tablets	6
+e618	CEFACLOR 500mg capsules	1
+e77y	MINOCYCLINE 50mg tablets	1
+f14x	INSULIN ASPART 100units/mL injection vial	1
+f27S	HUMAN MIXTARD 40 prefilled pen	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	1
+f321	CHLORPROPAMIDE 100mg tablets	24
+ft34	*NOVONORM 0.5mg tablets	21
+h82C	NEORAL 100mg capsules	9
+ip3a	CALCIUM AND ERGOCALCIFEROL 400units tablets	1
+j22R	DICLOFENAC 75mg e/c+m/r capsules	1

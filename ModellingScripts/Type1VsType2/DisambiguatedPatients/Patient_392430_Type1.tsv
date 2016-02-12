@@ -1,0 +1,148 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	2
+12C4	FH: CVA/stroke	3
+136	Alcohol consumption	1
+137L	Current non-smoker	2
+137P	Cigarette smoker	2
+137S	Ex smoker	3
+1381	Exercise physically impossible	1
+1383	Enjoys light exercise	2
+1A1	Micturition frequency	1
+1A23	Incontinence of urine	2
+1A24	Stress incontinence	1
+1A7	Vaginal discharge symptom	2
+1A7Z	Vaginal discharge NOS	1
+1B1U	Symptoms of depression	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	12
+22A	O/E - weight	17
+22K	Body Mass Index	12
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	17
+29B9	10g monofilament sensation R foot abnormal	2
+2BB1	O/E - retina normal	1
+2BBD	O/E - Right retina normal	1
+2BBE	O/E - Left retina normal	1
+3216	ECG normal	1
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	6
+42R7	Serum iron level	1
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+42W4	HbA1c level (DCCT aligned)	16
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44E	Serum bilirubin level	1
+44EC	Serum total bilirubin level	1
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44J3	Serum creatinine	24
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	6
+44TB	Haemoglobin A1c level	4
+44U	Blood glucose result	4
+44g	Plasma glucose level	5
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	11
+4662	Urine glucose test negative	1
+4665	Urine glucose test = ++	1
+4672	Urine protein test negative	4
+4675	Urine protein test = ++	1
+4676	Urine protein test = +++	1
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	3
+46W	Urine microalbumin	2
+573D	Isotope static scan heart	1
+58531	Echocardiogram abnormal	1
+585f	Echocardiogram shows left ventricular systolic dysfunction	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	2
+6774	Medication counselling	1
+6791	Health ed. - smoking	2
+6792	Health ed. - alcohol	1
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+8A17	Self monitoring of blood glucose	1
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	1
+8BL2	Patient on maximal tolerated therapy for diabetes	3
+8CA4	Patient advised re diet	3
+8CAL	Smoking cessation advice	1
+8H	Referral for further care	1
+8H62	Referral to G.P.	2
+8H7R	Refer to chiropodist	1
+9N2U	Seen by optician	1
+9N2f	Seen by retinal screener	1
+9N4C	Failed encounter - no answer when rang back	1
+9NNC	Under care of retinal screener	1
+9OD9	BP ABNORMAL - 1st recall	1
+AB2	Candidiasis	1
+AB21	Candidal vulvovaginitis	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	4
+ASDI224	Aspirin  Dispersible tablets  75 mg	10
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	3
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	11
+BUTA434	Bumetanide  Tablets  1 mg	6
+C10	Diabetes mellitus	1
+C1001	Diab.mell.no comp. - adult	1
+C106	Diabetes mellitus with neurological manifestation	2
+COEL12426NEMIS	Coloplast  Elasticated leg bag straps  380812	14
+COUR12416NEMIS	Coloplast Simpla 2 Litre S2  Urine drainage bag  320902	1
+D41z	Blood dyscrasia NOS	8
+DIM/24452EMIS	Diclofenac Sodium  M/R capsules  100 mg	1
+DIM/30235EMIS	Diltiazem Hydrochloride  M/R tablets  60 mg	2
+E2C01	Anger reaction	1
+E3	Mental retardation	7
+EMISQRE1	Unknown vendor specific drug	1
+EMISQRE4	Unknown vendor specific drug	1
+EMISQRI11	Unknown vendor specific drug	2
+F2514	Epileptic seizures - tonic	1
+F4K21	Vitreous detachment	1
+FRTA1248	Frusemide  Tablets  20 mg	14
+Fyu51	[X]Other epilepsy	2
+G240	Secondary malignant hypertension	1
+G3400	Single coronary vessel disease	1
+G5700	Paroxysmal atrial tachycardia	2
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H014	Acute rhinosinusitis	1
+H570	Rheumatoid lung	2
+H58y3	Interstitial lung disease NEC	2
+HEWITGB1	Unknown vendor specific drug	1
+HUIN3719	Humulin M1  Injection	4
+ISDU10518BRIDL	Isosorbide Mononitrate  Durules  60 mg	3
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	1
+K0D	End-stage renal disease	2
+L100	Threatened abortion	1
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	4
+MACA8841BRIDL	Maxepa  Capsules  1 gram	13
+MEOR11311NEMIS	Metoprolol Tartrate  Oral solution  12.5 mg/5 ml	21
+N083q	Recurrent subluxation of the patella	2
+NATA1940	Nardil  Tablets  15 mg	1
+NIM/14469NEMIS	Nicotinic Acid  M/R tablets  500 mg	2
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	2
+PREN8411EGTON	Prednisolone  E/c tablets  2.5 mg	6
+Pyu70	[X]Other cystic kidney diseases	1
+S3z2	Stress fracture	2
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	20
+SLTA4320	Slow-Fe  Tablets  160 mg	23
+TEST23687EMIS	Terazosin Hydrochloride  Starter pack  7 x 1 mg, 7 x 2 mg	6
+TETA1042NEMIS	Telmisartan  Tablets  40 mg	1
+URBL8670BRID	Uro-Tainer Chlorhexidine  Bladder Wash-Out	14
+URCA14420NEMIS	Uro-Tainer Sodium Chloride  Catheter maintenance solution  0.9 %, 50 ml	1
+Ua02b	Unknown vendor specific drug	10
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	14
+VETA6809	Verapamil Hydrochloride  Tablets  80 mg	3

@@ -1,0 +1,118 @@
+Code	Description	Count
+136	Alcohol consumption	1
+1361	Teetotaller	1
+1367	Stopped drinking alcohol	1
+136M	Current non drinker	1
+1371	Never smoked tobacco	2
+137S	Ex smoker	2
+138I	FITT activity level 0; no mod/vig activity of 20 mins duratn	1
+229	O/E - height	1
+229Z	O/E - height NOS	5
+22A	O/E - weight	3
+22AZ	O/E - weight NOS	5
+22K	Body Mass Index	7
+246	O/E - blood pressure reading	19
+29BB	10g monofilament sensation R foot normal	3
+2BBP	O/E - right eye background diabetic retinopathy	1
+2BBQ	O/E - left eye background diabetic retinopathy	2
+33B93	Exercise tolerance test normal	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	3
+42R5	Serum TIBC	1
+42R7	Serum iron level	1
+42R9	Saturation of iron binding capacity	1
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	9
+42W5	Haemoglobin A1c level - IFCC standardised	3
+42X	Reticulocyte count	1
+42X2	Immature reticulocyte fraction	1
+42c	HbA1 - diabetic control	1
+42c3	HbA1 level (DCCT aligned)	1
+43Z2	Prostate specific antigen	4
+44CB	Serum transferrin	2
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	1
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44J3	Serum creatinine	15
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P1	Serum cholesterol normal	4
+44Q	Serum triglycerides	3
+44U4	Blood glucose 5-6.9 mmol/L	1
+44U6	Blood glucose 10-13.9 mmol/L	1
+44Z1	Serum fructosamine	3
+44g	Plasma glucose level	4
+451E	GFR calculated abbreviated MDRD	11
+461	Urine exam. - general	1
+4618	Urine dipstick test	2
+462	Urine inspection	2
+46N4	Urine albumin	6
+46N8	Urine microalbumin profile	2
+46TC	Urine albumin:creatinine ratio	5
+46U	Urine culture	3
+46W	Urine microalbumin	2
+585	Other diagnostic ultrasound	1
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	1
+66Ac	Diabetic peripheral neuropathy screening	1
+6792	Health ed. - alcohol	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+7B390	Transurethral prostatectomy	1
+8H4	Referral to physician	1
+8H5Z	Referral to surgeon NOS	1
+8I3	Procedure refused	1
+9N2e	Seen by ophthalmologist	1
+9N31	Telephone encounter	3
+9N4	Failed encounter	1
+9Na	Consultation	2
+9OD	Hypertension screen admin.	1
+9h42	Excepted from diabetes quality indicators: Informed dissent	1
+9iG	Ethnic category not stated - 2001 census	1
+A97	Other and unspecified syphilis	1
+B46	Malignant neoplasm of prostate	1
+C10	Diabetes mellitus	1
+E200z	Anxiety state NOS	1
+F31	Facial nerve disorders	1
+F420	Diabetic retinopathy	1
+H037	Recurrent acute tonsillitis	1
+N01w	"Reactive arthropathy	1
+ZV579	[V]Cardiac rehabilitation	4
+ab21	FYBOGEL 3.5g plain sugar free granules	1
+bb1x	AMIODARONE HYDROCHLORIDE 100mg tablets	23
+bh62	DOXAZOSIN 2mg tablets	1
+bh63	DOXAZOSIN 4mg tablets	5
+bh65	CARDURA 2mg tablets	27
+bk73	CANDESARTAN CILEXETIL 8mg tablets	2
+bl5y	ANGITIL XL 300 m/r capsules	9
+bl7w	NICARDIPINE 45mg m/r capsules	7
+bl7x	NICARDIPINE 30mg m/r capsules	3
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	1
+bn5x	MOXISYLYTE 40mg tablets	4
+bx13	BEZAFIBRATE 200mg tablets	22
+bxky	ROSUVASTATIN 20mg tablets	1
+bxkz	ROSUVASTATIN 40mg tablets	1
+du3N	*NICABATE 14mg patches x7	1
+du3g	NICORETTE 10mg inhalator starter pack	1
+e912	ERYTHROMYCIN 500mg tablets	1
+e921	CLARITHROMYCIN 250mg tablets	1
+f25C	INSULATARD INNOLET 100units/mL prefilled syringe 3mL	13
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	15
+f41y	METFORMIN HYDROCHLORIDE 500mg tablets	1
+ft4v	ROSIGLITAZONE 4mg / METFORMIN 1000mg tablets	3
+ft6y	NATEGLINIDE 120mg tablets	1
+gc63	ALFUZOSIN HYDROCHLORIDE 5mg m/r tablets	1
+gc71	TAMSULOSIN HYDROCHLORIDE 400micrograms m/r capsules	7
+h82C	NEORAL 100mg capsules	1
+i474	ARANESP 30micrograms/0.3mL prefilled syringe	1
+j28A	BRUFEN RETARD 800mg m/r tablets	1

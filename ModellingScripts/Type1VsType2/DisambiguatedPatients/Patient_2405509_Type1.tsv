@@ -1,0 +1,108 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+1351	Church of England	1
+136	Alcohol consumption	4
+137G	Trying to give up smoking	1
+137R	Current smoker	1
+137S	Ex smoker	3
+1383	Enjoys light exercise	2
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	3
+22A	O/E - weight	13
+22K	Body Mass Index	13
+2469	O/E - Systolic BP reading	20
+29H4	O/E - Vibration sense of right foot abnormal	1
+2BBI	O/E - no retinopathy	1
+2BBJ	O/E - no right diabetic retinopathy	1
+2BBK	O/E - no left diabetic retinopathy	1
+311A	Monofilament foot sensation test	2
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	2
+42R4	Serum ferritin	2
+42R7	Serum iron level	1
+42T	Serum vitamin B12	2
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	6
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	4
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	16
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	6
+44PF	Total cholesterol:HDL ratio	7
+44Q	Serum triglycerides	13
+44TB	Haemoglobin A1c level	10
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	9
+4671	Urine protein test not done	2
+4672	Urine protein test negative	3
+4691	Urine blood test not done	1
+4692	Urine blood test = negative	2
+46M7	Urine creatinine	3
+46N	Urine protein	2
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	6
+58C1	Retinal photography	1
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	3
+66AD	Fundoscopy - diabetic check	1
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	4
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+8A17	Self monitoring of blood glucose	2
+8B2B	Nicotine replacement therapy	2
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	1
+8H	Referral for further care	1
+8H33	Day hospital care	1
+8H7i	Referral to smoking cessation advisor	2
+8I76	Statin not tolerated	1
+9N2V	Seen by optometrist	1
+9N2f	Seen by retinal screener	1
+9N31	Telephone encounter	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	18
+ASDI224	Aspirin  Dispersible tablets  75 mg	7
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+BETA4656	Bezafibrate  M/R tablets  400 mg	2
+C10	Diabetes mellitus	5
+CATA34017EMIS	Carvedilol  Tablets  3.125 mg	2
+D0130	Combined B12 and folate deficiency anaemia	1
+E200z	Anxiety state NOS	1
+E3	Mental retardation	1
+EMISNQIS4	Unknown vendor specific drug	2
+ERIN24326NEMIS	Ergocalciferol  Injection  300,000 units/ml, 2 ml ampoule	2
+F31z	Facial nerve disorder NOS	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F5603	Active vestibular Meniere's disease	1
+Fyu51	[X]Other epilepsy	3
+G86	Noninfective lymphatic disorders	9
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H1y40	Polyp of vocal cord	1
+HEWITPO12	Unknown vendor specific drug	1
+L264	Intrauterine death	4
+L40	Major puerperal infection	4
+LMRGPAP3	Unknown vendor specific drug	26
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+NIM/19537EMIS	Nifedipine  M/R tablets  20 mg	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	13
+POFO4257NEMIS	Coloplast Folysil All Silicone  Foley catheter (male)  14ch, AA71	3
+QUTA10127BRIDL	Quinapril  Tablets  10 mg	1
+SCCA19035EMIS	Scott  Catheters  10 ch	2
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1

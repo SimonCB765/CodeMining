@@ -1,0 +1,117 @@
+Code	Description	Count
+051J	Biochemist	1
+1371	Never smoked tobacco	1
+13AC	Diabetic weight reducing diet	1
+1Z12	Chronic kidney disease stage 3	1
+1Z14	Chronic kidney disease stage 5	4
+229	O/E - height	15
+22A	O/E - weight	22
+22K	Body Mass Index	20
+246	O/E - blood pressure reading	7
+2469	O/E - Systolic BP reading	10
+246A	O/E - Diastolic BP reading	9
+246N	Standing systolic blood pressure	4
+246P	Standing diastolic blood pressure	4
+24E8	O/E - R.dorsalis pedis present	2
+28G	Forgetful	1
+29B8	10g monofilament sensation absent	1
+2BB1	O/E - retina normal	1
+2BBD	O/E - Right retina normal	1
+2BBQ	O/E - left eye background diabetic retinopathy	1
+32	Electrocardiography	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	1
+426	Red blood cell (RBC) count	1
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	4
+42H7	Total white blood count	2
+42R4	Serum ferritin	3
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	13
+44J9	Serum urea level	1
+44Le	Plasma vitamin B12 level	3
+44M4	Serum albumin	1
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	5
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	7
+44TB	Haemoglobin A1c level	10
+44g	Plasma glucose level	7
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	8
+4672	Urine protein test negative	1
+4678	Proteinuria	1
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	6
+58531	Echocardiogram abnormal	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+66C	Obesity monitoring	1
+6791	Health ed. - smoking	2
+6799	Health ed. - diet	1
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	3
+68A8	Digital retinal screening	1
+7L1A	Compensation for renal failure	1
+7L1A0	Renal dialysis	1
+8CA40	Pt advised re wt reducing diet	1
+8CA4z	Pt advised re diet NOS	1
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	1
+8H44	Cardiological referral	1
+8HBD	Retinopathy follow up	1
+8I26	Beta blocker contraindicated	2
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I65	Warfarin not indicated	2
+8I6B	Clopidogrel not indicated	2
+8I6C	Angiotensin II receptor antagonist not indicated	1
+8I6N	Anticoagulation not indicated	1
+8I6a	Dipyridamole not indicated	1
+9N1v	Seen in diabetic eye clinic	1
+9N2e	Seen by ophthalmologist	1
+9S1	White	1
+9i1	Irish - ethnic category 2001 census	1
+C10	Diabetes mellitus	1
+C1090	Non-insulin-dependent diabetes mellitus with renal comps	1
+D107A	Haemoglobin E trait	1
+E200z	Anxiety state NOS	2
+E271	Anorexia nervosa	1
+E2741	Transient insomnia	2
+F4J51	Partial oculomotor nerve palsy	1
+Fyu51	[X]Other epilepsy	2
+FyuN1	[X]Other otitis externa	1
+J17y7	Deformed duodenal cap (bulb)	1
+M08	Cutaneous cellulitis	1
+X20Bv	Unknown vendor specific drug	1
+XAM/3799NEMIS	Xatral Xl  M/R tablets  10 mg	3
+ZETA9096EMIS	Zestoretic 20  Tablets	2
+ZV125	[V]Personal history of circulatory system disease	11
+ZV57C	[V]Palliative care	3
+bdl3	CARVEDILOL 12.5mg tablets	1
+bdl4	CARVEDILOL 25mg tablets	6
+bi3g	ZESTRIL 10mg tablets 28CP	26
+bi61	RAMIPRIL 1.25mg capsules	2
+bi67	RAMIPRIL 10mg capsules	19
+bk37	LOSARTAN POTASSIUM 100mg tablets	1
+bk3z	LOSARTAN POTASSIUM+HYDROCHLOROTHIAZIDE 100mg/25mg tablets	4
+bl5y	ANGITIL XL 300 m/r capsules	5
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	23
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	8
+bx13	BEZAFIBRATE 200mg tablets	18
+bxd1	SIMVASTATIN 10mg tablets	12
+bxky	ROSUVASTATIN 20mg tablets	3
+d71v	AMITRIPTYLINE 50mg m/r capsules	1
+da96	CIPRAMIL 40mg tablets	2
+f27S	HUMAN MIXTARD 40 prefilled pen	1
+f321	CHLORPROPAMIDE 100mg tablets	6

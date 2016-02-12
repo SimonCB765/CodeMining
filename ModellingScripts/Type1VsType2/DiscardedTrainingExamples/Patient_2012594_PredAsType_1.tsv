@@ -1,0 +1,122 @@
+Code	Description	Count
+136	Alcohol consumption	7
+1362	Trivial drinker - <1u/day	1
+137P	Cigarette smoker	1
+137S	Ex smoker	5
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+1A55	Dysuria	1
+229	O/E - height	6
+22A	O/E - weight	16
+22K	Body Mass Index	14
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	23
+29B9	10g monofilament sensation R foot abnormal	3
+29H4	O/E - Vibration sense of right foot abnormal	1
+2BB1	O/E - retina normal	3
+311A	Monofilament foot sensation test	2
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	1
+42R7	Serum iron level	1
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	23
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	8
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	9
+44TB	Haemoglobin A1c level	16
+44U	Blood glucose result	4
+44g	Plasma glucose level	12
+44g1	Plasma fasting glucose level	1
+44h4	Blood calcium level	1
+44lD	Urine protein/creatinine ratio	6
+451E	GFR calculated abbreviated MDRD	6
+4618	Urine dipstick test	3
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	3
+4676	Urine protein test = +++	1
+467E	Urine protein level	2
+4696	Urine blood test = ++	1
+46M7	Urine creatinine	4
+46N	Urine protein	2
+46N4	Urine albumin	7
+46TC	Urine albumin:creatinine ratio	6
+46TD	Urine microalbumin:creatinine ratio	2
+46X0	Urine nitrite positive	1
+5853	U-S heart scan	1
+58C1	Retinal photography	2
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+66C9	Target weight discussed	1
+66K9	Trial without catheter	1
+6799	Health ed. - diet	3
+67I7	Advice about foot care	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+7B2A	Diagnostic cystoscopy	1
+7B2B1	Change of urethral catheter	1
+7B390	Transurethral prostatectomy	1
+8A17	Self monitoring of blood glucose	3
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	2
+8H3K	Non-urgent urology admission	1
+8H41	General medical referral	1
+8H48	Gastroenterological referral	1
+8H5B	Referred to urologist	1
+8H7h	Urgent referral	1
+8HJA	Trauma self-referral	1
+8HQ1	Refer for X-Ray	1
+9N2P	Seen by chiropodist	1
+9N2f	Seen by retinal screener	1
+9N47	Appt cancelled by patient	1
+9NC	Letter sent to outside agency	1
+9i0	British or mixed British - ethnic category 2001 census	4
+A5323	Ophthalmic herpes zoster infection	1
+AB04	Dermatophytosis of foot	1
+BAPR19962EMIS	Bard Biocath Hydrogel Coated  Prefilled male catheter  Aquamatic, 12 ch, D2264	1
+C10	Diabetes mellitus	7
+C104	Diabetes mellitus with renal manifestation	1
+EMISQAL1	Unknown vendor specific drug	1
+F42z	Retinal disorder NOS	1
+F4B	Corneal opacity and other disorders of cornea	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	3
+Fyu51	[X]Other epilepsy	5
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	3
+HUPR31276NEMIS	Humalog Kwikpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+K0D	End-stage renal disease	2
+K12z	Urinary calculus NOS	2
+LEIGHTH12	Unknown vendor specific drug	3
+LEIGHUS10	Unknown vendor specific drug	3
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	19
+M095	Skin abscess	3
+M102	Infectious eczematoid dermatitis	2
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	3
+META1753	Mefenamic Acid  Tablets  500 mg	23
+N07z	Internal knee derangement NOS	1
+N0851	Joint ankylosis of the shoulder region	1
+N331B	Postmenopausal osteoporosis with pathological fracture	2
+NETAEGTON6665	Neo-Naclex-K  Tablets	1
+PF30	Congen.shortening of leg unsp.	1
+Pyu70	[X]Other cystic kidney diseases	1
+RATA2434	Rastinon  Tablets  500 mg	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	20
+SITA10078BRIDL	Simvastatin  Tablets  20 mg	2
+SIUR22715EMIS	Seton Simpla 2 Litre S1  Urine drainage bag  311102	1
+TEIN7046	Testosterone Enanthate  Injection  250 mg/ml, 1 ml ampoule	2
+TOTA2876	Tolbutamide  Tablets  500 mg	1

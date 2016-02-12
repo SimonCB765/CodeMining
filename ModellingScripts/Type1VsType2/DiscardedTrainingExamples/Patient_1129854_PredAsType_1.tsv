@@ -1,0 +1,122 @@
+Code	Description	Count
+136	Alcohol consumption	12
+1371	Never smoked tobacco	1
+137S	Ex smoker	5
+1383	Enjoys light exercise	1
+16D	Falls	1
+1Z12	Chronic kidney disease stage 3	1
+1Z1C	Chronic kidney disease stage 3 without proteinuria	1
+229	O/E - height	4
+22A	O/E - weight	20
+22K	Body Mass Index	20
+2469	O/E - Systolic BP reading	26
+29B8	10g monofilament sensation absent	1
+29B9	10g monofilament sensation R foot abnormal	1
+29BB	10g monofilament sensation R foot normal	2
+2BBF	Retinal abnormality - diabetes related	1
+2BBJ	O/E - no right diabetic retinopathy	1
+2BBK	O/E - no left diabetic retinopathy	1
+311A	Monofilament foot sensation test	2
+321	ECG - general	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	4
+42U5	Serum folate	2
+42W4	HbA1c level (DCCT aligned)	6
+42W5	Haemoglobin A1c level - IFCC standardised	4
+42c	HbA1 - diabetic control	2
+44AF	Brain natriuretic peptide level	1
+44CC	Plasma C reactive protein	4
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	24
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	4
+44Q	Serum triglycerides	14
+44TB	Haemoglobin A1c level	13
+44g1	Plasma fasting glucose level	2
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	8
+451F	Glomerular filtration rate	2
+461	Urine exam. - general	3
+467	Urine protein test	1
+4672	Urine protein test negative	5
+4673	Urine protein test = trace	2
+46M7	Urine creatinine	3
+46N	Urine protein	3
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	8
+46W	Urine microalbumin	2
+58C1	Retinal photography	4
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+6791	Health ed. - smoking	1
+6799	Health ed. - diet	1
+67I7	Advice about foot care	1
+6896	Depression screening using questions	3
+68A8	Digital retinal screening	1
+8A17	Self monitoring of blood glucose	2
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	2
+8H	Referral for further care	1
+8H2	Emergency hospital admission	1
+8H44	Cardiological referral	1
+8H5	Referral to surgeon	2
+8H54	Orthopaedic referral	1
+8H6	Referral to other doctor	1
+8H77	Refer to physiotherapist	1
+8I24	Aspirin prophylaxis contra-indicated	2
+8I25	Warfarin contraindicated	1
+8I2K	Clopidogrel contraindicated	1
+8I62	Beta blocker not indicated	2
+8I64	Angiotensin converting enzyme inhibitor not indicated	4
+8I65	Warfarin not indicated	2
+8I6B	Clopidogrel not indicated	1
+9N1v	Seen in diabetic eye clinic	1
+9N2S	Seen by practice phlebotomist	3
+9N2U	Seen by optician	1
+9h01	Excepted from CHD quality indicators: Patient unsuitable	2
+9i0	British or mixed British - ethnic category 2001 census	2
+AB04	Dermatophytosis of foot	1
+AB211	Candidiasis of vagina	1
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	6
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	6
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+D0130	Combined B12 and folate deficiency anaemia	2
+DITA886	Diclofenac Sodium  Tablets  50 mg	25
+F31z	Facial nerve disorder NOS	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+FRTA1248	Frusemide  Tablets  20 mg	23
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	4
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+H014	Acute rhinosinusitis	1
+H50	Empyema	1
+HEWITLE2	Unknown vendor specific drug	1
+K0D	End-stage renal disease	2
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	1
+LMRGPAP3	Unknown vendor specific drug	25
+LMRGPGP2	Unknown vendor specific drug	4
+MACA8841BRIDL	Maxepa  Capsules  1 gram	4
+MATA1720	Marevan  Tablets  1 mg	2
+MEOR11311NEMIS	Metoprolol Tartrate  Oral solution  12.5 mg/5 ml	21
+N0516	Local.primary OA-lower leg	1
+N07y5	Locked knee	1
+NATA1937	Naprosyn  Tablets  500 mg	23
+NATA1940	Nardil  Tablets  15 mg	2
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	1
+PRTA2322	Prazosin Hydrochloride  Tablets  1 mg	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	24

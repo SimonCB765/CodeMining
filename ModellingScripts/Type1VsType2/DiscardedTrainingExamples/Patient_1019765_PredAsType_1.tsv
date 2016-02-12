@@ -1,0 +1,109 @@
+Code	Description	Count
+03I	Opticians	1
+136	Alcohol consumption	9
+137L	Current non-smoker	1
+137S	Ex smoker	3
+1Z12	Chronic kidney disease stage 3	3
+229	O/E - height	11
+22A	O/E - weight	11
+22K	Body Mass Index	10
+22N0	Waist circumference	5
+2469	O/E - Systolic BP reading	19
+29B1	O/E - tactile sensation normal	1
+29BB	10g monofilament sensation R foot normal	2
+2BB1	O/E - retina normal	1
+2BBF	Retinal abnormality - diabetes related	2
+3212	Standard ECG	1
+3216	ECG normal	2
+423	Haemoglobin estimation	2
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	2
+42W	Hb. A1C - diabetic control	5
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	4
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	16
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	8
+44PD	Serum fasting LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	10
+44Q5	Serum random triglyceride level	5
+44TB	Haemoglobin A1c level	15
+44f1	Serum fasting glucose level	12
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	8
+4615	MSU sent to lab.	4
+4662	Urine glucose test negative	2
+4663	Urine glucose test = trace	1
+467	Urine protein test	1
+4672	Urine protein test negative	5
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	1
+4682	Urine ketone test negative	3
+4692	Urine blood test = negative	2
+4695	Urine blood test = +	1
+46A2	Urine pH = 5.0	2
+46M7	Urine creatinine	3
+46N4	Urine albumin	8
+46TC	Urine albumin:creatinine ratio	6
+46U	Urine culture	5
+46W	Urine microalbumin	6
+46X1	Urine nitrite negative	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	1
+66AD	Fundoscopy - diabetic check	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+7B27	Endoscopic extirpation of bladder lesion	2
+8A17	Self monitoring of blood glucose	2
+8B63	Salicylate prophylaxis	3
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	4
+9N1Q	Seen in diabetic clinic	1
+9N2P	Seen by chiropodist	1
+9N2U	Seen by optician	3
+9N2f	Seen by retinal screener	1
+9N33	Letter encounter from patient	1
+9N36	Letter from specialist	1
+A53	Herpes zoster	1
+A531	Herpes zoster with other central nervous system complication	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	11
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	16
+ASHBYUC1	Unknown vendor specific drug	1
+ASHBYUR1	Unknown vendor specific drug	4
+CITA26752EMIS	Citalopram Hydrobromide  Tablets  20 mg	1
+CLTA30106NEMIS	Clopidogrel Hydrogen Sulphate  Tablets  300 mg	1
+DITA886	Diclofenac Sodium  Tablets  50 mg	24
+EMISNQRE53	Unknown vendor specific drug	1
+EMISSPR460	Unknown vendor specific drug	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+FRTA1248	Frusemide  Tablets  20 mg	10
+Fyu51	[X]Other epilepsy	3
+G5700	Paroxysmal atrial tachycardia	1
+H037	Recurrent acute tonsillitis	1
+H1y10	Nasal septum abscess	1
+HONI879NEMIS	Hollister Urostomy  Night drainage bags  5550	16
+K0D	End-stage renal disease	2
+K101z	Acute pyelonephritis NOS	2
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	31
+META1753	Mefenamic Acid  Tablets  500 mg	6
+RATA26384NEMIS	Rasilez  Tablets  150 mg	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	13
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	4
+TOTA2876	Tolbutamide  Tablets  500 mg	2

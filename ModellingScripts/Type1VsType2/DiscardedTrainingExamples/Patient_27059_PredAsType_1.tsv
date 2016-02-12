@@ -1,0 +1,111 @@
+Code	Description	Count
+0I35	Light goods vehicle driver	1
+12C2	FH: Ischaemic heart dis. <60	1
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	9
+137P	Cigarette smoker	1
+137S	Ex smoker	4
+229	O/E - height	5
+22A	O/E - weight	10
+22K	Body Mass Index	10
+2469	O/E - Systolic BP reading	18
+29B7	10g monofilament sensation present	2
+29B8	10g monofilament sensation absent	2
+2BBI	O/E - no retinopathy	1
+2BBJ	O/E - no right diabetic retinopathy	1
+2BBK	O/E - no left diabetic retinopathy	1
+31280	Fundoscopy normal	2
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42QE	International normalised ratio	4
+42R4	Serum ferritin	1
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	17
+42W5	Haemoglobin A1c level - IFCC standardised	3
+42c	HbA1 - diabetic control	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	15
+44I5	Serum sodium	3
+44J3	Serum creatinine	33
+44J7	Albumin / creatinine ratio	1
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	4
+44TB	Haemoglobin A1c level	2
+44g	Plasma glucose level	5
+451E	GFR calculated abbreviated MDRD	10
+451F	Glomerular filtration rate	2
+4614	Urinalysis = abnormal	1
+4666	Urine glucose test = +++	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	4
+46TC	Urine albumin:creatinine ratio	4
+46W	Urine microalbumin	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+66AD	Fundoscopy - diabetic check	1
+66i	Chronic kidney disease monitoring	1
+6791	Health ed. - smoking	3
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	2
+8H44	Cardiological referral	1
+8H7h	Urgent referral	1
+8H7n	Referral to retinal screener	1
+8H7r	Refer to diabetic foot screener	2
+8I64	Angiotensin converting enzyme inhibitor not indicated	2
+8I6C	Angiotensin II receptor antagonist not indicated	4
+8I76	Statin not tolerated	1
+9N1Q	Seen in diabetic clinic	1
+9N2e	Seen by ophthalmologist	2
+9N42	Did not attend - no reason	1
+9i0	British or mixed British - ethnic category 2001 census	3
+A781	Viral warts	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	6
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	1
+C10	Diabetes mellitus	1
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	1
+DIM/27367EMIS	Diltiazem Hydrochloride  M/R capsules  240 mg	1
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	1
+E3	Mental retardation	1
+ERIN24326NEMIS	Ergocalciferol  Injection  300,000 units/ml, 2 ml ampoule	21
+F2514	Epileptic seizures - tonic	1
+F48z	Visual disturbance NOS	1
+FRTA1248	Frusemide  Tablets  20 mg	12
+G660	Middle cerebral artery syndrome	1
+G84	Haemorrhoids	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+H17z	Allergic rhinitis NOS	2
+HUCA18384EMIS	Humulin M4  Cartridges (1.5 Ml)	1
+HUIN3719	Humulin M1  Injection	3
+M21yC	Insulin lipohypertrophy	21
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	1
+N023	Gouty arthritis	1
+NIM/21927EMIS	Nicardipine Hydrochloride  M/R capsules  45 mg	19
+PE06	Congenital nasal septum deviation	3
+PE1	Congenital sternomastoid torticollis	13
+PITA2287	Pizotifen  Tablets  1.5 mg	2
+PK61	Sturge-Weber syndrome	1
+PRST8650EMIS	Prazosin Hydrochloride  Starter pack	1
+SLTA4320	Slow-Fe  Tablets  160 mg	7
+TEGE25620NEMIS	Testosterone  Gel  2 %, 3 x 60 gram Multi-Dose Dispenser	2
+VETA26284EMIS	Venlafaxine Hydrochloride  Tablets  37.5 mg	1
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	3
+VICA4504	Vibramycin  Capsules  50 mg	2

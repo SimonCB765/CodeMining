@@ -1,0 +1,151 @@
+Code	Description	Count
+0Z	Other occupations	1
+136	Alcohol consumption	5
+1361	Teetotaller	1
+1371	Never smoked tobacco	3
+1383	Enjoys light exercise	1
+14A7	H/O: CVA/stroke	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	8
+22A	O/E - weight	11
+22K	Body Mass Index	9
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	26
+29BB	10g monofilament sensation R foot normal	2
+29H5	O/E - Vibration sense of right foot normal	1
+2BBK	O/E - no left diabetic retinopathy	1
+2BBP	O/E - right eye background diabetic retinopathy	1
+2BBR	O/E - right eye preproliferative diabetic retinopathy	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+3128	Fundoscopy	2
+3212	Standard ECG	1
+3217	ECG abnormal	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	2
+42R4	Serum ferritin	3
+42R7	Serum iron level	1
+42T	Serum vitamin B12	4
+42U5	Serum folate	4
+42W	Hb. A1C - diabetic control	5
+42W4	HbA1c level (DCCT aligned)	8
+44A1	Serum parathyroid hormone	1
+44AF	Brain natriuretic peptide level	1
+44CS	Serum C reactive protein level	3
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	26
+44J9	Serum urea level	4
+44LP	Serum 25-Hydroxy vitamin D3 level	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	6
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	10
+44TJ	Blood glucose level	1
+44U	Blood glucose result	1
+44f1	Serum fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	16
+451F	Glomerular filtration rate	1
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+46M7	Urine creatinine	5
+46TC	Urine albumin:creatinine ratio	11
+46W	Urine microalbumin	8
+5853	U-S heart scan	2
+585f	Echocardiogram shows left ventricular systolic dysfunction	1
+58C1	Retinal photography	1
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	3
+66C9	Target weight discussed	2
+6791	Health ed. - smoking	3
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+8A17	Self monitoring of blood glucose	2
+8B28	Lipid lowering therapy	1
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	1
+8CAM	Patient advised about alcohol	1
+8H	Referral for further care	3
+8H43	Dermatological referral	1
+8H44	Cardiological referral	1
+8H51	General surgical referral	2
+8H54	Orthopaedic referral	1
+8H76	Refer to dietician	1
+8I27	Statins contraindicated	1
+8I62	Beta blocker not indicated	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	3
+8I65	Warfarin not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	1
+9N1v	Seen in diabetic eye clinic	3
+9NNC	Under care of retinal screener	1
+9S7	Pakistani	2
+9i7	Indian or British Indian - ethnic category 2001 census	1
+9i8	Pakistani or British Pakistani - ethnic category 2001 census	2
+AB0	Dermatophytosis including tinea or ringworm	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	6
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	7
+ATTA230	Atenolol  Tablets  100 mg	1
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	18
+C10	Diabetes mellitus	4
+C1000	Diab.mell.no comp. - juvenile	1
+C10FJ	Insulin treated Type 2 diabetes mellitus	2
+CITA15860NEMIS	Cipralex  Tablets  20 mg	1
+E200z	Anxiety state NOS	3
+EGTON415	Unknown vendor specific drug	2
+EMISQLA1	Unknown vendor specific drug	1
+EMISSPR110	Unknown vendor specific drug	3
+F35z	Mononeuritis of unspecified site NOS	1
+F366	Polyneuropathy	1
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	2
+FLCA1195	Flucloxacillin  Capsules  250 mg	2
+FOCA24991EMIS	Foley  Catheter (male)  12 ch	2
+FRTA1248	Frusemide  Tablets  20 mg	16
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G3400	Single coronary vessel disease	1
+G570	Paroxysmal supraventricular tachycardia	1
+G57y9	Supraventricular tachycardia NOS	1
+G665	Pure motor lacunar syndrome	1
+G672	Hypertensive encephalopathy	1
+G84	Haemorrhoids	3
+GLTA5912	Glurenorm  Tablets  30 mg	1
+HIOS17296NEMIS	Hi-Line  Ostomy girdle/pantie brief with suspenders  Res 1	18
+HYTA1398	Hydrocortisone  Tablets  20 mg	1
+INPR20078NEMIS	Insulin Aspart  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+IRIN11056NEMIS	Iron Hydroxide Dextran Complex  Injection  50 mg/ml, 2 ml ampoule	1
+J1y	"Other specified disorders of oesophagus	4
+MACA8841BRIDL	Maxepa  Capsules  1 gram	4
+NITR12772NEMIS	Niquitin Clear  Transdermal patches  14 mg/24 hrs	1
+NITR34945EMIS	Nicotine  Transdermal patches  21 mg/24 hrs	1
+PK61	Sturge-Weber syndrome	1
+Pyu70	[X]Other cystic kidney diseases	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	6
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	2
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	15
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	19
+SETA2508	Secadrex  Tablets	2
+SETA4308	Semi-Daonil  Tablets  2.5 mg	1
+SLTA4320	Slow-Fe  Tablets  160 mg	5
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	3
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	2
+VETA6809	Verapamil Hydrochloride  Tablets  80 mg	2

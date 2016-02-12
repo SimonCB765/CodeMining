@@ -1,0 +1,123 @@
+Code	Description	Count
+135	Religion	2
+136	Alcohol consumption	6
+1371	Never smoked tobacco	3
+1383	Enjoys light exercise	1
+138O	Takes inadequate exercise	1
+13lL	Main spoken language Urdu	2
+1A25	Urgency	1
+1A55	Dysuria	1
+229	O/E - height	4
+22A	O/E - weight	8
+22K	Body Mass Index	9
+246	O/E - blood pressure reading	19
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+3216	ECG normal	1
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	3
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	6
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	5
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44J3	Serum creatinine	9
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	4
+44P6	Serum LDL cholesterol level	3
+44Q	Serum triglycerides	7
+44TJ	Blood glucose level	1
+44U	Blood glucose result	1
+44f1	Serum fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	5
+451F	Glomerular filtration rate	2
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	2
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	2
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	2
+46W	Urine microalbumin	2
+46W1	Urine microalbumin negative	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	1
+67E2	Travel vaccination given	2
+6896	Depression screening using questions	1
+68A7	Diabetic retinopathy screening	2
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	1
+8H72	Refer to district nurse	2
+8HBA	Follow up in outpatient clinic	5
+8HE1	Discharged from outpatients	1
+8I25	Warfarin contraindicated	1
+8I26	Beta blocker contraindicated	1
+8I3X	Diabetic retinopathy screening refused	1
+8I63	Statin not indicated	1
+9N0Q	Seen in speech and language clinic	1
+9N1v	Seen in diabetic eye clinic	1
+9N33	Letter encounter from patient	1
+9h21	Excepted from stroke quality indicators: Patient unsuitable	1
+9i8	Pakistani or British Pakistani - ethnic category 2001 census	3
+A08	Ill-defined intestinal tract infections	1
+AB230	Candidal intertrigo	1
+C10	Diabetes mellitus	1
+C109	Non-insulin dependent diabetes mellitus	2
+E2741	Transient insomnia	1
+EMISQ2W2	Unknown vendor specific drug	1
+F4J54	Abducens (sixth) nerve palsy	1
+F4K2z	Vitreous disorders NOS	1
+Fyu51	[X]Other epilepsy	2
+G12	Rheumatic aortic valve disease	1
+G60	Subarachnoid haemorrhage	2
+GLTA5912	Glurenorm  Tablets  30 mg	1
+H1y1A	Nasal furuncle	1
+K0D	End-stage renal disease	1
+K100	Chronic pyelonephritis	1
+N0514	Local.primary OA-hand	1
+PALFRLE4	Unknown vendor specific drug	1
+PAYNENO26	Unknown vendor specific drug	1
+RITA31771NEMIS	Rivaroxaban  Tablets  10 mg	1
+S102	Closed fracture thoracic vertebra	1
+TALORVA2	Unknown vendor specific drug	1
+ZV125	[V]Personal history of circulatory system disease	16
+bB1y	IVABRADINE 7.5mg tablets	27
+bh62	DOXAZOSIN 2mg tablets	1
+bh63	DOXAZOSIN 4mg tablets	1
+bh65	CARDURA 2mg tablets	1
+bi28	INNOZIDE 20/12.5mg tablets	22
+bi2z	ENALAPRIL MALEATE 20mg tablets x28	2
+bi33	LISINOPRIL 10mg tablets	1
+bi6w	TRITACE 10mg tablets	2
+bk37	LOSARTAN POTASSIUM 100mg tablets	1
+bl5y	ANGITIL XL 300 m/r capsules	1
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	14
+bx11	BEZALIP 200mg tablets	25
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	1
+bxdI	INEGY 10mg/40mg tablets	1
+bxe2	*PRAVASTATIN 20mg tablets	1
+d61s	LITHIUM CARBONATE 200mg m/r tablets	2
+d7c6	NORTRIPTYLINE 10mg tablets	4
+e772	*MINOCIN 100mg tablets	1
+e921	CLARITHROMYCIN 250mg tablets	2
+ejC2	PALUDRINE tablets+AVLOCLOR tablets 100mg/250mg travel pack	1
+f127	HUMAN ACTRAPID 100iu/mL injection 10mL	22
+f27S	HUMAN MIXTARD 40 prefilled pen	1
+f2Az	INSULIN DETEMIR 100iu/mL injection cartridges	20
+ft9y	EXENATIDE 10micrograms/0.04mL injection prefilled pen	2
+he51	*ZOLADEX 3.6mg implant	1
+j22R	DICLOFENAC 75mg e/c+m/r capsules	7
+j28B	IBUPROFEN 800mg m/r tablets	1
+j2cu	NAPROXEN tablet+MISOPROSTOL tablet 500mg/200micrograms pack	1
+j2cx	NAPROXEN+MISOPROSTOL 500mg/200micrograms tablets	1

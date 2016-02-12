@@ -1,0 +1,138 @@
+Code	Description	Count
+136	Alcohol consumption	10
+1371	Never smoked tobacco	4
+137S	Ex smoker	1
+1381	Exercise physically impossible	3
+13l4	Main spoken language English	1
+16D	Falls	2
+1A	Genitourinary symptoms	2
+1Z12	Chronic kidney disease stage 3	1
+1Z13	Chronic kidney disease stage 4	1
+229	O/E - height	7
+22A	O/E - weight	17
+22K	Body Mass Index	19
+2469	O/E - Systolic BP reading	28
+29B8	10g monofilament sensation absent	3
+2BBF	Retinal abnormality - diabetes related	1
+312E	Direct fundoscopy following mydriatic	1
+3135	Subjective audiometry	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R	Serum iron tests	2
+42R4	Serum ferritin	3
+42R7	Serum iron level	2
+42W	Hb. A1C - diabetic control	15
+42W4	HbA1c level (DCCT aligned)	6
+42W5	Haemoglobin A1c level - IFCC standardised	3
+42c	HbA1 - diabetic control	6
+44CB	Serum transferrin	4
+44CC	Plasma C reactive protein	4
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	14
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	23
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	13
+44PF	Total cholesterol:HDL ratio	11
+44Q	Serum triglycerides	13
+44TB	Haemoglobin A1c level	1
+44TJ	Blood glucose level	6
+44U	Blood glucose result	9
+44f1	Serum fasting glucose level	2
+451E	GFR calculated abbreviated MDRD	13
+461	Urine exam. - general	4
+4615	MSU sent to lab.	2
+4618	Urine dipstick test	1
+4662	Urine glucose test negative	1
+467	Urine protein test	2
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	1
+4693	Urine: trace non-haemol. blood	1
+46D1	Urine sent for microscopy	1
+46M7	Urine creatinine	4
+46N8	Urine microalbumin profile	1
+46TC	Urine albumin:creatinine ratio	9
+46W	Urine microalbumin	6
+58C1	Retinal photography	1
+65720	Pneumococcal vaccination given	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+66AD	Fundoscopy - diabetic check	3
+6774	Medication counselling	1
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	5
+6896	Depression screening using questions	3
+8A17	Self monitoring of blood glucose	1
+8B6A	Statin prophylaxis	2
+8CA4	Patient advised re diet	1
+8CA48	Pt advised re low salt diet	1
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	1
+8H	Referral for further care	1
+8H48	Gastroenterological referral	1
+8H53	ENT referral	1
+8H54	Orthopaedic referral	1
+8H58	Gynaecological referral	1
+8H5B	Referred to urologist	1
+8H7J	Refer to occupational therap.	1
+8H7q	Referral for exercise therapy	1
+8Hj4	Referral to DESMOND diabetes structured education programme	1
+8I62	Beta blocker not indicated	1
+9N1v	Seen in diabetic eye clinic	2
+9N2P	Seen by chiropodist	2
+9N42	Did not attend - no reason	1
+9h42	Excepted from diabetes quality indicators: Informed dissent	2
+9i0	British or mixed British - ethnic category 2001 census	1
+A07y	Gastrointestinal tract infection specified organism NEC	1
+AA41	Erythema chronicum migrans	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	9
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	2
+C10	Diabetes mellitus	1
+C1000	Diab.mell.no comp. - juvenile	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	3
+DIM/21945EMIS	Diltiazem Hydrochloride  M/R capsules  300 mg	1
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+EMISSPR150	Unknown vendor specific drug	1
+F261z	Common migraine NOS	1
+F5603	Active vestibular Meniere's disease	1
+F587z	Otalgia NOS	2
+F5902	Conductive hearing loss due to disorder of tympanic membrane	3
+FRTA1248	Frusemide  Tablets  20 mg	8
+Fyu5E	[X]Chronic headache disorder	4
+H014	Acute rhinosinusitis	2
+HUCA18384EMIS	Humulin M4  Cartridges (1.5 Ml)	1
+HYTA1421	Hypovase  Tablets  500 micrograms	8
+HYTA8712EGTON	Hytrin  Tablets  5 mg	2
+IBFC10455BRIDL	Ibuprofen  Fc tablets  800 mg	11
+INCA17688NEMIS	Indometacin  Capsules  25 mg	1
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	2
+ISTA1519	Isosorbide Dinitrate  Tablets  10 mg	1
+K0D	End-stage renal disease	2
+L12	Hypertension complicating pregnancy/childbirth/puerperium	2
+L264	Intrauterine death	3
+L264z	Intrauterine death NOS	7
+LAIN13572NEMIS	Lantus  Injection  100 units/ml, 3 ml cartridge	9
+LEIGHUS10	Unknown vendor specific drug	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	6
+N096F	Other symptoms - wrist	1
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	1
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	2
+PRTA2322	Prazosin Hydrochloride  Tablets  1 mg	2
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	11
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	4
+R00zW	"[D]State of emotional shock and stress	5
+S3009	"Cl # prx fem	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	15
+TOTA24440EMIS	Torasemide  Tablets  10 mg	2

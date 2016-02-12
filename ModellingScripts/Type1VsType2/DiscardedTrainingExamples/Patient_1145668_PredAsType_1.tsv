@@ -1,0 +1,103 @@
+Code	Description	Count
+136	Alcohol consumption	1
+137S	Ex smoker	2
+138O	Takes inadequate exercise	1
+1A53	Lumbar ache - renal	1
+1FC	Diet average	1
+229	O/E - height	7
+22A	O/E - weight	12
+22K	Body Mass Index	11
+246	O/E - blood pressure reading	18
+29H5	O/E - Vibration sense of right foot normal	1
+29H7	O/E - Vibration sense of left foot normal	2
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	1
+42U4	Red blood cell folate	1
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	12
+42X	Reticulocyte count	1
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	5
+44E	Serum bilirubin level	1
+44EC	Serum total bilirubin level	1
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	20
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	3
+44P6	Serum LDL cholesterol level	3
+44PC	Serum random HDL cholesterol level	1
+44PE	Serum random LDL cholesterol level	1
+44Q	Serum triglycerides	6
+44TB	Haemoglobin A1c level	1
+44U	Blood glucose result	4
+44g	Plasma glucose level	1
+451E	GFR calculated abbreviated MDRD	6
+451F	Glomerular filtration rate	2
+4613	Urinalysis = no abnormality	1
+4665	Urine glucose test = ++	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	2
+4674	Urine protein test = +	4
+4676	Urine protein test = +++	1
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	2
+46TC	Urine albumin:creatinine ratio	6
+46W	Urine microalbumin	3
+46W1	Urine microalbumin negative	1
+46W2	Microalbumin excretion rate	1
+66A5	Diabetic on insulin	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+679L	Health education - diabetes	1
+67I7	Advice about foot care	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	1
+8H2	Emergency hospital admission	1
+8H43	Dermatological referral	1
+8H4B	Referred to rheumatologist	1
+9N1O	Seen in rheumatology clinic	1
+9N1R	Seen in neurology clinic	1
+9N1v	Seen in diabetic eye clinic	1
+9NNC	Under care of retinal screener	1
+C109	Non-insulin dependent diabetes mellitus	2
+CYTA23926EMIS	Cyproterone Acetate  Tablets  100 mg	1
+EGTON460	Unknown vendor specific drug	1
+EGTONEL1	Unknown vendor specific drug	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+GLTA1304	Glibenese  Tablets  5 mg	1
+MOM/6280NEMIS	Monomax Xl  M/R tablets  60 mg	2
+N0951	Stiff joint NEC-shoulder	1
+PALFRPO1	Unknown vendor specific drug	1
+PCSDT11883MO2	Unknown vendor specific drug	1
+Pyu70	[X]Other cystic kidney diseases	3
+bi27	INNOVACE 20mg tablets x28	1
+bi28	INNOZIDE 20/12.5mg tablets	19
+bi95	GOPTEN 1mg capsules	18
+bl5y	ANGITIL XL 300 m/r capsules	2
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	13
+bx11	BEZALIP 200mg tablets	21
+du3g	NICORETTE 10mg inhalator starter pack	1
+e921	CLARITHROMYCIN 250mg tablets	1
+eiX1	OSELTAMIVIR 75mg capsules	14
+f133	INSULIN LISPRO 100iu/mL cartridges	10
+f321	CHLORPROPAMIDE 100mg tablets	22
+f354	DIAMICRON MR 30mg m/r tablets	11
+fe4a	EFCORTESOL 500mg/5mL injection	3
+i475	ARANESP 40micrograms/0.4mL prefilled syringe	4
+ip31	CALCIFEROL HIGH-STR. 10ku tabs	1
+j2cq	NAPROSYN EC 500mg e/c tablets	1
+j2ew	PIROXICAM 20mg melt in the mouth tablets	2

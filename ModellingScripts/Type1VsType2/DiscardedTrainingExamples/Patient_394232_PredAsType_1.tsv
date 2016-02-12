@@ -1,0 +1,117 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	4
+12C4	FH: CVA/stroke	2
+137L	Current non-smoker	3
+137S	Ex smoker	2
+1383	Enjoys light exercise	4
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	14
+22A	O/E - weight	14
+22K	Body Mass Index	14
+2469	O/E - Systolic BP reading	16
+29BB	10g monofilament sensation R foot normal	2
+2BBE	O/E - Left retina normal	1
+31280	Fundoscopy normal	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	5
+42R5	Serum TIBC	2
+42R7	Serum iron level	2
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	15
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	1
+44CS	Serum C reactive protein level	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44J3	Serum creatinine	21
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	4
+44Q	Serum triglycerides	7
+44TB	Haemoglobin A1c level	2
+44U	Blood glucose result	3
+44g	Plasma glucose level	6
+451E	GFR calculated abbreviated MDRD	5
+4612	Urinalysis requested	1
+4662	Urine glucose test negative	2
+4664	Urine glucose test = +	1
+4671	Urine protein test not done	2
+4672	Urine protein test negative	4
+4682	Urine ketone test negative	3
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	2
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	5
+46W	Urine microalbumin	3
+5856	U-S pelvic scan	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+8A17	Self monitoring of blood glucose	2
+8CA41	Pt advised re diabetic diet	2
+8CAL	Smoking cessation advice	2
+8H	Referral for further care	2
+8H62	Referral to G.P.	3
+8H77	Refer to physiotherapist	1
+9N1v	Seen in diabetic eye clinic	1
+9N2f	Seen by retinal screener	1
+9NNC	Under care of retinal screener	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AB04	Dermatophytosis of foot	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	1
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	17
+C10	Diabetes mellitus	6
+C108	Insulin dependent diabetes mellitus	1
+CAIN34034EMIS	Caverject  Injection  40 micrograms/vial	24
+COSH12399NEMIS	Coloplast Simpla Trident T2  Short tube leg bags  500ml, 376138	22
+DIM/22313EMIS	Diclomax Retard  M/R capsules  100 mg	1
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	1
+E2C11	Solitary stealing	1
+E3	Mental retardation	8
+EMISQRE1	Unknown vendor specific drug	1
+EMISQSM12	Unknown vendor specific drug	2
+F3700	Guillain-Barre syndrome	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	9
+FRTA1247	Frumil  Tablets	1
+Fyu51	[X]Other epilepsy	1
+GLTA1305	Glipizide  Tablets  5 mg	1
+GRAYSEA2	Unknown vendor specific drug	1
+H52y0	Acute pneumothorax NOS	1
+H584	Acute pulmonary oedema unspecified	1
+H58y3	Interstitial lung disease NEC	2
+HEWITPE2	Unknown vendor specific drug	1
+Hyu02	[X]Acute tonsillitis due to other specified organisms	1
+IBSO22325NEMIS	Ibandronic Acid  Solution for injection  3 mg/3 ml, 3 ml pre-filled syringe	2
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	1
+K1800	Urethral stricture due to unspecified infection	1
+M21yC	Insulin lipohypertrophy	14
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	10
+MEM/30449NEMIS	Metformin Hydrochloride  M/R tablets  750 mg	3
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	15
+N04y	Other specified inflammatory polyarthropathy	1
+N073	Loose body in knee	1
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	2
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	1
+PH12	Ichthyosiform erythroderma	3
+PK250	Aberrant thyroid gland	4
+PK61	Sturge-Weber syndrome	2
+SCCA19035EMIS	Scott  Catheters  10 ch	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	23
+TAOR1702NEMIS	Tamoxifen Citrate  Oral solution  Sugar Free 10 mg/5 ml	2

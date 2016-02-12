@@ -1,0 +1,113 @@
+Code	Description	Count
+136	Alcohol consumption	10
+1371	Never smoked tobacco	4
+1383	Enjoys light exercise	4
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	6
+22A	O/E - weight	9
+22K	Body Mass Index	11
+2469	O/E - Systolic BP reading	22
+29B7	10g monofilament sensation present	2
+29HA	O/E - Vibration sense of right foot absent	1
+2BBF	Retinal abnormality - diabetes related	1
+31282	Dilated fundoscopy normal	1
+313B	Audiogram	1
+32	Electrocardiography	1
+3212	Standard ECG	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	4
+42R	Serum iron tests	1
+42R4	Serum ferritin	1
+42R7	Serum iron level	1
+42W	Hb. A1C - diabetic control	13
+42W4	HbA1c level (DCCT aligned)	4
+42W5	Haemoglobin A1c level - IFCC standardised	3
+42c	HbA1 - diabetic control	7
+44CB	Serum transferrin	1
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	22
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	13
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	13
+44TJ	Blood glucose level	8
+44TK	Fasting blood glucose level	1
+44U	Blood glucose result	4
+44f1	Serum fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	11
+461	Urine exam. - general	1
+4615	MSU sent to lab.	2
+4662	Urine glucose test negative	1
+4665	Urine glucose test = ++	1
+467	Urine protein test	3
+4672	Urine protein test negative	3
+4695	Urine blood test = +	1
+46M7	Urine creatinine	3
+46N8	Urine microalbumin profile	1
+46TC	Urine albumin:creatinine ratio	6
+46W	Urine microalbumin	6
+46X1	Urine nitrite negative	1
+46f1	Urine leucocyte test = negative	1
+58531	Echocardiogram abnormal	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+66AD	Fundoscopy - diabetic check	2
+6799	Health ed. - diet	5
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+8A17	Self monitoring of blood glucose	1
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	1
+8H5	Referral to surgeon	1
+8H52	Ophthalmological referral	1
+8H7R	Refer to chiropodist	1
+8I26	Beta blocker contraindicated	1
+8I62	Beta blocker not indicated	1
+9N1v	Seen in diabetic eye clinic	1
+9N2P	Seen by chiropodist	2
+9h01	Excepted from CHD quality indicators: Patient unsuitable	1
+A53	Herpes zoster	1
+ADEF28927NEMIS	Adcal-D3 Dissolve  Effervescent tablets  1.5 grams + 400 units	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	20
+ASDI224	Aspirin  Dispersible tablets  75 mg	18
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	3
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	1
+BUTA434	Bumetanide  Tablets  1 mg	3
+CAEF1326NEMIS	Calcium Carbonate  Effervescent tablets  1.25 grams	2
+CATA8556BRID	Calcium Gluconate  Tablets  500 mg	1
+CONE5708NEMIS	Coloplast Speedicath  Nelaton catheter (male)  14ch, 28414	1
+DITA10235BRIDL	Diclofenac Retard  Tablets  100 mg	1
+DITA896	Diflunisal  Tablets  250 mg	1
+E117	Unspecified bipolar affective disorder	3
+F4F5z	Stenosis and insufficiency of lacrimal passages NOS	1
+F5421	Tympanic membrane central perforation	1
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G12	Rheumatic aortic valve disease	1
+G572z	Paroxysmal tachycardia NOS	2
+H014	Acute rhinosinusitis	1
+HEWITLE2	Unknown vendor specific drug	1
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	1
+LEIGHTH12	Unknown vendor specific drug	27
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	6
+MEOR11311NEMIS	Metoprolol Tartrate  Oral solution  12.5 mg/5 ml	21
+N0951	Stiff joint NEC-shoulder	1
+PRTA2324	Prazosin Hydrochloride  Tablets  5 mg	1
+S2505	Closed fracture finger metacarpal head	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	23
+SLTA4320	Slow-Fe  Tablets  160 mg	1

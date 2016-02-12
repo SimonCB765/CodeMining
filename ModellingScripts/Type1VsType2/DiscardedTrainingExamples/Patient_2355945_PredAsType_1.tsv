@@ -1,0 +1,131 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	3
+1371	Never smoked tobacco	5
+1A1	Micturition frequency	8
+1FA	Diet good	2
+229	O/E - height	2
+22A	O/E - weight	15
+22K	Body Mass Index	13
+2469	O/E - Systolic BP reading	31
+29BB	10g monofilament sensation R foot normal	2
+2BB8	O/E - vitreous haemorrhages	1
+321B	12 lead ECG	3
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	2
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	4
+42U5	Serum folate	3
+42W	Hb. A1C - diabetic control	6
+42W4	HbA1c level (DCCT aligned)	10
+43Z2	Prostate specific antigen	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44J3	Serum creatinine	31
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	5
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	3
+44U	Blood glucose result	1
+44Z1	Serum fructosamine	1
+44f0	Serum random glucose level	4
+44f1	Serum fasting glucose level	1
+44g	Plasma glucose level	1
+44g1	Plasma fasting glucose level	2
+451E	GFR calculated abbreviated MDRD	12
+4665	Urine glucose test = ++	1
+4666	Urine glucose test = +++	1
+4667	Urine glucose test = ++++	1
+467	Urine protein test	1
+4672	Urine protein test negative	1
+4675	Urine protein test = ++	5
+46M7	Urine creatinine	4
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	7
+46W2	Microalbumin excretion rate	3
+46X0	Urine nitrite positive	1
+46X1	Urine nitrite negative	1
+46f1	Urine leucocyte test = negative	1
+574C	VQ scan normal	1
+5858	Doppler studies	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+66Ac	Diabetic peripheral neuropathy screening	1
+6792	Health ed. - alcohol	2
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+68A8	Digital retinal screening	3
+68NE	No consent - influenza imm.	1
+8A17	Self monitoring of blood glucose	2
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	3
+8H44	Cardiological referral	1
+8I28	Angiotensin converting enzyme inhibitors contraindicated	1
+8I6B	Clopidogrel not indicated	1
+8I74	Angiotensin converting enzyme inhibitor not tolerated	3
+9N1K	Seen in ophthalmology clinic	2
+9N1S	Seen in dermatology clinic	1
+9N1g	Seen in gastroenterology clinic	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	1
+9N4H	DNA hospital appointment	1
+9NM0	Attending diabetes clinic	1
+9S1	White	1
+9S10	White British	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	4
+AMTA10145BRIDL	Amlodipine Besilate  Tablets  5 mg	3
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	19
+ASDI224	Aspirin  Dispersible tablets  75 mg	14
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	2
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	20
+BETA302	Bendrofluazide  Tablets  2.5 mg	2
+C1000	Diab.mell.no comp. - juvenile	1
+C104	Diabetes mellitus with renal manifestation	2
+CAIN28236EMIS	Caverject  Injection  10 micrograms/vial	2
+CAIN34034EMIS	Caverject  Injection  40 micrograms/vial	1
+CAIN4534NEMIS	Calciferol  Injection  300,000 units/ml, 1 ml ampoule	4
+COSI12373NEMIS	Rochester Medical Clear Advantage  Silicone sheath (self-adhesive)  small, 786187	1
+D0130	Combined B12 and folate deficiency anaemia	1
+DICA876	Diazepam  Capsules  2 mg	5
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	1
+DITA884	Diclofenac Sodium  M/R tablets  100 mg	7
+EMISNQOU1	Unknown vendor specific drug	1
+F31z	Facial nerve disorder NOS	1
+F35z	Mononeuritis of unspecified site NOS	2
+F5902	Conductive hearing loss due to disorder of tympanic membrane	3
+Fyu51	[X]Other epilepsy	5
+G581	Left ventricular failure	1
+G60	Subarachnoid haemorrhage	3
+G668	Right sided CVA	2
+G84	Haemorrhoids	3
+H1y1A	Nasal furuncle	1
+HONI879NEMIS	Hollister Urostomy  Night drainage bags  5550	17
+IBFC10455BRIDL	Ibuprofen  Fc tablets  800 mg	2
+K0D	End-stage renal disease	2
+L3	Complications occurring during labour and delivery	15
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	1
+PD44	Double ureter	7
+PE06	Congenital nasal septum deviation	5
+PKy2	Marfan's syndrome	7
+Pyu70	[X]Other cystic kidney diseases	2
+QUTA10127BRIDL	Quinapril  Tablets  10 mg	2
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	3
+SLTA4320	Slow-Fe  Tablets  160 mg	7
+SOIN2637	Solu-Cortef  Injection  100 mg/vial	2
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	5
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	1
+VETA6809	Verapamil Hydrochloride  Tablets  80 mg	1
+YA492	Unknown vendor specific drug	1

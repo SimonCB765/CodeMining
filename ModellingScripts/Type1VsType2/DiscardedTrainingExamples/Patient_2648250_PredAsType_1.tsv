@@ -1,0 +1,103 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	2
+1358	Hindu	1
+136	Alcohol consumption	9
+1371	Never smoked tobacco	3
+13l6	Main spoken language Gujerati	1
+229	O/E - height	6
+22A	O/E - weight	15
+22K	Body Mass Index	14
+22N0	Waist circumference	4
+246	O/E - blood pressure reading	4
+2469	O/E - Systolic BP reading	8
+24E8	O/E - R.dorsalis pedis present	2
+29B7	10g monofilament sensation present	2
+2BBJ	O/E - no right diabetic retinopathy	1
+32M	24 Hour ECG	1
+423	Haemoglobin estimation	7
+4258	Haematocrit	1
+4266	Nucleated red blood cell count	1
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	7
+42N	Monocyte count	2
+42P	Platelet count	3
+42R4	Serum ferritin	3
+42R7	Serum iron level	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	1
+42W5	Haemoglobin A1c level - IFCC standardised	5
+43Z2	Prostate specific antigen	1
+44AF	Brain natriuretic peptide level	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44J3	Serum creatinine	18
+44J9	Serum urea level	2
+44Le	Plasma vitamin B12 level	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	7
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	7
+44Q	Serum triglycerides	7
+44TB	Haemoglobin A1c level	6
+44g	Plasma glucose level	2
+44lD	Urine protein/creatinine ratio	15
+451E	GFR calculated abbreviated MDRD	17
+4618	Urine dipstick test	1
+4672	Urine protein test negative	5
+4673	Urine protein test = trace	1
+467E	Urine protein level	1
+46M7	Urine creatinine	5
+46N	Urine protein	3
+46N4	Urine albumin	8
+46TC	Urine albumin:creatinine ratio	10
+46W	Urine microalbumin	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+67E2	Travel vaccination given	3
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+792	Coronary artery operations	1
+792D	Other bypass of coronary artery	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	5
+8I28	Angiotensin converting enzyme inhibitors contraindicated	1
+9N1Q	Seen in diabetic clinic	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	1
+9S6	Indian	1
+9i7	Indian or British Indian - ethnic category 2001 census	1
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	5
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	3
+C10	Diabetes mellitus	1
+CAIN31971EMIS	Caverject  Injection  5 micrograms/vial	5
+CITA15860NEMIS	Cipralex  Tablets  20 mg	13
+COSH12392NEMIS	Coloplast Simpla Trident T1  Short tube leg bags  500ml, 370807	7
+COSH12393NEMIS	Coloplast Simpla Trident T1  Short tube leg bags  750ml, 370809	1
+DITA884	Diclofenac Sodium  M/R tablets  100 mg	9
+E200z	Anxiety state NOS	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	6
+Fyu51	[X]Other epilepsy	3
+G11z	Mitral valve disease NOS	2
+G5733	Non-rheumatic atrial fibrillation	1
+LAIN13572NEMIS	Lantus  Injection  100 units/ml, 3 ml cartridge	8
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	1
+MEOR11311NEMIS	Metoprolol Tartrate  Oral solution  12.5 mg/5 ml	4
+NIM/21970EMIS	Nitrofurantoin  M/R capsules  100 mg	3
+Pyu70	[X]Other cystic kidney diseases	2
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	1
+TC51	Fall on same level from tripping	1
+XM0vY	Unknown vendor specific drug	1
+Xa6uH	Unknown vendor specific drug	1
+bh62	DOXAZOSIN 2mg tablets	1
+bi2y	ENALAPRIL MALEATE 20mg tablets	1
+biC7	COVERSYL ARGININE PLUS 5mg/1.25mg tablets	8
+bk37	LOSARTAN POTASSIUM 100mg tablets	3
+br2C	000iu/0.4mL syrg"	2

@@ -1,0 +1,126 @@
+Code	Description	Count
+051J	Biochemist	1
+136	Alcohol consumption	10
+1371	Never smoked tobacco	5
+1381	Exercise physically impossible	3
+1382	Avoids even trivial exercise	2
+13lQ	Main spoken language Italian	1
+1A55	Dysuria	1
+1BT	Depressed mood	1
+1Z12	Chronic kidney disease stage 3	6
+1Z13	Chronic kidney disease stage 4	3
+229	O/E - height	6
+22A	O/E - weight	7
+22K	Body Mass Index	7
+2469	O/E - Systolic BP reading	22
+29B7	10g monofilament sensation present	1
+29H8	O/E - vibration sense left foot reduced	1
+29HA	O/E - Vibration sense of right foot absent	2
+312E	Direct fundoscopy following mydriatic	1
+32	Electrocardiography	2
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42R	Serum iron tests	2
+42R4	Serum ferritin	2
+42R7	Serum iron level	2
+42T	Serum vitamin B12	2
+42U4	Red blood cell folate	1
+42W	Hb. A1C - diabetic control	18
+42W4	HbA1c level (DCCT aligned)	2
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CB	Serum transferrin	4
+44CC	Plasma C reactive protein	2
+44F	Serum alkaline phosphatase	2
+44I4	Serum potassium	16
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	34
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	6
+44Q	Serum triglycerides	7
+44TJ	Blood glucose level	10
+44U	Blood glucose result	5
+44W9	Serum digoxin level	1
+451E	GFR calculated abbreviated MDRD	9
+461	Urine exam. - general	4
+4615	MSU sent to lab.	1
+4618	Urine dipstick test	1
+4662	Urine glucose test negative	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	5
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	5
+46N4	Urine albumin	1
+46N8	Urine microalbumin profile	2
+46TC	Urine albumin:creatinine ratio	7
+46W	Urine microalbumin	6
+5543	Coronary arteriograph.abnormal	1
+58531	Echocardiogram abnormal	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	3
+66AD	Fundoscopy - diabetic check	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	5
+6896	Depression screening using questions	3
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	2
+8CAL	Smoking cessation advice	1
+8H	Referral for further care	3
+8H2	Emergency hospital admission	1
+8H4	Referral to physician	1
+8H44	Cardiological referral	1
+8H52	Ophthalmological referral	1
+8H53	ENT referral	1
+8H7n	Referral to retinal screener	1
+9N2P	Seen by chiropodist	2
+9N32	Third party encounter	2
+9h	Exception reporting: GP contract quality indicators	1
+9h42	Excepted from diabetes quality indicators: Informed dissent	1
+9i2	Other White background - ethnic category 2001 census	1
+A5315	Postzoster neuralgia	1
+AB211	Candidiasis of vagina	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	3
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	1
+BESC358	Betnovate  Scalp application  0.1 %	1
+CAEF1326NEMIS	Calcium Carbonate  Effervescent tablets  1.25 grams	2
+CATA5686	Camcolit 400  M/R tablets  400 mg	1
+CHRSPLE5	Unknown vendor specific drug	6
+D0130	Combined B12 and folate deficiency anaemia	1
+DICA876	Diazepam  Capsules  2 mg	2
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+E112	Single major depressive episode	1
+E117	Unspecified bipolar affective disorder	1
+F36z	Hereditary or idiopathic peripheral neuropathy NOS	1
+F3701	Postinfectious polyneuritis	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	2
+FECA9492HILLI	Fenofibrate  Capsules  100 mg	4
+FRTA1248	Frusemide  Tablets  20 mg	22
+Fyu51	[X]Other epilepsy	2
+G240	Secondary malignant hypertension	2
+G570	Paroxysmal supraventricular tachycardia	2
+G6410	Cerebral infarction due to embolism of cerebral arteries	1
+GETA19680EMIS	Gemfibrozil  Tablets  600 mg	1
+GLCF12519NEMIS	Glyceryl Trinitrate  Cfc-free pump spray  400 micrograms/dose (200 dose)	9
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H037	Recurrent acute tonsillitis	1
+HYTA1398	Hydrocortisone  Tablets  20 mg	1
+HYTA8711EGTON	Hytrin  Tablets  2 mg	15
+IRIN11056NEMIS	Iron Hydroxide Dextran Complex  Injection  50 mg/ml, 2 ml ampoule	2
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	1
+LMRGPDI11	Unknown vendor specific drug	1
+LMRGPGP2	Unknown vendor specific drug	4
+MACA8841BRIDL	Maxepa  Capsules  1 gram	25
+NITR22499EMIS	Nicorette  Transdermal patches  5 mg/16 hrs	7
+NITR22504EMIS	Nicabate  Transdermal patches  21 mg	16
+POTA2309	Ponstan  Tablets forte  500 mg	1
+S200	Closed fracture of clavicle	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	18
+SLTA4320	Slow-Fe  Tablets  160 mg	4
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	1

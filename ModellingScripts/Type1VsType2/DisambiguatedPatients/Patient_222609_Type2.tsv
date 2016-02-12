@@ -1,0 +1,145 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+136	Alcohol consumption	10
+1371	Never smoked tobacco	1
+137S	Ex smoker	5
+13l1	Main spoken language Bengali	2
+1AA	Prostatism	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	8
+22A	O/E - weight	16
+22K	Body Mass Index	14
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	28
+29B7	10g monofilament sensation present	4
+2BB1	O/E - retina normal	1
+2BBD	O/E - Right retina normal	1
+2BBI	O/E - no retinopathy	1
+2G5F	O/E - Right diabetic foot at moderate risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+31280	Fundoscopy normal	2
+32	Electrocardiography	1
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42QE	International normalised ratio	3
+42R4	Serum ferritin	2
+42R7	Serum iron level	1
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	16
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44AF	Brain natriuretic peptide level	1
+44E	Serum bilirubin level	1
+44EC	Serum total bilirubin level	1
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	17
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	10
+44U	Blood glucose result	2
+44g1	Plasma fasting glucose level	4
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	3
+451F	Glomerular filtration rate	1
+4618	Urine dipstick test	1
+4662	Urine glucose test negative	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	2
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	4
+46N3	Urine total protein	1
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	5
+46X1	Urine nitrite negative	1
+55	Cardiovascular sys.angiography	1
+5543	Coronary arteriograph.abnormal	1
+58581	Doppler studies abnormal	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	4
+6791	Health ed. - smoking	6
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	4
+7928	Transluminal balloon angioplasty of coronary artery	1
+8A17	Self monitoring of blood glucose	2
+8A18	Self monitoring of urine glucose	1
+8B3T	Over the counter aspirin therapy	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	8
+8CA5	Patient advised re exercise	8
+8CAM	Patient advised about alcohol	1
+8H4	Referral to physician	1
+8H41	General medical referral	1
+8H44	Cardiological referral	2
+8H4C	Referred to chest physician	1
+8H53	ENT referral	1
+8H5B	Referred to urologist	1
+8H5D	Referred to vascular surgeon	3
+8I26	Beta blocker contraindicated	3
+8I62	Beta blocker not indicated	1
+9N1v	Seen in diabetic eye clinic	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N42	Did not attend - no reason	2
+9i5	White and Asian - ethnic category 2001 census	1
+9i9	Bangladeshi or British Bangladeshi - ethn categ 2001 census	1
+A07y0	Viral gastroenteritis	1
+ADM/22258EMIS	Adizem-Sr  M/R capsules  90 mg	23
+ALM/3798NEMIS	Alfuzosin Hydrochloride  M/R tablets  10 mg	2
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	17
+ASTA225	Aspirin  Tablets  300 mg	1
+C10	Diabetes mellitus	1
+CONE5709NEMIS	Coloplast Speedicath  Nelaton catheter (female)  10ch, 28510	1
+D4100	Stress polycythaemia	1
+DITA886	Diclofenac Sodium  Tablets  50 mg	21
+E200z	Anxiety state NOS	1
+E3	Mental retardation	1
+EMISQRI11	Unknown vendor specific drug	1
+F42z	Retinal disorder NOS	1
+F5900	"Conductive hearing loss	1
+FECA1203NEMIS	Fenofibrate  Capsules  (Micronised) 267 mg	1
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	2
+G240	Secondary malignant hypertension	1
+G65zz	Transient cerebral ischaemia NOS	4
+GACA10300BRIDL	Galenamox  Capsules  250 mg	18
+GASTOSE4	Unknown vendor specific drug	1
+GASTOUR9	Unknown vendor specific drug	1
+H037	Recurrent acute tonsillitis	1
+H1y40	Polyp of vocal cord	1
+HUPE31135EMIS	Human Mixtard 10  Penfill cartridges (3 ml)	1
+ININ32907EMIS	Invicorp 2  Injection	15
+ISDU10518BRIDL	Isosorbide Mononitrate  Durules  60 mg	1
+ISIN33727EMIS	Isophane Insulin (Human Pyr)  Injection  100 units/ml, 10 ml vial	1
+K0D	End-stage renal disease	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	10
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	12
+MIOR16205NEMIS	Mirtazapine  Orodispersible tablets  30 mg	1
+N050	Generalised osteoarthritis - OA	1
+N0906	Joint effusion of the lower leg	1
+NIM/21927EMIS	Nicardipine Hydrochloride  M/R capsules  45 mg	1
+OLCA9765HILLI	Olbetam  Capsules  250 mg	1
+PK61	Sturge-Weber syndrome	3
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	7
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	5
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	2
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	24
+SESH5910	Selsun  Shampoo  2.5 %	2
+SITA15258NEMIS	Sirolimus  Tablets  2 mg	7
+VACA29705EMIS	Valsartan  Capsules  160 mg	1
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	3
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	2
+VETA6809	Verapamil Hydrochloride  Tablets  80 mg	2

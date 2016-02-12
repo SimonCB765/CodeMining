@@ -1,0 +1,112 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	3
+137S	Ex smoker	2
+1381	Exercise physically impossible	2
+13l4	Main spoken language English	2
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	2
+22A	O/E - weight	8
+22K	Body Mass Index	8
+2469	O/E - Systolic BP reading	23
+29BA	10g monofilament sensation L foot abnormal	2
+29BB	10g monofilament sensation R foot normal	1
+2BBD	O/E - Right retina normal	2
+2BBE	O/E - Left retina normal	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	2
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	13
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	7
+44Q	Serum triglycerides	7
+44W9	Serum digoxin level	2
+451E	GFR calculated abbreviated MDRD	9
+4675	Urine protein test = ++	1
+46M7	Urine creatinine	3
+46N3	Urine total protein	2
+46N4	Urine albumin	7
+46TC	Urine albumin:creatinine ratio	5
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A5	Diabetic on insulin	1
+6896	Depression screening using questions	2
+68A8	Digital retinal screening	3
+7910	Plastic repair of mitral valve	2
+8CA4	Patient advised re diet	1
+8H	Referral for further care	1
+8H2B	Admit ophthalmological emerg.	1
+8H4B	Referred to rheumatologist	2
+8H4L	Referred to nephrologist	1
+8H54	Orthopaedic referral	2
+8HE	Discharged from hospital	1
+9N2P	Seen by chiropodist	1
+9N2V	Seen by optometrist	1
+9N31	Telephone encounter	3
+9N47	Appt cancelled by patient	1
+9NNC	Under care of retinal screener	1
+9OI4	Hypertens.monitor.1st letter	1
+9i0	British or mixed British - ethnic category 2001 census	2
+9i20	English - ethnic category 2001 census	1
+ATTA231	Atenolol  Tablets  50 mg	12
+BUTA434	Bumetanide  Tablets  1 mg	9
+C10	Diabetes mellitus	1
+C108	Insulin dependent diabetes mellitus	1
+C10FM	Type 2 diabetes mellitus with persistent microalbuminuria	1
+CAM/25482NEMIS	Cardioplen Xl  M/R tablets  2.5 mg	1
+D0130	Combined B12 and folate deficiency anaemia	1
+DIM/30235EMIS	Diltiazem Hydrochloride  M/R tablets  60 mg	1
+E1123	"Single major depressive episode	1
+E3	Mental retardation	2
+EMISNQBO15	Unknown vendor specific drug	1
+F4430	Anterior uveitis	1
+F45yz	Other specified glaucoma NOS	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	3
+FRTA1247	Frumil  Tablets	2
+FRTA1248	Frusemide  Tablets  20 mg	12
+FUOR17672NEMIS	Furosemide  Oral Solution, Sugar Free  4 mg/ml	1
+FUSO17471NEMIS	Fulvestrant  Solution for injection  250 mg/5 ml pre-filled syringe	1
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G341	Aneurysm of heart	1
+G61z	Intracerebral haemorrhage NOS	2
+G84	Haemorrhoids	1
+GACA10300BRIDL	Galenamox  Capsules  250 mg	2
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	2
+H037	Recurrent acute tonsillitis	1
+H1y3	Paralysis of vocal cords or larynx	1
+HEWITCC1	Unknown vendor specific drug	21
+ISIN33727EMIS	Isophane Insulin (Human Pyr)  Injection  100 units/ml, 10 ml vial	3
+K19C	Other obstructive and reflux uropathy	1
+LEIGHTH12	Unknown vendor specific drug	5
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	26
+M211	Keratoderma - acquired	1
+M2150	Excessive granulation tissue	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	5
+N04z	Inflammatory polyarthropathy NOS	1
+N073	Loose body in knee	1
+NITA25527EMIS	Nicorandil  Tablets  20 mg	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	21
+SLTA4320	Slow-Fe  Tablets  160 mg	1
+Ua1Nz	Unknown vendor specific drug	1
+Ua1O0	Unknown vendor specific drug	3
+Ua1iv	Unknown vendor specific drug	1
+Ua1qS	Unknown vendor specific drug	1
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	8
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	10

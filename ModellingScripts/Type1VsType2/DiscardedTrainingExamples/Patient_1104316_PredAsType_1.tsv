@@ -1,0 +1,112 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	1
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	6
+137G	Trying to give up smoking	2
+137P	Cigarette smoker	2
+137S	Ex smoker	1
+13JM	Problems at work	1
+13l4	Main spoken language English	2
+1465	H/O: depression	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	14
+22A	O/E - weight	18
+22K	Body Mass Index	16
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	2
+29BB	10g monofilament sensation R foot normal	1
+2BB1	O/E - retina normal	1
+2BBD	O/E - Right retina normal	1
+2BBE	O/E - Left retina normal	1
+31280	Fundoscopy normal	2
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	15
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	13
+44U	Blood glucose result	1
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	8
+451F	Glomerular filtration rate	1
+467	Urine protein test	1
+4672	Urine protein test negative	2
+46M7	Urine creatinine	4
+46N3	Urine total protein	1
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	7
+46W0	Urine microalbumin positive	1
+5855	U-S abdominal scan	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+66AD	Fundoscopy - diabetic check	1
+6791	Health ed. - smoking	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	5
+8CAL	Smoking cessation advice	4
+8CAM	Patient advised about alcohol	3
+8H51	General surgical referral	1
+8H7i	Referral to smoking cessation advisor	1
+8HBD	Retinopathy follow up	1
+8HJA	Trauma self-referral	1
+8I6C	Angiotensin II receptor antagonist not indicated	9
+9N1v	Seen in diabetic eye clinic	1
+9N2U	Seen by optician	2
+9N4H	DNA hospital appointment	1
+9OLD	Diabetic patient unsuitable for digital retinal photography	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	4
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	2
+C10	Diabetes mellitus	2
+CATA5686	Camcolit 400  M/R tablets  400 mg	1
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	1
+Dyu22	[X]Anaemia in other chronic diseases classified elsewhere	1
+E3	Mental retardation	5
+ERCA4890	Erythromycin  Capsules (Gastro-Resistant)  250 mg	2
+Eu25	[X]Schizoaffective disorders	1
+F4K2z	Vitreous disorders NOS	1
+F5870	 unspecified"	24
+Fyu51	[X]Other epilepsy	1
+G110	Mitral stenosis	1
+G84	Haemorrhoids	1
+G86	Noninfective lymphatic disorders	2
+H037	Recurrent acute tonsillitis	1
+HYLO5009	Hydrocortisone(As Sodium Succinate)  Lozenges  Sugar Free 2.5 mg	3
+HYTA8712EGTON	Hytrin  Tablets  5 mg	17
+M21yC	Insulin lipohypertrophy	22
+MACA8841BRIDL	Maxepa  Capsules  1 gram	2
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	1
+PAIN10279BRIDL	Papavarine  Injection  40 mg/ml	6
+PH5	Specified anomalies of nails	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	7
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	29
+R1431	[D]Electrocardiogram (ECG) abnormal	2
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	21
+U10z	[X]Unspecified fall	2
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	2
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	1
+VETA6809	Verapamil Hydrochloride  Tablets  80 mg	3

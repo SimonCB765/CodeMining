@@ -1,0 +1,152 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	4
+1361	Teetotaller	1
+136M	Current non drinker	4
+1371	Never smoked tobacco	1
+1374	Moderate smoker - 10-19 cigs/d	1
+137P	Cigarette smoker	1
+137R	Current smoker	2
+138	Exercise grading	1
+13HT1	Stress at home	1
+13l4	Main spoken language English	2
+1A1	Micturition frequency	3
+1A23	Incontinence of urine	1
+1A8	Breast lump symptom	1
+1BT	Depressed mood	1
+1F82	Cooks for him/herself	1
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	15
+22A	O/E - weight	16
+22K	Body Mass Index	16
+22N0	Waist circumference	2
+246	O/E - blood pressure reading	18
+29B7	10g monofilament sensation present	2
+29H7	O/E - Vibration sense of left foot normal	1
+2G5F	O/E - Right diabetic foot at moderate risk	1
+2G5J	O/E - Left diabetic foot at moderate risk	1
+3272	ECG: atrial fibrillation	2
+3942	Bladder: fully continent	2
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42W	Hb. A1C - diabetic control	5
+42W4	HbA1c level (DCCT aligned)	10
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	18
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	1
+44Q	Serum triglycerides	6
+44TB	Haemoglobin A1c level	2
+44TJ	Blood glucose level	1
+44U5	Blood glucose 7-9.9 mmol/L	2
+44h4	Blood calcium level	1
+451E	GFR calculated abbreviated MDRD	6
+4613	Urinalysis = no abnormality	1
+4618	Urine dipstick test	2
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	2
+4674	Urine protein test = +	1
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	3
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	8
+46W	Urine microalbumin	1
+46W1	Urine microalbumin negative	1
+46X0	Urine nitrite positive	1
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	3
+66Ac	Diabetic peripheral neuropathy screening	1
+66C9	Target weight discussed	1
+6791	Health ed. - smoking	3
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+8A17	Self monitoring of blood glucose	1
+8B28	Lipid lowering therapy	1
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	2
+8H3	Non-urgent hospital admission	1
+8H3Z	Other hospital admission NOS	1
+8H44	Cardiological referral	1
+8H4F	Referral to diabetologist	1
+8HE2	Discharged from inpatient care	1
+8HHH	Refer to weight management programme	1
+8I3E	Warfarin declined	3
+8I3P	Angiotensin II receptor antagonist declined	1
+8I62	Beta blocker not indicated	2
+8I6B	Clopidogrel not indicated	1
+8I74	Angiotensin converting enzyme inhibitor not tolerated	1
+8I93	Patient referral choice not available	1
+9N2U	Seen by optician	1
+9N2f	Seen by retinal screener	1
+9N31	Telephone encounter	1
+9N4H	DNA hospital appointment	1
+9NE8	Fax sent to:	1
+9OX5	Influenza vaccination declined	1
+9i2	Other White background - ethnic category 2001 census	1
+9i20	English - ethnic category 2001 census	1
+C10	Diabetes mellitus	2
+C109J	Insulin treated Type 2 diabetes mellitus	1
+EGTON460	Unknown vendor specific drug	1
+ELM/20277EMIS	Elantan La 25  M/R capsules  25 mg	1
+Eu	[X]Mental and behavioural disorders	2
+Eu01	[X]Vascular dementia	1
+F12	Parkinson's disease	1
+F465	After cataract	1
+Fyu4	[X]Demyelinating diseases of the central nervous system	2
+G341	Aneurysm of heart	2
+G570	Paroxysmal supraventricular tachycardia	1
+G602	Subarachnoid haemorrhage from middle cerebral artery	1
+G65z	Transient cerebral ischaemia NOS	1
+G65zz	Transient cerebral ischaemia NOS	1
+G665	Pure motor lacunar syndrome	1
+H014	Acute rhinosinusitis	2
+K0D	End-stage renal disease	2
+K1800	Urethral stricture due to unspecified infection	1
+N05z	Osteoarthritis NOS	1
+PCSDT7073GA8	Unknown vendor specific drug	1
+PCSDT7073GR4	Unknown vendor specific drug	1
+ZITA31476EMIS	Zispin  Tablets  30 mg	1
+ZITO9011EMIS	Zineryt  Topical solution	3
+ZV578	[V]Rehabilitation following other hospital encounter	5
+bd35	ATENOLOL 50mg tablets	1
+bi27	INNOVACE 20mg tablets x28	8
+bi2z	ENALAPRIL MALEATE 20mg tablets x28	8
+bi33	LISINOPRIL 10mg tablets	1
+bi34	LISINOPRIL 20mg tablets	1
+bl5y	ANGITIL XL 300 m/r capsules	2
+blk6	ISODUR 25XL m/r capsules	2
+blkA	MONOMAX XL 60mg m/r tablets	2
+blzC	GLYCERYL TRINITRATE 300micrograms sublingual tablets	4
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	10
+bx11	BEZALIP 200mg tablets	1
+bx13	BEZAFIBRATE 200mg tablets	4
+bxa7	OMACOR 1g capsules	8
+bxb2	ACIPIMOX 250mg capsules	2
+bxkz	ROSUVASTATIN 40mg tablets	1
+d71v	AMITRIPTYLINE 50mg m/r capsules	2
+d7fx	TRIMIPRAMINE 50mg capsules	2
+di1f	ASPIRIN 300mg e/c tablets	1
+du7M	NICORETTE INVISI 10mg patches	1
+e772	*MINOCIN 100mg tablets	1
+e781	OXYTETRACYCLINE 250mg capsules	2
+f144	NOVORAPID FLEXPEN 100units/mL prefilled pen 3mL	2
+f226	HUMAN MONOTARD 100iu/mL injection 10mL	1
+f27S	HUMAN MIXTARD 40 prefilled pen	1
+gday	OXYBUTYNIN HYDROCHLORIDE 5mg m/r tablets	1
+ip3g	CALCIUM CARBONATE+COLECALCIFEROL 1.25g/440iu/sach granules	1
+ip3l	CALFOVIT D3 powder for oral suspension	1
+j22R	DICLOFENAC 75mg e/c+m/r capsules	1

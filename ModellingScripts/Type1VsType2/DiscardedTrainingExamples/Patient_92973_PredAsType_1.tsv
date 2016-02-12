@@ -1,0 +1,116 @@
+Code	Description	Count
+136	Alcohol consumption	2
+1378	Ex-light smoker (1-9/day)	3
+16D	Falls	1
+1A1	Micturition frequency	2
+1BT	Depressed mood	1
+229	O/E - height	5
+22A	O/E - weight	11
+22K	Body Mass Index	10
+2469	O/E - Systolic BP reading	17
+29B9	10g monofilament sensation R foot abnormal	4
+2BB1	O/E - retina normal	1
+32	Electrocardiography	1
+33B9	Exercise tolerance test	1
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	16
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	15
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	1
+44Q	Serum triglycerides	7
+44TB	Haemoglobin A1c level	1
+44g	Plasma glucose level	2
+451E	GFR calculated abbreviated MDRD	1
+4615	MSU sent to lab.	1
+4618	Urine dipstick test	3
+4664	Urine glucose test = +	1
+4668	Glycosuria	1
+467	Urine protein test	1
+4672	Urine protein test negative	2
+4675	Urine protein test = ++	2
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	3
+46TC	Urine albumin:creatinine ratio	6
+46W	Urine microalbumin	2
+46X1	Urine nitrite negative	1
+58C1	Retinal photography	2
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+6798	Health ed. - exercise	3
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	4
+7B390	Transurethral prostatectomy	2
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8D74	Indwelling urethral catheter	2
+8H	Referral for further care	1
+8H21	Admit medical emergency unsp.	2
+8H22	Admit surgical emergency unsp.	1
+8H41	General medical referral	1
+8H44	Cardiological referral	1
+8H49	Psychiatric referral	1
+8H7X	Refer to podiatry	2
+8H7f	Referral to diabetes nurse	1
+8HQ2	Refer for ultrasound investign	1
+9N1Q	Seen in diabetic clinic	2
+9N31	Telephone encounter	3
+9S1	White	1
+ADM/22258EMIS	Adizem-Sr  M/R capsules  90 mg	3
+ADM/24028EMIS	Adizem-Xl  M/R capsules  180 mg	18
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	17
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	1
+BACA10733BRIDL	Bard Biocath Hydrogel Coated  Prefilled male catheter  Aquamatic, 14 ch, D2264	1
+BACA19948EMIS	Bard Biocath Hydrogel Coated  Catheter (male)  16 ch, D2265	1
+BINSCFU2	Unknown vendor specific drug	1
+BINSCMY1	Unknown vendor specific drug	1
+BINSCOP2	Unknown vendor specific drug	2
+BINSCTH1	Unknown vendor specific drug	1
+BINSCUR2	Unknown vendor specific drug	1
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	10
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	1
+COLO3360	Corlan  Lozenges  2.5 mg	1
+DICA937	Disopyramide  Capsules  150 mg	13
+E3	Mental retardation	2
+F3610	Charcot-Marie-Tooth disease	1
+F4202	Preproliferative diabetic retinopathy	1
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	1
+FRTA1248	Frusemide  Tablets  20 mg	8
+G11z	Mitral valve disease NOS	1
+G221	Benign hypertensive renal disease	1
+G240	Secondary malignant hypertension	1
+G84	Haemorrhoids	2
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+H037	Recurrent acute tonsillitis	1
+H22	Other bacterial pneumonia	1
+HYTA1398	Hydrocortisone  Tablets  20 mg	1
+L264	Intrauterine death	7
+L264z	Intrauterine death NOS	13
+M21yC	Insulin lipohypertrophy	15
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	5
+MIIN15904NEMIS	Mixtard 30 Penfill  Injection  100 units/ml, 3 ml cartridge	1
+QUTA10127BRIDL	Quinapril  Tablets  10 mg	3
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	11
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	1
+S1200	Closed #rib unspecified	1
+S3390	Closed fracture of distal fibula	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	20
+STSO10387BRIDL	Stiemycin  Solution  2 %	1
+U6056	anpyr/inf adv eff"	1

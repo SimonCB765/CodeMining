@@ -1,0 +1,103 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1366	Very heavy drinker - >9u/day	1
+1371	Never smoked tobacco	1
+137L	Current non-smoker	2
+137S	Ex smoker	1
+138	Exercise grading	1
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	4
+22A	O/E - weight	17
+22K	Body Mass Index	17
+2469	O/E - Systolic BP reading	21
+29BB	10g monofilament sensation R foot normal	4
+2BB1	O/E - retina normal	3
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	4
+42W5	Haemoglobin A1c level - IFCC standardised	1
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	24
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	20
+44Q	Serum triglycerides	12
+44TB	Haemoglobin A1c level	15
+44U	Blood glucose result	2
+44g	Plasma glucose level	1
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	8
+451E	GFR calculated abbreviated MDRD	15
+4615	MSU sent to lab.	1
+4662	Urine glucose test negative	2
+4664	Urine glucose test = +	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	2
+4674	Urine protein test = +	4
+4675	Urine protein test = ++	6
+4692	Urine blood test = negative	2
+46M7	Urine creatinine	3
+46N	Urine protein	2
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	6
+58C1	Retinal photography	2
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6799	Health ed. - diet	3
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+8A17	Self monitoring of blood glucose	2
+8B63	Salicylate prophylaxis	4
+8B6A	Statin prophylaxis	2
+8H	Referral for further care	2
+8H7n	Referral to retinal screener	1
+8I2Q	Metformin contraindicated	1
+9N2S	Seen by practice phlebotomist	3
+9N2U	Seen by optician	1
+9NS2	Patient offered choice of provider	1
+9NU1	Interpreter not needed	1
+9h32	Excepted from hypertension qual indicators: Informed dissent	1
+9i0	British or mixed British - ethnic category 2001 census	1
+9m0A	Declined diabetic retinopathy screening	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	13
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	2
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	1
+C10	Diabetes mellitus	5
+CETA23875EMIS	Celectol  Tablets  400 mg	6
+CHENJUR22	Unknown vendor specific drug	2
+CHTA23546NEMIS	Champix  Tablets  1 mg	1
+CLCA662	Clorazepate Dipotassium  Capsules  15 mg	1
+DIM/30709EMIS	Dipyridamole  M/R capsules  200 mg	4
+DIM/423NEMIS	Diltiazem Hydrochloride  M/R capsules  360 mg	1
+E3	Mental retardation	3
+EMISNQBO15	Unknown vendor specific drug	1
+EMISSPR1	Unknown vendor specific drug	1
+F41z	Retinal detachment NOS	1
+Fyu51	[X]Other epilepsy	1
+G3401	Double coronary vessel disease	1
+HEWITAS12	Unknown vendor specific drug	22
+HEWITPE2	Unknown vendor specific drug	1
+HYLO5009	Hydrocortisone(As Sodium Succinate)  Lozenges  Sugar Free 2.5 mg	2
+PUJINST1	Unknown vendor specific drug	3
+SCCA19035EMIS	Scott  Catheters  10 ch	25
+TEST30081EMIS	Terazosin Hydrochloride  Starter pack  7 x 1 mg, 14 x 2 mg, 7 x 5 mg	21
+TETA5426	Tetracycline Hydrochloride  Tablets  250 mg	15
+TETA9419BRIDL	Tenormin  Tablets  25 mg	15
+TOTA2876	Tolbutamide  Tablets  500 mg	1

@@ -1,0 +1,111 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+136	Alcohol consumption	10
+1371	Never smoked tobacco	3
+137P	Cigarette smoker	1
+137R	Current smoker	1
+13l4	Main spoken language English	1
+229	O/E - height	6
+22A	O/E - weight	21
+22K	Body Mass Index	19
+22N0	Waist circumference	1
+246	O/E - blood pressure reading	7
+2469	O/E - Systolic BP reading	15
+24E6	O/E - R.post.tib.pulse present	1
+29B7	10g monofilament sensation present	2
+3128	Fundoscopy	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	10
+4258	Haematocrit	1
+4266	Nucleated red blood cell count	2
+428	Mean corpusc. haemoglobin(MCH)	5
+42A	Mean corpuscular volume (MCV)	6
+42N	Monocyte count	4
+42P	Platelet count	4
+42R4	Serum ferritin	1
+42W	Hb. A1C - diabetic control	2
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44CC	Plasma C reactive protein	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G9	Serum gamma-glutamyl transferase level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	24
+44J9	Serum urea level	2
+44LA	Serum vitamin D	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	11
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	10
+44U	Blood glucose result	1
+44g	Plasma glucose level	7
+44lD	Urine protein/creatinine ratio	11
+451E	GFR calculated abbreviated MDRD	13
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	3
+4675	Urine protein test = ++	1
+467E	Urine protein level	2
+46M7	Urine creatinine	3
+46N	Urine protein	2
+46N4	Urine albumin	7
+46TC	Urine albumin:creatinine ratio	7
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+66U7	HRT started	1
+6791	Health ed. - smoking	3
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+68W2	Bowel cancer screening programme	1
+792	Coronary artery operations	1
+792D	Other bypass of coronary artery	1
+7P0Kz	Nuclear bone scan NOS	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	5
+8CAM	Patient advised about alcohol	5
+8H43	Dermatological referral	2
+8H52	Ophthalmological referral	1
+8H58	Gynaecological referral	1
+8H88	Follow-up 2-3 months	2
+8HB3	Surgical follow-up	1
+8HBA	Follow up in outpatient clinic	1
+8HE1	Discharged from outpatients	2
+9N1K	Seen in ophthalmology clinic	1
+9N2e	Seen by ophthalmologist	2
+9N2f	Seen by retinal screener	1
+9NU1	Interpreter not needed	1
+9S1	White	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	1
+ASTA4609	Aspirin  Tablets  75 mg	13
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	10
+C10	Diabetes mellitus	1
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	2
+DITA884	Diclofenac Sodium  M/R tablets  100 mg	1
+ERIN24325NEMIS	Ergocalciferol  Injection  300,000 units/ml, 1 ml ampoule	2
+FLLO1529NEMIS	Flurbiprofen  Lozenges  8.75 mg	1
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	2
+G20	Essential hypertension	1
+G303	Acute inferoposterior infarction	1
+GASTOUR6	Unknown vendor specific drug	1
+HEWITAS12	Unknown vendor specific drug	6
+HEWITCA1	Unknown vendor specific drug	3
+HEWITPO11	Unknown vendor specific drug	1
+ININ3759	Pork Insulatard  Injection  100 units/ml, 10 ml vial	9
+MANORRE1	Unknown vendor specific drug	9
+PK61	Sturge-Weber syndrome	3
+URBL8670BRID	Uro-Tainer Chlorhexidine  Bladder Wash-Out	1
+URCA14420NEMIS	Uro-Tainer Sodium Chloride  Catheter maintenance solution  0.9 %, 50 ml	6
+bb3P	VERA-TIL SR 240mg m/r tablets	3
+bh62	DOXAZOSIN 2mg tablets	1
+bh63	DOXAZOSIN 4mg tablets	1
+bi71	FOSINOPRIL 10mg tablets	3
+bi95	GOPTEN 1mg capsules	15
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	2

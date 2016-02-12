@@ -1,0 +1,126 @@
+Code	Description	Count
+136	Alcohol consumption	8
+137G	Trying to give up smoking	1
+137L	Current non-smoker	2
+137P	Cigarette smoker	1
+137S	Ex smoker	2
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	3
+13A3	Weight reducing diet	1
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+1Z13	Chronic kidney disease stage 4	1
+229	O/E - height	9
+22A	O/E - weight	12
+22K	Body Mass Index	16
+22N0	Waist circumference	4
+2469	O/E - Systolic BP reading	22
+29B7	10g monofilament sensation present	2
+2BBL	O/E - diabetic maculopathy present both eyes	2
+2BBW	O/E - right eye diabetic maculopathy	1
+311A	Monofilament foot sensation test	1
+31281	Fundoscopy abnormal	1
+3129	Eye fundus photography	1
+315B	Ambulatory blood pressure recording	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	5
+42A	Mean corpuscular volume (MCV)	6
+42R4	Serum ferritin	4
+42R7	Serum iron level	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44A1	Serum parathyroid hormone	1
+44CC	Plasma C reactive protein	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	24
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	16
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	6
+44PF	Total cholesterol:HDL ratio	14
+44Q	Serum triglycerides	9
+44TB	Haemoglobin A1c level	14
+44U	Blood glucose result	2
+44U6	Blood glucose 10-13.9 mmol/L	1
+44g	Plasma glucose level	1
+44lD	Urine protein/creatinine ratio	5
+451E	GFR calculated abbreviated MDRD	18
+451F	Glomerular filtration rate	1
+4661	Urine glucose test not done	1
+4662	Urine glucose test negative	1
+467	Urine protein test	1
+4671	Urine protein test not done	1
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	2
+4675	Urine protein test = ++	1
+4677	Urine protein test = ++++	1
+4678	Proteinuria	3
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	3
+46N	Urine protein	2
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	5
+55	Cardiovascular sys.angiography	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	3
+67E	Foreign travel advice	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+8A17	Self monitoring of blood glucose	2
+8B2B	Nicotine replacement therapy	2
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	4
+8H4L	Referred to nephrologist	1
+8H52	Ophthalmological referral	2
+8H76	Refer to dietician	1
+8H7a	Refer to hospital	1
+8HBD	Retinopathy follow up	1
+8HC1	Refer to A. & E. department	1
+8HTK	Referral to stop-smoking clinic	1
+9N2U	Seen by optician	1
+9N2s	Seen by health care assistant	3
+9N42	Did not attend - no reason	1
+9N4p	Did not attend diabetic retinopathy clinic	1
+9i7	Indian or British Indian - ethnic category 2001 census	3
+A532	Herpes zoster with ophthalmic complication	1
+A703	Viral (serum) hepatitis B	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	8
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	16
+ATTA231	Atenolol  Tablets  50 mg	9
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	5
+C10	Diabetes mellitus	6
+CODR10352BRIDL	Coloplast Conveen  Drainage bag  1.5 litres, 5062	1
+DITA856	Diabinese  Tablets  100 mg	10
+DITA885	Diclofenac Sodium  Tablets  25 mg	11
+E200z	Anxiety state NOS	3
+E3	Mental retardation	1
+EMISQ2W2	Unknown vendor specific drug	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+FRENCFI1	Unknown vendor specific drug	1
+FRTA1248	Frusemide  Tablets  20 mg	11
+Fyu51	[X]Other epilepsy	2
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+H037	Recurrent acute tonsillitis	2
+HEWITAS12	Unknown vendor specific drug	23
+J17y9	Gastric angiodysplasia	1
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	9
+LMRGPDI13	Unknown vendor specific drug	11
+LMRGPEL1	Unknown vendor specific drug	7
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	4
+MITA19794NEMIS	Mirtazapine  Tablets  45 mg	3
+NIM/172NEMIS	Nifedipine  M/R capsules  30 mg	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	17
+STTA9316EMIS	Staril  Tablets  10 mg	3

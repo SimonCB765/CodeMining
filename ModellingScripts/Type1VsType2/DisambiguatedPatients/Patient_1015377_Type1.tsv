@@ -1,0 +1,88 @@
+Code	Description	Count
+03I	Opticians	1
+136	Alcohol consumption	8
+1361	Teetotaller	1
+1371	Never smoked tobacco	3
+137L	Current non-smoker	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	10
+22A	O/E - weight	11
+22K	Body Mass Index	10
+22N0	Waist circumference	5
+2469	O/E - Systolic BP reading	14
+29B3	O/E - hypoaesthesia present	1
+29BB	10g monofilament sensation R foot normal	3
+2BBI	O/E - no retinopathy	3
+3212	Standard ECG	1
+423	Haemoglobin estimation	1
+428	Mean corpusc. haemoglobin(MCH)	1
+42A	Mean corpuscular volume (MCV)	1
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	2
+44I8	Serum calcium	3
+44J3	Serum creatinine	13
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	7
+44Q	Serum triglycerides	9
+44Q5	Serum random triglyceride level	4
+44TB	Haemoglobin A1c level	8
+44f1	Serum fasting glucose level	11
+451E	GFR calculated abbreviated MDRD	7
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	6
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	2
+46M7	Urine creatinine	4
+46N4	Urine albumin	7
+46TC	Urine albumin:creatinine ratio	2
+46U	Urine culture	2
+46W	Urine microalbumin	3
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+67I8	Advice about taking aspirin	2
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+8A17	Self monitoring of blood glucose	3
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	5
+8H52	Ophthalmological referral	3
+8H7i	Referral to smoking cessation advisor	1
+9N2P	Seen by chiropodist	5
+9N2U	Seen by optician	3
+9N2f	Seen by retinal screener	1
+A532	Herpes zoster with ophthalmic complication	1
+ASHBYUR1	Unknown vendor specific drug	5
+ATTA231	Atenolol  Tablets  50 mg	23
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	12
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	2
+DIM/24452EMIS	Diclofenac Sodium  M/R capsules  100 mg	6
+DIM/27367EMIS	Diltiazem Hydrochloride  M/R capsules  240 mg	1
+E117	Unspecified bipolar affective disorder	1
+Eu01	[X]Vascular dementia	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F516z	Eustachian tube obstruction NOS	1
+F5870	 unspecified"	20
+FRTA1248	Frusemide  Tablets  20 mg	5
+Fyu51	[X]Other epilepsy	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H02	Acute pharyngitis	1
+HUCA18384EMIS	Humulin M4  Cartridges (1.5 Ml)	1
+LMRGPCH3	Unknown vendor specific drug	6
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	15
+META1793	Methylcellulose  Tablets  500 mg	3
+N05z6	Osteoarthritis NOS-lower leg	2
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	27
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	1
+R00zW	"[D]State of emotional shock and stress	5
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	22

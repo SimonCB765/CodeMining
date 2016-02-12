@@ -1,0 +1,105 @@
+Code	Description	Count
+03I	Opticians	1
+136	Alcohol consumption	6
+1361	Teetotaller	1
+137R	Current smoker	2
+137S	Ex smoker	3
+138O	Takes inadequate exercise	1
+1BT	Depressed mood	1
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	9
+22A	O/E - weight	10
+22K	Body Mass Index	10
+22N0	Waist circumference	4
+2469	O/E - Systolic BP reading	18
+29BB	10g monofilament sensation R foot normal	3
+2BB4	O/E - retinal microaneurysms	1
+3212	Standard ECG	1
+423	Haemoglobin estimation	2
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	2
+42W	Hb. A1C - diabetic control	5
+42W4	HbA1c level (DCCT aligned)	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	14
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	6
+44Q	Serum triglycerides	9
+44Q5	Serum random triglyceride level	1
+44TB	Haemoglobin A1c level	9
+44f1	Serum fasting glucose level	7
+451E	GFR calculated abbreviated MDRD	5
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	5
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	2
+46A2	Urine pH = 5.0	1
+46M7	Urine creatinine	3
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	5
+46W	Urine microalbumin	6
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+8A17	Self monitoring of blood glucose	1
+8B63	Salicylate prophylaxis	2
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	2
+8H2P	"Emergency admission	1
+8H51	General surgical referral	1
+8H52	Ophthalmological referral	1
+8H72	Refer to district nurse	2
+9N1K	Seen in ophthalmology clinic	1
+9N1Q	Seen in diabetic clinic	1
+9N2U	Seen by optician	4
+9N2e	Seen by ophthalmologist	1
+9N33	Letter encounter from patient	4
+9i1	Irish - ethnic category 2001 census	1
+AB200	Candidiasis of mouth	2
+ACTA23755EMIS	Acarbose  Tablets  50 mg	1
+AMTA8388EGTON	Amitriptyline Hydrochloride  Tablets  50 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	18
+ASHBYRE7	Unknown vendor specific drug	1
+ASHBYUC6	Unknown vendor specific drug	1
+ASHBYUR1	Unknown vendor specific drug	3
+CONE5709NEMIS	Coloplast Speedicath  Nelaton catheter (female)  10ch, 28510	1
+COUR12413NEMIS	Coloplast Simpla 2 Litre S1  Urine drainage bag  311102	1
+DIM/30235EMIS	Diltiazem Hydrochloride  M/R tablets  60 mg	3
+DIM/423NEMIS	Diltiazem Hydrochloride  M/R capsules  360 mg	3
+E21y	Other personality disorders	1
+E230z	Acute alcoholic intoxication in alcoholism NOS	1
+EMISQ2W10	Unknown vendor specific drug	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+Fyu51	[X]Other epilepsy	3
+G65z	Transient cerebral ischaemia NOS	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+H1y40	Polyp of vocal cord	1
+HEWITAS9	Unknown vendor specific drug	22
+HUIN3719	Humulin M1  Injection	3
+J120	Acute duodenal ulcer	3
+LMRGPCH3	Unknown vendor specific drug	2
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	1
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	8
+PK61	Sturge-Weber syndrome	16
+Pyu70	[X]Other cystic kidney diseases	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	31
+S234B	Closed fracture radial styloid	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	19
+TETA30443NEMIS	Telmisartan And Hydrochlorothiazide  Tablets  80 mg + 25 mg	1
+TOTA2876	Tolbutamide  Tablets  500 mg	1

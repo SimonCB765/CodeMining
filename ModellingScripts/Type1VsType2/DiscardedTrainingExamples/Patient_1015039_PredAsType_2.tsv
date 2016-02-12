@@ -1,0 +1,139 @@
+Code	Description	Count
+03I	Opticians	1
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	7
+137A	Ex-heavy smoker (20-39/day)	1
+137G	Trying to give up smoking	2
+137K	Stopped smoking	1
+137R	Current smoker	1
+137S	Ex smoker	1
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	2
+1FA	Diet good	1
+229	O/E - height	7
+22A	O/E - weight	8
+22K	Body Mass Index	8
+22N0	Waist circumference	3
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	16
+29BB	10g monofilament sensation R foot normal	3
+2BBH	Retinal drusen	1
+2BBI	O/E - no retinopathy	2
+3212	Standard ECG	3
+3215	ECG not done	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	2
+43Z2	Prostate specific antigen	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44I8	Serum calcium	3
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	16
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	6
+44PB	Serum fasting HDL cholesterol level	1
+44PD	Serum fasting LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	8
+44Q5	Serum random triglyceride level	2
+44TB	Haemoglobin A1c level	7
+44W9	Serum digoxin level	1
+44f1	Serum fasting glucose level	8
+451E	GFR calculated abbreviated MDRD	4
+4615	MSU sent to lab.	5
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	4
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	4
+46U	Urine culture	6
+46W	Urine microalbumin	4
+5853	U-S heart scan	2
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	2
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+79370	Implantation of cardiac pacemaker system NEC	1
+7B3A1	Endoscopic incision of male bladder neck	1
+7B3C5	Transurethral biopsy prostate	1
+8A17	Self monitoring of blood glucose	2
+8B6A	Statin prophylaxis	1
+8BL2	Patient on maximal tolerated therapy for diabetes	2
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	2
+8H43	Dermatological referral	1
+8H44	Cardiological referral	1
+8H47	Geriatric referral	1
+8H5	Referral to surgeon	2
+8H51	General surgical referral	1
+8H52	Ophthalmological referral	2
+8H7	Other referral	1
+8HHJ	Referral to respiratory nurse specialist	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I26	Beta blocker contraindicated	2
+8I65	Warfarin not indicated	1
+9N1y8	Seen in oncology clinic	2
+9N2U	Seen by optician	2
+9N32	Third party encounter	1
+9N33	Letter encounter from patient	1
+9N36	Letter from specialist	1
+9h02	Excepted from CHD quality indicators: Informed dissent	1
+9h42	Excepted from diabetes quality indicators: Informed dissent	1
+9h52	Excepted from COPD quality indicators: Informed dissent	1
+9hA2	Excepted from asthma quality indicators: Informed dissent	1
+9hC1	Excepted from depression quality indicators: Informed dissen	1
+ADM/24028EMIS	Adizem-Xl  M/R capsules  180 mg	6
+ASHBYAD2	Unknown vendor specific drug	1
+ASHBYGE2	Unknown vendor specific drug	1
+ASHBYUR1	Unknown vendor specific drug	4
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	24
+BETA4655	Bezafibrate  Tablets  200 mg	1
+CACH30077EMIS	Calceos  Chewable tablets  Sugar Free	1
+CETA30765EMIS	Cerivastatin  Tablets  100 micrograms	1
+CITA15860NEMIS	Cipralex  Tablets  20 mg	18
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	1
+DIE/26685EMIS	Diclofenac Sodium  E/C, M/R capsules  75 mg	13
+DIM/27367EMIS	Diltiazem Hydrochloride  M/R capsules  240 mg	1
+DIM/30709EMIS	Dipyridamole  M/R capsules  200 mg	2
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	2
+DISY18885NEMIS	Diazepam  Syrup  5 mg/5 ml	1
+F4430	Anterior uveitis	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	9
+FRTA1248	Frusemide  Tablets  20 mg	25
+G11z	Mitral valve disease NOS	1
+G240	Secondary malignant hypertension	1
+G3400	Single coronary vessel disease	1
+G581	Left ventricular failure	1
+H1y40	Polyp of vocal cord	1
+HEWITPE2	Unknown vendor specific drug	15
+HEWITRA1	Unknown vendor specific drug	7
+HYLO5009	Hydrocortisone(As Sodium Succinate)  Lozenges  Sugar Free 2.5 mg	1
+INPR20078NEMIS	Insulin Aspart  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+INSU5026	Indomethacin  Suppositories  100 mg	5
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	1
+J131	Chronic peptic ulcer	1
+K1012	Acute pyelitis	1
+LEIGHTH12	Unknown vendor specific drug	29
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	4
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	2
+NIM/16459NEMIS	Niaspan  M/R tablets  500 mg	1
+NIM/16460NEMIS	Niaspan  M/R tablets  750 mg	1
+POOLEGE1	Unknown vendor specific drug	1
+SETA2508	Secadrex  Tablets	2
+SETA4308	Semi-Daonil  Tablets  2.5 mg	1
+SLTA4320	Slow-Fe  Tablets  160 mg	1
+URNI10806BRIDL	Uriplan  Night drainage bags  D81-3131	3

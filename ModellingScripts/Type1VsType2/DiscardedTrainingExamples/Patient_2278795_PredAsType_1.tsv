@@ -1,0 +1,110 @@
+Code	Description	Count
+136	Alcohol consumption	13
+1371	Never smoked tobacco	2
+137L	Current non-smoker	2
+137R	Current smoker	2
+1383	Enjoys light exercise	5
+229	O/E - height	2
+22A	O/E - weight	17
+22K	Body Mass Index	15
+22N0	Waist circumference	7
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	1
+29B9	10g monofilament sensation R foot abnormal	1
+29BB	10g monofilament sensation R foot normal	2
+31280	Fundoscopy normal	1
+31281	Fundoscopy abnormal	1
+3211	ECG requested	2
+321B	12 lead ECG	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	2
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	20
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44CC	Plasma C reactive protein	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	16
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	26
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	11
+44U	Blood glucose result	2
+451E	GFR calculated abbreviated MDRD	11
+4618	Urine dipstick test	1
+4661	Urine glucose test not done	4
+4663	Urine glucose test = trace	1
+4667	Urine glucose test = ++++	1
+467	Urine protein test	1
+4671	Urine protein test not done	5
+4672	Urine protein test negative	2
+4674	Urine protein test = +	4
+4675	Urine protein test = ++	1
+4681	Urine ketone test not done	2
+4682	Urine ketone test negative	2
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	4
+46W1	Urine microalbumin negative	1
+585	Other diagnostic ultrasound	1
+58C1	Retinal photography	1
+65720	Pneumococcal vaccination given	1
+66A4	Diabetic on oral treatment	1
+6797	Health ed. - immunisation	3
+67I7	Advice about foot care	2
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+8A17	Self monitoring of blood glucose	2
+8BL2	Patient on maximal tolerated therapy for diabetes	3
+8CA41	Pt advised re diabetic diet	9
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	4
+8H	Referral for further care	3
+8H4h	Referral to neurologist	1
+8H76	Refer to dietician	1
+8HB1	Recall arranged	5
+8I3Q	Pneumococcal vaccination declined	1
+8I63	Statin not indicated	1
+9N1v	Seen in diabetic eye clinic	1
+9N2S	Seen by practice phlebotomist	3
+9NM0	Attending diabetes clinic	2
+9OX5	Influenza vaccination declined	1
+9S1	White	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	4
+A7814	Plain wart	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	5
+C106	Diabetes mellitus with neurological manifestation	1
+C109	Non-insulin dependent diabetes mellitus	1
+COTA9937BRIDL	Coversyl  Tablets  2 mg	1
+F31z	Facial nerve disorder NOS	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F56y	Other labyrinth disorders	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	1
+HYTA8711EGTON	Hytrin  Tablets  2 mg	6
+INPR5190NEMIS	Insulin Lispro  Preloaded pen	1
+ISME31948EMIS	Isocard  Metered dose aerosol  30 mg/dose	3
+L264z	Intrauterine death NOS	7
+LEIGHTH12	Unknown vendor specific drug	3
+LEIGHUS10	Unknown vendor specific drug	1
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	1
+M21yC	Insulin lipohypertrophy	7
+N050	Generalised osteoarthritis - OA	1
+NIM/21926EMIS	Nicardipine Hydrochloride  M/R capsules  30 mg	1
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	8
+PG2	Cervical rib	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	1
+TOTA2876	Tolbutamide  Tablets  500 mg	1

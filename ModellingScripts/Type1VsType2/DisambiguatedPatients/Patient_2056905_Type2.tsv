@@ -1,0 +1,124 @@
+Code	Description	Count
+136	Alcohol consumption	5
+1371	Never smoked tobacco	2
+1379	Ex-moderate smoker (10-19/day)	1
+137L	Current non-smoker	1
+13l4	Main spoken language English	1
+1A	Genitourinary symptoms	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	14
+22A	O/E - weight	18
+22K	Body Mass Index	13
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	29
+29B7	10g monofilament sensation present	3
+2BB1	O/E - retina normal	1
+2BBD	O/E - Right retina normal	1
+2BBF	Retinal abnormality - diabetes related	1
+311A	Monofilament foot sensation test	2
+32	Electrocardiography	1
+3211	ECG requested	1
+3216	ECG normal	1
+423	Haemoglobin estimation	16
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	1
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	3
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	20
+42W5	Haemoglobin A1c level - IFCC standardised	4
+42c	HbA1 - diabetic control	1
+43Z2	Prostate specific antigen	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	16
+44J9	Serum urea level	4
+44M4	Serum albumin	1
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	8
+44Q	Serum triglycerides	8
+451E	GFR calculated abbreviated MDRD	8
+467	Urine protein test	1
+4671	Urine protein test not done	1
+4674	Urine protein test = +	1
+4678	Proteinuria	1
+46M7	Urine creatinine	5
+46N4	Urine albumin	10
+46TC	Urine albumin:creatinine ratio	8
+46W	Urine microalbumin	2
+4794	Faecal occult blood: positive	2
+554	Coronary arteriogr.-general	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+6791	Health ed. - smoking	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+79274	Exploration of coronary artery	1
+8A17	Self monitoring of blood glucose	2
+8BL2	Patient on maximal tolerated therapy for diabetes	3
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	4
+8CAM	Patient advised about alcohol	3
+8H2	Emergency hospital admission	1
+8H51	General surgical referral	1
+8H7n	Referral to retinal screener	1
+8H7r	Refer to diabetic foot screener	1
+8HBA	Follow up in outpatient clinic	5
+8HBD	Retinopathy follow up	2
+8HHS	Referral for minor surgery	1
+8HTk	Referral to diabetic eye clinic	1
+9N2f	Seen by retinal screener	1
+9N2s	Seen by health care assistant	2
+9N42	Did not attend - no reason	1
+9NNC	Under care of retinal screener	1
+9NY1	First outpatient appointment date	2
+9S1	White	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	3
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	6
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	17
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	11
+ATTA231	Atenolol  Tablets  50 mg	2
+B46	Malignant neoplasm of prostate	2
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	9
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	8
+CACH9146BRIDL	Calcium Carbonate  Chewable tablets  Sugar Free 1.25 grams	12
+CITA15860NEMIS	Cipralex  Tablets  20 mg	6
+COTA9346HILLI	Co-Flumactone 50/50  Tablets	1
+CYIN773	Cyanocobalamin  Injection  1mg/ml, 1 ml ampoule	1
+DITA886	Diclofenac Sodium  Tablets  50 mg	24
+E3	Mental retardation	3
+EMISNQLU7	Unknown vendor specific drug	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	7
+FRTA1248	Frusemide  Tablets  20 mg	4
+Fyu51	[X]Other epilepsy	3
+G2	Hypertensive disease	1
+G57y7	Sinus tachycardia	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	4
+GLM/19422NEMIS	Glucophage Sr  M/R tablets  500 mg	1
+H037	Recurrent acute tonsillitis	2
+HUIN3719	Humulin M1  Injection	2
+HUPE31138EMIS	Human Mixtard 20  Penfill cartridges (3 ml)	1
+IBTA1430	Ibuprofen  Tablets  400 mg	20
+ININ3759	Pork Insulatard  Injection  100 units/ml, 10 ml vial	9
+K0D	End-stage renal disease	1
+K100	Chronic pyelonephritis	1
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	12
+MACA8841BRIDL	Maxepa  Capsules  1 gram	16
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	5
+S201	Open fracture of clavicle	1
+SCCA19035EMIS	Scott  Catheters  10 ch	2
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	15
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	6

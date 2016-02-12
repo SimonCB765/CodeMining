@@ -1,0 +1,142 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C2	FH: Ischaemic heart dis. <60	1
+12C4	FH: CVA/stroke	1
+135F	Baptist	1
+136	Alcohol consumption	4
+1361	Teetotaller	1
+1373	Light smoker - 1-9 cigs/day	1
+137R	Current smoker	4
+1383	Enjoys light exercise	1
+13B1	Diabetic diet	2
+13l4	Main spoken language English	1
+1A55	Dysuria	3
+1B17	Depressed	1
+1Z14	Chronic kidney disease stage 5	1
+229	O/E - height	9
+22A	O/E - weight	11
+22K	Body Mass Index	10
+2469	O/E - Systolic BP reading	26
+2BB7	O/E - retinal vascular prolif.	1
+311A	Monofilament foot sensation test	4
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	5
+42W4	HbA1c level (DCCT aligned)	10
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	22
+44J9	Serum urea level	4
+44M4	Serum albumin	1
+44P	Serum cholesterol	6
+44P5	Serum HDL cholesterol level	2
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	4
+44TJ	Blood glucose level	6
+44U	Blood glucose result	2
+451E	GFR calculated abbreviated MDRD	5
+4662	Urine glucose test negative	1
+4665	Urine glucose test = ++	1
+4666	Urine glucose test = +++	1
+467	Urine protein test	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	1
+4682	Urine ketone test negative	2
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	4
+46W	Urine microalbumin	1
+58C1	Retinal photography	1
+66A5	Diabetic on insulin	3
+66Ac	Diabetic peripheral neuropathy screening	1
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6879	Hyperlipidaemia screen	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	4
+8GA0	Crisis intervention	3
+8H44	Cardiological referral	1
+8H5	Referral to surgeon	1
+8H7	Other referral	1
+8HE2	Discharged from inpatient care	1
+9180	Carer's details	2
+9N2e	Seen by ophthalmologist	1
+9NF7	Urgent home visit	2
+9NNC	Under care of retinal screener	1
+9OX5	Influenza vaccination declined	1
+9S2	Black Caribbean	2
+9h31	Excepted from hypertension qual indicators: Patient unsuit	1
+9iB	Caribbean - ethnic category 2001 census	2
+A3B4	Escherichia coli infection	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	1
+ALCA74	Alfacalcidol  Capsules  250 nanograms	3
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	20
+AMTA9080EMIS	Amlodipine Besilate  Tablets  10 mg	3
+ASTA4609	Aspirin  Tablets  75 mg	5
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	1
+ATTA230	Atenolol  Tablets  100 mg	3
+ATTA231	Atenolol  Tablets  50 mg	8
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	2
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	3
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	11
+C10	Diabetes mellitus	1
+CHRSPLE5	Unknown vendor specific drug	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	2
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	1
+DITA856	Diabinese  Tablets  100 mg	3
+DITA886	Diclofenac Sodium  Tablets  50 mg	20
+DUCA3482	Duromine  M/R capsules  30 mg	1
+DYTA1014	Dyazide  Tablets	1
+E0020	Senile dementia with paranoia	1
+E3	Mental retardation	3
+F48z	Visual disturbance NOS	1
+F4A00	"Corneal ulcer	1
+F5812	Noise-induced hearing loss	1
+FOCA24991EMIS	Foley  Catheter (male)  12 ch	3
+FRTA1247	Frumil  Tablets	17
+Fyu51	[X]Other epilepsy	2
+GASTOUN2	Unknown vendor specific drug	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	15
+H014	Acute rhinosinusitis	2
+HEWITGB1	Unknown vendor specific drug	1
+HYLO5009	Hydrocortisone(As Sodium Succinate)  Lozenges  Sugar Free 2.5 mg	4
+HYTA8711EGTON	Hytrin  Tablets  2 mg	6
+J17y7	Deformed duodenal cap (bulb)	1
+K0D	End-stage renal disease	1
+L40	Major puerperal infection	10
+LETA32002EMIS	Lercanidipine Hydrochloride  Tablets  10 mg	4
+LEWINFU1	Unknown vendor specific drug	1
+LITA10719BRIDL	Lipostat  Tablets  10 mg	2
+LITA10721BRIDL	Lipostat  Tablets  20 mg	2
+LITA30125EMIS	Lipitor  Tablets  20 mg	4
+MACA8841BRIDL	Maxepa  Capsules  1 gram	7
+MANI22913NEMIS	Manfred Sauer Smartflow  Night drainage bags  2.6 litre, NB26	9
+MANORLO2	Unknown vendor specific drug	1
+N0514	Local.primary OA-hand	2
+NAMASPO1	Unknown vendor specific drug	1
+NIM/21927EMIS	Nicardipine Hydrochloride  M/R capsules  45 mg	2
+PE1	Congenital sternomastoid torticollis	5
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	2
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	7
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	5
+SUTA17836NEMIS	Sulfasalazine  Tablets  500 mg	2
+TALORVA1	Unknown vendor specific drug	1
+U10z	[X]Unspecified fall	1
+U6000	[X]Penicillins causing adverse effects in therapeutic use	1

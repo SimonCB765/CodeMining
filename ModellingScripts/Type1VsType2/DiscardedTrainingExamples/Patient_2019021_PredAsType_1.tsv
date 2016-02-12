@@ -1,0 +1,139 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C5	FH: Myocardial infarction	1
+136	Alcohol consumption	8
+1371	Never smoked tobacco	3
+1383	Enjoys light exercise	3
+1384	Enjoys moderate exercise	1
+13l6	Main spoken language Gujerati	1
+1A	Genitourinary symptoms	1
+229	O/E - height	9
+22A	O/E - weight	10
+22K	Body Mass Index	12
+22N0	Waist circumference	7
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	2
+29BB	10g monofilament sensation R foot normal	1
+2BB1	O/E - retina normal	1
+2BBF	Retinal abnormality - diabetes related	1
+311A	Monofilament foot sensation test	1
+3167	Helicobacter pylori breath test	1
+32130	Exercise ECG normal	1
+423	Haemoglobin estimation	18
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	5
+42R7	Serum iron level	2
+42T	Serum vitamin B12	5
+42U5	Serum folate	3
+42W5	Haemoglobin A1c level - IFCC standardised	3
+42c	HbA1 - diabetic control	2
+44CB	Serum transferrin	2
+44CC	Plasma C reactive protein	6
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	27
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	10
+44PF	Total cholesterol:HDL ratio	12
+44Q	Serum triglycerides	15
+44TB	Haemoglobin A1c level	21
+44U	Blood glucose result	3
+44UZ	Blood glucose 14+ mmol/L	1
+44g	Plasma glucose level	4
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	3
+4664	Urine glucose test = +	2
+4666	Urine glucose test = +++	1
+467	Urine protein test	1
+4672	Urine protein test negative	3
+4674	Urine protein test = +	2
+4682	Urine ketone test negative	2
+46M7	Urine creatinine	3
+46N	Urine protein	3
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	6
+554	Coronary arteriogr.-general	1
+5543	Coronary arteriograph.abnormal	1
+5853	U-S heart scan	2
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	3
+67E	Foreign travel advice	1
+67E1	Recommend travel vaccinations	1
+67I8	Advice about taking aspirin	5
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+8A17	Self monitoring of blood glucose	3
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	4
+8H21	Admit medical emergency unsp.	5
+8H4F	Referral to diabetologist	1
+8H7f	Referral to diabetes nurse	2
+8HC1	Refer to A. & E. department	1
+9N1v	Seen in diabetic eye clinic	1
+9N2S	Seen by practice phlebotomist	2
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N42	Did not attend - no reason	1
+9N47	Appt cancelled by patient	1
+9i7	Indian or British Indian - ethnic category 2001 census	3
+AB2	Candidiasis	1
+AB230	Candidal intertrigo	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	10
+ASTA4609	Aspirin  Tablets  75 mg	5
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	16
+ATTA231	Atenolol  Tablets  50 mg	6
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	4
+BESC348	Betamethasone Valerate  Scalp application  0.1 %	1
+BETA4656	Bezafibrate  M/R tablets  400 mg	2
+C10	Diabetes mellitus	6
+C1001	Diab.mell.no comp. - adult	1
+CLIN12836NEMIS	Clexane Forte  Injection  150 mg/1 ml, pre-filled syringe	2
+CONE5709NEMIS	Coloplast Speedicath  Nelaton catheter (female)  10ch, 28510	1
+COTA696	Co-Trimoxazole  Tablets  480 mg	4
+COTA9301EMIS	Co-Amilofruse 2.5/20  Tablets	1
+D302	Haemophilia-C (factor XI deficiency)	1
+DEPO18483NEMIS	Decapeptyl Sr  Powder and solvent for injection  3 mg/dose	8
+DIE/1994NEMIS	Diclofenac Sodium  E/c tablets  25 mg	1
+E200z	Anxiety state NOS	1
+E3	Mental retardation	1
+F3560	Morton's metatarsalgia	1
+F48z	Visual disturbance NOS	1
+F5921	"Mix cond/sensin hear loss	5
+FRTA1247	Frumil  Tablets	2
+FRTA1248	Frusemide  Tablets  20 mg	6
+Fyu5E	[X]Chronic headache disorder	1
+G11z	Mitral valve disease NOS	1
+G240	Secondary malignant hypertension	1
+G570	Paroxysmal supraventricular tachycardia	1
+G84	Haemorrhoids	4
+GASTOOU4	Unknown vendor specific drug	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+H014	Acute rhinosinusitis	2
+HEWITLE2	Unknown vendor specific drug	1
+HUPE26788EMIS	Human Mixtard 20  Penfill Cartridges (1.5 Ml)	2
+INCA1454	Inderal La  M/R capsules  160 mg	1
+IVTA21631NEMIS	Ivabradine  Tablets  7.5 mg	1
+J1212	Chronic duodenal ulcer with perforation	1
+K0D	End-stage renal disease	2
+L264	Intrauterine death	14
+L264z	Intrauterine death NOS	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	23
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	7
+PITA2287	Pizotifen  Tablets  1.5 mg	1
+Pyu70	[X]Other cystic kidney diseases	1
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	11
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	15

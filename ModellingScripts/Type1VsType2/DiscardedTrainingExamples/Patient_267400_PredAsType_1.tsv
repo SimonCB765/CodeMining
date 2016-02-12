@@ -1,0 +1,123 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	2
+12C3	FH: Ischaemic heart dis. >60	1
+1361	Teetotaller	8
+137L	Current non-smoker	3
+1383	Enjoys light exercise	3
+13l4	Main spoken language English	2
+1A	Genitourinary symptoms	1
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	4
+22A	O/E - weight	10
+22K	Body Mass Index	9
+246	O/E - blood pressure reading	27
+2469	O/E - Systolic BP reading	1
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	2
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+3128	Fundoscopy	2
+31280	Fundoscopy normal	1
+3217	ECG abnormal	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42W	Hb. A1C - diabetic control	1
+43Z2	Prostate specific antigen	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44I4	Serum potassium	7
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44J3	Serum creatinine	24
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	8
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	6
+44Q4	Serum fasting triglyceride level	1
+44TB	Haemoglobin A1c level	15
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	3
+451F	Glomerular filtration rate	2
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	2
+4675	Urine protein test = ++	1
+4677	Urine protein test = ++++	1
+46E	Urine microscopy - casts	4
+46G7	Urine microscopy: pus cells	2
+46G9	Urine microscopy: red cells	2
+46TC	Urine albumin:creatinine ratio	1
+46U	Urine culture	7
+4JJ1	MSU sent for C/S	2
+55Z	Cardiovascular angiography NOS	1
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	2
+66A5	Diabetic on insulin	3
+66AD	Fundoscopy - diabetic check	1
+6791	Health ed. - smoking	2
+6792	Health ed. - alcohol	1
+67I7	Advice about foot care	3
+6896	Depression screening using questions	1
+68A8	Digital retinal screening	1
+79294	Insertion of coronary artery stent	1
+7939	Catheterisation of heart	1
+8B28	Lipid lowering therapy	6
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	2
+8H7R	Refer to chiropodist	1
+8H7n	Referral to retinal screener	1
+9N19	Seen in hospital casualty	1
+9N2e	Seen by ophthalmologist	2
+9N31	Telephone encounter	3
+9SH	Other Asian ethnic group	1
+9iA	Other Asian background - ethnic category 2001 census	1
+AB10	Pityriasis versicolor	1
+C10	Diabetes mellitus	2
+C104	Diabetes mellitus with renal manifestation	1
+E2930	Adjustment reaction with aggression	1
+EGTON460	Unknown vendor specific drug	1
+F35z	Mononeuritis of unspecified site NOS	1
+F3610	Charcot-Marie-Tooth disease	1
+Fyu4	[X]Demyelinating diseases of the central nervous system	1
+Fyu51	[X]Other epilepsy	1
+G11z	Mitral valve disease NOS	1
+G221	Benign hypertensive renal disease	1
+G240	Secondary malignant hypertension	1
+G581	Left ventricular failure	1
+G61z	Intracerebral haemorrhage NOS	1
+GRAYSUR5	Unknown vendor specific drug	1
+H03z	Acute tonsillitis NOS	1
+ISTA1519	Isosorbide Dinitrate  Tablets  10 mg	1
+J17y7	Deformed duodenal cap (bulb)	1
+K0D	End-stage renal disease	1
+K100	Chronic pyelonephritis	1
+PCSDT7073IN26	Unknown vendor specific drug	2
+Y3762	Unknown vendor specific drug	1
+ZV125	[V]Personal history of circulatory system disease	11
+ZV578	[V]Rehabilitation following other hospital encounter	6
+ZV579	[V]Cardiac rehabilitation	1
+bB1y	IVABRADINE 7.5mg tablets	12
+bdl4	CARVEDILOL 25mg tablets	6
+bh62	DOXAZOSIN 2mg tablets	3
+bh63	DOXAZOSIN 4mg tablets	23
+bk31	LOSARTAN POTASSIUM 25mg tablets	1
+bk32	LOSARTAN POTASSIUM 50mg tablets	9
+bkFz	ALISKIREN 150mg tablets	1
+bl5y	ANGITIL XL 300 m/r capsules	3
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	18
+blc5	FELODIPINE 2.5mg m/r tablets	2
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	11
+br2C	000iu/0.4mL syrg"	2
+bxa3	FISH OIL(CONCENTRATE) 1g capsules	7
+bxa7	OMACOR 1g capsules	14
+du3l	NIQUITIN CQ 14mg/24hours patches	1
+e222	FLUCLOXACILLIN 500mg capsules	1
+e912	ERYTHROMYCIN 500mg tablets	1
+f226	HUMAN MONOTARD 100iu/mL injection 10mL	1
+f25Y	HUMAN ISOPHANE INSULIN 100units/mL injection vials	18
+f41A	GLUCOPHAGE SR 1000mg m/r tablets	1

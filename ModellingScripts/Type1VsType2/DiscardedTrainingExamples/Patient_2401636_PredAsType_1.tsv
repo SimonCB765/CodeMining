@@ -1,0 +1,94 @@
+Code	Description	Count
+136	Alcohol consumption	3
+1371	Never smoked tobacco	2
+1384	Enjoys moderate exercise	3
+1385	Enjoys heavy exercise	1
+229	O/E - height	4
+22A	O/E - weight	16
+22K	Body Mass Index	15
+22K4	Body mass index index 25-29 - overweight	1
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	22
+2BBA	Examination of retina	1
+2BBP	O/E - right eye background diabetic retinopathy	1
+2BBQ	O/E - left eye background diabetic retinopathy	1
+311A	Monofilament foot sensation test	3
+42W	Hb. A1C - diabetic control	10
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	2
+44J3	Serum creatinine	12
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P3	Serum cholesterol raised	3
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	12
+44TB	Haemoglobin A1c level	9
+44U	Blood glucose result	1
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	5
+4662	Urine glucose test negative	1
+467	Urine protein test	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	4
+4691	Urine blood test not done	1
+4692	Urine blood test = negative	2
+46M7	Urine creatinine	3
+46N	Urine protein	2
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	6
+46W	Urine microalbumin	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	1
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	4
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+792	Coronary artery operations	2
+8A17	Self monitoring of blood glucose	2
+8B63	Salicylate prophylaxis	1
+8H	Referral for further care	1
+8H7f	Referral to diabetes nurse	1
+9N11	Seen in GP's surgery	1
+9N2f	Seen by retinal screener	1
+9N42	Did not attend - no reason	1
+9NS2	Patient offered choice of provider	1
+9S10	White British	1
+ADM/19822EMIS	Adalat La  M/R tablets  30 mg	20
+ASDI224	Aspirin  Dispersible tablets  75 mg	13
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	3
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	3
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	10
+C10	Diabetes mellitus	7
+CITA32609EMIS	Cipramil  Tablets  10 mg	1
+E3	Mental retardation	1
+EMISSPR1	Unknown vendor specific drug	10
+F350	Sciatic nerve lesion	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+FECA31990EMIS	Fenofibrate  Capsules  (Micronised) 67 mg	2
+Fyu51	[X]Other epilepsy	3
+G11z	Mitral valve disease NOS	2
+G240	Secondary malignant hypertension	1
+G560	Complete atrioventricular block	1
+G65z	Transient cerebral ischaemia NOS	2
+G65zz	Transient cerebral ischaemia NOS	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	3
+H014	Acute rhinosinusitis	1
+HEWITAS11	Unknown vendor specific drug	2
+HUCA32498EMIS	Humulin I  Cartridges (3 Ml)  100 units/ml	13
+ISIN33727EMIS	Isophane Insulin (Human Pyr)  Injection  100 units/ml, 10 ml vial	1
+LMRGPAP3	Unknown vendor specific drug	22
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	7
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	17

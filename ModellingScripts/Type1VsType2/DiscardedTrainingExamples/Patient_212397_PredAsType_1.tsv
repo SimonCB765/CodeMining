@@ -1,0 +1,136 @@
+Code	Description	Count
+1359	Islam	1
+136	Alcohol consumption	6
+1371	Never smoked tobacco	5
+1383	Enjoys light exercise	1
+13lL	Main spoken language Urdu	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	1
+22A	O/E - weight	18
+22K	Body Mass Index	15
+2469	O/E - Systolic BP reading	22
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	2
+2BB1	O/E - retina normal	1
+2BBD	O/E - Right retina normal	1
+2BBE	O/E - Left retina normal	1
+311A	Monofilament foot sensation test	2
+32130	Exercise ECG normal	1
+321B	12 lead ECG	2
+323	ECG: myocardial infarction	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	8
+42W4	HbA1c level (DCCT aligned)	5
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	19
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	4
+44TC	Haemoglobin A1 level	1
+44U	Blood glucose result	3
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	4
+461	Urine exam. - general	2
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	2
+4674	Urine protein test = +	1
+46G11	Urine microscopy: no white cells	1
+46M7	Urine creatinine	4
+46N	Urine protein	3
+46N4	Urine albumin	5
+46N7	Urine protein/creatinine index	1
+46TC	Urine albumin:creatinine ratio	7
+46U1	Urine culture - no growth	1
+46X1	Urine nitrite negative	1
+5543	Coronary arteriograph.abnormal	1
+5853	U-S heart scan	1
+58530	Echocardiogram normal	1
+58C1	Retinal photography	2
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+67	Counselling/health education	1
+6791	Health ed. - smoking	3
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+7939	Catheterisation of heart	1
+7B2A	Diagnostic cystoscopy	1
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	4
+8H	Referral for further care	1
+8H2	Emergency hospital admission	1
+8H3	Non-urgent hospital admission	1
+8H44	Cardiological referral	1
+8H53	ENT referral	1
+8H89	Follow-up 4-6 months	1
+8H8C	Follow up 6 weeks	1
+8HE	Discharged from hospital	1
+9N2f	Seen by retinal screener	1
+9N31	Telephone encounter	2
+9S7	Pakistani	1
+9i7	Indian or British Indian - ethnic category 2001 census	3
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	24
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	2
+APTA10808NEMIS	Apomorphine Hydrochloride  Sublingual tablets  2 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	7
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	11
+C10	Diabetes mellitus	4
+C108	Insulin dependent diabetes mellitus	1
+CONI10141BRIDL	Convatec  Night drainage bags  s320	1
+DITA886	Diclofenac Sodium  Tablets  50 mg	25
+DOEY16716NEMIS	Dorzolamide And Timolol  Eye drops  2 % + 0.5 %	1
+E200z	Anxiety state NOS	2
+EMISSPR1	Unknown vendor specific drug	23
+EPPR25084EMIS	Epoetin Alfa  Prefilled syringe  3000 units/0.3 ml	1
+Eu440	[X]Dissociative amnesia	1
+F31z	Facial nerve disorder NOS	1
+F4510	Unspecified open-angle glaucoma	1
+FECA1203NEMIS	Fenofibrate  Capsules  (Micronised) 267 mg	3
+FECA31990EMIS	Fenofibrate  Capsules  (Micronised) 67 mg	1
+FLCA1195	Flucloxacillin  Capsules  250 mg	3
+Fyu51	[X]Other epilepsy	1
+G11z	Mitral valve disease NOS	1
+G24	Secondary hypertension	1
+G240	Secondary malignant hypertension	1
+GASTOSE4	Unknown vendor specific drug	3
+H014	Acute rhinosinusitis	1
+H037	Recurrent acute tonsillitis	1
+HEWITAS12	Unknown vendor specific drug	1
+HEWITCA1	Unknown vendor specific drug	2
+HEWITNE4	Unknown vendor specific drug	3
+HEWITPE2	Unknown vendor specific drug	3
+HEWITTR3	Unknown vendor specific drug	1
+HYTA8711EGTON	Hytrin  Tablets  2 mg	7
+ISIN33727EMIS	Isophane Insulin (Human Pyr)  Injection  100 units/ml, 10 ml vial	1
+J10y6	Unknown vendor specific drug	2
+J1212	Chronic duodenal ulcer with perforation	1
+K0D	End-stage renal disease	1
+K100	Chronic pyelonephritis	1
+K12z	Urinary calculus NOS	2
+L264z	Intrauterine death NOS	2
+LMRGPAP3	Unknown vendor specific drug	26
+LMRGPGP2	Unknown vendor specific drug	2
+NIM/21926EMIS	Nicardipine Hydrochloride  M/R capsules  30 mg	3
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	1
+PF662	Congenital hammer toe	1
+SCCA19035EMIS	Scott  Catheters  10 ch	24
+SETA2508	Secadrex  Tablets	4
+SETA4308	Semi-Daonil  Tablets  2.5 mg	2

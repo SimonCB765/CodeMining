@@ -1,0 +1,137 @@
+Code	Description	Count
+0ZZ	Other occupations NOS	1
+1359	Islam	1
+136	Alcohol consumption	8
+136Z	Alcohol consumption NOS	1
+137K	Stopped smoking	1
+137P	Cigarette smoker	2
+137S	Ex smoker	1
+13l	Main spoken language	1
+1AA	Prostatism	1
+1Z19	Chronic kidney disease stage 2 with proteinuria	1
+229	O/E - height	17
+22A	O/E - weight	16
+22K	Body Mass Index	16
+22N0	Waist circumference	4
+246	O/E - blood pressure reading	4
+2469	O/E - Systolic BP reading	10
+246N	Standing systolic blood pressure	1
+246P	Standing diastolic blood pressure	2
+24E6	O/E - R.post.tib.pulse present	1
+24E8	O/E - R.dorsalis pedis present	1
+29B8	10g monofilament sensation absent	1
+2BB1	O/E - retina normal	1
+2BBS	O/E - left eye preproliferative diabetic retinopathy	1
+423	Haemoglobin estimation	7
+4258	Haematocrit	5
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42P	Platelet count	2
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	1
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	5
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	17
+44J9	Serum urea level	2
+44Lc	Vitamin B12 level	1
+44Le	Plasma vitamin B12 level	1
+44M4	Serum albumin	1
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	6
+44PF	Total cholesterol:HDL ratio	6
+44Q	Serum triglycerides	7
+44TB	Haemoglobin A1c level	11
+44g	Plasma glucose level	2
+44lD	Urine protein/creatinine ratio	5
+451E	GFR calculated abbreviated MDRD	8
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+46M7	Urine creatinine	2
+46N	Urine protein	3
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	6
+46TD	Urine microalbumin:creatinine ratio	1
+46W	Urine microalbumin	1
+58C1	Retinal photography	1
+65720	Pneumococcal vaccination given	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	1
+6791	Health ed. - smoking	2
+6792	Health ed. - alcohol	2
+6799	Health ed. - diet	1
+67I8	Advice about taking aspirin	2
+6896	Depression screening using questions	2
+68A8	Digital retinal screening	1
+7B2A6	Diagnostic cystoscopy using flexible instrument	1
+8A18	Self monitoring of urine glucose	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	1
+8H7n	Referral to retinal screener	3
+8H7t	Referral to pharmacist	1
+8HBG	Diabetic retinopathy 12 month review	5
+8I24	Aspirin prophylaxis contra-indicated	1
+8I26	Beta blocker contraindicated	4
+8I65	Warfarin not indicated	3
+8I6B	Clopidogrel not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	3
+8I6N	Anticoagulation not indicated	2
+9N2f	Seen by retinal screener	4
+9S7	Pakistani	1
+9h51	Excepted from COPD quality indicators: Patient unsuitable	1
+9i7	Indian or British Indian - ethnic category 2001 census	1
+9i9	Bangladeshi or British Bangladeshi - ethn categ 2001 census	1
+9k17	Alcohol screen - AUDIT C completed	1
+APTA10808NEMIS	Apomorphine Hydrochloride  Sublingual tablets  2 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	11
+C10	Diabetes mellitus	3
+DIM/22313EMIS	Diclomax Retard  M/R capsules  100 mg	1
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+E1123	"Single major depressive episode	1
+E200z	Anxiety state NOS	1
+F5z	Ear and mastoid disease NOS	3
+FECA1203NEMIS	Fenofibrate  Capsules  (Micronised) 267 mg	2
+FOCA24991EMIS	Foley  Catheter (male)  12 ch	1
+FRTA1248	Frusemide  Tablets  20 mg	10
+Fyu51	[X]Other epilepsy	1
+G11z	Mitral valve disease NOS	2
+G1404	"Tricuspid insuffic.	1
+G570	Paroxysmal supraventricular tachycardia	1
+G65zz	Transient cerebral ischaemia NOS	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	7
+ISIN33727EMIS	Isophane Insulin (Human Pyr)  Injection  100 units/ml, 10 ml vial	2
+K0A31	Chronic nephritic syndrm focal+segmental glomerular lesions	1
+K1006	Calculous pyelonephritis	1
+K1012	Acute pyelitis	1
+LEIGHTH12	Unknown vendor specific drug	6
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	9
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	13
+MEOR11311NEMIS	Metoprolol Tartrate  Oral solution  12.5 mg/5 ml	1
+MESH15081NEMIS	Coloplast Tri-Form  Short Tube Leg Bag, Soft Back  500ml, 5501	1
+NATA19446NEMIS	Naproxen And Misoprostol  Tablets  500 mg + 200 micrograms	7
+NATA6621NEMIS	Nateglinide  Tablets  120 mg	1
+NICF635NEMIS	Nitrolingual  Cfc-free pump spray  400 micrograms/dose (duo pack)	1
+NIM/19826EMIS	Nifedipine  M/R tablets  30 mg	2
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	1
+PK61	Sturge-Weber syndrome	1
+PUJINST3	Unknown vendor specific drug	1
+Pyu70	[X]Other cystic kidney diseases	1
+STSU19061NEMIS	Strontium Ranelate  Sugar free granules  2 grams/sachet	4
+XE1pb	Unknown vendor specific drug	1
+Y00fb	Unknown vendor specific drug	1
+bh63	DOXAZOSIN 4mg tablets	3
+bh65	CARDURA 2mg tablets	22
+bi17	CAPOTEN 25mg tablets	1
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	1
+bn5x	MOXISYLYTE 40mg tablets	1
+br2C	000iu/0.4mL syrg"	1

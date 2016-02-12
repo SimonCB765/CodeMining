@@ -1,0 +1,120 @@
+Code	Description	Count
+136	Alcohol consumption	9
+1371	Never smoked tobacco	4
+137S	Ex smoker	1
+1381	Exercise physically impossible	2
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	4
+22A	O/E - weight	13
+22K	Body Mass Index	12
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	20
+29B8	10g monofilament sensation absent	1
+29B9	10g monofilament sensation R foot abnormal	2
+29BB	10g monofilament sensation R foot normal	1
+2BBI	O/E - no retinopathy	2
+2BBJ	O/E - no right diabetic retinopathy	1
+311A	Monofilament foot sensation test	2
+3212	Standard ECG	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	2
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I41	Raised serum potassium level	2
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	29
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	12
+44TB	Haemoglobin A1c level	14
+44U	Blood glucose result	3
+44g	Plasma glucose level	9
+44g1	Plasma fasting glucose level	2
+44lD	Urine protein/creatinine ratio	5
+451E	GFR calculated abbreviated MDRD	14
+461	Urine exam. - general	1
+4662	Urine glucose test negative	1
+4665	Urine glucose test = ++	1
+467	Urine protein test	1
+4672	Urine protein test negative	4
+467Z	Urine protein test NOS	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46A4	Urine pH = 6.5	1
+46M7	Urine creatinine	3
+46N	Urine protein	2
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	6
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+792	Coronary artery operations	3
+7939	Catheterisation of heart	1
+8A17	Self monitoring of blood glucose	2
+8B63	Salicylate prophylaxis	3
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	2
+8H36	Non-urgent medical admission	2
+8H48	Gastroenterological referral	1
+8H4K	Referred to endocrinologist	2
+8H77	Refer to physiotherapist	1
+8HE2	Discharged from inpatient care	1
+8HE3	Discharged from day-case care	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	3
+9N7C	Patient asked to make an appointment	1
+9i0	British or mixed British - ethnic category 2001 census	2
+A3B11	Meticillin resistant staphylococcus aureus	1
+ASTA4609	Aspirin  Tablets  75 mg	17
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	3
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	17
+C10	Diabetes mellitus	1
+CAEF9656BRIDL	Cacit  Effervescent tablet  1.25 grams	22
+CHENJSE3	Unknown vendor specific drug	1
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	2
+E200z	Anxiety state NOS	2
+E3	Mental retardation	1
+Eu01	[X]Vascular dementia	1
+F31z	Facial nerve disorder NOS	2
+F4250	Unspecified senile macular degeneration	1
+FECA18893NEMIS	Fenofibrate  Capsules (Micronised)  200 mg	2
+FRTA1248	Frusemide  Tablets  20 mg	23
+G11z	Mitral valve disease NOS	1
+G3	Ischaemic heart disease	1
+G303	Acute inferoposterior infarction	1
+G5700	Paroxysmal atrial tachycardia	1
+G573z	Atrial fibrillation and flutter NOS	2
+G84	Haemorrhoids	1
+GRAYSEA2	Unknown vendor specific drug	1
+HEWITAS9	Unknown vendor specific drug	22
+HIOS17296NEMIS	Hi-Line  Ostomy girdle/pantie brief with suspenders  Res 1	1
+ISIN33727EMIS	Isophane Insulin (Human Pyr)  Injection  100 units/ml, 10 ml vial	1
+J1212	Chronic duodenal ulcer with perforation	3
+L467	Hypogalactia	1
+LEIGHTH12	Unknown vendor specific drug	1
+LEIGHUS10	Unknown vendor specific drug	1
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	7
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	19
+M21yC	Insulin lipohypertrophy	4
+N094D	Arthralgia of elbow	2
+PRTA4205	Pregaday  Tablets	1
+SLTA4320	Slow-Fe  Tablets  160 mg	6

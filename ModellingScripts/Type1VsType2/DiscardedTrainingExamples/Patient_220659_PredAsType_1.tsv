@@ -1,0 +1,119 @@
+Code	Description	Count
+136	Alcohol consumption	10
+137G	Trying to give up smoking	1
+137R	Current smoker	5
+13lH	Main spoken language Spanish	1
+1A1	Micturition frequency	1
+1B1A	Memory loss - amnesia	1
+229	O/E - height	4
+22A	O/E - weight	15
+22K	Body Mass Index	14
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	24
+29B7	10g monofilament sensation present	3
+29H2	O/E - vibration sense reduced	1
+2BB2	O/E - retinal vessel narrowing	2
+2BBP	O/E - right eye background diabetic retinopathy	1
+2G5F	O/E - Right diabetic foot at moderate risk	1
+2G5J	O/E - Left diabetic foot at moderate risk	1
+31281	Fundoscopy abnormal	1
+3129	Eye fundus photography	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	1
+42T	Serum vitamin B12	2
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	12
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	21
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	9
+44U	Blood glucose result	4
+44g1	Plasma fasting glucose level	5
+451E	GFR calculated abbreviated MDRD	2
+451F	Glomerular filtration rate	1
+4618	Urine dipstick test	2
+4665	Urine glucose test = ++	1
+467	Urine protein test	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	3
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	4
+46N4	Urine albumin	7
+46TC	Urine albumin:creatinine ratio	8
+46TD	Urine microalbumin:creatinine ratio	2
+46W	Urine microalbumin	2
+46W0	Urine microalbumin positive	1
+46X1	Urine nitrite negative	1
+5855	U-S abdominal scan	1
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	8
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+8A17	Self monitoring of blood glucose	2
+8B6A	Statin prophylaxis	1
+8BL2	Patient on maximal tolerated therapy for diabetes	3
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	5
+8CAM	Patient advised about alcohol	2
+8H46	Neurological referral	1
+8H5	Referral to surgeon	1
+8H76	Refer to dietician	1
+8H77	Refer to physiotherapist	1
+8HBD	Retinopathy follow up	1
+8HS	Referral for endoscopy	1
+9N1v	Seen in diabetic eye clinic	2
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N42	Did not attend - no reason	1
+9OX5	Influenza vaccination declined	1
+9i0	British or mixed British - ethnic category 2001 census	1
+9i2	Other White background - ethnic category 2001 census	1
+A542	Herpetic gingivostomatitis	1
+AB21	Candidal vulvovaginitis	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	7
+ASDI224	Aspirin  Dispersible tablets  75 mg	2
+CHRSPLE5	Unknown vendor specific drug	1
+E3	Mental retardation	2
+EMISQRI8	Unknown vendor specific drug	1
+Eu01	[X]Vascular dementia	2
+F4257	Drusen	1
+F4J51	Partial oculomotor nerve palsy	1
+Fyu51	[X]Other epilepsy	1
+GASTOTR2	Unknown vendor specific drug	1
+H037	Recurrent acute tonsillitis	2
+ISS/9640HILLI	Isosorbide Mononitrate  M/R tablets  60 mg	2
+L11z	Antepartum haemorrhage NOS	1
+L264z	Intrauterine death NOS	14
+LEIGHTH12	Unknown vendor specific drug	1
+LEIGHUS10	Unknown vendor specific drug	1
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	29
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	24
+N074	Chondromalacia patellae	2
+NIM/19537EMIS	Nifedipine  M/R tablets  20 mg	1
+PG2	Cervical rib	1
+Pyu70	[X]Other cystic kidney diseases	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	24
+U10z	[X]Unspecified fall	1

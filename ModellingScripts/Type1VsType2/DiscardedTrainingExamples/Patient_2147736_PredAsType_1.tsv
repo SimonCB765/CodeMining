@@ -1,0 +1,157 @@
+Code	Description	Count
+03I1	Ophthalmic optician	1
+136	Alcohol consumption	7
+1363	Light drinker - 1-2u/day	1
+137P	Cigarette smoker	4
+13l4	Main spoken language English	1
+1A55	Dysuria	1
+1Z12	Chronic kidney disease stage 3	1
+1Z13	Chronic kidney disease stage 4	1
+1Z1G	Chronic kidney disease stage 3B without proteinuria	1
+229	O/E - height	9
+22A	O/E - weight	15
+22K	Body Mass Index	13
+22K4	Body mass index index 25-29 - overweight	1
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	25
+29B7	10g monofilament sensation present	2
+29BB	10g monofilament sensation R foot normal	1
+2BB7	O/E - retinal vascular prolif.	1
+2BBF	Retinal abnormality - diabetes related	1
+2BBL	O/E - diabetic maculopathy present both eyes	1
+3128	Fundoscopy	1
+31281	Fundoscopy abnormal	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	4
+42W4	HbA1c level (DCCT aligned)	13
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44I4	Serum potassium	12
+44I5	Serum sodium	2
+44I8	Serum calcium	2
+44J3	Serum creatinine	23
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	1
+44Q	Serum triglycerides	8
+44U	Blood glucose result	1
+44Z1	Serum fructosamine	1
+44g	Plasma glucose level	10
+451E	GFR calculated abbreviated MDRD	11
+4613	Urinalysis = no abnormality	2
+4614	Urinalysis = abnormal	4
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	3
+4674	Urine protein test = +	2
+4675	Urine protein test = ++	2
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	2
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	7
+4JJ1	MSU sent for C/S	4
+585Q	Carotid artery doppler assessment	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	2
+66AD	Fundoscopy - diabetic check	1
+6791	Health ed. - smoking	2
+6792	Health ed. - alcohol	2
+6798	Health ed. - exercise	1
+67K0	Precontemplation stage	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+68A8	Digital retinal screening	1
+7B2A6	Diagnostic cystoscopy using flexible instrument	1
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	5
+8CAL	Smoking cessation advice	3
+8CAM	Patient advised about alcohol	1
+8H53	ENT referral	1
+8H77	Refer to physiotherapist	1
+8H7w	Referral to continence nurse	1
+8HR1	Refer for ECG recording	2
+8HT	Referral to clinic	4
+8I24	Aspirin prophylaxis contra-indicated	1
+8I26	Beta blocker contraindicated	4
+8I3W	Diabetic foot examination declined	1
+8I70	Aspirin not tolerated	1
+8IAG	Pandemic influenza vaccination declined	1
+9N1v	Seen in diabetic eye clinic	2
+9N2e	Seen by ophthalmologist	1
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	1
+9OX5	Influenza vaccination declined	1
+9S10	White British	1
+9h41	Excepted from diabetes qual indicators: Patient unsuitable	1
+9i0	British or mixed British - ethnic category 2001 census	3
+A08	Ill-defined intestinal tract infections	1
+A78y0	Epidemic vertigo	1
+AMCA135	Amoxycillin  Capsules  500 mg	1
+AMTA10145BRIDL	Amlodipine Besilate  Tablets  5 mg	3
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	3
+AMTA23852NEMIS	Amlodipine And Valsartan  Tablets  5 mg + 160 mg	14
+AMTA23853NEMIS	Amlodipine And Valsartan  Tablets  10 mg + 160 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	10
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	1
+C10	Diabetes mellitus	2
+CITA15860NEMIS	Cipralex  Tablets  20 mg	1
+COTA12941NEMIS	Coversyl Plus  Tablets	1
+DIM/22313EMIS	Diclomax Retard  M/R capsules  100 mg	1
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	2
+DITA884	Diclofenac Sodium  M/R tablets  100 mg	1
+DITA886	Diclofenac Sodium  Tablets  50 mg	1
+E20z	Neurotic disorder NOS	1
+E3	Mental retardation	2
+EMISSPR130	Unknown vendor specific drug	1
+Eu01	[X]Vascular dementia	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F366	Polyneuropathy	1
+FLCA1195	Flucloxacillin  Capsules  250 mg	2
+FRTA1247	Frumil  Tablets	1
+FRTA1248	Frusemide  Tablets  20 mg	4
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G20	Essential hypertension	1
+G35	Subsequent myocardial infarction	1
+G5800	Acute congestive heart failure	1
+G60	Subarachnoid haemorrhage	2
+GASTOUN2	Unknown vendor specific drug	2
+H02	Acute pharyngitis	1
+H20	Viral pneumonia	1
+HACA1337	Half Inderal La  M/R capsules  80 mg	1
+IBFC10455BRIDL	Ibuprofen  Fc tablets  800 mg	9
+ISM/814NEMIS	Isotard 40 XL  M/R tablets  40 mg	2
+J1212	Chronic duodenal ulcer with perforation	1
+J17y7	Deformed duodenal cap (bulb)	1
+K05	Chronic renal failure	1
+K0D	End-stage renal disease	2
+L43z4	Obstetric pulmonary embolism NOS with postnatal complication	11
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	2
+META5128	Mesterolone  Tablets  25 mg	2
+MIM/19546EMIS	Minocycline  M/R capsules  100 mg	1
+MOTA8433BRID	Monocor  Tablets  5 mg	1
+N05z4	Osteoarthritis NOS-hand	1
+NETA34105EMIS	Neomycin Sulphate  Tablets  500 mg	1
+NICF26997EMIS	Nitrolingual  Cfc-free pump spray  400 micrograms/dose	1
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	8
+NITA25526EMIS	Nicorandil  Tablets  10 mg	1
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	3
+PK61	Sturge-Weber syndrome	3
+POCA4188	Ponderax  Capsules  60 mg	3
+POFO4257NEMIS	Coloplast Folysil All Silicone  Foley catheter (male)  14ch, AA71	1
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	1
+S3523	Closed fracture cuboid	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	18
+URBL8670BRID	Uro-Tainer Chlorhexidine  Bladder Wash-Out	9

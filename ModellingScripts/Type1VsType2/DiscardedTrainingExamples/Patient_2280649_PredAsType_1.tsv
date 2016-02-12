@@ -1,0 +1,105 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	4
+136	Alcohol consumption	7
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	3
+137L	Current non-smoker	2
+1383	Enjoys light exercise	5
+1A1	Micturition frequency	1
+229	O/E - height	2
+22A	O/E - weight	12
+22K	Body Mass Index	12
+22N0	Waist circumference	3
+2469	O/E - Systolic BP reading	18
+29BB	10g monofilament sensation R foot normal	4
+31280	Fundoscopy normal	1
+31281	Fundoscopy abnormal	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42T	Serum vitamin B12	1
+42W4	HbA1c level (DCCT aligned)	10
+42W5	Haemoglobin A1c level - IFCC standardised	2
+43Z2	Prostate specific antigen	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	18
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	1
+44U	Blood glucose result	1
+44g	Plasma glucose level	1
+451E	GFR calculated abbreviated MDRD	8
+4661	Urine glucose test not done	1
+4662	Urine glucose test negative	4
+467	Urine protein test	1
+4671	Urine protein test not done	3
+4672	Urine protein test negative	4
+4681	Urine ketone test not done	1
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	2
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	4
+46W1	Urine microalbumin negative	1
+58C1	Retinal photography	1
+65720	Pneumococcal vaccination given	1
+66A4	Diabetic on oral treatment	1
+66AV	Diabetic on insulin and oral treatment	2
+6797	Health ed. - immunisation	3
+67I7	Advice about foot care	2
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+7B2A	Diagnostic cystoscopy	1
+8A17	Self monitoring of blood glucose	1
+8B63	Salicylate prophylaxis	3
+8CA41	Pt advised re diabetic diet	6
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	3
+8H	Referral for further care	2
+8H52	Ophthalmological referral	1
+8H7R	Refer to chiropodist	1
+8H7X	Refer to podiatry	1
+8HB1	Recall arranged	3
+8I38	Aspirin prophylaxis refused	1
+9N1v	Seen in diabetic eye clinic	1
+9N2S	Seen by practice phlebotomist	2
+9N39	Item held as scanned document	1
+9NM0	Attending diabetes clinic	2
+9S2	Black Caribbean	1
+9iB	Caribbean - ethnic category 2001 census	3
+AB04	Dermatophytosis of foot	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	22
+BETA302	Bendrofluazide  Tablets  2.5 mg	3
+C10	Diabetes mellitus	1
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	2
+DISU25796EMIS	Diclofenac Sodium  Suppositories  50 mg	1
+F4A0z	Corneal ulcer NOS	1
+F4J51	Partial oculomotor nerve palsy	1
+FECA1203NEMIS	Fenofibrate  Capsules  (Micronised) 267 mg	2
+Fyu51	[X]Other epilepsy	1
+GASTOUN2	Unknown vendor specific drug	24
+H014	Acute rhinosinusitis	1
+H1y1A	Nasal furuncle	1
+HYTA8711EGTON	Hytrin  Tablets  2 mg	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	20
+K12z	Urinary calculus NOS	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	22
+N050	Generalised osteoarthritis - OA	2
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	2
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	3
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	24
+STTA2717	Stugeron  Tablets  15 mg	2
+URCA14594NEMIS	Uro-Tainer Suby G  Catheter Maintenance Solution Citric Acid  3.23 %, 50 ml	1
+URCA23172EMIS	Uro-Tainer M  Catheter patency solution  0.9 %	1

@@ -1,0 +1,167 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	3
+1361	Teetotaller	3
+136V	Alcohol units per week	3
+1371	Never smoked tobacco	1
+137P	Cigarette smoker	2
+137S	Ex smoker	2
+1381	Exercise physically impossible	3
+1384	Enjoys moderate exercise	1
+1477	H/O: cerebrovascular disease	1
+229	O/E - height	9
+22A	O/E - weight	13
+22K	Body Mass Index	11
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	25
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	2
+2BBI	O/E - no retinopathy	2
+2BBQ	O/E - left eye background diabetic retinopathy	1
+2G5E	O/E - Right diabetic foot at low risk	1
+2G5I	O/E - Left diabetic foot at low risk	1
+3213	Exercise ECG	1
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	6
+42R4	Serum ferritin	3
+42R7	Serum iron level	2
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	11
+42W5	Haemoglobin A1c level - IFCC standardised	3
+43Z20	Prostate specific antigen normal	1
+44A1	Serum parathyroid hormone	1
+44CC	Plasma C reactive protein	1
+44CS	Serum C reactive protein level	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	12
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	15
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	6
+44Q	Serum triglycerides	11
+44TJ	Blood glucose level	4
+451E	GFR calculated abbreviated MDRD	8
+451F	Glomerular filtration rate	1
+4672	Urine protein test negative	4
+4675	Urine protein test = ++	1
+46M7	Urine creatinine	4
+46TC	Urine albumin:creatinine ratio	6
+46W	Urine microalbumin	3
+5853	U-S heart scan	1
+58C1	Retinal photography	3
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A4	Diabetic on oral treatment	2
+66AD	Fundoscopy - diabetic check	1
+66C9	Target weight discussed	1
+6791	Health ed. - smoking	1
+6792	Health ed. - alcohol	2
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	4
+6896	Depression screening using questions	3
+7939	Catheterisation of heart	1
+8B63	Salicylate prophylaxis	3
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	1
+8H	Referral for further care	2
+8H44	Cardiological referral	1
+8H7R	Refer to chiropodist	3
+8H7i	Referral to smoking cessation advisor	1
+8I65	Warfarin not indicated	1
+8I66	Aspirin not indicated	2
+8I6B	Clopidogrel not indicated	1
+8I6a	Dipyridamole not indicated	1
+9N1v	Seen in diabetic eye clinic	1
+9N27	Seen by dietician	1
+9N2P	Seen by chiropodist	2
+9N42	Did not attend - no reason	1
+9NNC	Under care of retinal screener	1
+9ON4	Stress monitoring 1st letter	1
+9S2	Black Caribbean	1
+9S3	Black African	2
+9iC	African - ethnic category 2001 census	2
+AB0	Dermatophytosis including tinea or ringworm	1
+AB01	Dermatophytosis of nail	1
+AMTA101	Amiloride Hydrochloride  Tablets  5 mg	1
+AMTA10145BRIDL	Amlodipine Besilate  Tablets  5 mg	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	18
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	3
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	8
+ATTA231	Atenolol  Tablets  50 mg	11
+B46	Malignant neoplasm of prostate	2
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	2
+BETA302	Bendrofluazide  Tablets  2.5 mg	2
+C109	Non-insulin dependent diabetes mellitus	1
+D0	Deficiency anaemias	1
+DICA876	Diazepam  Capsules  2 mg	1
+DIE/1995NEMIS	Diclofenac Sodium  E/c tablets  50 mg	1
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	1
+DITA4858	Distigmine Bromide  Tablets  5 mg	9
+DITA885	Diclofenac Sodium  Tablets  25 mg	1
+DITA886	Diclofenac Sodium  Tablets  50 mg	3
+E200z	Anxiety state NOS	1
+E2C01	Anger reaction	1
+E3	Mental retardation	4
+EGTON1025	Unknown vendor specific drug	1
+EMISQLE10	Unknown vendor specific drug	2
+EMISSPR101	Unknown vendor specific drug	2
+EMISSPR110	Unknown vendor specific drug	14
+ERCA4890	Erythromycin  Capsules (Gastro-Resistant)  250 mg	3
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F4K21	Vitreous detachment	1
+FECA1203NEMIS	Fenofibrate  Capsules  (Micronised) 267 mg	1
+FRTA1247	Frumil  Tablets	7
+FRTA1248	Frusemide  Tablets  20 mg	5
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G341	Aneurysm of heart	2
+G5733	Non-rheumatic atrial fibrillation	1
+G573z	Atrial fibrillation and flutter NOS	1
+G60	Subarachnoid haemorrhage	1
+G84	Haemorrhoids	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	17
+H1y5z	Other vocal cord disease NOS	1
+ININ3759	Pork Insulatard  Injection  100 units/ml, 10 ml vial	9
+J1212	Chronic duodenal ulcer with perforation	1
+J171	Gastric diverticulum	2
+J17y7	Deformed duodenal cap (bulb)	2
+K1020	Renal abscess	1
+K12z	Urinary calculus NOS	2
+L43z4	Obstetric pulmonary embolism NOS with postnatal complication	2
+M21z0	Atrophoderma	2
+MACA8841BRIDL	Maxepa  Capsules  1 gram	16
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	2
+MECA1815	Mexiletine Hydrochloride  Capsules  200 mg	2
+MITA19793NEMIS	Mirtazapine  Tablets  15 mg	3
+N050	Generalised osteoarthritis - OA	1
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	2
+PK61	Sturge-Weber syndrome	1
+Pyu70	[X]Other cystic kidney diseases	2
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	12
+SESH5910	Selsun  Shampoo  2.5 %	1
+SITA10078BRIDL	Simvastatin  Tablets  20 mg	2
+SLTA4320	Slow-Fe  Tablets  160 mg	5
+TATA34449NEMIS	Unknown vendor specific drug	2
+TETA23675EMIS	Terazosin Hydrochloride  Tablets  2 mg	5
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	6
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	5
+VETA6809	Verapamil Hydrochloride  Tablets  80 mg	6

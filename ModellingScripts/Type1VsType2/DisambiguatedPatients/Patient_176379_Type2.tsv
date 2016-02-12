@@ -1,0 +1,81 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	6
+1371	Never smoked tobacco	2
+137L	Current non-smoker	1
+1383	Enjoys light exercise	1
+1FC	Diet average	1
+229	O/E - height	6
+22A	O/E - weight	9
+22K	Body Mass Index	9
+2469	O/E - Systolic BP reading	18
+29B7	10g monofilament sensation present	3
+2BBJ	O/E - no right diabetic retinopathy	1
+2BBK	O/E - no left diabetic retinopathy	1
+311A	Monofilament foot sensation test	2
+423	Haemoglobin estimation	1
+428	Mean corpusc. haemoglobin(MCH)	1
+42A	Mean corpuscular volume (MCV)	1
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	4
+42W5	Haemoglobin A1c level - IFCC standardised	4
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	3
+44J3	Serum creatinine	13
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	5
+44PF	Total cholesterol:HDL ratio	4
+44Q	Serum triglycerides	7
+44TB	Haemoglobin A1c level	11
+44lD	Urine protein/creatinine ratio	6
+451E	GFR calculated abbreviated MDRD	6
+4667	Urine glucose test = ++++	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	3
+46N	Urine protein	5
+46N4	Urine albumin	7
+46TC	Urine albumin:creatinine ratio	6
+58C1	Retinal photography	1
+65720	Pneumococcal vaccination given	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	4
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	1
+8H54	Orthopaedic referral	1
+8H7n	Referral to retinal screener	1
+9N1Q	Seen in diabetic clinic	3
+9N2f	Seen by retinal screener	1
+9OI4	Hypertens.monitor.1st letter	1
+9OI5	Hypertens.monitor 2nd letter	1
+9OI6	Hypertens.monitor 3rd letter	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	19
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	26
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	24
+C10	Diabetes mellitus	1
+D4100	Stress polycythaemia	1
+EMISSPR110	Unknown vendor specific drug	27
+F504	Impacted cerumen (wax in ear)	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+HUCA18384EMIS	Humulin M4  Cartridges (1.5 Ml)	1
+INCA5024	Indomethacin  Capsules  25 mg	6
+M21yC	Insulin lipohypertrophy	18
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	22
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	19
+TOM/11677NEMIS	Tolterodine Tartrate  M/R capsules  4 mg	1

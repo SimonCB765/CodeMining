@@ -1,0 +1,98 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	9
+1379	Ex-moderate smoker (10-19/day)	4
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	1
+22A	O/E - weight	14
+22K	Body Mass Index	13
+2469	O/E - Systolic BP reading	15
+29BB	10g monofilament sensation R foot normal	3
+2BBI	O/E - no retinopathy	3
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42R	Serum iron tests	1
+42R4	Serum ferritin	2
+42R5	Serum TIBC	1
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	12
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44A1	Serum parathyroid hormone	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44F2	Serum alk. phos. raised	1
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	18
+44J9	Serum urea level	3
+44LA	Serum vitamin D	2
+44M4	Serum albumin	2
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	3
+44Q	Serum triglycerides	7
+44TB	Haemoglobin A1c level	2
+44g	Plasma glucose level	1
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	7
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	5
+4674	Urine protein test = +	1
+46M7	Urine creatinine	3
+46TC	Urine albumin:creatinine ratio	4
+46W	Urine microalbumin	3
+58C1	Retinal photography	2
+6572	Pneumococcal vaccination	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+6798	Health ed. - exercise	3
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	3
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	1
+8H	Referral for further care	3
+8H4	Referral to physician	1
+8H76	Refer to dietician	1
+8H7X	Refer to podiatry	2
+8HQ2	Refer for ultrasound investign	1
+8I63	Statin not indicated	1
+8I74	Angiotensin converting enzyme inhibitor not tolerated	1
+9N1Q	Seen in diabetic clinic	3
+9N31	Telephone encounter	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	14
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	18
+BINSCFU2	Unknown vendor specific drug	2
+BINSCOP1	Unknown vendor specific drug	1
+BINSCUR2	Unknown vendor specific drug	2
+C1001	Diab.mell.no comp. - adult	1
+C10y	Diabetes mellitus with other specified manifestation	4
+COTA9937BRIDL	Coversyl  Tablets  2 mg	1
+E3	Mental retardation	8
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	1
+F5921	"Mix cond/sensin hear loss	3
+FRTA1247	Frumil  Tablets	16
+FRTA1248	Frusemide  Tablets  20 mg	9
+Fyu51	[X]Other epilepsy	1
+GASTOUR2	Unknown vendor specific drug	3
+H037	Recurrent acute tonsillitis	1
+HUCA32506EMIS	Humulin M2  Cartridges (3 Ml)	1
+IVTA21631NEMIS	Ivabradine  Tablets  7.5 mg	1
+J1111	Chronic gastric ulcer with haemorrhage	1
+K423	Abscess of Bartholin's gland	1
+M21yC	Insulin lipohypertrophy	1
+M244	Folliculitis	1
+N07y5	Locked knee	1
+NIM/21970EMIS	Nitrofurantoin  M/R capsules  100 mg	22
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	6
+TEGE25620NEMIS	Testosterone  Gel  2 %, 3 x 60 gram Multi-Dose Dispenser	1
+URCA14420NEMIS	Uro-Tainer Sodium Chloride  Catheter maintenance solution  0.9 %, 50 ml	30

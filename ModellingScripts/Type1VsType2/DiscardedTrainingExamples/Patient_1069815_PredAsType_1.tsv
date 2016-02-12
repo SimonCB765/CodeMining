@@ -1,0 +1,110 @@
+Code	Description	Count
+03I1	Ophthalmic optician	1
+12C5	FH: Myocardial infarction	1
+136	Alcohol consumption	9
+1371	Never smoked tobacco	3
+137P	Cigarette smoker	1
+13l6	Main spoken language Gujerati	1
+229	O/E - height	2
+22A	O/E - weight	12
+22K	Body Mass Index	13
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	21
+29B7	10g monofilament sensation present	1
+29B9	10g monofilament sensation R foot abnormal	1
+29BB	10g monofilament sensation R foot normal	1
+29H5	O/E - Vibration sense of right foot normal	1
+2BBA	Examination of retina	2
+2BBD	O/E - Right retina normal	1
+311A	Monofilament foot sensation test	1
+31280	Fundoscopy normal	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	6
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	3
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	2
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	2
+44I5	Serum sodium	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	12
+44J9	Serum urea level	2
+44M4	Serum albumin	1
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	4
+44PF	Total cholesterol:HDL ratio	6
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	14
+44U	Blood glucose result	2
+44g	Plasma glucose level	1
+44g1	Plasma fasting glucose level	2
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	2
+451F	Glomerular filtration rate	2
+467	Urine protein test	2
+4671	Urine protein test not done	1
+4672	Urine protein test negative	1
+46M7	Urine creatinine	1
+46N	Urine protein	1
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	6
+58531	Echocardiogram abnormal	1
+65720	Pneumococcal vaccination given	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	4
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+79380	Angiocardiography of both right and left sides of heart	1
+8A17	Self monitoring of blood glucose	2
+8B28	Lipid lowering therapy	1
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	1
+8HBD	Retinopathy follow up	1
+8IA3	Bowel cancer screening declined	1
+9N2U	Seen by optician	1
+9N2e	Seen by ophthalmologist	1
+9N2f	Seen by retinal screener	3
+9N4	Failed encounter	1
+9S6	Indian	2
+9i7	Indian or British Indian - ethnic category 2001 census	3
+A076	Enteritis due to specified virus	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	24
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	6
+ASDI224	Aspirin  Dispersible tablets  75 mg	18
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	7
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	24
+C10	Diabetes mellitus	1
+C108	Insulin dependent diabetes mellitus	1
+C10y	Diabetes mellitus with other specified manifestation	2
+COTA696	Co-Trimoxazole  Tablets  480 mg	4
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	2
+CYTA779	Cyclopenthiazide  Tablets  500 micrograms	1
+F31z	Facial nerve disorder NOS	2
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	3
+F5921	"Mix cond/sensin hear loss	2
+FOCA24991EMIS	Foley  Catheter (male)  12 ch	3
+FRTA1248	Frusemide  Tablets  20 mg	22
+Fyu51	[X]Other epilepsy	2
+G11z	Mitral valve disease NOS	1
+G12	Rheumatic aortic valve disease	1
+G3400	Single coronary vessel disease	1
+GASTOUR8	Unknown vendor specific drug	1
+GECA4956	Gemfibrozil  Capsules  300 mg	4
+HYTA8712EGTON	Hytrin  Tablets  5 mg	4
+ISDU10518BRIDL	Isosorbide Mononitrate  Durules  60 mg	1
+ISIN33727EMIS	Isophane Insulin (Human Pyr)  Injection  100 units/ml, 10 ml vial	3
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	1
+NIM/21970EMIS	Nitrofurantoin  M/R capsules  100 mg	19
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	31
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	17
+TETA1042NEMIS	Telmisartan  Tablets  40 mg	1

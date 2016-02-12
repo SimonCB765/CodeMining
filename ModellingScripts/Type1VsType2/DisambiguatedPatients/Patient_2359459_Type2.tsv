@@ -1,0 +1,112 @@
+Code	Description	Count
+136	Alcohol consumption	4
+1371	Never smoked tobacco	2
+137L	Current non-smoker	1
+1383	Enjoys light exercise	2
+1A	Genitourinary symptoms	3
+1A1	Micturition frequency	1
+1A23	Incontinence of urine	4
+1A24	Stress incontinence	2
+1A7	Vaginal discharge symptom	1
+1FA	Diet good	2
+1Z12	Chronic kidney disease stage 3	4
+229	O/E - height	2
+22A	O/E - weight	7
+22K	Body Mass Index	7
+2469	O/E - Systolic BP reading	15
+29B9	10g monofilament sensation R foot abnormal	1
+29BB	10g monofilament sensation R foot normal	2
+317	Special urinary procedures	1
+32	Electrocardiography	2
+321B	12 lead ECG	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	4
+42R7	Serum iron level	1
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+42W4	HbA1c level (DCCT aligned)	9
+44A1	Serum parathyroid hormone	1
+44CB	Serum transferrin	1
+44CC	Plasma C reactive protein	4
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	14
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	15
+44J9	Serum urea level	4
+44LP	Serum 25-Hydroxy vitamin D3 level	2
+44M4	Serum albumin	3
+44P	Serum cholesterol	6
+44P5	Serum HDL cholesterol level	2
+44P6	Serum LDL cholesterol level	2
+44Q	Serum triglycerides	6
+44f0	Serum random glucose level	3
+44g0	Plasma random glucose level	1
+44g1	Plasma fasting glucose level	3
+451E	GFR calculated abbreviated MDRD	14
+4672	Urine protein test negative	1
+4695	Urine blood test = +	1
+46G4	Urine micr.:leucocytes present	1
+46M7	Urine creatinine	4
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	6
+46W2	Microalbumin excretion rate	7
+55	Cardiovascular sys.angiography	1
+58531	Echocardiogram abnormal	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+68A8	Digital retinal screening	1
+79	Heart operations	1
+792	Coronary artery operations	1
+7B2A	Diagnostic cystoscopy	1
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	2
+8H	Referral for further care	5
+9N1K	Seen in ophthalmology clinic	2
+9N1R	Seen in neurology clinic	1
+9N2f	Seen by retinal screener	1
+9N4p	Did not attend diabetic retinopathy clinic	1
+9ND8	I/patient disch summary rec'vd	1
+9NND	Under care of diabetic foot screener	1
+9S10	White British	2
+A14y5	Tuberculosis of retroperitoneal lymph nodes	1
+AB21	Candidal vulvovaginitis	1
+ADCH26983NEMIS	Adcal-D3  Chewable tablets  Lemon	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	13
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	18
+C10FM	Type 2 diabetes mellitus with persistent microalbuminuria	1
+D0130	Combined B12 and folate deficiency anaemia	1
+DEIN20067EMIS	Depo-Medrone  Injection  80 mg/2 ml vial	1
+EMISNQOU1	Unknown vendor specific drug	2
+F31z	Facial nerve disorder NOS	2
+F5614	Otogenic vertigo	1
+FECA31990EMIS	Fenofibrate  Capsules  (Micronised) 67 mg	1
+FRTA1247	Frumil  Tablets	1
+FRTA1248	Frusemide  Tablets  20 mg	17
+G11z	Mitral valve disease NOS	2
+G21z0	Hypertensive heart disease NOS without CCF	1
+G5700	Paroxysmal atrial tachycardia	2
+G65zz	Transient cerebral ischaemia NOS	5
+GLTA1304	Glibenese  Tablets  5 mg	1
+H03z	Acute tonsillitis NOS	1
+H5B0	Obstructive sleep apnoea	1
+Hyu02	[X]Acute tonsillitis due to other specified organisms	5
+ISDU10518BRIDL	Isosorbide Mononitrate  Durules  60 mg	4
+ISIN5049	Isophane Insulin  Injection  100 units/ml	1
+K05	Chronic renal failure	1
+K0D	End-stage renal disease	1
+K100	Chronic pyelonephritis	1
+K20z	Prostatic hyperplasia NOS	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	11
+N083q	Recurrent subluxation of the patella	2
+NIM/21927EMIS	Nicardipine Hydrochloride  M/R capsules  45 mg	8
+NITA25527EMIS	Nicorandil  Tablets  20 mg	1
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	17
+URBL8716BRIDL	Uro-Tainer Suby G  Sachets	18

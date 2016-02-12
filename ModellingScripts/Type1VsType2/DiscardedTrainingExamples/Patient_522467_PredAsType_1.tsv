@@ -1,0 +1,106 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+136	Alcohol consumption	10
+137L	Current non-smoker	2
+137S	Ex smoker	4
+1382	Avoids even trivial exercise	1
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+1Z13	Chronic kidney disease stage 4	1
+229	O/E - height	8
+22A	O/E - weight	17
+22K	Body Mass Index	16
+2469	O/E - Systolic BP reading	23
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	1
+29H1	O/E - vibration sense normal	1
+2BB1	O/E - retina normal	3
+3126	Tonometry	1
+3129	Eye fundus photography	1
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42QE	International normalised ratio	1
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	12
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44E	Serum bilirubin level	1
+44EC	Serum total bilirubin level	1
+44F	Serum alkaline phosphatase	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44J3	Serum creatinine	18
+44J9	Serum urea level	4
+44M4	Serum albumin	1
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	4
+44Q	Serum triglycerides	4
+44Z1	Serum fructosamine	1
+44g	Plasma glucose level	3
+451E	GFR calculated abbreviated MDRD	6
+451F	Glomerular filtration rate	2
+4662	Urine glucose test negative	1
+467	Urine protein test	2
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	2
+467E	Urine protein level	2
+46M7	Urine creatinine	1
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	6
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	3
+6791	Health ed. - smoking	7
+6798	Health ed. - exercise	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+8A17	Self monitoring of blood glucose	2
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	1
+8H41	General medical referral	1
+8H49	Psychiatric referral	2
+8H53	ENT referral	1
+8H76	Refer to dietician	1
+8H77	Refer to physiotherapist	2
+8H7L	Refer for terminal care	1
+8H7R	Refer to chiropodist	1
+9N1A	Seen in hospital out-pat.	1
+9N1v	Seen in diabetic eye clinic	1
+9ND6	Communication from:	4
+9OD1	BP screen - 1st call	1
+9OX5	Influenza vaccination declined	1
+9i0	British or mixed British - ethnic category 2001 census	4
+AB04	Dermatophytosis of foot	1
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	3
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	6
+C1001	Diab.mell.no comp. - adult	4
+D0130	Combined B12 and folate deficiency anaemia	1
+D4100	Stress polycythaemia	2
+DATO9235EMIS	Dalacin T  Topical lotion  1 %	1
+DIM/24452EMIS	Diclofenac Sodium  M/R capsules  100 mg	5
+DUGA18736NEMIS	Duloxetine  Gastro-resistant Capsules  20 mg	1
+Dyu33	[X]Other specified haemorrhagic conditions	1
+E1120	"Single major depressive episode	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+F4B5A	Fuchs' endothelial dystrophy	1
+F5902	Conductive hearing loss due to disorder of tympanic membrane	1
+FLCA8419EGTON	Fluconazole  Capsules  150 mg	2
+Fyu56	[X]Other lacunar syndromes	1
+G733	Ischaemic foot	1
+G73z1	Spasm of peripheral artery	1
+H014	Acute rhinosinusitis	1
+H3300	Extrinsic asthma without status asthmaticus	1
+J1202	Acute duodenal ulcer with perforation	1
+LEIGHTH12	Unknown vendor specific drug	1
+LEIN18219NEMIS	Levemir Penfill  Injection (cartridges)  100 units/ml, 3 ml cartridge	26
+LEIN31295EMIS	Leuprorelin Acetate  Injection  11.25 mg/vial	4
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MEOR11311NEMIS	Metoprolol Tartrate  Oral solution  12.5 mg/5 ml	19
+MESH15081NEMIS	Coloplast Tri-Form  Short Tube Leg Bag, Soft Back  500ml, 5501	1
+N03	Arthropathy associated with disorders EC	2
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	1
+SCCA19035EMIS	Scott  Catheters  10 ch	22
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	1
+TETA30443NEMIS	Telmisartan And Hydrochlorothiazide  Tablets  80 mg + 25 mg	4

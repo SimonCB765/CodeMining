@@ -1,0 +1,107 @@
+Code	Description	Count
+1361	Teetotaller	4
+1362	Trivial drinker - <1u/day	4
+1371	Never smoked tobacco	2
+1374	Moderate smoker - 10-19 cigs/d	1
+137L	Current non-smoker	1
+229	O/E - height	5
+22A	O/E - weight	14
+22K	Body Mass Index	6
+22K1	Body Mass Index normal K/M2	4
+246	O/E - blood pressure reading	12
+2464	O/E - BP reading normal	5
+29B1	O/E - tactile sensation normal	1
+29H1	O/E - vibration sense normal	1
+2G5	O/E - foot	1
+3122	Visual testing done	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42T	Serum vitamin B12	1
+42U4	Red blood cell folate	1
+42W	Hb. A1C - diabetic control	9
+42W4	HbA1c level (DCCT aligned)	8
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	16
+44I5	Serum sodium	3
+44J3	Serum creatinine	30
+44J7	Albumin / creatinine ratio	9
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	8
+44Q	Serum triglycerides	14
+44TB	Haemoglobin A1c level	2
+44U	Blood glucose result	5
+451E	GFR calculated abbreviated MDRD	15
+4612	Urinalysis requested	2
+4615	MSU sent to lab.	3
+4618	Urine dipstick test	4
+4671	Urine protein test not done	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	1
+4678	Proteinuria	1
+46N4	Urine albumin	10
+46N8	Urine microalbumin profile	1
+46TC	Urine albumin:creatinine ratio	5
+46U	Urine culture	1
+46W	Urine microalbumin	3
+66A5	Diabetic on insulin	2
+66Ac	Diabetic peripheral neuropathy screening	1
+677B	Advice about treatment given	1
+6791	Health ed. - smoking	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+67I	Advice	2
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	3
+8BAH	Exercise on prescription	1
+8BL2	Patient on maximal tolerated therapy for diabetes	3
+8H	Referral for further care	1
+8H41	General medical referral	1
+8H49	Psychiatric referral	2
+8H54	Orthopaedic referral	3
+8H59	Referred to plastic surgeon	2
+8H7A	Refer to mental health worker	1
+8H9	Planned telephone contact	1
+8Hj3	Referral to DAFNE diabetes structured education programme	1
+8I27	Statins contraindicated	1
+9N0n	Seen in community diabetes specialist clinic	2
+9N1K	Seen in ophthalmology clinic	1
+9N33	Letter encounter from patient	1
+9NC3	Letter sent to patient	2
+A	Infectious and parasitic diseases	1
+A781	Viral warts	1
+C106	Diabetes mellitus with neurological manifestation	1
+E117	Unspecified bipolar affective disorder	2
+E117z	"Unspecified bipolar affective disorder	1
+E2005	Recurrent anxiety	1
+E200z	Anxiety state NOS	2
+Eu	[X]Mental and behavioural disorders	1
+F5012	Acute infection of pinna	1
+F504	Impacted cerumen (wax in ear)	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H01	Acute sinusitis	1
+S234B	Closed fracture radial styloid	1
+S261	Open fracture of one or more phalanges of hand	1
+bh62	DOXAZOSIN 2mg tablets	1
+bh63	DOXAZOSIN 4mg tablets	1
+bh65	CARDURA 2mg tablets	15
+bi67	RAMIPRIL 10mg capsules	1
+bl5z	DILTIAZEM HYDROCHLORIDE 60mg m/r tablets	13
+blzj	GLYCERYL TRINITRATE 2mg m/r tablets	15
+bx11	BEZALIP 200mg tablets	2
+bxdI	INEGY 10mg/40mg tablets	2
+d221	XANAX 250micrograms tablets	2
+ei18	ACICLOVIR 400mg tablets	1
+ei1h	ACICLOVIR 200mg dispersible tablets	7
+f25q	HUMAN INSULATARD PENFILL cartridges 1.5mL	8
+f25w	HYPURIN PORCINE ISOPHANE 100iu/mL injection 10mL	1
+gc71	TAMSULOSIN HYDROCHLORIDE 400micrograms m/r capsules	7
+ip3a	CALCIUM AND ERGOCALCIFEROL 400units tablets	6

@@ -1,0 +1,110 @@
+Code	Description	Count
+136	Alcohol consumption	4
+1364	Moderate drinker - 3-6u/day	1
+1371	Never smoked tobacco	3
+137P	Cigarette smoker	2
+1383	Enjoys light exercise	1
+1385	Enjoys heavy exercise	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	2
+22A	O/E - weight	18
+22K	Body Mass Index	16
+2469	O/E - Systolic BP reading	23
+29B8	10g monofilament sensation absent	3
+29H5	O/E - Vibration sense of right foot normal	1
+2BB1	O/E - retina normal	1
+2BB4	O/E - retinal microaneurysms	1
+2BBI	O/E - no retinopathy	1
+31284	Indirect fundoscopy following mydriatic	1
+3129	Eye fundus photography	1
+3214	Ambulatory ECG	1
+3272	ECG: atrial fibrillation	1
+329A	ECG: left bundle branch block	1
+388f	Patient health questionnaire (PHQ-9) score	1
+428	Mean corpusc. haemoglobin(MCH)	1
+42A	Mean corpuscular volume (MCV)	1
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	3
+44J3	Serum creatinine	19
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	17
+44U	Blood glucose result	4
+44g	Plasma glucose level	13
+44lD	Urine protein/creatinine ratio	6
+451E	GFR calculated abbreviated MDRD	5
+467	Urine protein test	1
+4672	Urine protein test negative	2
+4675	Urine protein test = ++	1
+467E	Urine protein level	1
+46M7	Urine creatinine	4
+46N	Urine protein	4
+46N4	Urine albumin	6
+46TC	Urine albumin:creatinine ratio	5
+46TD	Urine microalbumin:creatinine ratio	2
+46W1	Urine microalbumin negative	1
+5853	U-S heart scan	2
+58C1	Retinal photography	2
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A5	Diabetic on insulin	3
+66AD	Fundoscopy - diabetic check	1
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	2
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	2
+7B2Az	Diagnostic cystoscopy NOS	1
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	1
+8H21	Admit medical emergency unsp.	1
+8H3G	Non-urgent ophthalmolog.admisn	1
+8H41	General medical referral	1
+8H4B	Referred to rheumatologist	1
+8H4F	Referral to diabetologist	1
+8H52	Ophthalmological referral	1
+8H7	Other referral	1
+8H77	Refer to physiotherapist	1
+8H7f	Referral to diabetes nurse	2
+9N2V	Seen by optometrist	1
+9N2e	Seen by ophthalmologist	1
+9i0	British or mixed British - ethnic category 2001 census	1
+ACTA23755EMIS	Acarbose  Tablets  50 mg	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	15
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	7
+C10	Diabetes mellitus	7
+DICA876	Diazepam  Capsules  2 mg	2
+E117	Unspecified bipolar affective disorder	1
+E200z	Anxiety state NOS	2
+F3560	Morton's metatarsalgia	1
+F42z	Retinal disorder NOS	1
+FRTA1248	Frusemide  Tablets  20 mg	24
+G341	Aneurysm of heart	1
+G570	Paroxysmal supraventricular tachycardia	1
+G572z	Paroxysmal tachycardia NOS	1
+G573z	Atrial fibrillation and flutter NOS	2
+G581	Left ventricular failure	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	3
+H02	Acute pharyngitis	2
+IBM/18882EMIS	Ibuprofen  M/R tablets  800 mg	1
+J1y	"Other specified disorders of oesophagus	1
+K0D	End-stage renal disease	2
+K12z	Urinary calculus NOS	1
+META1753	Mefenamic Acid  Tablets  500 mg	22
+N0874	Triangular fibrocartilage tear	1
+NATA1940	Nardil  Tablets  15 mg	2
+PE1	Congenital sternomastoid torticollis	34
+PRFO5322	Prednisolone  Foam  20 mg/application	4
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	13
+SETA2517	Securon Sr  Tablets  240 mg	1

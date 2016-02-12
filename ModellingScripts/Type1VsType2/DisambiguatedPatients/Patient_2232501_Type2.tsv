@@ -1,0 +1,105 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	3
+137L	Current non-smoker	2
+1387	Exercise grading unknown	1
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	3
+22A	O/E - weight	15
+22K	Body Mass Index	15
+2469	O/E - Systolic BP reading	25
+29BB	10g monofilament sensation R foot normal	3
+2BBD	O/E - Right retina normal	1
+2BBE	O/E - Left retina normal	2
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42W	Hb. A1C - diabetic control	5
+42W4	HbA1c level (DCCT aligned)	12
+42W5	Haemoglobin A1c level - IFCC standardised	2
+42c1	HbA1 7 - 10% - borderline control	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	6
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	16
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	16
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	10
+44U	Blood glucose result	3
+451E	GFR calculated abbreviated MDRD	6
+4666	Urine glucose test = +++	1
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+4675	Urine protein test = ++	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	4
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	7
+46TD	Urine microalbumin:creatinine ratio	2
+46W	Urine microalbumin	1
+46X1	Urine nitrite negative	1
+46f4	Urine leucocyte test = +++	1
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+66A5	Diabetic on insulin	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	1
+68A8	Digital retinal screening	3
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	1
+8H52	Ophthalmological referral	1
+8H7H	Refer to optician	1
+8HS	Referral for endoscopy	1
+9N2V	Seen by optometrist	1
+9N2e	Seen by ophthalmologist	1
+9N31	Telephone encounter	2
+9N58	Emergency appointment	1
+9NNC	Under care of retinal screener	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AB01	Dermatophytosis of nail	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	1
+C10	Diabetes mellitus	2
+C108	Insulin dependent diabetes mellitus	1
+C109	Non-insulin dependent diabetes mellitus	1
+CAIN28236EMIS	Caverject  Injection  10 micrograms/vial	26
+CAIN4534NEMIS	Calciferol  Injection  300,000 units/ml, 1 ml ampoule	1
+CATA8556BRID	Calcium Gluconate  Tablets  500 mg	1
+CHTA600	Chlorpropamide  Tablets  100 mg	1
+E3	Mental retardation	3
+EMISQ2W2	Unknown vendor specific drug	1
+ERIN24326NEMIS	Ergocalciferol  Injection  300,000 units/ml, 2 ml ampoule	2
+EROR24307NEMIS	Ergocalciferol  Oral solution  3000 units/ml	4
+F42z	Retinal disorder NOS	1
+Fyu51	[X]Other epilepsy	2
+GASTOUR9	Unknown vendor specific drug	1
+H014	Acute rhinosinusitis	1
+H0616	Acute bronchiolitis due to other specified organisms	1
+HEWITCC1	Unknown vendor specific drug	3
+HEWITLE1	Unknown vendor specific drug	9
+HYLO5009	Hydrocortisone(As Sodium Succinate)  Lozenges  Sugar Free 2.5 mg	1
+L245	Cervical incompetence	10
+LAIN13572NEMIS	Lantus  Injection  100 units/ml, 3 ml cartridge	22
+M2103	Morphoea	1
+M212	Acquired acanthosis nigricans	1
+M21yC	Insulin lipohypertrophy	14
+MACA8841BRIDL	Maxepa  Capsules  1 gram	11
+N083q	Recurrent subluxation of the patella	1
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	2
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	1
+R1431	[D]Electrocardiogram (ECG) abnormal	4
+SCCA19035EMIS	Scott  Catheters  10 ch	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	5
+TOTA2876	Tolbutamide  Tablets  500 mg	1

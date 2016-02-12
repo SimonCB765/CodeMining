@@ -1,0 +1,108 @@
+Code	Description	Count
+136	Alcohol consumption	6
+1371	Never smoked tobacco	5
+1381	Exercise physically impossible	1
+1382	Avoids even trivial exercise	1
+1383	Enjoys light exercise	3
+229	O/E - height	4
+22A	O/E - weight	18
+22K	Body Mass Index	18
+2469	O/E - Systolic BP reading	27
+29BB	10g monofilament sensation R foot normal	4
+2BBD	O/E - Right retina normal	2
+2BBE	O/E - Left retina normal	1
+321	ECG - general	1
+423	Haemoglobin estimation	16
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+42QE	International normalised ratio	6
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	15
+42W5	Haemoglobin A1c level - IFCC standardised	4
+42c	HbA1 - diabetic control	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	22
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	8
+44U	Blood glucose result	4
+44W9	Serum digoxin level	1
+451E	GFR calculated abbreviated MDRD	5
+467	Urine protein test	2
+4672	Urine protein test negative	2
+46M7	Urine creatinine	4
+46N4	Urine albumin	8
+46TC	Urine albumin:creatinine ratio	9
+46TD	Urine microalbumin:creatinine ratio	1
+46W	Urine microalbumin	1
+4JJ	Urine sample for organism	1
+6572	Pneumococcal vaccination	1
+66A5	Diabetic on insulin	4
+6896	Depression screening using questions	2
+68A8	Digital retinal screening	3
+8A17	Self monitoring of blood glucose	2
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	2
+8H21	Admit medical emergency unsp.	1
+8H43	Dermatological referral	1
+8H76	Refer to dietician	3
+8I24	Aspirin prophylaxis contra-indicated	1
+9N2P	Seen by chiropodist	1
+9N2U	Seen by optician	2
+9NE7	Via external post:letter to	2
+9NNC	Under care of retinal screener	1
+9OIA	Hypertension monitor.chck done	2
+9S10	White British	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	2
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	21
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ATTA231	Atenolol  Tablets  50 mg	3
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	21
+BETA302	Bendrofluazide  Tablets  2.5 mg	4
+DIM/24452EMIS	Diclofenac Sodium  M/R capsules  100 mg	1
+DIM/30709EMIS	Dipyridamole  M/R capsules  200 mg	2
+DITA10235BRIDL	Diclofenac Retard  Tablets  100 mg	1
+E3	Mental retardation	6
+F4B23	Bullous keratopathy	1
+F4B33	Descemet's membrane rupture	1
+FRENCSE7	Unknown vendor specific drug	1
+Fyu4	[X]Demyelinating diseases of the central nervous system	1
+Fyu51	[X]Other epilepsy	3
+G3400	Single coronary vessel disease	2
+G57y9	Supraventricular tachycardia NOS	1
+G62	Other and unspecified intracranial haemorrhage	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	2
+GRAYSUR5	Unknown vendor specific drug	1
+H037	Recurrent acute tonsillitis	1
+HEWITLE2	Unknown vendor specific drug	1
+IBM/18882EMIS	Ibuprofen  M/R tablets  800 mg	20
+LMRGPCH3	Unknown vendor specific drug	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+N083q	Recurrent subluxation of the patella	1
+NITR22499EMIS	Nicorette  Transdermal patches  5 mg/16 hrs	1
+OFTA10706BRIDL	Ofloxacin  Tablets  200 mg	1
+PETA29336NEMIS	Perindopril Arginine  Tablets  2.5 mg	1
+PRCA4138NEMIS	Prograf  Capsules  500 micrograms	8
+PUJINST3	Unknown vendor specific drug	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	16
+QUTA10127BRIDL	Quinapril  Tablets  10 mg	1
+QUTA10129BRIDL	Quinapril  Tablets  20 mg	8
+QUTA10131BRIDL	Quinapril  Tablets  40 mg	1
+RATA16401NEMIS	Ramipril  Tablets  5 mg	2
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	24
+VETA6807	Verapamil Hydrochloride  Tablets  160 mg	9
+VETA6808	Verapamil Hydrochloride  Tablets  40 mg	9

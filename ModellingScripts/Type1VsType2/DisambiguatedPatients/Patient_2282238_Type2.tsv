@@ -1,0 +1,104 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	5
+12C4	FH: CVA/stroke	4
+136	Alcohol consumption	13
+137L	Current non-smoker	4
+137R	Current smoker	2
+137S	Ex smoker	1
+1383	Enjoys light exercise	4
+229	O/E - height	6
+22A	O/E - weight	20
+22K	Body Mass Index	18
+22N0	Waist circumference	7
+2469	O/E - Systolic BP reading	24
+29BB	10g monofilament sensation R foot normal	3
+3128	Fundoscopy	1
+31281	Fundoscopy abnormal	2
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	1
+42W4	HbA1c level (DCCT aligned)	22
+42W5	Haemoglobin A1c level - IFCC standardised	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44J3	Serum creatinine	22
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	17
+44P5	Serum HDL cholesterol level	16
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	16
+44U	Blood glucose result	1
+451E	GFR calculated abbreviated MDRD	2
+4661	Urine glucose test not done	4
+4662	Urine glucose test negative	1
+467	Urine protein test	1
+4671	Urine protein test not done	8
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	1
+4681	Urine ketone test not done	4
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	1
+46N4	Urine albumin	3
+46TC	Urine albumin:creatinine ratio	4
+46W1	Urine microalbumin negative	1
+58C1	Retinal photography	1
+65720	Pneumococcal vaccination given	1
+66A4	Diabetic on oral treatment	1
+66AV	Diabetic on insulin and oral treatment	1
+6797	Health ed. - immunisation	3
+67I7	Advice about foot care	2
+6891	Depression screen	1
+6896	Depression screening using questions	3
+68A7	Diabetic retinopathy screening	1
+8A17	Self monitoring of blood glucose	3
+8B63	Salicylate prophylaxis	2
+8BL2	Patient on maximal tolerated therapy for diabetes	1
+8CA41	Pt advised re diabetic diet	9
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	5
+8CAM	Patient advised about alcohol	2
+8H	Referral for further care	3
+8H7R	Refer to chiropodist	1
+8HB1	Recall arranged	4
+8I3C	Statin declined	1
+8I3Q	Pneumococcal vaccination declined	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I6B	Clopidogrel not indicated	1
+8I6N	Anticoagulation not indicated	1
+8IAG	Pandemic influenza vaccination declined	1
+9N1v	Seen in diabetic eye clinic	1
+9N2S	Seen by practice phlebotomist	3
+9N42	Did not attend - no reason	1
+9NM0	Attending diabetes clinic	1
+9OX5	Influenza vaccination declined	1
+9S2	Black Caribbean	1
+9iB	Caribbean - ethnic category 2001 census	5
+A37	Tetanus	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	11
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	4
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	13
+BETA302	Bendrofluazide  Tablets  2.5 mg	3
+C1051	Diab.mell.+eye manif - adult	1
+C109	Non-insulin dependent diabetes mellitus	1
+F3701	Postinfectious polyneuritis	1
+FUNDHCO4	Unknown vendor specific drug	1
+G60	Subarachnoid haemorrhage	1
+GEIN3636	Gentamicin  Injection  40 mg/1 ml ampoule	1
+HIOS17296NEMIS	Hi-Line  Ostomy girdle/pantie brief with suspenders  Res 1	1
+M21yC	Insulin lipohypertrophy	13
+MACA8841BRIDL	Maxepa  Capsules  1 gram	3
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	2
+MEOR23336NEMIS	Metformin Hydrochloride  Oral solution  Sugar Free 500 mg/5 ml	20
+N083q	Recurrent subluxation of the patella	2
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	1
+PK25	Anomalies of thyroid gland NEC	2
+SECA33840EMIS	Seton Simpla Pvc Nelaton  Catheter (female)  12ch, 369912	7

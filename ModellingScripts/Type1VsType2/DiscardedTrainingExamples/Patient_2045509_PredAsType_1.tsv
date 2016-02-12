@@ -1,0 +1,119 @@
+Code	Description	Count
+03J1	Physiotherapist	1
+12C2	FH: Ischaemic heart dis. <60	2
+136	Alcohol consumption	5
+137M	Rolls own cigarettes	1
+137P	Cigarette smoker	4
+137R	Current smoker	1
+1382	Avoids even trivial exercise	1
+1BT	Depressed mood	1
+229	O/E - height	1
+22A	O/E - weight	19
+22K	Body Mass Index	18
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	19
+29B7	10g monofilament sensation present	1
+29BB	10g monofilament sensation R foot normal	2
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	1
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	4
+42U5	Serum folate	3
+42W	Hb. A1C - diabetic control	3
+42W4	HbA1c level (DCCT aligned)	6
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	3
+44J3	Serum creatinine	17
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	7
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	6
+44U	Blood glucose result	3
+44g	Plasma glucose level	1
+4673	Urine protein test = trace	1
+46M7	Urine creatinine	4
+46N3	Urine total protein	1
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	5
+46TD	Urine microalbumin:creatinine ratio	1
+46W	Urine microalbumin	1
+65720	Pneumococcal vaccination given	1
+66A4	Diabetic on oral treatment	1
+66A5	Diabetic on insulin	2
+66C9	Target weight discussed	1
+6896	Depression screening using questions	2
+8A17	Self monitoring of blood glucose	2
+8B2B	Nicotine replacement therapy	1
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	3
+8CA40	Pt advised re wt reducing diet	1
+8CA41	Pt advised re diabetic diet	1
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	5
+8CAM	Patient advised about alcohol	4
+8H	Referral for further care	4
+8H44	Cardiological referral	1
+8H7f	Referral to diabetes nurse	2
+8H88	Follow-up 2-3 months	1
+8HB8	Mental therapy follow-up	2
+8HTP	Referral to musculoskeletal clinic	1
+8I3X	Diabetic retinopathy screening refused	1
+9N1Q	Seen in diabetic clinic	1
+9N2e	Seen by ophthalmologist	1
+9NNC	Under care of retinal screener	2
+9i0	British or mixed British - ethnic category 2001 census	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+ASTA4609	Aspirin  Tablets  75 mg	18
+ATTA231	Atenolol  Tablets  50 mg	24
+BBSLHDE4	Unknown vendor specific drug	1
+C10	Diabetes mellitus	1
+C104	Diabetes mellitus with renal manifestation	1
+CATA20429EMIS	Calcium 500  Tablets  1.25 grams	1
+CATA5686	Camcolit 400  M/R tablets  400 mg	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	6
+DISO29321NEMIS	Diclofenac Sodium  Solution for injection  75 mg/2 ml vial	1
+EMISQDO2	Unknown vendor specific drug	1
+EMISSPR460	Unknown vendor specific drug	1
+EZTA15249NEMIS	Ezetimibe  Tablets  10 mg	1
+F4239	Retinal venous branch occlusion	1
+F583z	Tinnitus NOS	23
+F5902	Conductive hearing loss due to disorder of tympanic membrane	6
+Fyu51	[X]Other epilepsy	1
+G11z	Mitral valve disease NOS	1
+G240	Secondary malignant hypertension	2
+G84	Haemorrhoids	2
+GLS/17960EMIS	Glyceryl Trinitrate  S/r buccal tablets  2 mg	1
+H037	Recurrent acute tonsillitis	1
+H22	Other bacterial pneumonia	1
+HYTA8712EGTON	Hytrin  Tablets  5 mg	7
+IBSY1428	Ibuprofen  Syrup  100 mg/5 ml	8
+IRIN11056NEMIS	Iron Hydroxide Dextran Complex  Injection  50 mg/ml, 2 ml ampoule	2
+J1212	Chronic duodenal ulcer with perforation	1
+K100	Chronic pyelonephritis	1
+L1421	Early onset of delivery - delivered	1
+MACA4267NEMIS	Unomedical  Careline E4 Night bag  2 litre, 46-20-IDC	3
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MALA14086NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Medium+ 30mm, 97.30	24
+META10489BRIDL	Mepacrine Hydrochloride  Tablets  100 mg	1
+MITA1849	Minocin  Tablets  100 mg	6
+NICA1986	Nifedipine  Capsules  10 mg	1
+NIM/28058EMIS	Nifedipine  M/R tablets  10 mg	8
+NOTA34153EMIS	Novonorm  Tablets  500 micrograms	4
+PH54	Congenital onychauxis	1
+PK61	Sturge-Weber syndrome	1
+Pyu70	[X]Other cystic kidney diseases	1
+QUTA10125BRIDL	Quinapril  Tablets  5 mg	27
+QUTA10127BRIDL	Quinapril  Tablets  10 mg	1
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	23
