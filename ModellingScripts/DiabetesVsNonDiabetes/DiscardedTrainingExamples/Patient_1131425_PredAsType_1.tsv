@@ -1,0 +1,142 @@
+Code	Description	Count
+03FG	District nurse	1
+12C1	FH: Hypertension	1
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	10
+137S	Ex smoker	4
+1383	Enjoys light exercise	3
+1A23	Incontinence of urine	2
+1Z1C	Chronic kidney disease stage 3 without proteinuria	1
+229	O/E - height	1
+22A	O/E - weight	14
+22K	Body Mass Index	13
+2469	O/E - Systolic BP reading	28
+423	Haemoglobin estimation	17
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+42W5	Haemoglobin A1c level - IFCC standardised	1
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	3
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	15
+44I42	Low serum potassium level	1
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	29
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	6
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	9
+44TB	Haemoglobin A1c level	3
+44U	Blood glucose result	1
+44g	Plasma glucose level	8
+44g1	Plasma fasting glucose level	5
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	26
+461	Urine exam. - general	2
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	1
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	1
+4697	Urine blood test = +++	2
+46G4	Urine micr.:leucocytes present	1
+46M7	Urine creatinine	1
+46N	Urine protein	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+46X1	Urine nitrite negative	1
+5853	U-S heart scan	2
+6572	Pneumococcal vaccination	1
+66C9	Target weight discussed	1
+6792	Health ed. - alcohol	3
+6798	Health ed. - exercise	1
+6896	Depression screening using questions	3
+7B27	Endoscopic extirpation of bladder lesion	4
+8B63	Salicylate prophylaxis	3
+8CA4	Patient advised re diet	3
+8CAM	Patient advised about alcohol	1
+8H2	Emergency hospital admission	1
+8H43	Dermatological referral	1
+8H5B	Referred to urologist	1
+8H5D	Referred to vascular surgeon	1
+8H6	Referral to other doctor	1
+8HHJ	Referral to respiratory nurse specialist	1
+8HHb	Referral to heart failure nurse	1
+8HT2	Referral to hearing aid clinic	2
+8HTP	Referral to musculoskeletal clinic	1
+8I65	Warfarin not indicated	3
+8I6B	Clopidogrel not indicated	3
+8I6N	Anticoagulation not indicated	1
+8I74	Angiotensin converting enzyme inhibitor not tolerated	1
+9N2S	Seen by practice phlebotomist	3
+9h21	Excepted from stroke quality indicators: Patient unsuitable	1
+9h31	Excepted from hypertension qual indicators: Patient unsuit	1
+9i0	British or mixed British - ethnic category 2001 census	2
+A701	Viral (infectious) hepatitis A	1
+A7816	Hand warts	1
+ADM/19823EMIS	Adalat La  M/R tablets  60 mg	3
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	11
+ASDI223	Aspirin  Dispersible tablets  300 mg	1
+ASTA4609	Aspirin  Tablets  75 mg	15
+ATTA230	Atenolol  Tablets  100 mg	3
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	4
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	2
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	2
+C10FF	Type 2 diabetes mellitus with peripheral angiopathy	17
+C10z	Diabetes mellitus with unspecified complication	8
+C11y1	Drug-induced hypoglycaemia without coma	2
+C11y2	Impaired glucose tolerance	2
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	1
+COLE25196NEMIS	Coloplast Simpla Profile  Leg bag  500 ml, 6 cm tube, 21573	5
+COSE22005NEMIS	Coloplast Conveen Optima  Self-sealing urisheaths  shorter length, 30 mm, 22130	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+DETA845	Dexamethasone  Tablets  2 mg	3
+DICA8335EGTON	Diflucan  Capsules  150 mg	1
+DIM/22266EMIS	Diltiazem Hydrochloride  M/R capsules  90 mg	6
+EMISQ2W4	Unknown vendor specific drug	17
+ERGE387NEMIS	Erythromycin  Gel  4%	3
+Eu33z	"[X]Recurrent depressive disorder	1
+Eu620	[X]Enduring personality change after catastrophic experience	1
+F54y3	Retraction of tympanic membrane	4
+F5603	Active vestibular Meniere's disease	3
+FLTA1208	Flupenthixol  Tablets  1 mg	13
+FRTA1246	Froben  Tablets  50 mg	4
+FUNDHRE10	Unknown vendor specific drug	1
+FUNDHRE14	Unknown vendor specific drug	1
+G3112	Angina at rest	1
+G33	Angina pectoris	1
+G33z	Angina pectoris NOS	1
+G5415	Aortic stenosis	2
+G5732	Paroxysmal atrial fibrillation	1
+G662	Posterior cerebral artery syndrome	3
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+H013	Acute sphenoidal sinusitis	1
+J120z	Acute duodenal ulcer NOS	1
+J1211	Chronic duodenal ulcer with haemorrhage	1
+K01x1	Nephrotic syndrome in diabetes mellitus	1
+K021	Chronic membranous glomerulonephritis	4
+K1003	Chronic pyonephrosis	1
+MALA14087NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Large- 32mm, 97.32	1
+META1793	Methylcellulose  Tablets  500 mg	1
+N05zB	OA NOS-acromioclavicular joint	1
+N0659	Unspecified polyarthropathy of multiple sites	1
+NIM/16463NEMIS	Nicotinic Acid Titration Starter Pack  M/R tablets  7 x 375 mg, 7 x 500 mg, 7 x 750 mg	1
+PGy3	Nail-patella syndrome	1
+PRCA2392	Propranolol Hydrochloride  Capsules  160 mg	1
+RUFO12095NEMIS	Rusch Brilliant Aquaflate  Foley catheter 10ml balloon (male)  12ch, DA310112	1
+S3390	Closed fracture of distal fibula	1
+S3521	Closed fracture of talus	17
+S352C	Closed fracture metatarsal shaft	5
+SESH5910	Selsun  Shampoo  2.5 %	12
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	5
+TOTA24442EMIS	Torasemide  Tablets  5 mg	1

@@ -1,0 +1,109 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C2	FH: Ischaemic heart dis. <60	1
+1371	Never smoked tobacco	1
+13A5	Low salt diet	1
+1Z12	Chronic kidney disease stage 3	2
+1Z13	Chronic kidney disease stage 4	2
+229	O/E - height	9
+2296	O/E - loss of height	1
+22A	O/E - weight	13
+22K	Body Mass Index	11
+246	O/E - blood pressure reading	11
+2465	O/E - BP borderline raised	2
+2469	O/E - Systolic BP reading	16
+246A	O/E - Diastolic BP reading	16
+24E1	O/E -R.-leg pulses all present	2
+3212	Standard ECG	2
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	5
+4258	Haematocrit	2
+426	Red blood cell (RBC) count	1
+428	Mean corpusc. haemoglobin(MCH)	2
+429	Mean corpusc. Hb. conc. (MCHC)	2
+42A	Mean corpuscular volume (MCV)	4
+42N	Monocyte count	3
+42P	Platelet count	3
+42QE	International normalised ratio	2
+42R4	Serum ferritin	1
+44CS	Serum C reactive protein level	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	18
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	20
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	8
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	13
+44Q5	Serum random triglyceride level	1
+44g	Plasma glucose level	7
+451E	GFR calculated abbreviated MDRD	15
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	1
+4675	Urine protein test = ++	1
+46M7	Urine creatinine	2
+46TC	Urine albumin:creatinine ratio	4
+46U	Urine culture	1
+6896	Depression screening using questions	1
+7L1H	External resuscitation	2
+7L1H0	Direct current cardioversion	2
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	2
+8H	Referral for further care	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I73	Beta blocker not tolerated	1
+9S1	White	1
+9SZ	Ethnic groups (census) NOS	1
+9h11	Excepted from LVD quality indicators: Patient unsuitable	1
+9i0	British or mixed British - ethnic category 2001 census	1
+FRTA1245	Froben  Tablets  100 mg	2
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE12	Unknown vendor specific drug	2
+FyuG1	nutr+met dis CE"	1
+G24z	Secondary hypertension NOS	5
+G33	Angina pectoris	1
+G5101	Subacute bacterial endocarditis - SBE	1
+G5800	Acute congestive heart failure	2
+H135	Recurrent sinusitis	1
+J11z	Gastric ulcer NOS	1
+LMRGPDI13	Unknown vendor specific drug	1
+OPCA5590NEMIS	Optiflo G  Catheter Solution Citric Acid (Suby G)  3.23%, 50ml	1
+TRTA30134NEMIS	Tritace  Tablet Titration Pack  7 x 2.5 mg, 21 x 5 mg, 7 x 10 mg	2
+X00RH	Unknown vendor specific drug	1
+X30Lo	Unknown vendor specific drug	1
+X500O	Unknown vendor specific drug	1
+X77BZ	Unknown vendor specific drug	1
+XE0xw	Unknown vendor specific drug	1
+XM06b	Unknown vendor specific drug	1
+XaLRN	Unknown vendor specific drug	1
+XaLT8	Unknown vendor specific drug	1
+Y1797	Unknown vendor specific drug	6
+Y3714	Unknown vendor specific drug	20
+ab2B	REGULAN orange sugar free powder	1
+b51A	CO-TRIAMTERZIDE 50/25mg tablets	1
+b51C	AMILORIDE HCL+CYCLOPENTHIAZIDE 2.5mg/250micrograms tablets	22
+bb3j	SECURON SR 240mg m/r tablets	3
+bdes	BETA-ADALAT 50/20mg capsules	2
+bdet	TENIF 50/20mg capsules	2
+bh4y	PRAZOSIN HYDROCHLORIDE 2mg tablets	3
+bi21	INNOVACE 2.5mg tablets	1
+bi25	INNOVACE 10mg tablets x28	5
+bi27	INNOVACE 20mg tablets x28	3
+bi3s	ZESTORETIC 10/12.5mg tablets	7
+bi3t	LISINOPRIL+HYDROCHLOROTHIAZIDE 10mg/12.5mg tablets	13
+bl3n	ELANTAN LA 25mg m/r capsules	14
+bl8J	TENSIPINE MR 10 m/r tablets	7
+bl8Y	CORACTEN XL 60mg m/r capsules	2
+bl8x	NIFEDIPINE 30mg m/r tablets	5
+blzx	GLYCERYL TRINITRATE 2% ointment	1
+bs21	SINTHROME 1mg tablets	28
+j287	BRUFEN 200mg tablets	1
+j2oM	RHUMALGAN SR 75mg m/r capsules	1

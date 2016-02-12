@@ -1,0 +1,124 @@
+Code	Description	Count
+0EZ5	Jeweller	1
+12C1	FH: Hypertension	1
+12C3	FH: Ischaemic heart dis. >60	2
+136	Alcohol consumption	8
+1371	Never smoked tobacco	3
+137S	Ex smoker	2
+13A5	Low salt diet	1
+1A12	Frequency of micturition	1
+1AA	Prostatism	10
+1B1L	Stress related problem	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	5
+22A	O/E - weight	9
+22K	Body Mass Index	6
+2469	O/E - Systolic BP reading	26
+3211	ECG requested	1
+3217	ECG abnormal	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	1
+43Z2	Prostate specific antigen	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44J3	Serum creatinine	16
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	12
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	13
+44g1	Plasma fasting glucose level	5
+451E	GFR calculated abbreviated MDRD	6
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+46W2	Microalbumin excretion rate	1
+46X1	Urine nitrite negative	1
+554	Coronary arteriogr.-general	1
+6572	Pneumococcal vaccination	1
+671E	Discussed with carer	1
+6791	Health ed. - smoking	1
+6792	Health ed. - alcohol	2
+6896	Depression screening using questions	3
+7920	Saphenous vein graft replacement of coronary artery	3
+7923	Prosthetic replacement of coronary artery	1
+79275	Open angioplasty of coronary artery	2
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	1
+8H21	Admit medical emergency unsp.	1
+8H44	Cardiological referral	1
+8H51	General surgical referral	1
+8H52	Ophthalmological referral	1
+8H53	ENT referral	1
+8H63	Refer to casualty officer	1
+8H72	Refer to district nurse	1
+8H7R	Refer to chiropodist	1
+8I26	Beta blocker contraindicated	1
+8I62	Beta blocker not indicated	1
+8I66	Aspirin not indicated	1
+8I70	Aspirin not tolerated	1
+9S1	White	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AB233	Candidal paronychia	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	2
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	8
+ASTA4609	Aspirin  Tablets  75 mg	4
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	12
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	1
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	8
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	1
+C1000	Diab.mell.no comp. - juvenile	1
+C11y2	Impaired glucose tolerance	15
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	16
+CHENJNO6	Unknown vendor specific drug	1
+D00y	Other specified iron deficiency anaemia	1
+D400A	Leucopenia	2
+DETA845	Dexamethasone  Tablets  2 mg	2
+DIM/22265EMIS	Diltiazem Hydrochloride  M/R capsules  300 mg	1
+E2653	Psychogenic dysuria	4
+E278	Psychalgia	1
+EMISNQUS25	Unknown vendor specific drug	1
+Eu321	[X]Moderate depressive episode	1
+F466	Bilateral cataracts	1
+F592	Mixed conductive and sensorineural deafness	7
+FLTA1208	Flupenthixol  Tablets  1 mg	4
+FRTA1246	Froben  Tablets  50 mg	4
+Fyu5E	[X]Chronic headache disorder	2
+G5800	Acute congestive heart failure	4
+G6X	"Cereb in/uns oc	3
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H1y3	Paralysis of vocal cords or larynx	1
+HEWITAS8	Unknown vendor specific drug	2
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+K021	Chronic membranous glomerulonephritis	1
+L3951	Forceps delivery - delivered	7
+M21A	Acquired xeroderma	1
+PHTA6868	Phenindione  Tablets  50 mg	23
+PITA5315NEMIS	Pioglitazone Hydrochloride  Tablets  15 mg	1
+PRCA8367EGTON	Prozac  Capsules  20 mg	1
+PRLE40411NEMIS	Unknown vendor specific drug	3
+PRM/22791NEMIS	Propiverine Hydrochloride  M/R capsules  30 mg	2
+PROIEGTON6467	Pragmatar  Ointment	1
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	2
+TC420	Fall from chair	7
+TC5z	"Fall on same level from slipping	2
+VACA29707EMIS	Valsartan  Capsules  80 mg	1
+VATA19082NEMIS	Valsartan  Tablets  40 mg	1
+VATA23543NEMIS	Varenicline  Tablets  1 mg	1

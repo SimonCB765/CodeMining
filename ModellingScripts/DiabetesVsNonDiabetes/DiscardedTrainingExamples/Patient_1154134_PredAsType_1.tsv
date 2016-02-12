@@ -1,0 +1,115 @@
+Code	Description	Count
+136	Alcohol consumption	10
+1364	Moderate drinker - 3-6u/day	1
+137G	Trying to give up smoking	1
+137M	Rolls own cigarettes	3
+137P	Cigarette smoker	2
+1383	Enjoys light exercise	2
+1384	Enjoys moderate exercise	1
+13A5	Low salt diet	2
+1A1	Micturition frequency	2
+1A52	Renal colic	1
+1Z12	Chronic kidney disease stage 3	4
+229	O/E - height	8
+22A	O/E - weight	9
+22K	Body Mass Index	10
+22N0	Waist circumference	3
+246	O/E - blood pressure reading	22
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	23
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P3	Serum cholesterol raised	1
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	8
+44PB	Serum fasting HDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	9
+44g	Plasma glucose level	6
+44lD	Urine protein/creatinine ratio	3
+451E	GFR calculated abbreviated MDRD	13
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+4692	Urine blood test = negative	1
+4693	Urine: trace non-haemol. blood	1
+46N	Urine protein	1
+46N4	Urine albumin	3
+46TC	Urine albumin:creatinine ratio	3
+46U	Urine culture	1
+46W0	Urine microalbumin positive	1
+4JJ1	MSU sent for C/S	1
+662K	Angina control	1
+6791	Health ed. - smoking	4
+6792	Health ed. - alcohol	7
+6798	Health ed. - exercise	4
+6799	Health ed. - diet	4
+67I8	Advice about taking aspirin	2
+6896	Depression screening using questions	3
+8B2B	Nicotine replacement therapy	1
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	2
+8CA48	Pt advised re low salt diet	3
+8CAL	Smoking cessation advice	3
+8H44	Cardiological referral	1
+8H7i	Referral to smoking cessation advisor	2
+8H8Z	Follow-up arranged NOS	6
+8I26	Beta blocker contraindicated	6
+8I3Q	Pneumococcal vaccination declined	4
+9N2k	Seen by smoking cessation advisor	1
+9N4	Failed encounter	1
+9N42	Did not attend - no reason	1
+9OX5	Influenza vaccination declined	2
+E107	Schizo-affective schizophrenia	2
+E2B1	Chronic depression	1
+E2C11	Solitary stealing	1
+F13zz	Extrapyramidal disease and abnormal movement disorder NOS	1
+FRTA1245	Froben  Tablets  100 mg	5
+FUNDHRE10	Unknown vendor specific drug	4
+G580	Congestive heart failure	1
+G5800	Acute congestive heart failure	2
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	2
+INTA20285NEMIS	Inegy  Tablets  10 mg/40 mg	1
+K01x1	Nephrotic syndrome in diabetes mellitus	2
+N083C	Recurrent subluxation of shoulder - anterior	2
+N0907	Joint effusion of the ankle and foot	1
+PA34	Webbed oesophagus	1
+PCS7073IN15	Unknown vendor specific drug	1
+Y0737	Unknown vendor specific drug	9
+bdf4	*MONOCOR 10mg tablets	5
+bdf6	EMCOR 10mg tablets	6
+bdf9	CARDICOR 1.25mg tablets	5
+bdfA	CARDICOR 2.5mg tablets	12
+bk48	CO-DIOVAN 160mg/25mg tablets	4
+bk76	AMIAS 4mg tablets	1
+bk78	AMIAS 16mg tablets	8
+bk7z	CANDESARTAN CILEXETIL 32mg tablets	11
+bl8w	NIFEDIPINE 10mg m/r tablets	1
+bl8x	NIFEDIPINE 30mg m/r tablets	13
+bl8z	NIFEDIPINE 20mg m/r tablets	1
+bs1B	MAREVAN 0.5mg tablets	7
+bs34	PHENINDIONE 10mg tablets	7
+bu11	PERSANTIN 25mg tablets	10
+dia6	CO-DYDRAMOL tablets	1
+du35	NICOTINELL TTS 10 patches	1
+f2Ay	INSULIN DETEMIR 100iu/mL prefilled pen	1
+fo8z	IBANDRONIC ACID 50mg tablets	5
+heE1	LETROZOLE 2.5mg tablets	1
+i221	*JECTOFER 100mg/2mL injection	1
+j222	VOLTAROL 50mg tablets	1
+j271	FROBEN 50mg tablets	1

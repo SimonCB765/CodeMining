@@ -1,0 +1,103 @@
+Code	Description	Count
+07B	Secretaries: shorthand/typing	1
+136	Alcohol consumption	1
+1361	Teetotaller	1
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	2
+137P	Cigarette smoker	1
+137R	Current smoker	1
+137S	Ex smoker	2
+138O	Takes inadequate exercise	1
+138Z	Exercise grading NOS	1
+14D1	H/O: nephritis	2
+1A53	Lumbar ache - renal	1
+1A8	Breast lump symptom	2
+229	O/E - height	1
+22A	O/E - weight	2
+22K	Body Mass Index	2
+246	O/E - blood pressure reading	13
+423	Haemoglobin estimation	27
+428	Mean corpusc. haemoglobin(MCH)	3
+4281	MCH - normal	1
+42A	Mean corpuscular volume (MCV)	5
+42A1	MCV - normal	1
+42R1	Serum iron normal	1
+42R42	Serum ferritin normal	1
+42T	Serum vitamin B12	1
+42U1	Serum folate normal	1
+42U4	Red blood cell folate	1
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	1
+44CB	Serum transferrin	1
+44CC	Plasma C reactive protein	4
+44CS	Serum C reactive protein level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	21
+44I5	Serum sodium	3
+44J3	Serum creatinine	47
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	13
+44Q	Serum triglycerides	13
+44TJ	Blood glucose level	3
+44TK	Fasting blood glucose level	1
+451E	GFR calculated abbreviated MDRD	10
+451F	Glomerular filtration rate	2
+461	Urine exam. - general	3
+4618	Urine dipstick test	1
+46G2	Urine microscopy:RBC's present	2
+46G8	Urine Microscopy: white cells	2
+46M7	Urine creatinine	1
+46N	Urine protein	1
+46U	Urine culture	4
+4JJ	Urine sample for organism	3
+585	Other diagnostic ultrasound	1
+66U	Menopause monitoring	1
+677B	Advice about treatment given	1
+67I8	Advice about taking aspirin	2
+6896	Depression screening using questions	2
+8B63	Salicylate prophylaxis	3
+8CAL	Smoking cessation advice	1
+8H5	Referral to surgeon	1
+8H8	Follow-up arranged	1
+8H87	Follow-up 1 month	1
+8H89	Follow-up 4-6 months	2
+8I38	Aspirin prophylaxis refused	1
+8I70	Aspirin not tolerated	1
+8IAG	Pandemic influenza vaccination declined	1
+9N1I	Seen in urology clinic	1
+9N1O	Seen in rheumatology clinic	2
+9N33	Letter encounter from patient	1
+9NC	Letter sent to outside agency	1
+9NC1	Letter sent to consultant	1
+9OX5	Influenza vaccination declined	1
+F3y0	Diabetic mononeuropathy	1
+F4042	Blind hypertensive eye	1
+FUNDHRE10	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+H0612	Acute bronchiolitis with bronchospasm	1
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+J10y5	Laryngopharyngeal reflux	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+K01x1	Nephrotic syndrome in diabetes mellitus	2
+META29313NEMIS	Metformin And Vildagliptin  Tablets  850 mg + 50 mg	2
+SN51	Angioneurotic oedema	1
+ZV790	[V]Screening for depression	25
+bl5q	VIAZEM XL 240mg m/r capsules	3
+bl8w	NIFEDIPINE 10mg m/r tablets	16
+bs1B	MAREVAN 0.5mg tablets	1
+bs21	SINTHROME 1mg tablets	25
+da63	PAROXETINE 30mg tablets	1
+daB7	MIRTAZAPINE 45mg oro-dispersible tablets	1
+dj8c	DIHYDROCODEINE 120mg m/r tablets	1
+e77z	MINOCYCLINE 100mg tablets	1
+f27m	*PENMIX 20/80 cartridges 1.5mL	1
+f27p	PENMIX 30/70 preloaded injection pen	12
+f2A2	LEVEMIR FLEXPEN 100iu/mL prefilled pen 3mL	1
+gh53	SILDENAFIL 100mg tablets	1
+heC2	ARIMIDEX 1mg tablets	2

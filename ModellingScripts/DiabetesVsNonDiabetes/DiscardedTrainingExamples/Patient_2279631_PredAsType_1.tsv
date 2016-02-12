@@ -1,0 +1,114 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	3
+136	Alcohol consumption	8
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	5
+1381	Exercise physically impossible	1
+1382	Avoids even trivial exercise	1
+1383	Enjoys light exercise	3
+1Z12	Chronic kidney disease stage 3	3
+229	O/E - height	4
+22A	O/E - weight	10
+22K	Body Mass Index	9
+2469	O/E - Systolic BP reading	26
+3216	ECG normal	1
+3217	ECG abnormal	1
+324	ECG:left ventricle hypertrophy	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	1
+44CC	Plasma C reactive protein	1
+44E3	Total bilirubin	1
+44EC	Serum total bilirubin level	1
+44F	Serum alkaline phosphatase	3
+44FZ	Serum alkaline phosphatase NOS	1
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	17
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	32
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	11
+44U	Blood glucose result	1
+44W9	Serum digoxin level	1
+451E	GFR calculated abbreviated MDRD	14
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	1
+58531	Echocardiogram abnormal	1
+65720	Pneumococcal vaccination given	1
+6797	Health ed. - immunisation	4
+6896	Depression screening using questions	3
+792	Coronary artery operations	1
+7922	Allograft replacement of coronary artery	2
+79275	Open angioplasty of coronary artery	1
+79375	Implantation of internal cardiac defibrillator	1
+7939	Catheterisation of heart	1
+7B390	Transurethral prostatectomy	1
+8B63	Salicylate prophylaxis	3
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	3
+8H	Referral for further care	2
+8HB1	Recall arranged	8
+8I28	Angiotensin converting enzyme inhibitors contraindicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	2
+8I74	Angiotensin converting enzyme inhibitor not tolerated	3
+8I75	Angiotensin II receptor antagonist not tolerated	2
+9N2S	Seen by practice phlebotomist	2
+9N4	Failed encounter	1
+9N4o	Did not attend blood test	2
+9NM0	Attending diabetes clinic	1
+9OX5	Influenza vaccination declined	1
+9S10	White British	2
+9i0	British or mixed British - ethnic category 2001 census	3
+A37	Tetanus	1
+ADM/22258EMIS	Adizem-Sr  M/R capsules  90 mg	3
+ASDI223	Aspirin  Dispersible tablets  300 mg	14
+ASTA225	Aspirin  Tablets  300 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	4
+BUTA434	Bumetanide  Tablets  1 mg	25
+C11y3	Impaired fasting glycaemia	19
+C163	Other ovarian failure	5
+DETA29924EMIS	Deflazacort  Tablets  6 mg	2
+DETA845	Dexamethasone  Tablets  2 mg	1
+DICA8335EGTON	Diflucan  Capsules  150 mg	1
+DICA876	Diazepam  Capsules  2 mg	1
+F11z	Cerebral degeneration NOS	1
+F426	Peripheral retinal degeneration	1
+FLTA1208	Flupenthixol  Tablets  1 mg	1
+FRTA1246	Froben  Tablets  50 mg	3
+FUNDHRE10	Unknown vendor specific drug	1
+FUNDHRE14	Unknown vendor specific drug	1
+FyuF9	[X]Other retinal disorders in diseases classified elsewhere	1
+G3114	Worsening angina	1
+G5703	Paroxysmal nodal tachycardia	1
+G662	Posterior cerebral artery syndrome	1
+G674	Cerebral arteritis	1
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	2
+INTA20285NEMIS	Inegy  Tablets  10 mg/40 mg	1
+L236	Hydrocephalic disproportion	1
+LEPR18221NEMIS	Levemir Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	5
+M010	Boil of face	1
+NAMASHO1	Unknown vendor specific drug	2
+PCSDT8940PA1	Unknown vendor specific drug	3
+PRM/22791NEMIS	Propiverine Hydrochloride  M/R capsules  30 mg	2
+PRTA4205	Pregaday  Tablets	13
+PUJINST1	Unknown vendor specific drug	5
+S352E	Closed fracture metatarsal head	1
+SESH5910	Selsun  Shampoo  2.5 %	2
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	3
+U6003	[X]Macrolides causing adverse effects in therapeutic use	1
+Ub0qs	Unknown vendor specific drug	1
+Ub1ju	Unknown vendor specific drug	2
+XaBpY	Unknown vendor specific drug	1

@@ -1,0 +1,143 @@
+Code	Description	Count
+07D3	Computer operator	1
+12C1	FH: Hypertension	1
+136	Alcohol consumption	9
+137G	Trying to give up smoking	1
+137P	Cigarette smoker	4
+137S	Ex smoker	1
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	2
+13HT1	Stress at home	1
+13l4	Main spoken language English	1
+1A52	Renal colic	5
+1B17	Depressed	1
+1BT	Depressed mood	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	10
+22A	O/E - weight	17
+22K	Body Mass Index	16
+2469	O/E - Systolic BP reading	28
+3212	Standard ECG	2
+3242	ECG: shows LVH	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	17
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	1
+42U5	Serum folate	2
+44CC	Plasma C reactive protein	6
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	21
+44J9	Serum urea level	3
+44LP	Serum 25-Hydroxy vitamin D3 level	2
+44M4	Serum albumin	3
+44P	Serum cholesterol	16
+44P5	Serum HDL cholesterol level	14
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	14
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	13
+4618	Urine dipstick test	1
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	5
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	1
+4696	Urine blood test = ++	1
+46A2	Urine pH = 5.0	1
+46A3	Urine pH = 6.0	1
+46M7	Urine creatinine	1
+46N3	Urine total protein	2
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	1
+46X0	Urine nitrite positive	1
+4JJ1	MSU sent for C/S	1
+5858	Doppler studies	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	4
+67H0	Lifestyle advice regarding alcohol	3
+67H1	Lifestyle advice regarding smoking	2
+6896	Depression screening using questions	3
+7B011	Nephroureterectomy-unspecified	1
+7B2A8	Check cystoscopy using flexible instrument	3
+8B3T	Over the counter aspirin therapy	1
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	4
+8CA48	Pt advised re low salt diet	3
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	2
+8H44	Cardiological referral	1
+8H46	Neurological referral	1
+8H4B	Referred to rheumatologist	1
+8H52	Ophthalmological referral	5
+8H54	Orthopaedic referral	3
+8H7X	Refer to podiatry	1
+8HV	Private referral	1
+8I26	Beta blocker contraindicated	5
+8I65	Warfarin not indicated	1
+8I76	Statin not tolerated	1
+9N57	Admin reason for encounter	3
+9NF1	Home visit request by patient	1
+9NS2	Patient offered choice of provider	1
+9OX5	Influenza vaccination declined	2
+9i	Ethnic category - 2001 census	1
+9i20	English - ethnic category 2001 census	1
+A53	Herpes zoster	1
+A5315	Postzoster neuralgia	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ANM/26808EMIS	Angitil Sr 90  M/R capsules  90 mg	12
+ASDI224	Aspirin  Dispersible tablets  75 mg	16
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	6
+BETA302	Bendrofluazide  Tablets  2.5 mg	3
+C1091	Non-insulin-dependent diabetes mellitus with ophthalm comps	1
+C1093	Non-insulin-dependent diabetes mellitus with multiple comps	2
+CECA516	Cephalexin  Capsules  250 mg	3
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	2
+CYTA19598EMIS	Cystrin  Tablets  3 mg	2
+D400	Agranulocytosis	1
+DICA8335EGTON	Diflucan  Capsules  150 mg	1
+Dyu03	[X]Other folate deficiency anaemias	1
+EMISSPR320	Unknown vendor specific drug	2
+EPTA3296NEMIS	Eprosartan  Tablets  600 mg	3
+ERGE387NEMIS	Erythromycin  Gel  4%	1
+F342	Ulnar nerve lesions	1
+F46z	Cataract NOS	1
+F562	Vertigo of central origin	1
+F592	Mixed conductive and sensorineural deafness	3
+FRTA1246	Froben  Tablets  50 mg	5
+FUNDHRE10	Unknown vendor specific drug	5
+G3070	Acute non-Q wave infarction	1
+G6X	"Cereb in/uns oc	1
+H12	Chronic pharyngitis and nasopharyngitis	1
+H120z	Chronic rhinitis NOS	1
+IBTA1430	Ibuprofen  Tablets  400 mg	4
+J1733	Duodenal scar	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+K01x1	Nephrotic syndrome in diabetes mellitus	1
+L1813	Thyroid dysfunction in pregnancy - baby not yet delivered	4
+N05z9	"Osteoarthritis NOS	1
+N06z7	Arthropathy NOS-ankle/foot	1
+P240	Congenital cerebral cyst	1
+P3310	Capsular cataract	1
+PH311	Port wine stain	1
+PH34	Other specified birthmark	10
+PIME22465EMIS	Piroxicam  Orodispersible tablets  20 mg	1
+PRM/22791NEMIS	Propiverine Hydrochloride  M/R capsules  30 mg	3
+PROIEGTON6467	Pragmatar  Ointment	17
+S3501	"Cls # calcaneus	2
+S3521	Closed fracture of talus	10
+S352C	Closed fracture metatarsal shaft	1
+SN51	Angioneurotic oedema	1
+SOTA5392	Sotalol Hydrochloride  Tablets  160 mg	1
+TAM/28659EMIS	Tamsulosin Hydrochloride  M/R capsules  400 micrograms	1
+TETA1044NEMIS	Telmisartan  Tablets  80 mg	1

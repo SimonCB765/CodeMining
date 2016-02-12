@@ -1,0 +1,131 @@
+Code	Description	Count
+136	Alcohol consumption	7
+1363	Light drinker - 1-2u/day	1
+136J	Social drinker	1
+137G	Trying to give up smoking	3
+137P	Cigarette smoker	3
+137S	Ex smoker	1
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	2
+1A23	Incontinence of urine	1
+1AG	Recurrent urinary tract infections	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	7
+22A	O/E - weight	10
+22K	Body Mass Index	9
+2432	O/E - pulse irregularly irreg.	1
+246	O/E - blood pressure reading	17
+321B	12 lead ECG	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+44CC	Plasma C reactive protein	4
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	18
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	10
+44PF	Total cholesterol:HDL ratio	9
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	1
+44TK	Fasting blood glucose level	1
+44g	Plasma glucose level	8
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	9
+451F	Glomerular filtration rate	1
+4615	MSU sent to lab.	1
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	3
+4674	Urine protein test = +	2
+4682	Urine ketone test negative	1
+4693	Urine: trace non-haemol. blood	1
+4696	Urine blood test = ++	1
+46C2	Urine urobilinogen negative	1
+46M7	Urine creatinine	3
+46N	Urine protein	1
+46U	Urine culture	11
+4JJ1	MSU sent for C/S	3
+5853	U-S heart scan	1
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	4
+6792	Health ed. - alcohol	4
+6798	Health ed. - exercise	3
+6799	Health ed. - diet	3
+6896	Depression screening using questions	2
+8B2B	Nicotine replacement therapy	3
+8B6A	Statin prophylaxis	2
+8CA48	Pt advised re low salt diet	2
+8CAL	Smoking cessation advice	3
+8H7O	Refer to Radiology department	3
+8H8Z	Follow-up arranged NOS	3
+8H9	Planned telephone contact	1
+8HJA	Trauma self-referral	1
+8I24	Aspirin prophylaxis contra-indicated	4
+8I2K	Clopidogrel contraindicated	1
+9N1Q	Seen in diabetic clinic	2
+9N22	Seen by practice nurse	1
+9N2k	Seen by smoking cessation advisor	3
+9OI	Hypertension monitoring admin.	2
+9OIA	Hypertension monitor.chck done	1
+E2C11	Solitary stealing	2
+F4F22	Epiphora due to insufficient drainage	1
+F502z	Otitis externa NOS	1
+FUOR17674NEMIS	Furosemide  Oral Solution, Sugar Free  10 mg/ml	2
+Fyu5E	[X]Chronic headache disorder	2
+G24z	Secondary hypertension NOS	2
+G33	Angina pectoris	2
+G5800	Acute congestive heart failure	2
+GLS/17962EMIS	Glyceryl Trinitrate  S/r buccal tablets  5 mg	1
+H1710	Allergy to animal	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+K00z	Acute glomerulonephritis NOS	1
+N0	Arthropathies and related disorders	1
+N05zE	"Osteoarthritis NOS	1
+PACA29409NEMIS	Paricalcitol  Capsules  2 micrograms	1
+PCS7073IN15	Unknown vendor specific drug	1
+S10x	"Closed # spine	1
+S2403	Closed fracture triquetral	1
+SN51	Angioneurotic oedema	1
+XaLRN	Unknown vendor specific drug	2
+Y0737	Unknown vendor specific drug	1
+Y1797	Unknown vendor specific drug	12
+b43l	SPIRONOLACTONE 10mg/5mL oral suspension	22
+bh14	INDORAMIN 20mg tablets	14
+bh42	HYPOVASE 1mg tablets	19
+bk41	VALSARTAN 40mg capsules	2
+bk74	CANDESARTAN CILEXETIL 16mg tablets	20
+bk8x	TELMISARTAN+HYDROCHLOROTHIAZIDE 40mg/12.5mg tablets	3
+bl3n	ELANTAN LA 25mg m/r capsules	1
+bl5q	VIAZEM XL 240mg m/r capsules	1
+bl8J	TENSIPINE MR 10 m/r tablets	14
+bl8M	ADALAT LA 20mg m/r tablets	1
+blzz	GLYCERYL TRINITRATE 10mg/24hrs patches	5
+bs12	MAREVAN 3mg tablets	1
+bs34	PHENINDIONE 10mg tablets	17
+bxa7	OMACOR 1g capsules	1
+d2f5	BUSPIRONE 10mg tablets	1
+da77	VENLAFAXINE 75mg m/r capsules	1
+da79	VENLAFAXINE 150mg m/r capsules	1
+da7A	EFEXOR XL 150mg m/r capsules	1
+dibD	PARACETAMOL+CODEINE PHOSPHATE 500mg/30mg capsules	1
+du3e	NICOTINE 10mg inhalator starter pack	1
+e31b	AMOXIL 125mg/1.25mL paediatric suspension	1
+e618	CEFACLOR 500mg capsules	1
+fo4x	ALENDRONIC ACID+COLECALCIFEROL 70mg/70micrograms tablets	2
+i221	*JECTOFER 100mg/2mL injection	1
+ij31	CALCIUM ACETATE 1g tablets	1

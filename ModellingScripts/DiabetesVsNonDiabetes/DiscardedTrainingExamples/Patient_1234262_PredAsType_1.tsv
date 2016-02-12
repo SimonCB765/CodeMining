@@ -1,0 +1,123 @@
+Code	Description	Count
+12C5	FH: Myocardial infarction	1
+136	Alcohol consumption	4
+1361	Teetotaller	1
+137R	Current smoker	2
+137S	Ex smoker	4
+1383	Enjoys light exercise	2
+13l4	Main spoken language English	1
+14LM	H/O: angiotensin converting enzyme inhibitor allergy	1
+1Z13	Chronic kidney disease stage 4	1
+229	O/E - height	2
+22A	O/E - weight	11
+22K	Body Mass Index	9
+2469	O/E - Systolic BP reading	19
+2841	Confused	1
+32131	Exercise ECG abnormal	1
+3217	ECG abnormal	2
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42QE	International normalised ratio	4
+42R5	Serum TIBC	1
+42R7	Serum iron level	1
+42W4	HbA1c level (DCCT aligned)	2
+42bE	Percentage hypochromic cells	2
+44CC1	C reactive protein abnormal	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	17
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	16
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	5
+44Q	Serum triglycerides	14
+44U	Blood glucose result	3
+44g	Plasma glucose level	10
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	12
+4674	Urine protein test = +	1
+46M7	Urine creatinine	1
+46N3	Urine total protein	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	2
+5531	Angiocardiography awaited	1
+58530	Echocardiogram normal	1
+58531	Echocardiogram abnormal	2
+6572	Pneumococcal vaccination	1
+671E	Discussed with carer	1
+6791	Health ed. - smoking	2
+67I8	Advice about taking aspirin	3
+6896	Depression screening using questions	3
+8B3T	Over the counter aspirin therapy	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	3
+8CAM	Patient advised about alcohol	3
+8H	Referral for further care	1
+8H4	Referral to physician	1
+8H44	Cardiological referral	1
+8H48	Gastroenterological referral	1
+8H7	Other referral	1
+8H7O	Refer to Radiology department	2
+8H7i	Referral to smoking cessation advisor	1
+8HT1	Referral to lipid clinic	1
+8HT5	Referral to hypertension clinic	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I25	Warfarin contraindicated	2
+8I26	Beta blocker contraindicated	3
+8I62	Beta blocker not indicated	2
+8I64	Angiotensin converting enzyme inhibitor not indicated	2
+8I6C	Angiotensin II receptor antagonist not indicated	1
+9N1A	Seen in hospital out-pat.	1
+9N36	Letter from specialist	2
+9N37	Message given to patient	1
+9N7	Provider initiated encounter	2
+9S12	Other white ethnic group	1
+9h31	Excepted from hypertension qual indicators: Patient unsuit	2
+9i0	British or mixed British - ethnic category 2001 census	1
+AB20	Candidiasis of mouth and oesophagus	1
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	3
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	1
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	24
+BETA302	Bendrofluazide  Tablets  2.5 mg	3
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	9
+C1097	Non-insulin dependent diabetes mellitus - poor control	4
+C10EJ	Type 1 diabetes mellitus with neuropathic arthropathy	15
+C10EK	Type 1 diabetes mellitus with persistent proteinuria	1
+D3101	Henoch-Schonlein nephritis	3
+E2653	Psychogenic dysuria	3
+EMISSPR320	Unknown vendor specific drug	5
+F4F1	Other lacrimal gland disorders	1
+F4Jy2	Convergence insufficiency	1
+F528	Acute bilateral otitis media	3
+F54y3	Retraction of tympanic membrane	9
+FLTA1208	Flupenthixol  Tablets  1 mg	1
+FRCA8845BRIDL	Frisium Sls  Tablets  10 mg	1
+FRTA1246	Froben  Tablets  50 mg	1
+Fyu5E	[X]Chronic headache disorder	2
+G7320	Gangrene of toe	1
+GASTO241	Unknown vendor specific drug	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+L39	Other complications of labour and delivery NEC	1
+N05zH	OA NOS-DIP joint of finger	1
+NAMASDN1	Unknown vendor specific drug	1
+NEIN34449EMIS	Neorecormon  Injection (Prefilled Syringe)  3000 units/syringe	1
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	1
+PE80	"Pectus excavatum	1
+PHTA6868	Phenindione  Tablets  50 mg	10
+PINFOHB2	Unknown vendor specific drug	18
+PITA5315NEMIS	Pioglitazone Hydrochloride  Tablets  15 mg	4
+PRM/20660EMIS	Propranolol Hydrochloride  M/R capsules  160 mg	1
+PRM/22791NEMIS	Propiverine Hydrochloride  M/R capsules  30 mg	10
+S3521	Closed fracture of talus	2
+Ub0qs	Unknown vendor specific drug	6
+Ub1ju	Unknown vendor specific drug	8
+Ub1tJ	Unknown vendor specific drug	1

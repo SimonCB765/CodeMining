@@ -1,0 +1,87 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	1
+1351	Church of England	1
+136	Alcohol consumption	4
+1361	Teetotaller	5
+1362	Trivial drinker - <1u/day	4
+1371	Never smoked tobacco	2
+1379	Ex-moderate smoker (10-19/day)	2
+1381	Exercise physically impossible	4
+1Z13	Chronic kidney disease stage 4	1
+1Z1J	Chronic kidney disease stage 4 without proteinuria	1
+229	O/E - height	8
+22A	O/E - weight	12
+22K	Body Mass Index	11
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	22
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42W4	HbA1c level (DCCT aligned)	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44I8	Serum calcium	3
+44J3	Serum creatinine	21
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P3	Serum cholesterol raised	1
+44Q	Serum triglycerides	3
+44g	Plasma glucose level	6
+451E	GFR calculated abbreviated MDRD	11
+4661	Urine glucose test not done	1
+4662	Urine glucose test negative	3
+467	Urine protein test	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	3
+46TC	Urine albumin:creatinine ratio	3
+65720	Pneumococcal vaccination given	1
+6799	Health ed. - diet	5
+6891	Depression screen	3
+6896	Depression screening using questions	3
+8B6A	Statin prophylaxis	3
+8CA5	Patient advised re exercise	4
+8CAL	Smoking cessation advice	4
+8CAM	Patient advised about alcohol	4
+8H	Referral for further care	1
+8H54	Orthopaedic referral	2
+8I24	Aspirin prophylaxis contra-indicated	6
+8I26	Beta blocker contraindicated	4
+8I28	Angiotensin converting enzyme inhibitors contraindicated	3
+9N19	Seen in hospital casualty	1
+9N1C	Seen in own home	1
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	1
+9NF8	Acute home visit	1
+9S10	White British	2
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+C11y1	Drug-induced hypoglycaemia without coma	19
+C11y2	Impaired glucose tolerance	13
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	18
+F421C	Other intraretinal microvascular abnormality	1
+F4522	Acute primary angle-closure glaucoma	1
+F5635	Viral labyrinthitis	22
+F5z	Ear and mastoid disease NOS	1
+FETA22463EMIS	Feldene Melt  Orodispersible tablets  20 mg	3
+FLTA1208	Flupenthixol  Tablets  1 mg	22
+FRTA1246	Froben  Tablets  50 mg	1
+FUNDHRE10	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	2
+G5y0	Myocarditis NOS	1
+G662	Posterior cerebral artery syndrome	3
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	2
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	1
+L1254	Severe pre-eclampsia with postnatal complication	1
+MOTA3978	Motival  Tablets	2
+N3301	Senile osteoporosis	1
+N331N	Fragility fracture	19
+P6y41	Single coronary artery	4
+POCA4188	Ponderax  Capsules  60 mg	1
+PRTA4197	Precortisyl Forte  Tablets  25 mg	2
+PUJINST3	Unknown vendor specific drug	3
+SN51	Angioneurotic oedema	1
+TRCA16731NEMIS	Trandolapril  Capsules  4 mg	4

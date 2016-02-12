@@ -1,0 +1,125 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C2	FH: Ischaemic heart dis. <60	2
+12C3	FH: Ischaemic heart dis. >60	1
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	4
+1371	Never smoked tobacco	3
+1383	Enjoys light exercise	2
+13l4	Main spoken language English	1
+1A7Z	Vaginal discharge NOS	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	3
+22A	O/E - weight	18
+22K	Body Mass Index	13
+2469	O/E - Systolic BP reading	21
+32131	Exercise ECG abnormal	1
+3217	ECG abnormal	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	4
+42C	RBC - red blood cell size	1
+42QE	International normalised ratio	4
+42QE1	INR - international normal ratio abnormal	1
+42R5	Serum TIBC	2
+42R7	Serum iron level	2
+42W4	HbA1c level (DCCT aligned)	2
+42bE	Percentage hypochromic cells	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44J3	Serum creatinine	13
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	9
+44Q	Serum triglycerides	8
+44g	Plasma glucose level	8
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	8
+4616	MSU = no abnormality	1
+466	Urine test for glucose	1
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	3
+46M7	Urine creatinine	1
+46N3	Urine total protein	2
+46N4	Urine albumin	3
+46TC	Urine albumin:creatinine ratio	1
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+671A	Discussed with district nurse	2
+6791	Health ed. - smoking	2
+6896	Depression screening using questions	2
+7910	Plastic repair of mitral valve	2
+7928	Transluminal balloon angioplasty of coronary artery	2
+8B3T	Over the counter aspirin therapy	1
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	1
+8CAM	Patient advised about alcohol	3
+8H	Referral for further care	3
+8H44	Cardiological referral	1
+8H4B	Referred to rheumatologist	1
+8H7	Other referral	1
+8H77	Refer to physiotherapist	2
+8H7R	Refer to chiropodist	1
+8HHB	Referral to Social Services	1
+8Hc	Referral to mental health team	1
+8I24	Aspirin prophylaxis contra-indicated	3
+8I26	Beta blocker contraindicated	4
+8I64	Angiotensin converting enzyme inhibitor not indicated	3
+8I6B	Clopidogrel not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	1
+9N03	Seen in hypertension clinic	2
+9N31	Telephone encounter	5
+9NE8	Fax sent to:	1
+9S10	White British	2
+9i0	British or mixed British - ethnic category 2001 census	3
+A08	Ill-defined intestinal tract infections	1
+AB20	Candidiasis of mouth and oesophagus	1
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+C1097	Non-insulin dependent diabetes mellitus - poor control	4
+CECA516	Cephalexin  Capsules  250 mg	6
+D3101	Henoch-Schonlein nephritis	1
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	2
+DEPO18483NEMIS	Decapeptyl Sr  Powder and solvent for injection  3 mg/dose	1
+DETA29924EMIS	Deflazacort  Tablets  6 mg	4
+DUFFMRE1	Unknown vendor specific drug	1
+E13z	Nonorganic psychosis NOS	1
+E2653	Psychogenic dysuria	4
+EMISQ2W8	Unknown vendor specific drug	12
+F3y0	Diabetic mononeuropathy	1
+F4F1	Other lacrimal gland disorders	1
+FETA22463EMIS	Feldene Melt  Orodispersible tablets  20 mg	6
+FLTA1208	Flupenthixol  Tablets  1 mg	23
+FRENCCU1	Unknown vendor specific drug	2
+FRTA1246	Froben  Tablets  50 mg	1
+Fyu5E	[X]Chronic headache disorder	2
+G244	Hypertension secondary to endocrine disorders	1
+G24z	Secondary hypertension NOS	1
+G33	Angina pectoris	1
+G5415	Aortic stenosis	1
+GLOI4966	Glyceryl Trinitrate  Ointment  2 %	1
+H02	Acute pharyngitis	1
+INTA20285NEMIS	Inegy  Tablets  10 mg/40 mg	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	2
+J1211	Chronic duodenal ulcer with haemorrhage	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+K013	Nephrotic syndrome with minimal change glomerulonephritis	1
+N05z9	"Osteoarthritis NOS	1
+N05zH	OA NOS-DIP joint of finger	1
+N083C	Recurrent subluxation of shoulder - anterior	1
+NAMASDN1	Unknown vendor specific drug	1
+NECA26624EMIS	Neoral  Capsules  25 mg	1
+NIM/173NEMIS	Nifedipine  M/R capsules  60 mg	2
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	1
+S3501	"Cls # calcaneus	5
+S3521	Closed fracture of talus	21
+SN51	Angioneurotic oedema	2
+Ub0qs	Unknown vendor specific drug	7
+Ub1ju	Unknown vendor specific drug	4
+Ub1md	Unknown vendor specific drug	4
+Ub1tJ	Unknown vendor specific drug	1
+XaB5q	Unknown vendor specific drug	2

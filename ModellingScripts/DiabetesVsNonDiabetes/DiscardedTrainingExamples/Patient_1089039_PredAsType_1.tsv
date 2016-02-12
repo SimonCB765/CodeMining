@@ -1,0 +1,105 @@
+Code	Description	Count
+0	Occupations	1
+137L	Current non-smoker	2
+137S	Ex smoker	1
+1B17	Depressed	1
+1Z12	Chronic kidney disease stage 3	5
+229	O/E - height	1
+22A	O/E - weight	4
+22K	Body Mass Index	2
+2469	O/E - Systolic BP reading	18
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	19
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+42QE	International normalised ratio	4
+42R	Serum iron tests	2
+42R4	Serum ferritin	2
+42R5	Serum TIBC	2
+42T	Serum vitamin B12	3
+42U4	Red blood cell folate	2
+44CC	Plasma C reactive protein	7
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	16
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	30
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	6
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	1
+44Q	Serum triglycerides	2
+44W9	Serum digoxin level	1
+44g	Plasma glucose level	2
+451E	GFR calculated abbreviated MDRD	22
+4613	Urinalysis = no abnormality	1
+4615	MSU sent to lab.	1
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	1
+46W	Urine microalbumin	1
+6572	Pneumococcal vaccination	1
+671F	Discussed with patient	3
+6896	Depression screening using questions	3
+792D	Other bypass of coronary artery	1
+8GE	Social care	1
+8H22	Admit surgical emergency unsp.	1
+8H41	General medical referral	1
+8H51	General surgical referral	1
+8H52	Ophthalmological referral	1
+8H53	ENT referral	1
+8H54	Orthopaedic referral	1
+8H5D	Referred to vascular surgeon	1
+8H72	Refer to district nurse	1
+8H77	Refer to physiotherapist	1
+8HQ2	Refer for ultrasound investign	1
+9N2e	Seen by ophthalmologist	3
+9NS2	Patient offered choice of provider	1
+9i0	British or mixed British - ethnic category 2001 census	4
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	15
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	3
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	6
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	15
+BUTA434	Bumetanide  Tablets  1 mg	17
+C1097	Non-insulin dependent diabetes mellitus - poor control	4
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	2
+D2018	[X]Pure red cell aplasia	1
+DAVIEDA1	Unknown vendor specific drug	1
+DETA20911NEMIS	Dexibuprofen  Tablets  300 mg	1
+DILO3454	Diprosalic  Scalp application	1
+F3721	Chronic painful diabetic neuropathy	1
+F3y0	Diabetic mononeuropathy	1
+F531	Chronic mastoiditis	5
+F54y3	Retraction of tympanic membrane	3
+FLTA1194	Fluanxol  Tablets  500 micrograms	3
+FRTA1246	Froben  Tablets  50 mg	4
+FUNDHRE12	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	2
+G24z	Secondary hypertension NOS	2
+G5703	Paroxysmal nodal tachycardia	1
+G5731	Atrial flutter	1
+G580	Congestive heart failure	4
+G662	Posterior cerebral artery syndrome	1
+G6z	Cerebrovascular disease NOS	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H1y3	Paralysis of vocal cords or larynx	1
+ININ3272NEMIS	Insuman Rapid  Injection (cartridges)  100 units/ml, 3 ml cartridge	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+META1797	Methyldopa  Tablets  125 mg	3
+N05zH	OA NOS-DIP joint of finger	2
+N083C	Recurrent subluxation of shoulder - anterior	2
+PCSDT8940PA1	Unknown vendor specific drug	4
+PH34	Other specified birthmark	5
+PH3y0	Congenital accessory skin tags	1
+S338	Fracture of lower end of tibia	1
+S3501	"Cls # calcaneus	1
+S3521	Closed fracture of talus	21
+SASR7954	Salbutamol  Sr tablets  8 mg	1
+SESH5910	Selsun  Shampoo  2.5 %	2
+U6002	[X]Chloramphen group caus adverse effects in therapeut use	25
+Ub0qs	Unknown vendor specific drug	5
+Ub1tI	Unknown vendor specific drug	2

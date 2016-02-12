@@ -1,0 +1,100 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1361	Teetotaller	1
+1371	Never smoked tobacco	5
+138	Exercise grading	3
+13A	Diet - patient initiated	3
+1A1	Micturition frequency	3
+1A55	Dysuria	6
+1B1A	Memory loss - amnesia	2
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	2
+22A	O/E - weight	12
+22K	Body Mass Index	12
+246	O/E - blood pressure reading	24
+3128	Fundoscopy	2
+3132	Auditory/vestib. test done	1
+32	Electrocardiography	1
+3212	Standard ECG	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42C	RBC - red blood cell size	2
+42QE	International normalised ratio	4
+42bE	Percentage hypochromic cells	2
+44CS	Serum C reactive protein level	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	14
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	22
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	12
+44Q	Serum triglycerides	13
+44g	Plasma glucose level	11
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	13
+461	Urine exam. - general	4
+4618	Urine dipstick test	1
+467	Urine protein test	2
+4679	Urine dipstick for protein	2
+46N3	Urine total protein	2
+46N4	Urine albumin	2
+46N6	24 hour urine albumin output	2
+46TC	Urine albumin:creatinine ratio	2
+46Z1	Urine microscopy	11
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+6781	Health education offered	3
+6896	Depression screening using questions	2
+7B2A	Diagnostic cystoscopy	2
+8H2	Emergency hospital admission	1
+8HE	Discharged from hospital	4
+8HQ1	Refer for X-Ray	2
+9180	Carer's details	1
+9N19	Seen in hospital casualty	1
+9N2U	Seen by optician	1
+9N31	Telephone encounter	1
+9N4	Failed encounter	2
+9N57	Admin reason for encounter	1
+9ND4	X-ray report received	1
+F421G	Venostasis retinopathy	1
+F4D2	Chalazion (meibomian cyst)	1
+FRTA1246	Froben  Tablets  50 mg	1
+Fy03	Sleep apnoea	1
+Fyu5E	[X]Chronic headache disorder	1
+G244	Hypertension secondary to endocrine disorders	1
+G24z	Secondary hypertension NOS	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+GOCA23759EMIS	Gopten  Capsules  1 mg	1
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	2
+ISTA9943BRIDL	Istin  Tablets  5 mg	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+RUFO12099NEMIS	Rusch Brilliant Aquaflate  Foley catheter 10ml balloon (male)  16ch, DA310116	1
+S10A1	Fracture of second cervical vertebra	1
+SN51	Angioneurotic oedema	1
+ZOTA8623EGTON	Zocor  Tablets  20 mg	5
+bd3c	TENORMIN 25 tablets	1
+bg2y	*DEBRISOQUINE 10mg tablets	1
+bh13	DORALESE TILTAB 20mg tablets	22
+bl3n	ELANTAN LA 25mg m/r capsules	26
+bl5W	CALCICARD CR 120mg m/r tablets	4
+bl5n	ZEMTARD 300 XL m/r capsules	1
+bl8J	TENSIPINE MR 10 m/r tablets	17
+bl8w	NIFEDIPINE 10mg m/r tablets	2
+blzx	GLYCERYL TRINITRATE 2% ointment	4
+blzz	GLYCERYL TRINITRATE 10mg/24hrs patches	23
+du8z	VARENICLINE 1mg tablets	2
+e618	CEFACLOR 500mg capsules	2
+f27p	PENMIX 30/70 preloaded injection pen	1
+i44H	EPOETIN ALFA 4000iu/0.4mL prefilled syringe	2
+ij31	CALCIUM ACETATE 1g tablets	1
+j262	FENOPRON 600mg tablets	1
+j283	IBUPROFEN 600mg tablets	1

@@ -1,0 +1,86 @@
+Code	Description	Count
+1341	European origin	2
+136	Alcohol consumption	6
+1371	Never smoked tobacco	4
+137F	Ex-smoker - amount unknown	1
+137R	Current smoker	2
+13A4	Low fat diet	3
+13l4	Main spoken language English	1
+229	O/E - height	7
+22A	O/E - weight	16
+22K	Body Mass Index	21
+2469	O/E - Systolic BP reading	21
+2BB1	O/E - retina normal	3
+32131	Exercise ECG abnormal	1
+3241	ECG: no LVH	1
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	16
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	16
+44Q	Serum triglycerides	13
+44U	Blood glucose result	1
+44g	Plasma glucose level	11
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	2
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	2
+5543	Coronary arteriograph.abnormal	1
+58531	Echocardiogram abnormal	1
+5858	Doppler studies	1
+66U7	HRT started	1
+6792	Health ed. - alcohol	3
+6798	Health ed. - exercise	7
+6799	Health ed. - diet	6
+6866	Bowel cancer screening programme: faecal occult blood result	1
+6896	Depression screening using questions	3
+8B3T	Over the counter aspirin therapy	2
+8B63	Salicylate prophylaxis	2
+8CAL	Smoking cessation advice	4
+8H	Referral for further care	5
+8H44	Cardiological referral	1
+8H54	Orthopaedic referral	1
+8H58	Gynaecological referral	1
+8H5D	Referred to vascular surgeon	1
+8H7D	Refer to osteopath	1
+8H7R	Refer to chiropodist	1
+8HC1	Refer to A. & E. department	1
+9N42	Did not attend - no reason	1
+9NS2	Patient offered choice of provider	1
+9OIA	Hypertension monitor.chck done	2
+9S1	White	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	12
+ASDI224	Aspirin  Dispersible tablets  75 mg	16
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	26
+C11y2	Impaired glucose tolerance	25
+DETA845	Dexamethasone  Tablets  2 mg	1
+DIM/4780NEMIS	Ditropan Xl  M/R tablets  5 mg	2
+EMISQ2W4	Unknown vendor specific drug	23
+F11z	Cerebral degeneration NOS	1
+FRTA1246	Froben  Tablets  50 mg	1
+Fyu5E	[X]Chronic headache disorder	1
+G6X	"Cereb in/uns oc	3
+HEWITAS13	Unknown vendor specific drug	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+M08	Cutaneous cellulitis	3
+META1806	Metoprolol Tartrate  Tablets  100 mg	1
+NAMASSE3	Unknown vendor specific drug	2
+NIM/16463NEMIS	Nicotinic Acid Titration Starter Pack  M/R tablets  7 x 375 mg, 7 x 500 mg, 7 x 750 mg	1
+PCSDT8940PA1	Unknown vendor specific drug	1
+S2401	Closed fracture of the scaphoid	1
+S3521	Closed fracture of talus	25
+TC420	Fall from chair	1

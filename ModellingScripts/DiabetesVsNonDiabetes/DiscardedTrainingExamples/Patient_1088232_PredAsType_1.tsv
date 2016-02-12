@@ -1,0 +1,110 @@
+Code	Description	Count
+0I37	Motor car driver	1
+12C	FH: Cardiovascular disease	1
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	4
+1361	Teetotaller	1
+137L	Current non-smoker	4
+137S	Ex smoker	1
+1383	Enjoys light exercise	2
+14A5	H/O: angina pectoris	1
+1A13	Nocturia	1
+1Z12	Chronic kidney disease stage 3	3
+229	O/E - height	2
+22A	O/E - weight	4
+22K	Body Mass Index	4
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	21
+32	Electrocardiography	1
+32131	Exercise ECG abnormal	1
+3272	ECG: atrial fibrillation	1
+33B95	Exercise tolerance test abnormal	1
+423	Haemoglobin estimation	25
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+42QE	International normalised ratio	7
+42R	Serum iron tests	1
+42R4	Serum ferritin	3
+42R5	Serum TIBC	1
+42T	Serum vitamin B12	3
+42U4	Red blood cell folate	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	17
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	51
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	1
+44Q	Serum triglycerides	2
+44TJ	Blood glucose level	1
+44U	Blood glucose result	1
+44f1	Serum fasting glucose level	1
+44g	Plasma glucose level	6
+451E	GFR calculated abbreviated MDRD	19
+451F	Glomerular filtration rate	1
+4613	Urinalysis = no abnormality	1
+4614	Urinalysis = abnormal	1
+4615	MSU sent to lab.	2
+463	Urine specific gravity	1
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	4
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	1
+4693	Urine: trace non-haemol. blood	1
+46N3	Urine total protein	1
+46TC	Urine albumin:creatinine ratio	1
+46W	Urine microalbumin	1
+5745	Isotope lung perfusion scan	1
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+662J0	Digoxin monitoring	1
+6773	Investig. result counselling	3
+6896	Depression screening using questions	2
+7939	Catheterisation of heart	1
+8H21	Admit medical emergency unsp.	1
+8H44	Cardiological referral	1
+8H48	Gastroenterological referral	2
+8H7R	Refer to chiropodist	1
+8HE2	Discharged from inpatient care	1
+8HHj	Referral to domiciliary chiropody service	1
+9N1C	Seen in own home	1
+9N31	Telephone encounter	1
+9N49	Patient on holiday	2
+A083	Diarrhoea of presumed infectious origin	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	7
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	24
+CAIN34034EMIS	Caverject  Injection  40 micrograms/vial	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	2
+F4H40	Ischaemic optic neuropathy	1
+F516	Eustachian tube obstruction	1
+F528	Acute bilateral otitis media	24
+F54y3	Retraction of tympanic membrane	8
+FETA3589	Fersaday  Tablets  322 mg	1
+FLTA1208	Flupenthixol  Tablets  1 mg	24
+FRTA1246	Froben  Tablets  50 mg	1
+FyuU1	[X]Other specified hearing loss	2
+G24z	Secondary hypertension NOS	2
+G3114	Worsening angina	2
+G35	Subsequent myocardial infarction	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+H0612	Acute bronchiolitis with bronchospasm	1
+ININ18217NEMIS	Insulin Detemir  Injection (cartridges)  100 units/ml, 3 ml cartridge	1
+ININ21131NEMIS	Insulin Glulisine  Injection  100 units/ml, 10 ml vial	2
+J120z	Acute duodenal ulcer NOS	2
+N070B	Old tear of posterior horn of medial meniscus	1
+N097	Difficulty in walking	3
+PCSDT8940RE1	Unknown vendor specific drug	34
+S3501	"Cls # calcaneus	23
+Ub0qs	Unknown vendor specific drug	5
+Ub1ju	Unknown vendor specific drug	6
+Ub1md	Unknown vendor specific drug	1
+Ub1tI	Unknown vendor specific drug	6

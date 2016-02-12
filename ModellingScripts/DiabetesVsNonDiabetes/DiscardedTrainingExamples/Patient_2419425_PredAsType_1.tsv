@@ -1,0 +1,120 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	8
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	2
+1379	Ex-moderate smoker (10-19/day)	1
+137S	Ex smoker	4
+1387	Exercise grading unknown	1
+13l4	Main spoken language English	2
+1A23	Incontinence of urine	4
+1BT	Depressed mood	1
+1Z12	Chronic kidney disease stage 3	2
+1Z15	Chronic kidney disease stage 3A	2
+229	O/E - height	10
+22A	O/E - weight	13
+22K	Body Mass Index	11
+246	O/E - blood pressure reading	20
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	5
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	5
+42R7	Serum iron level	1
+42T	Serum vitamin B12	5
+42U5	Serum folate	4
+44CC	Plasma C reactive protein	7
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	17
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	14
+44P6	Serum LDL cholesterol level	11
+44PF	Total cholesterol:HDL ratio	12
+44Q	Serum triglycerides	10
+44Q3	Serum triglycerides raised	1
+44U	Blood glucose result	1
+44g	Plasma glucose level	4
+44g1	Plasma fasting glucose level	6
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	9
+4613	Urinalysis = no abnormality	2
+4618	Urine dipstick test	4
+4662	Urine glucose test negative	2
+4671	Urine protein test not done	2
+4672	Urine protein test negative	3
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	1
+4694	Urine: trace haemolysed blood	1
+46G4	Urine micr.:leucocytes present	1
+46M7	Urine creatinine	2
+46N	Urine protein	2
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	3
+46U	Urine culture	3
+46X0	Urine nitrite positive	1
+46X1	Urine nitrite negative	1
+4JJ1	MSU sent for C/S	2
+66U	Menopause monitoring	1
+6798	Health ed. - exercise	1
+67H2	Lifestyle advice regarding exercise	1
+6896	Depression screening using questions	1
+8BAH	Exercise on prescription	1
+8CA4	Patient advised re diet	2
+8CA40	Pt advised re wt reducing diet	1
+8CA48	Pt advised re low salt diet	1
+8CAM	Patient advised about alcohol	2
+8H4B	Referred to rheumatologist	1
+8H51	General surgical referral	1
+8H53	ENT referral	1
+8H76	Refer to dietician	1
+8H77	Refer to physiotherapist	1
+8H7B	Refer to community psych.nurse	1
+8I3Q	Pneumococcal vaccination declined	1
+9N22	Seen by practice nurse	1
+9N4C	Failed encounter - no answer when rang back	1
+9N4F	Failed encounter - message left on answer machine	1
+9OI4	Hypertens.monitor.1st letter	1
+9OX5	Influenza vaccination declined	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	2
+AB01	Dermatophytosis of nail	1
+AB2	Candidiasis	1
+COOI9895BRIDL	Cocois  Ointment	2
+DOCA976	Dothiepin Hydrochloride  Capsules  25 mg	1
+E2610	Psychogenic air hunger	1
+E2C11	Solitary stealing	1
+FES/9145EMIS	Felodipine  M/R tablets  5 mg	2
+FRTA1246	Froben  Tablets  50 mg	4
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+H02	Acute pharyngitis	1
+INTA20285NEMIS	Inegy  Tablets  10 mg/40 mg	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	3
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+MITA10737BRIDL	Micturin  Tablets  25 mg	1
+N0	Arthropathies and related disorders	2
+PB6	Liver and biliary system anomalies	1
+POOLEME4	Unknown vendor specific drug	2
+Y1365	Unknown vendor specific drug	1
+b113	DIGOXIN 250microgram tablets	20
+b115	LANOXIN 125micrograms tablets	3
+bdf4	*MONOCOR 10mg tablets	1
+bdf9	CARDICOR 1.25mg tablets	26
+bkD3	AMLODIPINE+VALSARTAN 10mg/160mg tablets	2
+blzx	GLYCERYL TRINITRATE 2% ointment	16
+d616	PRIADEL 200mg m/r tablets	2
+e151	PHENOXYMETHYLPENICILLIN 250mg capsules	1
+e31U	CO-AMOXICLAV 625mg tablets	1
+f27Y	HYPURIN PORCINE BIPHASIC ISOPHANE 30/70 injection cart 1.5mL	1
+f27p	PENMIX 30/70 preloaded injection pen	1
+fe83	KENALOG 40mg/mL injection	2
+gc72	FLOMAX MR 400micrograms m/r capsules	1
+ij31	CALCIUM ACETATE 1g tablets	3
+ip3p	CALCIUM CARBONATE+COLECALCIFEROL 1.5g/400iu eff tablets	1
+j222	VOLTAROL 50mg tablets	1

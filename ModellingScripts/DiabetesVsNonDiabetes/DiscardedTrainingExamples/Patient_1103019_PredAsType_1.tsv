@@ -1,0 +1,96 @@
+Code	Description	Count
+136	Alcohol consumption	3
+1371	Never smoked tobacco	4
+1381	Exercise physically impossible	1
+1382	Avoids even trivial exercise	1
+13A3	Weight reducing diet	1
+13A4	Low fat diet	1
+13l4	Main spoken language English	1
+1465	H/O: depression	2
+229	O/E - height	10
+22A	O/E - weight	9
+22K	Body Mass Index	9
+2469	O/E - Systolic BP reading	16
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	1
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+42W4	HbA1c level (DCCT aligned)	2
+42W5	Haemoglobin A1c level - IFCC standardised	2
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	4
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	16
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	12
+44U	Blood glucose result	1
+451E	GFR calculated abbreviated MDRD	4
+466	Urine test for glucose	1
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	2
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+585g	Echocardiogram shows left ventricular diastolic dysfunction	1
+6572	Pneumococcal vaccination	1
+6879	Hyperlipidaemia screen	1
+6896	Depression screening using questions	2
+792	Coronary artery operations	2
+8B63	Salicylate prophylaxis	3
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	1
+8H41	General medical referral	1
+8H51	General surgical referral	1
+8H54	Orthopaedic referral	1
+8HJA	Trauma self-referral	1
+8I3D	Angiotensin converting enzyme inhibitor declined	1
+8I65	Warfarin not indicated	4
+8I6B	Clopidogrel not indicated	3
+8I6C	Angiotensin II receptor antagonist not indicated	1
+8I6a	Dipyridamole not indicated	1
+8I75	Angiotensin II receptor antagonist not tolerated	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	3
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	17
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	16
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	7
+C109A	Non-insulin dependent diabetes mellitus with mononeuropathy	3
+CAIN31971EMIS	Caverject  Injection  5 micrograms/vial	1
+D3101	Henoch-Schonlein nephritis	1
+DIM/21945EMIS	Diltiazem Hydrochloride  M/R capsules  300 mg	6
+DOCA976	Dothiepin Hydrochloride  Capsules  25 mg	1
+E2653	Psychogenic dysuria	7
+FETA19435NEMIS	Ferrous Fumarate And Folic Acid  Tablets  322 mg + 350 micrograms	4
+FLTA1194	Fluanxol  Tablets  500 micrograms	21
+FRTA1246	Froben  Tablets  50 mg	1
+FUNDHRE12	Unknown vendor specific drug	2
+Fyu5E	[X]Chronic headache disorder	1
+GLS/17962EMIS	Glyceryl Trinitrate  S/r buccal tablets  5 mg	1
+H06z0	Chest infection NOS	1
+Hyu02	[X]Acute tonsillitis due to other specified organisms	1
+ININ15889NEMIS	Insulatard Penfill  Injection  100 units/ml, 3 ml cartridge	2
+MANI22913NEMIS	Manfred Sauer Smartflow  Night drainage bags  2.6 litre, NB26	1
+N03	Arthropathy associated with disorders EC	2
+NICA1987	Nifedipine  Capsules  5 mg	15
+PH34	Other specified birthmark	5
+PRLE40411NEMIS	Unknown vendor specific drug	10
+PROIEGTON6467	Pragmatar  Ointment	22
+S352C	Closed fracture metatarsal shaft	9
+XaBXe	Unknown vendor specific drug	1

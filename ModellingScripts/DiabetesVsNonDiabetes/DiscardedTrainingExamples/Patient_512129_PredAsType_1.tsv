@@ -1,0 +1,94 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	2
+1379	Ex-moderate smoker (10-19/day)	3
+1AA	Prostatism	3
+1BT	Depressed mood	1
+1Z12	Chronic kidney disease stage 3	5
+1Z13	Chronic kidney disease stage 4	7
+22A	O/E - weight	4
+2469	O/E - Systolic BP reading	26
+423	Haemoglobin estimation	20
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42C	RBC - red blood cell size	3
+42U4	Red blood cell folate	1
+43Z2	Prostate specific antigen	6
+44CC	Plasma C reactive protein	2
+44CS	Serum C reactive protein level	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	15
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	34
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	11
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	4
+44g	Plasma glucose level	12
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	14
+466	Urine test for glucose	1
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	2
+46TC	Urine albumin:creatinine ratio	2
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	1
+6792	Health ed. - alcohol	3
+6896	Depression screening using questions	2
+68NE	No consent - influenza imm.	1
+792	Coronary artery operations	3
+7936	Introduction of cardiac pacemaker system via vein	1
+7936F	Renewal of intravenous cardiac pacemaker system	1
+8B3T	Over the counter aspirin therapy	2
+8CA4	Patient advised re diet	1
+8H44	Cardiological referral	1
+8H52	Ophthalmological referral	1
+8H77	Refer to physiotherapist	2
+8H7O	Refer to Radiology department	3
+8H7R	Refer to chiropodist	1
+8H7V	Refer to audiologist	1
+8HVV	Private referral to radiotherapist	1
+8I26	Beta blocker contraindicated	2
+8I62	Beta blocker not indicated	1
+9N11	Seen in GP's surgery	1
+A53	Herpes zoster	2
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	6
+ASTA225	Aspirin  Tablets  300 mg	1
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	17
+C310	Glycogenosis - glycogen storage disease	1
+CECA516	Cephalexin  Capsules  250 mg	1
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	1
+F340	Carpal tunnel syndrome	1
+F461	Senile cataract	1
+F563	Labyrinthitis	1
+FLTA1194	Fluanxol  Tablets  500 micrograms	3
+FRTA1245	Froben  Tablets  100 mg	3
+FUNDHRE10	Unknown vendor specific drug	4
+G301	Other specified anterior myocardial infarction	1
+G5703	Paroxysmal nodal tachycardia	1
+G5731	Atrial flutter	1
+G662	Posterior cerebral artery syndrome	1
+G6X	"Cereb in/uns oc	1
+G7320	Gangrene of toe	1
+HEWITAS8	Unknown vendor specific drug	7
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+L36z	Postpartum haemorrhage NOS	1
+L39	Other complications of labour and delivery NEC	6
+L3951	Forceps delivery - delivered	27
+N05zU	OA NOS-IP joint of toe	2
+NATA6619NEMIS	Nateglinide  Tablets  60 mg	1
+POLIEGTON8191	Polytar Plus  Liquid	1
+S3501	"Cls # calcaneus	1
+S3521	Closed fracture of talus	21
+S352C	Closed fracture metatarsal shaft	3
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	9

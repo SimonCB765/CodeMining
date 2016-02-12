@@ -1,0 +1,113 @@
+Code	Description	Count
+0113	Senior civil servant	1
+12C2	FH: Ischaemic heart dis. <60	1
+136	Alcohol consumption	10
+1371	Never smoked tobacco	2
+1378	Ex-light smoker (1-9/day)	1
+137S	Ex smoker	4
+1381	Exercise physically impossible	3
+1383	Enjoys light exercise	1
+1A1	Micturition frequency	2
+1A23	Incontinence of urine	1
+22A	O/E - weight	12
+22K	Body Mass Index	12
+2469	O/E - Systolic BP reading	26
+321	ECG - general	2
+423	Haemoglobin estimation	13
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+42W4	HbA1c level (DCCT aligned)	1
+43Z2	Prostate specific antigen	2
+44CC	Plasma C reactive protein	2
+44E3	Total bilirubin	1
+44EC	Serum total bilirubin level	1
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	1
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44J3	Serum creatinine	20
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	11
+44U	Blood glucose result	1
+44f1	Serum fasting glucose level	1
+44g	Plasma glucose level	2
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	4
+4613	Urinalysis = no abnormality	1
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	1
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	1
+4695	Urine blood test = +	2
+4696	Urine blood test = ++	1
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	1
+46U	Urine culture	1
+46X0	Urine nitrite positive	1
+46X1	Urine nitrite negative	1
+46f3	Urine leucocyte test = ++	2
+6572	Pneumococcal vaccination	1
+66C9	Target weight discussed	2
+6791	Health ed. - smoking	3
+6896	Depression screening using questions	3
+79294	Insertion of coronary artery stent	1
+7B2A	Diagnostic cystoscopy	1
+8B63	Salicylate prophylaxis	4
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	3
+8CA40	Pt advised re wt reducing diet	1
+8CA46	Pt advised re low fat diet	1
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	5
+8H	Referral for further care	1
+8H46	Neurological referral	1
+8H52	Ophthalmological referral	1
+8H54	Orthopaedic referral	3
+8H77	Refer to physiotherapist	3
+8HTP	Referral to musculoskeletal clinic	1
+8I73	Beta blocker not tolerated	1
+9N19	Seen in hospital casualty	1
+9N1P	Seen in cardiac clinic	1
+9N1Q	Seen in diabetic clinic	1
+9i0	British or mixed British - ethnic category 2001 census	1
+A0812	Gastroenteritis - presumed infectious origin	1
+AB220	Candidal balanitis	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	11
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	12
+BBSLHLE19	Unknown vendor specific drug	1
+BBSLHUR4	Unknown vendor specific drug	2
+BBSLHUT1	Unknown vendor specific drug	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	11
+D3101	Henoch-Schonlein nephritis	2
+D41y2	Pseudocholinesterase deficiency	9
+DIM/22265EMIS	Diltiazem Hydrochloride  M/R capsules  300 mg	1
+DIM/22266EMIS	Diltiazem Hydrochloride  M/R capsules  90 mg	22
+F1383	Organic writers' cramp	1
+F4C10	Unspecified chronic conjunctivitis	1
+F531	Chronic mastoiditis	6
+FLTA1208	Flupenthixol  Tablets  1 mg	2
+FRTA1246	Froben  Tablets  50 mg	3
+FUNDHRE3	Unknown vendor specific drug	1
+HEWITPO12	Unknown vendor specific drug	1
+L1809	Gestational diabetes mellitus	12
+L1813	Thyroid dysfunction in pregnancy - baby not yet delivered	4
+META1793	Methylcellulose  Tablets  500 mg	1
+MUUR32591EMIS	Muse  Urethral Application  500 micrograms	2
+NAMASGO1	Unknown vendor specific drug	1
+PKy2	Marfan's syndrome	1
+PRCA8367EGTON	Prozac  Capsules  20 mg	1
+PRLE40411NEMIS	Unknown vendor specific drug	27
+PROIEGTON6467	Pragmatar  Ointment	2
+S261	Open fracture of one or more phalanges of hand	1
+S3521	Closed fracture of talus	24

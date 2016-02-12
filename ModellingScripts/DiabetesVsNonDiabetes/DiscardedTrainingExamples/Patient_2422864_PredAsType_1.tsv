@@ -1,0 +1,110 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+136	Alcohol consumption	10
+137J	Cigar smoker	1
+137P	Cigarette smoker	2
+1383	Enjoys light exercise	2
+13l4	Main spoken language English	1
+1B17	Depressed	1
+229	O/E - height	5
+22A	O/E - weight	10
+22K	Body Mass Index	9
+246	O/E - blood pressure reading	19
+32	Electrocardiography	1
+3211	ECG requested	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	3
+42R7	Serum iron level	2
+42T	Serum vitamin B12	4
+42U5	Serum folate	3
+42W	Hb. A1C - diabetic control	2
+44CB	Serum transferrin	1
+44CC	Plasma C reactive protein	7
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	10
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	11
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	10
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	9
+44TB	Haemoglobin A1c level	3
+44g	Plasma glucose level	4
+44g1	Plasma fasting glucose level	7
+451E	GFR calculated abbreviated MDRD	10
+4613	Urinalysis = no abnormality	3
+4618	Urine dipstick test	1
+463	Urine specific gravity	1
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	1
+4692	Urine blood test = negative	1
+46U	Urine culture	2
+4JJ1	MSU sent for C/S	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	4
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	1
+8B2B	Nicotine replacement therapy	1
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	2
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	3
+8H7i	Referral to smoking cessation advisor	1
+8I62	Beta blocker not indicated	1
+9N2k	Seen by smoking cessation advisor	2
+9N4C	Failed encounter - no answer when rang back	1
+9Na1	Consultation for minor injury	2
+9OI4	Hypertens.monitor.1st letter	1
+9S10	White British	1
+A35	Erysipelas	1
+COSA21955EMIS	Colestid Orange  Sachets  5 grams/sachet	1
+E2C11	Solitary stealing	2
+Eu45y	[X]Other somatoform disorders	1
+FESY1168	Ferrous Fumarate  Syrup  140 mg/5 ml	1
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE10	Unknown vendor specific drug	3
+FUSO17471NEMIS	Fulvestrant  Solution for injection  250 mg/5 ml pre-filled syringe	1
+GOCA23759EMIS	Gopten  Capsules  1 mg	1
+H02	Acute pharyngitis	1
+ISTA2EGTON	Ismo Retard  M/R tablets  40 mg	1
+N04	Rheumatoid arthritis and other inflammatory polyarthropathy	2
+R102	[D]Glucose tolerance test abnormal	1
+Y0737	Unknown vendor specific drug	7
+Y1365	Unknown vendor specific drug	1
+bd2w	ACEBUTOLOL 100mg capsules	1
+bd2x	ACEBUTOLOL 200mg capsules	3
+bd2y	ACEBUTOLOL 400mg tablets	2
+bd36	ATENOLOL 100mg tablets	2
+bd3c	TENORMIN 25 tablets	1
+bdf9	CARDICOR 1.25mg tablets	4
+bdfA	CARDICOR 2.5mg tablets	19
+bi3s	ZESTORETIC 10/12.5mg tablets	1
+bi3t	LISINOPRIL+HYDROCHLOROTHIAZIDE 10mg/12.5mg tablets	7
+bi41	QUINAPRIL 5mg tablets	3
+bl3n	ELANTAN LA 25mg m/r capsules	3
+bl3u	ISOSORBIDE MONONITRATE 25mg m/r capsules	14
+bl5E	ADIZEM-XL 300mg m/r capsules	1
+bl8w	NIFEDIPINE 10mg m/r tablets	16
+blzz	GLYCERYL TRINITRATE 10mg/24hrs patches	22
+da77	VENLAFAXINE 75mg m/r capsules	1
+da7W	VENLALIC XL 150mg m/r tablets	1
+da81	NEFAZODONE HYDROCHLORIDE 100mg tablets	1
+dj41	CODEINE PHOSPHATE 15mg tablets	1
+du35	NICOTINELL TTS 10 patches	1
+du3k	NIQUITIN CQ 7mg/24hours patches	1
+f27x	HUMULIN M2 20/80 cartridges 3mL	1
+gc72	FLOMAX MR 400micrograms m/r capsules	1
+i221	*JECTOFER 100mg/2mL injection	3
+ij31	CALCIUM ACETATE 1g tablets	1

@@ -1,0 +1,91 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	4
+12CZ	FH: CVS disease NOS	1
+136	Alcohol consumption	11
+1371	Never smoked tobacco	6
+1381	Exercise physically impossible	4
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	5
+22A	O/E - weight	13
+22K	Body Mass Index	13
+2469	O/E - Systolic BP reading	22
+32131	Exercise ECG abnormal	1
+3216	ECG normal	2
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42C	RBC - red blood cell size	3
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	2
+42U4	Red blood cell folate	2
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	2
+44CS	Serum C reactive protein level	6
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I8	Serum calcium	3
+44I9	Serum inorganic phosphate	3
+44J3	Serum creatinine	16
+44J9	Serum urea level	1
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	6
+44Q	Serum triglycerides	6
+44U	Blood glucose result	1
+44g	Plasma glucose level	7
+451E	GFR calculated abbreviated MDRD	6
+4611	Urine not examined	1
+4661	Urine glucose test not done	1
+4671	Urine protein test not done	1
+46TC	Urine albumin:creatinine ratio	1
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+6792	Health ed. - alcohol	3
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	3
+6896	Depression screening using questions	3
+7939	Catheterisation of heart	1
+7B390	Transurethral prostatectomy	1
+8H	Referral for further care	1
+8H4	Referral to physician	1
+8H44	Cardiological referral	1
+8H46	Neurological referral	1
+8H52	Ophthalmological referral	1
+8H53	ENT referral	1
+8H55	Neurosurgical referral	1
+8I26	Beta blocker contraindicated	5
+9N42	Did not attend - no reason	1
+A53	Herpes zoster	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	19
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	16
+CETA9534EMIS	Celiprolol Hydrochloride  Tablets  200 mg	1
+COOI9895BRIDL	Cocois  Ointment	2
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+DETA845	Dexamethasone  Tablets  2 mg	1
+DIM/22266EMIS	Diltiazem Hydrochloride  M/R capsules  90 mg	21
+E107	Schizo-affective schizophrenia	2
+EMISNQRE5	Unknown vendor specific drug	1
+F421C	Other intraretinal microvascular abnormality	1
+F4F22	Epiphora due to insufficient drainage	1
+F54y3	Retraction of tympanic membrane	4
+FRTA1246	Froben  Tablets  50 mg	4
+FUNDHRE10	Unknown vendor specific drug	2
+G5415	Aortic stenosis	2
+H120z	Chronic rhinitis NOS	2
+ININ18217NEMIS	Insulin Detemir  Injection (cartridges)  100 units/ml, 3 ml cartridge	1
+IRTA18540NEMIS	Irbesartan And Hydrochlorothiazide  Tablets  150 mg + 12.5 mg	3
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+LEPR18221NEMIS	Levemir Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	2
+META1807	Metoprolol Tartrate  Tablets  50 mg	2
+META1814	Metronidazole  Tablets  400 mg	1
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	3
+PCSDT8940RE1	Unknown vendor specific drug	30
+PH34	Other specified birthmark	12
+PINFOZZ1	Unknown vendor specific drug	1
+PITA5315NEMIS	Pioglitazone Hydrochloride  Tablets  15 mg	8
+TC0	Fall on or from stairs or steps	23

@@ -1,0 +1,112 @@
+Code	Description	Count
+136	Alcohol consumption	4
+1361	Teetotaller	1
+137F	Ex-smoker - amount unknown	2
+137L	Current non-smoker	2
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	2
+13l4	Main spoken language English	1
+1F11	Diet - low in fat	1
+1F1Z	Dietary fat NOS	1
+1F31	Dietary sodium - low	1
+1Z1C	Chronic kidney disease stage 3 without proteinuria	2
+229	O/E - height	2
+22A	O/E - weight	4
+22K	Body Mass Index	3
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	15
+3211	ECG requested	1
+3216	ECG normal	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	2
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	4
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	27
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	7
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	4
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	7
+44TJ	Blood glucose level	2
+44U	Blood glucose result	2
+44W9	Serum digoxin level	1
+451E	GFR calculated abbreviated MDRD	15
+55	Cardiovascular sys.angiography	1
+5858	Doppler studies	1
+6798	Health ed. - exercise	1
+6879	Hyperlipidaemia screen	1
+6896	Depression screening using questions	2
+792	Coronary artery operations	1
+79275	Open angioplasty of coronary artery	2
+8B6A	Statin prophylaxis	1
+8H	Referral for further care	2
+8H2	Emergency hospital admission	1
+8H21	Admit medical emergency unsp.	1
+8H54	Orthopaedic referral	1
+8HE2	Discharged from inpatient care	2
+8HVJ	Private referral to cardiologist	1
+9180	Carer's details	2
+9NF7	Urgent home visit	2
+9NF9	Chronic home visit	1
+9OX5	Influenza vaccination declined	1
+9T	Ethnicity and other related nationality data	1
+9h	Exception reporting: GP contract quality indicators	1
+9h01	Excepted from CHD quality indicators: Patient unsuitable	1
+9h21	Excepted from stroke quality indicators: Patient unsuitable	1
+9hE0	Except chronic kidney disease qual indic: Patient unsuitable	1
+9i2	Other White background - ethnic category 2001 census	1
+9i28	Greek Cypriot - ethnic category 2001 census	1
+AB02	Dermatophytosis of hand	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+BESC358	Betnovate  Scalp application  0.1 %	3
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	1
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	22
+BUTA434	Bumetanide  Tablets  1 mg	13
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	15
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+E2653	Psychogenic dysuria	3
+EMISQLE3	Unknown vendor specific drug	13
+FETA22463EMIS	Feldene Melt  Orodispersible tablets  20 mg	3
+FLTA1208	Flupenthixol  Tablets  1 mg	4
+FRTA1246	Froben  Tablets  50 mg	2
+Fyu5E	[X]Chronic headache disorder	1
+FyuU1	[X]Other specified hearing loss	1
+G24z	Secondary hypertension NOS	2
+G3114	Worsening angina	1
+G5703	Paroxysmal nodal tachycardia	2
+G6X	"Cereb in/uns oc	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	3
+L3981	Caesarean delivery - delivered	1
+LACA1623	Lasilactone  Capsules	2
+LACH24088NEMIS	Lanthanum  Chewable tablets  500 mg	1
+LAIN13570NEMIS	Lantus  Injection  100 units/ml, 10 ml vial	3
+LEINEGTON7141	Lentard Mc  Injection  100 units/ml, 10 ml vial	1
+N0659	Unspecified polyarthropathy of multiple sites	2
+NAMASGO2	Unknown vendor specific drug	1
+PG48	Diaphyseal aclasis	1
+PINFOZZ1	Unknown vendor specific drug	1
+PRLE40411NEMIS	Unknown vendor specific drug	29
+PRM/20660EMIS	Propranolol Hydrochloride  M/R capsules  160 mg	3
+S120A	Cough fracture	1
+S352C	Closed fracture metatarsal shaft	22
+SESH5910	Selsun  Shampoo  2.5 %	5
+Ub0qs	Unknown vendor specific drug	8
+Ub1ju	Unknown vendor specific drug	6
+Ub1tI	Unknown vendor specific drug	1

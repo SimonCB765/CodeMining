@@ -1,0 +1,81 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	1
+12C5	FH: Myocardial infarction	1
+136	Alcohol consumption	3
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	3
+137L	Current non-smoker	1
+138I	FITT activity level 0; no mod/vig activity of 20 mins duratn	1
+138J	FITT activity level 1; 1-4 occas of mod/vig activit in 4 wks	1
+1FA	Diet good	1
+229	O/E - height	10
+22A	O/E - weight	12
+22K	Body Mass Index	11
+22N0	Waist circumference	5
+246	O/E - blood pressure reading	28
+32	Electrocardiography	1
+423	Haemoglobin estimation	26
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+44CC	Plasma C reactive protein	10
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	22
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	49
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	4
+44P5	Serum HDL cholesterol level	2
+44P6	Serum LDL cholesterol level	2
+44Q	Serum triglycerides	2
+451E	GFR calculated abbreviated MDRD	41
+4615	MSU sent to lab.	1
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	1
+4674	Urine protein test = +	2
+4683	Urine ketone test = trace	1
+4692	Urine blood test = negative	1
+46X1	Urine nitrite negative	1
+4JJ1	MSU sent for C/S	1
+65720	Pneumococcal vaccination given	1
+6791	Health ed. - smoking	1
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+8CA4	Patient advised re diet	1
+8H77	Refer to physiotherapist	1
+8HBA	Follow up in outpatient clinic	7
+9N03	Seen in hypertension clinic	2
+9N39	Item held as scanned document	3
+A53	Herpes zoster	2
+E2C11	Solitary stealing	1
+EGTON409	Unknown vendor specific drug	1
+Eu620	[X]Enduring personality change after catastrophic experience	1
+F502	Other otitis externa	1
+FRTA1245	Froben  Tablets  100 mg	3
+G57y1	Severe sinus bradycardia	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H043z	Acute epiglottitis NOS	1
+MITA10737BRIDL	Micturin  Tablets  25 mg	2
+PCS7073IN10	Unknown vendor specific drug	2
+ZIOR16895NEMIS	Zispin Soltab  Orodispersible tablets  45 mg	10
+bi3s	ZESTORETIC 10/12.5mg tablets	7
+bi41	QUINAPRIL 5mg tablets	4
+bi4A	QUINAPRIL 40mg tablets	12
+bk52	IRBESARTAN 150mg tablets	16
+bk93	TEVETEN 600mg tablets	1
+bl3n	ELANTAN LA 25mg m/r capsules	2
+bl8x	NIFEDIPINE 30mg m/r tablets	11
+du35	NICOTINELL TTS 10 patches	3
+du3k	NIQUITIN CQ 7mg/24hours patches	1
+e614	CEFACLOR 250mg capsules	2
+f27R	HUMAN MIXTARD 30 prefilled pen	1
+f27m	*PENMIX 20/80 cartridges 1.5mL	8
+he81	LEUPRORELIN 3.75mg injection	3
+j287	BRUFEN 200mg tablets	1
+j28H	*CODAFEN CONTINUS m/r tablets	1

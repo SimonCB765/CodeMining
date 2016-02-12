@@ -1,0 +1,99 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C2	FH: Ischaemic heart dis. <60	2
+12C3	FH: Ischaemic heart dis. >60	2
+136	Alcohol consumption	7
+1371	Never smoked tobacco	3
+1383	Enjoys light exercise	3
+13l4	Main spoken language English	1
+229	O/E - height	4
+22A	O/E - weight	21
+22K	Body Mass Index	16
+2469	O/E - Systolic BP reading	22
+32130	Exercise ECG normal	1
+3216	ECG normal	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42C	RBC - red blood cell size	1
+42R5	Serum TIBC	1
+42R7	Serum iron level	1
+42W4	HbA1c level (DCCT aligned)	4
+42bE	Percentage hypochromic cells	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	2
+44J3	Serum creatinine	13
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	2
+44P6	Serum LDL cholesterol level	2
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	1
+44U	Blood glucose result	2
+44g	Plasma glucose level	7
+451E	GFR calculated abbreviated MDRD	4
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	2
+46N4	Urine albumin	1
+5853	U-S heart scan	1
+585I	Ultrasound scan abnormal	1
+6572	Pneumococcal vaccination	1
+66C9	Target weight discussed	1
+671D	Discussed with next of kin	1
+6791	Health ed. - smoking	3
+6896	Depression screening using questions	2
+8B63	Salicylate prophylaxis	3
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	5
+8H	Referral for further care	2
+8H44	Cardiological referral	1
+8H4C	Referred to chest physician	2
+8H7O	Refer to Radiology department	2
+8HQ1	Refer for X-Ray	1
+8I26	Beta blocker contraindicated	5
+8I62	Beta blocker not indicated	1
+8I65	Warfarin not indicated	3
+8I6B	Clopidogrel not indicated	1
+8I6a	Dipyridamole not indicated	1
+9N03	Seen in hypertension clinic	2
+9N37	Message given to patient	2
+9N7	Provider initiated encounter	1
+9S10	White British	3
+9i0	British or mixed British - ethnic category 2001 census	3
+ADCA10864BRIDL	Adifax  Capsules  15 mg	1
+AMTA10145BRIDL	Amlodipine Besilate  Tablets  5 mg	3
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	21
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	16
+CECA4202NEMIS	Celebrex  Capsules  100 mg	3
+COLE25195NEMIS	Coloplast Simpla Profile  Leg bag  350 ml, 25 cm tube, 21564	26
+D300	Haemophilia-A (factor VIII deficiency)	1
+DIM/22265EMIS	Diltiazem Hydrochloride  M/R capsules  300 mg	23
+E2653	Psychogenic dysuria	3
+EMISQ2W7	Unknown vendor specific drug	35
+EMISSPR110	Unknown vendor specific drug	1
+EPTA3296NEMIS	Eprosartan  Tablets  600 mg	1
+F30	Trigeminal nerve disorders	1
+F5112	Bilateral chronic serous otitis	1
+F54y3	Retraction of tympanic membrane	3
+FRTA1246	Froben  Tablets  50 mg	2
+Fyu5E	[X]Chronic headache disorder	2
+G580	Congestive heart failure	3
+G7320	Gangrene of toe	1
+GASTO241	Unknown vendor specific drug	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+K013	Nephrotic syndrome with minimal change glomerulonephritis	1
+K08y4	Renal tubular acidosis	1
+MEIN1800	Methylprednisolone Acetate  Injection  40 mg/1 ml vial	3
+MIIN15904NEMIS	Mixtard 30 Penfill  Injection  100 units/ml, 3 ml cartridge	1
+MITA10737BRIDL	Micturin  Tablets  25 mg	1
+N05z9	"Osteoarthritis NOS	1
+PG7	Abdominal wall anomalies	1
+S3501	"Cls # calcaneus	14
+S3521	Closed fracture of talus	10
+SN51	Angioneurotic oedema	1

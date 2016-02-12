@@ -1,0 +1,95 @@
+Code	Description	Count
+136	Alcohol consumption	10
+1371	Never smoked tobacco	1
+137L	Current non-smoker	1
+137M	Rolls own cigarettes	2
+137S	Ex smoker	4
+1381	Exercise physically impossible	4
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	2
+22A	O/E - weight	10
+22K	Body Mass Index	11
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	23
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	2
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44J3	Serum creatinine	15
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	13
+44U	Blood glucose result	2
+451E	GFR calculated abbreviated MDRD	10
+4613	Urinalysis = no abnormality	1
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+4691	Urine blood test not done	2
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	1
+46f0	Urine leucocyte test not done	1
+46f1	Urine leucocyte test = negative	1
+58580	Doppler studies normal	1
+6572	Pneumococcal vaccination	1
+66C9	Target weight discussed	2
+6791	Health ed. - smoking	3
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	3
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	3
+8CA40	Pt advised re wt reducing diet	2
+8CA46	Pt advised re low fat diet	2
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	5
+8H	Referral for further care	1
+8H44	Cardiological referral	1
+8H46	Neurological referral	1
+8H5	Referral to surgeon	1
+8H51	General surgical referral	1
+8H5D	Referred to vascular surgeon	1
+8H77	Refer to physiotherapist	2
+8H7K	Refer to orthoptist	1
+9N19	Seen in hospital casualty	1
+9N28	Seen by physiotherapist	1
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	1
+A53	Herpes zoster	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	23
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	14
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	24
+BBSLHCO2	Unknown vendor specific drug	2
+BBSLHHO1	Unknown vendor specific drug	1
+BBSLHID1	Unknown vendor specific drug	1
+BBSLHRI13	Unknown vendor specific drug	1
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	4
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	1
+EMISQRE4	Unknown vendor specific drug	1
+F4F1	Other lacrimal gland disorders	1
+F4F22	Epiphora due to insufficient drainage	1
+FETA22463EMIS	Feldene Melt  Orodispersible tablets  20 mg	3
+FLTA1208	Flupenthixol  Tablets  1 mg	21
+Fy03	Sleep apnoea	2
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+ININ18217NEMIS	Insulin Detemir  Injection (cartridges)  100 units/ml, 3 ml cartridge	5
+N330B	Vertebral osteoporosis	1
+NAMASGO2	Unknown vendor specific drug	1
+PRLE40411NEMIS	Unknown vendor specific drug	25
+S15	Fracture of thoracic vertebra	1
+S3501	"Cls # calcaneus	1
+S352C	Closed fracture metatarsal shaft	23

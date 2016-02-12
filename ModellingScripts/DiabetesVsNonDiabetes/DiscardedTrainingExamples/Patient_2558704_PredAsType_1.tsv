@@ -1,0 +1,105 @@
+Code	Description	Count
+136	Alcohol consumption	9
+1363	Light drinker - 1-2u/day	1
+137S	Ex smoker	5
+137T	Date ceased smoking	1
+1381	Exercise physically impossible	6
+13HT1	Stress at home	1
+13l4	Main spoken language English	1
+16D	Falls	1
+1A24	Stress incontinence	1
+1F91	Regularly eats 3 meals/day	1
+1Z10	Chronic kidney disease stage 1	1
+1Z1C	Chronic kidney disease stage 3 without proteinuria	1
+229	O/E - height	10
+22A	O/E - weight	10
+22K	Body Mass Index	10
+2469	O/E - Systolic BP reading	27
+3216	ECG normal	1
+3241	ECG: no LVH	1
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	1
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	3
+42U4	Red blood cell folate	2
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	6
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	14
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	7
+44Q	Serum triglycerides	5
+44U	Blood glucose result	1
+44g	Plasma glucose level	5
+451E	GFR calculated abbreviated MDRD	8
+4662	Urine glucose test negative	3
+467	Urine protein test	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	1
+4692	Urine blood test = negative	2
+46M7	Urine creatinine	1
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	2
+55	Cardiovascular sys.angiography	1
+65720	Pneumococcal vaccination given	1
+6791	Health ed. - smoking	7
+6799	Health ed. - diet	1
+7928	Transluminal balloon angioplasty of coronary artery	1
+81H1	Dressing of ulcer	2
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	1
+8CAM	Patient advised about alcohol	4
+8HR1	Refer for ECG recording	1
+8I24	Aspirin prophylaxis contra-indicated	3
+8I6B	Clopidogrel not indicated	2
+9N11	Seen in GP's surgery	2
+9N4	Failed encounter	1
+9S10	White British	1
+AB0	Dermatophytosis including tinea or ringworm	1
+AB200	Candidiasis of mouth	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	1
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	3
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	6
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	13
+COFO12338NEMIS	Coloplast All Silicone  Foley catheter 10ml balloon (male)  14ch, 367314	1
+D2018	[X]Pure red cell aplasia	3
+D3100	Henoch-Schonlein purpura	3
+DIM/22264EMIS	Diltiazem Hydrochloride  M/R capsules  180 mg	1
+F410	Retinal detachment with retinal defect	1
+F5112	Bilateral chronic serous otitis	1
+F531	Chronic mastoiditis	14
+F54y3	Retraction of tympanic membrane	6
+FLTA1208	Flupenthixol  Tablets  1 mg	3
+FRTA1246	Froben  Tablets  50 mg	4
+G24z	Secondary hypertension NOS	1
+G580	Congestive heart failure	2
+G5800	Acute congestive heart failure	1
+G60z	Subarachnoid haemorrhage NOS	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+M0100	Boil of ear	6
+N0	Arthropathies and related disorders	2
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	1
+P6z	Congenital heart anomaly NOS	1
+PRLE40411NEMIS	Unknown vendor specific drug	32
+PROIEGTON6467	Pragmatar  Ointment	1
+S352C	Closed fracture metatarsal shaft	23
+TC02	Fall on or from steps	1
+Ub1ju	Unknown vendor specific drug	3
+Ub1md	Unknown vendor specific drug	4

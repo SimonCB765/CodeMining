@@ -1,0 +1,104 @@
+Code	Description	Count
+06A6	Shopkeeper	1
+12C1	FH: Hypertension	1
+12C2	FH: Ischaemic heart dis. <60	2
+136	Alcohol consumption	7
+1371	Never smoked tobacco	4
+138	Exercise grading	1
+1383	Enjoys light exercise	3
+13l6	Main spoken language Gujerati	1
+1A1	Micturition frequency	1
+1AA	Prostatism	1
+1F93	Irregular meal frequency	1
+229	O/E - height	2
+22A	O/E - weight	11
+22K	Body Mass Index	12
+2469	O/E - Systolic BP reading	30
+32	Electrocardiography	1
+3213	Exercise ECG	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+43Z2	Prostate specific antigen	1
+44CS	Serum C reactive protein level	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	16
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	15
+44P6	Serum LDL cholesterol level	14
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	11
+44Q4	Serum fasting triglyceride level	3
+44TK	Fasting blood glucose level	8
+44U	Blood glucose result	3
+44g	Plasma glucose level	2
+461	Urine exam. - general	1
+4619	MSU = no growth	1
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+58530	Echocardiogram normal	1
+65720	Pneumococcal vaccination given	1
+6791	Health ed. - smoking	1
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	3
+7928	Transluminal balloon angioplasty of coronary artery	2
+79294	Insertion of coronary artery stent	1
+7939	Catheterisation of heart	1
+79392	Catheterisation of left side of heart NEC	1
+7B2A	Diagnostic cystoscopy	1
+7B2A6	Diagnostic cystoscopy using flexible instrument	1
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	2
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	4
+8H46	Neurological referral	1
+8H51	General surgical referral	1
+8HA2	Return only if necessary	1
+8HVJ	Private referral to cardiologist	1
+9N1P	Seen in cardiac clinic	1
+9N1g	Seen in gastroenterology clinic	1
+9N42	Did not attend - no reason	2
+9N6F	Referred by consultant	1
+9S6	Indian	2
+AB05	Dermatophytosis of the body	1
+AMCA17510NEMIS	Amoxicillin  Capsules  250 mg	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	3
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	12
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	10
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	23
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	9
+CONE5709NEMIS	Coloplast Speedicath  Nelaton catheter (female)  10ch, 28510	6
+COTA23359NEMIS	Competact  Tablets  15 mg + 850 mg	1
+DICA877	Diazepam  Capsules  5 mg	1
+E2022	Agoraphobia without mention of panic attacks	1
+E2653	Psychogenic dysuria	1
+F54y3	Retraction of tympanic membrane	3
+F563	Labyrinthitis	1
+FETA5643NEMIS	Fenofibrate  Tablets  (Micronised) 160 mg	1
+FRTA1246	Froben  Tablets  50 mg	1
+FUNDHRE10	Unknown vendor specific drug	1
+H160z	Chronic laryngitis NOS	2
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	1
+K1003	Chronic pyonephrosis	1
+N05zH	OA NOS-DIP joint of finger	1
+NYSU5217	Nystan  Oral suspension  100,000 units/ml	1
+PCSDT8940PA1	Unknown vendor specific drug	3
+PCSDT8940RE1	Unknown vendor specific drug	6
+S352C	Closed fracture metatarsal shaft	15
+SOTA6817	Sotalol Hydrochloride  Tablets  80 mg	1

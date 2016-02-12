@@ -1,0 +1,101 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1371	Never smoked tobacco	1
+137S	Ex smoker	2
+1381	Exercise physically impossible	2
+1383	Enjoys light exercise	1
+1F91	Regularly eats 3 meals/day	1
+229	O/E - height	12
+22A	O/E - weight	12
+22K	Body Mass Index	12
+2469	O/E - Systolic BP reading	22
+3217	ECG abnormal	1
+3222	ECG:shows myocardial ischaemia	1
+3242	ECG: shows LVH	1
+388B	Pack years	2
+423	Haemoglobin estimation	2
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42QE	International normalised ratio	2
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	9
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	18
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	14
+44P3	Serum cholesterol raised	1
+44P5	Serum HDL cholesterol level	14
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	8
+44TB	Haemoglobin A1c level	1
+44U	Blood glucose result	2
+44g	Plasma glucose level	10
+451E	GFR calculated abbreviated MDRD	8
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	4
+4692	Urine blood test = negative	2
+46X1	Urine nitrite negative	1
+65720	Pneumococcal vaccination given	1
+6791	Health ed. - smoking	3
+67I8	Advice about taking aspirin	1
+6876	Gout screen	1
+6896	Depression screening using questions	2
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	3
+8H	Referral for further care	1
+8HE	Discharged from hospital	1
+8HR1	Refer for ECG recording	1
+8I24	Aspirin prophylaxis contra-indicated	5
+8I26	Beta blocker contraindicated	3
+8I65	Warfarin not indicated	1
+8I6B	Clopidogrel not indicated	2
+8I6a	Dipyridamole not indicated	1
+9N42	Did not attend - no reason	3
+9S10	White British	1
+A381	Staphylococcal septicaemia	1
+A7811	Verruca plantaris	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	21
+ASDI224	Aspirin  Dispersible tablets  75 mg	6
+ATTA231	Atenolol  Tablets  50 mg	3
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	3
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	3
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	11
+D41y2	Pseudocholinesterase deficiency	1
+DILO3454	Diprosalic  Scalp application	10
+DIM/22266EMIS	Diltiazem Hydrochloride  M/R capsules  90 mg	2
+F4E1	Ectropion	1
+F4F22	Epiphora due to insufficient drainage	1
+FRTA1246	Froben  Tablets  50 mg	3
+FUNDHRE10	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	1
+G24z	Secondary hypertension NOS	2
+G33zz	Angina pectoris NOS	1
+G580	Congestive heart failure	3
+G5800	Acute congestive heart failure	1
+G678	Cereb autosom dominant arteriop subcort infarcts leukoenceph	2
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+H0616	Acute bronchiolitis due to other specified organisms	1
+LEPR18221NEMIS	Levemir Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	14
+MIINEGTON7152	Pork Mixtard 30  Injection  10 ml vial	1
+PD1y	Other specified congenital cystic kidney disease	1
+PRLE40411NEMIS	Unknown vendor specific drug	7
+PROIEGTON6467	Pragmatar  Ointment	1
+RONE16593NEMIS	Rochester Hydrosil Silicone Hydrophilic Personal  Nelaton Catheter (male) + Water Pack  14 ch, 63614	1
+S352C	Closed fracture metatarsal shaft	15
+TC02	Fall on or from steps	1
+Ub0qs	Unknown vendor specific drug	9
+Ub1ju	Unknown vendor specific drug	6
+Ub1tI	Unknown vendor specific drug	6

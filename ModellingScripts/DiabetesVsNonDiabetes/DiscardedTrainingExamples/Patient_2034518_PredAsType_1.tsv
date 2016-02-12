@@ -1,0 +1,118 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C2	FH: Ischaemic heart dis. <60	2
+136	Alcohol consumption	10
+1379	Ex-moderate smoker (10-19/day)	4
+137L	Current non-smoker	2
+137R	Current smoker	2
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	3
+1384	Enjoys moderate exercise	1
+13J71	Chronic unemployment	1
+13l4	Main spoken language English	1
+1A1	Micturition frequency	1
+1AA	Prostatism	1
+1B17	Depressed	1
+229	O/E - height	8
+22A	O/E - weight	13
+22K	Body Mass Index	14
+2469	O/E - Systolic BP reading	20
+3174	Special urinary test abnormal	1
+3213	Exercise ECG	1
+32131	Exercise ECG abnormal	1
+325	ECG:right ventricle hypertrop.	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+43Z2	Prostate specific antigen	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44I4	Serum potassium	7
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	11
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	11
+44PF	Total cholesterol:HDL ratio	7
+44Q	Serum triglycerides	7
+44Q4	Serum fasting triglyceride level	3
+44TB	Haemoglobin A1c level	1
+44TK	Fasting blood glucose level	7
+44U	Blood glucose result	2
+44g	Plasma glucose level	4
+44g1	Plasma fasting glucose level	1
+461	Urine exam. - general	2
+4619	MSU = no growth	2
+466	Urine test for glucose	1
+4662	Urine glucose test negative	1
+4665	Urine glucose test = ++	1
+467	Urine protein test	1
+4672	Urine protein test negative	2
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+55	Cardiovascular sys.angiography	1
+585S	Left brachial doppler pressure	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	3
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	2
+792	Coronary artery operations	2
+7922	Allograft replacement of coronary artery	2
+7B2A6	Diagnostic cystoscopy using flexible instrument	1
+7B390	Transurethral prostatectomy	1
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	4
+8H44	Cardiological referral	1
+8H5B	Referred to urologist	1
+8HTG	Referred to acute chest pain clinic	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I26	Beta blocker contraindicated	2
+9N3G	SMS text message sent to patient	6
+9SH	Other Asian ethnic group	1
+9i0	British or mixed British - ethnic category 2001 census	2
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	19
+C1097	Non-insulin dependent diabetes mellitus - poor control	4
+D4158	Non-traumatic rupture of spleen	25
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	1
+DEM/22793NEMIS	Detrunorm Xl  M/R capsules  30 mg	1
+DETA845	Dexamethasone  Tablets  2 mg	3
+DUGA19398NEMIS	Duloxetine  Gastro-resistant Capsules  60 mg	1
+E107	Schizo-affective schizophrenia	1
+E13z	Nonorganic psychosis NOS	1
+F492	"Low vision	1
+F5614	Otogenic vertigo	1
+F562	Vertigo of central origin	6
+FETA5643NEMIS	Fenofibrate  Tablets  (Micronised) 160 mg	1
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE10	Unknown vendor specific drug	1
+FUNDHRE12	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	1
+G662	Posterior cerebral artery syndrome	4
+G7320	Gangrene of toe	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H160z	Chronic laryngitis NOS	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	2
+K00z	Acute glomerulonephritis NOS	1
+K01x1	Nephrotic syndrome in diabetes mellitus	1
+M07yz	Other spec local skin/subc infection NOS	2
+N094D	Arthralgia of elbow	1
+N094T	Arthralgia of 1st MTP joint	1
+N095	Joint stiffness NEC	1
+PH34	Other specified birthmark	15
+PUJINST1	Unknown vendor specific drug	18
+S3521	Closed fracture of talus	1
+S352C	Closed fracture metatarsal shaft	6
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	9
+XaBpY	Unknown vendor specific drug	2

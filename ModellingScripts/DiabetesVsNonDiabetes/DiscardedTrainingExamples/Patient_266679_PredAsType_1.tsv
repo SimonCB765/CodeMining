@@ -1,0 +1,111 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+1362	Trivial drinker - <1u/day	1
+1363	Light drinker - 1-2u/day	3
+136J	Social drinker	1
+137L	Current non-smoker	2
+1383	Enjoys light exercise	1
+1384	Enjoys moderate exercise	2
+13l4	Main spoken language English	3
+1A13	Nocturia	1
+1A32	Cannot pass urine - retention	1
+1A52	Renal colic	1
+229	O/E - height	2
+2296	O/E - loss of height	1
+22A	O/E - weight	7
+22K	Body Mass Index	3
+246	O/E - blood pressure reading	20
+29BB	10g monofilament sensation R foot normal	1
+31280	Fundoscopy normal	1
+315B	Ambulatory blood pressure recording	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+43Z2	Prostate specific antigen	9
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	13
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	10
+44PB	Serum fasting HDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	8
+44TK	Fasting blood glucose level	3
+44U	Blood glucose result	1
+44g	Plasma glucose level	1
+451E	GFR calculated abbreviated MDRD	7
+4672	Urine protein test negative	2
+46E	Urine microscopy - casts	3
+46G7	Urine microscopy: pus cells	2
+46G9	Urine microscopy: red cells	3
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	1
+46U	Urine culture	3
+4JJ1	MSU sent for C/S	1
+5543	Coronary arteriograph.abnormal	1
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	1
+6791	Health ed. - smoking	1
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	1
+68A8	Digital retinal screening	2
+8CA4	Patient advised re diet	2
+8CAM	Patient advised about alcohol	1
+8H4K	Referred to endocrinologist	1
+8HR9	Referral for 24 hour ECG	1
+9N19	Seen in hospital casualty	1
+9N31	Telephone encounter	3
+9SH	Other Asian ethnic group	1
+9i0	British or mixed British - ethnic category 2001 census	1
+9i20	English - ethnic category 2001 census	1
+9iA	Other Asian background - ethnic category 2001 census	1
+E2C11	Solitary stealing	2
+FRTA1246	Froben  Tablets  50 mg	1
+FUNDHRE10	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	1
+G5415	Aortic stenosis	1
+H06z0	Chest infection NOS	1
+N05zE	"Osteoarthritis NOS	1
+PCSDT2263TR2	Unknown vendor specific drug	1
+PCSDT2461NO1	Unknown vendor specific drug	1
+Y1105	Unknown vendor specific drug	20
+b118	LANOXIN-PG 62.5micrograms tablets	11
+b51z	CO-AMILOFRUSE 10/80mg tablets	12
+bf21	METHYLDOPA 125mg tablets	1
+bf22	METHYLDOPA 250mg tablets	18
+bi2v	ENALAPRIL MALEATE 5mg tablets x28	1
+bi3b	*CARACE 20mg tablets	7
+bi3c	ZESTRIL 2.5mg tablets 28CP	8
+bi3j	ZESTRIL 20mg tablets	2
+bi3k	CARACE 20 PLUS tablets	1
+bl3n	ELANTAN LA 25mg m/r capsules	5
+bl8w	NIFEDIPINE 10mg m/r tablets	15
+blc3	PLENDIL 5mg m/r tablets	2
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	1
+blzz	GLYCERYL TRINITRATE 10mg/24hrs patches	3
+bs21	SINTHROME 1mg tablets	16
+bu23	ASPIRIN 75mg dispersible tablets	1
+bu41	DIPYRIDAMOLE+ASPIRIN 200mg/25mg m/r capsules	3
+bxd5	SIMVASTATIN 40mg tablets	4
+bxj1	CERIVASTATIN SODIUM 100micrograms tablets	2
+e912	ERYTHROMYCIN 500mg tablets	2
+f25e	*HUMULIN M1 injection 10mL	9
+f27p	PENMIX 30/70 preloaded injection pen	4
+gc72	FLOMAX MR 400micrograms m/r capsules	1
+i221	*JECTOFER 100mg/2mL injection	6
+j22n	VOLTAROL SR 75mg m/r tablets	3
+j28B	IBUPROFEN 800mg m/r tablets	2

@@ -1,0 +1,109 @@
+Code	Description	Count
+136	Alcohol consumption	10
+137A	Ex-heavy smoker (20-39/day)	2
+137P	Cigarette smoker	2
+137S	Ex smoker	1
+137T	Date ceased smoking	1
+1381	Exercise physically impossible	5
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	3
+22A	O/E - weight	11
+22K	Body Mass Index	11
+2469	O/E - Systolic BP reading	19
+31140	EEG abnormal	1
+3213	Exercise ECG	1
+423	Haemoglobin estimation	13
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+42C	RBC - red blood cell size	3
+42R4	Serum ferritin	2
+42U4	Red blood cell folate	1
+44A1	Serum parathyroid hormone	1
+44CC	Plasma C reactive protein	2
+44CS	Serum C reactive protein level	6
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	19
+44J9	Serum urea level	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	7
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	6
+44Q	Serum triglycerides	6
+44U	Blood glucose result	3
+44g	Plasma glucose level	8
+451E	GFR calculated abbreviated MDRD	6
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	2
+4676	Urine protein test = +++	1
+4695	Urine blood test = +	2
+46G4	Urine micr.:leucocytes present	2
+46TC	Urine albumin:creatinine ratio	1
+46X0	Urine nitrite positive	1
+46X1	Urine nitrite negative	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	1
+6799	Health ed. - diet	3
+6896	Depression screening using questions	3
+8B28	Lipid lowering therapy	5
+8B3T	Over the counter aspirin therapy	2
+8H	Referral for further care	1
+8H21	Admit medical emergency unsp.	1
+8H2A	Admit trauma emergency	1
+8H52	Ophthalmological referral	2
+8H7	Other referral	2
+8H7R	Refer to chiropodist	1
+8I26	Beta blocker contraindicated	1
+8I62	Beta blocker not indicated	3
+9N1R	Seen in neurology clinic	1
+9S1	White	1
+A3B4	Escherichia coli infection	1
+AB04	Dermatophytosis of foot	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	4
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	19
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	13
+COOI9895BRIDL	Cocois  Ointment	2
+DIM/22265EMIS	Diltiazem Hydrochloride  M/R capsules  300 mg	1
+DOCA976	Dothiepin Hydrochloride  Capsules  25 mg	3
+DOSI20193EMIS	Bard Silastic  Silicone coated foley catheter  336, 16 ch	1
+DUCA14921NEMIS	Dutasteride  Capsules  500 micrograms	1
+Eu46z	"[X]Neurotic disorder	2
+F54y3	Retraction of tympanic membrane	4
+F592	Mixed conductive and sensorineural deafness	2
+FLTA1208	Flupenthixol  Tablets  1 mg	24
+FRTA1245	Froben  Tablets  100 mg	2
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE10	Unknown vendor specific drug	4
+G3111	Unstable angina	1
+G3114	Worsening angina	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+GLTA4960	Gliclazide  Tablets  80 mg	1
+ININ18217NEMIS	Insulin Detemir  Injection (cartridges)  100 units/ml, 3 ml cartridge	6
+ISPE33729EMIS	Isophane Insulin (Human Pyr)  Penfill cartridges (3 ml)  100 units/ml	2
+ISTA1514	Isordil  Tablets  10 mg	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+K01x1	Nephrotic syndrome in diabetes mellitus	1
+K12z	Urinary calculus NOS	1
+N05zU	OA NOS-IP joint of toe	1
+N083C	Recurrent subluxation of shoulder - anterior	1
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	2
+PRM/22791NEMIS	Propiverine Hydrochloride  M/R capsules  30 mg	29
+R0543	[D]Widespread diabetic foot gangrene	1
+ROTA18930NEMIS	Rosiglitazone And Metformin  Tablets  2 mg + 500 mg	1
+S230	Closed fracture of proximal radius and ulna	1
+S352C	Closed fracture metatarsal shaft	8
+SN51	Angioneurotic oedema	1
+TETA1044NEMIS	Telmisartan  Tablets  80 mg	1
+Xa7Ht	Unknown vendor specific drug	2

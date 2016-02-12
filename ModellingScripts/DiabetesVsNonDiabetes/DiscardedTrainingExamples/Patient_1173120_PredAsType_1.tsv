@@ -1,0 +1,109 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	8
+1371	Never smoked tobacco	1
+137F	Ex-smoker - amount unknown	1
+137L	Current non-smoker	3
+137P	Cigarette smoker	1
+137R	Current smoker	1
+1383	Enjoys light exercise	3
+1384	Enjoys moderate exercise	1
+1F31	Dietary sodium - low	1
+229	O/E - height	4
+22A	O/E - weight	7
+22K	Body Mass Index	7
+2469	O/E - Systolic BP reading	25
+315B	Ambulatory blood pressure recording	1
+3211	ECG requested	1
+32130	Exercise ECG normal	1
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	4
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44J3	Serum creatinine	13
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	8
+44Q	Serum triglycerides	10
+44TJ	Blood glucose level	3
+451E	GFR calculated abbreviated MDRD	8
+46	Urine examination	1
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	1
+4674	Urine protein test = +	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	1
+46W	Urine microalbumin	1
+66A4	Diabetic on oral treatment	1
+66C9	Target weight discussed	2
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	2
+67I8	Advice about taking aspirin	1
+6879	Hyperlipidaemia screen	1
+6896	Depression screening using questions	3
+79275	Open angioplasty of coronary artery	1
+79280	Percut transluminal balloon angioplasty one coronary artery	1
+79294	Insertion of coronary artery stent	1
+8B63	Salicylate prophylaxis	3
+8B6A	Statin prophylaxis	2
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	2
+8CAL	Smoking cessation advice	2
+8CAM	Patient advised about alcohol	3
+8H	Referral for further care	1
+8HE2	Discharged from inpatient care	1
+8I3Q	Pneumococcal vaccination declined	1
+8I6B	Clopidogrel not indicated	2
+8I6N	Anticoagulation not indicated	1
+8I6a	Dipyridamole not indicated	1
+9N1K	Seen in ophthalmology clinic	1
+9N1P	Seen in cardiac clinic	1
+9N1S	Seen in dermatology clinic	1
+9OX5	Influenza vaccination declined	2
+9i0	British or mixed British - ethnic category 2001 census	3
+AMTA101	Amiloride Hydrochloride  Tablets  5 mg	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	18
+AMTA9080EMIS	Amlodipine Besilate  Tablets  10 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	14
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	10
+ATTA231	Atenolol  Tablets  50 mg	11
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	18
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	17
+BETA302	Bendrofluazide  Tablets  2.5 mg	5
+C10FF	Type 2 diabetes mellitus with peripheral angiopathy	8
+C11y2	Impaired glucose tolerance	7
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	1
+DILO3454	Diprosalic  Scalp application	11
+DIM/12096NEMIS	Disogram Sr  M/R capsules  120 mg	10
+DUGA18738NEMIS	Duloxetine  Gastro-resistant Capsules  40 mg	1
+E107	Schizo-affective schizophrenia	1
+E2653	Psychogenic dysuria	2
+EMISQ2W7	Unknown vendor specific drug	1
+F521	"Chronic suppurative otitis media	4
+FRTA1246	Froben  Tablets  50 mg	4
+FUNDHRE10	Unknown vendor specific drug	1
+Fy03	Sleep apnoea	1
+FyuU1	[X]Other specified hearing loss	1
+G23	Hypertensive heart and renal disease	1
+G6X	"Cereb in/uns oc	3
+H03	Acute tonsillitis	1
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	1
+PITA5315NEMIS	Pioglitazone Hydrochloride  Tablets  15 mg	1
+PRLE40411NEMIS	Unknown vendor specific drug	18
+PROIEGTON6467	Pragmatar  Ointment	1
+TOTA24442EMIS	Torasemide  Tablets  5 mg	4
+TRCA16731NEMIS	Trandolapril  Capsules  4 mg	1

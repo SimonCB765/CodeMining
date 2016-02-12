@@ -1,0 +1,126 @@
+Code	Description	Count
+07	Clerical occupations	1
+12C1	FH: Hypertension	2
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	1
+135A	Christian	1
+136	Alcohol consumption	10
+137L	Current non-smoker	3
+137P	Cigarette smoker	1
+137R	Current smoker	3
+137S	Ex smoker	1
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+1512	Menopause	1
+1A55	Dysuria	2
+1A7	Vaginal discharge symptom	2
+1A7Z	Vaginal discharge NOS	1
+1A8	Breast lump symptom	2
+1B17	Depressed	2
+229	O/E - height	7
+22A	O/E - weight	18
+22K	Body Mass Index	17
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	19
+2BB1	O/E - retina normal	2
+3213	Exercise ECG	1
+3216	ECG normal	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	1
+42W4	HbA1c level (DCCT aligned)	3
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	4
+44CS	Serum C reactive protein level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44J3	Serum creatinine	14
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44Q	Serum triglycerides	8
+44U	Blood glucose result	1
+44Uz	Blood glucose raised NOS	1
+44g	Plasma glucose level	12
+466	Urine test for glucose	1
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	3
+468	Urine ketone test	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+4JJ1	MSU sent for C/S	1
+55	Cardiovascular sys.angiography	1
+6572	Pneumococcal vaccination	2
+6791	Health ed. - smoking	5
+6891	Depression screen	1
+6896	Depression screening using questions	2
+68A7	Diabetic retinopathy screening	2
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	4
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	2
+8H4	Referral to physician	1
+8H41	General medical referral	2
+8H44	Cardiological referral	1
+8H54	Orthopaedic referral	1
+8HE2	Discharged from inpatient care	3
+8HQ1	Refer for X-Ray	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I26	Beta blocker contraindicated	4
+8I62	Beta blocker not indicated	1
+8I70	Aspirin not tolerated	1
+9N1A	Seen in hospital out-pat.	1
+9N44	DNA - appointment mix-up	1
+9ND6	Communication from:	2
+9ND8	I/patient disch summary rec'vd	1
+9NNC	Under care of retinal screener	1
+9S10	White British	2
+9i0	British or mixed British - ethnic category 2001 census	4
+A79z	Viral infection NOS	1
+AB211	Candidiasis of vagina	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	18
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	26
+C1001	Diab.mell.no comp. - adult	2
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	2
+D4150	Disease of spleen unspecified	14
+D4158	Non-traumatic rupture of spleen	9
+DEM/22793NEMIS	Detrunorm Xl  M/R capsules  30 mg	1
+DETA845	Dexamethasone  Tablets  2 mg	1
+DICA8335EGTON	Diflucan  Capsules  150 mg	1
+DUFFMRE1	Unknown vendor specific drug	2
+F4Kzz	Ill-defined eye disorder NOS	1
+F5002	Chronic pinna perichondritis	1
+FRTA1246	Froben  Tablets  50 mg	2
+FyuF9	[X]Other retinal disorders in diseases classified elsewhere	1
+G130	Mitral and aortic stenosis	2
+G57y1	Severe sinus bradycardia	1
+G63y0	Cerebral infarct due to thrombosis of precerebral arteries	1
+G650	Basilar artery syndrome	1
+G6510	Vertebro-basilar artery syndrome	1
+G662	Posterior cerebral artery syndrome	1
+GLTA1303	Glibenclamide  Tablets  5 mg	1
+H013	Acute sphenoidal sinusitis	1
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	4
+J1541	Bile induced gastritis	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+K013	Nephrotic syndrome with minimal change glomerulonephritis	1
+K10yz	Unspecified pyelonephritis NOS	1
+L03	Ectopic pregnancy	1
+N05z5	Osteoarthritis NOS-pelv./thigh	1
+N05zH	OA NOS-DIP joint of finger	1
+N0941	Arthralgia of the shoulder region	2
+NAMASPO1	Unknown vendor specific drug	1
+NIM/16463NEMIS	Nicotinic Acid Titration Starter Pack  M/R tablets  7 x 375 mg, 7 x 500 mg, 7 x 750 mg	3
+NIM/21927EMIS	Nicardipine Hydrochloride  M/R capsules  45 mg	1
+PH34	Other specified birthmark	4
+S3521	Closed fracture of talus	4
+S352C	Closed fracture metatarsal shaft	19
+TECA5420	Tetracycline Hydrochloride  Capsules  250 mg	6

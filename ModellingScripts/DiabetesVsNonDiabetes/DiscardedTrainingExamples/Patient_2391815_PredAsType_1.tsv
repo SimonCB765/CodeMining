@@ -1,0 +1,122 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	7
+1361	Teetotaller	1
+137S	Ex smoker	3
+138	Exercise grading	3
+13A	Diet - patient initiated	3
+1AA	Prostatism	1
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	2
+22A	O/E - weight	8
+22K	Body Mass Index	8
+246	O/E - blood pressure reading	24
+2G5	O/E - foot	1
+32	Electrocardiography	1
+394	Bladder - assessment	2
+423	Haemoglobin estimation	17
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42C	RBC - red blood cell size	3
+42QE	International normalised ratio	2
+42R4	Serum ferritin	1
+42R5	Serum TIBC	1
+42R7	Serum iron level	1
+42RZ	Serum iron tests NOS	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42bE	Percentage hypochromic cells	2
+43Z2	Prostate specific antigen	1
+44A1	Serum parathyroid hormone	1
+44CC	Plasma C reactive protein	1
+44CS	Serum C reactive protein level	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	15
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	38
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	9
+44Q	Serum triglycerides	10
+44f1	Serum fasting glucose level	1
+44g	Plasma glucose level	8
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	21
+461	Urine exam. - general	2
+4669	Urine dipstick for glucose	1
+467	Urine protein test	2
+4679	Urine dipstick for protein	3
+4698	Urine dipstick for blood	1
+46M7	Urine creatinine	1
+46N3	Urine total protein	2
+46N4	Urine albumin	3
+46N6	24 hour urine albumin output	3
+46TC	Urine albumin:creatinine ratio	2
+46Z1	Urine microscopy	2
+6572	Pneumococcal vaccination	1
+66i	Chronic kidney disease monitoring	1
+6781	Health education offered	1
+679	Health education - subject	2
+6896	Depression screening using questions	3
+7B1B	Diagnostic endoscopic examination of ureter	1
+7B27	Endoscopic extirpation of bladder lesion	2
+7B2A	Diagnostic cystoscopy	1
+7B390	Transurethral prostatectomy	1
+7B44	Diagnostic urethroscopic procedures	1
+8H4a	Referral to renal physician	1
+8H7h	Urgent referral	2
+8HE	Discharged from hospital	8
+8HQ1	Refer for X-Ray	1
+8I26	Beta blocker contraindicated	1
+8I3C	Statin declined	1
+8I62	Beta blocker not indicated	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I74	Angiotensin converting enzyme inhibitor not tolerated	1
+9180	Carer's details	1
+9N1I	Seen in urology clinic	2
+9N2U	Seen by optician	1
+9N35	Letter encounter to patient	1
+9N47	Appt cancelled by patient	1
+9N57	Admin reason for encounter	1
+AB0	Dermatophytosis including tinea or ringworm	2
+C1000	Diab.mell.no comp. - juvenile	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+Dyu33	[X]Other specified haemorrhagic conditions	1
+ERE/2023NEMIS	Erythromycin  E/c tablets  250 mg	1
+F4F1	Other lacrimal gland disorders	1
+F4F22	Epiphora due to insufficient drainage	1
+FRTA1246	Froben  Tablets  50 mg	1
+Fyu5E	[X]Chronic headache disorder	2
+G5800	Acute congestive heart failure	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	2
+J120z	Acute duodenal ulcer NOS	1
+K02	Chronic glomerulonephritis	1
+K021	Chronic membranous glomerulonephritis	1
+N05zC	"Osteoarthritis NOS	2
+POOLEME4	Unknown vendor specific drug	1
+Y1797	Unknown vendor specific drug	13
+ZIOR16895NEMIS	Zispin Soltab  Orodispersible tablets  45 mg	2
+bdf4	*MONOCOR 10mg tablets	2
+bi3b	*CARACE 20mg tablets	15
+bl3n	ELANTAN LA 25mg m/r capsules	1
+bl5W	CALCICARD CR 120mg m/r tablets	6
+bl5q	VIAZEM XL 240mg m/r capsules	2
+bl8w	NIFEDIPINE 10mg m/r tablets	9
+bl8x	NIFEDIPINE 30mg m/r tablets	3
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	18
+d284	UCERAX 25mg tablets	4
+dj42	CODEINE PHOSPHATE 30mg tablets	1
+e614	CEFACLOR 250mg capsules	2
+f27p	PENMIX 30/70 preloaded injection pen	1
+f27w	HUMULIN M1 10/90 cartridges 3mL	2
+f28D	HUMULIN M3 100iu/mL prefilled pen 3mL	2
+fe61	PREDNISOLONE 1mg tablets	4
+gc72	FLOMAX MR 400micrograms m/r capsules	2
+o42R	FENTANYL 12micrograms/hr patches	1
+p899	URO-FLO SILKY 12Ch/USCC12M coated PVC male nelaton catheter	1

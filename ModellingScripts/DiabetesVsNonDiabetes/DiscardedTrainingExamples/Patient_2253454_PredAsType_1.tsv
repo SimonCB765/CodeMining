@@ -1,0 +1,104 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	4
+1362	Trivial drinker - <1u/day	1
+1363	Light drinker - 1-2u/day	3
+137S	Ex smoker	3
+1383	Enjoys light exercise	3
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	3
+229	O/E - height	3
+22A	O/E - weight	7
+22K	Body Mass Index	7
+2469	O/E - Systolic BP reading	19
+3128	Fundoscopy	2
+3212	Standard ECG	1
+32131	Exercise ECG abnormal	1
+423	Haemoglobin estimation	19
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+43Z2	Prostate specific antigen	11
+44CB	Serum transferrin	1
+44F	Serum alkaline phosphatase	2
+44I4	Serum potassium	20
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	40
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	4
+44P6	Serum LDL cholesterol level	4
+44Q	Serum triglycerides	13
+44U	Blood glucose result	1
+44g	Plasma glucose level	10
+44lD	Urine protein/creatinine ratio	7
+451E	GFR calculated abbreviated MDRD	31
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	5
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	2
+46M7	Urine creatinine	3
+46N	Urine protein	1
+46X1	Urine nitrite negative	1
+46f1	Urine leucocyte test = negative	1
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	2
+6799	Health ed. - diet	3
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	2
+792	Coronary artery operations	2
+7939	Catheterisation of heart	1
+8B6A	Statin prophylaxis	1
+8CAM	Patient advised about alcohol	1
+8H4	Referral to physician	1
+8H43	Dermatological referral	2
+8H44	Cardiological referral	1
+8H51	General surgical referral	1
+8H52	Ophthalmological referral	1
+8H5D	Referred to vascular surgeon	1
+8H62	Referral to G.P.	1
+8Ha	Voluntary admission	1
+8I26	Beta blocker contraindicated	1
+8I2H	Angiotensin II receptor antagonists contraindicated	1
+9N4	Failed encounter	1
+9N42	Did not attend - no reason	2
+9S10	White British	1
+AB01	Dermatophytosis of nail	1
+ALCA74	Alfacalcidol  Capsules  250 nanograms	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	11
+ASDI224	Aspirin  Dispersible tablets  75 mg	15
+B46	Malignant neoplasm of prostate	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	9
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	20
+DIM/22264EMIS	Diltiazem Hydrochloride  M/R capsules  180 mg	3
+E012	Other alcoholic dementia	1
+E107	Schizo-affective schizophrenia	2
+F340	Carpal tunnel syndrome	1
+F4F22	Epiphora due to insufficient drainage	1
+FLTA1208	Flupenthixol  Tablets  1 mg	11
+FRTA1246	Froben  Tablets  50 mg	2
+FyuU1	[X]Other specified hearing loss	1
+G662	Posterior cerebral artery syndrome	1
+G831	Varicose veins of the leg with eczema	1
+HILI17293NEMIS	Hi-Line  Lightweight Support Belt  Res 4	3
+ININ15887NEMIS	Insulatard  Injection  100 units/ml, 10 ml vial	1
+J120z	Acute duodenal ulcer NOS	3
+L1813	Thyroid dysfunction in pregnancy - baby not yet delivered	3
+L39	Other complications of labour and delivery NEC	1
+NETA34105EMIS	Neomycin Sulphate  Tablets  500 mg	2
+NICA6970	Nitrofurantoin  Capsules  50 mg	1
+S3501	"Cls # calcaneus	13
+S3521	Closed fracture of talus	7
+S352C	Closed fracture metatarsal shaft	1
+S352D	Closed fracture metatarsal neck	2
+S352F	"Closed # metatarsal	1
+SITA25228NEMIS	Sitagliptin  Tablets  100 mg	1

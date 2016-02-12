@@ -1,0 +1,106 @@
+Code	Description	Count
+136	Alcohol consumption	5
+1362	Trivial drinker - <1u/day	1
+1374	Moderate smoker - 10-19 cigs/d	1
+137S	Ex smoker	6
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	3
+1384	Enjoys moderate exercise	1
+14O8	At risk of diabetes mellitus	1
+1F	Dietary history	1
+1Z12	Chronic kidney disease stage 3	2
+1Z1C	Chronic kidney disease stage 3 without proteinuria	1
+229	O/E - height	3
+22A	O/E - weight	10
+22K	Body Mass Index	10
+22N0	Waist circumference	1
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	19
+2BB1	O/E - retina normal	1
+321	ECG - general	1
+321Z	ECG - general - NOS	1
+3272	ECG: atrial fibrillation	1
+388B	Pack years	2
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	7
+42QE0	INR - international normal ratio normal	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	9
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	11
+44Q	Serum triglycerides	9
+44U	Blood glucose result	1
+44g	Plasma glucose level	6
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	6
+466	Urine test for glucose	1
+4662	Urine glucose test negative	2
+467	Urine protein test	3
+4671	Urine protein test not done	2
+4672	Urine protein test negative	3
+46M7	Urine creatinine	1
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	4
+5853	U-S heart scan	2
+6572	Pneumococcal vaccination	1
+66i	Chronic kidney disease monitoring	1
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+679J	Health education - asthma	1
+687	Endocrine/metabolic screening	2
+6896	Depression screening using questions	2
+8B6A	Statin prophylaxis	3
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	2
+8H54	Orthopaedic referral	1
+8H77	Refer to physiotherapist	1
+8I24	Aspirin prophylaxis contra-indicated	5
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I6B	Clopidogrel not indicated	2
+8I6C	Angiotensin II receptor antagonist not indicated	1
+8I6a	Dipyridamole not indicated	2
+8I74	Angiotensin converting enzyme inhibitor not tolerated	4
+9N11	Seen in GP's surgery	1
+9N21	Seen by general practitioner	1
+9i0	British or mixed British - ethnic category 2001 census	4
+ASDI224	Aspirin  Dispersible tablets  75 mg	2
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	24
+C11y2	Impaired glucose tolerance	13
+DETA50007EMIS	Dexketoprofen Trometamol  Tablets  25 mg	1
+DETA845	Dexamethasone  Tablets  2 mg	1
+DIM/22265EMIS	Diltiazem Hydrochloride  M/R capsules  300 mg	22
+F4F22	Epiphora due to insufficient drainage	1
+F5010	Unspecified infective otitis externa	1
+FRTA1246	Froben  Tablets  50 mg	2
+G24z	Secondary hypertension NOS	2
+G5800	Acute congestive heart failure	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+GOCA23759EMIS	Gopten  Capsules  1 mg	1
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+N05z9	"Osteoarthritis NOS	1
+N0957	Stiff joint NEC-ankle/foot	1
+N331M	Fragility fracture due to unspecified osteoporosis	9
+PRCA8367EGTON	Prozac  Capsules  20 mg	2
+PRM/22791NEMIS	Propiverine Hydrochloride  M/R capsules  30 mg	1
+PROIEGTON6467	Pragmatar  Ointment	1
+S3521	Closed fracture of talus	16
+TOTA24440EMIS	Torasemide  Tablets  10 mg	1
+Ub0qs	Unknown vendor specific drug	13
+Ub1ju	Unknown vendor specific drug	3
+Ub1md	Unknown vendor specific drug	1

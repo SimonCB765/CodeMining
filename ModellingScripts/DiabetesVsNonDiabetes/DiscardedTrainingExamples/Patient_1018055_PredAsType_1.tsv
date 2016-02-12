@@ -1,0 +1,146 @@
+Code	Description	Count
+12C1	FH: Hypertension	2
+136	Alcohol consumption	10
+137L	Current non-smoker	1
+137S	Ex smoker	3
+1381	Exercise physically impossible	1
+1383	Enjoys light exercise	2
+14G6	H/O: fragility fracture	1
+1FA	Diet good	2
+1Z12	Chronic kidney disease stage 3	3
+229	O/E - height	7
+2296	O/E - loss of height	1
+22A	O/E - weight	7
+22K	Body Mass Index	7
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	24
+3232	ECG: old myocardial infarction	2
+3263	ECG: ventricular ectopics	1
+3273	ECG: atrial flutter	1
+423	Haemoglobin estimation	13
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	8
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W5	Haemoglobin A1c level - IFCC standardised	1
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	2
+44CS	Serum C reactive protein level	3
+44E3	Total bilirubin	1
+44EC	Serum total bilirubin level	1
+44F	Serum alkaline phosphatase	3
+44FZ	Serum alkaline phosphatase NOS	1
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	20
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	3
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	29
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	9
+44PB	Serum fasting HDL cholesterol level	2
+44PD	Serum fasting LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	9
+44Q5	Serum random triglyceride level	3
+44TB	Haemoglobin A1c level	1
+44Uz	Blood glucose raised NOS	1
+44f1	Serum fasting glucose level	14
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	18
+4615	MSU sent to lab.	1
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	1
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	2
+46A2	Urine pH = 5.0	2
+46M7	Urine creatinine	2
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	2
+46U	Urine culture	1
+46W	Urine microalbumin	2
+46X1	Urine nitrite negative	1
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	2
+6792	Health ed. - alcohol	4
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	2
+6896	Depression screening using questions	2
+7939	Catheterisation of heart	1
+8B3T	Over the counter aspirin therapy	1
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	2
+8CA46	Pt advised re low fat diet	2
+8H21	Admit medical emergency unsp.	1
+8H22	Admit surgical emergency unsp.	2
+8H41	General medical referral	1
+8H44	Cardiological referral	1
+8H4B	Referred to rheumatologist	1
+8H52	Ophthalmological referral	1
+8H5B	Referred to urologist	1
+8H7	Other referral	2
+8H72	Refer to district nurse	3
+8I26	Beta blocker contraindicated	5
+8I66	Aspirin not indicated	2
+8I74	Angiotensin converting enzyme inhibitor not tolerated	3
+9N0h	Seen in osteoporosis clinic	1
+9N1P	Seen in cardiac clinic	1
+9N32	Third party encounter	1
+9N36	Letter from specialist	2
+A35	Erysipelas	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	3
+ADEF28927NEMIS	Adcal-D3 Dissolve  Effervescent tablets  1.5 grams + 400 units	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	6
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	6
+ASTA225	Aspirin  Tablets  300 mg	1
+BUTA434	Bumetanide  Tablets  1 mg	2
+D0110	Vitamin B12 deficiency anaemia due to dietary causes	2
+DETA20911NEMIS	Dexibuprofen  Tablets  300 mg	3
+DIM/12096NEMIS	Disogram Sr  M/R capsules  120 mg	12
+EMISQ2W6	Unknown vendor specific drug	5
+EMISQ2W7	Unknown vendor specific drug	5
+EMISQ2W8	Unknown vendor specific drug	13
+EMISQAL1	Unknown vendor specific drug	1
+ETCA10348BRIDL	Etodolac  Capsules  300 mg	1
+FLTA1194	Fluanxol  Tablets  500 micrograms	6
+FLTA1208	Flupenthixol  Tablets  1 mg	14
+FOIN20118NEMIS	Fondaparinux Sodium  Injection (Prefilled Syringe)  7.5 mg/0.6 ml pre-filled syringe	1
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE10	Unknown vendor specific drug	1
+FyuU1	[X]Other specified hearing loss	1
+G24z0	Secondary renovascular hypertension NOS	2
+G3114	Worsening angina	2
+G33z	Angina pectoris NOS	1
+G662	Posterior cerebral artery syndrome	1
+GASTOSE3	Unknown vendor specific drug	1
+H06z0	Chest infection NOS	1
+HUIN3713	Human Monotard (Novo)  Injection  100 units/ml	1
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	2
+J11z	Gastric ulcer NOS	2
+J1201	Acute duodenal ulcer with haemorrhage	1
+J120z	Acute duodenal ulcer NOS	4
+M21	Other atrophic and hypertrophic conditions of skin	2
+META9686HILLI	Mefloquine Hydrochloride  Tablets  250 mg	1
+N04	Rheumatoid arthritis and other inflammatory polyarthropathy	1
+N083C	Recurrent subluxation of shoulder - anterior	1
+PH34	Other specified birthmark	6
+PRIN31293EMIS	Prostap 3  Injection  11.25 mg/2 ml vial	1
+S2403	Closed fracture triquetral	1
+S3501	"Cls # calcaneus	1
+S3521	Closed fracture of talus	10
+S352C	Closed fracture metatarsal shaft	9
+SESH5910	Selsun  Shampoo  2.5 %	3
+U6004	[X]Tetracyclines causing adverse effects in therapeutic use	6
+ULIN15920NEMIS	Ultratard  Injection  100 units/ml, 10 ml vial	1
+Ub0qs	Unknown vendor specific drug	16

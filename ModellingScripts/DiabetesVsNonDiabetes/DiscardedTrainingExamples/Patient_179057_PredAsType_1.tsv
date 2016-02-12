@@ -1,0 +1,97 @@
+Code	Description	Count
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	11
+1371	Never smoked tobacco	5
+137P	Cigarette smoker	1
+1383	Enjoys light exercise	5
+1A1	Micturition frequency	4
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	3
+22A	O/E - weight	10
+22K	Body Mass Index	10
+2469	O/E - Systolic BP reading	15
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	5
+42R7	Serum iron level	2
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+44CC	Plasma C reactive protein	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	12
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	9
+44TB	Haemoglobin A1c level	2
+44U	Blood glucose result	1
+44g	Plasma glucose level	8
+44g1	Plasma fasting glucose level	2
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	9
+4613	Urinalysis = no abnormality	2
+4614	Urinalysis = abnormal	1
+4662	Urine glucose test negative	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	2
+46N	Urine protein	2
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	2
+65720	Pneumococcal vaccination given	1
+6792	Health ed. - alcohol	2
+679J	Health education - asthma	1
+6896	Depression screening using questions	3
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	3
+8H48	Gastroenterological referral	1
+8H53	ENT referral	1
+8H7t	Referral to pharmacist	2
+8I64	Angiotensin converting enzyme inhibitor not indicated	3
+8I65	Warfarin not indicated	2
+8I6B	Clopidogrel not indicated	2
+8I76	Statin not tolerated	1
+9OI5	Hypertens.monitor 2nd letter	2
+9i0	British or mixed British - ethnic category 2001 census	1
+AB230	Candidal intertrigo	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	15
+C1000	Diab.mell.no comp. - juvenile	2
+CATA2345NEMIS	Cardicor  Tablets  10 mg	1
+COOI9895BRIDL	Cocois  Ointment	2
+DATO10836BRIDL	Dalacin T  Topical solution  1 %	3
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	1
+DEM/22793NEMIS	Detrunorm Xl  M/R capsules  30 mg	1
+DUGA18738NEMIS	Duloxetine  Gastro-resistant Capsules  40 mg	1
+EMIS9	Unknown vendor specific drug	1
+EMISNQLU7	Unknown vendor specific drug	1
+FLTA1208	Flupenthixol  Tablets  1 mg	8
+FRTA1246	Froben  Tablets  50 mg	1
+FUNDHRE10	Unknown vendor specific drug	2
+Fyu5E	[X]Chronic headache disorder	1
+G662	Posterior cerebral artery syndrome	3
+H120z	Chronic rhinitis NOS	2
+HEWITAS8	Unknown vendor specific drug	3
+HYTA1421	Hypovase  Tablets  500 micrograms	3
+INTA20285NEMIS	Inegy  Tablets  10 mg/40 mg	3
+M085	Cellulitis of leg	6
+M087	Chronic paronychia	18
+N3305	Drug-induced osteoporosis	1
+N331J	Collapse of lumbar vertebra due to osteoporosis	24
+NAMASHO1	Unknown vendor specific drug	3
+S3501	"Cls # calcaneus	12
+TETA1044NEMIS	Telmisartan  Tablets  80 mg	1
+U6090	[X]Tricyc/tetracyc antidepres caus advers eff therapeut use	6

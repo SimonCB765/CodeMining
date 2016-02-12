@@ -1,0 +1,134 @@
+Code	Description	Count
+136	Alcohol consumption	9
+1361	Teetotaller	1
+1371	Never smoked tobacco	4
+1383	Enjoys light exercise	4
+1A23	Incontinence of urine	2
+1A59	C/O pelvic pain	1
+1B1A	Memory loss - amnesia	2
+1BT	Depressed mood	1
+229	O/E - height	8
+22A	O/E - weight	9
+22K	Body Mass Index	9
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	28
+313B	Audiogram	1
+32	Electrocardiography	1
+321	ECG - general	1
+3212	Standard ECG	1
+3217	ECG abnormal	1
+3222	ECG:shows myocardial ischaemia	1
+33B9	Exercise tolerance test	1
+423	Haemoglobin estimation	17
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R7	Serum iron level	3
+42T	Serum vitamin B12	4
+42U5	Serum folate	3
+44CB	Serum transferrin	1
+44CC	Plasma C reactive protein	7
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	10
+44J9	Serum urea level	4
+44LA	Serum vitamin D	2
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	8
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	11
+44g	Plasma glucose level	5
+44g1	Plasma fasting glucose level	2
+451E	GFR calculated abbreviated MDRD	5
+461	Urine exam. - general	3
+4661	Urine glucose test not done	1
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4671	Urine protein test not done	2
+4672	Urine protein test negative	2
+4675	Urine protein test = ++	1
+4678	Proteinuria	1
+4682	Urine ketone test negative	1
+4693	Urine: trace non-haemol. blood	1
+46G4	Urine micr.:leucocytes present	1
+6791	Health ed. - smoking	1
+67E2	Travel vaccination given	1
+6896	Depression screening using questions	3
+7B1A3	Endoscopic dilatation of ureter	1
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	2
+8H	Referral for further care	2
+8H46	Neurological referral	1
+8H49	Psychiatric referral	1
+8H51	General surgical referral	1
+8H54	Orthopaedic referral	1
+8H59	Referred to plastic surgeon	1
+8HE2	Discharged from inpatient care	1
+8HQ1	Refer for X-Ray	2
+8Hd	Admission to hospital	1
+8I24	Aspirin prophylaxis contra-indicated	4
+9N0M	Seen in radiology department	1
+9N2U	Seen by optician	2
+9N36	Letter from specialist	1
+9N7C	Patient asked to make an appointment	1
+9OI4	Hypertens.monitor.1st letter	3
+9i7	Indian or British Indian - ethnic category 2001 census	2
+A79z	Viral infection NOS	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	5
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	13
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+AMTA9080EMIS	Amlodipine Besilate  Tablets  10 mg	3
+ASTA225	Aspirin  Tablets  300 mg	4
+ATTA230	Atenolol  Tablets  100 mg	20
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	9
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	12
+BUTA10619BRIDL	Buspirone Hydrochloride  Tablets  5 mg	1
+CAEF1326NEMIS	Calcium Carbonate  Effervescent tablets  1.25 grams	1
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	10
+COSA21955EMIS	Colestid Orange  Sachets  5 grams/sachet	1
+DEM/22793NEMIS	Detrunorm Xl  M/R capsules  30 mg	1
+DETA845	Dexamethasone  Tablets  2 mg	6
+DIM/22266EMIS	Diltiazem Hydrochloride  M/R capsules  90 mg	5
+DITA3417	Diamicron  Tablets  80 mg	1
+E2112	Depressive personality disorder	1
+E2653	Psychogenic dysuria	2
+EMISQ2W7	Unknown vendor specific drug	1
+EMISSPR502	Unknown vendor specific drug	1
+ERGE387NEMIS	Erythromycin  Gel  4%	3
+Eu43y	[X]Other reactions to severe stress	1
+F5140	Allergic otitis media NOS	1
+F54y3	Retraction of tympanic membrane	7
+FRTA1250	Frusemide  Tablets  500 mg	1
+FUNDHRE10	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	2
+G23	Hypertensive heart and renal disease	1
+G33z	Angina pectoris NOS	2
+G33z4	Ischaemic chest pain	1
+G5415	Aortic stenosis	1
+G5703	Paroxysmal nodal tachycardia	2
+G7320	Gangrene of toe	5
+GASTOSE3	Unknown vendor specific drug	1
+H060w	Acute viral bronchitis unspecified	1
+HEWITAS8	Unknown vendor specific drug	2
+HYTA3731	Hydrocortone  Tablets  10 mg	12
+HYTA5012	Hydroxychloroquine Sulphate  Tablets  200 mg	8
+INTA20285NEMIS	Inegy  Tablets  10 mg/40 mg	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	2
+J1541	Bile induced gastritis	2
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+K12z	Urinary calculus NOS	1
+M095	Skin abscess	3
+M21X	"Hypertroph disord skin	1
+M21yA	Disseminated superficial actinic porokeratosis	1
+META1793	Methylcellulose  Tablets  500 mg	1
+MOTA3978	Motival  Tablets	1
+MOTA8435BRID	Monocor  Tablets  10 mg	1
+PE60	Congenital talipes valgus	1
+PH34	Other specified birthmark	1

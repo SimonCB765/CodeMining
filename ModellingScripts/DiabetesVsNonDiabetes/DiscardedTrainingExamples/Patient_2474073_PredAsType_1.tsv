@@ -1,0 +1,140 @@
+Code	Description	Count
+136	Alcohol consumption	1
+1361	Teetotaller	1
+136M	Current non drinker	2
+137S	Ex smoker	2
+1384	Enjoys moderate exercise	1
+138J	FITT activity level 1; 1-4 occas of mod/vig activit in 4 wks	1
+13l	Main spoken language	1
+1BT	Depressed mood	1
+1Z13	Chronic kidney disease stage 4	1
+1Z14	Chronic kidney disease stage 5	1
+229	O/E - height	2
+22A	O/E - weight	3
+22K	Body Mass Index	4
+246	O/E - blood pressure reading	24
+2466	O/E - BP reading raised	1
+423	Haemoglobin estimation	15
+428	Mean corpusc. haemoglobin(MCH)	1
+428Z	MCH - NOS	1
+42A	Mean corpuscular volume (MCV)	2
+42AZ	MCV - NOS	1
+42R4	Serum ferritin	1
+42R42	Serum ferritin normal	1
+42R7	Serum iron level	2
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	1
+44A1	Serum parathyroid hormone	3
+44CS	Serum C reactive protein level	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	22
+44J9	Serum urea level	2
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	4
+44P6	Serum LDL cholesterol level	4
+44PF	Total cholesterol:HDL ratio	1
+44PH	Total cholesterol measurement	2
+44Q	Serum triglycerides	7
+44QZ	Serum triglycerides NOS	2
+44TB	Haemoglobin A1c level	1
+44TJ	Blood glucose level	4
+44f1	Serum fasting glucose level	3
+44g	Plasma glucose level	1
+44g1	Plasma fasting glucose level	1
+44h5	Blood inorganic phosphate level	1
+44lD	Urine protein/creatinine ratio	1
+451F	Glomerular filtration rate	2
+467A	24 hour urine protein output	1
+46M7	Urine creatinine	1
+46N	Urine protein	1
+46TC	Urine albumin:creatinine ratio	1
+554	Coronary arteriogr.-general	1
+556	Abdominal aortography-general	1
+585I	Ultrasound scan abnormal	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	1
+6896	Depression screening using questions	2
+792	Coronary artery operations	1
+7A601	Creation of arteriovenous fistula NEC	1
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	1
+8H	Referral for further care	1
+8H47	Geriatric referral	1
+8H52	Ophthalmological referral	1
+8H5D	Referred to vascular surgeon	1
+8H78	Refer to counsellor	1
+8I	Procedure not carried out	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I65	Warfarin not indicated	1
+9N01	Seen in general surgery clinic	1
+9N03	Seen in hypertension clinic	1
+9N19	Seen in hospital casualty	1
+9N1m	Seen in nephrology clinic	1
+9N31	Telephone encounter	1
+9N36	Letter from specialist	1
+9S3	Black African	1
+9h31	Excepted from hypertension qual indicators: Patient unsuit	1
+AB0	Dermatophytosis including tinea or ringworm	1
+AB05	Dermatophytosis of the body	1
+COSE22005NEMIS	Coloplast Conveen Optima  Self-sealing urisheaths  shorter length, 30 mm, 22130	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+E107	Schizo-affective schizophrenia	2
+F4202	Preproliferative diabetic retinopathy	1
+F4276	Retinitis pigmentosa	1
+FRTA1246	Froben  Tablets  50 mg	2
+Fyu5E	[X]Chronic headache disorder	1
+G1	Chronic rheumatic heart disease	1
+G5703	Paroxysmal nodal tachycardia	1
+G580	Congestive heart failure	1
+ISTA1523	Isosorbide Mononitrate  Tablets  20 mg	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	2
+J11z	Gastric ulcer NOS	1
+J120z	Acute duodenal ulcer NOS	1
+J1211	Chronic duodenal ulcer with haemorrhage	1
+LMRGPON1	Unknown vendor specific drug	2
+PD021	Unilateral congenital absence of kidney	1
+PREN8412EGTON	Prednisolone  E/c tablets  5 mg	1
+Y1797	Unknown vendor specific drug	4
+b113	DIGOXIN 250microgram tablets	3
+b433	SPIRONOLACTONE 100mg tablets	4
+b43l	SPIRONOLACTONE 10mg/5mL oral suspension	17
+bd2y	ACEBUTOLOL 400mg tablets	18
+bd36	ATENOLOL 100mg tablets	9
+bd8e	SLOW-TRASICOR 160mg m/r tablets	1
+bg2y	*DEBRISOQUINE 10mg tablets	1
+bi21	INNOVACE 2.5mg tablets	2
+bi22	INNOVACE 5mg tablets	1
+bi3b	*CARACE 20mg tablets	1
+bi3c	ZESTRIL 2.5mg tablets 28CP	1
+bi3d	ZESTRIL 2.5mg tablets	7
+bi41	QUINAPRIL 5mg tablets	22
+bi44	ACCUPRO 5mg tablets 28CP	3
+bi4A	QUINAPRIL 40mg tablets	4
+bk41	VALSARTAN 40mg capsules	1
+bl3u	ISOSORBIDE MONONITRATE 25mg m/r capsules	25
+bl8x	NIFEDIPINE 30mg m/r tablets	1
+blb2	AMLODIPINE 10mg tablets	5
+blc3	PLENDIL 5mg m/r tablets	11
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	6
+blzz	GLYCERYL TRINITRATE 10mg/24hrs patches	20
+bs1B	MAREVAN 0.5mg tablets	1
+di22	PARACETAMOL 500mg soluble tabs	2
+e618	CEFACLOR 500mg capsules	2
+gc72	FLOMAX MR 400micrograms m/r capsules	3
+gh54	VIAGRA 25mg tablets	3
+h82A	NEORAL 25mg capsules	1
+h82C	NEORAL 100mg capsules	1
+ij26	CALCIUM CARBONATE 500mg effervescent tablets	3
+ij31	CALCIUM ACETATE 1g tablets	1
+j287	BRUFEN 200mg tablets	2

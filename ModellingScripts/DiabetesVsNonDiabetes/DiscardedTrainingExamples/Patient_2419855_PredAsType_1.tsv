@@ -1,0 +1,123 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	10
+1371	Never smoked tobacco	2
+137L	Current non-smoker	2
+137S	Ex smoker	2
+1384	Enjoys moderate exercise	5
+13A4	Low fat diet	1
+13l4	Main spoken language English	1
+1Z11	Chronic kidney disease stage 2	1
+1Z12	Chronic kidney disease stage 3	3
+229	O/E - height	9
+22A	O/E - weight	15
+22K	Body Mass Index	15
+246	O/E - blood pressure reading	20
+32	Electrocardiography	1
+3272	ECG: atrial fibrillation	1
+329A	ECG: left bundle branch block	1
+423	Haemoglobin estimation	15
+428	Mean corpusc. haemoglobin(MCH)	5
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	4
+42R4	Serum ferritin	4
+42R7	Serum iron level	1
+42T	Serum vitamin B12	5
+42U5	Serum folate	4
+43Z2	Prostate specific antigen	3
+44CC	Plasma C reactive protein	6
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	23
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	22
+44P5	Serum HDL cholesterol level	15
+44P6	Serum LDL cholesterol level	16
+44PF	Total cholesterol:HDL ratio	16
+44Q	Serum triglycerides	18
+44Q3	Serum triglycerides raised	1
+44g	Plasma glucose level	8
+44g1	Plasma fasting glucose level	4
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	12
+4613	Urinalysis = no abnormality	1
+4615	MSU sent to lab.	1
+4618	Urine dipstick test	2
+4662	Urine glucose test negative	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	2
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	1
+46N	Urine protein	2
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+46U	Urine culture	1
+4JJ1	MSU sent for C/S	1
+6572	Pneumococcal vaccination	1
+67H1	Lifestyle advice regarding smoking	1
+67I8	Advice about taking aspirin	2
+6896	Depression screening using questions	3
+792	Coronary artery operations	2
+7B01	Total nephrectomy	1
+7B390	Transurethral prostatectomy	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	1
+8CAM	Patient advised about alcohol	1
+8H	Referral for further care	1
+8H77	Refer to physiotherapist	1
+8I24	Aspirin prophylaxis contra-indicated	2
+8I62	Beta blocker not indicated	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I65	Warfarin not indicated	1
+8I66	Aspirin not indicated	1
+8I6B	Clopidogrel not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	1
+8I6a	Dipyridamole not indicated	1
+8I76	Statin not tolerated	1
+9N31	Telephone encounter	2
+9N42	Did not attend - no reason	1
+9N7D	Phlebotomy generated from secondary care done by practice	2
+9i0	British or mixed British - ethnic category 2001 census	1
+9k17	Alcohol screen - AUDIT C completed	1
+D01	Other deficiency anaemias	1
+E2C11	Solitary stealing	2
+F4Jy2	Convergence insufficiency	1
+FES/9145EMIS	Felodipine  M/R tablets  5 mg	1
+FRTA1246	Froben  Tablets  50 mg	4
+FUNDHRE10	Unknown vendor specific drug	3
+Fyu5E	[X]Chronic headache disorder	2
+G24z	Secondary hypertension NOS	1
+G24z1	Hypertension secondary to drug	1
+GLTA4960	Gliclazide  Tablets  80 mg	1
+H0612	Acute bronchiolitis with bronchospasm	1
+K04y	Other acute renal failure	1
+N0	Arthropathies and related disorders	1
+N05z7	Osteoarthritis NOS-ankle/foot	1
+PB6	Liver and biliary system anomalies	1
+biC7	COVERSYL ARGININE PLUS 5mg/1.25mg tablets	1
+bl5q	VIAZEM XL 240mg m/r capsules	1
+bl8J	TENSIPINE MR 10 m/r tablets	6
+bl8x	NIFEDIPINE 30mg m/r tablets	5
+ble1	LACIDIPINE 2mg tablets	2
+blzz	GLYCERYL TRINITRATE 10mg/24hrs patches	1
+bs17	WARFARIN SODIUM 1mg tablets	4
+bs21	SINTHROME 1mg tablets	11
+bu23	ASPIRIN 75mg dispersible tablets	2
+bu2c	ASPIRIN 75mg soluble tablets	1
+bu41	DIPYRIDAMOLE+ASPIRIN 200mg/25mg m/r capsules	1
+bxa7	OMACOR 1g capsules	1
+di12	ASPIRIN [CNS] 300mg dispersible tablets	1
+dia7	*CO-PROXAMOL tablets	1
+e618	CEFACLOR 500mg capsules	1
+f291	INSULIN GLARGINE 100iu/mL injection cartridges	2
+fe5y	METHYLPREDNISOLONE 80mg/2mL injection	4
+i221	*JECTOFER 100mg/2mL injection	2
+i44z	EPOETIN ALFA 5000iu/0.5mL prefilled syringe	1
+ij31	CALCIUM ACETATE 1g tablets	1

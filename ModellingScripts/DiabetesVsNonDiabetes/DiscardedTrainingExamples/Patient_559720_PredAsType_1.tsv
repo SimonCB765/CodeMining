@@ -1,0 +1,107 @@
+Code	Description	Count
+136	Alcohol consumption	4
+1361	Teetotaller	1
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	4
+1383	Enjoys light exercise	1
+13A	Diet - patient initiated	1
+1A26	Urge incontinence of urine	4
+1A8	Breast lump symptom	2
+229	O/E - height	2
+22A	O/E - weight	3
+22K	Body Mass Index	4
+246	O/E - blood pressure reading	20
+32	Electrocardiography	1
+3212	Standard ECG	1
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42C3	RBC's - macrocytic	1
+42QE	International normalised ratio	2
+42QE0	INR - international normal ratio normal	6
+42T	Serum vitamin B12	3
+42U4	Red blood cell folate	1
+44AF	Brain natriuretic peptide level	1
+44CC	Plasma C reactive protein	3
+44CS	Serum C reactive protein level	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	22
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	9
+44U	Blood glucose result	1
+44Wo	Plasma digoxin level	1
+451E	GFR calculated abbreviated MDRD	12
+467	Urine protein test	1
+4672	Urine protein test negative	1
+4679	Urine dipstick for protein	1
+4698	Urine dipstick for blood	1
+46A9	Urine dipstick for pH	1
+46G4	Urine micr.:leucocytes present	1
+46U	Urine culture	2
+46X	Urine nitrite	1
+554	Coronary arteriogr.-general	1
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+66U	Menopause monitoring	1
+6798	Health ed. - exercise	2
+6896	Depression screening using questions	3
+8CA4	Patient advised re diet	2
+8HJA	Trauma self-referral	2
+8I62	Beta blocker not indicated	1
+9N1O	Seen in rheumatology clinic	1
+9N1P	Seen in cardiac clinic	3
+9N2U	Seen by optician	1
+9N36	Letter from specialist	2
+9OI4	Hypertens.monitor.1st letter	1
+D0y	Other specified deficiency anaemias	2
+F4202	Preproliferative diabetic retinopathy	1
+F4522	Acute primary angle-closure glaucoma	1
+FRTA1246	Froben  Tablets  50 mg	2
+G1	Chronic rheumatic heart disease	1
+G244	Hypertension secondary to endocrine disorders	1
+G24z	Secondary hypertension NOS	1
+G3114	Worsening angina	1
+G5y0	Myocarditis NOS	1
+H060z	Acute bronchitis NOS	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+N05z5	Osteoarthritis NOS-pelv./thigh	2
+XaLT8	Unknown vendor specific drug	11
+Y1797	Unknown vendor specific drug	19
+bd1y	PROPRANOLOL 80mg m/r capsules	1
+bf21	METHYLDOPA 125mg tablets	1
+bg2y	*DEBRISOQUINE 10mg tablets	4
+bh13	DORALESE TILTAB 20mg tablets	27
+bi1z	CAPTOPRIL 50mg tablets	2
+bi21	INNOVACE 2.5mg tablets	1
+bi27	INNOVACE 20mg tablets x28	2
+bk58	COAPROVEL 300mg/12.5mg tablets	1
+bl8J	TENSIPINE MR 10 m/r tablets	5
+bl8K	TENSIPINE MR 20 m/r tablets	13
+bl8M	ADALAT LA 20mg m/r tablets	1
+bl8w	NIFEDIPINE 10mg m/r tablets	1
+blzx	GLYCERYL TRINITRATE 2% ointment	27
+bu2c	ASPIRIN 75mg soluble tablets	2
+du3k	NIQUITIN CQ 7mg/24hours patches	1
+e151	PHENOXYMETHYLPENICILLIN 250mg capsules	1
+e31U	CO-AMOXICLAV 625mg tablets	1
+f27c	HUMULIN M2 20/80 cartridges 1.5mL	11
+f27m	*PENMIX 20/80 cartridges 1.5mL	2
+f2Ay	INSULIN DETEMIR 100iu/mL prefilled pen	1
+fi61	PROSCAR 5mg tablets	2
+ft45	AVANDAMET 2mg / 1000mg tablets	1
+he81	LEUPRORELIN 3.75mg injection	4
+ij26	CALCIUM CARBONATE 500mg effervescent tablets	3
+ij31	CALCIUM ACETATE 1g tablets	1

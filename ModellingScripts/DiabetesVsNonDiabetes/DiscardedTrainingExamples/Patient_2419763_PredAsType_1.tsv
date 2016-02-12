@@ -1,0 +1,120 @@
+Code	Description	Count
+136	Alcohol consumption	11
+1371	Never smoked tobacco	1
+1375	Heavy smoker - 20-39 cigs/day	1
+137L	Current non-smoker	2
+137P	Cigarette smoker	1
+137S	Ex smoker	2
+138	Exercise grading	1
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+1Z11	Chronic kidney disease stage 2	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	5
+22A	O/E - weight	11
+22K	Body Mass Index	11
+246	O/E - blood pressure reading	21
+246N	Standing systolic blood pressure	1
+246P	Standing diastolic blood pressure	1
+32	Electrocardiography	1
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	4
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	4
+42U5	Serum folate	3
+42W	Hb. A1C - diabetic control	1
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44CC	Plasma C reactive protein	7
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	18
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	11
+44PF	Total cholesterol:HDL ratio	11
+44Q	Serum triglycerides	10
+44Q3	Serum triglycerides raised	1
+44TB	Haemoglobin A1c level	5
+44U	Blood glucose result	3
+44g	Plasma glucose level	9
+44g1	Plasma fasting glucose level	3
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	10
+4613	Urinalysis = no abnormality	3
+4615	MSU sent to lab.	1
+4618	Urine dipstick test	3
+4674	Urine protein test = +	3
+4695	Urine blood test = +	1
+46M7	Urine creatinine	1
+46N	Urine protein	1
+46U	Urine culture	2
+46X0	Urine nitrite positive	1
+4JJ1	MSU sent for C/S	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+67H1	Lifestyle advice regarding smoking	1
+67H2	Lifestyle advice regarding exercise	1
+6896	Depression screening using questions	2
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	3
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	2
+8HQ1	Refer for X-Ray	1
+8I26	Beta blocker contraindicated	1
+8I62	Beta blocker not indicated	1
+9N31	Telephone encounter	1
+9N4C	Failed encounter - no answer when rang back	1
+9NFA	District nurse visit	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AB0	Dermatophytosis including tinea or ringworm	1
+AB230	Candidal intertrigo	1
+E293	Adjustment reaction with predominant disturbance of conduct	1
+E2C11	Solitary stealing	1
+F5112	Bilateral chronic serous otitis	1
+FES/9145EMIS	Felodipine  M/R tablets  5 mg	1
+FRTA1246	Froben  Tablets  50 mg	5
+FUNDHRE10	Unknown vendor specific drug	3
+Fy02	Disorders of the sleep-wake schedule	1
+Fyu5E	[X]Chronic headache disorder	1
+G308	Inferior myocardial infarction NOS	1
+G33	Angina pectoris	1
+G401	Pulmonary embolism	1
+G5700	Paroxysmal atrial tachycardia	1
+G580	Congestive heart failure	2
+G5800	Acute congestive heart failure	1
+GLS/17962EMIS	Glyceryl Trinitrate  S/r buccal tablets  5 mg	1
+GLTA31482EMIS	Glimepiride  Tablets  2 mg	1
+INTA20285NEMIS	Inegy  Tablets  10 mg/40 mg	1
+N05zC	"Osteoarthritis NOS	1
+N083C	Recurrent subluxation of shoulder - anterior	1
+OXTA19601EMIS	Oxybutynin Hydrochloride  Tablets  3 mg	1
+PRCA8367EGTON	Prozac  Capsules  20 mg	1
+S200	Closed fracture of clavicle	1
+Y0737	Unknown vendor specific drug	11
+Y1365	Unknown vendor specific drug	7
+Y1797	Unknown vendor specific drug	1
+bdf6	EMCOR 10mg tablets	1
+bdf9	CARDICOR 1.25mg tablets	26
+bk4v	VALSARTAN 320mg tablets	23
+bl5q	VIAZEM XL 240mg m/r capsules	1
+bl8J	TENSIPINE MR 10 m/r tablets	4
+bl8M	ADALAT LA 20mg m/r tablets	3
+bl8w	NIFEDIPINE 10mg m/r tablets	6
+blb2	AMLODIPINE 10mg tablets	2
+bs12	MAREVAN 3mg tablets	8
+bs1B	MAREVAN 0.5mg tablets	4
+bs21	SINTHROME 1mg tablets	10
+e151	PHENOXYMETHYLPENICILLIN 250mg capsules	1
+e222	FLUCLOXACILLIN 500mg capsules	1
+j222	VOLTAROL 50mg tablets	1

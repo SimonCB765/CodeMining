@@ -1,0 +1,111 @@
+Code	Description	Count
+136	Alcohol consumption	2
+1365	Heavy drinker - 7-9u/day	1
+1371	Never smoked tobacco	2
+1383	Enjoys light exercise	2
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	4
+1Z1E	Chronic kidney disease stage 3A without proteinuria	3
+229	O/E - height	1
+22A	O/E - weight	2
+22K	Body Mass Index	2
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	25
+3216	ECG normal	1
+324	ECG:left ventricle hypertrophy	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	8
+42W4	HbA1c level (DCCT aligned)	2
+43Z2	Prostate specific antigen	14
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	17
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	29
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	18
+44P5	Serum HDL cholesterol level	17
+44P6	Serum LDL cholesterol level	17
+44Q	Serum triglycerides	17
+44TJ	Blood glucose level	4
+44TK	Fasting blood glucose level	4
+44U	Blood glucose result	1
+44W9	Serum digoxin level	1
+451E	GFR calculated abbreviated MDRD	14
+4613	Urinalysis = no abnormality	3
+4621	Urine = normal on inspection	1
+4641	Urine smell normal	1
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	4
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	1
+46B2	Urine bacteria test: negative	1
+46M7	Urine creatinine	1
+46N8	Urine microalbumin profile	2
+46TC	Urine albumin:creatinine ratio	3
+46W	Urine microalbumin	3
+554	Coronary arteriogr.-general	1
+57	Diagnostic nuclear medicine	1
+585	Other diagnostic ultrasound	1
+6572	Pneumococcal vaccination	1
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+79163	Open pulmonary valvotomy	1
+7B365	Radical prostatectomy without pelvic node excision	4
+8H	Referral for further care	1
+8H44	Cardiological referral	2
+8H46	Neurological referral	1
+8H4E	Referral to oncologist	1
+8H51	General surgical referral	2
+8H54	Orthopaedic referral	1
+8H59	Referred to plastic surgeon	1
+8I76	Statin not tolerated	1
+9N42	Did not attend - no reason	1
+9N45	Patient walked out	1
+9S1	White	1
+9S10	White British	1
+A53	Herpes zoster	1
+A701	Viral (infectious) hepatitis A	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	8
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+B46	Malignant neoplasm of prostate	3
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	8
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	6
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	11
+E2653	Psychogenic dysuria	1
+F4Jy2	Convergence insufficiency	1
+F5112	Bilateral chronic serous otitis	1
+FETA4868NEMIS	Ferrous Fumarate  Tablets  210 mg	1
+FLTA1194	Fluanxol  Tablets  500 micrograms	7
+FLTA1208	Flupenthixol  Tablets  1 mg	10
+FRTA1246	Froben  Tablets  50 mg	3
+G24z1	Hypertension secondary to drug	2
+H0612	Acute bronchiolitis with bronchospasm	1
+H160	Chronic laryngitis	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	1
+LYM/15358NEMIS	Lyrinel Xl  M/R tablets  5 mg	1
+M094	[X]Abscess of limb	1
+MUUR32590EMIS	Muse  Urethral Application  250 micrograms	1
+N05zK	"Osteoarthritis NOS	1
+NETA34105EMIS	Neomycin Sulphate  Tablets  500 mg	3
+NETA42086NEMIS	Unknown vendor specific drug	15
+NIPA17944EMIS	Nitro-Dur  Patches  5 mg	1
+NIPU29681EMIS	Nitromin  Cfc-free pump spray  400 micrograms/dose (180 dose)	2
+PH34	Other specified birthmark	1
+PRST8650EMIS	Prazosin Hydrochloride  Starter pack	3
+R1353	[D]Renal scarring	1
+S3501	"Cls # calcaneus	3
+U6002	[X]Chloramphen group caus adverse effects in therapeut use	5
+Ub0qs	Unknown vendor specific drug	6
+Ub1ju	Unknown vendor specific drug	1
+Ub1md	Unknown vendor specific drug	10

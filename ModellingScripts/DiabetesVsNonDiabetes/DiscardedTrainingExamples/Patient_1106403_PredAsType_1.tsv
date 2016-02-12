@@ -1,0 +1,104 @@
+Code	Description	Count
+136	Alcohol consumption	6
+1371	Never smoked tobacco	5
+137S	Ex smoker	2
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	9
+22A	O/E - weight	8
+22K	Body Mass Index	8
+2469	O/E - Systolic BP reading	22
+3272	ECG: atrial fibrillation	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	8
+42W4	HbA1c level (DCCT aligned)	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	13
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	8
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	8
+466	Urine test for glucose	1
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	2
+46M7	Urine creatinine	2
+46N3	Urine total protein	1
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	2
+6572	Pneumococcal vaccination	1
+6896	Depression screening using questions	1
+68A7	Diabetic retinopathy screening	1
+7911	Plastic repair of aortic valve	2
+792	Coronary artery operations	2
+7936	Introduction of cardiac pacemaker system via vein	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	6
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	1
+8H2F	Admit urology emergency	1
+8H44	Cardiological referral	2
+8H5B	Referred to urologist	2
+8HJA	Trauma self-referral	1
+8HTK	Referral to stop-smoking clinic	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I62	Beta blocker not indicated	3
+8I64	Angiotensin converting enzyme inhibitor not indicated	4
+8I66	Aspirin not indicated	2
+8I6B	Clopidogrel not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	1
+8I6L	Spirometry not indicated	2
+8I73	Beta blocker not tolerated	1
+9N19	Seen in hospital casualty	2
+9OX5	Influenza vaccination declined	1
+9S1	White	1
+9S10	White British	2
+9h32	Excepted from hypertension qual indicators: Informed dissent	1
+9i0	British or mixed British - ethnic category 2001 census	6
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	16
+C11y1	Drug-induced hypoglycaemia without coma	8
+C11y2	Impaired glucose tolerance	7
+DIM/22266EMIS	Diltiazem Hydrochloride  M/R capsules  90 mg	24
+E2653	Psychogenic dysuria	6
+EMISQLE6	Unknown vendor specific drug	12
+F30z	Trigeminal nerve disorder NOS	1
+F5614	Otogenic vertigo	3
+FETA22463EMIS	Feldene Melt  Orodispersible tablets  20 mg	5
+FLTA1208	Flupenthixol  Tablets  1 mg	19
+FRTA1246	Froben  Tablets  50 mg	1
+FUNDHPS1	Unknown vendor specific drug	1
+G3114	Worsening angina	1
+G580	Congestive heart failure	1
+H0421	Acute laryngotracheitis with obstruction	1
+H06z0	Chest infection NOS	1
+J120z	Acute duodenal ulcer NOS	1
+J1211	Chronic duodenal ulcer with haemorrhage	2
+K01x4	Nephrotic syndrome in systemic lupus erythematosus	1
+K02	Chronic glomerulonephritis	1
+K04y	Other acute renal failure	1
+PH34	Other specified birthmark	1
+PHTA6868	Phenindione  Tablets  50 mg	1
+PITA5315NEMIS	Pioglitazone Hydrochloride  Tablets  15 mg	24
+TC02	Fall on or from steps	1
+Ub0qs	Unknown vendor specific drug	5
+Ub1ju	Unknown vendor specific drug	7
+Ub1md	Unknown vendor specific drug	3
+Ub1tI	Unknown vendor specific drug	3

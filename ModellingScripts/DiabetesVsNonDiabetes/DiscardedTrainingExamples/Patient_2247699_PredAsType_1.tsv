@@ -1,0 +1,112 @@
+Code	Description	Count
+136	Alcohol consumption	4
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	3
+1383	Enjoys light exercise	3
+13AZ	Patient initiated diet NOS	1
+13l4	Main spoken language English	2
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	1
+22A	O/E - weight	9
+22K	Body Mass Index	9
+246	O/E - blood pressure reading	3
+2469	O/E - Systolic BP reading	21
+3213	Exercise ECG	2
+423	Haemoglobin estimation	6
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42B6	Erythrocyte sedimentation rate	3
+42P	Platelet count	1
+42QE	International normalised ratio	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42UZ	Blood folate NOS	1
+42Z5	Mean platelet volume	1
+42Z7	Red blood cell distribution width	2
+44CC	Plasma C reactive protein	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44G9	Serum gamma-glutamyl transferase level	1
+44I4	Serum potassium	15
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	26
+44J9	Serum urea level	2
+44Lc	Vitamin B12 level	1
+44Le	Plasma vitamin B12 level	1
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	2
+44P6	Serum LDL cholesterol level	2
+44Q	Serum triglycerides	12
+44TB	Haemoglobin A1c level	1
+44g	Plasma glucose level	9
+44l2	Cholesterol/HDL ratio	2
+44lD	Urine protein/creatinine ratio	6
+451E	GFR calculated abbreviated MDRD	14
+4615	MSU sent to lab.	1
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	6
+4673	Urine protein test = trace	2
+4682	Urine ketone test negative	3
+4692	Urine blood test = negative	3
+46M7	Urine creatinine	4
+46X1	Urine nitrite negative	2
+46f2	Urine leucocyte test = +	1
+5543	Coronary arteriograph.abnormal	1
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	2
+6896	Depression screening using questions	3
+68NE	No consent - influenza imm.	1
+7928	Transluminal balloon angioplasty of coronary artery	1
+79294	Insertion of coronary artery stent	2
+7939	Catheterisation of heart	1
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	1
+8CAM	Patient advised about alcohol	2
+8H44	Cardiological referral	1
+8H51	General surgical referral	2
+8H53	ENT referral	1
+8H54	Orthopaedic referral	1
+8HS	Referral for endoscopy	1
+9N42	Did not attend - no reason	2
+9S10	White British	2
+9i0	British or mixed British - ethnic category 2001 census	1
+A5411	Herpetic vulvovaginitis	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	13
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	16
+C1099	Non-insulin-dependent diabetes mellitus without complication	2
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	1
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	1
+E012	Other alcoholic dementia	1
+E2653	Psychogenic dysuria	1
+F461	Senile cataract	1
+F4F22	Epiphora due to insufficient drainage	1
+FLTA1194	Fluanxol  Tablets  500 micrograms	19
+FUNDHRE12	Unknown vendor specific drug	1
+Fy03	Sleep apnoea	1
+Fyu5E	[X]Chronic headache disorder	1
+G33z	Angina pectoris NOS	1
+G662	Posterior cerebral artery syndrome	3
+GACA10300BRIDL	Galenamox  Capsules  250 mg	1
+H021	Acute phlegmonous pharyngitis	1
+INTA20285NEMIS	Inegy  Tablets  10 mg/40 mg	2
+ISTA9943BRIDL	Istin  Tablets  5 mg	1
+K013	Nephrotic syndrome with minimal change glomerulonephritis	2
+L39	Other complications of labour and delivery NEC	1
+L3951	Forceps delivery - delivered	1
+M0100	Boil of ear	4
+M087	Chronic paronychia	3
+N0956	Stiff joint NEC-lower leg	1
+PROIEGTON6467	Pragmatar  Ointment	19
+S352C	Closed fracture metatarsal shaft	19
+S352H	Closed fracture of cuneiforms	1
+Xa1zh	Unknown vendor specific drug	1
+b28z	INDAPAMIDE 2.5mg tablets	3
+bh14	INDORAMIN 20mg tablets	18

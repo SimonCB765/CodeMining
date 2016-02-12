@@ -1,0 +1,134 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	1
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	4
+1371	Never smoked tobacco	2
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+1Z1E	Chronic kidney disease stage 3A without proteinuria	2
+229	O/E - height	1
+22A	O/E - weight	3
+22K	Body Mass Index	3
+2469	O/E - Systolic BP reading	22
+3135	Subjective audiometry	1
+32	Electrocardiography	1
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	6
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	3
+42U	Blood folate	1
+42U5	Serum folate	1
+44CC	Plasma C reactive protein	4
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	26
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	9
+44U	Blood glucose result	3
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	6
+4661	Urine glucose test not done	1
+4671	Urine protein test not done	1
+46M7	Urine creatinine	2
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	2
+46U	Urine culture	4
+4JJ1	MSU sent for C/S	2
+5855	U-S abdominal scan	1
+6572	Pneumococcal vaccination	1
+65720	Pneumococcal vaccination given	1
+67I9	Advice about weight	1
+6896	Depression screening using questions	3
+7B051	Open nephrostomy or pyelostomy	1
+7B0B	Extracorporeal shockwave lithotripsy for renal calculus	3
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	2
+8CA4	Patient advised re diet	1
+8CA48	Pt advised re low salt diet	2
+8H2	Emergency hospital admission	1
+8H21	Admit medical emergency unsp.	1
+8H4	Referral to physician	1
+8H5B	Referred to urologist	2
+8H5D	Referred to vascular surgeon	1
+8H5J	Referral to colorectal surgeon	1
+8HE3	Discharged from day-case care	1
+8I72	Clopidogrel not tolerated	1
+9N42	Did not attend - no reason	2
+9N58	Emergency appointment	1
+9S1	White	1
+9i0	British or mixed British - ethnic category 2001 census	3
+A53	Herpes zoster	1
+AB200	Candidiasis of mouth	1
+ADEF28927NEMIS	Adcal-D3 Dissolve  Effervescent tablets  1.5 grams + 400 units	1
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	2
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	5
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	3
+ASTA225	Aspirin  Tablets  300 mg	1
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	10
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	5
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	5
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	6
+C11y1	Drug-induced hypoglycaemia without coma	2
+CEM/22447EMIS	Cefaclor  M/R tablets  375 mg	2
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+D41y2	Pseudocholinesterase deficiency	8
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	6
+DETA32245EMIS	Detrusitol  Tablets  1 mg	4
+DIM/22264EMIS	Diltiazem Hydrochloride  M/R capsules  180 mg	1
+E2022	Agoraphobia without mention of panic attacks	2
+E2653	Psychogenic dysuria	2
+EMISCOM1	Unknown vendor specific drug	1
+Eu33z	"[X]Recurrent depressive disorder	1
+F4A0	Corneal ulcer	1
+F54y3	Retraction of tympanic membrane	2
+FLTA1194	Fluanxol  Tablets  500 micrograms	1
+FRTA1246	Froben  Tablets  50 mg	2
+FUSO17471NEMIS	Fulvestrant  Solution for injection  250 mg/5 ml pre-filled syringe	1
+FyuK4	[X]Other disorders of refraction	1
+G24z1	Hypertension secondary to drug	1
+G5415	Aortic stenosis	1
+G5731	Atrial flutter	1
+G57y1	Severe sinus bradycardia	1
+G580	Congestive heart failure	2
+G7320	Gangrene of toe	2
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H0605	Acute tracheobronchitis	1
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	1
+ININ18217NEMIS	Insulin Detemir  Injection (cartridges)  100 units/ml, 3 ml cartridge	2
+ISTA9943BRIDL	Istin  Tablets  5 mg	1
+J12y1	Unspecified duodenal ulcer with haemorrhage	1
+J15z	Gastritis and duodenitis NOS	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+L1809	Gestational diabetes mellitus	11
+L1813	Thyroid dysfunction in pregnancy - baby not yet delivered	3
+LEPR18221NEMIS	Levemir Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	2
+META6974	Methylprednisolone  Tablets  2 mg	2
+MITA10737BRIDL	Micturin  Tablets  25 mg	1
+N0900	Joint effusion of unspecified site	1
+NETA50001EMIS	Nebilet  Tablets  5 mg	15
+NIPU29681EMIS	Nitromin  Cfc-free pump spray  400 micrograms/dose (180 dose)	1
+PH34	Other specified birthmark	3
+PITA5315NEMIS	Pioglitazone Hydrochloride  Tablets  15 mg	5
+PUJINST1	Unknown vendor specific drug	3
+RUFO12099NEMIS	Rusch Brilliant Aquaflate  Foley catheter 10ml balloon (male)  16ch, DA310116	1
+S3521	Closed fracture of talus	3
+Ub0qs	Unknown vendor specific drug	10
+Ub1ju	Unknown vendor specific drug	9

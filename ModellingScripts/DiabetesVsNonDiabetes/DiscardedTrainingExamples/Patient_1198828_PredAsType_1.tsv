@@ -1,0 +1,116 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1371	Never smoked tobacco	3
+13A5	Low salt diet	1
+1465	H/O: depression	1
+1A12	Frequency of micturition	1
+1B1L	Stress related problem	1
+1BT	Depressed mood	1
+229	O/E - height	4
+22A	O/E - weight	8
+22K	Body Mass Index	6
+2469	O/E - Systolic BP reading	27
+3211	ECG requested	1
+423	Haemoglobin estimation	15
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42A3	MCV - raised	2
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	2
+42T2	Serum vitamin B12 low	1
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	1
+44CC	Plasma C reactive protein	2
+44E3	Total bilirubin	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44J3	Serum creatinine	21
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	10
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	10
+44g	Plasma glucose level	2
+44g1	Plasma fasting glucose level	5
+451E	GFR calculated abbreviated MDRD	2
+4612	Urinalysis requested	3
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	1
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	2
+46X	Urine nitrite	1
+46X1	Urine nitrite negative	1
+46f1	Urine leucocyte test = negative	2
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	2
+6792	Health ed. - alcohol	3
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	1
+6896	Depression screening using questions	3
+81H1	Dressing of ulcer	2
+8CA4	Patient advised re diet	1
+8H44	Cardiological referral	1
+8H47	Geriatric referral	1
+8H52	Ophthalmological referral	1
+8H5D	Referred to vascular surgeon	2
+8H72	Refer to district nurse	2
+8H7D	Refer to osteopath	1
+8H7H	Refer to optician	1
+8I66	Aspirin not indicated	1
+9NP1	Chaperone present	1
+9S1	White	1
+9i00	White British - ethnic category 2001 census	1
+AB04	Dermatophytosis of foot	1
+AMTA10145BRIDL	Amlodipine Besilate  Tablets  5 mg	3
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	19
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	4
+ASTA4609	Aspirin  Tablets  75 mg	12
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	6
+C1097	Non-insulin dependent diabetes mellitus - poor control	4
+CECA20695EMIS	Cefaclor  Capsules  500 mg	1
+COOI9895BRIDL	Cocois  Ointment	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+DEM/22793NEMIS	Detrunorm Xl  M/R capsules  30 mg	1
+DETA32245EMIS	Detrusitol  Tablets  1 mg	10
+DIM/22265EMIS	Diltiazem Hydrochloride  M/R capsules  300 mg	1
+E2653	Psychogenic dysuria	4
+E2781	Tension headache	1
+EMIS9	Unknown vendor specific drug	2
+F1383	Organic writers' cramp	1
+F340	Carpal tunnel syndrome	1
+F524	Purulent otitis media NOS	6
+F592	Mixed conductive and sensorineural deafness	3
+FETA5643NEMIS	Fenofibrate  Tablets  (Micronised) 160 mg	1
+FRTA1246	Froben  Tablets  50 mg	3
+Fyu5E	[X]Chronic headache disorder	1
+G5802	Decompensated cardiac failure	4
+G7320	Gangrene of toe	1
+GLOI4966	Glyceryl Trinitrate  Ointment  2 %	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	2
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+L3951	Forceps delivery - delivered	2
+LEIGHPO3	Unknown vendor specific drug	3
+LEPR18221NEMIS	Levemir Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	26
+N05zU	OA NOS-IP joint of toe	2
+P641	Bicuspid aortic valve	1
+PLTA34066EMIS	Plavix  Tablets  75 mg	1
+S3521	Closed fracture of talus	7
+S352C	Closed fracture metatarsal shaft	6
+SN51	Angioneurotic oedema	1
+SOTA2638	Soluble Aspirin  Tablets  300 mg	1
+SP255	"Postop. wound infection	1
+TETA1044NEMIS	Telmisartan  Tablets  80 mg	1
+VATA19082NEMIS	Valsartan  Tablets  40 mg	2
+VATA23543NEMIS	Varenicline  Tablets  1 mg	2
+VATA23716NEMIS	Varenicline  Tablets  1 mg + 500 micrograms (Starter Pack)	1
+VES/8689EGTON	Verapamil Hydrochloride  M/R capsules  180 mg	1

@@ -1,0 +1,116 @@
+Code	Description	Count
+1352	Roman Catholic	1
+136	Alcohol consumption	5
+1364	Moderate drinker - 3-6u/day	1
+137C	Keeps trying to stop smoking	1
+137P	Cigarette smoker	1
+137S	Ex smoker	3
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+14LM	H/O: angiotensin converting enzyme inhibitor allergy	1
+1BT	Depressed mood	1
+1Z12	Chronic kidney disease stage 3	1
+1Z1B	Chronic kidney disease stage 3 with proteinuria	1
+229	O/E - height	12
+22A	O/E - weight	11
+22K	Body Mass Index	11
+2469	O/E - Systolic BP reading	25
+32	Electrocardiography	1
+3217	ECG abnormal	1
+423	Haemoglobin estimation	15
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	1
+42R4	Serum ferritin	1
+42R5	Serum TIBC	1
+42R7	Serum iron level	1
+42W4	HbA1c level (DCCT aligned)	7
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	2
+44I8	Serum calcium	3
+44I9	Serum inorganic phosphate	3
+44J3	Serum creatinine	16
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	8
+44Q	Serum triglycerides	4
+44g	Plasma glucose level	8
+451E	GFR calculated abbreviated MDRD	10
+4662	Urine glucose test negative	3
+467	Urine protein test	1
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	2
+4674	Urine protein test = +	2
+4692	Urine blood test = negative	2
+46M7	Urine creatinine	1
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	1
+46X1	Urine nitrite negative	1
+5853	U-S heart scan	1
+65720	Pneumococcal vaccination given	1
+6791	Health ed. - smoking	3
+6896	Depression screening using questions	2
+8B2B	Nicotine replacement therapy	2
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	4
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	3
+8H	Referral for further care	2
+8HQ	Refer for imaging	1
+8HQ2	Refer for ultrasound investign	1
+8HR1	Refer for ECG recording	1
+8HRA	Referral for exercise ECG	1
+8HTJ	Referral to rapid access chest pain clinic	1
+8I24	Aspirin prophylaxis contra-indicated	2
+8I26	Beta blocker contraindicated	7
+8I28	Angiotensin converting enzyme inhibitors contraindicated	3
+8I65	Warfarin not indicated	1
+8I6B	Clopidogrel not indicated	2
+8I6a	Dipyridamole not indicated	1
+9180	Carer's details	1
+9N42	Did not attend - no reason	3
+9Nd0	Verbal consent for examination	1
+9S11	White Irish	2
+A07y0	Viral gastroenteritis	1
+A79z	Viral infection NOS	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	3
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	15
+ASTA4609	Aspirin  Tablets  75 mg	1
+BUTA4575NEMIS	Bupropion Hydrochloride  M/R tablets  150 mg	2
+C10z	Diabetes mellitus with unspecified complication	12
+CYTA779	Cyclopenthiazide  Tablets  500 micrograms	1
+D2018	[X]Pure red cell aplasia	3
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	1
+DEM/22793NEMIS	Detrunorm Xl  M/R capsules  30 mg	1
+DETA20911NEMIS	Dexibuprofen  Tablets  300 mg	2
+F4F22	Epiphora due to insufficient drainage	2
+F5614	Otogenic vertigo	3
+F5630	"Labyrinthitis	1
+FLTA1194	Fluanxol  Tablets  500 micrograms	1
+FRTA1246	Froben  Tablets  50 mg	4
+FUNDHRE10	Unknown vendor specific drug	2
+G24z0	Secondary renovascular hypertension NOS	2
+G57y1	Severe sinus bradycardia	1
+G7320	Gangrene of toe	5
+H06z0	Chest infection NOS	2
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+ISPE33729EMIS	Isophane Insulin (Human Pyr)  Penfill cartridges (3 ml)  100 units/ml	1
+K04y	Other acute renal failure	2
+M0100	Boil of ear	2
+MIINEGTON7152	Pork Mixtard 30  Injection  10 ml vial	1
+N0	Arthropathies and related disorders	1
+NAMASPO2	Unknown vendor specific drug	1
+NAMASSE3	Unknown vendor specific drug	1
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	1
+P6z	Congenital heart anomaly NOS	1
+PH34	Other specified birthmark	2
+PLTA34066EMIS	Plavix  Tablets  75 mg	1
+PRLE40411NEMIS	Unknown vendor specific drug	11
+S352C	Closed fracture metatarsal shaft	21

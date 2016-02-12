@@ -1,0 +1,94 @@
+Code	Description	Count
+136	Alcohol consumption	6
+1361	Teetotaller	6
+1371	Never smoked tobacco	4
+1381	Exercise physically impossible	3
+1383	Enjoys light exercise	1
+1Z12	Chronic kidney disease stage 3	1
+1Z1D	Chronic kidney disease stage 3A with proteinuria	1
+1Z1E	Chronic kidney disease stage 3A without proteinuria	1
+229	O/E - height	10
+22A	O/E - weight	12
+22K	Body Mass Index	10
+2469	O/E - Systolic BP reading	23
+3216	ECG normal	1
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	2
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I8	Serum calcium	3
+44J3	Serum creatinine	23
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44Q	Serum triglycerides	1
+44g	Plasma glucose level	6
+451E	GFR calculated abbreviated MDRD	12
+4662	Urine glucose test negative	3
+467	Urine protein test	1
+4672	Urine protein test negative	5
+4692	Urine blood test = negative	1
+46N4	Urine albumin	5
+46TC	Urine albumin:creatinine ratio	5
+65720	Pneumococcal vaccination given	1
+6799	Health ed. - diet	5
+6891	Depression screen	2
+6896	Depression screening using questions	2
+7928	Transluminal balloon angioplasty of coronary artery	1
+8B63	Salicylate prophylaxis	1
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	1
+8H	Referral for further care	3
+8I24	Aspirin prophylaxis contra-indicated	7
+8I27	Statins contraindicated	1
+8I2K	Clopidogrel contraindicated	1
+8I62	Beta blocker not indicated	2
+8I63	Statin not indicated	5
+9N19	Seen in hospital casualty	3
+9N32	Third party encounter	1
+A53	Herpes zoster	1
+AMTA101	Amiloride Hydrochloride  Tablets  5 mg	9
+ASDI224	Aspirin  Dispersible tablets  75 mg	2
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	4
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	1
+ATTA228	Atarax  Tablets  10 mg	1
+ATTA229	Atarax  Tablets  25 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	8
+BUTA434	Bumetanide  Tablets  1 mg	16
+BUTA974NEMIS	Bumetanide And Amiloride  Tablets  1 mg + 5 mg	6
+CECA516	Cephalexin  Capsules  250 mg	6
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	2
+DETA845	Dexamethasone  Tablets  2 mg	1
+DILO3454	Diprosalic  Scalp application	1
+EMISQ2W4	Unknown vendor specific drug	9
+EMISQRE4	Unknown vendor specific drug	1
+F421C	Other intraretinal microvascular abnormality	1
+F5911	Sensory hearing loss	9
+FRTA1246	Froben  Tablets  50 mg	2
+Fyu4	[X]Demyelinating diseases of the central nervous system	1
+Fyu5E	[X]Chronic headache disorder	1
+G5y0	Myocarditis NOS	1
+G76B	Vasculitis	3
+HYTA3731	Hydrocortone  Tablets  10 mg	19
+HYTA5012	Hydroxychloroquine Sulphate  Tablets  200 mg	6
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+ISSR10516BRIDL	Isosorbide Mononitrate  Sr capsules  50 mg	1
+LEPR18221NEMIS	Levemir Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	3
+LOCA19174EMIS	Astra Tech Lofric Nelaton  Catheter, male  18 ch, 901800	1
+M01	Furuncle - boil	1
+NAMASHO1	Unknown vendor specific drug	1
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	2
+P6y41	Single coronary artery	3
+PH311	Port wine stain	2
+PH34	Other specified birthmark	1
+S352C	Closed fracture metatarsal shaft	5
+SUTA2752	Suscard Buccal  S/r tablets  2 mg	1
+TRCA16731NEMIS	Trandolapril  Capsules  4 mg	5
+X30Ox	Unknown vendor specific drug	1

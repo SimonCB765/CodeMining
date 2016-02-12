@@ -1,0 +1,96 @@
+Code	Description	Count
+136	Alcohol consumption	5
+1362	Trivial drinker - <1u/day	3
+1371	Never smoked tobacco	1
+137S	Ex smoker	4
+1383	Enjoys light exercise	2
+1384	Enjoys moderate exercise	1
+1A82	Breast lump present	1
+1Z13	Chronic kidney disease stage 4	5
+229	O/E - height	4
+22A	O/E - weight	6
+22K	Body Mass Index	5
+22N0	Waist circumference	1
+246	O/E - blood pressure reading	20
+2464	O/E - BP reading normal	2
+246J	O/E - BP reading: no postural drop	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	17
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R	Serum iron tests	1
+42R4	Serum ferritin	2
+42R7	Serum iron level	2
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+42X	Reticulocyte count	1
+44CB	Serum transferrin	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	17
+44I5	Serum sodium	3
+44J3	Serum creatinine	27
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	6
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	5
+44TB	Haemoglobin A1c level	1
+44g	Plasma glucose level	4
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	19
+451F	Glomerular filtration rate	1
+4615	MSU sent to lab.	1
+46N	Urine protein	1
+46N4	Urine albumin	3
+46TC	Urine albumin:creatinine ratio	2
+58530	Echocardiogram normal	1
+6572	Pneumococcal vaccination	1
+6792	Health ed. - alcohol	4
+6798	Health ed. - exercise	3
+6799	Health ed. - diet	4
+6896	Depression screening using questions	3
+79143	Replacement of valve of heart NEC	6
+8B6A	Statin prophylaxis	2
+8CA48	Pt advised re low salt diet	3
+8H8Z	Follow-up arranged NOS	3
+8H9	Planned telephone contact	2
+8HQ1	Refer for X-Ray	1
+8I66	Aspirin not indicated	1
+9N1A	Seen in hospital out-pat.	1
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	1
+9OI1	Attends hypertension monitor.	1
+9OIA	Hypertension monitor.chck done	1
+COOI9895BRIDL	Cocois  Ointment	2
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+E2C11	Solitary stealing	2
+FRTA1245	Froben  Tablets  100 mg	2
+G24z	Secondary hypertension NOS	2
+G35	Subsequent myocardial infarction	1
+J120z	Acute duodenal ulcer NOS	5
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+N0	Arthropathies and related disorders	2
+PCS7073IN15	Unknown vendor specific drug	1
+PCSDT11883AN16	Unknown vendor specific drug	1
+PRLE16386NEMIS	Prosys  Leg Bag Short Tube With Straps  500 ml, P500S	1
+XaLRN	Unknown vendor specific drug	7
+Y0737	Unknown vendor specific drug	5
+Y1797	Unknown vendor specific drug	14
+b433	SPIRONOLACTONE 100mg tablets	12
+b51C	AMILORIDE HCL+CYCLOPENTHIAZIDE 2.5mg/250micrograms tablets	15
+bdf9	CARDICOR 1.25mg tablets	10
+bg2y	*DEBRISOQUINE 10mg tablets	6
+bl3n	ELANTAN LA 25mg m/r capsules	5
+bl8J	TENSIPINE MR 10 m/r tablets	2
+bl8K	TENSIPINE MR 20 m/r tablets	9
+bl8M	ADALAT LA 20mg m/r tablets	2
+blzx	GLYCERYL TRINITRATE 2% ointment	3
+blzz	GLYCERYL TRINITRATE 10mg/24hrs patches	18
+dia7	*CO-PROXAMOL tablets	1
+dibD	PARACETAMOL+CODEINE PHOSPHATE 500mg/30mg capsules	1
+gc72	FLOMAX MR 400micrograms m/r capsules	9

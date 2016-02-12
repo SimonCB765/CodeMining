@@ -1,0 +1,100 @@
+Code	Description	Count
+136	Alcohol consumption	1
+1371	Never smoked tobacco	2
+1379	Ex-moderate smoker (10-19/day)	1
+137S	Ex smoker	1
+1384	Enjoys moderate exercise	1
+1A1	Micturition frequency	1
+1B1U	Symptoms of depression	1
+1Z12	Chronic kidney disease stage 3	2
+22A	O/E - weight	4
+22K	Body Mass Index	2
+2469	O/E - Systolic BP reading	26
+32	Electrocardiography	1
+3213	Exercise ECG	1
+33B9	Exercise tolerance test	1
+423	Haemoglobin estimation	13
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U4	Red blood cell folate	1
+43Z2	Prostate specific antigen	2
+44CC	Plasma C reactive protein	7
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	28
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	2
+44Q	Serum triglycerides	9
+44g	Plasma glucose level	6
+451E	GFR calculated abbreviated MDRD	11
+4618	Urine dipstick test	1
+4662	Urine glucose test negative	1
+467	Urine protein test	1
+4672	Urine protein test negative	3
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	1
+46W	Urine microalbumin	1
+46X1	Urine nitrite negative	1
+65720	Pneumococcal vaccination given	1
+6798	Health ed. - exercise	1
+6896	Depression screening using questions	3
+7B390	Transurethral prostatectomy	2
+8B6A	Statin prophylaxis	1
+8H	Referral for further care	3
+8H44	Cardiological referral	1
+8H54	Orthopaedic referral	1
+8H6	Referral to other doctor	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I28	Angiotensin converting enzyme inhibitors contraindicated	1
+8I62	Beta blocker not indicated	1
+9N11	Seen in GP's surgery	1
+9N42	Did not attend - no reason	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AB01	Dermatophytosis of nail	2
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	3
+AMTA10145BRIDL	Amlodipine Besilate  Tablets  5 mg	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	4
+ASDI224	Aspirin  Dispersible tablets  75 mg	5
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	2
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	18
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	1
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	20
+C1097	Non-insulin dependent diabetes mellitus - poor control	4
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	14
+D40yz	Other white blood cell disease NOS	3
+E2653	Psychogenic dysuria	1
+F4F22	Epiphora due to insufficient drainage	1
+F5614	Otogenic vertigo	1
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE10	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	1
+FyuG1	nutr+met dis CE"	1
+G662	Posterior cerebral artery syndrome	2
+GETA19680EMIS	Gemfibrozil  Tablets  600 mg	1
+HYTA3731	Hydrocortone  Tablets  10 mg	10
+HYTA5012	Hydroxychloroquine Sulphate  Tablets  200 mg	11
+INS/9572EMIS	Indomethacin  M/R tablets  75 mg	3
+J1211	Chronic duodenal ulcer with haemorrhage	1
+JAEU3719NEMIS	Jade-Euro-Med  Eurosleeve  medium, JES3	1
+PCSDT7073TE23	Unknown vendor specific drug	3
+PCSDT8940RE1	Unknown vendor specific drug	1
+PH311	Port wine stain	3
+PH34	Other specified birthmark	5
+PINFOHB2	Unknown vendor specific drug	9
+PLS/9140EMIS	Plendil  M/R tablets  10 mg	4
+S3030	"Op # prx fem	1
+S3501	"Cls # calcaneus	24
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	3

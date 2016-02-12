@@ -1,0 +1,99 @@
+Code	Description	Count
+136	Alcohol consumption	2
+1371	Never smoked tobacco	1
+137S	Ex smoker	2
+1383	Enjoys light exercise	1
+229	O/E - height	4
+22A	O/E - weight	4
+22K	Body Mass Index	4
+246	O/E - blood pressure reading	7
+2469	O/E - Systolic BP reading	10
+32	Electrocardiography	1
+3272	ECG: atrial fibrillation	1
+33B9	Exercise tolerance test	1
+33B95	Exercise tolerance test abnormal	1
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	22
+4258	Haematocrit	3
+426	Red blood cell (RBC) count	2
+4266	Nucleated red blood cell count	1
+428	Mean corpusc. haemoglobin(MCH)	7
+42A	Mean corpuscular volume (MCV)	5
+42H7	Total white blood count	1
+42P	Platelet count	2
+42QE	International normalised ratio	6
+42R4	Serum ferritin	5
+42R7	Serum iron level	2
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W	Hb. A1C - diabetic control	1
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G9	Serum gamma-glutamyl transferase level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	32
+44J9	Serum urea level	2
+44Le	Plasma vitamin B12 level	2
+44M4	Serum albumin	2
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	10
+44PF	Total cholesterol:HDL ratio	7
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	2
+44TK	Fasting blood glucose level	1
+44g	Plasma glucose level	4
+451E	GFR calculated abbreviated MDRD	16
+4613	Urinalysis = no abnormality	8
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	6
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	2
+46M1	Urine electrolytes normal	1
+585	Other diagnostic ultrasound	1
+5853	U-S heart scan	1
+65720	Pneumococcal vaccination given	1
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	3
+8CA4	Patient advised re diet	1
+8CAM	Patient advised about alcohol	2
+8H41	General medical referral	1
+8H7X	Refer to podiatry	1
+8HE	Discharged from hospital	1
+8I25	Warfarin contraindicated	1
+9N2S	Seen by practice phlebotomist	6
+9i0	British or mixed British - ethnic category 2001 census	1
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	2
+AMTA10145BRIDL	Amlodipine Besilate  Tablets  5 mg	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	9
+ASDI224	Aspirin  Dispersible tablets  75 mg	4
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	1
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	9
+CATA8618EGTON	Carace  Tablets  20 mg	1
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	2
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	2
+FRTA1245	Froben  Tablets  100 mg	3
+FUNDHRE10	Unknown vendor specific drug	2
+Fyu5E	[X]Chronic headache disorder	1
+G24z	Secondary hypertension NOS	1
+ININ18217NEMIS	Insulin Detemir  Injection (cartridges)  100 units/ml, 3 ml cartridge	2
+PGy3	Nail-patella syndrome	2
+PH34	Other specified birthmark	1
+PINFOZZ1	Unknown vendor specific drug	2
+PRLE40411NEMIS	Unknown vendor specific drug	15
+S3501	"Cls # calcaneus	2
+S352C	Closed fracture metatarsal shaft	9
+Ub0qs	Unknown vendor specific drug	11
+Ub1ju	Unknown vendor specific drug	2
+b51C	AMILORIDE HCL+CYCLOPENTHIAZIDE 2.5mg/250micrograms tablets	3
+bh14	INDORAMIN 20mg tablets	1
+bh42	HYPOVASE 1mg tablets	25
+bl8w	NIFEDIPINE 10mg m/r tablets	2
+ij32	PHOSEX 1g tablets	1
+j29y	INDOMETACIN 75mg m/r capsules	1

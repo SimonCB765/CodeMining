@@ -1,0 +1,107 @@
+Code	Description	Count
+136	Alcohol consumption	6
+1371	Never smoked tobacco	5
+137L	Current non-smoker	1
+1383	Enjoys light exercise	3
+13l4	Main spoken language English	1
+1A1	Micturition frequency	1
+1Z12	Chronic kidney disease stage 3	1
+1Z1J	Chronic kidney disease stage 4 without proteinuria	1
+229	O/E - height	12
+22A	O/E - weight	13
+22K	Body Mass Index	12
+2469	O/E - Systolic BP reading	24
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	1
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	1
+43Z2	Prostate specific antigen	5
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	16
+44J8	Blood urea	1
+44J9	Serum urea level	2
+44M4	Serum albumin	2
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	8
+44U	Blood glucose result	1
+451E	GFR calculated abbreviated MDRD	7
+466	Urine test for glucose	1
+4662	Urine glucose test negative	2
+467	Urine protein test	2
+4672	Urine protein test negative	2
+46M7	Urine creatinine	3
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	3
+46W1	Urine microalbumin negative	1
+55	Cardiovascular sys.angiography	1
+6572	Pneumococcal vaccination	1
+6798	Health ed. - exercise	1
+6896	Depression screening using questions	3
+8B63	Salicylate prophylaxis	4
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	6
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	3
+8H41	General medical referral	1
+8H5B	Referred to urologist	1
+8H76	Refer to dietician	1
+8HJA	Trauma self-referral	1
+8I62	Beta blocker not indicated	3
+8I64	Angiotensin converting enzyme inhibitor not indicated	4
+8I65	Warfarin not indicated	5
+8I6B	Clopidogrel not indicated	2
+8I6C	Angiotensin II receptor antagonist not indicated	1
+8I6a	Dipyridamole not indicated	1
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	2
+9S10	White British	2
+9i0	British or mixed British - ethnic category 2001 census	4
+ADM/22255EMIS	Adizem-Sr  M/R capsules  120 mg	3
+ADM/24028EMIS	Adizem-Xl  M/R capsules  180 mg	12
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	3
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	15
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	3
+C109	Non-insulin dependent diabetes mellitus	1
+C11y1	Drug-induced hypoglycaemia without coma	17
+CACA9745BRIDL	Calcitriol  Capsules  250 nanograms	1
+DIM/22265EMIS	Diltiazem Hydrochloride  M/R capsules  300 mg	1
+DIM/22266EMIS	Diltiazem Hydrochloride  M/R capsules  90 mg	1
+E2653	Psychogenic dysuria	8
+EMISQRE4	Unknown vendor specific drug	1
+F54y3	Retraction of tympanic membrane	5
+F592	Mixed conductive and sensorineural deafness	3
+FLTA1208	Flupenthixol  Tablets  1 mg	1
+FRTA1246	Froben  Tablets  50 mg	3
+FUNDHPS1	Unknown vendor specific drug	1
+FUNDHRE10	Unknown vendor specific drug	1
+FUNDHRE12	Unknown vendor specific drug	1
+G664	Cerebellar stroke syndrome	1
+GLS/17962EMIS	Glyceryl Trinitrate  S/r buccal tablets  5 mg	1
+H06z0	Chest infection NOS	1
+ININ3272NEMIS	Insuman Rapid  Injection (cartridges)  100 units/ml, 3 ml cartridge	2
+J120z	Acute duodenal ulcer NOS	4
+L36z	Postpartum haemorrhage NOS	6
+META1797	Methyldopa  Tablets  125 mg	3
+N05zU	OA NOS-IP joint of toe	2
+PH34	Other specified birthmark	4
+PRCA2392	Propranolol Hydrochloride  Capsules  160 mg	1
+PRLE40411NEMIS	Unknown vendor specific drug	2
+S3521	Closed fracture of talus	25
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	8
+URCA14420NEMIS	Uro-Tainer Sodium Chloride  Catheter maintenance solution  0.9 %, 50 ml	7

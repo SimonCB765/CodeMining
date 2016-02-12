@@ -1,0 +1,104 @@
+Code	Description	Count
+136	Alcohol consumption	3
+1371	Never smoked tobacco	4
+1384	Enjoys moderate exercise	1
+13l4	Main spoken language English	1
+16D	Falls	2
+1A1	Micturition frequency	1
+1BT	Depressed mood	1
+1Z12	Chronic kidney disease stage 3	8
+1Z1E	Chronic kidney disease stage 3A without proteinuria	2
+22A	O/E - weight	19
+22K	Body Mass Index	11
+2469	O/E - Systolic BP reading	25
+329A	ECG: left bundle branch block	1
+32M	24 Hour ECG	1
+423	Haemoglobin estimation	15
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R	Serum iron tests	1
+42R4	Serum ferritin	1
+42R5	Serum TIBC	1
+42T	Serum vitamin B12	1
+44CB	Serum transferrin	1
+44CS	Serum C reactive protein level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	14
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	32
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	6
+44Q	Serum triglycerides	6
+44TJ	Blood glucose level	4
+44TK	Fasting blood glucose level	1
+451E	GFR calculated abbreviated MDRD	11
+4613	Urinalysis = no abnormality	6
+4614	Urinalysis = abnormal	2
+4615	MSU sent to lab.	3
+4641	Urine smell normal	1
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	5
+4682	Urine ketone test negative	1
+4692	Urine blood test = negative	2
+46B3	Urine bacteria test: positive	1
+46M7	Urine creatinine	2
+46N8	Urine microalbumin profile	2
+46TC	Urine albumin:creatinine ratio	4
+46W	Urine microalbumin	4
+5853	U-S heart scan	2
+6572	Pneumococcal vaccination	1
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	2
+6896	Depression screening using questions	2
+8CA47	Patient advised re low cholesterol diet	2
+8H52	Ophthalmological referral	2
+8H58	Gynaecological referral	2
+8H7V	Refer to audiologist	1
+8HQ7	Referral for echocardiography	1
+8I26	Beta blocker contraindicated	1
+8I74	Angiotensin converting enzyme inhibitor not tolerated	5
+9Na1	Consultation for minor injury	1
+9S10	White British	2
+A79z	Viral infection NOS	1
+AB000	Dermatophytosis of scalp	1
+BESC358	Betnovate  Scalp application  0.1 %	1
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	7
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	2
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	2
+BUTA434	Bumetanide  Tablets  1 mg	14
+CECA4202NEMIS	Celebrex  Capsules  100 mg	4
+COLE25195NEMIS	Coloplast Simpla Profile  Leg bag  350 ml, 25 cm tube, 21564	6
+COOR17597NEMIS	Colestyramine  Oral Powder (sachets)  4 grams/sachet	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	2
+DIM/22264EMIS	Diltiazem Hydrochloride  M/R capsules  180 mg	8
+DIM/22265EMIS	Diltiazem Hydrochloride  M/R capsules  300 mg	10
+DIM/23140EMIS	Dilzem Sr 120  M/R capsules  120 mg	2
+ERAC10389BRIDL	Erythromycin  Solution  2 %	5
+F3420	Cubital tunnel syndrome	1
+F4E1	Ectropion	1
+F542z	Tympanic membrane perforation NOS	3
+F5603	Active vestibular Meniere's disease	3
+FRTA1246	Froben  Tablets  50 mg	3
+G33	Angina pectoris	2
+GECA4956	Gemfibrozil  Capsules  300 mg	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+HUIN3719	Humulin M1  Injection	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	3
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+K1003	Chronic pyonephrosis	1
+M21	Other atrophic and hypertrophic conditions of skin	3
+N05zE	"Osteoarthritis NOS	2
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	3
+PRSR9176BRIDL	Propranolol Hydrochloride  M/R tablets  160 mg	1
+SESH5910	Selsun  Shampoo  2.5 %	11
+SN51	Angioneurotic oedema	2
+U6004	[X]Tetracyclines causing adverse effects in therapeutic use	3

@@ -1,0 +1,119 @@
+Code	Description	Count
+136	Alcohol consumption	10
+1371	Never smoked tobacco	2
+137L	Current non-smoker	1
+1383	Enjoys light exercise	2
+13A3	Weight reducing diet	1
+1Z12	Chronic kidney disease stage 3	1
+1Z1E	Chronic kidney disease stage 3A without proteinuria	1
+1Z1G	Chronic kidney disease stage 3B without proteinuria	1
+229	O/E - height	3
+22A	O/E - weight	17
+22K	Body Mass Index	17
+22N0	Waist circumference	1
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	31
+3216	ECG normal	1
+3217	ECG abnormal	1
+3222	ECG:shows myocardial ischaemia	1
+3272	ECG: atrial fibrillation	2
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	5
+43Z2	Prostate specific antigen	4
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	1
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	20
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	1
+44W9	Serum digoxin level	1
+44g	Plasma glucose level	6
+451E	GFR calculated abbreviated MDRD	14
+4615	MSU sent to lab.	1
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	7
+4673	Urine protein test = trace	3
+4674	Urine protein test = +	1
+4682	Urine ketone test negative	3
+4692	Urine blood test = negative	3
+46A2	Urine pH = 5.0	3
+46N4	Urine albumin	4
+46TC	Urine albumin:creatinine ratio	3
+46X1	Urine nitrite negative	3
+4JJ	Urine sample for organism	1
+6792	Health ed. - alcohol	3
+6798	Health ed. - exercise	1
+67I8	Advice about taking aspirin	3
+6896	Depression screening using questions	2
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	1
+8CAM	Patient advised about alcohol	1
+8H44	Cardiological referral	1
+8H52	Ophthalmological referral	1
+8H53	ENT referral	1
+8H54	Orthopaedic referral	2
+8H7H	Refer to optician	1
+8H7P	Refer to pathology department	2
+8HB2	Medical follow-up	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I26	Beta blocker contraindicated	5
+8I3Q	Pneumococcal vaccination declined	1
+8I65	Warfarin not indicated	2
+8I6B	Clopidogrel not indicated	2
+8I6a	Dipyridamole not indicated	1
+9NDF	Fax received	1
+9NE8	Fax sent to:	2
+9OX5	Influenza vaccination declined	1
+9h31	Excepted from hypertension qual indicators: Patient unsuit	1
+9i0	British or mixed British - ethnic category 2001 census	1
+A53	Herpes zoster	1
+ALM/3798NEMIS	Alfuzosin Hydrochloride  M/R tablets  10 mg	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	6
+ASDI224	Aspirin  Dispersible tablets  75 mg	14
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	1
+B46	Malignant neoplasm of prostate	2
+BUTA434	Bumetanide  Tablets  1 mg	2
+CEM/22447EMIS	Cefaclor  M/R tablets  375 mg	1
+CHENJSE4	Unknown vendor specific drug	1
+CHRSPLE5	Unknown vendor specific drug	1
+CICA17610NEMIS	Ciclosporin  Capsules  50 mg	1
+DETA20911NEMIS	Dexibuprofen  Tablets  300 mg	5
+E107	Schizo-affective schizophrenia	2
+E2022	Agoraphobia without mention of panic attacks	1
+E2653	Psychogenic dysuria	2
+EGTON350	Unknown vendor specific drug	1
+EMISQ2W7	Unknown vendor specific drug	12
+EMISQ2W8	Unknown vendor specific drug	11
+F42y	Other retinal disorders	1
+F4Kz5	Discharge of eye NOS	1
+FRTA1245	Froben  Tablets  100 mg	3
+FRTA1246	Froben  Tablets  50 mg	2
+Fyu5E	[X]Chronic headache disorder	3
+G24z	Secondary hypertension NOS	2
+G7320	Gangrene of toe	1
+H06z1	Lower resp tract infection	1
+H120z	Chronic rhinitis NOS	1
+J1211	Chronic duodenal ulcer with haemorrhage	4
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+L395	Forceps delivery	9
+MUUR32591EMIS	Muse  Urethral Application  500 micrograms	2
+NAMASDM1	Unknown vendor specific drug	3
+NIM/172NEMIS	Nifedipine  M/R capsules  30 mg	1
+PHTA6867	Phenindione  Tablets  25 mg	7
+S352C	Closed fracture metatarsal shaft	10
+S352E	Closed fracture metatarsal head	3
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	1
+SLM/26057EMIS	Slozem  M/R capsules  240 mg	1
+Xa7Ht	Unknown vendor specific drug	4
+Xa8Es	Unknown vendor specific drug	1

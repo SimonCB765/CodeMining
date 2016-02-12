@@ -1,0 +1,106 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+136	Alcohol consumption	11
+1371	Never smoked tobacco	5
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	1
+1Z15	Chronic kidney disease stage 3A	1
+229	O/E - height	11
+22A	O/E - weight	18
+22K	Body Mass Index	15
+246	O/E - blood pressure reading	25
+32	Electrocardiography	1
+3217	ECG abnormal	1
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	5
+42R7	Serum iron level	1
+42T	Serum vitamin B12	5
+42U5	Serum folate	4
+42W	Hb. A1C - diabetic control	1
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44CB	Serum transferrin	1
+44CC	Plasma C reactive protein	6
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	15
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	25
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	19
+44P5	Serum HDL cholesterol level	16
+44P6	Serum LDL cholesterol level	14
+44PF	Total cholesterol:HDL ratio	14
+44Q	Serum triglycerides	16
+44TB	Haemoglobin A1c level	6
+44U	Blood glucose result	1
+44g	Plasma glucose level	10
+44g1	Plasma fasting glucose level	7
+44lD	Urine protein/creatinine ratio	5
+451E	GFR calculated abbreviated MDRD	15
+451F	Glomerular filtration rate	1
+4613	Urinalysis = no abnormality	4
+4618	Urine dipstick test	5
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	2
+4694	Urine: trace haemolysed blood	1
+46M7	Urine creatinine	2
+46N	Urine protein	2
+46N4	Urine albumin	3
+46TC	Urine albumin:creatinine ratio	3
+46U	Urine culture	1
+4JJ1	MSU sent for C/S	2
+66A4	Diabetic on oral treatment	1
+6799	Health ed. - diet	1
+67I8	Advice about taking aspirin	2
+6896	Depression screening using questions	2
+68A8	Digital retinal screening	1
+8A17	Self monitoring of blood glucose	1
+8CA4	Patient advised re diet	3
+8CA47	Patient advised re low cholesterol diet	1
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	4
+8H41	General medical referral	1
+8H44	Cardiological referral	2
+8H52	Ophthalmological referral	1
+8H7	Other referral	1
+8I24	Aspirin prophylaxis contra-indicated	3
+8I2K	Clopidogrel contraindicated	1
+8I36	Beta blocker therapy refused	1
+8I3Q	Pneumococcal vaccination declined	1
+8I65	Warfarin not indicated	1
+8I70	Aspirin not tolerated	2
+8IAG	Pandemic influenza vaccination declined	1
+9N2f	Seen by retinal screener	1
+9N4C	Failed encounter - no answer when rang back	2
+9OX5	Influenza vaccination declined	1
+9S1	White	1
+E244	Amphetamine or other psychostimulant dependence	1
+E2C11	Solitary stealing	1
+FEM/30090NEMIS	Fesoterodine Fumarate  M/R tablets  4 mg	1
+FESY1168	Ferrous Fumarate  Syrup  140 mg/5 ml	1
+FRTA1246	Froben  Tablets  50 mg	4
+Fyu5E	[X]Chronic headache disorder	2
+ISPE33729EMIS	Isophane Insulin (Human Pyr)  Penfill cartridges (3 ml)  100 units/ml	3
+Y0737	Unknown vendor specific drug	15
+bdf4	*MONOCOR 10mg tablets	2
+bdf9	CARDICOR 1.25mg tablets	1
+bdfA	CARDICOR 2.5mg tablets	1
+bi57	PERINDOPRIL ERBUMINE 8mg tablets	2
+bi6	RAMIPRIL	1
+bi63	RAMIPRIL 5mg capsules	6
+bi64	*TRITACE 1.25mg capsules	3
+bl1H	NITROMIN 400micrograms CFC-free spray	1
+bl1c	SUSCARD BUCCAL 3mg m/r tablets	4
+bl8w	NIFEDIPINE 10mg m/r tablets	5
+blzz	GLYCERYL TRINITRATE 10mg/24hrs patches	4
+bs1B	MAREVAN 0.5mg tablets	1
+bu25	ASPIRIN 75mg tablets	6
+bu2A	NU-SEALS ASPIRIN 75mg e/c tablets	13
+i221	*JECTOFER 100mg/2mL injection	1

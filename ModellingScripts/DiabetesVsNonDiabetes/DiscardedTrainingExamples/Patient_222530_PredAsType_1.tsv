@@ -1,0 +1,144 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	8
+137S	Ex smoker	3
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	2
+13l4	Main spoken language English	1
+14A5	H/O: angina pectoris	1
+1A1	Micturition frequency	1
+1A82	Breast lump present	1
+1Z12	Chronic kidney disease stage 3	1
+22A	O/E - weight	9
+22K	Body Mass Index	9
+2469	O/E - Systolic BP reading	26
+423	Haemoglobin estimation	16
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	5
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	17
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	28
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	17
+44P5	Serum HDL cholesterol level	16
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	16
+44U	Blood glucose result	1
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	13
+4615	MSU sent to lab.	2
+4618	Urine dipstick test	5
+4662	Urine glucose test negative	1
+467	Urine protein test	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	2
+4674	Urine protein test = +	3
+4675	Urine protein test = ++	3
+4682	Urine ketone test negative	1
+46M7	Urine creatinine	3
+46N3	Urine total protein	1
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	2
+46X1	Urine nitrite negative	1
+4794	Faecal occult blood: positive	1
+5543	Coronary arteriograph.abnormal	1
+5853	U-S heart scan	1
+585B	U-S kidneys	1
+65720	Pneumococcal vaccination given	1
+6791	Health ed. - smoking	3
+6798	Health ed. - exercise	2
+6896	Depression screening using questions	2
+792	Coronary artery operations	1
+79294	Insertion of coronary artery stent	1
+7B2A6	Diagnostic cystoscopy using flexible instrument	1
+8CA4	Patient advised re diet	3
+8CA46	Pt advised re low fat diet	1
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	3
+8H	Referral for further care	1
+8H4B	Referred to rheumatologist	2
+8H51	General surgical referral	1
+8H54	Orthopaedic referral	1
+8H5B	Referred to urologist	1
+8HT3	Referral to audiology clinic	3
+8HTQ	Referral to stroke clinic	1
+8I24	Aspirin prophylaxis contra-indicated	5
+8I2K	Clopidogrel contraindicated	1
+8I36	Beta blocker therapy refused	1
+8I62	Beta blocker not indicated	1
+8I65	Warfarin not indicated	2
+8I6B	Clopidogrel not indicated	1
+9N42	Did not attend - no reason	1
+9S10	White British	1
+9i2	Other White background - ethnic category 2001 census	1
+A53	Herpes zoster	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	2
+ADM/19822EMIS	Adalat La  M/R tablets  30 mg	1
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	6
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	16
+ASTA4609	Aspirin  Tablets  75 mg	1
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	5
+ATTA231	Atenolol  Tablets  50 mg	3
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	3
+BETA302	Bendrofluazide  Tablets  2.5 mg	2
+C10FF	Type 2 diabetes mellitus with peripheral angiopathy	2
+C10z	Diabetes mellitus with unspecified complication	3
+C11y1	Drug-induced hypoglycaemia without coma	9
+C11y2	Impaired glucose tolerance	6
+CACA9745BRIDL	Calcitriol  Capsules  250 nanograms	1
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	2
+COOI9895BRIDL	Cocois  Ointment	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+EMISNQHE32	Unknown vendor specific drug	1
+F1383	Organic writers' cramp	1
+F5101	Acute serous otitis media	1
+FETA19435NEMIS	Ferrous Fumarate And Folic Acid  Tablets  322 mg + 350 micrograms	1
+FLTA1208	Flupenthixol  Tablets  1 mg	17
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE10	Unknown vendor specific drug	1
+FUTA17676NEMIS	Furosemide  Tablets  40 mg	1
+G5415	Aortic stenosis	2
+G5800	Acute congestive heart failure	1
+G582	Acute heart failure	1
+G6X	"Cereb in/uns oc	2
+GEGEEGTON7233	Gelcotar  Gel	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+ININ3272NEMIS	Insuman Rapid  Injection (cartridges)  100 units/ml, 3 ml cartridge	1
+K00z	Acute glomerulonephritis NOS	2
+L1813	Thyroid dysfunction in pregnancy - baby not yet delivered	1
+M010	Boil of face	1
+M087	Chronic paronychia	1
+MITO28977EMIS	Minoxidil  Topical solution  5 %	2
+N083C	Recurrent subluxation of shoulder - anterior	1
+NEIN34449EMIS	Neorecormon  Injection (Prefilled Syringe)  3000 units/syringe	1
+NIPU29681EMIS	Nitromin  Cfc-free pump spray  400 micrograms/dose (180 dose)	1
+PH3y0	Congenital accessory skin tags	1
+PLTA34066EMIS	Plavix  Tablets  75 mg	1
+PROIEGTON6467	Pragmatar  Ointment	6
+S3501	"Cls # calcaneus	1
+S3521	Closed fracture of talus	6
+S352C	Closed fracture metatarsal shaft	9
+SAIN10930BRIDL	Salcatonin  Injection  50 units/ml, 1 ml ampoule	4
+SESH5910	Selsun  Shampoo  2.5 %	2
+SISH2295NEMIS	Coloplast Tri-Form  Short tube leg bags  500ml, 5500	5
+SN51	Angioneurotic oedema	3
+TC0	Fall on or from stairs or steps	3

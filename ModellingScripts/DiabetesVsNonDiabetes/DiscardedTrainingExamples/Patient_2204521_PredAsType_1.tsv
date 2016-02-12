@@ -1,0 +1,118 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+136	Alcohol consumption	3
+1371	Never smoked tobacco	3
+1383	Enjoys light exercise	1
+1384	Enjoys moderate exercise	2
+13A3	Weight reducing diet	5
+1A26	Urge incontinence of urine	6
+1A55	Dysuria	1
+1B17	Depressed	1
+1BT	Depressed mood	1
+1Z12	Chronic kidney disease stage 3	3
+229	O/E - height	20
+22A	O/E - weight	21
+22K	Body Mass Index	22
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	24
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	17
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	11
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	11
+44U	Blood glucose result	1
+451E	GFR calculated abbreviated MDRD	10
+461	Urine exam. - general	5
+4612	Urinalysis requested	1
+4613	Urinalysis = no abnormality	1
+4615	MSU sent to lab.	1
+4618	Urine dipstick test	2
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	3
+4692	Urine blood test = negative	1
+4693	Urine: trace non-haemol. blood	1
+46D	Urine microscopy - general	1
+46M7	Urine creatinine	1
+46N8	Urine microalbumin profile	3
+46TC	Urine albumin:creatinine ratio	2
+46U4	Urine culture - Proteus	1
+46W	Urine microalbumin	2
+46X1	Urine nitrite negative	1
+46f1	Urine leucocyte test = negative	1
+65720	Pneumococcal vaccination given	1
+6774	Medication counselling	1
+6792	Health ed. - alcohol	1
+6799	Health ed. - diet	4
+6896	Depression screening using questions	2
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8H4B	Referred to rheumatologist	1
+8H54	Orthopaedic referral	2
+8H59	Referred to plastic surgeon	1
+8H77	Refer to physiotherapist	1
+8H7O	Refer to Radiology department	1
+8H7q	Referral for exercise therapy	1
+8HV3	Private referral to orthopaedic surgeon	1
+9N11	Seen in GP's surgery	2
+9N42	Did not attend - no reason	1
+9h02	Excepted from CHD quality indicators: Informed dissent	1
+9k1A	Brief intervention for excessive alcohol consumptn completed	1
+AB10	Pityriasis versicolor	1
+AB200	Candidiasis of mouth	1
+ADEF28927NEMIS	Adcal-D3 Dissolve  Effervescent tablets  1.5 grams + 400 units	2
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	14
+ATTA231	Atenolol  Tablets  50 mg	24
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	19
+D2018	[X]Pure red cell aplasia	1
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	2
+DUFFMDI1	Unknown vendor specific drug	1
+DUGA19398NEMIS	Duloxetine  Gastro-resistant Capsules  60 mg	2
+EMISHGT44	Unknown vendor specific drug	1
+EMISR4QFA1	Unknown vendor specific drug	6
+F1383	Organic writers' cramp	1
+F4F22	Epiphora due to insufficient drainage	1
+FLTA1194	Fluanxol  Tablets  500 micrograms	6
+FLTA1208	Flupenthixol  Tablets  1 mg	17
+FRTA1246	Froben  Tablets  50 mg	2
+Fyu5E	[X]Chronic headache disorder	2
+G662	Posterior cerebral artery syndrome	1
+GASTOSE3	Unknown vendor specific drug	1
+H012	Acute ethmoidal sinusitis	1
+HUIN3719	Humulin M1  Injection	1
+INPR6343NEMIS	Insuman Comb 15 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	2
+J1510	Chronic atrophic gastritis	3
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+K00z	Acute glomerulonephritis NOS	1
+MITA10737BRIDL	Micturin  Tablets  25 mg	2
+N0	Arthropathies and related disorders	1
+NETA34105EMIS	Neomycin Sulphate  Tablets  500 mg	12
+NETA42086NEMIS	Unknown vendor specific drug	14
+NIM/16463NEMIS	Nicotinic Acid Titration Starter Pack  M/R tablets  7 x 375 mg, 7 x 500 mg, 7 x 750 mg	2
+NIM/19537EMIS	Nifedipine  M/R tablets  20 mg	1
+NOCA1201NEMIS	Novorapid Penfill  Cartridges (3 Ml)  100 units/ml	1
+PH311	Port wine stain	2
+PH34	Other specified birthmark	1
+PHTA6867	Phenindione  Tablets  25 mg	1
+PINFOHB2	Unknown vendor specific drug	1
+PINFOZZ1	Unknown vendor specific drug	4
+S2501	Cls # thmb mtcarp base Bennett	1
+SASO25910EMIS	Salicylic Acid  Solution  2 %	8
+SN51	Angioneurotic oedema	2
+X30O0	Unknown vendor specific drug	1

@@ -1,0 +1,105 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	3
+1361	Teetotaller	1
+1371	Never smoked tobacco	2
+1373	Light smoker - 1-9 cigs/day	1
+137L	Current non-smoker	2
+1383	Enjoys light exercise	3
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	4
+22A	O/E - weight	10
+22K	Body Mass Index	10
+2469	O/E - Systolic BP reading	27
+3216	ECG normal	1
+3217	ECG abnormal	1
+33B91	Exercise tolerance test done	1
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	8
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	1
+44E3	Total bilirubin	1
+44F	Serum alkaline phosphatase	2
+44FZ	Serum alkaline phosphatase NOS	1
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	18
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	11
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	4
+44U	Blood glucose result	1
+44g	Plasma glucose level	6
+44g1	Plasma fasting glucose level	3
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	9
+46	Urine examination	1
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	3
+4674	Urine protein test = +	1
+4692	Urine blood test = negative	2
+46M7	Urine creatinine	1
+46N	Urine protein	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+55	Cardiovascular sys.angiography	1
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	2
+6896	Depression screening using questions	2
+792	Coronary artery operations	1
+79281	Percut translum balloon angioplasty mult coronary arteries	1
+8B6A	Statin prophylaxis	2
+8H	Referral for further care	1
+8I24	Aspirin prophylaxis contra-indicated	2
+8I25	Warfarin contraindicated	1
+9N2S	Seen by practice phlebotomist	5
+9N3G	SMS text message sent to patient	1
+9i0	British or mixed British - ethnic category 2001 census	1
+A0743	Campylobacter gastrointestinal tract infection	1
+ADCH6282NEMIS	Adcal  Chewable tablets  1.5 grams	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	4
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	1
+ATTA6253NEMIS	Atorvastatin  Tablets  80 mg	11
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	5
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	13
+COLE25195NEMIS	Coloplast Simpla Profile  Leg bag  350 ml, 25 cm tube, 21564	21
+D2016	Pancytopenia NOS	1
+DAM/23491NEMIS	Darifenacin  M/R tablets  15 mg	2
+E2653	Psychogenic dysuria	1
+EMISNQLU7	Unknown vendor specific drug	1
+EMISQ2W4	Unknown vendor specific drug	15
+EMISSPR320	Unknown vendor specific drug	10
+FRTA1246	Froben  Tablets  50 mg	1
+FUNDHRE10	Unknown vendor specific drug	1
+FyuJ0	[X]Optic atrophy in diseases classified elsewhere	1
+G21z1	Hypertensive heart disease NOS with CCF	1
+G24z	Secondary hypertension NOS	1
+G662	Posterior cerebral artery syndrome	3
+GLS/17962EMIS	Glyceryl Trinitrate  S/r buccal tablets  5 mg	1
+ININ3272NEMIS	Insuman Rapid  Injection (cartridges)  100 units/ml, 3 ml cartridge	1
+MITA8305EGTON	Migravess  Tablets	2
+NAMASHO1	Unknown vendor specific drug	1
+NSVARDI2	Unknown vendor specific drug	1
+PCSDT7073TE23	Unknown vendor specific drug	3
+PCSDT8940PA1	Unknown vendor specific drug	15
+PCSDT8940RE1	Unknown vendor specific drug	3
+S3521	Closed fracture of talus	1
+SLTA4321	Slow-Fe Folic  Tablets	1
+U6004	[X]Tetracyclines causing adverse effects in therapeutic use	3
+Ub0qs	Unknown vendor specific drug	14
+Ub1md	Unknown vendor specific drug	1

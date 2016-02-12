@@ -1,0 +1,79 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+12C5	FH: Myocardial infarction	2
+136	Alcohol consumption	8
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	3
+137L	Current non-smoker	2
+137P	Cigarette smoker	1
+1383	Enjoys light exercise	3
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	4
+22A	O/E - weight	15
+22K	Body Mass Index	14
+2469	O/E - Systolic BP reading	21
+2BB1	O/E - retina normal	1
+423	Haemoglobin estimation	2
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	2
+43Z2	Prostate specific antigen	9
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44J3	Serum creatinine	18
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	16
+44P5	Serum HDL cholesterol level	14
+44P6	Serum LDL cholesterol level	14
+44PF	Total cholesterol:HDL ratio	19
+44Q	Serum triglycerides	16
+44TB	Haemoglobin A1c level	2
+44U	Blood glucose result	2
+44g	Plasma glucose level	6
+44g1	Plasma fasting glucose level	3
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	11
+46	Urine examination	1
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	7
+4692	Urine blood test = negative	5
+46M7	Urine creatinine	4
+46N	Urine protein	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+58C1	Retinal photography	1
+6572	Pneumococcal vaccination	1
+6792	Health ed. - alcohol	2
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	4
+6896	Depression screening using questions	2
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	2
+8H	Referral for further care	2
+8H7n	Referral to retinal screener	1
+8I24	Aspirin prophylaxis contra-indicated	4
+8I26	Beta blocker contraindicated	2
+8I62	Beta blocker not indicated	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	2
+9N2S	Seen by practice phlebotomist	5
+9i0	British or mixed British - ethnic category 2001 census	1
+AMCA134	Amoxycillin  Capsules  250 mg	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	22
+ASDI224	Aspirin  Dispersible tablets  75 mg	4
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	3
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	19
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	17
+E2653	Psychogenic dysuria	2
+F4F22	Epiphora due to insufficient drainage	1
+F54y3	Retraction of tympanic membrane	1
+Fyu5E	[X]Chronic headache disorder	2
+G662	Posterior cerebral artery syndrome	1
+IBTA1429	Ibuprofen  Tablets  200 mg	3
+INS/9572EMIS	Indomethacin  M/R tablets  75 mg	1
+L236	Hydrocephalic disproportion	1
+Ly0	Spontaneous vertex delivery	1
+N330B	Vertebral osteoporosis	1
+PICA2280	Piroxicam  Capsules  20 mg	1

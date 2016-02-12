@@ -1,0 +1,229 @@
+Coefficient	Code	Description
+5.0224	22K1	Body Mass Index normal K/M2
+3.5834	i151	FERROUS SULPHATE 200mg tablets
+3.4703	6896	Depression screening using questions
+3.2831	42W5	Haemoglobin A1c level - IFCC standardised
+2.7343	f27m	*PENMIX 20/80 cartridges 1.5mL
+2.4304	68A7	Diabetic retinopathy screening
+2.1441	44TB	Haemoglobin A1c level
+2.0872	46TC	Urine albumin:creatinine ratio
+1.7552	DETA3411	Deteclo  Tablets
+1.6329	M07yz	Other spec local skin/subc infection NOS
+1.6273	42W4	HbA1c level (DCCT aligned)
+1.5838	44f0	Serum random glucose level
+1.4199	66A4	Diabetic on oral treatment
+1.3843	29B7	10g monofilament sensation present
+1.3587	68A8	Digital retinal screening
+-1.3185	8CA46	Pt advised re low fat diet
+1.3027	66A3	Diabetic on diet only
+1.2801	44P2	Serum cholesterol borderline
+1.2318	29BB	10g monofilament sensation R foot normal
+1.2218	42W	Hb. A1C - diabetic control
+-1.1886	13A4	Low fat diet
+-0.9412	2432	O/E - pulse irregularly irreg.
+0.9129	CACH23538EMIS	Calcichew Forte  Chewable tablets  2.5 grams
+0.8749	311A	Monofilament foot sensation test
+-0.8314	8I73	Beta blocker not tolerated
+-0.7738	FESY1168	Ferrous Fumarate  Syrup  140 mg/5 ml
+0.7060	8A17	Self monitoring of blood glucose
+0.6804	9N2e	Seen by ophthalmologist
+0.6771	46W2	Microalbumin excretion rate
+0.6144	9N2U	Seen by optician
+0.5806	f25e	*HUMULIN M1 injection 10mL
+0.5599	8H76	Refer to dietician
+0.5484	4666	Urine glucose test = +++
+-0.4738	67H2	Lifestyle advice regarding exercise
+-0.4226	466	Urine test for glucose
+0.4074	2BB	O/E - retinal inspection
+0.3496	13AC	Diabetic weight reducing diet
+-0.3182	8I6B	Clopidogrel not indicated
+-0.3099	FEM/30090NEMIS	Fesoterodine Fumarate  M/R tablets  4 mg
+-0.2630	9N1P	Seen in cardiac clinic
+0.2392	9N0H	Seen in dietician clinic
+0.2005	29B9	10g monofilament sensation R foot abnormal
+-0.1434	8I65	Warfarin not indicated
+-0.1404	8CA47	Patient advised re low cholesterol diet
+0.0796	29B8	10g monofilament sensation absent
+0.0645	SASY2492	Salbutamol  Syrup  2 mg/5 ml
+-0.0573	G24z1	Hypertension secondary to drug
+-0.0423	F592	Mixed conductive and sensorineural deafness
+0.0161	46N4	Urine albumin
+-0.0042	8I25	Warfarin contraindicated
+0.0000	03I1	Ophthalmic optician
+0.0000	03K1	Dietician
+0.0000	1341	European origin
+0.0000	1358	Hindu
+0.0000	1367	Stopped drinking alcohol
+0.0000	136L	Alcohol intake within recommended sensible limits
+0.0000	136V	Alcohol units per week
+0.0000	136Z	Alcohol consumption NOS
+0.0000	1388	Aerobic exercise 0 times/week
+0.0000	13A3	Weight reducing diet
+0.0000	13AZ	Patient initiated diet NOS
+0.0000	13B1	Diabetic diet
+0.0000	13l	Main spoken language
+0.0000	1A12	Frequency of micturition
+0.0000	1FC	Diet average
+0.0000	1Z13	Chronic kidney disease stage 4
+0.0000	1Z14	Chronic kidney disease stage 5
+0.0000	1Z16	Chronic kidney disease stage 3B
+0.0000	22K2	Body Mass Index high K/M2
+0.0000	22K4	Body mass index index 25-29 - overweight
+0.0000	22K5	Body mass index 30+ - obesity
+0.0000	22K7	Body mass index 40+ - severely obese
+0.0000	29BC	10g monofilament sensation L foot normal
+0.0000	29H7	O/E - Vibration sense of left foot normal
+0.0000	2BB1	O/E - retina normal
+0.0000	2BBA	Examination of retina
+0.0000	2BBD	O/E - Right retina normal
+0.0000	2BBE	O/E - Left retina normal
+0.0000	2BBF	Retinal abnormality - diabetes related
+0.0000	2BBH	Retinal drusen
+0.0000	2BBI	O/E - no retinopathy
+0.0000	2G5	O/E - foot
+0.0000	2G5E	O/E - Right diabetic foot at low risk
+0.0000	2G5I	O/E - Left diabetic foot at low risk
+0.0000	3128	Fundoscopy
+0.0000	31280	Fundoscopy normal
+0.0000	31281	Fundoscopy abnormal
+0.0000	315B	Ambulatory blood pressure recording
+0.0000	3222	ECG:shows myocardial ischaemia
+0.0000	4266	Nucleated red blood cell count
+0.0000	42H7	Total white blood count
+0.0000	42W2	Hb. A1C 7-10% - borderline
+0.0000	42WZ	Hb. A1C - diabetic control NOS
+0.0000	42c	HbA1 - diabetic control
+0.0000	44J7	Albumin / creatinine ratio
+0.0000	44MI	Plasma albumin level
+0.0000	44PB	Serum fasting HDL cholesterol level
+0.0000	44TC	Haemoglobin A1 level
+0.0000	44TK	Fasting blood glucose level
+0.0000	44U4	Blood glucose 5-6.9 mmol/L
+0.0000	44Z1	Serum fructosamine
+0.0000	44dA	Plasma HDL cholesterol level
+0.0000	44dB	Plasma LDL cholesterol level
+0.0000	44h6	Plasma sodium level
+0.0000	451G	GFR calculated abbreviated MDRD adj for African Americ orign
+0.0000	4619	MSU = no growth
+0.0000	4621	Urine = normal on inspection
+0.0000	4641	Urine smell normal
+0.0000	4663	Urine glucose test = trace
+0.0000	4664	Urine glucose test = +
+0.0000	4665	Urine glucose test = ++
+0.0000	4678	Proteinuria
+0.0000	467Z	Urine protein test NOS
+0.0000	468	Urine ketone test
+0.0000	4681	Urine ketone test not done
+0.0000	4688	Urine dipstick for ketones
+0.0000	46M7	Urine creatinine
+0.0000	46N7	Urine protein/creatinine index
+0.0000	46TD	Urine microalbumin:creatinine ratio
+0.0000	46W	Urine microalbumin
+0.0000	46W0	Urine microalbumin positive
+0.0000	46W1	Urine microalbumin negative
+0.0000	46Z1	Urine microscopy
+0.0000	46f1	Urine leucocyte test = negative
+0.0000	58C1	Retinal photography
+0.0000	66AD	Fundoscopy - diabetic check
+0.0000	6774	Medication counselling
+0.0000	67I9	Advice about weight
+0.0000	67IA	Advice about impotence
+0.0000	67IK	Advice about psychological well-being
+0.0000	7922	Allograft replacement of coronary artery
+0.0000	8CA41	Pt advised re diabetic diet
+0.0000	8CA5	Patient advised re exercise
+0.0000	8D74	Indwelling urethral catheter
+0.0000	8H3	Non-urgent hospital admission
+0.0000	8H4L	Referred to nephrologist
+0.0000	8H62	Referral to G.P.
+0.0000	8H7H	Refer to optician
+0.0000	8H7R	Refer to chiropodist
+0.0000	8H7X	Refer to podiatry
+0.0000	8H7n	Referral to retinal screener
+0.0000	8H7q	Referral for exercise therapy
+0.0000	8H8B	Follow-up 1 year
+0.0000	8HBD	Retinopathy follow up
+0.0000	8HHH	Refer to weight management programme
+0.0000	8I6G	Diabetic foot examination not indicated
+0.0000	8I6a	Dipyridamole not indicated
+0.0000	9N0d	Seen in open access surgery
+0.0000	9N1Q	Seen in diabetic clinic
+0.0000	9N1u	Seen in vascular clinic
+0.0000	9N1v	Seen in diabetic eye clinic
+0.0000	9N27	Seen by dietician
+0.0000	9N2L	Seen by deputising doctor
+0.0000	9N2Q	Seen by podiatrist
+0.0000	9N2V	Seen by optometrist
+0.0000	9N2f	Seen by retinal screener
+0.0000	9N38	Message from patient
+0.0000	9N4I	DNA - Did not attend diabetic clinic
+0.0000	9N7D	Phlebotomy generated from secondary care done by practice
+0.0000	9NM0	Attending diabetes clinic
+0.0000	9NN0	Under care of podiatrist
+0.0000	9NNC	Under care of retinal screener
+0.0000	9Na1	Consultation for minor injury
+0.0000	9S3	Black African
+0.0000	9S6	Indian
+0.0000	9SH	Other Asian ethnic group
+0.0000	9i3	White and Black Caribbean - ethnic category 2001 census
+0.0000	9i8	Pakistani or British Pakistani - ethnic category 2001 census
+0.0000	9iC	African - ethnic category 2001 census
+0.0000	ASHBYUR1	Unknown vendor specific drug
+0.0000	BETA363	Bezalip-Mono  M/R tablets  400 mg
+0.0000	CACH20932NEMIS	Calcium Carbonate And Colecalciferol  Chewable Tablets Sugar Free  1.25 grams + 10 micrograms (400 units)
+0.0000	CHENJCA3	Unknown vendor specific drug
+0.0000	CONE5709NEMIS	Coloplast Speedicath  Nelaton catheter (female)  10ch, 28510
+0.0000	DETA32245EMIS	Detrusitol  Tablets  1 mg
+0.0000	EGTON409	Unknown vendor specific drug
+0.0000	F23	Congenital cerebral palsy
+0.0000	F3423	Ulnar nerve entrapment
+0.0000	F522	"Chronic suppurative otitis media
+0.0000	F5635	Viral labyrinthitis
+0.0000	FES/9145EMIS	Felodipine  M/R tablets  5 mg
+0.0000	FETA9098BRIDL	Ferrous Sulphate  Tablets  300 mg
+0.0000	G3y	Other specified ischaemic heart disease
+0.0000	G57y	Other cardiac dysrhythmias
+0.0000	H0616	Acute bronchiolitis due to other specified organisms
+0.0000	HEWITAS13	Unknown vendor specific drug
+0.0000	HEWITPO12	Unknown vendor specific drug
+0.0000	K021	Chronic membranous glomerulonephritis
+0.0000	K0z	Nephritis/nephrosis NOS
+0.0000	M0161	Boil of thigh
+0.0000	MEIN25347EMIS	Metrodin High Purity  Injection  75 units/amp
+0.0000	MITA10737BRIDL	Micturin  Tablets  25 mg
+0.0000	NAMASGO1	Unknown vendor specific drug
+0.0000	NIM/19537EMIS	Nifedipine  M/R tablets  20 mg
+0.0000	PCS7073IN10	Unknown vendor specific drug
+0.0000	PH311	Port wine stain
+0.0000	PINFOHB2	Unknown vendor specific drug
+0.0000	PRCA8367EGTON	Prozac  Capsules  20 mg
+0.0000	PRFO4199	Predfoam  Foam  20 mg/application
+0.0000	PRIN31293EMIS	Prostap 3  Injection  11.25 mg/2 ml vial
+0.0000	PRTA2402	Prothiaden  Tablets  75 mg
+0.0000	S352F	"Closed # metatarsal
+0.0000	SATA2498	Sandocal 400  Tablets
+0.0000	SIUREGTON8208	Seton Simpla 2 Litre S4  Urine drainage bags  long tube, 340805
+0.0000	SLM/26055EMIS	Slozem  M/R capsules  120 mg
+0.0000	TC020	Fall on steps
+0.0000	TCz	Accidental falls NOS
+0.0000	U600z	[X]Unspecif syst antibiotic caus adverse eff in therap use
+0.0000	U6012	[X]Antimal/drug act oth blood protoz caus adv eff ther use
+0.0000	U6041	[X]Vit B12/folic/oth ant-megalobl-anaem caus adv ef ther use
+0.0000	XaBpY	Unknown vendor specific drug
+0.0000	Y1118	Unknown vendor specific drug
+0.0000	bden	CO-TENIDONE 100/25mg tablets
+0.0000	bi2x	ENALAPRIL MALEATE 10mg tablets x28
+0.0000	bi3c	ZESTRIL 2.5mg tablets 28CP
+0.0000	bl3y	ISOSORBIDE MONONITRATE 60mg m/r tablets
+0.0000	bxk2	CRESTOR 20mg tablets
+0.0000	bxkz	ROSUVASTATIN 40mg tablets
+0.0000	f25a	HUMULIN I 100iu/mL injection 10mL
+0.0000	f27x	HUMULIN M2 20/80 cartridges 3mL
+0.0000	ft11	ACARBOSE 50mg tablets
+0.0000	ft12	ACARBOSE 100mg tablets
+0.0000	ft34	*NOVONORM 0.5mg tablets
+0.0000	ft38	PRANDIN 1mg tablets
+0.0000	i21z	IRON DEXTRAN COMPLEX 100mg/2mL injection
+0.0000	i44H	EPOETIN ALFA 4000iu/0.4mL prefilled syringe
+0.0000	i473	ARANESP 20micrograms/0.5mL prefilled syringe
+0.0000	ij32	PHOSEX 1g tablets

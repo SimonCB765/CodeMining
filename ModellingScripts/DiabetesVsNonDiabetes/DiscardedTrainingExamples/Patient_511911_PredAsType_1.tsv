@@ -1,0 +1,107 @@
+Code	Description	Count
+136	Alcohol consumption	10
+1379	Ex-moderate smoker (10-19/day)	3
+137S	Ex smoker	1
+137T	Date ceased smoking	1
+1381	Exercise physically impossible	1
+1384	Enjoys moderate exercise	2
+13l4	Main spoken language English	1
+1A57	Pain in testicle	4
+1Z12	Chronic kidney disease stage 3	8
+229	O/E - height	3
+22A	O/E - weight	10
+22K	Body Mass Index	12
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	23
+32	Electrocardiography	2
+322Z	ECG: myocardial ischaemia NOS	1
+3273	ECG: atrial flutter	1
+423	Haemoglobin estimation	19
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42C	RBC - red blood cell size	3
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	2
+42U4	Red blood cell folate	2
+43Z2	Prostate specific antigen	2
+44A1	Serum parathyroid hormone	1
+44CC	Plasma C reactive protein	2
+44CS	Serum C reactive protein level	6
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	18
+44I5	Serum sodium	3
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	24
+44J9	Serum urea level	1
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	8
+44Q	Serum triglycerides	8
+44U	Blood glucose result	2
+44g	Plasma glucose level	8
+451E	GFR calculated abbreviated MDRD	16
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	1
+4692	Urine blood test = negative	1
+46TC	Urine albumin:creatinine ratio	1
+46X1	Urine nitrite negative	1
+5853	U-S heart scan	1
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+6792	Health ed. - alcohol	5
+6896	Depression screening using questions	3
+8B28	Lipid lowering therapy	1
+8H	Referral for further care	1
+8H44	Cardiological referral	1
+8H5D	Referred to vascular surgeon	1
+8H7O	Refer to Radiology department	5
+8HQ1	Refer for X-Ray	1
+8HVJ	Private referral to cardiologist	1
+8I26	Beta blocker contraindicated	2
+8I2M	Spirometry reversibility testing contraindicated	1
+8I62	Beta blocker not indicated	3
+9N42	Did not attend - no reason	3
+9OX5	Influenza vaccination declined	1
+9S1	White	1
+A0743	Campylobacter gastrointestinal tract infection	1
+A11	Pulmonary tuberculosis	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	18
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	16
+BUTA434	Bumetanide  Tablets  1 mg	7
+C11y1	Drug-induced hypoglycaemia without coma	3
+C11y2	Impaired glucose tolerance	8
+COLE15814NEMIS	Coloplast Simpla Plus  Leg bag  500 ml, 25 cm tube, 21572	2
+COLE25195NEMIS	Coloplast Simpla Profile  Leg bag  350 ml, 25 cm tube, 21564	2
+D3101	Henoch-Schonlein nephritis	1
+E107	Schizo-affective schizophrenia	2
+EMISQ2W6	Unknown vendor specific drug	3
+EMISQ2W7	Unknown vendor specific drug	12
+F4F22	Epiphora due to insufficient drainage	1
+F4K51	Congenital nystagmus	1
+F54y3	Retraction of tympanic membrane	3
+FLTA1194	Fluanxol  Tablets  500 micrograms	3
+FLTA1208	Flupenthixol  Tablets  1 mg	12
+FUNDHRE10	Unknown vendor specific drug	4
+FUNDHRE12	Unknown vendor specific drug	1
+G24z	Secondary hypertension NOS	1
+G24z1	Hypertension secondary to drug	1
+G5y0	Myocarditis NOS	1
+G801	Deep vein phlebitis and thrombophlebitis of the leg	1
+GLS/17962EMIS	Glyceryl Trinitrate  S/r buccal tablets  5 mg	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+ININ3272NEMIS	Insuman Rapid  Injection (cartridges)  100 units/ml, 3 ml cartridge	3
+N0	Arthropathies and related disorders	2
+PH34	Other specified birthmark	1
+PITA5315NEMIS	Pioglitazone Hydrochloride  Tablets  15 mg	8
+PRCA4138NEMIS	Prograf  Capsules  500 micrograms	1
+PRM/20660EMIS	Propranolol Hydrochloride  M/R capsules  160 mg	2
+PRM/22791NEMIS	Propiverine Hydrochloride  M/R capsules  30 mg	8
+Ub0qs	Unknown vendor specific drug	2
+Ub1ju	Unknown vendor specific drug	3
+Ub1md	Unknown vendor specific drug	1
+Ub1tJ	Unknown vendor specific drug	1

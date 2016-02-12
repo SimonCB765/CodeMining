@@ -1,0 +1,124 @@
+Code	Description	Count
+136	Alcohol consumption	9
+1371	Never smoked tobacco	4
+1383	Enjoys light exercise	1
+13l1	Main spoken language Bengali	2
+229	O/E - height	3
+22A	O/E - weight	18
+22K	Body Mass Index	18
+22N0	Waist circumference	1
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	29
+32	Electrocardiography	1
+321C	ECG sinus rhythm	1
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	2
+42W5	Haemoglobin A1c level - IFCC standardised	1
+42X	Reticulocyte count	1
+44CC	Plasma C reactive protein	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	14
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	22
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	14
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	14
+44U	Blood glucose result	1
+44g1	Plasma fasting glucose level	3
+451E	GFR calculated abbreviated MDRD	5
+4615	MSU sent to lab.	1
+4618	Urine dipstick test	1
+4661	Urine glucose test not done	2
+4662	Urine glucose test negative	1
+4671	Urine protein test not done	3
+4672	Urine protein test negative	1
+5533	Angiocardiography abnormal	1
+573	Isotope distribut.static scan	1
+573D	Isotope static scan heart	1
+5853	U-S heart scan	2
+58531	Echocardiogram abnormal	1
+65720	Pneumococcal vaccination given	1
+66A3	Diabetic on diet only	2
+66A4	Diabetic on oral treatment	1
+6791	Health ed. - smoking	6
+6792	Health ed. - alcohol	1
+67I	Advice	2
+6896	Depression screening using questions	3
+792	Coronary artery operations	1
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	9
+8CA5	Patient advised re exercise	8
+8CAM	Patient advised about alcohol	4
+8H21	Admit medical emergency unsp.	1
+8H44	Cardiological referral	1
+8H46	Neurological referral	2
+8H5	Referral to surgeon	1
+8H52	Ophthalmological referral	1
+8H77	Refer to physiotherapist	1
+8H7V	Refer to audiologist	1
+8HT3	Referral to audiology clinic	1
+8HTJ	Referral to rapid access chest pain clinic	1
+8I25	Warfarin contraindicated	2
+8I66	Aspirin not indicated	1
+8I71	Warfarin not tolerated	1
+8I73	Beta blocker not tolerated	1
+918F	Has a carer	2
+9N41	Did not attend - reason given	1
+9N42	Did not attend - no reason	2
+9i9	Bangladeshi or British Bangladeshi - ethn categ 2001 census	1
+A7816	Hand warts	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	4
+ASDI224	Aspirin  Dispersible tablets  75 mg	14
+ATTA231	Atenolol  Tablets  50 mg	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	12
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	2
+CACH19098NEMIS	Calcium Carbonate And Colecalciferol  Chewable tablets  1.5 grams + 10 micrograms (400 units)	1
+E2653	Psychogenic dysuria	1
+F358	Deep peroneal nerve lesion	1
+F4Kzz	Ill-defined eye disorder NOS	1
+FETA9098BRIDL	Ferrous Sulphate  Tablets  300 mg	1
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE10	Unknown vendor specific drug	1
+Fy03	Sleep apnoea	1
+G244	Hypertension secondary to endocrine disorders	1
+G33z	Angina pectoris NOS	1
+G33z4	Ischaemic chest pain	1
+G5703	Paroxysmal nodal tachycardia	2
+G5y0	Myocarditis NOS	1
+G662	Posterior cerebral artery syndrome	3
+GACA10300BRIDL	Galenamox  Capsules  250 mg	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+ININ18217NEMIS	Insulin Detemir  Injection (cartridges)  100 units/ml, 3 ml cartridge	1
+MALA14087NEMIS	Manfred Sauer P-Sure  Latex Free Adhesive Sheath  Large- 32mm, 97.32	2
+N000	Systemic lupus erythematosus	1
+N01w	"Reactive arthropathy	1
+NAMASGO2	Unknown vendor specific drug	1
+PHTA6867	Phenindione  Tablets  25 mg	1
+PITA5315NEMIS	Pioglitazone Hydrochloride  Tablets  15 mg	5
+PRCA8367EGTON	Prozac  Capsules  20 mg	2
+PRLE40411NEMIS	Unknown vendor specific drug	13
+PRM/20660EMIS	Propranolol Hydrochloride  M/R capsules  160 mg	3
+PROIEGTON6467	Pragmatar  Ointment	2
+PRTA18800NEMIS	Proguanil And Atovaquone  Tablets  100 mg + 250 mg	1
+S352C	Closed fracture metatarsal shaft	15
+SN51	Angioneurotic oedema	1
+TC	Accidental falls	4
+TC10	Fall from ladder	1
+Ub0qs	Unknown vendor specific drug	3
+Ub1ju	Unknown vendor specific drug	1
+Ub1md	Unknown vendor specific drug	3

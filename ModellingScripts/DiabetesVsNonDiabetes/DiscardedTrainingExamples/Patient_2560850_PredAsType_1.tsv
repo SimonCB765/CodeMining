@@ -1,0 +1,100 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1363	Light drinker - 1-2u/day	1
+1371	Never smoked tobacco	1
+137S	Ex smoker	3
+137T	Date ceased smoking	1
+1381	Exercise physically impossible	4
+16D	Falls	1
+1A23	Incontinence of urine	2
+1B17	Depressed	1
+229	O/E - height	14
+22A	O/E - weight	12
+22K	Body Mass Index	12
+2469	O/E - Systolic BP reading	22
+3213	Exercise ECG	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42R	Serum iron tests	1
+42R4	Serum ferritin	1
+42R5	Serum TIBC	1
+42R7	Serum iron level	1
+42T	Serum vitamin B12	2
+42U4	Red blood cell folate	1
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	11
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	23
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	8
+44Q	Serum triglycerides	3
+44g	Plasma glucose level	8
+451E	GFR calculated abbreviated MDRD	8
+4662	Urine glucose test negative	4
+4672	Urine protein test negative	6
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+46X0	Urine nitrite positive	1
+58530	Echocardiogram normal	1
+65720	Pneumococcal vaccination given	1
+6791	Health ed. - smoking	5
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	2
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	3
+8HE	Discharged from hospital	1
+8HRA	Referral for exercise ECG	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	3
+8I65	Warfarin not indicated	5
+8I6B	Clopidogrel not indicated	1
+8I6a	Dipyridamole not indicated	1
+8I73	Beta blocker not tolerated	3
+9N11	Seen in GP's surgery	2
+9N4	Failed encounter	1
+9N42	Did not attend - no reason	1
+9N48	Appt cancelled by doctor	1
+9S10	White British	2
+AB0	Dermatophytosis including tinea or ringworm	1
+AB030	Dermatophytosis of groin	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	17
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	20
+CECA4202NEMIS	Celebrex  Capsules  100 mg	6
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+D2018	[X]Pure red cell aplasia	1
+D410	Secondary polycythaemia	16
+EMIS9	Unknown vendor specific drug	2
+EMISQRI11	Unknown vendor specific drug	1
+ERAC10389BRIDL	Erythromycin  Solution  2 %	3
+F4522	Acute primary angle-closure glaucoma	2
+F5630	"Labyrinthitis	2
+FRTA1246	Froben  Tablets  50 mg	2
+Fyu4	[X]Demyelinating diseases of the central nervous system	1
+G5415	Aortic stenosis	1
+G5703	Paroxysmal nodal tachycardia	1
+G5y0	Myocarditis NOS	2
+GACA10300BRIDL	Galenamox  Capsules  250 mg	1
+H120z	Chronic rhinitis NOS	1
+M0100	Boil of ear	6
+MITA10737BRIDL	Micturin  Tablets  25 mg	2
+MITO28977EMIS	Minoxidil  Topical solution  5 %	1
+NIPU29681EMIS	Nitromin  Cfc-free pump spray  400 micrograms/dose (180 dose)	1
+S3521	Closed fracture of talus	2
+SAIN5370	Salcatonin  Injection  100 units/ml, 1 ml ampoule	1
+SN51	Angioneurotic oedema	1
+U6004	[X]Tetracyclines causing adverse effects in therapeutic use	23

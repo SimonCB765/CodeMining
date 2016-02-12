@@ -1,0 +1,126 @@
+Code	Description	Count
+12C	FH: Cardiovascular disease	1
+12C5	FH: Myocardial infarction	1
+136	Alcohol consumption	7
+1361	Teetotaller	1
+1371	Never smoked tobacco	2
+138	Exercise grading	2
+13A	Diet - patient initiated	3
+13HT1	Stress at home	1
+1A55	Dysuria	7
+1Z12	Chronic kidney disease stage 3	1
+1Z13	Chronic kidney disease stage 4	1
+229	O/E - height	3
+22A	O/E - weight	9
+22K	Body Mass Index	9
+246	O/E - blood pressure reading	27
+2841	Confused	1
+3128	Fundoscopy	2
+32	Electrocardiography	2
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42C	RBC - red blood cell size	1
+42R	Serum iron tests	1
+42R1	Serum iron normal	1
+42bE	Percentage hypochromic cells	2
+44CC	Plasma C reactive protein	2
+44CS	Serum C reactive protein level	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	20
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	8
+44Q	Serum triglycerides	9
+44g	Plasma glucose level	9
+451E	GFR calculated abbreviated MDRD	11
+466	Urine test for glucose	2
+4669	Urine dipstick for glucose	1
+467	Urine protein test	3
+4679	Urine dipstick for protein	2
+4698	Urine dipstick for blood	1
+55	Cardiovascular sys.angiography	1
+585	Other diagnostic ultrasound	1
+5853	U-S heart scan	2
+6572	Pneumococcal vaccination	1
+66U	Menopause monitoring	1
+6781	Health education offered	3
+6879	Hyperlipidaemia screen	1
+6896	Depression screening using questions	2
+68L	Exercise status screening	1
+79275	Open angioplasty of coronary artery	1
+7939z	Catheterisation of heart NOS	2
+7B2Az	Diagnostic cystoscopy NOS	1
+8H	Referral for further care	1
+8H2	Emergency hospital admission	1
+8H3Z	Other hospital admission NOS	1
+8H41	General medical referral	1
+8H61	Referral to private doctor	2
+8HE	Discharged from hospital	4
+8HQ1	Refer for X-Ray	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I62	Beta blocker not indicated	1
+8I7	Treatment not tolerated	1
+8I77	Calcium channel blocker not tolerated	1
+9N1C	Seen in own home	3
+9N2U	Seen by optician	1
+9N3A	Telephone triage encounter	1
+9N4F	Failed encounter - message left on answer machine	1
+9N57	Admin reason for encounter	1
+A061	Giardiasis - Lambliasis	1
+A3B7	Pseudomonas infection	1
+F342z	Ulnar nerve lesion NOS	1
+F4320	Choroiditis NOS	1
+FRTA1246	Froben  Tablets  50 mg	2
+Fyu5E	[X]Chronic headache disorder	2
+G304	Posterior myocardial infarction NOS	1
+G37	Cardiac syndrome X	1
+GASTO241	Unknown vendor specific drug	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	2
+J10	Diseases of oesophagus	1
+K013	Nephrotic syndrome with minimal change glomerulonephritis	2
+MITA10737BRIDL	Micturin  Tablets  25 mg	1
+N05zC	"Osteoarthritis NOS	2
+POOLEME4	Unknown vendor specific drug	1
+Y3221	Unknown vendor specific drug	11
+b433	SPIRONOLACTONE 100mg tablets	2
+b51C	AMILORIDE HCL+CYCLOPENTHIAZIDE 2.5mg/250micrograms tablets	1
+bb3P	VERA-TIL SR 240mg m/r tablets	1
+bd36	ATENOLOL 100mg tablets	16
+bd3c	TENORMIN 25 tablets	4
+bd65	LOPRESOR 50mg tablets	1
+bdf3	*MONOCOR 5mg tablets	27
+bi21	INNOVACE 2.5mg tablets	5
+bi2w	ENALAPRIL MALEATE 10mg tablets	1
+bk33	COZAAR HALF-STRENGTH 25mg tablets	4
+bk4z	VALSARTAN+HYDROCHLOROTHIAZIDE 160mg/12.5mg tablets	3
+bl3n	ELANTAN LA 25mg m/r capsules	11
+bl55	DILTIAZEM HYDROCHLORIDE 120mg m/r tablets	1
+bl5n	ZEMTARD 300 XL m/r capsules	1
+bl8J	TENSIPINE MR 10 m/r tablets	2
+bl8K	TENSIPINE MR 20 m/r tablets	2
+blb2	AMLODIPINE 10mg tablets	11
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	1
+blzz	GLYCERYL TRINITRATE 10mg/24hrs patches	21
+bu2c	ASPIRIN 75mg soluble tablets	1
+bxb2	ACIPIMOX 250mg capsules	1
+da62	SEROXAT 20mg tablets x30	1
+dj41	CODEINE PHOSPHATE 15mg tablets	1
+du35	NICOTINELL TTS 10 patches	5
+e614	CEFACLOR 250mg capsules	1
+e618	CEFACLOR 500mg capsules	1
+fi62	FINASTERIDE 5mg tablets	1
+gc72	FLOMAX MR 400micrograms m/r capsules	3
+i11x	FERROUS FUMARATE 200mg tablets	1
+j243	*ETODOLAC 200mg capsules	10
+j287	BRUFEN 200mg tablets	1
+j28B	IBUPROFEN 800mg m/r tablets	1

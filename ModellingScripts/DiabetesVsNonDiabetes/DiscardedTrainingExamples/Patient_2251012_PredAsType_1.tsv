@@ -1,0 +1,106 @@
+Code	Description	Count
+136	Alcohol consumption	3
+1361	Teetotaller	1
+1362	Trivial drinker - <1u/day	1
+1373	Light smoker - 1-9 cigs/day	1
+137P	Cigarette smoker	1
+137S	Ex smoker	6
+1382	Avoids even trivial exercise	2
+1383	Enjoys light exercise	1
+13B3	Low cholesterol diet	1
+13l4	Main spoken language English	1
+14A4	H/O: myocardial infarct >60	1
+229	O/E - height	5
+22A	O/E - weight	9
+22K	Body Mass Index	8
+246	O/E - blood pressure reading	2
+2469	O/E - Systolic BP reading	14
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	10
+4258	Haematocrit	2
+426	Red blood cell (RBC) count	1
+428	Mean corpusc. haemoglobin(MCH)	4
+429	Mean corpusc. Hb. conc. (MCHC)	1
+42A	Mean corpuscular volume (MCV)	5
+42N	Monocyte count	1
+42P	Platelet count	2
+42R4	Serum ferritin	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42Z5	Mean platelet volume	2
+42Z7	Red blood cell distribution width	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G9	Serum gamma-glutamyl transferase level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	17
+44J9	Serum urea level	2
+44Le	Plasma vitamin B12 level	1
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	4
+44P6	Serum LDL cholesterol level	4
+44Q	Serum triglycerides	11
+44U	Blood glucose result	1
+44g	Plasma glucose level	7
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	13
+4662	Urine glucose test negative	3
+467	Urine protein test	1
+4672	Urine protein test negative	4
+4673	Urine protein test = trace	2
+4674	Urine protein test = +	1
+4682	Urine ketone test negative	3
+4692	Urine blood test = negative	3
+46M7	Urine creatinine	3
+46N	Urine protein	1
+46X1	Urine nitrite negative	2
+46f1	Urine leucocyte test = negative	1
+46f4	Urine leucocyte test = +++	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	2
+6896	Depression screening using questions	3
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8CAL	Smoking cessation advice	1
+8H41	General medical referral	1
+8H44	Cardiological referral	1
+8H51	General surgical referral	1
+8H52	Ophthalmological referral	1
+8H77	Refer to physiotherapist	1
+8I26	Beta blocker contraindicated	1
+8I62	Beta blocker not indicated	1
+9OI4	Hypertens.monitor.1st letter	2
+9OIA	Hypertension monitor.chck done	1
+9S10	White British	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	16
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	1
+CYTA23926EMIS	Cyproterone Acetate  Tablets  100 mg	1
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	2
+E2653	Psychogenic dysuria	2
+F4522	Acute primary angle-closure glaucoma	1
+F4720	 unspecified"	1
+F54y3	Retraction of tympanic membrane	9
+FLTA1194	Fluanxol  Tablets  500 micrograms	18
+FRTA1246	Froben  Tablets  50 mg	1
+FUNDHRE12	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	2
+G33	Angina pectoris	1
+G5800	Acute congestive heart failure	1
+H16z	Chronic laryngitis NOS	1
+H17	Allergic rhinitis	1
+ININ15889NEMIS	Insulatard Penfill  Injection  100 units/ml, 3 ml cartridge	2
+ININ18217NEMIS	Insulin Detemir  Injection (cartridges)  100 units/ml, 3 ml cartridge	1
+L36z	Postpartum haemorrhage NOS	2
+L395	Forceps delivery	25
+PH34	Other specified birthmark	1
+PREN8412EGTON	Prednisolone  E/c tablets  5 mg	1
+S3501	"Cls # calcaneus	1
+S352C	Closed fracture metatarsal shaft	21
+SESH5910	Selsun  Shampoo  2.5 %	12
+bdfA	CARDICOR 2.5mg tablets	18

@@ -1,0 +1,133 @@
+Code	Description	Count
+136	Alcohol consumption	2
+1371	Never smoked tobacco	4
+1383	Enjoys light exercise	4
+1384	Enjoys moderate exercise	1
+16D	Falls	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	6
+22A	O/E - weight	6
+22K	Body Mass Index	5
+2469	O/E - Systolic BP reading	28
+3213	Exercise ECG	1
+3272	ECG: atrial fibrillation	1
+33B9	Exercise tolerance test	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	4
+42R4	Serum ferritin	2
+42R7	Serum iron level	2
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+44CS	Serum C reactive protein level	1
+44E	Serum bilirubin level	1
+44EC	Serum total bilirubin level	1
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	13
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	20
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	4
+44P6	Serum LDL cholesterol level	2
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	5
+44W9	Serum digoxin level	1
+44g	Plasma glucose level	4
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	14
+466	Urine test for glucose	1
+4662	Urine glucose test negative	1
+467	Urine protein test	1
+4672	Urine protein test negative	1
+46M7	Urine creatinine	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+46U	Urine culture	1
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	2
+6896	Depression screening using questions	3
+68NE	No consent - influenza imm.	2
+791	Valves of heart and adjacent structures operations	1
+7910	Plastic repair of mitral valve	1
+79160	Open mitral valvotomy	1
+792	Coronary artery operations	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	1
+8CAM	Patient advised about alcohol	2
+8H	Referral for further care	3
+8HHl	Referral to practice phlebotomist	2
+8HS	Referral for endoscopy	1
+9N1O	Seen in rheumatology clinic	1
+9h02	Excepted from CHD quality indicators: Informed dissent	1
+9h32	Excepted from hypertension qual indicators: Informed dissent	1
+A0743	Campylobacter gastrointestinal tract infection	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	4
+AMTA10145BRIDL	Amlodipine Besilate  Tablets  5 mg	5
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	8
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	2
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	5
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	8
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	11
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	1
+BUTA434	Bumetanide  Tablets  1 mg	2
+C1000	Diab.mell.no comp. - juvenile	1
+CITA21757NEMIS	Cilostazol  Tablets  50 mg	1
+CITA22180EMIS	Ciproxin  Tablets  500 mg	3
+CITA22182EMIS	Ciprofloxacin  Tablets  500 mg	2
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+DETA29924EMIS	Deflazacort  Tablets  6 mg	2
+DIM/22264EMIS	Diltiazem Hydrochloride  M/R capsules  180 mg	4
+DIM/22265EMIS	Diltiazem Hydrochloride  M/R capsules  300 mg	1
+E2653	Psychogenic dysuria	6
+EGTON406	Unknown vendor specific drug	2
+EMISHGT61	Unknown vendor specific drug	1
+EMISNQLU7	Unknown vendor specific drug	1
+EMISNQRE16	Unknown vendor specific drug	1
+F4522	Acute primary angle-closure glaucoma	2
+F5603	Active vestibular Meniere's disease	1
+FLTA1194	Fluanxol  Tablets  500 micrograms	7
+FLTA1208	Flupenthixol  Tablets  1 mg	3
+FRCA8845BRIDL	Frisium Sls  Tablets  10 mg	1
+FRENCCU1	Unknown vendor specific drug	1
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE12	Unknown vendor specific drug	2
+G24z	Secondary hypertension NOS	1
+G3114	Worsening angina	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	2
+H322	Centrilobular emphysema	2
+H3300	Extrinsic asthma without status asthmaticus	3
+L39	Other complications of labour and delivery NEC	1
+L395	Forceps delivery	1
+L3951	Forceps delivery - delivered	1
+LEIGHPO3	Unknown vendor specific drug	10
+LEIGHPO4	Unknown vendor specific drug	2
+LEPR18221NEMIS	Levemir Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	5
+M21A	Acquired xeroderma	1
+MITA10737BRIDL	Micturin  Tablets  25 mg	1
+MITA8305EGTON	Migravess  Tablets	1
+N05z5	Osteoarthritis NOS-pelv./thigh	1
+N083C	Recurrent subluxation of shoulder - anterior	1
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	1
+PH311	Port wine stain	6
+PINFOHB2	Unknown vendor specific drug	2
+PRLE40411NEMIS	Unknown vendor specific drug	1
+PRTA4213	Pro-Viron  Tablets  25 mg	4
+S3521	Closed fracture of talus	5
+S352C	Closed fracture metatarsal shaft	1
+SESH5910	Selsun  Shampoo  2.5 %	2
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	9
+TAM/28659EMIS	Tamsulosin Hydrochloride  M/R capsules  400 micrograms	1
+TC021	Fall from steps	1
+U6002	[X]Chloramphen group caus adverse effects in therapeut use	3
+U6004	[X]Tetracyclines causing adverse effects in therapeutic use	2
+U6023	[X]Insul/oral hypoglyc drugs caus adverse eff therapeut use	5
+Ub0qs	Unknown vendor specific drug	16

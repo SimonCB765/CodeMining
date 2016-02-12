@@ -1,0 +1,115 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	2
+136	Alcohol consumption	7
+1361	Teetotaller	1
+1371	Never smoked tobacco	1
+137R	Current smoker	5
+1383	Enjoys light exercise	5
+1Z12	Chronic kidney disease stage 3	2
+1Z13	Chronic kidney disease stage 4	2
+229	O/E - height	4
+22A	O/E - weight	13
+22K	Body Mass Index	11
+2469	O/E - Systolic BP reading	27
+3211	ECG requested	1
+32130	Exercise ECG normal	2
+3222	ECG:shows myocardial ischaemia	2
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	16
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42X	Reticulocyte count	1
+43Z2	Prostate specific antigen	4
+44CC	Plasma C reactive protein	5
+44E3	Total bilirubin	1
+44EC	Serum total bilirubin level	1
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	16
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	40
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	11
+44U	Blood glucose result	2
+451E	GFR calculated abbreviated MDRD	23
+451G	GFR calculated abbreviated MDRD adj for African Americ orign	1
+466	Urine test for glucose	1
+4661	Urine glucose test not done	1
+4662	Urine glucose test negative	3
+467	Urine protein test	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	4
+4674	Urine protein test = +	1
+46M7	Urine creatinine	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+65720	Pneumococcal vaccination given	1
+6797	Health ed. - immunisation	4
+6896	Depression screening using questions	3
+792	Coronary artery operations	3
+7922	Allograft replacement of coronary artery	2
+7928	Transluminal balloon angioplasty of coronary artery	1
+8B63	Salicylate prophylaxis	3
+8CA4	Patient advised re diet	6
+8CA5	Patient advised re exercise	3
+8CAL	Smoking cessation advice	4
+8CAM	Patient advised about alcohol	2
+8H	Referral for further care	1
+8H44	Cardiological referral	1
+8HB1	Recall arranged	8
+8I28	Angiotensin converting enzyme inhibitors contraindicated	1
+8I2H	Angiotensin II receptor antagonists contraindicated	2
+8I2K	Clopidogrel contraindicated	2
+8I2R	Anticoagulation contraindicated	2
+8I3D	Angiotensin converting enzyme inhibitor declined	2
+8I62	Beta blocker not indicated	1
+8IAG	Pandemic influenza vaccination declined	1
+9N2S	Seen by practice phlebotomist	2
+9N42	Did not attend - no reason	2
+9N4o	Did not attend blood test	2
+9S6	Indian	1
+9i7	Indian or British Indian - ethnic category 2001 census	2
+AB05	Dermatophytosis of the body	1
+AD5	Sarcoidosis	1
+ALCA73	Alfacalcidol  Capsules  1 microgram	1
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	3
+AMCA17510NEMIS	Amoxicillin  Capsules  250 mg	1
+ASDI223	Aspirin  Dispersible tablets  300 mg	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	15
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	6
+DILO3454	Diprosalic  Scalp application	5
+DIM/22265EMIS	Diltiazem Hydrochloride  M/R capsules  300 mg	3
+EMISSPR360	Unknown vendor specific drug	17
+F4522	Acute primary angle-closure glaucoma	1
+F4F22	Epiphora due to insufficient drainage	1
+F5614	Otogenic vertigo	1
+FRTA1246	Froben  Tablets  50 mg	2
+FUSO17471NEMIS	Fulvestrant  Solution for injection  250 mg/5 ml pre-filled syringe	1
+Fyu5E	[X]Chronic headache disorder	1
+G310	Postmyocardial infarction syndrome	1
+G662	Posterior cerebral artery syndrome	4
+GASTOUR2	Unknown vendor specific drug	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	1
+PH311	Port wine stain	2
+PH34	Other specified birthmark	8
+PINFOHB2	Unknown vendor specific drug	8
+PRCA2392	Propranolol Hydrochloride  Capsules  160 mg	1
+PRM/22791NEMIS	Propiverine Hydrochloride  M/R capsules  30 mg	9
+S352C	Closed fracture metatarsal shaft	6
+SATA2499	Sanomigran  Tablets  1.5 mg	21
+TETA1044NEMIS	Telmisartan  Tablets  80 mg	1
+Xa9B5	Unknown vendor specific drug	1
+XaBpY	Unknown vendor specific drug	2

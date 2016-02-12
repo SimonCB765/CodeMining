@@ -1,0 +1,132 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+12C4	FH: CVA/stroke	1
+12C5	FH: Myocardial infarction	1
+136	Alcohol consumption	4
+137P	Cigarette smoker	1
+137R	Current smoker	1
+137S	Ex smoker	3
+1383	Enjoys light exercise	3
+1384	Enjoys moderate exercise	2
+13l4	Main spoken language English	1
+1A52	Renal colic	1
+1A55	Dysuria	1
+1BT	Depressed mood	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	3
+22A	O/E - weight	6
+22K	Body Mass Index	6
+2469	O/E - Systolic BP reading	22
+32	Electrocardiography	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	5
+42R4	Serum ferritin	1
+42R7	Serum iron level	2
+42T	Serum vitamin B12	1
+43Z2	Prostate specific antigen	2
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	1
+44EC	Serum total bilirubin level	1
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	15
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	23
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	4
+44P6	Serum LDL cholesterol level	3
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	4
+44U	Blood glucose result	1
+44W9	Serum digoxin level	1
+44g	Plasma glucose level	4
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	18
+4612	Urinalysis requested	1
+4613	Urinalysis = no abnormality	1
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	4
+4674	Urine protein test = +	1
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	1
+4695	Urine blood test = +	1
+46M7	Urine creatinine	1
+46U	Urine culture	1
+46X0	Urine nitrite positive	1
+46X1	Urine nitrite negative	1
+46f1	Urine leucocyte test = negative	1
+5856	U-S pelvic scan	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	6
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	3
+7936	Introduction of cardiac pacemaker system via vein	2
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	3
+8H	Referral for further care	3
+8H44	Cardiological referral	3
+8H53	ENT referral	1
+8H77	Refer to physiotherapist	2
+8I24	Aspirin prophylaxis contra-indicated	1
+9i0	British or mixed British - ethnic category 2001 census	1
+AB0z	Dermatophytosis NOS	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	3
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	6
+BITA2335NEMIS	Bisoprolol Fumarate  Tablets  7.5 mg	3
+C11y3	Impaired fasting glycaemia	2
+C163	Other ovarian failure	18
+CECA516	Cephalexin  Capsules  250 mg	3
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	16
+CITA18900EMIS	Cilazapril  Tablets  500 micrograms	1
+D3100	Henoch-Schonlein purpura	1
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	2
+DETA29924EMIS	Deflazacort  Tablets  6 mg	2
+DETA845	Dexamethasone  Tablets  2 mg	4
+DUFFMRE1	Unknown vendor specific drug	1
+DUGA19397NEMIS	Duloxetine  Gastro-resistant Capsules  30 mg	1
+E107	Schizo-affective schizophrenia	1
+E2653	Psychogenic dysuria	3
+E2751	Bulimia (non-organic overeating)	1
+EMISNQSE23	Unknown vendor specific drug	1
+F341z	Median nerve lesions NOS	1
+F4F50	Lacrimal punctum eversion	1
+FLTA1194	Fluanxol  Tablets  500 micrograms	18
+FLTA1208	Flupenthixol  Tablets  1 mg	4
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE12	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	1
+G111	Rheumatic mitral insufficiency	1
+G5415	Aortic stenosis	1
+GASTOSE3	Unknown vendor specific drug	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H30	Bronchitis unspecified	3
+H322	Centrilobular emphysema	2
+H331	Intrinsic asthma	3
+ISTA1523	Isosorbide Mononitrate  Tablets  20 mg	1
+ISTA2EGTON	Ismo Retard  M/R tablets  40 mg	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+MITA8305EGTON	Migravess  Tablets	1
+N000	Systemic lupus erythematosus	1
+N330B	Vertebral osteoporosis	1
+NAMASDN1	Unknown vendor specific drug	1
+PH34	Other specified birthmark	2
+PRLE40411NEMIS	Unknown vendor specific drug	7
+PRM/20660EMIS	Propranolol Hydrochloride  M/R capsules  160 mg	17
+PROIEGTON6467	Pragmatar  Ointment	1
+S3501	"Cls # calcaneus	17
+SESH5910	Selsun  Shampoo  2.5 %	3
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	10
+Ub0qs	Unknown vendor specific drug	15

@@ -1,0 +1,134 @@
+Code	Description	Count
+03DF	Medical practitioner -teaching	1
+1351	Church of England	1
+136	Alcohol consumption	8
+1364	Moderate drinker - 3-6u/day	1
+1371	Never smoked tobacco	3
+1381	Exercise physically impossible	1
+1383	Enjoys light exercise	2
+13l4	Main spoken language English	1
+14F1	H/O: eczema	1
+16D	Falls	1
+1A1	Micturition frequency	1
+1F11	Diet - low in fat	1
+1F31	Dietary sodium - low	1
+1Z1J	Chronic kidney disease stage 4 without proteinuria	1
+229	O/E - height	5
+22A	O/E - weight	11
+22K	Body Mass Index	8
+2469	O/E - Systolic BP reading	30
+32130	Exercise ECG normal	1
+3217	ECG abnormal	1
+423	Haemoglobin estimation	15
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	2
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	8
+44A1	Serum parathyroid hormone	1
+44AP	Serum pro-brain natriuretic peptide level	1
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	14
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	34
+44J9	Serum urea level	4
+44LA	Serum vitamin D	1
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	6
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	9
+44TJ	Blood glucose level	6
+451E	GFR calculated abbreviated MDRD	12
+461	Urine exam. - general	1
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	2
+46M7	Urine creatinine	2
+46TC	Urine albumin:creatinine ratio	2
+46W	Urine microalbumin	2
+6572	Pneumococcal vaccination	1
+66C9	Target weight discussed	1
+6792	Health ed. - alcohol	1
+67I8	Advice about taking aspirin	3
+6879	Hyperlipidaemia screen	1
+6896	Depression screening using questions	2
+81H1	Dressing of ulcer	1
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	4
+8H	Referral for further care	1
+8H4	Referral to physician	1
+8H5	Referral to surgeon	1
+8H5D	Referred to vascular surgeon	1
+8H62	Referral to G.P.	1
+8H71	Refer to practice nurse	1
+8H77	Refer to physiotherapist	1
+8H7R	Refer to chiropodist	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I65	Warfarin not indicated	1
+8I6B	Clopidogrel not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	2
+8I72	Clopidogrel not tolerated	1
+9NF7	Urgent home visit	1
+9OIA	Hypertension monitor.chck done	2
+9i0	British or mixed British - ethnic category 2001 census	4
+A07y0	Viral gastroenteritis	1
+A0812	Gastroenteritis - presumed infectious origin	1
+AMTA113	Amiodarone  Tablets  200 mg	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	5
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	11
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	15
+ATTA229	Atarax  Tablets  25 mg	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	12
+BETA302	Bendrofluazide  Tablets  2.5 mg	2
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	4
+C10F1	Type 2 diabetes mellitus with ophthalmic complications	4
+DETA845	Dexamethasone  Tablets  2 mg	1
+DILO3454	Diprosalic  Scalp application	2
+DIM/12096NEMIS	Disogram Sr  M/R capsules  120 mg	6
+E2653	Psychogenic dysuria	1
+EMISQ2W6	Unknown vendor specific drug	1
+EMISQ2W7	Unknown vendor specific drug	20
+F16z	Myelopathy NOS	1
+F4F22	Epiphora due to insufficient drainage	1
+F542z	Tympanic membrane perforation NOS	1
+F54y3	Retraction of tympanic membrane	5
+F5630	"Labyrinthitis	2
+FRTA1246	Froben  Tablets  50 mg	5
+FUNDHRE10	Unknown vendor specific drug	3
+FUNDHRE12	Unknown vendor specific drug	1
+FyuF9	[X]Other retinal disorders in diseases classified elsewhere	1
+G24z	Secondary hypertension NOS	2
+G3114	Worsening angina	2
+G5415	Aortic stenosis	1
+G5703	Paroxysmal nodal tachycardia	1
+G57y4	Sinoatrial node dysfunction NOS	1
+G5800	Acute congestive heart failure	1
+GLS/17962EMIS	Glyceryl Trinitrate  S/r buccal tablets  5 mg	1
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+ISCA8793BRIDL	Isosorbide Mononitrate  M/R capsules  50 mg	1
+J11z	Gastric ulcer NOS	1
+J1211	Chronic duodenal ulcer with haemorrhage	1
+LACA1623	Lasilactone  Capsules	1
+LACH24088NEMIS	Lanthanum  Chewable tablets  500 mg	1
+M2116	Acquired ichthyosis	1
+PCSDT5314PA1	Unknown vendor specific drug	1
+PRLE40411NEMIS	Unknown vendor specific drug	3
+PRM/22791NEMIS	Propiverine Hydrochloride  M/R capsules  30 mg	1
+PROIEGTON6467	Pragmatar  Ointment	1
+S352C	Closed fracture metatarsal shaft	6
+SESH5910	Selsun  Shampoo  2.5 %	4
+TOTA24442EMIS	Torasemide  Tablets  5 mg	1
+Ub0qs	Unknown vendor specific drug	5
+Ub1ju	Unknown vendor specific drug	2

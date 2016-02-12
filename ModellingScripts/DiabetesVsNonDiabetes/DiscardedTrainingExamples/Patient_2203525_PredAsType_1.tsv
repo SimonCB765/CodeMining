@@ -1,0 +1,123 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	1
+1361	Teetotaller	1
+1371	Never smoked tobacco	3
+1382	Avoids even trivial exercise	1
+13l4	Main spoken language English	1
+1A8	Breast lump symptom	2
+1B17	Depressed	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	1
+22A	O/E - weight	7
+22K	Body Mass Index	7
+2469	O/E - Systolic BP reading	29
+32	Electrocardiography	2
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R	Serum iron tests	1
+42R4	Serum ferritin	1
+42R7	Serum iron level	1
+42W	Hb. A1C - diabetic control	1
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44CB	Serum transferrin	1
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	20
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	4
+44Q	Serum triglycerides	7
+44TJ	Blood glucose level	5
+44TK	Fasting blood glucose level	2
+44U	Blood glucose result	4
+44f1	Serum fasting glucose level	4
+451E	GFR calculated abbreviated MDRD	5
+461	Urine exam. - general	2
+4615	MSU sent to lab.	2
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+4693	Urine: trace non-haemol. blood	1
+4697	Urine blood test = +++	1
+46N8	Urine microalbumin profile	1
+46TC	Urine albumin:creatinine ratio	1
+46W	Urine microalbumin	1
+46X1	Urine nitrite negative	1
+46f2	Urine leucocyte test = +	1
+554	Coronary arteriogr.-general	2
+5543	Coronary arteriograph.abnormal	1
+58531	Echocardiogram abnormal	1
+65720	Pneumococcal vaccination given	1
+6774	Medication counselling	3
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	3
+6896	Depression screening using questions	2
+79281	Percut translum balloon angioplasty mult coronary arteries	1
+79294	Insertion of coronary artery stent	4
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	1
+8CAL	Smoking cessation advice	1
+8H	Referral for further care	1
+8H2	Emergency hospital admission	3
+8H44	Cardiological referral	3
+8H51	General surgical referral	1
+8H54	Orthopaedic referral	1
+8H7	Other referral	1
+9N11	Seen in GP's surgery	1
+9N31	Telephone encounter	1
+9NC3	Letter sent to patient	1
+9NP2	Chaperone refused	1
+9i20	English - ethnic category 2001 census	1
+AB230	Candidal intertrigo	1
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	6
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	3
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ANTA27745EMIS	Anastrozole  Tablets  1 mg	1
+ASDI223	Aspirin  Dispersible tablets  300 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	16
+C1000	Diab.mell.no comp. - juvenile	2
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	1
+CLIN12836NEMIS	Clexane Forte  Injection  150 mg/1 ml, pre-filled syringe	3
+DECA18830EMIS	Demix-100  Capsules  100 mg	1
+DILO3454	Diprosalic  Scalp application	1
+DUGA19398NEMIS	Duloxetine  Gastro-resistant Capsules  60 mg	1
+EMIS9	Unknown vendor specific drug	1
+EMISQ2W4	Unknown vendor specific drug	22
+F4950	"Blindness	1
+F4F1	Other lacrimal gland disorders	1
+F54y3	Retraction of tympanic membrane	1
+F563	Labyrinthitis	1
+FLTA1208	Flupenthixol  Tablets  1 mg	17
+FRTA1246	Froben  Tablets  50 mg	3
+Fyu5E	[X]Chronic headache disorder	2
+G3114	Worsening angina	2
+GASTO241	Unknown vendor specific drug	1
+H013	Acute sphenoidal sinusitis	1
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	3
+J1211	Chronic duodenal ulcer with haemorrhage	2
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+K08y	Other impaired renal function disorder	1
+L1813	Thyroid dysfunction in pregnancy - baby not yet delivered	3
+L395	Forceps delivery	6
+M21yA	Disseminated superficial actinic porokeratosis	1
+MACA8841BRIDL	Maxepa  Capsules  1 gram	1
+MUUR32590EMIS	Muse  Urethral Application  250 micrograms	1
+N05zU	OA NOS-IP joint of toe	1
+NETA34105EMIS	Neomycin Sulphate  Tablets  500 mg	22
+P641	Bicuspid aortic valve	5
+PRTA4205	Pregaday  Tablets	17
+S352C	Closed fracture metatarsal shaft	4
+SESH5910	Selsun  Shampoo  2.5 %	6
+SN51	Angioneurotic oedema	1

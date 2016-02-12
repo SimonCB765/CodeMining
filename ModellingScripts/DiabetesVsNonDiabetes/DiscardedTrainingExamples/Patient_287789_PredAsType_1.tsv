@@ -1,0 +1,103 @@
+Code	Description	Count
+03J1	Physiotherapist	1
+12C4	FH: CVA/stroke	2
+136	Alcohol consumption	1
+137G	Trying to give up smoking	1
+137M	Rolls own cigarettes	3
+1383	Enjoys light exercise	2
+13A3	Weight reducing diet	1
+13l4	Main spoken language English	1
+14A7	H/O: CVA/stroke	1
+1AA	Prostatism	2
+1Z12	Chronic kidney disease stage 3	4
+1Z1G	Chronic kidney disease stage 3B without proteinuria	1
+229	O/E - height	13
+22A	O/E - weight	14
+22K	Body Mass Index	14
+2469	O/E - Systolic BP reading	20
+2BB1	O/E - retina normal	3
+3241	ECG: no LVH	1
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	3
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	11
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	7
+44Q	Serum triglycerides	10
+44g	Plasma glucose level	4
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	6
+4662	Urine glucose test negative	3
+467	Urine protein test	1
+4672	Urine protein test negative	3
+46M7	Urine creatinine	1
+46N	Urine protein	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	1
+6896	Depression screening using questions	3
+8B2B	Nicotine replacement therapy	2
+8B6A	Statin prophylaxis	1
+8CA40	Pt advised re wt reducing diet	1
+8CA48	Pt advised re low salt diet	1
+8CAL	Smoking cessation advice	1
+8G81	Hypnosis for therapy	1
+8H77	Refer to physiotherapist	1
+8H7i	Referral to smoking cessation advisor	7
+8HRC	Referral for spirometry	2
+8I24	Aspirin prophylaxis contra-indicated	2
+8I26	Beta blocker contraindicated	1
+8I3Q	Pneumococcal vaccination declined	1
+9N1d	Seen in asthma clinic	1
+9N28	Seen by physiotherapist	1
+9ND4	X-ray report received	1
+9OX5	Influenza vaccination declined	1
+9i0	British or mixed British - ethnic category 2001 census	4
+ADM/22255EMIS	Adizem-Sr  M/R capsules  120 mg	20
+AMCA134	Amoxycillin  Capsules  250 mg	1
+ASM/33164EMIS	Asasantin Retard  M/R capsules	12
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	1
+CACH9144BRIDL	Calcichew  Chewable tablets  1.25 grams	1
+D400	Agranulocytosis	4
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	2
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	2
+DUGA19398NEMIS	Duloxetine  Gastro-resistant Capsules  60 mg	3
+E1146	Manic bipol.affect.full remiss	1
+E2653	Psychogenic dysuria	3
+EMISQ2W6	Unknown vendor specific drug	35
+F4522	Acute primary angle-closure glaucoma	1
+F5614	Otogenic vertigo	1
+F562	Vertigo of central origin	2
+F563z	Labyrinthitis NOS	1
+FETA22463EMIS	Feldene Melt  Orodispersible tablets  20 mg	13
+FRTA1246	Froben  Tablets  50 mg	3
+FUNDHRE12	Unknown vendor specific drug	1
+Fyu57	[X]Other vascular syndroms/brain in cerebrovasculr diseases	1
+Fyu5E	[X]Chronic headache disorder	1
+G5800	Acute congestive heart failure	1
+G662	Posterior cerebral artery syndrome	1
+G7320	Gangrene of toe	1
+H17	Allergic rhinitis	1
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+NAMASSO2	Unknown vendor specific drug	2
+NICA1987	Nifedipine  Capsules  5 mg	14
+NIM/16463NEMIS	Nicotinic Acid Titration Starter Pack  M/R tablets  7 x 375 mg, 7 x 500 mg, 7 x 750 mg	2
+PH34	Other specified birthmark	6
+PRTA4213	Pro-Viron  Tablets  25 mg	11
+SITA34209EMIS	Sildenafil Citrate  Tablets  50 mg	2
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	1

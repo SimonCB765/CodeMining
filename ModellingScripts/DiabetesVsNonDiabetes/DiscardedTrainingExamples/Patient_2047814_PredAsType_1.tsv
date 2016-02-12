@@ -1,0 +1,100 @@
+Code	Description	Count
+136	Alcohol consumption	9
+137S	Ex smoker	3
+1383	Enjoys light exercise	3
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	5
+22A	O/E - weight	12
+22K	Body Mass Index	12
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	23
+29B9	10g monofilament sensation R foot abnormal	2
+423	Haemoglobin estimation	4
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42QE	International normalised ratio	1
+42R4	Serum ferritin	2
+42R7	Serum iron level	1
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+43Z2	Prostate specific antigen	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44J3	Serum creatinine	16
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	2
+44Q	Serum triglycerides	12
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	7
+4613	Urinalysis = no abnormality	1
+4662	Urine glucose test negative	4
+4672	Urine protein test negative	4
+4692	Urine blood test = negative	2
+46M7	Urine creatinine	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+46f1	Urine leucocyte test = negative	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	2
+6896	Depression screening using questions	3
+7939	Catheterisation of heart	1
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	3
+8CA46	Pt advised re low fat diet	1
+8CA48	Pt advised re low salt diet	1
+8CA5	Patient advised re exercise	2
+8CAL	Smoking cessation advice	2
+8CAM	Patient advised about alcohol	5
+8H	Referral for further care	3
+8H21	Admit medical emergency unsp.	1
+8H44	Cardiological referral	1
+8H48	Gastroenterological referral	1
+8H51	General surgical referral	1
+8H77	Refer to physiotherapist	1
+8I24	Aspirin prophylaxis contra-indicated	3
+8I25	Warfarin contraindicated	1
+8I26	Beta blocker contraindicated	1
+8I70	Aspirin not tolerated	2
+9i0	British or mixed British - ethnic category 2001 census	1
+A781	Viral warts	1
+ADM/22258EMIS	Adizem-Sr  M/R capsules  90 mg	18
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	5
+ASTA4609	Aspirin  Tablets  75 mg	4
+BBSLHCO2	Unknown vendor specific drug	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	17
+BETA302	Bendrofluazide  Tablets  2.5 mg	3
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	5
+BUTA434	Bumetanide  Tablets  1 mg	5
+C3533	Hypophosphataemia	9
+C3534	Hyperphosphataemia	1
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	1
+COSE22008NEMIS	Coloplast Conveen Optima  Self-sealing urisheaths  standard length, 30 mm, 22030	1
+DETA32245EMIS	Detrusitol  Tablets  1 mg	16
+E107	Schizo-affective schizophrenia	1
+E25z	Misuse of drugs NOS	1
+F54y3	Retraction of tympanic membrane	3
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE10	Unknown vendor specific drug	1
+FUOR17674NEMIS	Furosemide  Oral Solution, Sugar Free  10 mg/ml	1
+Fyu5E	[X]Chronic headache disorder	1
+G3112	Angina at rest	1
+G580	Congestive heart failure	2
+G7320	Gangrene of toe	3
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+Hyu02	[X]Acute tonsillitis due to other specified organisms	1
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+INS/9572EMIS	Indomethacin  M/R tablets  75 mg	1
+NAMASGO2	Unknown vendor specific drug	1
+PITA5315NEMIS	Pioglitazone Hydrochloride  Tablets  15 mg	24
+PRLE40411NEMIS	Unknown vendor specific drug	17
+Ub0qs	Unknown vendor specific drug	4
+Ub1ju	Unknown vendor specific drug	12

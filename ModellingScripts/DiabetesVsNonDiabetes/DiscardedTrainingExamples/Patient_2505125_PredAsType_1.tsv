@@ -1,0 +1,123 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+136	Alcohol consumption	4
+137L	Current non-smoker	1
+137S	Ex smoker	1
+1384	Enjoys moderate exercise	2
+13l4	Main spoken language English	1
+1A53	Lumbar ache - renal	2
+1B1A	Memory loss - amnesia	2
+229	O/E - height	2
+22A	O/E - weight	4
+22K	Body Mass Index	4
+246	O/E - blood pressure reading	24
+3216	ECG normal	1
+423	Haemoglobin estimation	13
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42R	Serum iron tests	1
+42R4	Serum ferritin	3
+42R7	Serum iron level	2
+42T	Serum vitamin B12	4
+42U5	Serum folate	3
+44CB	Serum transferrin	3
+44CC	Plasma C reactive protein	7
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	21
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	13
+44PF	Total cholesterol:HDL ratio	11
+44Q	Serum triglycerides	14
+44TB	Haemoglobin A1c level	1
+44U	Blood glucose result	2
+44g	Plasma glucose level	6
+451E	GFR calculated abbreviated MDRD	9
+4613	Urinalysis = no abnormality	2
+4672	Urine protein test negative	1
+4673	Urine protein test = trace	1
+46G4	Urine micr.:leucocytes present	2
+46TH	24 hour urine catecholamine output	1
+46U	Urine culture	4
+46X0	Urine nitrite positive	1
+4JJ1	MSU sent for C/S	3
+55Z	Cardiovascular angiography NOS	1
+6572	Pneumococcal vaccination	1
+65720	Pneumococcal vaccination given	1
+6791	Health ed. - smoking	2
+6792	Health ed. - alcohol	1
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+79280	Percut transluminal balloon angioplasty one coronary artery	1
+8CA4	Patient advised re diet	1
+8CA48	Pt advised re low salt diet	1
+8CAM	Patient advised about alcohol	2
+9N31	Telephone encounter	2
+9S1	White	1
+9S10	White British	1
+A53	Herpes zoster	1
+AB2yz	Other specified candidiasis NOS	1
+E25z	Misuse of drugs NOS	1
+E2C11	Solitary stealing	1
+F114	Acquired obstructive hydrocephalus	1
+F4F22	Epiphora due to insufficient drainage	1
+FRTA1246	Froben  Tablets  50 mg	4
+FUNDHRE12	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	2
+G5101	Subacute bacterial endocarditis - SBE	1
+G5703	Paroxysmal nodal tachycardia	1
+GASTOSE3	Unknown vendor specific drug	1
+GOCA23759EMIS	Gopten  Capsules  1 mg	1
+ISM/30269EMIS	Isosorbide Mononitrate  M/R capsules  40 mg	3
+J11z	Gastric ulcer NOS	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+MITA8305EGTON	Migravess  Tablets	1
+N040P	Seronegative rheumatoid arthritis	1
+PCS10229O/1	Unknown vendor specific drug	1
+PCS5314CE1	Unknown vendor specific drug	1
+R0543	[D]Widespread diabetic foot gangrene	1
+Y0737	Unknown vendor specific drug	10
+Y3551	Unknown vendor specific drug	5
+ab2q	ISPAGHULA HUSK orange 3.5g/sachet sugar free granules	3
+b433	SPIRONOLACTONE 100mg tablets	1
+b51A	CO-TRIAMTERZIDE 50/25mg tablets	4
+b51C	AMILORIDE HCL+CYCLOPENTHIAZIDE 2.5mg/250micrograms tablets	13
+bg2y	*DEBRISOQUINE 10mg tablets	3
+bh42	HYPOVASE 1mg tablets	19
+bi41	QUINAPRIL 5mg tablets	13
+bi4A	QUINAPRIL 40mg tablets	1
+bl3n	ELANTAN LA 25mg m/r capsules	12
+bl3u	ISOSORBIDE MONONITRATE 25mg m/r capsules	3
+bl5n	ZEMTARD 300 XL m/r capsules	1
+bl8k	CORACTEN SR 10mg m/r capsules	4
+blb2	AMLODIPINE 10mg tablets	13
+blc3	PLENDIL 5mg m/r tablets	3
+ble1	LACIDIPINE 2mg tablets	22
+bs1B	MAREVAN 0.5mg tablets	1
+bu2c	ASPIRIN 75mg soluble tablets	2
+bu41	DIPYRIDAMOLE+ASPIRIN 200mg/25mg m/r capsules	1
+bxdy	SIMVASTATIN 20mg/EZETIMIBE 10mg tablets	5
+bxj1	CERIVASTATIN SODIUM 100micrograms tablets	1
+e22j	FLUCLOXACILLIN 125mg/5mL syrup	2
+e773	MINOCYCLINE 100mg m/r capsules	1
+f27m	*PENMIX 20/80 cartridges 1.5mL	2
+f27p	PENMIX 30/70 preloaded injection pen	3
+f2Ay	INSULIN DETEMIR 100iu/mL prefilled pen	3
+gc5z	TERAZOSIN 1mg+2mg+5mg tablets starter pack	2
+gc72	FLOMAX MR 400micrograms m/r capsules	3
+heA1	BICALUTAMIDE 50mg tablets	4
+i11u	FERROUS FUMARATE 140mg/5mL sugar free syrup	1
+i16i	Unknown vendor specific drug	1
+i221	*JECTOFER 100mg/2mL injection	1
+j241	*LODINE 200mg capsules	1
+j283	IBUPROFEN 600mg tablets	1
+j287	BRUFEN 200mg tablets	1

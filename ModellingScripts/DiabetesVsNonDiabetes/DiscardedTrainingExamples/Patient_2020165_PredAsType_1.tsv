@@ -1,0 +1,101 @@
+Code	Description	Count
+136	Alcohol consumption	8
+137G	Trying to give up smoking	1
+137P	Cigarette smoker	3
+137R	Current smoker	2
+1383	Enjoys light exercise	2
+1384	Enjoys moderate exercise	2
+13A3	Weight reducing diet	4
+13l4	Main spoken language English	1
+1AA	Prostatism	1
+229	O/E - height	7
+22A	O/E - weight	9
+22K	Body Mass Index	8
+22N0	Waist circumference	4
+2469	O/E - Systolic BP reading	19
+315B	Ambulatory blood pressure recording	1
+3216	ECG normal	1
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42R4	Serum ferritin	3
+42R7	Serum iron level	4
+42T	Serum vitamin B12	4
+42U5	Serum folate	2
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	14
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	20
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	9
+44PF	Total cholesterol:HDL ratio	6
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	5
+44U	Blood glucose result	1
+44g	Plasma glucose level	8
+44g1	Plasma fasting glucose level	4
+451E	GFR calculated abbreviated MDRD	5
+466	Urine test for glucose	1
+4661	Urine glucose test not done	2
+4662	Urine glucose test negative	1
+467	Urine protein test	1
+4671	Urine protein test not done	2
+4672	Urine protein test negative	1
+46TC	Urine albumin:creatinine ratio	2
+585b	Left dorsalis pedis ABPI	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	4
+6792	Health ed. - alcohol	3
+67E	Foreign travel advice	1
+7B2A8	Check cystoscopy using flexible instrument	1
+8B2B	Nicotine replacement therapy	1
+8CAM	Patient advised about alcohol	2
+8GEA	Care from relatives	2
+8H49	Psychiatric referral	1
+8H52	Ophthalmological referral	1
+8H78	Refer to counsellor	1
+8H7i	Referral to smoking cessation advisor	1
+8HB8	Mental therapy follow-up	3
+8HC1	Refer to A. & E. department	1
+9N2S	Seen by practice phlebotomist	3
+9N2e	Seen by ophthalmologist	1
+9i0	British or mixed British - ethnic category 2001 census	3
+AB0	Dermatophytosis including tinea or ringworm	1
+AB200	Candidiasis of mouth	1
+ALM/3798NEMIS	Alfuzosin Hydrochloride  M/R tablets  10 mg	3
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	20
+ATTA230	Atenolol  Tablets  100 mg	9
+ATTA231	Atenolol  Tablets  50 mg	11
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	23
+COOI9895BRIDL	Cocois  Ointment	1
+D3101	Henoch-Schonlein nephritis	3
+E110	 single episode"	1
+E2653	Psychogenic dysuria	1
+EPTA3295NEMIS	Eprosartan  Tablets  400 mg	1
+ERIN24325NEMIS	Ergocalciferol  Injection  300,000 units/ml, 1 ml ampoule	1
+F3940	Drug-induced myopathy	1
+F51	Nonsuppurative otitis media + eustachian tube disorders	1
+F54y3	Retraction of tympanic membrane	9
+F5614	Otogenic vertigo	3
+FRTA1246	Froben  Tablets  50 mg	2
+ISTA9943BRIDL	Istin  Tablets  5 mg	1
+K04y	Other acute renal failure	2
+N05zH	OA NOS-DIP joint of finger	2
+N0957	Stiff joint NEC-ankle/foot	6
+NATA18046EMIS	Napratec OP  Tablets	1
+PITA16488NEMIS	Pioglitazone Hydrochloride  Tablets  45 mg	5
+PITA2265	Pindolol  Tablets  15 mg	4
+S352C	Closed fracture metatarsal shaft	14
+U6084	[X]Unspecified anaesthet caus adverse effects in therap use	2
+U6090	[X]Tricyc/tetracyc antidepres caus advers eff therapeut use	2
+U60C3	"[X]Coronary vasodil adv ef	2

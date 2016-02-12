@@ -1,0 +1,104 @@
+Code	Description	Count
+136	Alcohol consumption	5
+1362	Trivial drinker - <1u/day	2
+1371	Never smoked tobacco	5
+1383	Enjoys light exercise	1
+138I	FITT activity level 0; no mod/vig activity of 20 mins duratn	2
+138J	FITT activity level 1; 1-4 occas of mod/vig activit in 4 wks	1
+14AL	H/O: Treatment for ischaemic heart disease	1
+1FA	Diet good	1
+1Z13	Chronic kidney disease stage 4	1
+229	O/E - height	5
+22A	O/E - weight	8
+22K	Body Mass Index	5
+22N0	Waist circumference	3
+246	O/E - blood pressure reading	25
+2469	O/E - Systolic BP reading	1
+321B	12 lead ECG	1
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	15
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	5
+44A1	Serum parathyroid hormone	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	17
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	24
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	1
+44Q	Serum triglycerides	7
+44f1	Serum fasting glucose level	1
+44g	Plasma glucose level	7
+451E	GFR calculated abbreviated MDRD	19
+4613	Urinalysis = no abnormality	1
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	1
+4675	Urine protein test = ++	1
+46TC	Urine albumin:creatinine ratio	1
+46W	Urine microalbumin	1
+585d	Left posterior tibial ABPI	1
+65720	Pneumococcal vaccination given	1
+6798	Health ed. - exercise	1
+6896	Depression screening using questions	3
+792	Coronary artery operations	1
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	1
+8HBA	Follow up in outpatient clinic	8
+9N03	Seen in hypertension clinic	1
+9N1C	Seen in own home	1
+9N2U	Seen by optician	2
+9N31	Telephone encounter	1
+9OIA	Hypertension monitor.chck done	1
+A53	Herpes zoster	2
+E0110	Korsakov's alcoholic psychosis	1
+E2C11	Solitary stealing	1
+F4522	Acute primary angle-closure glaucoma	1
+FRTA1245	Froben  Tablets  100 mg	2
+Fy03	Sleep apnoea	1
+G24z	Secondary hypertension NOS	1
+GASTO241	Unknown vendor specific drug	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+MITA8305EGTON	Migravess  Tablets	1
+OPCA5590NEMIS	Optiflo G  Catheter Solution Citric Acid (Suby G)  3.23%, 50ml	2
+PA25	Other mouth anomalies	1
+PCS7073IN10	Unknown vendor specific drug	1
+Y1797	Unknown vendor specific drug	11
+b113	DIGOXIN 250microgram tablets	20
+bd2w	ACEBUTOLOL 100mg capsules	1
+bi21	INNOVACE 2.5mg tablets	8
+bi27	INNOVACE 20mg tablets x28	22
+bk4v	VALSARTAN 320mg tablets	6
+bk4w	VALSARTAN 40mg tablets	14
+bl3M	ISOSORBIDE MONONITRATE 40mg m/r capsules	1
+bl3u	ISOSORBIDE MONONITRATE 25mg m/r capsules	2
+bl5q	VIAZEM XL 240mg m/r capsules	1
+bl8J	TENSIPINE MR 10 m/r tablets	2
+bl8K	TENSIPINE MR 20 m/r tablets	1
+bl8S	NIFEDIPRESS MR 10 m/r tablets	2
+bl8x	NIFEDIPINE 30mg m/r tablets	13
+bs11	MAREVAN 1mg tablets	1
+bs1B	MAREVAN 0.5mg tablets	22
+bxa7	OMACOR 1g capsules	1
+bxb2	ACIPIMOX 250mg capsules	1
+e614	CEFACLOR 250mg capsules	2
+e912	ERYTHROMYCIN 500mg tablets	2
+f27X	HYPURIN PORCINE BIPHASIC ISOPHANE 30/70 injection 10mL	1
+f27p	PENMIX 30/70 preloaded injection pen	1
+gc71	TAMSULOSIN HYDROCHLORIDE 400micrograms m/r capsules	1
+gc72	FLOMAX MR 400micrograms m/r capsules	2
+gdc3	PROPIVERINE HYDROCHLORIDE 30mg m/r capsules	1
+h82B	NEORAL 50mg capsules	2
+i45k	NEORECORMON 5000iu prefilled syringe	1
+i474	ARANESP 30micrograms/0.3mL prefilled syringe	1
+j22R	DICLOFENAC 75mg e/c+m/r capsules	1
+j22b	DICLOFENAC 12.5mg paediatric suppositories	1
+j28A	BRUFEN RETARD 800mg m/r tablets	2

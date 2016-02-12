@@ -1,0 +1,102 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	1
+12C4	FH: CVA/stroke	2
+136	Alcohol consumption	9
+137P	Cigarette smoker	1
+137S	Ex smoker	2
+1383	Enjoys light exercise	2
+1384	Enjoys moderate exercise	1
+13AZ	Patient initiated diet NOS	1
+13l4	Main spoken language English	1
+1A1	Micturition frequency	1
+229	O/E - height	5
+22A	O/E - weight	14
+22K	Body Mass Index	10
+2469	O/E - Systolic BP reading	21
+32130	Exercise ECG normal	1
+3216	ECG normal	1
+323Z	ECG: myocardial infarct NOS	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	3
+42W4	HbA1c level (DCCT aligned)	4
+42bE	Percentage hypochromic cells	2
+43Z2	Prostate specific antigen	5
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	2
+44J3	Serum creatinine	11
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	5
+44P6	Serum LDL cholesterol level	5
+44Q	Serum triglycerides	8
+44Q3	Serum triglycerides raised	1
+44U	Blood glucose result	2
+44g	Plasma glucose level	8
+451E	GFR calculated abbreviated MDRD	3
+4616	MSU = no abnormality	1
+466	Urine test for glucose	1
+4662	Urine glucose test negative	1
+4671	Urine protein test not done	2
+4672	Urine protein test negative	1
+46N4	Urine albumin	1
+5858	Doppler studies	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	2
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	3
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	2
+8CAL	Smoking cessation advice	3
+8CAM	Patient advised about alcohol	5
+8H	Referral for further care	4
+8H44	Cardiological referral	1
+8H51	General surgical referral	1
+8H7	Other referral	1
+8H77	Refer to physiotherapist	1
+8H7O	Refer to Radiology department	1
+8H7i	Referral to smoking cessation advisor	1
+8I65	Warfarin not indicated	2
+8I6B	Clopidogrel not indicated	2
+8I6a	Dipyridamole not indicated	2
+9N03	Seen in hypertension clinic	2
+9N37	Message given to patient	3
+9S10	White British	1
+9i0	British or mixed British - ethnic category 2001 census	3
+A076z	Enteritis due to specified virus NOS	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	15
+ASTA4609	Aspirin  Tablets  75 mg	1
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	3
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	19
+CECA17568NEMIS	Cefalexin  Capsules  500 mg	1
+COCA12353NEMIS	Coloplast Simpla  Catheter valve  T180	1
+D2018	[X]Pure red cell aplasia	1
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	1
+DUFFMRE1	Unknown vendor specific drug	1
+E2653	Psychogenic dysuria	1
+EMISQ2W7	Unknown vendor specific drug	29
+F4522	Acute primary angle-closure glaucoma	1
+F4F1	Other lacrimal gland disorders	1
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE12	Unknown vendor specific drug	2
+FyuG1	nutr+met dis CE"	1
+G7320	Gangrene of toe	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	2
+HUCA18384EMIS	Humulin M4  Cartridges (1.5 Ml)	1
+HYIN5000	Hydrocortisone  Injection  100 mg/vial	22
+INTA20285NEMIS	Inegy  Tablets  10 mg/40 mg	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	2
+L395	Forceps delivery	1
+M087	Chronic paronychia	21
+N0	Arthropathies and related disorders	1
+NIM/16463NEMIS	Nicotinic Acid Titration Starter Pack  M/R tablets  7 x 375 mg, 7 x 500 mg, 7 x 750 mg	2
+SYIN5928	Synacthen  Injection  250 micrograms/ml, 1 ml ampoule	3
+U6090	[X]Tricyc/tetracyc antidepres caus advers eff therapeut use	2
+U60C1	[X]Calcium-channel blockers caus adverse eff in therap use	21

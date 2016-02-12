@@ -1,0 +1,101 @@
+Code	Description	Count
+1351	Church of England	1
+1361	Teetotaller	10
+1371	Never smoked tobacco	1
+1379	Ex-moderate smoker (10-19/day)	2
+137S	Ex smoker	1
+1383	Enjoys light exercise	4
+1BT	Depressed mood	1
+1F31	Dietary sodium - low	1
+229	O/E - height	7
+22A	O/E - weight	13
+22K	Body Mass Index	11
+2469	O/E - Systolic BP reading	21
+32130	Exercise ECG normal	1
+324	ECG:left ventricle hypertrophy	1
+423	Haemoglobin estimation	15
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	2
+42W4	HbA1c level (DCCT aligned)	1
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	5
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44I4	Serum potassium	10
+44I5	Serum sodium	1
+44I8	Serum calcium	2
+44J3	Serum creatinine	24
+44J9	Serum urea level	2
+44M4	Serum albumin	2
+44P	Serum cholesterol	9
+44Q	Serum triglycerides	6
+44g	Plasma glucose level	6
+451E	GFR calculated abbreviated MDRD	6
+466	Urine test for glucose	1
+4662	Urine glucose test negative	1
+467	Urine protein test	2
+4672	Urine protein test negative	2
+46TC	Urine albumin:creatinine ratio	2
+6572	Pneumococcal vaccination	1
+6799	Health ed. - diet	4
+6891	Depression screen	2
+6896	Depression screening using questions	2
+7928	Transluminal balloon angioplasty of coronary artery	2
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8CA5	Patient advised re exercise	2
+8CAL	Smoking cessation advice	3
+8CAM	Patient advised about alcohol	5
+8H	Referral for further care	1
+8H2	Emergency hospital admission	1
+8H53	ENT referral	1
+8I24	Aspirin prophylaxis contra-indicated	2
+8I26	Beta blocker contraindicated	4
+8I28	Angiotensin converting enzyme inhibitors contraindicated	2
+8I6B	Clopidogrel not indicated	1
+8I6C	Angiotensin II receptor antagonist not indicated	1
+9N1C	Seen in own home	1
+9NF8	Acute home visit	1
+9Na1	Consultation for minor injury	1
+9S10	White British	1
+A083	Diarrhoea of presumed infectious origin	1
+A1	Tuberculosis	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	4
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	3
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	12
+CECA4202NEMIS	Celebrex  Capsules  100 mg	6
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	2
+COM/35189EMIS	Coracten Xl  M/R capsules  30 mg	3
+D400A	Leucopenia	8
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	2
+DETA845	Dexamethasone  Tablets  2 mg	3
+DUFFMRE1	Unknown vendor specific drug	1
+EMISQ2W8	Unknown vendor specific drug	5
+F4501	Open angle glaucoma with borderline intraocular pressure	1
+F4E1	Ectropion	1
+F54y3	Retraction of tympanic membrane	2
+F592	Mixed conductive and sensorineural deafness	1
+FETA22463EMIS	Feldene Melt  Orodispersible tablets  20 mg	3
+FLTA1208	Flupenthixol  Tablets  1 mg	22
+FRTA1246	Froben  Tablets  50 mg	1
+FUNDHRE10	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	1
+G33	Angina pectoris	1
+G662	Posterior cerebral artery syndrome	1
+H06z0	Chest infection NOS	1
+HUCA18378EMIS	Humulin M2  Cartridges (1.5 Ml)	1
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	1
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+K1003	Chronic pyonephrosis	1
+L39	Other complications of labour and delivery NEC	11
+LEINEGTON7141	Lentard Mc  Injection  100 units/ml, 10 ml vial	1
+MITA10737BRIDL	Micturin  Tablets  25 mg	2
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	3
+P6y41	Single coronary artery	2
+PH311	Port wine stain	10
+PH34	Other specified birthmark	8
+S352C	Closed fracture metatarsal shaft	24
+Xa5tT	Unknown vendor specific drug	12
+XaBph	Unknown vendor specific drug	1

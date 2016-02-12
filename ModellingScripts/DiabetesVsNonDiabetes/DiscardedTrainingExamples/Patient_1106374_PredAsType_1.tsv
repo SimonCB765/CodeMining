@@ -1,0 +1,96 @@
+Code	Description	Count
+136	Alcohol consumption	3
+1371	Never smoked tobacco	4
+137L	Current non-smoker	1
+1381	Exercise physically impossible	2
+13A3	Weight reducing diet	1
+13A4	Low fat diet	1
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	3
+229	O/E - height	9
+22A	O/E - weight	11
+22K	Body Mass Index	9
+2469	O/E - Systolic BP reading	27
+388f	Patient health questionnaire (PHQ-9) score	1
+423	Haemoglobin estimation	13
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	2
+42R4	Serum ferritin	3
+42W4	HbA1c level (DCCT aligned)	1
+44AP	Serum pro-brain natriuretic peptide level	1
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	16
+44I5	Serum sodium	3
+44J3	Serum creatinine	39
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	8
+44P5	Serum HDL cholesterol level	7
+44Q	Serum triglycerides	7
+44U	Blood glucose result	1
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	23
+467	Urine protein test	1
+4672	Urine protein test negative	1
+46I	24 hour urine volume	1
+46M3	Urine potassium	1
+46M4	Urine sodium	1
+46M6	Urine urea	1
+46M7	Urine creatinine	3
+46MD	24 hour urine creatinine output	1
+46N3	Urine total protein	1
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	2
+55A2	Lower limb arteriogram abnorm.	1
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+6896	Depression screening using questions	2
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	1
+8H44	Cardiological referral	2
+8H77	Refer to physiotherapist	1
+8I65	Warfarin not indicated	1
+8I6B	Clopidogrel not indicated	2
+8I6C	Angiotensin II receptor antagonist not indicated	6
+8I6a	Dipyridamole not indicated	1
+9N31	Telephone encounter	1
+9N42	Did not attend - no reason	1
+9S1	White	1
+9S10	White British	2
+9i0	British or mixed British - ethnic category 2001 census	2
+ADM/22255EMIS	Adizem-Sr  M/R capsules  120 mg	6
+ADM/22258EMIS	Adizem-Sr  M/R capsules  90 mg	3
+AMTA101	Amiloride Hydrochloride  Tablets  5 mg	1
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	7
+ASDI224	Aspirin  Dispersible tablets  75 mg	18
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	11
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	7
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	9
+BUTA434	Bumetanide  Tablets  1 mg	4
+DIM/22265EMIS	Diltiazem Hydrochloride  M/R capsules  300 mg	4
+DIM/22266EMIS	Diltiazem Hydrochloride  M/R capsules  90 mg	3
+E2653	Psychogenic dysuria	6
+EMISNQSE23	Unknown vendor specific drug	1
+EMISSPR320	Unknown vendor specific drug	13
+FLTA1194	Fluanxol  Tablets  500 micrograms	6
+FLTA1208	Flupenthixol  Tablets  1 mg	15
+FRTA1246	Froben  Tablets  50 mg	3
+FUNDHPS1	Unknown vendor specific drug	1
+FUNDHRE10	Unknown vendor specific drug	3
+G3114	Worsening angina	1
+G580	Congestive heart failure	1
+G5800	Acute congestive heart failure	2
+ININ21131NEMIS	Insulin Glulisine  Injection  100 units/ml, 10 ml vial	3
+L36z	Postpartum haemorrhage NOS	13
+L39	Other complications of labour and delivery NEC	1
+L395	Forceps delivery	11
+L3951	Forceps delivery - delivered	3
+N00y1	Fibrosclerosis systemic	1
+NAMASHO1	Unknown vendor specific drug	1
+PRM/22791NEMIS	Propiverine Hydrochloride  M/R capsules  30 mg	1
+SESH5910	Selsun  Shampoo  2.5 %	3

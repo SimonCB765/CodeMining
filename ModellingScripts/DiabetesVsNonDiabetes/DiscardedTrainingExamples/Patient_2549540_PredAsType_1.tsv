@@ -1,0 +1,127 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1371	Never smoked tobacco	5
+1381	Exercise physically impossible	3
+1383	Enjoys light exercise	1
+13l4	Main spoken language English	1
+1A1	Micturition frequency	1
+1Z12	Chronic kidney disease stage 3	3
+1Z1C	Chronic kidney disease stage 3 without proteinuria	1
+229	O/E - height	2
+22A	O/E - weight	9
+22K	Body Mass Index	10
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	23
+31343	Hearing test abnormal	1
+3211	ECG requested	1
+3212	Standard ECG	2
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	19
+428	Mean corpusc. haemoglobin(MCH)	2
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	4
+42R4	Serum ferritin	2
+42R7	Serum iron level	1
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+42W4	HbA1c level (DCCT aligned)	2
+44CS	Serum C reactive protein level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	3
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	24
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	8
+44PF	Total cholesterol:HDL ratio	4
+44Q	Serum triglycerides	12
+44g	Plasma glucose level	2
+44g1	Plasma fasting glucose level	4
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	9
+451F	Glomerular filtration rate	1
+46	Urine examination	1
+461	Urine exam. - general	2
+4613	Urinalysis = no abnormality	3
+4614	Urinalysis = abnormal	2
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	5
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	2
+4682	Urine ketone test negative	3
+4692	Urine blood test = negative	3
+46U	Urine culture	3
+46X1	Urine nitrite negative	2
+46f1	Urine leucocyte test = negative	2
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+6896	Depression screening using questions	2
+7B00	Transplantation of kidney	3
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	4
+8CA47	Patient advised re low cholesterol diet	1
+8H	Referral for further care	3
+8H2	Emergency hospital admission	1
+8H51	General surgical referral	1
+8H54	Orthopaedic referral	1
+8HHc	Referred for exercise programme	1
+8HQ1	Refer for X-Ray	2
+8HQ2	Refer for ultrasound investign	1
+8I28	Angiotensin converting enzyme inhibitors contraindicated	2
+8I64	Angiotensin converting enzyme inhibitor not indicated	2
+8I74	Angiotensin converting enzyme inhibitor not tolerated	1
+8I76	Statin not tolerated	2
+9N1S	Seen in dermatology clinic	2
+9NS2	Patient offered choice of provider	1
+9i0	British or mixed British - ethnic category 2001 census	1
+A53	Herpes zoster	1
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	4
+ADM/19822EMIS	Adalat La  M/R tablets  30 mg	23
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+AMTA8390EGTON	Amitriptyline Hydrochloride  Tablets  25 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	17
+ATTA230	Atenolol  Tablets  100 mg	21
+ATTA231	Atenolol  Tablets  50 mg	1
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	1
+CATA481	Capoten  Tablets  25 mg	1
+CATA484	Captopril  Tablets  50 mg	5
+D0y	Other specified deficiency anaemias	3
+DIM/22264EMIS	Diltiazem Hydrochloride  M/R capsules  180 mg	11
+DIM/22266EMIS	Diltiazem Hydrochloride  M/R capsules  90 mg	15
+F1383	Organic writers' cramp	1
+F4F22	Epiphora due to insufficient drainage	1
+F54y3	Retraction of tympanic membrane	3
+F592	Mixed conductive and sensorineural deafness	3
+FLTA1194	Fluanxol  Tablets  500 micrograms	1
+FLTA1208	Flupenthixol  Tablets  1 mg	10
+FRTA1246	Froben  Tablets  50 mg	1
+FUNDHRE10	Unknown vendor specific drug	3
+Fyu5E	[X]Chronic headache disorder	1
+G24z	Secondary hypertension NOS	2
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+HEWITAS8	Unknown vendor specific drug	3
+IBM/18882EMIS	Ibuprofen  M/R tablets  800 mg	1
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	3
+K01x1	Nephrotic syndrome in diabetes mellitus	2
+N0	Arthropathies and related disorders	1
+N01w	"Reactive arthropathy	1
+N096B	Other symptoms in sternoclavicular joint	3
+NEIN34449EMIS	Neorecormon  Injection (Prefilled Syringe)  3000 units/syringe	1
+PCSDT5314RE1	Unknown vendor specific drug	1
+PH34	Other specified birthmark	16
+PRCA2392	Propranolol Hydrochloride  Capsules  160 mg	1
+S3501	"Cls # calcaneus	18
+TOTA32250EMIS	Tolterodine Tartrate  Tablets  2 mg	1
+TRCA16731NEMIS	Trandolapril  Capsules  4 mg	2
+Ub0qs	Unknown vendor specific drug	4
+Ub1ju	Unknown vendor specific drug	1

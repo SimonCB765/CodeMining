@@ -1,0 +1,107 @@
+Code	Description	Count
+1341	European origin	3
+136	Alcohol consumption	3
+1371	Never smoked tobacco	2
+137L	Current non-smoker	1
+137R	Current smoker	2
+1383	Enjoys light exercise	1
+1384	Enjoys moderate exercise	1
+13AZ	Patient initiated diet NOS	1
+13l4	Main spoken language English	1
+229	O/E - height	20
+22A	O/E - weight	17
+22K	Body Mass Index	22
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	23
+2BB8	O/E - vitreous haemorrhages	1
+315B	Ambulatory blood pressure recording	1
+3212	Standard ECG	1
+423	Haemoglobin estimation	20
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+42R	Serum iron tests	1
+42R4	Serum ferritin	2
+42R5	Serum TIBC	2
+42T	Serum vitamin B12	3
+42U4	Red blood cell folate	2
+42W4	HbA1c level (DCCT aligned)	6
+42W5	Haemoglobin A1c level - IFCC standardised	2
+44CC	Plasma C reactive protein	5
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	3
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	21
+44I5	Serum sodium	3
+44I8	Serum calcium	3
+44I9	Serum inorganic phosphate	3
+44J3	Serum creatinine	43
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	12
+44g	Plasma glucose level	17
+44g1	Plasma fasting glucose level	4
+451E	GFR calculated abbreviated MDRD	25
+466	Urine test for glucose	1
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	1
+46M3	Urine potassium	1
+46M4	Urine sodium	1
+46M7	Urine creatinine	1
+46MB	Urine osmolality	1
+46f3	Urine leucocyte test = ++	1
+585B	U-S kidneys	1
+6792	Health ed. - alcohol	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	1
+67E2	Travel vaccination given	1
+8CAL	Smoking cessation advice	2
+8H	Referral for further care	2
+8H4B	Referred to rheumatologist	1
+8H4d	Referral to orthopaedic special interest GP	1
+8HC1	Refer to A. & E. department	1
+8HQ1	Refer for X-Ray	1
+9OIA	Hypertension monitor.chck done	2
+9S1	White	2
+A35	Erysipelas	1
+ALTA5744NEMIS	Alendronic Acid  Tablets  70 mg	3
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	7
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	3
+ATTA230	Atenolol  Tablets  100 mg	13
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	9
+BRM/18880EMIS	Brufen Retard  M/R tablets  800 mg	2
+C1097	Non-insulin dependent diabetes mellitus - poor control	4
+C10z	Diabetes mellitus with unspecified complication	9
+C11y1	Drug-induced hypoglycaemia without coma	1
+C11y2	Impaired glucose tolerance	11
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	1
+D2018	[X]Pure red cell aplasia	1
+D3101	Henoch-Schonlein nephritis	1
+DEM/22793NEMIS	Detrunorm Xl  M/R capsules  30 mg	6
+DETA845	Dexamethasone  Tablets  2 mg	1
+DIM/12096NEMIS	Disogram Sr  M/R capsules  120 mg	4
+DIM/22266EMIS	Diltiazem Hydrochloride  M/R capsules  90 mg	5
+ERIN24325NEMIS	Ergocalciferol  Injection  300,000 units/ml, 1 ml ampoule	1
+Eu45y	[X]Other somatoform disorders	1
+F11z	Cerebral degeneration NOS	1
+FLTA1208	Flupenthixol  Tablets  1 mg	6
+FRTA1246	Froben  Tablets  50 mg	1
+FRTA1250	Frusemide  Tablets  500 mg	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	2
+L124	Mild or unspecified pre-eclampsia	3
+N0	Arthropathies and related disorders	1
+N083l	Recurrent dislocation of the hip	1
+N09zz	Joint disorders NOS	8
+NEIN34449EMIS	Neorecormon  Injection (Prefilled Syringe)  3000 units/syringe	1
+NIM/16463NEMIS	Nicotinic Acid Titration Starter Pack  M/R tablets  7 x 375 mg, 7 x 500 mg, 7 x 750 mg	4
+PRCA8367EGTON	Prozac  Capsules  20 mg	1
+S26	Fracture of one or more phalanges of hand	1
+S3521	Closed fracture of talus	25
+SESH5910	Selsun  Shampoo  2.5 %	5

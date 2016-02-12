@@ -1,0 +1,96 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+136	Alcohol consumption	10
+1379	Ex-moderate smoker (10-19/day)	2
+137L	Current non-smoker	1
+137S	Ex smoker	1
+137T	Date ceased smoking	1
+1383	Enjoys light exercise	3
+1384	Enjoys moderate exercise	1
+13l4	Main spoken language English	1
+1AA	Prostatism	3
+1FA	Diet good	1
+229	O/E - height	5
+22A	O/E - weight	11
+22K	Body Mass Index	11
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	20
+321	ECG - general	1
+32130	Exercise ECG normal	1
+3216	ECG normal	1
+423	Haemoglobin estimation	14
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42C	RBC - red blood cell size	3
+42W5	Haemoglobin A1c level - IFCC standardised	1
+43Z2	Prostate specific antigen	6
+44CC	Plasma C reactive protein	2
+44CS	Serum C reactive protein level	6
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	29
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	15
+44Q	Serum triglycerides	15
+44TB	Haemoglobin A1c level	8
+44U	Blood glucose result	1
+44g	Plasma glucose level	13
+451E	GFR calculated abbreviated MDRD	6
+554	Coronary arteriogr.-general	1
+5543	Coronary arteriograph.abnormal	1
+5853	U-S heart scan	2
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	1
+6798	Health ed. - exercise	3
+6799	Health ed. - diet	1
+6896	Depression screening using questions	3
+79294	Insertion of coronary artery stent	4
+79352	Transoesophageal echocardiography	1
+8B28	Lipid lowering therapy	1
+8B3T	Over the counter aspirin therapy	2
+8CAL	Smoking cessation advice	1
+8H2	Emergency hospital admission	1
+8H21	Admit medical emergency unsp.	1
+8H4	Referral to physician	1
+8H44	Cardiological referral	1
+8H52	Ophthalmological referral	1
+8H53	ENT referral	1
+8I62	Beta blocker not indicated	3
+9N42	Did not attend - no reason	2
+9S6	Indian	1
+A1722	Tuberculous adenitis	1
+A84	Malaria	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	7
+DEM/22793NEMIS	Detrunorm Xl  M/R capsules  30 mg	1
+DICA8335EGTON	Diflucan  Capsules  150 mg	1
+DUGE16408NEMIS	Duac Once Daily  Gel	2
+EMISNQSE23	Unknown vendor specific drug	1
+EMISSPR150	Unknown vendor specific drug	1
+F4202	Preproliferative diabetic retinopathy	1
+F4522	Acute primary angle-closure glaucoma	1
+F562	Vertigo of central origin	6
+FRTA1246	Froben  Tablets  50 mg	2
+Fyu5E	[X]Chronic headache disorder	2
+G24z	Secondary hypertension NOS	2
+G662	Posterior cerebral artery syndrome	2
+GEGEEGTON7233	Gelcotar  Gel	1
+GOCA23759EMIS	Gopten  Capsules  1 mg	1
+LEPR18221NEMIS	Levemir Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	4
+LYM/15358NEMIS	Lyrinel Xl  M/R tablets  5 mg	2
+LYM/15359NEMIS	Lyrinel Xl  M/R tablets  10 mg	1
+LYONSOU1	Unknown vendor specific drug	6
+M087	Chronic paronychia	18
+S3501	"Cls # calcaneus	6
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	9
+SUTA2753	Suscard Buccal  S/r tablets  3 mg	2
+TAM/31589EMIS	Tarka  M/R capsules	9
+Ub0qs	Unknown vendor specific drug	2
+Ub1ju	Unknown vendor specific drug	2
+Ub1md	Unknown vendor specific drug	10

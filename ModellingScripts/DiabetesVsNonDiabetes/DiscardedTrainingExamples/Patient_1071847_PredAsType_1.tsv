@@ -1,0 +1,97 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+12C5	FH: Myocardial infarction	1
+136	Alcohol consumption	8
+1371	Never smoked tobacco	2
+137G	Trying to give up smoking	1
+137P	Cigarette smoker	1
+1383	Enjoys light exercise	2
+229	O/E - height	11
+22A	O/E - weight	14
+22K	Body Mass Index	14
+2469	O/E - Systolic BP reading	18
+32131	Exercise ECG abnormal	1
+3217	ECG abnormal	1
+32M	24 Hour ECG	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	7
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	13
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	8
+44P1	Serum cholesterol normal	2
+44P5	Serum HDL cholesterol level	6
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	7
+44Q	Serum triglycerides	9
+44TB	Haemoglobin A1c level	1
+44U	Blood glucose result	1
+44g	Plasma glucose level	4
+44g1	Plasma fasting glucose level	2
+451E	GFR calculated abbreviated MDRD	8
+466	Urine test for glucose	1
+4662	Urine glucose test negative	1
+467	Urine protein test	1
+4672	Urine protein test negative	1
+5853	U-S heart scan	2
+58531	Echocardiogram abnormal	2
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	3
+6792	Health ed. - alcohol	1
+6799	Health ed. - diet	1
+67E2	Travel vaccination given	1
+6896	Depression screening using questions	2
+79375	Implantation of internal cardiac defibrillator	2
+7939	Catheterisation of heart	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	3
+8H	Referral for further care	2
+8H44	Cardiological referral	2
+8I25	Warfarin contraindicated	1
+8I73	Beta blocker not tolerated	1
+9N2S	Seen by practice phlebotomist	2
+9N4H	DNA hospital appointment	1
+9S6	Indian	2
+9i7	Indian or British Indian - ethnic category 2001 census	3
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	10
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	18
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	7
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	17
+BUTA434	Bumetanide  Tablets  1 mg	2
+C10z	Diabetes mellitus with unspecified complication	5
+C11y1	Drug-induced hypoglycaemia without coma	14
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	1
+E2653	Psychogenic dysuria	2
+EMISNQRE5	Unknown vendor specific drug	1
+F3y0	Diabetic mononeuropathy	2
+F5603	Active vestibular Meniere's disease	1
+FLTA1194	Fluanxol  Tablets  500 micrograms	1
+FLTA1208	Flupenthixol  Tablets  1 mg	10
+FRTA1246	Froben  Tablets  50 mg	1
+FUNDHRE12	Unknown vendor specific drug	1
+FyuU1	[X]Other specified hearing loss	1
+G3112	Angina at rest	1
+G33z4	Ischaemic chest pain	1
+G6X	"Cereb in/uns oc	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	1
+L395	Forceps delivery	9
+NAMASDN1	Unknown vendor specific drug	1
+PH34	Other specified birthmark	1
+PRTA4205	Pregaday  Tablets	6
+S3501	"Cls # calcaneus	1
+S352C	Closed fracture metatarsal shaft	15
+SESH5910	Selsun  Shampoo  2.5 %	22
+X30Ox	Unknown vendor specific drug	2

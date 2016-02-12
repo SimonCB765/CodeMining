@@ -1,0 +1,110 @@
+Code	Description	Count
+0Z1	Other machinery/plant work	1
+12C1	FH: Hypertension	1
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	8
+1371	Never smoked tobacco	2
+137A	Ex-heavy smoker (20-39/day)	1
+137S	Ex smoker	1
+1384	Enjoys moderate exercise	1
+13A8	High fibre diet	1
+1A25	Urgency	1
+1AA	Prostatism	1
+1Z12	Chronic kidney disease stage 3	2
+229	O/E - height	5
+22A	O/E - weight	8
+22K	Body Mass Index	8
+2469	O/E - Systolic BP reading	22
+3216	ECG normal	1
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+43Z2	Prostate specific antigen	3
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44J3	Serum creatinine	20
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	10
+44Q	Serum triglycerides	14
+44g1	Plasma fasting glucose level	11
+451E	GFR calculated abbreviated MDRD	10
+4662	Urine glucose test negative	1
+4672	Urine protein test negative	2
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+46M7	Urine creatinine	2
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+46W2	Microalbumin excretion rate	2
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	1
+6792	Health ed. - alcohol	4
+6799	Health ed. - diet	1
+6896	Depression screening using questions	2
+7923	Prosthetic replacement of coronary artery	1
+79275	Open angioplasty of coronary artery	1
+7B390	Transurethral prostatectomy	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	2
+8CA5	Patient advised re exercise	1
+8CAM	Patient advised about alcohol	2
+8CM1	On gold standards palliative care framework	1
+8H43	Dermatological referral	2
+8H44	Cardiological referral	1
+8H48	Gastroenterological referral	2
+8H53	ENT referral	1
+8H5B	Referred to urologist	1
+8H5D	Referred to vascular surgeon	2
+8H5J	Referral to colorectal surgeon	1
+9N4	Failed encounter	1
+9N42	Did not attend - no reason	1
+9S1	White	1
+9i1	Irish - ethnic category 2001 census	2
+AB200	Candidiasis of mouth	1
+AB2z	Candidiasis NOS	1
+ALM/3798NEMIS	Alfuzosin Hydrochloride  M/R tablets  10 mg	2
+AMTA17004NEMIS	Amlodipine  Tablets  5 mg	13
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	6
+ASTA4609	Aspirin  Tablets  75 mg	1
+ATTA231	Atenolol  Tablets  50 mg	24
+B46	Malignant neoplasm of prostate	4
+CECA20695EMIS	Cefaclor  Capsules  500 mg	1
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	7
+DEM/22793NEMIS	Detrunorm Xl  M/R capsules  30 mg	1
+DETA50007EMIS	Dexketoprofen Trometamol  Tablets  25 mg	3
+E2653	Psychogenic dysuria	4
+E278	Psychalgia	1
+EMISQRI8	Unknown vendor specific drug	1
+F4F1	Other lacrimal gland disorders	2
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE10	Unknown vendor specific drug	2
+Fyu5E	[X]Chronic headache disorder	1
+G5800	Acute congestive heart failure	2
+G582	Acute heart failure	1
+G6X	"Cereb in/uns oc	2
+G830	Varicose veins of the leg with ulcer	3
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+GOCA23759EMIS	Gopten  Capsules  1 mg	1
+ISTA2EGTON	Ismo Retard  M/R tablets  40 mg	2
+N05z7	Osteoarthritis NOS-ankle/foot	2
+POCA4188	Ponderax  Capsules  60 mg	1
+POOLEGE1	Unknown vendor specific drug	1
+PRLE40411NEMIS	Unknown vendor specific drug	28
+PRM/20660EMIS	Propranolol Hydrochloride  M/R capsules  160 mg	1
+S3521	Closed fracture of talus	1
+S352C	Closed fracture metatarsal shaft	23
+S352D	Closed fracture metatarsal neck	2
+TC420	Fall from chair	2
+VATA23543NEMIS	Varenicline  Tablets  1 mg	1
+VATA9150EMIS	Vascace  Tablets  1 mg	1

@@ -1,0 +1,88 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+136	Alcohol consumption	13
+1371	Never smoked tobacco	6
+1381	Exercise physically impossible	1
+1384	Enjoys moderate exercise	6
+13l4	Main spoken language English	1
+1A82	Breast lump present	1
+229	O/E - height	5
+22A	O/E - weight	16
+22K	Body Mass Index	19
+22N0	Waist circumference	2
+2469	O/E - Systolic BP reading	25
+32131	Exercise ECG abnormal	1
+3216	ECG normal	3
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42C	RBC - red blood cell size	1
+44CC	Plasma C reactive protein	1
+44CS	Serum C reactive protein level	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	8
+44I5	Serum sodium	3
+44I8	Serum calcium	3
+44I9	Serum inorganic phosphate	3
+44J3	Serum creatinine	12
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	8
+44Q	Serum triglycerides	8
+44U	Blood glucose result	1
+44g	Plasma glucose level	9
+451E	GFR calculated abbreviated MDRD	3
+4662	Urine glucose test negative	5
+467	Urine protein test	1
+4672	Urine protein test negative	5
+4675	Urine protein test = ++	1
+4692	Urine blood test = negative	1
+46X1	Urine nitrite negative	1
+5543	Coronary arteriograph.abnormal	2
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	3
+6896	Depression screening using questions	3
+79294	Insertion of coronary artery stent	2
+8B28	Lipid lowering therapy	6
+8B3T	Over the counter aspirin therapy	2
+8H51	General surgical referral	2
+8H58	Gynaecological referral	1
+8HTI	Referral to breast clinic	1
+8I62	Beta blocker not indicated	2
+9N42	Did not attend - no reason	1
+9S1	White	1
+A08	Ill-defined intestinal tract infections	1
+AB2y	Other specified candidiasis	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	18
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	15
+CHENJCA3	Unknown vendor specific drug	3
+COLE15817NEMIS	Coloplast Simpla Plus  Leg bag  750 ml, 25 cm tube, 21592	6
+DOCA976	Dothiepin Hydrochloride  Capsules  25 mg	1
+E004	Arteriosclerotic dementia	1
+Eu620	[X]Enduring personality change after catastrophic experience	1
+FLTA1208	Flupenthixol  Tablets  1 mg	22
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE10	Unknown vendor specific drug	2
+Fy03	Sleep apnoea	2
+Fyu5E	[X]Chronic headache disorder	1
+GLS/17962EMIS	Glyceryl Trinitrate  S/r buccal tablets  5 mg	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+HUIN9073BRIDL	Human Protaphane  Injection  100u/ml	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+K08	Impaired renal function disorder	1
+M095	Skin abscess	2
+MECA1751	Mefenamic Acid  Capsules  250 mg	3
+N0	Arthropathies and related disorders	2
+N330B	Vertebral osteoporosis	1
+PCSDT8940PA1	Unknown vendor specific drug	25
+PH34	Other specified birthmark	1
+PITA34389EMIS	Piroxicam-Beta-Cyclodextrin  Tablets  20 mg	1
+S2357	Open Smith's fracture	1
+S352C	Closed fracture metatarsal shaft	23
+SN5	Adverse effects NEC	1
+SN51	Angioneurotic oedema	2

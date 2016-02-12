@@ -1,0 +1,119 @@
+Code	Description	Count
+136	Alcohol consumption	9
+137P	Cigarette smoker	2
+137S	Ex smoker	4
+1384	Enjoys moderate exercise	5
+1A	Genitourinary symptoms	1
+1AC2	Polyuria	2
+229	O/E - height	9
+22A	O/E - weight	8
+22K	Body Mass Index	9
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	24
+3212	Standard ECG	1
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	3
+42W	Hb. A1C - diabetic control	1
+44CC	Plasma C reactive protein	3
+44E	Serum bilirubin level	1
+44E3	Total bilirubin	1
+44F	Serum alkaline phosphatase	2
+44FZ	Serum alkaline phosphatase NOS	1
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	7
+44I5	Serum sodium	2
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	10
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	12
+44U	Blood glucose result	1
+44g	Plasma glucose level	3
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	3
+461	Urine exam. - general	6
+4613	Urinalysis = no abnormality	1
+4661	Urine glucose test not done	1
+4662	Urine glucose test negative	4
+4671	Urine protein test not done	2
+4672	Urine protein test negative	7
+4673	Urine protein test = trace	1
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	2
+46G11	Urine microscopy: no white cells	2
+65720	Pneumococcal vaccination given	1
+6792	Health ed. - alcohol	1
+6896	Depression screening using questions	3
+79390	Catheterisation of both right and left sides of heart NEC	1
+7B1B0	Endoscopic retrograde pyelography - unspecified	1
+7B2A	Diagnostic cystoscopy	2
+8B63	Salicylate prophylaxis	4
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	5
+8H	Referral for further care	1
+8H37	Non-urgent surgical admission	1
+8H41	General medical referral	1
+8H48	Gastroenterological referral	1
+8H51	General surgical referral	1
+8H53	ENT referral	1
+8H5D	Referred to vascular surgeon	1
+8HE3	Discharged from day-case care	1
+8I26	Beta blocker contraindicated	3
+8I62	Beta blocker not indicated	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	1
+8I65	Warfarin not indicated	1
+8I6B	Clopidogrel not indicated	1
+9N0M	Seen in radiology department	1
+9N1y0	Seen in general surgery clinic	2
+9N36	Letter from specialist	1
+9OI4	Hypertens.monitor.1st letter	1
+9OI6	Hypertens.monitor 3rd letter	1
+9h32	Excepted from hypertension qual indicators: Informed dissent	2
+9i0	British or mixed British - ethnic category 2001 census	2
+AMTA17006NEMIS	Amlodipine  Tablets  10 mg	9
+AMTA9080EMIS	Amlodipine Besilate  Tablets  10 mg	3
+ASDI224	Aspirin  Dispersible tablets  75 mg	1
+ASTA4609	Aspirin  Tablets  75 mg	13
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	1
+ATTA231	Atenolol  Tablets  50 mg	8
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	7
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	4
+COFO12338NEMIS	Coloplast All Silicone  Foley catheter 10ml balloon (male)  14ch, 367314	1
+DETA845	Dexamethasone  Tablets  2 mg	1
+DICA8335EGTON	Diflucan  Capsules  150 mg	1
+DIM/12096NEMIS	Disogram Sr  M/R capsules  120 mg	11
+DIM/22266EMIS	Diltiazem Hydrochloride  M/R capsules  90 mg	2
+E13z	Nonorganic psychosis NOS	1
+E2653	Psychogenic dysuria	3
+EMISQ2W2	Unknown vendor specific drug	1
+F421z	Other background retinopathy NOS	1
+F502z	Otitis externa NOS	1
+F528	Acute bilateral otitis media	9
+FRTA1246	Froben  Tablets  50 mg	2
+FRTA1250	Frusemide  Tablets  500 mg	1
+FUNDHRE10	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	1
+G310	Postmyocardial infarction syndrome	1
+G5800	Acute congestive heart failure	2
+G662	Posterior cerebral artery syndrome	1
+GASTO241	Unknown vendor specific drug	1
+HUIN3720	Humulin M2  Injection	1
+J1541	Bile induced gastritis	3
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+K08y	Other impaired renal function disorder	1
+L36z	Postpartum haemorrhage NOS	13
+LEIGHPO3	Unknown vendor specific drug	8
+LEPR18221NEMIS	Levemir Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	4
+N000	Systemic lupus erythematosus	1
+N0956	Stiff joint NEC-lower leg	2
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	1
+R1320	[D]Echocardiogram abnormal	1
+S352C	Closed fracture metatarsal shaft	15
+SAIN5370	Salcatonin  Injection  100 units/ml, 1 ml ampoule	1
+SN51	Angioneurotic oedema	1

@@ -1,0 +1,107 @@
+Code	Description	Count
+12C3	FH: Ischaemic heart dis. >60	1
+136	Alcohol consumption	10
+1371	Never smoked tobacco	1
+137S	Ex smoker	6
+1383	Enjoys light exercise	3
+13l4	Main spoken language English	1
+1Z12	Chronic kidney disease stage 3	5
+229	O/E - height	3
+22A	O/E - weight	13
+22K	Body Mass Index	12
+2469	O/E - Systolic BP reading	30
+423	Haemoglobin estimation	15
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	1
+44AP	Serum pro-brain natriuretic peptide level	1
+44CC	Plasma C reactive protein	6
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	19
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I9	Serum inorganic phosphate	3
+44IC	Corrected serum calcium level	3
+44J3	Serum creatinine	35
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	16
+44P5	Serum HDL cholesterol level	16
+44P6	Serum LDL cholesterol level	6
+44PF	Total cholesterol:HDL ratio	3
+44Q	Serum triglycerides	16
+44g1	Plasma fasting glucose level	1
+44lD	Urine protein/creatinine ratio	4
+451E	GFR calculated abbreviated MDRD	23
+4615	MSU sent to lab.	1
+4618	Urine dipstick test	5
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	1
+4676	Urine protein test = +++	1
+46M7	Urine creatinine	5
+46N3	Urine total protein	4
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+585f	Echocardiogram shows left ventricular systolic dysfunction	1
+65720	Pneumococcal vaccination given	1
+6791	Health ed. - smoking	7
+6798	Health ed. - exercise	1
+67I8	Advice about taking aspirin	3
+6896	Depression screening using questions	3
+792	Coronary artery operations	3
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	5
+8CA46	Pt advised re low fat diet	1
+8CA48	Pt advised re low salt diet	1
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	4
+8H	Referral for further care	1
+8H4B	Referred to rheumatologist	1
+8H5	Referral to surgeon	1
+8H54	Orthopaedic referral	2
+8HQ7	Referral for echocardiography	1
+8I62	Beta blocker not indicated	1
+8IAG	Pandemic influenza vaccination declined	1
+9i0	British or mixed British - ethnic category 2001 census	1
+9i7	Indian or British Indian - ethnic category 2001 census	1
+AB0y	Other specified dermatophytosis	1
+AB2	Candidiasis	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	10
+ASTA225	Aspirin  Tablets  300 mg	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	6
+BETA302	Bendrofluazide  Tablets  2.5 mg	3
+D3101	Henoch-Schonlein nephritis	1
+DIM/22266EMIS	Diltiazem Hydrochloride  M/R capsules  90 mg	9
+E2653	Psychogenic dysuria	2
+EMISSPR320	Unknown vendor specific drug	12
+F3303	Thoracic outlet syndrome	1
+F4730	Anisometropia	1
+FLTA1194	Fluanxol  Tablets  500 micrograms	2
+FLTA1208	Flupenthixol  Tablets  1 mg	2
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE10	Unknown vendor specific drug	2
+G33	Angina pectoris	2
+G580	Congestive heart failure	2
+G582	Acute heart failure	1
+G5y0	Myocarditis NOS	1
+G662	Posterior cerebral artery syndrome	1
+GLTA1319	Glyceryl Trinitrate  Sublingual tablets  500 micrograms	2
+L1813	Thyroid dysfunction in pregnancy - baby not yet delivered	1
+LEIGHPO3	Unknown vendor specific drug	8
+LEIN9313EMIS	Leuprorelin Acetate  Injection  3.75 mg/vial	3
+LEINEGTON7141	Lentard Mc  Injection  100 units/ml, 10 ml vial	3
+LEPR18221NEMIS	Levemir Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	10
+M085	Cellulitis of leg	10
+M087	Chronic paronychia	6
+N0	Arthropathies and related disorders	2
+PHTA6868	Phenindione  Tablets  50 mg	4
+PODIEGTON6710	Ponstan Dispersible  Dispersible tablets  250 mg	1
+S2411	Open fracture of the scaphoid	1
+S3501	"Cls # calcaneus	1
+SESH5910	Selsun  Shampoo  2.5 %	1

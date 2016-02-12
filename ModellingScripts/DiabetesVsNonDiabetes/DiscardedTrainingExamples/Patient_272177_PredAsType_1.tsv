@@ -1,0 +1,104 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+136	Alcohol consumption	2
+1362	Trivial drinker - <1u/day	1
+1371	Never smoked tobacco	3
+1383	Enjoys light exercise	2
+13l4	Main spoken language English	1
+1F33	Dietary sodium - high	1
+1Z1	Chronic renal impairment	1
+1Z12	Chronic kidney disease stage 3	1
+22A	O/E - weight	5
+22K	Body Mass Index	2
+2469	O/E - Systolic BP reading	26
+3167	Helicobacter pylori breath test	1
+32	Electrocardiography	2
+423	Haemoglobin estimation	9
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	4
+42R4	Serum ferritin	2
+42R7	Serum iron level	2
+42T	Serum vitamin B12	3
+42U5	Serum folate	2
+42X	Reticulocyte count	1
+44CB	Serum transferrin	1
+44CC	Plasma C reactive protein	2
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	17
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	11
+44PF	Total cholesterol:HDL ratio	9
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	1
+44U	Blood glucose result	2
+44g	Plasma glucose level	6
+44g1	Plasma fasting glucose level	2
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	12
+46G	Urine microscopy: cells	1
+46M7	Urine creatinine	1
+46N	Urine protein	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+46U	Urine culture	1
+46U1	Urine culture - no growth	1
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+6896	Depression screening using questions	3
+8B63	Salicylate prophylaxis	1
+8CA4	Patient advised re diet	1
+8CA5	Patient advised re exercise	1
+8CAM	Patient advised about alcohol	1
+8H49	Psychiatric referral	1
+8H52	Ophthalmological referral	1
+8H7	Other referral	2
+8HQ7	Referral for echocardiography	1
+8I26	Beta blocker contraindicated	1
+9N2e	Seen by ophthalmologist	1
+9N31	Telephone encounter	1
+9N7D	Phlebotomy generated from secondary care done by practice	2
+9i0	British or mixed British - ethnic category 2001 census	3
+ADCH773NEMIS	Adcal-D3  Chewable tablets  Tutti Frutti	2
+AMOR17516NEMIS	Amoxicillin  Oral suspension  250 mg/5 ml	1
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	18
+BESC348	Betamethasone Valerate  Scalp application  0.1 %	1
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	3
+BUTA434	Bumetanide  Tablets  1 mg	7
+DICA877	Diazepam  Capsules  5 mg	2
+DVYASMA1	Unknown vendor specific drug	2
+F4202	Preproliferative diabetic retinopathy	1
+F4F22	Epiphora due to insufficient drainage	1
+F54y3	Retraction of tympanic membrane	3
+FLTA1208	Flupenthixol  Tablets  1 mg	9
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE10	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	1
+G24z	Secondary hypertension NOS	1
+G662	Posterior cerebral artery syndrome	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+GOCA23759EMIS	Gopten  Capsules  1 mg	1
+HUPR5192NEMIS	Humulin I  Preloaded pen	3
+ININ18217NEMIS	Insulin Detemir  Injection (cartridges)  100 units/ml, 3 ml cartridge	4
+L1236	Transient hypertension of pregnancy	18
+L124	Mild or unspecified pre-eclampsia	1
+L395	Forceps delivery	1
+N083C	Recurrent subluxation of shoulder - anterior	1
+PRTA2396	Propranolol Hydrochloride  Tablets  80 mg	1
+S3521	Closed fracture of talus	24
+SATA2498	Sandocal 400  Tablets	24
+U6002	[X]Chloramphen group caus adverse effects in therapeut use	10
+U6004	[X]Tetracyclines causing adverse effects in therapeutic use	3
+Ub0qs	Unknown vendor specific drug	3
+Ub1ju	Unknown vendor specific drug	1
+Ub1tI	Unknown vendor specific drug	3

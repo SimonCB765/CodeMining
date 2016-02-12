@@ -1,0 +1,149 @@
+Code	Description	Count
+136	Alcohol consumption	9
+137S	Ex smoker	6
+137T	Date ceased smoking	1
+1381	Exercise physically impossible	2
+1382	Avoids even trivial exercise	1
+1383	Enjoys light exercise	1
+16D	Falls	1
+1B1A	Memory loss - amnesia	1
+1Z12	Chronic kidney disease stage 3	3
+1Z1C	Chronic kidney disease stage 3 without proteinuria	1
+229	O/E - height	9
+22A	O/E - weight	9
+22K	Body Mass Index	9
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	24
+32	Electrocardiography	3
+3222	ECG:shows myocardial ischaemia	1
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	4
+42R	Serum iron tests	1
+42R4	Serum ferritin	1
+42R5	Serum TIBC	1
+42R7	Serum iron level	1
+42R9	Saturation of iron binding capacity	1
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+44CC	Plasma C reactive protein	1
+44CS	Serum C reactive protein level	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	2
+44I9	Serum inorganic phosphate	2
+44J3	Serum creatinine	23
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	11
+44P6	Serum LDL cholesterol level	12
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	12
+44U	Blood glucose result	2
+44W9	Serum digoxin level	1
+44g	Plasma glucose level	8
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	7
+4661	Urine glucose test not done	1
+4662	Urine glucose test negative	3
+467	Urine protein test	1
+4671	Urine protein test not done	1
+4672	Urine protein test negative	5
+4674	Urine protein test = +	1
+46M7	Urine creatinine	2
+46N4	Urine albumin	2
+46TC	Urine albumin:creatinine ratio	3
+554	Coronary arteriogr.-general	1
+5543	Coronary arteriograph.abnormal	1
+573	Isotope distribut.static scan	1
+574C	VQ scan normal	1
+5853	U-S heart scan	2
+6572	Pneumococcal vaccination	1
+66i	Chronic kidney disease monitoring	1
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	2
+687	Endocrine/metabolic screening	1
+6896	Depression screening using questions	3
+79201	Saphenous vein graft replacement of two coronary arteries	1
+7925	Connection of mammary artery to coronary artery	1
+79280	Percut transluminal balloon angioplasty one coronary artery	1
+7B390	Transurethral prostatectomy	1
+8B63	Salicylate prophylaxis	3
+8B6A	Statin prophylaxis	3
+8CA4	Patient advised re diet	5
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	4
+8H21	Admit medical emergency unsp.	1
+8H44	Cardiological referral	2
+8H48	Gastroenterological referral	1
+8H49	Psychiatric referral	1
+8H4D	Referral to psychogeriatrician	1
+8H52	Ophthalmological referral	4
+8H54	Orthopaedic referral	1
+8H77	Refer to physiotherapist	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I62	Beta blocker not indicated	2
+8I64	Angiotensin converting enzyme inhibitor not indicated	3
+8I65	Warfarin not indicated	3
+8I6B	Clopidogrel not indicated	3
+8I6a	Dipyridamole not indicated	2
+9N1C	Seen in own home	2
+9N31	Telephone encounter	2
+9N42	Did not attend - no reason	1
+9h51	Excepted from COPD quality indicators: Patient unsuitable	1
+9hD1	Excepted from dementia quality indicators: Informed dissent	1
+9i0	British or mixed British - ethnic category 2001 census	3
+A114	Tuberculous fibrosis of lung	1
+AMTA112	Amiodarone  Tablets  100 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	7
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	5
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	6
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	4
+C11y1	Drug-induced hypoglycaemia without coma	4
+C11y2	Impaired glucose tolerance	19
+CECA4202NEMIS	Celebrex  Capsules  100 mg	1
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	4
+DAM/23491NEMIS	Darifenacin  M/R tablets  15 mg	17
+DETA20911NEMIS	Dexibuprofen  Tablets  300 mg	2
+DOM/24343NEMIS	Doxadura Xl  M/R tablets  4 mg	1
+E0110	Korsakov's alcoholic psychosis	2
+EMISQ2W8	Unknown vendor specific drug	1
+EMISSPR502	Unknown vendor specific drug	1
+F341z	Median nerve lesions NOS	1
+F5140	Allergic otitis media NOS	1
+F54y3	Retraction of tympanic membrane	3
+FLTA1194	Fluanxol  Tablets  500 micrograms	6
+FLTA1208	Flupenthixol  Tablets  1 mg	18
+FRTA1246	Froben  Tablets  50 mg	1
+Fyu4	[X]Demyelinating diseases of the central nervous system	1
+Fyu5E	[X]Chronic headache disorder	2
+G24z	Secondary hypertension NOS	2
+G401	Pulmonary embolism	1
+G5703	Paroxysmal nodal tachycardia	1
+G662	Posterior cerebral artery syndrome	2
+H06z0	Chest infection NOS	1
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	1
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	2
+L36z	Postpartum haemorrhage NOS	1
+L3951	Forceps delivery - delivered	1
+MANI22913NEMIS	Manfred Sauer Smartflow  Night drainage bags  2.6 litre, NB26	1
+N00y1	Fibrosclerosis systemic	1
+P641	Bicuspid aortic valve	1
+PH34	Other specified birthmark	11
+PRCA8367EGTON	Prozac  Capsules  20 mg	1
+PRM/22791NEMIS	Propiverine Hydrochloride  M/R capsules  30 mg	1
+S3521	Closed fracture of talus	1
+S352C	Closed fracture metatarsal shaft	13
+TOTA24431EMIS	Torem  Tablets  2.5 mg	1
+TOTA24442EMIS	Torasemide  Tablets  5 mg	1
+U60C4	[X]Angiotensin-convert-enz inhib caus advers eff therap use	1
+Ub0qs	Unknown vendor specific drug	2
+WOOINDI1	Unknown vendor specific drug	2

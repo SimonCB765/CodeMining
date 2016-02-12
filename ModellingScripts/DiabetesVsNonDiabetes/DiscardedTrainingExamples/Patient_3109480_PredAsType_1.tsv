@@ -1,0 +1,89 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+12C3	FH: Ischaemic heart dis. >60	1
+1361	Teetotaller	1
+1371	Never smoked tobacco	1
+138	Exercise grading	1
+1F1	Dietary fat intake	1
+1F2	Dietary fibre intake	1
+1F3	Dietary salt intake	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	7
+22A	O/E - weight	8
+22K	Body Mass Index	8
+246	O/E - blood pressure reading	8
+2464	O/E - BP reading normal	5
+2469	O/E - Systolic BP reading	20
+246A	O/E - Diastolic BP reading	17
+321	ECG - general	1
+423	Haemoglobin estimation	7
+4258	Haematocrit	1
+426	Red blood cell (RBC) count	1
+428	Mean corpusc. haemoglobin(MCH)	3
+429	Mean corpusc. Hb. conc. (MCHC)	2
+42A	Mean corpuscular volume (MCV)	4
+42N	Monocyte count	3
+42P	Platelet count	2
+42R	Serum iron tests	1
+42R5	Serum TIBC	2
+42R7	Serum iron level	1
+42R9	Saturation of iron binding capacity	2
+43Z2	Prostate specific antigen	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	14
+44I5	Serum sodium	2
+44I8	Serum calcium	1
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	15
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	8
+44Q	Serum triglycerides	12
+44Q5	Serum random triglyceride level	1
+44g	Plasma glucose level	6
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	12
+46	Urine examination	2
+4672	Urine protein test negative	2
+4674	Urine protein test = +	1
+46M7	Urine creatinine	4
+46TC	Urine albumin:creatinine ratio	5
+46U	Urine culture	7
+6572	Pneumococcal vaccination	1
+6896	Depression screening using questions	1
+792D	Other bypass of coronary artery	2
+7A611	Repair of acquired arteriovenous fistula	1
+8B5	Dietary regime	1
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	1
+8CA4	Patient advised re diet	2
+8CAV	Patient advised about renal disorder	1
+8H	Referral for further care	1
+9S1	White	1
+9SZ	Ethnic groups (census) NOS	1
+9i0	British or mixed British - ethnic category 2001 census	1
+FRTA1246	Froben  Tablets  50 mg	2
+FUNDHRE12	Unknown vendor specific drug	2
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+WEPRSCO16	Unknown vendor specific drug	1
+Y1797	Unknown vendor specific drug	2
+b28z	INDAPAMIDE 2.5mg tablets	26
+bdey	ATENOLOL+CO-AMILOZIDE 50mg/2.5mg/25mg capsules	9
+bdf1	BISOPROLOL FUMARATE 5mg tablets	8
+bdf2	BISOPROLOL FUMARATE 10mg tablets	1
+bdf3	*MONOCOR 5mg tablets	1
+bf21	METHYLDOPA 125mg tablets	35
+bl3n	ELANTAN LA 25mg m/r capsules	11
+bl8x	NIFEDIPINE 30mg m/r tablets	9
+blzx	GLYCERYL TRINITRATE 2% ointment	26
+f28D	HUMULIN M3 100iu/mL prefilled pen 3mL	1
+i11A	FERSAMAL tablets	1
+j287	BRUFEN 200mg tablets	1
+j28H	*CODAFEN CONTINUS m/r tablets	1
+j2b1	MEFENAMIC ACID 250mg capsules	3

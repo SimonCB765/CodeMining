@@ -1,0 +1,109 @@
+Code	Description	Count
+136	Alcohol consumption	8
+1371	Never smoked tobacco	6
+1383	Enjoys light exercise	5
+13A3	Weight reducing diet	1
+13A4	Low fat diet	2
+13l4	Main spoken language English	2
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	8
+22A	O/E - weight	9
+22K	Body Mass Index	13
+22N0	Waist circumference	7
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	24
+315B	Ambulatory blood pressure recording	1
+3216	ECG normal	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	5
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	8
+42R4	Serum ferritin	3
+42R7	Serum iron level	3
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+44CB	Serum transferrin	1
+44CC	Plasma C reactive protein	1
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44J3	Serum creatinine	22
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44P3	Serum cholesterol raised	1
+44P5	Serum HDL cholesterol level	10
+44P6	Serum LDL cholesterol level	10
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	10
+44TB	Haemoglobin A1c level	2
+44U	Blood glucose result	1
+44W9	Serum digoxin level	1
+44g	Plasma glucose level	4
+44g1	Plasma fasting glucose level	2
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	16
+4661	Urine glucose test not done	1
+4662	Urine glucose test negative	5
+467	Urine protein test	1
+4672	Urine protein test negative	5
+46M7	Urine creatinine	1
+46N	Urine protein	1
+46N4	Urine albumin	3
+46TC	Urine albumin:creatinine ratio	2
+5542	Coronary arteriography normal	1
+5853	U-S heart scan	1
+58531	Echocardiogram abnormal	1
+65720	Pneumococcal vaccination given	1
+6791	Health ed. - smoking	4
+67E	Foreign travel advice	1
+6896	Depression screening using questions	3
+7910	Plastic repair of mitral valve	5
+8CA4	Patient advised re diet	3
+8CA5	Patient advised re exercise	3
+8CAM	Patient advised about alcohol	5
+8H33	Day hospital care	1
+8H44	Cardiological referral	1
+8H46	Neurological referral	1
+8H53	ENT referral	1
+8I21	Medical C/I to procedure	1
+8I24	Aspirin prophylaxis contra-indicated	2
+8I25	Warfarin contraindicated	4
+8I66	Aspirin not indicated	2
+9N2S	Seen by practice phlebotomist	4
+9i0	British or mixed British - ethnic category 2001 census	5
+9k1A	Brief intervention for excessive alcohol consumptn completed	1
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	6
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	18
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	3
+BITA2333NEMIS	Bisoprolol Fumarate  Tablets  2.5 mg	6
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	3
+DEM/22793NEMIS	Detrunorm Xl  M/R capsules  30 mg	1
+DETA20911NEMIS	Dexibuprofen  Tablets  300 mg	2
+DUFFMRE1	Unknown vendor specific drug	2
+DUGA18738NEMIS	Duloxetine  Gastro-resistant Capsules  40 mg	1
+E2653	Psychogenic dysuria	2
+Eu32z	"[X]Depressive episode	1
+F4522	Acute primary angle-closure glaucoma	1
+FLTA1208	Flupenthixol  Tablets  1 mg	19
+FRCA8845BRIDL	Frisium Sls  Tablets  10 mg	2
+FRTA1246	Froben  Tablets  50 mg	4
+G24z	Secondary hypertension NOS	2
+G3114	Worsening angina	2
+GLTA1305	Glipizide  Tablets  5 mg	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+INTA20285NEMIS	Inegy  Tablets  10 mg/40 mg	1
+LEIGHPO3	Unknown vendor specific drug	1
+LEPR18221NEMIS	Levemir Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+LYM/15358NEMIS	Lyrinel Xl  M/R tablets  5 mg	4
+LYM/15359NEMIS	Lyrinel Xl  M/R tablets  10 mg	12
+PH34	Other specified birthmark	1
+PRLE40411NEMIS	Unknown vendor specific drug	1
+SATA2498	Sandocal 400  Tablets	17
+SOTA2645	Sorbichew  Tablets  5 mg	1
+U6002	[X]Chloramphen group caus adverse effects in therapeut use	1
+U6004	[X]Tetracyclines causing adverse effects in therapeutic use	13
+U6025	[X]Oth oestrog/progestogens caus adverse eff in therap use	2
+Ub0qs	Unknown vendor specific drug	1

@@ -1,0 +1,103 @@
+Code	Description	Count
+0	Occupations	1
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	5
+137S	Ex smoker	2
+1382	Avoids even trivial exercise	1
+14O8	At risk of diabetes mellitus	1
+16D	Falls	1
+229	O/E - height	4
+22A	O/E - weight	5
+22K	Body Mass Index	5
+2469	O/E - Systolic BP reading	27
+3148	Sleep studies	2
+32	Electrocardiography	1
+324	ECG:left ventricle hypertrophy	1
+423	Haemoglobin estimation	11
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	5
+42QE	International normalised ratio	4
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	3
+43Z2	Prostate specific antigen	1
+44CC	Plasma C reactive protein	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	10
+44I5	Serum sodium	2
+44I8	Serum calcium	2
+44J3	Serum creatinine	23
+44J9	Serum urea level	3
+44M4	Serum albumin	2
+44P	Serum cholesterol	14
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	7
+44Q	Serum triglycerides	14
+44f0	Serum random glucose level	1
+44f1	Serum fasting glucose level	3
+44g1	Plasma fasting glucose level	6
+451E	GFR calculated abbreviated MDRD	12
+467	Urine protein test	3
+4671	Urine protein test not done	2
+4672	Urine protein test negative	1
+573	Isotope distribut.static scan	1
+573D	Isotope static scan heart	1
+58531	Echocardiogram abnormal	1
+6572	Pneumococcal vaccination	1
+6896	Depression screening using questions	2
+7928	Transluminal balloon angioplasty of coronary artery	1
+8CA4	Patient advised re diet	1
+8CA46	Pt advised re low fat diet	1
+8CA48	Pt advised re low salt diet	1
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	2
+8I24	Aspirin prophylaxis contra-indicated	1
+9N42	Did not attend - no reason	1
+9N4H	DNA hospital appointment	1
+9ND8	I/patient disch summary rec'vd	1
+9S2	Black Caribbean	2
+AB0	Dermatophytosis including tinea or ringworm	1
+AMTA9080EMIS	Amlodipine Besilate  Tablets  10 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	7
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	2
+BITA10630BRIDL	Bisoprolol Fumarate  Tablets  5 mg	14
+CATA1019NEMIS	Casodex  Tablets  150 mg	1
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	1
+COFO12338NEMIS	Coloplast All Silicone  Foley catheter 10ml balloon (male)  14ch, 367314	1
+COVE2318NEMIS	Coloplast  Velcrobands  5050	1
+D	Diseases of blood and blood-forming organs	1
+D40yz	Other white blood cell disease NOS	1
+EMISQ2W4	Unknown vendor specific drug	6
+EMISQ2W6	Unknown vendor specific drug	11
+EMISQ2W8	Unknown vendor specific drug	1
+EMISQLE3	Unknown vendor specific drug	16
+F4F1	Other lacrimal gland disorders	1
+F4H2	Other optic disc disorders	1
+F562	Vertigo of central origin	6
+FETA22463EMIS	Feldene Melt  Orodispersible tablets  20 mg	2
+FLTA1208	Flupenthixol  Tablets  1 mg	9
+FRTA1246	Froben  Tablets  50 mg	3
+FUNDHRE10	Unknown vendor specific drug	2
+Fyu5E	[X]Chronic headache disorder	1
+G5703	Paroxysmal nodal tachycardia	2
+G577	Sinus arrhythmia	3
+G5y0	Myocarditis NOS	1
+G662	Posterior cerebral artery syndrome	3
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	2
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	3
+ISTA9943BRIDL	Istin  Tablets  5 mg	1
+J1211	Chronic duodenal ulcer with haemorrhage	3
+J1541	Bile induced gastritis	1
+N06z7	Arthropathy NOS-ankle/foot	2
+PCSDT7073HE26	Unknown vendor specific drug	1
+PCSDT9219SP61	Unknown vendor specific drug	1
+PRCA2392	Propranolol Hydrochloride  Capsules  160 mg	2
+PROIEGTON6467	Pragmatar  Ointment	19
+S3521	Closed fracture of talus	9
+S352C	Closed fracture metatarsal shaft	13
+SESH5910	Selsun  Shampoo  2.5 %	5
+Ub0qs	Unknown vendor specific drug	3
+Ub1md	Unknown vendor specific drug	10

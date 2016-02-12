@@ -1,0 +1,140 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+1352	Roman Catholic	1
+136	Alcohol consumption	8
+137G	Trying to give up smoking	3
+137R	Current smoker	3
+1382	Avoids even trivial exercise	1
+1383	Enjoys light exercise	2
+1A	Genitourinary symptoms	2
+1A1	Micturition frequency	2
+1FA	Diet good	2
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	9
+22A	O/E - weight	9
+22K	Body Mass Index	9
+2469	O/E - Systolic BP reading	25
+3212	Standard ECG	2
+3216	ECG normal	1
+3222	ECG:shows myocardial ischaemia	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	5
+42T	Serum vitamin B12	2
+42U2	Serum folate low	1
+42U5	Serum folate	1
+44CC	Plasma C reactive protein	2
+44CS	Serum C reactive protein level	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	11
+44I5	Serum sodium	2
+44I7	Serum bicarbonate	1
+44I8	Serum calcium	4
+44I9	Serum inorganic phosphate	1
+44J3	Serum creatinine	16
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	12
+44P3	Serum cholesterol raised	1
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	11
+44PD	Serum fasting LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	1
+44Q	Serum triglycerides	11
+44Q5	Serum random triglyceride level	1
+44TB	Haemoglobin A1c level	1
+44f1	Serum fasting glucose level	9
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	10
+4614	Urinalysis = abnormal	7
+4615	MSU sent to lab.	10
+4662	Urine glucose test negative	3
+467	Urine protein test	1
+4672	Urine protein test negative	5
+4673	Urine protein test = trace	7
+4674	Urine protein test = +	1
+4682	Urine ketone test negative	3
+4692	Urine blood test = negative	2
+4695	Urine blood test = +	1
+46A2	Urine pH = 5.0	1
+46A6	Urine pH = 7.5	1
+46M7	Urine creatinine	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	3
+46U	Urine culture	14
+46W	Urine microalbumin	3
+46X1	Urine nitrite negative	1
+585B	U-S kidneys	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	4
+6792	Health ed. - alcohol	1
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	2
+6896	Depression screening using questions	2
+8B2B	Nicotine replacement therapy	3
+8B6A	Statin prophylaxis	2
+8BA8	Alcohol detoxification	1
+8CA46	Pt advised re low fat diet	2
+8H	Referral for further care	1
+8H43	Dermatological referral	2
+8H44	Cardiological referral	1
+8H51	General surgical referral	2
+8H52	Ophthalmological referral	1
+8H58	Gynaecological referral	1
+8H5B	Referred to urologist	1
+8H7i	Referral to smoking cessation advisor	1
+8HBJ	Stroke / transient ischaemic attack referral	1
+8HTK	Referral to stop-smoking clinic	2
+8I24	Aspirin prophylaxis contra-indicated	2
+8I26	Beta blocker contraindicated	3
+8I2K	Clopidogrel contraindicated	1
+8I3D	Angiotensin converting enzyme inhibitor declined	1
+8I64	Angiotensin converting enzyme inhibitor not indicated	2
+8I65	Warfarin not indicated	2
+8I70	Aspirin not tolerated	1
+8I72	Clopidogrel not tolerated	1
+9N19	Seen in hospital casualty	1
+9N1g	Seen in gastroenterology clinic	1
+9N36	Letter from specialist	3
+9N42	Did not attend - no reason	1
+9NS2	Patient offered choice of provider	1
+9S11	White Irish	1
+9i1	Irish - ethnic category 2001 census	1
+A0743	Campylobacter gastrointestinal tract infection	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+ASHBYPA6	Unknown vendor specific drug	1
+ASHBYRE12	Unknown vendor specific drug	2
+CAM/25482NEMIS	Cardioplen Xl  M/R tablets  2.5 mg	2
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	9
+CYTA19598EMIS	Cystrin  Tablets  3 mg	1
+DETA845	Dexamethasone  Tablets  2 mg	2
+DUGA19398NEMIS	Duloxetine  Gastro-resistant Capsules  60 mg	2
+F3360	Phantom limb syndrome with pain	2
+F340	Carpal tunnel syndrome	1
+F4522	Acute primary angle-closure glaucoma	1
+F562	Vertigo of central origin	6
+FLTA1208	Flupenthixol  Tablets  1 mg	12
+FRTA1246	Froben  Tablets  50 mg	3
+FUNDHRE10	Unknown vendor specific drug	2
+Fyu5E	[X]Chronic headache disorder	3
+G662	Posterior cerebral artery syndrome	2
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H06z0	Chest infection NOS	1
+HEWITAS8	Unknown vendor specific drug	8
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+MEGE20333EMIS	Metrogel  Gel  0.75 %	3
+NATA1936	Naprosyn  Tablets  250 mg	1
+NATA1939	Naproxen  Tablets  500 mg	1
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	2
+PH3y0	Congenital accessory skin tags	6
+PRM/20660EMIS	Propranolol Hydrochloride  M/R capsules  160 mg	1
+PRM/22791NEMIS	Propiverine Hydrochloride  M/R capsules  30 mg	1
+PROIEGTON6467	Pragmatar  Ointment	3
+PRTA4205	Pregaday  Tablets	12
+S3521	Closed fracture of talus	2
+S352C	Closed fracture metatarsal shaft	10
+TATA5413	Tamoxifen  Tablets  10 mg	20
+U6042	[X]Anticoagulant causing adverse effects in therapeutic use	1

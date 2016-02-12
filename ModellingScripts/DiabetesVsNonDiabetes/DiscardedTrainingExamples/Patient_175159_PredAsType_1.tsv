@@ -1,0 +1,104 @@
+Code	Description	Count
+136	Alcohol consumption	7
+1371	Never smoked tobacco	1
+137L	Current non-smoker	2
+137N	Ex pipe smoker	1
+137P	Cigarette smoker	1
+137S	Ex smoker	1
+1383	Enjoys light exercise	1
+1384	Enjoys moderate exercise	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	1
+22A	O/E - weight	5
+22K	Body Mass Index	5
+2469	O/E - Systolic BP reading	14
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	4
+42R4	Serum ferritin	4
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+44CC	Plasma C reactive protein	3
+44E	Serum bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	9
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	15
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	8
+44PF	Total cholesterol:HDL ratio	10
+44Q	Serum triglycerides	12
+44U	Blood glucose result	2
+44g	Plasma glucose level	5
+44lD	Urine protein/creatinine ratio	1
+451E	GFR calculated abbreviated MDRD	7
+4613	Urinalysis = no abnormality	2
+46M7	Urine creatinine	1
+46N	Urine protein	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+55	Cardiovascular sys.angiography	1
+585f	Echocardiogram shows left ventricular systolic dysfunction	1
+6572	Pneumococcal vaccination	1
+6798	Health ed. - exercise	2
+6896	Depression screening using questions	3
+7928	Transluminal balloon angioplasty of coronary artery	2
+8CA4	Patient advised re diet	2
+8CA46	Pt advised re low fat diet	1
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	1
+8H	Referral for further care	1
+8H44	Cardiological referral	1
+8H52	Ophthalmological referral	2
+8H54	Orthopaedic referral	1
+8I24	Aspirin prophylaxis contra-indicated	2
+8I6B	Clopidogrel not indicated	1
+9N1P	Seen in cardiac clinic	3
+9N2e	Seen by ophthalmologist	2
+9NK	Expedite appointment	1
+9h02	Excepted from CHD quality indicators: Informed dissent	1
+9hE1	Exc chronic kidney disease quality indicators: Inform dissen	1
+AMTA112	Amiodarone  Tablets  100 mg	1
+ANM/26810EMIS	Angitil Sr 120  M/R capsules  120 mg	3
+ASE/24520EMIS	Aspirin  E/c tablets  75 mg	1
+ATTA30130EMIS	Atorvastatin  Tablets  10 mg	6
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	8
+ATTA30132EMIS	Atorvastatin  Tablets  40 mg	10
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	2
+BUTA434	Bumetanide  Tablets  1 mg	25
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	6
+D400A	Leucopenia	14
+D40y	Other white blood cell disease	4
+D4158	Non-traumatic rupture of spleen	2
+DEM/11679NEMIS	Detrusitol Xl  M/R capsules  4 mg	1
+DETA20911NEMIS	Dexibuprofen  Tablets  300 mg	2
+DETA845	Dexamethasone  Tablets  2 mg	1
+DUGA19398NEMIS	Duloxetine  Gastro-resistant Capsules  60 mg	1
+E107	Schizo-affective schizophrenia	1
+F4F22	Epiphora due to insufficient drainage	2
+F526	Acute left otitis media	2
+F5603	Active vestibular Meniere's disease	3
+F562	Vertigo of central origin	6
+FUNDHRE12	Unknown vendor specific drug	1
+FyuH1	[X]Other disorders of vitreous body	1
+G3112	Angina at rest	1
+G33	Angina pectoris	1
+G7320	Gangrene of toe	1
+ININ18217NEMIS	Insulin Detemir  Injection (cartridges)  100 units/ml, 3 ml cartridge	2
+ININ3272NEMIS	Insuman Rapid  Injection (cartridges)  100 units/ml, 3 ml cartridge	1
+ISTA9943BRIDL	Istin  Tablets  5 mg	1
+NAMASGO2	Unknown vendor specific drug	2
+PCSDT8940PA1	Unknown vendor specific drug	8
+PCSDT8940RE1	Unknown vendor specific drug	23
+SILE8655BRID	Seton Healthcare  Leg strap  380812	1
+SISH2295NEMIS	Coloplast Tri-Form  Short tube leg bags  500ml, 5500	2
+TC021	Fall from steps	1
+Ub0qs	Unknown vendor specific drug	8
+Ub1ju	Unknown vendor specific drug	9

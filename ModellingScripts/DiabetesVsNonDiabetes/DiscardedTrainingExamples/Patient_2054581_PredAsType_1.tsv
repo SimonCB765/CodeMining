@@ -1,0 +1,107 @@
+Code	Description	Count
+135Z	Religion NOS	1
+136	Alcohol consumption	1
+1361	Teetotaller	1
+137P	Cigarette smoker	1
+137R	Current smoker	1
+137S	Ex smoker	4
+1383	Enjoys light exercise	2
+13HT1	Stress at home	1
+1A13	Nocturia	1
+1Z12	Chronic kidney disease stage 3	1
+1Z1E	Chronic kidney disease stage 3A without proteinuria	2
+1Z1G	Chronic kidney disease stage 3B without proteinuria	1
+22A	O/E - weight	13
+22K	Body Mass Index	12
+2469	O/E - Systolic BP reading	27
+32130	Exercise ECG normal	1
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R4	Serum ferritin	3
+42T	Serum vitamin B12	2
+42U5	Serum folate	2
+43Z2	Prostate specific antigen	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44I4	Serum potassium	10
+44I5	Serum sodium	3
+44I8	Serum calcium	3
+44J3	Serum creatinine	14
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	10
+44g	Plasma glucose level	9
+451E	GFR calculated abbreviated MDRD	12
+4615	MSU sent to lab.	5
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	7
+4673	Urine protein test = trace	1
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	2
+46A2	Urine pH = 5.0	1
+46A5	Urine pH = 7.0	1
+46N4	Urine albumin	1
+46TC	Urine albumin:creatinine ratio	1
+46X1	Urine nitrite negative	2
+5543	Coronary arteriograph.abnormal	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	2
+6799	Health ed. - diet	1
+67I8	Advice about taking aspirin	3
+6896	Depression screening using questions	3
+7928	Transluminal balloon angioplasty of coronary artery	1
+8B63	Salicylate prophylaxis	2
+8CA4	Patient advised re diet	1
+8CA46	Pt advised re low fat diet	1
+8CA5	Patient advised re exercise	1
+8CAL	Smoking cessation advice	1
+8H21	Admit medical emergency unsp.	1
+8H44	Cardiological referral	1
+8H77	Refer to physiotherapist	1
+8H7R	Refer to chiropodist	1
+8HB2	Medical follow-up	4
+8I65	Warfarin not indicated	2
+8I6B	Clopidogrel not indicated	2
+8I6a	Dipyridamole not indicated	2
+9N42	Did not attend - no reason	1
+9NE8	Fax sent to:	1
+9Nd0	Verbal consent for examination	3
+9S10	White British	2
+9i0	British or mixed British - ethnic category 2001 census	1
+A0812	Gastroenteritis - presumed infectious origin	1
+A390	Cutaneous actinomycosis	1
+ALM/3798NEMIS	Alfuzosin Hydrochloride  M/R tablets  10 mg	3
+ALSH22044EMIS	Alphosyl 2 In 1  Shampoo  5 %	1
+AMCA17511NEMIS	Amoxicillin  Capsules  500 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	18
+ATTA231	Atenolol  Tablets  50 mg	24
+CETAEGTON6673	Cedocard Retard-20  M/R tablets  20 mg	1
+COUR12408NEMIS	Coloplast Simpla 2 litre S5  Urine drainage bag  346145	2
+DETA845	Dexamethasone  Tablets  2 mg	1
+DUGA18736NEMIS	Duloxetine  Gastro-resistant Capsules  20 mg	1
+DUGA18738NEMIS	Duloxetine  Gastro-resistant Capsules  40 mg	1
+F461	Senile cataract	1
+F4F22	Epiphora due to insufficient drainage	1
+F54y3	Retraction of tympanic membrane	3
+F5871	Otogenic pain	1
+FETA22463EMIS	Feldene Melt  Orodispersible tablets  20 mg	1
+FLTA1208	Flupenthixol  Tablets  1 mg	2
+FUNDHRE10	Unknown vendor specific drug	2
+FUNDHRE12	Unknown vendor specific drug	1
+G5y0	Myocarditis NOS	1
+G662	Posterior cerebral artery syndrome	1
+G7320	Gangrene of toe	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+H012	Acute ethmoidal sinusitis	1
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	3
+J1211	Chronic duodenal ulcer with haemorrhage	3
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+N0536	"Localised osteoarthritis	2
+NAE/9202EMIS	Naproxen  E/c tablets  250 mg	2
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	2
+PRLE40411NEMIS	Unknown vendor specific drug	23
+PRTA10180BRIDL	Propranolol Hydrochloride  M/R capsules  80 mg	5
+S352C	Closed fracture metatarsal shaft	24
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	4
+TETA2800	Tenormin  Tablets  100 mg	2

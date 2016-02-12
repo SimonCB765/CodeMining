@@ -1,0 +1,132 @@
+Code	Description	Count
+136	Alcohol consumption	2
+1371	Never smoked tobacco	1
+137L	Current non-smoker	1
+137P	Cigarette smoker	1
+137R	Current smoker	1
+137S	Ex smoker	2
+1383	Enjoys light exercise	1
+1384	Enjoys moderate exercise	1
+13l4	Main spoken language English	1
+1A55	Dysuria	1
+1AA	Prostatism	6
+1Z12	Chronic kidney disease stage 3	4
+1Z13	Chronic kidney disease stage 4	1
+229	O/E - height	7
+22A	O/E - weight	5
+22K	Body Mass Index	4
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	29
+32	Electrocardiography	2
+3242	ECG: shows LVH	1
+32M	24 Hour ECG	1
+423	Haemoglobin estimation	10
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	5
+42R	Serum iron tests	2
+42R4	Serum ferritin	2
+42R7	Serum iron level	2
+42T	Serum vitamin B12	1
+44CB	Serum transferrin	2
+44CC	Plasma C reactive protein	4
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	14
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	31
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	9
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	7
+44PF	Total cholesterol:HDL ratio	6
+44Q	Serum triglycerides	7
+44TJ	Blood glucose level	7
+44TK	Fasting blood glucose level	2
+44U	Blood glucose result	5
+44f1	Serum fasting glucose level	2
+451E	GFR calculated abbreviated MDRD	14
+461	Urine exam. - general	2
+4662	Urine glucose test negative	3
+4672	Urine protein test negative	4
+4692	Urine blood test = negative	2
+46M7	Urine creatinine	1
+46N8	Urine microalbumin profile	1
+46TC	Urine albumin:creatinine ratio	2
+46W	Urine microalbumin	2
+46X1	Urine nitrite negative	1
+46f1	Urine leucocyte test = negative	1
+554	Coronary arteriogr.-general	1
+5543	Coronary arteriograph.abnormal	1
+5853	U-S heart scan	1
+58531	Echocardiogram abnormal	2
+65720	Pneumococcal vaccination given	1
+6774	Medication counselling	1
+6791	Health ed. - smoking	2
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	3
+679J	Health education - asthma	3
+6896	Depression screening using questions	2
+792	Coronary artery operations	1
+7928	Transluminal balloon angioplasty of coronary artery	1
+79280	Percut transluminal balloon angioplasty one coronary artery	1
+79281	Percut translum balloon angioplasty mult coronary arteries	1
+8B63	Salicylate prophylaxis	2
+8B6A	Statin prophylaxis	1
+8CAL	Smoking cessation advice	1
+8CAM	Patient advised about alcohol	1
+8H2	Emergency hospital admission	1
+8H43	Dermatological referral	1
+8H51	General surgical referral	1
+8H52	Ophthalmological referral	1
+8H5D	Referred to vascular surgeon	1
+8I26	Beta blocker contraindicated	3
+9N11	Seen in GP's surgery	1
+9N41	Did not attend - reason given	1
+9N42	Did not attend - no reason	1
+9i0	British or mixed British - ethnic category 2001 census	1
+A0812	Gastroenteritis - presumed infectious origin	2
+ADM/22256EMIS	Adizem-Sr  M/R capsules  180 mg	10
+ADM/24028EMIS	Adizem-Xl  M/R capsules  180 mg	5
+ADM/24030EMIS	Adizem-Xl  M/R capsules  300 mg	7
+ASDI224	Aspirin  Dispersible tablets  75 mg	18
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	2
+CAIN34034EMIS	Caverject  Injection  40 micrograms/vial	1
+EMISQ2W4	Unknown vendor specific drug	2
+F4276	Retinitis pigmentosa	1
+F5112	Bilateral chronic serous otitis	1
+F5614	Otogenic vertigo	3
+FLTA1208	Flupenthixol  Tablets  1 mg	22
+FRTA1246	Froben  Tablets  50 mg	2
+Fyu5E	[X]Chronic headache disorder	1
+G33	Angina pectoris	2
+G5703	Paroxysmal nodal tachycardia	2
+G5800	Acute congestive heart failure	1
+G5802	Decompensated cardiac failure	2
+G662	Posterior cerebral artery syndrome	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+H120z	Chronic rhinitis NOS	1
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	1
+ISTA9955BRIDL	Isosorbide Dinitrate  Sublingual tablets  5 mg	1
+J1211	Chronic duodenal ulcer with haemorrhage	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+L2440	Other uterine/pelvic floor abnormal affecting obstetric care	1
+L36z	Postpartum haemorrhage NOS	1
+L395	Forceps delivery	6
+M080	[X]Cellulitis of finger and toe	3
+N09zz	Joint disorders NOS	2
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	1
+PCSDT7073TE23	Unknown vendor specific drug	10
+PH34	Other specified birthmark	2
+PHTA6868	Phenindione  Tablets  50 mg	2
+PINFOZZ1	Unknown vendor specific drug	4
+PRM/22791NEMIS	Propiverine Hydrochloride  M/R capsules  30 mg	14
+S3521	Closed fracture of talus	1
+S352C	Closed fracture metatarsal shaft	18
+SESH5910	Selsun  Shampoo  2.5 %	6
+SETA12686NEMIS	Sevelamer  Tablets  800 mg	1
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	1
+TATA14830NEMIS	Tadalafil  Tablets  20 mg	25

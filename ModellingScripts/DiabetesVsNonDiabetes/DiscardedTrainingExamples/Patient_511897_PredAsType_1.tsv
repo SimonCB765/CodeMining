@@ -1,0 +1,106 @@
+Code	Description	Count
+12C	FH: Cardiovascular disease	1
+12C1	FH: Hypertension	1
+12C3	FH: Ischaemic heart dis. >60	2
+136	Alcohol consumption	10
+1362	Trivial drinker - <1u/day	2
+1371	Never smoked tobacco	4
+1383	Enjoys light exercise	3
+1384	Enjoys moderate exercise	1
+13A4	Low fat diet	1
+13A5	Low salt diet	1
+13l4	Main spoken language English	2
+14AB	H/O: TIA	1
+229	O/E - height	7
+22A	O/E - weight	12
+22K	Body Mass Index	12
+2432	O/E - pulse irregularly irreg.	1
+2469	O/E - Systolic BP reading	27
+31140	EEG abnormal	1
+32	Electrocardiography	1
+32131	Exercise ECG abnormal	1
+423	Haemoglobin estimation	8
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	4
+42C	RBC - red blood cell size	1
+42W5	Haemoglobin A1c level - IFCC standardised	1
+44CC	Plasma C reactive protein	1
+44CS	Serum C reactive protein level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	2
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	6
+44I5	Serum sodium	3
+44I8	Serum calcium	1
+44J3	Serum creatinine	10
+44M4	Serum albumin	2
+44P	Serum cholesterol	12
+44P5	Serum HDL cholesterol level	9
+44P6	Serum LDL cholesterol level	10
+44Q	Serum triglycerides	11
+44TB	Haemoglobin A1c level	6
+44U	Blood glucose result	1
+44g	Plasma glucose level	8
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	1
+4662	Urine glucose test negative	3
+467	Urine protein test	1
+4672	Urine protein test negative	4
+4692	Urine blood test = negative	2
+46G4	Urine micr.:leucocytes present	1
+46X1	Urine nitrite negative	2
+554	Coronary arteriogr.-general	1
+5543	Coronary arteriograph.abnormal	2
+6572	Pneumococcal vaccination	1
+66A3	Diabetic on diet only	2
+67	Counselling/health education	2
+6798	Health ed. - exercise	1
+6799	Health ed. - diet	2
+6896	Depression screening using questions	3
+8B3T	Over the counter aspirin therapy	1
+8B63	Salicylate prophylaxis	1
+8B6A	Statin prophylaxis	1
+8H	Referral for further care	1
+8H43	Dermatological referral	1
+8H44	Cardiological referral	1
+8H46	Neurological referral	2
+8H51	General surgical referral	1
+8H53	ENT referral	1
+8H58	Gynaecological referral	1
+8H77	Refer to physiotherapist	1
+8H7O	Refer to Radiology department	1
+9N1R	Seen in neurology clinic	1
+9N31	Telephone encounter	1
+9N4	Failed encounter	1
+9N41	Did not attend - reason given	1
+9S1	White	3
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	2
+ASDI224	Aspirin  Dispersible tablets  75 mg	18
+ATTA231	Atenolol  Tablets  50 mg	24
+BETA17553NEMIS	Bendroflumethiazide  Tablets  2.5 mg	26
+C11y1	Drug-induced hypoglycaemia without coma	5
+Eu45y	[X]Other somatoform disorders	1
+F466	Bilateral cataracts	1
+FRTA1246	Froben  Tablets  50 mg	5
+Fyu5E	[X]Chronic headache disorder	2
+G5800	Acute congestive heart failure	2
+G5yyA	Left ventricular diastolic dysfunction	2
+G662	Posterior cerebral artery syndrome	1
+G844	External thrombosed haemorrhoids	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+GOCA23759EMIS	Gopten  Capsules  1 mg	1
+ISPR33730EMIS	Isophane Insulin (Human Pyr)  Preloaded pen  100 units/ml	3
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	1
+K10yz	Unspecified pyelonephritis NOS	1
+LEPR18221NEMIS	Levemir Flexpen  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+LMRGPGP2	Unknown vendor specific drug	2
+MOTA8435BRID	Monocor  Tablets  10 mg	2
+NIM/35381EMIS	Nifedipress Mr  M/R tablets  10 mg	1
+PH34	Other specified birthmark	1
+PHTA6868	Phenindione  Tablets  50 mg	5
+POTA2309	Ponstan  Tablets forte  500 mg	2
+S234B	Closed fracture radial styloid	1
+S352C	Closed fracture metatarsal shaft	19
+SAIN5370	Salcatonin  Injection  100 units/ml, 1 ml ampoule	5
+SN51	Angioneurotic oedema	1
+TAM/31589EMIS	Tarka  M/R capsules	20

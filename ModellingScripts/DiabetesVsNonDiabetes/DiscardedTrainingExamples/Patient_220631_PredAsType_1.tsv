@@ -1,0 +1,102 @@
+Code	Description	Count
+01	Top managers	1
+12C2	FH: Ischaemic heart dis. <60	2
+12C3	FH: Ischaemic heart dis. >60	2
+136	Alcohol consumption	9
+1371	Never smoked tobacco	3
+1382	Avoids even trivial exercise	1
+1A	Genitourinary symptoms	1
+1A1	Micturition frequency	1
+1A55	Dysuria	1
+1AA	Prostatism	2
+229	O/E - height	2
+22A	O/E - weight	8
+22K	Body Mass Index	8
+22N0	Waist circumference	1
+2469	O/E - Systolic BP reading	21
+32	Electrocardiography	1
+423	Haemoglobin estimation	5
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	5
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	1
+43Z2	Prostate specific antigen	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	1
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44J3	Serum creatinine	21
+44J8	Blood urea	1
+44J9	Serum urea level	3
+44M4	Serum albumin	3
+44P	Serum cholesterol	19
+44P5	Serum HDL cholesterol level	19
+44P6	Serum LDL cholesterol level	5
+44PF	Total cholesterol:HDL ratio	5
+44Q	Serum triglycerides	19
+44U	Blood glucose result	3
+44g	Plasma glucose level	1
+44g1	Plasma fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	8
+4615	MSU sent to lab.	1
+4618	Urine dipstick test	6
+4662	Urine glucose test negative	2
+467	Urine protein test	1
+4672	Urine protein test negative	6
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	2
+46A2	Urine pH = 5.0	1
+46X1	Urine nitrite negative	1
+554	Coronary arteriogr.-general	1
+5543	Coronary arteriograph.abnormal	2
+585B	U-S kidneys	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	3
+6798	Health ed. - exercise	1
+67I8	Advice about taking aspirin	3
+6896	Depression screening using questions	3
+792	Coronary artery operations	3
+7B2A	Diagnostic cystoscopy	1
+8CA4	Patient advised re diet	3
+8CA46	Pt advised re low fat diet	1
+8CA48	Pt advised re low salt diet	1
+8CA5	Patient advised re exercise	2
+8CAM	Patient advised about alcohol	4
+8H5B	Referred to urologist	1
+8I26	Beta blocker contraindicated	1
+8I65	Warfarin not indicated	3
+8I6B	Clopidogrel not indicated	3
+8I6C	Angiotensin II receptor antagonist not indicated	1
+8I72	Clopidogrel not tolerated	1
+9iA	Other Asian background - ethnic category 2001 census	2
+A79z	Viral infection NOS	1
+ADM/22258EMIS	Adizem-Sr  M/R capsules  90 mg	15
+ASDI224	Aspirin  Dispersible tablets  75 mg	9
+ASTA225	Aspirin  Tablets  300 mg	3
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	6
+ATTA231	Atenolol  Tablets  50 mg	15
+CACH19098NEMIS	Calcium Carbonate And Colecalciferol  Chewable tablets  1.5 grams + 10 micrograms (400 units)	1
+E2022	Agoraphobia without mention of panic attacks	1
+E2653	Psychogenic dysuria	3
+EMISSPR320	Unknown vendor specific drug	4
+FRTA1246	Froben  Tablets  50 mg	1
+FUNDHRE10	Unknown vendor specific drug	2
+G6X	"Cereb in/uns oc	2
+G7320	Gangrene of toe	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	2
+HUIN3719	Humulin M1  Injection	1
+INCA1198NEMIS	Insulin Aspart  Cartridges (3 Ml)  100 units/ml	1
+N3310	Pathological fracture of thoracic vertebra	3
+N3316	Idiopathic osteoporosis with pathological fracture	8
+PRCA8367EGTON	Prozac  Capsules  20 mg	1
+PROIEGTON6467	Pragmatar  Ointment	21
+PRTA4205	Pregaday  Tablets	4
+PRTA4213	Pro-Viron  Tablets  25 mg	2
+S3501	"Cls # calcaneus	1
+S352C	Closed fracture metatarsal shaft	6
+SAIN5370	Salcatonin  Injection  100 units/ml, 1 ml ampoule	1
+SITA3663NEMIS	Simvastatin  Tablets  80 mg	2
+TETA1044NEMIS	Telmisartan  Tablets  80 mg	1

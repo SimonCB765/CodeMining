@@ -1,0 +1,95 @@
+Code	Description	Count
+0	Occupations	1
+1362	Trivial drinker - <1u/day	1
+1367	Stopped drinking alcohol	1
+1371	Never smoked tobacco	3
+138	Exercise grading	2
+13A	Diet - patient initiated	2
+16D	Falls	1
+1Z12	Chronic kidney disease stage 3	2
+1Z1C	Chronic kidney disease stage 3 without proteinuria	1
+229	O/E - height	2
+22A	O/E - weight	3
+22K	Body Mass Index	3
+246	O/E - blood pressure reading	25
+32	Electrocardiography	2
+423	Haemoglobin estimation	7
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	5
+42C	RBC - red blood cell size	1
+42QE	International normalised ratio	4
+42W4	HbA1c level (DCCT aligned)	1
+42W5	Haemoglobin A1c level - IFCC standardised	1
+42bE	Percentage hypochromic cells	2
+44AP	Serum pro-brain natriuretic peptide level	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	12
+44I5	Serum sodium	3
+44J3	Serum creatinine	21
+44J9	Serum urea level	4
+44M4	Serum albumin	2
+44P	Serum cholesterol	10
+44P5	Serum HDL cholesterol level	8
+44P6	Serum LDL cholesterol level	8
+44Q	Serum triglycerides	10
+44g	Plasma glucose level	7
+44lD	Urine protein/creatinine ratio	2
+451E	GFR calculated abbreviated MDRD	12
+461	Urine exam. - general	2
+466	Urine test for glucose	1
+4669	Urine dipstick for glucose	1
+467	Urine protein test	3
+4679	Urine dipstick for protein	3
+4698	Urine dipstick for blood	1
+46N3	Urine total protein	2
+46N4	Urine albumin	3
+46N6	24 hour urine albumin output	2
+46TC	Urine albumin:creatinine ratio	2
+46Z1	Urine microscopy	1
+5853	U-S heart scan	1
+6572	Pneumococcal vaccination	1
+66i	Chronic kidney disease monitoring	1
+6781	Health education offered	3
+8H7R	Refer to chiropodist	2
+8HE	Discharged from hospital	2
+8HQ1	Refer for X-Ray	2
+8I2F	Influenza vaccination contraindicated	2
+8I66	Aspirin not indicated	1
+8I6B	Clopidogrel not indicated	1
+8I6a	Dipyridamole not indicated	1
+8IAG	Pandemic influenza vaccination declined	1
+9N1C	Seen in own home	1
+9N1L	Seen in ENT clinic	1
+9N1p	Seen in orthopaedic clinic	1
+9N2U	Seen by optician	1
+9N31	Telephone encounter	1
+9N3A	Telephone triage encounter	2
+F352	Femoral nerve lesions	1
+F36	Hereditary and idiopathic peripheral neuropathy	1
+FRTA1245	Froben  Tablets  100 mg	1
+FRTA1246	Froben  Tablets  50 mg	1
+G244	Hypertension secondary to endocrine disorders	1
+G24z	Secondary hypertension NOS	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	2
+MITA8305EGTON	Migravess  Tablets	2
+SN51	Angioneurotic oedema	2
+Y1365	Unknown vendor specific drug	1
+Y1797	Unknown vendor specific drug	12
+Y3714	Unknown vendor specific drug	8
+b113	DIGOXIN 250microgram tablets	23
+bf22	METHYLDOPA 250mg tablets	29
+bl3x	ISOSORBIDE MONONITRATE 40mg tablets	1
+bl55	DILTIAZEM HYDROCHLORIDE 120mg m/r tablets	23
+bl5q	VIAZEM XL 240mg m/r capsules	2
+bl8J	TENSIPINE MR 10 m/r tablets	9
+bl8K	TENSIPINE MR 20 m/r tablets	9
+bl8w	NIFEDIPINE 10mg m/r tablets	1
+bl8x	NIFEDIPINE 30mg m/r tablets	1
+blzz	GLYCERYL TRINITRATE 10mg/24hrs patches	19
+bs1B	MAREVAN 0.5mg tablets	6
+di22	PARACETAMOL 500mg soluble tabs	1
+dia6	CO-DYDRAMOL tablets	1
+i44z	EPOETIN ALFA 5000iu/0.5mL prefilled syringe	1
+j28A	BRUFEN RETARD 800mg m/r tablets	2

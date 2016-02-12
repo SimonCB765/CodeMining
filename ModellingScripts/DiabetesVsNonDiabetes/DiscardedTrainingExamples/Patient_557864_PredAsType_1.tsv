@@ -1,0 +1,124 @@
+Code	Description	Count
+136	Alcohol consumption	5
+137S	Ex smoker	3
+138	Exercise grading	3
+1383	Enjoys light exercise	1
+13A	Diet - patient initiated	2
+13A4	Low fat diet	1
+14F2	H/O: psoriasis	1
+1A	Genitourinary symptoms	1
+229	O/E - height	3
+22A	O/E - weight	5
+22K	Body Mass Index	7
+246	O/E - blood pressure reading	21
+3128	Fundoscopy	1
+315B	Ambulatory blood pressure recording	1
+3212	Standard ECG	2
+3213	Exercise ECG	1
+32M	24 Hour ECG	1
+33B9	Exercise tolerance test	1
+33B93	Exercise tolerance test normal	1
+423	Haemoglobin estimation	12
+428	Mean corpusc. haemoglobin(MCH)	4
+42A	Mean corpuscular volume (MCV)	6
+42QE	International normalised ratio	2
+42QE0	INR - international normal ratio normal	4
+42QE1	INR - international normal ratio abnormal	2
+42R4	Serum ferritin	2
+42T	Serum vitamin B12	1
+42U5	Serum folate	1
+42W4	HbA1c level (DCCT aligned)	2
+42W5	Haemoglobin A1c level - IFCC standardised	1
+43Z2	Prostate specific antigen	2
+44AF	Brain natriuretic peptide level	1
+44AP	Serum pro-brain natriuretic peptide level	1
+44CC	Plasma C reactive protein	1
+44CS	Serum C reactive protein level	2
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	3
+44I7	Serum bicarbonate	1
+44J3	Serum creatinine	18
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	12
+44P6	Serum LDL cholesterol level	11
+44PF	Total cholesterol:HDL ratio	4
+44Q	Serum triglycerides	12
+44TB	Haemoglobin A1c level	1
+44U	Blood glucose result	4
+451E	GFR calculated abbreviated MDRD	7
+466	Urine test for glucose	2
+467	Urine protein test	2
+5543	Coronary arteriograph.abnormal	1
+5853	U-S heart scan	2
+6572	Pneumococcal vaccination	1
+679	Health education - subject	1
+6792	Health ed. - alcohol	1
+6797	Health ed. - immunisation	1
+6896	Depression screening using questions	2
+79294	Insertion of coronary artery stent	1
+79360	Implantation of intravenous cardiac pacemaker system	1
+7939	Catheterisation of heart	2
+793G	Perc translumin balloon angioplasty stenting coronary artery	1
+8HE	Discharged from hospital	2
+8HJA	Trauma self-referral	2
+8I66	Aspirin not indicated	1
+9N1P	Seen in cardiac clinic	1
+9N1S	Seen in dermatology clinic	1
+9N36	Letter from specialist	4
+9OI4	Hypertens.monitor.1st letter	1
+C1000	Diab.mell.no comp. - juvenile	1
+COSA21955EMIS	Colestid Orange  Sachets  5 grams/sachet	1
+D00z2	Idiopathic hypochromic anaemia	1
+E2022	Agoraphobia without mention of panic attacks	1
+F4042	Blind hypertensive eye	1
+F4720	 unspecified"	1
+FRTA1246	Froben  Tablets  50 mg	2
+Fyu4	[X]Demyelinating diseases of the central nervous system	1
+Fyu5E	[X]Chronic headache disorder	1
+G24z	Secondary hypertension NOS	1
+G24z1	Hypertension secondary to drug	1
+G3114	Worsening angina	1
+G5415	Aortic stenosis	1
+G5800	Acute congestive heart failure	2
+G582	Acute heart failure	1
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	1
+H023	Acute bacterial pharyngitis	1
+INPR6345NEMIS	Insuman Comb 25 Optiset  Pre-filled Disposable Pen  100 units/ml, 3 ml pen	1
+INS/9572EMIS	Indomethacin  M/R tablets  75 mg	2
+K04y	Other acute renal failure	2
+N01zB	Infec arthritis NOS-elbow	1
+OPCA5590NEMIS	Optiflo G  Catheter Solution Citric Acid (Suby G)  3.23%, 50ml	1
+PRIN31293EMIS	Prostap 3  Injection  11.25 mg/2 ml vial	1
+S3009	"Cl # prx fem	1
+Y0737	Unknown vendor specific drug	4
+b28z	INDAPAMIDE 2.5mg tablets	18
+b43l	SPIRONOLACTONE 10mg/5mL oral suspension	6
+bf22	METHYLDOPA 250mg tablets	10
+bf43	PHYSIOTENS 200micrograms tablets	27
+bk3z	LOSARTAN POTASSIUM+HYDROCHLOROTHIAZIDE 100mg/25mg tablets	1
+bk9z	EPROSARTAN 600mg tablets	1
+bl3n	ELANTAN LA 25mg m/r capsules	2
+bl3u	ISOSORBIDE MONONITRATE 25mg m/r capsules	16
+bl5I	ADIZEM-XL 240mg m/r capsules	4
+bl5L	DILZEM-XL 120mg m/r capsules	2
+bl8J	TENSIPINE MR 10 m/r tablets	1
+bl8K	TENSIPINE MR 20 m/r tablets	12
+bl8M	ADALAT LA 20mg m/r tablets	1
+blb2	AMLODIPINE 10mg tablets	1
+blc3	PLENDIL 5mg m/r tablets	2
+bs1B	MAREVAN 0.5mg tablets	1
+bs21	SINTHROME 1mg tablets	24
+bx23	COLESTYRAMINE powder 4g/sachet	1
+bx25	COLESTYRAMINE+ASPARTAME 4g/sachet powder	1
+bxa7	OMACOR 1g capsules	1
+dia7	*CO-PROXAMOL tablets	2
+e614	CEFACLOR 250mg capsules	1
+gc71	TAMSULOSIN HYDROCHLORIDE 400micrograms m/r capsules	1
+he3z	CYPROTERONE ACETATE 50mg tablets	2
+i221	*JECTOFER 100mg/2mL injection	2

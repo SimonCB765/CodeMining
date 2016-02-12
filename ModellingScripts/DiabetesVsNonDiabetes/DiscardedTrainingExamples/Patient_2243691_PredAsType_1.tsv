@@ -1,0 +1,109 @@
+Code	Description	Count
+12C2	FH: Ischaemic heart dis. <60	1
+12C4	FH: CVA/stroke	1
+136	Alcohol consumption	6
+1362	Trivial drinker - <1u/day	3
+1371	Never smoked tobacco	1
+1373	Light smoker - 1-9 cigs/day	1
+137L	Current non-smoker	1
+137S	Ex smoker	2
+138O	Takes inadequate exercise	4
+13A	Diet - patient initiated	4
+13HT1	Stress at home	1
+1Z12	Chronic kidney disease stage 3	1
+22A	O/E - weight	9
+22K	Body Mass Index	10
+246	O/E - blood pressure reading	23
+3134	Auditory/vestib. test abnormal	1
+3135	Subjective audiometry	1
+32	Electrocardiography	1
+32G1	ECG: U wave normal	1
+38A	Falls assessment	1
+423	Haemoglobin estimation	27
+428	Mean corpusc. haemoglobin(MCH)	3
+4281	MCH - normal	1
+42A	Mean corpuscular volume (MCV)	5
+42A1	MCV - normal	1
+42W	Hb. A1C - diabetic control	2
+42W4	HbA1c level (DCCT aligned)	2
+44CC	Plasma C reactive protein	7
+44CS	Serum C reactive protein level	3
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44G4	Gamma - G.T. level	2
+44I4	Serum potassium	21
+44I5	Serum sodium	3
+44I9	Serum inorganic phosphate	1
+44IC	Corrected serum calcium level	1
+44J3	Serum creatinine	56
+44J9	Serum urea level	4
+44M4	Serum albumin	3
+44P	Serum cholesterol	13
+44P5	Serum HDL cholesterol level	13
+44P6	Serum LDL cholesterol level	13
+44Q	Serum triglycerides	13
+44TJ	Blood glucose level	2
+44TK	Fasting blood glucose level	1
+44U	Blood glucose result	1
+44f1	Serum fasting glucose level	1
+451E	GFR calculated abbreviated MDRD	11
+451F	Glomerular filtration rate	2
+461	Urine exam. - general	1
+4618	Urine dipstick test	4
+4672	Urine protein test negative	2
+4674	Urine protein test = +	1
+46G2	Urine microscopy:RBC's present	3
+46G8	Urine Microscopy: white cells	2
+46U	Urine culture	3
+4JJ	Urine sample for organism	3
+55	Cardiovascular sys.angiography	1
+5858	Doppler studies	1
+6572	Pneumococcal vaccination	1
+67	Counselling/health education	3
+6891	Depression screen	1
+6896	Depression screening using questions	2
+79201	Saphenous vein graft replacement of two coronary arteries	1
+8B63	Salicylate prophylaxis	7
+8CAL	Smoking cessation advice	1
+8H2	Emergency hospital admission	1
+8H8	Follow-up arranged	1
+8H9	Planned telephone contact	9
+8HBE	Heart failure follow-up	1
+8Hc	Referral to mental health team	1
+9N1C	Seen in own home	1
+9N1P	Seen in cardiac clinic	1
+9N31	Telephone encounter	3
+9N3A	Telephone triage encounter	1
+9i20	English - ethnic category 2001 census	1
+A7816	Hand warts	1
+A79z	Viral infection NOS	1
+F4Kz5	Discharge of eye NOS	1
+F500	Perichondritis of pinna	1
+FUNDHRE10	Unknown vendor specific drug	2
+GLPU29683EMIS	Glyceryl Trinitrate  Pump spray  400 micrograms/dose	2
+ISTA9943BRIDL	Istin  Tablets  5 mg	1
+MITA10737BRIDL	Micturin  Tablets  25 mg	1
+MITA3949	Minodiab  Tablets  5 mg	1
+MOTA3978	Motival  Tablets	1
+N083C	Recurrent subluxation of shoulder - anterior	1
+SN51	Angioneurotic oedema	2
+Y1365	Unknown vendor specific drug	2
+Y1797	Unknown vendor specific drug	11
+b51C	AMILORIDE HCL+CYCLOPENTHIAZIDE 2.5mg/250micrograms tablets	24
+bdf4	*MONOCOR 10mg tablets	31
+bi93	TRANDOLAPRIL 2mg capsules	2
+bl5q	VIAZEM XL 240mg m/r capsules	2
+bl8w	NIFEDIPINE 10mg m/r tablets	13
+blzl	GLYCERYL TRINITRATE 5mg m/r tablets	1
+blzz	GLYCERYL TRINITRATE 10mg/24hrs patches	21
+bs34	PHENINDIONE 10mg tablets	3
+bu2c	ASPIRIN 75mg soluble tablets	6
+bxdz	SIMVASTATIN 80mg tablets	1
+bxj1	CERIVASTATIN SODIUM 100micrograms tablets	1
+dia6	CO-DYDRAMOL tablets	2
+f294	LANTUS 100iu/mL injection cartridges 3mL	1
+i21z	IRON DEXTRAN COMPLEX 100mg/2mL injection	1
+ij31	CALCIUM ACETATE 1g tablets	2
+j22u	DICLOFENAC SODIUM 25mg tablets	1
+j28I	NUROFEN PLUS tablets	1

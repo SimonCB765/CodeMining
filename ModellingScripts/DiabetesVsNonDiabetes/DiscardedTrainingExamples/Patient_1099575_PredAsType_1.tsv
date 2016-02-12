@@ -1,0 +1,110 @@
+Code	Description	Count
+12C1	FH: Hypertension	1
+136	Alcohol consumption	6
+1371	Never smoked tobacco	2
+137L	Current non-smoker	1
+137S	Ex smoker	1
+1381	Exercise physically impossible	3
+13l4	Main spoken language English	1
+16D	Falls	3
+1A23	Incontinence of urine	6
+1A52	Renal colic	1
+1Z12	Chronic kidney disease stage 3	8
+1Z1E	Chronic kidney disease stage 3A without proteinuria	3
+22A	O/E - weight	4
+22K	Body Mass Index	6
+2469	O/E - Systolic BP reading	28
+3272	ECG: atrial fibrillation	1
+423	Haemoglobin estimation	3
+428	Mean corpusc. haemoglobin(MCH)	3
+42A	Mean corpuscular volume (MCV)	4
+42QE	International normalised ratio	4
+43Z2	Prostate specific antigen	2
+44CC	Plasma C reactive protein	1
+44EC	Serum total bilirubin level	2
+44F	Serum alkaline phosphatase	4
+44G3	ALT/SGPT serum level	2
+44I4	Serum potassium	11
+44I5	Serum sodium	2
+44I9	Serum inorganic phosphate	2
+44IC	Corrected serum calcium level	2
+44J3	Serum creatinine	29
+44J9	Serum urea level	3
+44LP	Serum 25-Hydroxy vitamin D3 level	1
+44M4	Serum albumin	2
+44P	Serum cholesterol	15
+44P5	Serum HDL cholesterol level	14
+44P6	Serum LDL cholesterol level	14
+44Q	Serum triglycerides	15
+44TJ	Blood glucose level	3
+44TK	Fasting blood glucose level	3
+44U	Blood glucose result	2
+451E	GFR calculated abbreviated MDRD	8
+4613	Urinalysis = no abnormality	2
+4614	Urinalysis = abnormal	5
+4615	MSU sent to lab.	3
+4627	Urine: cloudy	2
+4643	Urine smell fishy	1
+4644	Urine smell abormal	2
+4662	Urine glucose test negative	2
+4672	Urine protein test negative	3
+4673	Urine protein test = trace	1
+4674	Urine protein test = +	1
+4675	Urine protein test = ++	2
+4682	Urine ketone test negative	2
+4692	Urine blood test = negative	1
+46M7	Urine creatinine	2
+46N8	Urine microalbumin profile	3
+46TC	Urine albumin:creatinine ratio	2
+46W	Urine microalbumin	2
+65720	Pneumococcal vaccination given	1
+67I8	Advice about taking aspirin	1
+6896	Depression screening using questions	2
+8B63	Salicylate prophylaxis	3
+8B6A	Statin prophylaxis	2
+8CA47	Patient advised re low cholesterol diet	4
+8H21	Admit medical emergency unsp.	1
+8H41	General medical referral	1
+8H52	Ophthalmological referral	3
+8H55	Neurosurgical referral	1
+8H5B	Referred to urologist	1
+8H77	Refer to physiotherapist	1
+8I24	Aspirin prophylaxis contra-indicated	1
+8I3Q	Pneumococcal vaccination declined	1
+9N1C	Seen in own home	1
+9N1u	Seen in vascular clinic	1
+9OX5	Influenza vaccination declined	1
+9S10	White British	2
+AB01	Dermatophytosis of nail	1
+AB04	Dermatophytosis of foot	1
+ALM/3798NEMIS	Alfuzosin Hydrochloride  M/R tablets  10 mg	1
+AMTA8386EGTON	Amitriptyline Hydrochloride  Tablets  10 mg	1
+ASDI224	Aspirin  Dispersible tablets  75 mg	15
+ATTA10910BRIDL	Atenolol  Tablets  25 mg	1
+ATTA231	Atenolol  Tablets  50 mg	5
+ATTA30131EMIS	Atorvastatin  Tablets  20 mg	5
+BITA2332NEMIS	Bisoprolol Fumarate  Tablets  1.25 mg	3
+BREY3934NEMIS	Brinzolamide  Eye drops  10 mg/ml	2
+DIM/24042EMIS	Dilzem Xl  M/R capsules  240 mg	2
+EMISQAL1	Unknown vendor specific drug	4
+F4106	Recent subtotal retinal detachment	1
+F42y1	Superficial retinal haemorrhage	1
+F5614	Otogenic vertigo	1
+FRTA1246	Froben  Tablets  50 mg	2
+G24z1	Hypertension secondary to drug	2
+G33zz	Angina pectoris NOS	1
+G5415	Aortic stenosis	2
+G5703	Paroxysmal nodal tachycardia	5
+G580	Congestive heart failure	1
+GLS/17962EMIS	Glyceryl Trinitrate  S/r buccal tablets  5 mg	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	1
+J177	Gastric polyp	1
+JEIN1531	Jectofer  Injection  50 mg/ml, 2 ml ampoule	2
+K04z	Acute renal failure NOS	2
+NAMASGO1	Unknown vendor specific drug	1
+PCSDT8940PA1	Unknown vendor specific drug	1
+PHTA6867	Phenindione  Tablets  25 mg	1
+PRST8650EMIS	Prazosin Hydrochloride  Starter pack	11
+S352C	Closed fracture metatarsal shaft	19
+Ub0qs	Unknown vendor specific drug	5
+Ub1ju	Unknown vendor specific drug	3

@@ -1,0 +1,103 @@
+Code	Description	Count
+12C5	FH: Myocardial infarction	1
+1363	Light drinker - 1-2u/day	3
+1FA	Diet good	1
+1FE1	Intake of fruit and vegetables at least 5 portions daily	1
+1Z1	Chronic renal impairment	1
+1Z12	Chronic kidney disease stage 3	1
+229	O/E - height	14
+22A	O/E - weight	15
+22K	Body Mass Index	14
+246	O/E - blood pressure reading	7
+2464	O/E - BP reading normal	1
+2469	O/E - Systolic BP reading	17
+246A	O/E - Diastolic BP reading	16
+321	ECG - general	1
+423	Haemoglobin estimation	7
+4258	Haematocrit	2
+426	Red blood cell (RBC) count	1
+428	Mean corpusc. haemoglobin(MCH)	4
+429	Mean corpusc. Hb. conc. (MCHC)	1
+42A	Mean corpuscular volume (MCV)	3
+42B6	Erythrocyte sedimentation rate	2
+42H7	Total white blood count	1
+42P	Platelet count	2
+44F	Serum alkaline phosphatase	1
+44G3	ALT/SGPT serum level	2
+44G7	Plasma gamma-glutamyl transferase level	2
+44I4	Serum potassium	1
+44J3	Serum creatinine	15
+44J9	Serum urea level	2
+44JF	Plasma creatinine level	6
+44Lc	Vitamin B12 level	1
+44Le	Plasma vitamin B12 level	2
+44MI	Plasma albumin level	1
+44P	Serum cholesterol	11
+44P5	Serum HDL cholesterol level	7
+44P6	Serum LDL cholesterol level	1
+44PF	Total cholesterol:HDL ratio	1
+44PJ	Serum total cholesterol level	6
+44PK	Serum fasting total cholesterol	1
+44Q	Serum triglycerides	4
+44Q4	Serum fasting triglyceride level	1
+44Q5	Serum random triglyceride level	4
+44T1	Random blood sugar	1
+44TB	Haemoglobin A1c level	1
+44TK	Fasting blood glucose level	6
+44dA	Plasma HDL cholesterol level	6
+44dB	Plasma LDL cholesterol level	6
+44e	Plasma triglyceride level	6
+44f0	Serum random glucose level	2
+44f1	Serum fasting glucose level	1
+44g	Plasma glucose level	6
+44h6	Plasma sodium level	1
+44h7	Plasma calcium level	1
+44h8	Plasma potassium level	6
+44h9	Plasma corrected calcium level	1
+44lG	Plasma cholesterol/HDL ratio	6
+451E	GFR calculated abbreviated MDRD	5
+4618	Urine dipstick test	1
+4674	Urine protein test = +	1
+46M7	Urine creatinine	1
+46TC	Urine albumin:creatinine ratio	1
+46W	Urine microalbumin	1
+4Q31	Transferrin level	1
+554	Coronary arteriogr.-general	1
+6572	Pneumococcal vaccination	1
+6791	Health ed. - smoking	1
+6792	Health ed. - alcohol	2
+6798	Health ed. - exercise	2
+6799	Health ed. - diet	2
+6896	Depression screening using questions	1
+79294	Insertion of coronary artery stent	2
+8B6A	Statin prophylaxis	1
+8Hc0	Referral to community mental health team	1
+8I26	Beta blocker contraindicated	1
+8I65	Warfarin not indicated	1
+9OD1	BP screen - 1st call	1
+9OI4	Hypertens.monitor.1st letter	1
+9SZ	Ethnic groups (census) NOS	1
+FRTA1245	Froben  Tablets  100 mg	2
+FUNDHRE12	Unknown vendor specific drug	1
+Fyu5E	[X]Chronic headache disorder	1
+G33	Angina pectoris	1
+GLTA31850EMIS	Glimepiride  Tablets  1 mg	2
+J103	Oesophageal stricture and stenosis	1
+J120z	Acute duodenal ulcer NOS	1
+SN51	Angioneurotic oedema	2
+SP255	"Postop. wound infection	1
+U60	[X]Drugs/meds/biol subs caus adverse effects in therap use	2
+VIM/31935EMIS	Viazem Xl  M/R capsules  300 mg	1
+Xa1dC	Unknown vendor specific drug	1
+b285	INDAPAMIDE 1.5mg m/r tablets	23
+bd3j	ATENOLOL 25mg tablets	1
+bdf6	EMCOR 10mg tablets	28
+bdf9	CARDICOR 1.25mg tablets	10
+bdfA	CARDICOR 2.5mg tablets	10
+bl8w	NIFEDIPINE 10mg m/r tablets	9
+bl8x	NIFEDIPINE 30mg m/r tablets	1
+blzz	GLYCERYL TRINITRATE 10mg/24hrs patches	10
+bs21	SINTHROME 1mg tablets	13
+j222	VOLTAROL 50mg tablets	1
+j22i	DICLOFENAC 50mg dispersible tablets	1
+j275	FLURBIPROFEN 200mg m/r capsules	1
