@@ -4,6 +4,10 @@ clc
 close all
 rng('default')  % Ensure results are reproduceable.
 
+%% Setup globals and flags.
+
+foldsToUse = 10;  % The number of CV folds to use.
+
 % Load the mapping of Read V2 codes (and some EMIS vendor codes) to their descriptions descriptions.
 load coding
 
@@ -11,7 +15,21 @@ load coding
 % type 2 diabetes, else it is between people with diabetes and people without.
 % Also determine the threshold at which recodings will be deemed to be successful. Anything <= recodingCutoff OR >= (1 - recodingCutoff) is considered strong enough evidence for recoding.
 isType1Type2 = true;
-recodingCutoff = 0;
+recodingCutoff = 0.1;
+
+% Setup the results directory.
+if isType1Type2
+    subFolder = 'Type1VsType2';
+else
+    subFolder = 'DiabetesVsNonDiabetes';
+end
+if (exist(subFolder, 'dir') == 7)
+    % If the directory exists then delete it before creating it.
+    rmdir(subFolder, 's');
+end
+mkdir(subFolder);
+
+%% Process the patient dataset.
 
 % Load the data on the patients. Each row in the file contains:
 % PatentID\tCode\tOccurences
@@ -21,7 +39,8 @@ recodingCutoff = 0;
 % data.id is an array containing the patient IDs.
 % data.key is an array containing the Read codes.
 % data.count is an array containing the association counts.
-[data.id, data.key, data.counts] = textread('CutDownPatientData.tsv', '%d %s %d');
+%[data.id, data.key, data.counts] = textread('CutDownPatientData.tsv', '%d %s %d');
+[data.id, data.key, data.counts] = textread('PatientData.tsv', '%d %s %d');
 
 % Determine unique patient IDs and codes, and create index mappings for each.
 uniqueCodes = unique(data.key);  % A list of the unique Read codes in the dataset.
@@ -32,72 +51,65 @@ patientIndexMap = containers.Map(uniquePatientIDs, 1:numel(uniquePatientIDs));  
 % Create the sparse matrix.
 % The matrix is created from three arrays: an array of row indices (sparseRows), an array of column indices (sparseCols) and an array of
 % values (data.counts). The matrix is created by saying that the entry in the matrix M[sparseRows[i], sparseCols[i]] = data.counts[i].
-% This sparse matrix will have a row for each patient ID (10,000 rows) and one column for each Read code in the dataset.
-
-%
-% COUL I JUST REPLACE SPARSEROWS WITH 1:NUMEL(UNIQUEPATIENTIDS) AND SPARSECOLS WITH 1:NUMEL(UNIQUECODES)?????
-%
-
-
-
-% For sparseRows, first generate a cell array with each cell containing a patient
-% ID. The ordering of the IDs in the array is the same as in the dataset
-% file. Next create a second cell array of the same length by mapping each
-% patient ID to its index (1-10000). Then convert this to a normal array.
-% The sparseRows array therefore contains one value for each entry in the dataset
-% file, with each value in the array being an index of a patient ID (valued
-% between 1 and 10,000).
+% sparseRows contains one value for each entry in the dataset file, with each value being the index of a patient ID such that sparseRows[i] = the
+%     index of the patient ID appearing in the ith row of the dataset file.
+% sparseCols contains one value for each entry in the dataset file, with each value being the index of a Read code such that sparseCows[i] = the
+%     index of the code appearing in the ith row of the dataset file.
+% Thus, this sparse matrix will have a row for each patient ID (10,000 rows) and one column for each Read code in the dataset.
 sparseRows = cell2mat(values(patientIndexMap, num2cell(data.id)));
-% For sparseCols, generate a cell array containing the index of each code
-% (with the array ordered the same as the dataset file). Next convert this
-% to a normal array. The sparseCols array therefore contains one value for each entry in the dataset
-% file, with each value in the array being an index of a code.
 sparseCols = cell2mat(values(codeIndexMap, data.key));
 dataMatrix = sparse(sparseRows, sparseCols, data.counts, numel(uniquePatientIDs), numel(uniqueCodes));
 
-% Determine Read codes (and their indices) for the codes that indicate type 1 or type 2 diabetes. These should be manually examined to make sure that
+% Determine Read codes (and their indices) for the codes that indicate diabetes. These should be manually examined to make sure that
 % no child codes that don't truly indicate diabetes have been included.
 type1DiabetesCodes = uniqueCodes(cellfun(@(x) ~isempty(regexp(x, '^C10E')), uniqueCodes));  % Codes that begin with C10E.
 type2DiabetesCodes = uniqueCodes(cellfun(@(x) ~isempty(regexp(x, '^C10F')), uniqueCodes));  % Codes that begin with C10F.
+diabetesCodes = uniqueCodes(cellfun(@(x) ~isempty(regexp(x, '^C10')), uniqueCodes));  % Codes that begin with C10.
 type1DiabetesIndices = cell2mat(values(codeIndexMap, type1DiabetesCodes));  % The indices of the type 1 diabetes codes.
 type2DiabetesIndices = cell2mat(values(codeIndexMap, type2DiabetesCodes));  % The indices of the type 2 diabetes codes.
+diabetesIndices = cell2mat(values(codeIndexMap, diabetesCodes));  % The indices of the diabetes codes.
 
-% Write out the codes that will be used to indicate type 1 and type 2 diabetes.
-fid = fopen('DiabetesCodesUsed.tsv', 'w');
-fprintf(fid, 'Type\tCode\tDescription\tPatientsAssociatedWith\tOccurencesWithoutItsParent\tOccurencesWithOppositeParent\n');
-for i = 1:numel(type1DiabetesCodes)
-    codeOfInterest = type1DiabetesCodes{i};
-    occurences = nnz(dataMatrix(:, codeIndexMap(codeOfInterest)));
-    occurrencesWithoutC10E = (dataMatrix(:, codeIndexMap('C10E')) == 0) & (dataMatrix(:, codeIndexMap(codeOfInterest)) > 0);
-    occurrencesWithC10F = (dataMatrix(:, codeIndexMap('C10F')) > 0) & (dataMatrix(:, codeIndexMap(codeOfInterest)) > 0);
-    fprintf(fid, '1\t%s\t%s\t%d\t%d\t%d\n', codeOfInterest, query_dictionary(coding, codeOfInterest), occurences, nnz(occurrencesWithoutC10E), nnz(occurrencesWithC10F));
-end
-for i = 1:numel(type2DiabetesCodes)
-    codeOfInterest = type2DiabetesCodes{i};
-    occurences = nnz(dataMatrix(:, codeIndexMap(codeOfInterest)));
-    occurrencesWithC10E = (dataMatrix(:, codeIndexMap('C10E')) > 0) & (dataMatrix(:, codeIndexMap(codeOfInterest)) > 0);
-    occurrencesWithoutC10F = (dataMatrix(:, codeIndexMap('C10F')) == 0) & (dataMatrix(:, codeIndexMap(codeOfInterest)) > 0);
-    fprintf(fid, '2\t%s\t%s\t%d\t%d\t%d\n', codeOfInterest, query_dictionary(coding, codeOfInterest), occurences, nnz(occurrencesWithoutC10F), nnz(occurrencesWithC10F));
+% Write out the codes that will be used to indicate diabetes.
+fid = fopen([subFolder '\DiabetesCodesUsed.tsv'], 'w');
+fprintf(fid, 'Type\tCode\tDescription\tPatientsAssociatedWith\tOccurencesWithC10E\tOccurencesWithC10F\tOccurrencesWithBoth\n');
+for i = 1:numel(diabetesCodes)
+    codeOfInterest = diabetesCodes{i};
+    occurrences = nnz(dataMatrix(:, codeIndexMap(codeOfInterest)));
+    occurrencesWithC10E = nnz((dataMatrix(:, codeIndexMap('C10E')) > 0) & (dataMatrix(:, codeIndexMap(codeOfInterest)) > 0));
+    occurrencesWithC10F = nnz((dataMatrix(:, codeIndexMap('C10F')) > 0) & (dataMatrix(:, codeIndexMap(codeOfInterest)) > 0));
+    occurrencesWithBoth = nnz((dataMatrix(:, codeIndexMap('C10E')) > 0) & (dataMatrix(:, codeIndexMap('C10F')) > 0) & (dataMatrix(:, codeIndexMap(codeOfInterest)) > 0));
+    type1Code = sum(strcmp(codeOfInterest, type1DiabetesCodes)) == 1;
+    type2Code = sum(strcmp(codeOfInterest, type2DiabetesCodes)) == 1;
+    diabetesType = iff(type1Code, '1', iff(type2Code, '2', '-'));
+    fprintf(fid, '%s\t%s\t%s\t%d\t%d\t%d\t%d\n', diabetesType, codeOfInterest, query_dictionary(coding, codeOfInterest), occurrences, occurrencesWithC10E, occurrencesWithC10F, occurrencesWithBoth);
 end
 fclose(fid);
 
-% Determine the patients that have a form of diabetes.
-% For each of type 1 and type 2 diabetes, first create a boolean matrix with one row per patient and one column per code that indicates that disease.
+% Generate the positive and negative examples.
+% Start by creating a boolean matrix with one row per patient and one column per code being used to indicate the disease.
 % Next flatten this matrix columnwise into a single (column) array using logical OR (provided by any(, 2))
 % This enables simpler indexing when finding the positive and negative examples.
-patientsWithType1 = full(dataMatrix(:, type1DiabetesIndices) > 0);  % Boolean matrix. A 1 indicates that the patient is associated with the type 1 code.
-patientsWithType1 = any(patientsWithType1, 2);  % Boolean array. A 1 indicates that the patient has type 1 diabetes.
-patientsWithType2 = full(dataMatrix(:, type2DiabetesIndices) > 0);  % Boolean matrix. A 1 indicates that the patient is associated with the type 2 code.
-patientsWithType2 = any(patientsWithType2, 2);  % Boolean array. A 1 indicates that the patient has type 2 diabetes.
-
-% Generate the positive and negative examples.
 if (isType1Type2)
-    patientsWithBothTypes = patientsWithType1 & patientsWithType2;  % Boolean array. A 1 indicates that the patient has type 1 and type 2 diabetes.
+    patientsWithType1 = full(dataMatrix(:, type1DiabetesIndices) > 0);  % Boolean matrix. A 1 indicates that the patient is associated with the type 1 code.
+    patientsWithType1 = any(patientsWithType1, 2);  % Boolean array. A 1 indicates that the patient has type 1 diabetes.
+    patientsWithType2 = full(dataMatrix(:, type2DiabetesIndices) > 0);  % Boolean matrix. A 1 indicates that the patient is associated with the type 2 code.
+    patientsWithType2 = any(patientsWithType2, 2);  % Boolean array. A 1 indicates that the patient has type 2 diabetes.
+
+    patientsWithBothTypes = find(patientsWithType1 & patientsWithType2);  % Indices of patients with both type 1 and type 2 diabetes.
     positiveExamples = setdiff(find(patientsWithType1), find(patientsWithType2));  % Indices of patients with ONLY type 1 diabetes.
     negativeExamples = setdiff(find(patientsWithType2), find(patientsWithType1));  % Indices of patients with ONLY type 2 diabetes.
+    
+    % Remove the codes used to determine type 1 and type 2 diabetes from the dataset to prevent their use as predictor variables.
+    dataMatrix(:, [type1DiabetesIndices; type2DiabetesIndices]) = [];
 else
-    positiveExamples = find(patientsWithType1 | patientsWithType2);  % Indices of patients with either type 1 or type 2 diabetes.
+    diabeticPatients = full(dataMatrix(:, diabetesIndices) > 0);  % Boolean matrix. A 1 indicates that the patient is associated with the diabetes code.
+    diabeticPatients = any(diabeticPatients, 2);  % Boolean array. A 1 indicates that the patient has diabetes.
+    
+    positiveExamples = find(diabeticPatients);  % Indices of patients with either diabetes.
     negativeExamples = setdiff((1:numel(uniquePatientIDs))', positiveExamples);  % Indices of patients without diabetes.
+    
+    % Remove the codes used to determine diabetes from the dataset to prevent their use as predictor variables.
+    dataMatrix(:, diabetesIndices) = [];
 end
 numPositiveExamples = numel(positiveExamples);
 numNegativeExamples = numel(negativeExamples);
@@ -105,8 +117,8 @@ numNegativeExamples = numel(negativeExamples);
 % Select only those codes that occur in more than 50 patient records.
 % As dataMatrix contains counts, we need > 0 to make a boolean matrix that just records presence/absence before we sum.
 codePresence = dataMatrix > 0;  % Convert sparse matrix from recording counts of associations between a patient and a given code to simply recording presence/absence of association.
-codeOccurences = full(sum(codePresence));  % Matrix of counts of the number of different patients each code is associated with.
-indicesOfCommonCodes = find(codeOccurences > 50);  % Array of indices of the codes associated with over 50 patients.
+codeOccurrences = full(sum(codePresence));  % Matrix of counts of the number of different patients each code is associated with.
+indicesOfCommonCodes = find(codeOccurrences > 50);  % Array of indices of the codes associated with over 50 patients.
 
 % Calculate the entropy of the codes with enough associations.
 % I believe this is calculated as the entropy between the histograms of counts from the two classes for a given code.
@@ -130,17 +142,17 @@ indicesCodesOnlyInNegative = setdiff(indicesOfInfEntropyCodes, indicesCodesOnlyI
 codesOnlyInNegative = uniqueCodes(indicesCodesOnlyInNegative);  % Codes that are only associated with negative examples.
 
 % Write out the infinite entropy codes and statistics about them.
-fid = fopen('InfiniteEntropyCodes.tsv', 'w');
+fid = fopen([subFolder '\InfiniteEntropyCodes.tsv'], 'w');
 fprintf(fid, 'Class\tCode\tDescription\tPatientsAssociatedWith\n');
 for i = 1:numel(codesOnlyInPositive)
     codeOfInterest = codesOnlyInPositive{i};
-    occurences = nnz(dataMatrix(:, codeIndexMap(codeOfInterest)));
-    fprintf(fid, 'Positive\t%s\t%s\t%d\n', codeOfInterest, query_dictionary(coding, codeOfInterest), occurences);
+    occurrences = nnz(dataMatrix(:, codeIndexMap(codeOfInterest)));
+    fprintf(fid, 'Positive\t%s\t%s\t%d\n', codeOfInterest, query_dictionary(coding, codeOfInterest), occurrences);
 end
 for i = 1:numel(codesOnlyInNegative)
     codeOfInterest = codesOnlyInNegative{i};
-    occurences = nnz(dataMatrix(:, codeIndexMap(codeOfInterest)));
-    fprintf(fid, 'Negative\t%s\t%s\t%d\n', codeOfInterest, query_dictionary(coding, codeOfInterest), occurences);
+    occurrences = nnz(dataMatrix(:, codeIndexMap(codeOfInterest)));
+    fprintf(fid, 'Negative\t%s\t%s\t%d\n', codeOfInterest, query_dictionary(coding, codeOfInterest), occurrences);
 end
 fclose(fid);
 
@@ -149,7 +161,7 @@ fclose(fid);
 % less than 1 (equivalently where log(entropy) < 0).
 indicesOfTrainingCodes = indicesOfCommonCodes((entropy ~= inf) & (entropy >= 1));  % Indices of the codes to use for training.
 trainingCodes = uniqueCodes(indicesOfTrainingCodes);  % Names of the codes to use for training.
-fid = fopen('TrainingCodes.tsv', 'w');
+fid = fopen([subFolder '\TrainingCodes.tsv'], 'w');
 fprintf(fid, 'Code\tDescription\n');
 for i = 1:numel(trainingCodes)
     codeOfInterest = trainingCodes{i};
@@ -163,24 +175,27 @@ fclose(fid);
 initialTrainingMatrix = dataMatrix([positiveExamples; negativeExamples], indicesOfTrainingCodes);  % Subset of dataset containing only patients and codes to use for training.
 initialTrainingTarget = [ones(numPositiveExamples, 1); zeros(numNegativeExamples, 1)];  % Class target array for training.
 
+% Create the cross validation partition.
+initialCrossValPartition = cvpartition(initialTrainingTarget, 'KFold', foldsToUse);
+
 % Train the initial model using all positive and negative examples.
 % Make the training set record binary associations (rather than counts) as that is what we are interested in.
+display(['Training initial model - ' datestr(now)]);
 tic
-[initialModelCoefficients, initialModelFitInfo] = lassoglm(initialTrainingMatrix > 0, initialTrainingTarget, 'binomial', 'NumLambda', 25, 'Alpha', 0.9, 'LambdaRatio', 1e-4, 'CV', 2);
+[initialModelCoefficients, initialModelFitInfo] = lassoglm(initialTrainingMatrix > 0, initialTrainingTarget, 'binomial', 'NumLambda', 25, 'Alpha', 0.9, 'LambdaRatio', 1e-4, 'CV', initialCrossValPartition);
 toc
 
 % Determine the non-zero coefficients and the codes they correspond to.
 indexOfLambdaToUse = initialModelFitInfo.Index1SE;  % Index of largest lambda value with deviance within one standard error of the minimum.
 modelCoefficients = initialModelCoefficients(:, indexOfLambdaToUse);  % Coefficients of the model with the chosen value of lambda.
-[sortedCoefficients, coefficientReordering] = sort(abs(modelCoefficients), 'descend');  % Sort coefficients so that 0 value coefficients are at the bottom.
-nonZeroCoefficients = modelCoefficients(coefficientReordering(sortedCoefficients ~= 0));  % Non-zero coefficients ordered by absolute value.
-nonZeroCoefCodeIndices = indicesOfTrainingCodes(coefficientReordering(sortedCoefficients ~= 0));  % Indices of codes with non-zero coefficients ordered by absolute coefficient value.
-nonZeroCoefCodes = uniqueCodes(nonZeroCoefCodeIndices);  % Codes with non-zero coefficients ordered by absolute coefficient value.
-fid = fopen('InitialModelCoefficients.tsv', 'w');
+[unused, coefficientReordering] = sort(abs(modelCoefficients), 'descend');  % Sort coefficients so that 0 value coefficients are at the bottom.
+sortedCoefficientIndices = indicesOfTrainingCodes(coefficientReordering);  % Training code indices sorted by absolute coefficient.
+sortedCoefficientCodes = uniqueCodes(sortedCoefficientIndices);  % Codes ordered by absolute coefficient value.
+fid = fopen([subFolder '\InitialModelCoefficients.tsv'], 'w');
 fprintf(fid, 'Coefficient\tCode\tDescription\n');
-for i = 1:numel(nonZeroCoefCodes)
-    codeOfInterest = nonZeroCoefCodes{i};
-    fprintf(fid, '%1.4f\t%s\t%s\n', nonZeroCoefficients(i), codeOfInterest, query_dictionary(coding, codeOfInterest));
+for i = 1:numel(sortedCoefficientCodes)
+    codeOfInterest = sortedCoefficientCodes{i};
+    fprintf(fid, '%1.4f\t%s\t%s\n', modelCoefficients(coefficientReordering(i)), codeOfInterest, query_dictionary(coding, codeOfInterest));
 end
 fclose(fid);
 
@@ -188,7 +203,7 @@ fclose(fid);
 modelIntercept = initialModelFitInfo.Intercept(indexOfLambdaToUse);  % Determine the model's intercept.
 initialModelCoefsWithIntercept = [modelIntercept; modelCoefficients];  % Add the intercept to the coefficients.
 posteriorProbabilities = glmval(initialModelCoefsWithIntercept, initialTrainingMatrix, 'logit');  % Calculate posterior probabilities.
-fid = fopen('InitialModelPosteriors.tsv', 'w');
+fid = fopen([subFolder '\InitialModelPosteriors.tsv'], 'w');
 fprintf(fid, 'Class\tPosterior\tPatientID\n');
 for i = 1:numPositiveExamples
     posterior = posteriorProbabilities(i);  % Positive examples come first, so posterior is indexed by i.
@@ -209,30 +224,66 @@ finalNegativeExamples = negativeExamples(posteriorProbabilities(numPositiveExamp
 numFinalPositiveExamples = numel(finalPositiveExamples);
 numFinalNegativeExamples = numel(finalNegativeExamples);
 
+%% Record a medical history for each patient that is being discarded from the training set.
+
+% Determine the discarded training examples.
+discardedPosExamples = positiveExamples(posteriorProbabilities(1:numPositiveExamples) <= 0.2);
+discardedNegExamples = negativeExamples(posteriorProbabilities(numPositiveExamples + 1:numPositiveExamples + numNegativeExamples) >= 0.2);
+discardedExamples = [discardedPosExamples; discardedNegExamples];
+
+% Create the directory to hold the patient records.
+patientDir = [subFolder '\DiscardedTrainingExamples'];
+if (exist(patientDir, 'dir') == 7)
+    % If the directory exists then delete it before creating it.
+    rmdir(patientDir, 's');
+end
+mkdir(patientDir);
+
+for i = 1:numel(discardedExamples)
+    if i <= numel(discardedPosExamples)
+        predictedClass = 'PredAsType_2';
+    else
+        predictedClass = 'PredAsType_1';
+    end
+    patientID = uniquePatientIDs(discardedExamples(i));
+    patientRecord = dataMatrix(discardedExamples(i), :);  % Get the subset of the dataset for the specific patient.
+    [unused, codeIndices, codeCounts] = find(patientRecord);  % Get the indices and counts of the codes related to the patient.
+    fid = fopen([patientDir '\Patient_' num2str(patientID) '_' predictedClass '.tsv'], 'w');
+    fprintf(fid, 'Code\tDescription\tCount\n');
+    for j = 1:numel(codeIndices)
+        codeOfInterest = cell2mat(uniqueCodes(codeIndices(j)));
+        fprintf(fid, '%s\t%s\t%d\n', codeOfInterest, query_dictionary(coding, codeOfInterest), codeCounts(j));
+    end
+    fclose(fid);
+end
+
 %% Train the second model.
 
 % Determine the training set and target array.
 finalTrainingMatrix = dataMatrix([finalPositiveExamples; finalNegativeExamples], indicesOfTrainingCodes);  % Subset of dataset containing only patients and codes to use for training.
 finalTrainingTarget = [ones(numFinalPositiveExamples, 1); zeros(numFinalNegativeExamples, 1)];  % Class target array for training.
 
+% Create the cross validation partition.
+finalCrossValPartition = cvpartition(finalTrainingTarget, 'KFold', foldsToUse);
+
 % Train the final model using the subset of positive and negative examples.
 % Make the training set record binary associations (rather than counts) as that is what we are interested in.
+display(['Training final model - ' datestr(now)]);
 tic
-[finalModelCoefficients, finalModelFitInfo] = lassoglm(finalTrainingMatrix > 0, finalTrainingTarget, 'binomial', 'NumLambda', 25, 'Alpha', 0.9, 'LambdaRatio', 1e-4, 'CV', 2);
+[finalModelCoefficients, finalModelFitInfo] = lassoglm(finalTrainingMatrix > 0, finalTrainingTarget, 'binomial', 'NumLambda', 25, 'Alpha', 0.9, 'LambdaRatio', 1e-4, 'CV', finalCrossValPartition);
 toc
 
 % Determine the non-zero coefficients and the codes they correspond to.
 indexOfLambdaToUse = finalModelFitInfo.Index1SE;  % Index of largest lambda value with deviance within one standard error of the minimum.
 modelCoefficients = finalModelCoefficients(:, indexOfLambdaToUse);  % Coefficients of the model with the chosen value of lambda.
-[sortedCoefficients, coefficientReordering] = sort(abs(modelCoefficients), 'descend');  % Sort coefficients so that 0 value coefficients are at the bottom.
-nonZeroCoefficients = modelCoefficients(coefficientReordering(sortedCoefficients ~= 0));  % Non-zero coefficients ordered by absolute value.
-nonZeroCoefCodeIndices = indicesOfTrainingCodes(coefficientReordering(sortedCoefficients ~= 0));  % Indices of codes with non-zero coefficients ordered by absolute coefficient value.
-nonZeroCoefCodes = uniqueCodes(nonZeroCoefCodeIndices);  % Codes with non-zero coefficients ordered by absolute coefficient value.
-fid = fopen('FinalModelCoefficients.tsv', 'w');
+[unused, coefficientReordering] = sort(abs(modelCoefficients), 'descend');  % Sort coefficients so that 0 value coefficients are at the bottom.
+sortedCoefficientIndices = indicesOfTrainingCodes(coefficientReordering);  % Training code indices sorted by absolute coefficient.
+sortedCoefficientCodes = uniqueCodes(sortedCoefficientIndices);  % Codes ordered by absolute coefficient value.
+fid = fopen([subFolder '\FinalModelCoefficients.tsv'], 'w');
 fprintf(fid, 'Coefficient\tCode\tDescription\n');
-for i = 1:numel(nonZeroCoefCodes)
-    codeOfInterest = nonZeroCoefCodes{i};
-    fprintf(fid, '%1.4f\t%s\t%s\n', nonZeroCoefficients(i), codeOfInterest, query_dictionary(coding, codeOfInterest));
+for i = 1:numel(sortedCoefficientCodes)
+    codeOfInterest = sortedCoefficientCodes{i};
+    fprintf(fid, '%1.4f\t%s\t%s\n', modelCoefficients(coefficientReordering(i)), codeOfInterest, query_dictionary(coding, codeOfInterest));
 end
 fclose(fid);
 
@@ -240,7 +291,7 @@ fclose(fid);
 modelIntercept = finalModelFitInfo.Intercept(indexOfLambdaToUse);  % Determine the model's intercept.
 finalModelCoefsWithIntercept = [modelIntercept; modelCoefficients];  % Add the intercept to the coefficients.
 posteriorProbabilities = glmval(finalModelCoefsWithIntercept, finalTrainingMatrix, 'logit');  % Calculate posterior probabilities.
-fid = fopen('FinalModelPosteriors.tsv', 'w');
+fid = fopen([subFolder '\FinalModelPosteriors.tsv'], 'w');
 fprintf(fid, 'Class\tPosterior\tPatientID\n');
 for i = 1:numFinalPositiveExamples
     posterior = posteriorProbabilities(i);  % Positive examples come first, so posterior is indexed by i.
@@ -252,22 +303,101 @@ for i = 1:numFinalNegativeExamples
 end
 fclose(fid);
 
-%% Generate information about model performance, dataset statistics and recodings.
+%% Estimate the performance of the models.
 
-% Record some statistics about the model performance.
-fid = fopen('ModelPerformance.txt', 'w');
-fprintf(fid, 'Initial model lambda - %d\n', initialModelFitInfo.Lambda);
+thresholdsToUse = (0:100) / 100;  % The posterior thresholds to use to generate the ROC curve.
+
+% Optimal lambda values calculated when training the initial and final models.
+initialLambda = initialModelFitInfo.Lambda(initialModelFitInfo.Index1SE);
+finalLambda = finalModelFitInfo.Lambda(finalModelFitInfo.Index1SE);
+
+% Create arrays of class names for the training examples used in each model.
+initialModelClassArray = cellstr([repmat('positive', numPositiveExamples, 1); repmat('negative', numNegativeExamples, 1)]);
+finalModelClassArray = cellstr([repmat('positive', numFinalPositiveExamples, 1); repmat('negative', numFinalNegativeExamples, 1)]);
+
+% Open results files.
+initFid = fopen([subFolder '\InitialModelCVResults.tsv'], 'w');
+fprintf(initFid, ['ClassificationThreshold\t' num2str(thresholdsToUse, '\t%.2f') '\n']);
+finalFid = fopen([subFolder '\FinalModelCVResults.tsv'], 'w');
+fprintf(finalFid, ['ClassificationThreshold\t' num2str(thresholdsToUse, '\t%.2f') '\n']);
+
+% Generate predictions.
+for i = 1:foldsToUse
+    display(['Cross validation fold ' num2str(i) ' - ' datestr(now)]);
+    tic
+    
+    % Train the models.
+    intialTrainingFold = initialCrossValPartition.training(i);  % Binary array indicating examples used for training the initial model.
+    [initialModelCoefficientsCV, initialModelFitInfoCV] = lassoglm(initialTrainingMatrix(intialTrainingFold, :) > 0, initialTrainingTarget(intialTrainingFold, :), 'binomial', 'Lambda', initialLambda, 'Alpha', 0.9);
+    finalTrainingFold = finalCrossValPartition.training(i);  % Binary array indicating examples used for training the final model.
+    [finalModelCoefficientsCV, finalModelFitInfoCV] = lassoglm(finalTrainingMatrix(finalTrainingFold, :) > 0, finalTrainingTarget(finalTrainingFold, :), 'binomial', 'Lambda', finalLambda, 'Alpha', 0.9);
+
+    % Test the models.
+    initialTestFold = initialCrossValPartition.test(i);  % Binary array indicating examples used for testing the initial model.
+    initialModelCoefsWithInterceptCV = [initialModelFitInfoCV.Intercept; initialModelCoefficientsCV];  % Add the intercept to the coefficients.
+    initialModelPostProbsCV = glmval(initialModelCoefsWithInterceptCV, initialTrainingMatrix(initialTestFold, :), 'logit');  % Calculate posterior probabilities.
+    initialModelPostProbsCV = num2cell(initialModelPostProbsCV);
+    finalTestFold = finalCrossValPartition.test(i);  % Binary array indicating examples used for testing the final model.
+    finalModelCoefsWithInterceptCV = [finalModelFitInfoCV.Intercept; finalModelCoefficientsCV];  % Add the intercept to the coefficients.
+    finalModelPostProbsCV = glmval(finalModelCoefsWithInterceptCV, finalTrainingMatrix(finalTestFold, :), 'logit');  % Calculate posterior probabilities.
+    finalModelPostProbsCV = num2cell(finalModelPostProbsCV);
+    
+    fprintf(initFid, 'Fold%d\t', i);
+    fprintf(finalFid, 'Fold%d\t', i);
+    for j = 1:numel(thresholdsToUse)
+        % Calcualte stats for the initial model.
+        initModelTrueClasses = initialModelClassArray(initialTestFold);
+        initModelPredClasses = cellfun(@(x) iff(x < thresholdsToUse(j), 'negative', 'positive'), initialModelPostProbsCV, 'UniformOutput', false);
+        initModelCorrect = initModelTrueClasses(strcmp(initModelTrueClasses, initModelPredClasses));
+        initModelNumCorrect = numel(initModelCorrect);
+        initModelTP = sum(ismember(initModelCorrect, 'positive'));
+        initModelTN = initModelNumCorrect - initModelTP;
+        initModelWrong = initModelPredClasses(~strcmp(initModelTrueClasses, initModelPredClasses));
+        initModelNumWrong = numel(initModelWrong);
+        initModelFP = sum(ismember(initModelWrong, 'positive'));
+        initModelFN = initModelNumWrong - initModelFP;
+        fprintf(initFid, '%d,%d,%d,%d\t', initModelTP, initModelFP, initModelTN, initModelFN);
+        
+        % Calculate stats for the final model.
+        finalModelTrueClasses = finalModelClassArray(finalTestFold);
+        finalModelPredClasses = cellfun(@(x) iff(x < thresholdsToUse(j), 'negative', 'positive'), finalModelPostProbsCV, 'UniformOutput', false);
+        finalModelCorrect = finalModelTrueClasses(strcmp(finalModelTrueClasses, finalModelPredClasses));
+        finalModelNumCorrect = numel(finalModelCorrect);
+        finalModelTP = sum(ismember(finalModelCorrect, 'positive'));
+        finalModelTN = finalModelNumCorrect - finalModelTP;
+        finalModelWrong = finalModelPredClasses(~strcmp(finalModelTrueClasses, finalModelPredClasses));
+        finalModelNumWrong = numel(finalModelWrong);
+        finalModelFP = sum(ismember(finalModelWrong, 'positive'));
+        finalModelFN = finalModelNumWrong - finalModelFP;
+        fprintf(finalFid, '%d,%d,%d,%d\t', finalModelTP, finalModelFP, finalModelTN, finalModelFN);
+    end
+    fprintf(initFid, '\n');
+    fprintf(finalFid, '\n');
+    
+    toc
+end
+
+% Close results files.
+fclose(initFid);
+fclose(finalFid);
+
+%% Record basic stats about the trained models and the dataset.
+
+% Record some statistics about the trained models.
+fid = fopen([subFolder '\ModelStats.txt'], 'w');
+fprintf(fid, 'CV folds used - %d\n', foldsToUse);
+fprintf(fid, 'Initial model lambda - %d\n', initialModelFitInfo.Lambda(initialModelFitInfo.Index1SE));
 fprintf(fid, 'Initial model non-zero coefficients - %d\n', initialModelFitInfo.DF(initialModelFitInfo.Index1SE));
 fprintf(fid, 'Initial model deviance - %d\n', initialModelFitInfo.Lambda1SE);
 fprintf(fid, 'Initial model deviance standard error - %d\n', initialModelFitInfo.SE(initialModelFitInfo.Index1SE));
-fprintf(fid, 'Final model lambda - %d\n', finalModelFitInfo.Lambda);
+fprintf(fid, 'Final model lambda - %d\n', finalModelFitInfo.Lambda(finalModelFitInfo.Index1SE));
 fprintf(fid, 'Final model non-zero coefficients - %d\n', finalModelFitInfo.DF(finalModelFitInfo.Index1SE));
 fprintf(fid, 'Final model deviance - %d\n', finalModelFitInfo.Lambda1SE);
 fprintf(fid, 'Final model deviance standard error - %d\n', finalModelFitInfo.SE(finalModelFitInfo.Index1SE));
 fclose(fid);
 
 % Record some statistics about the data.
-fid = fopen('DatasetStats.txt', 'w');
+fid = fopen([subFolder '\DatasetStats.txt'], 'w');
 fprintf(fid, 'Initial positive examples - %d\n', numPositiveExamples);
 fprintf(fid, 'Initial negative examples - %d\n', numNegativeExamples);
 fprintf(fid, 'Final positive examples - %d\n', numFinalPositiveExamples);
@@ -279,47 +409,55 @@ else
 end
 fclose(fid);
 
-% Calculate posteriors for examples that may need recoding.
+%% Record classifications for the ambiguous patients (only needed when comparing type 1 and type 2 patients).
+
 if (isType1Type2)
     % Determine the posterior probabilities of the examples that are marked as both type 1 and type 2.
     examplesToRecode = patientsWithBothTypes;
     bothTypesMatrix = dataMatrix(examplesToRecode, indicesOfTrainingCodes);  % Subset of dataset containing patients with both types of diabetes and codes used for training.
     initialModelPostProbs = glmval(initialModelCoefsWithIntercept, bothTypesMatrix, 'logit');  % Calculate posterior probabilities using the initial model.
     finalModelPostProbs = glmval(finalModelCoefsWithIntercept, bothTypesMatrix, 'logit');  % Calculate posterior probabilities using the final model.
-else
-    % Determine the posteriors for the non-diabetic examples.
-    examplesToRecode = negativeExamples;
-    nonDiabeticMatrix = dataMatrix(examplesToRecode, indicesOfTrainingCodes);  % Subset of dataset containing non-diabetic patients and codes used for training.
-    initialModelPostProbs = glmval(initialModelCoefsWithIntercept, nonDiabeticMatrix, 'logit');  % Calculate posterior probabilities using the initial model.
-    finalModelPostProbs = glmval(finalModelCoefsWithIntercept, nonDiabeticMatrix, 'logit');  % Calculate posterior probabilities using the final model.
-end
-fid = fopen('RecodingPosteriors.tsv', 'w');
-fprintf(fid, 'InitialModelPosterior\tFinalModelPosterior\tPatientID\n');
-for i = 1:numel(examplesToRecode)
-    initialModelPosterior = initialModelPostProbs(i);
-    finalModelPosterior = finalModelPostProbs(i);
-    fprintf(fid, '%1.4f\t%1.4f\t%d\n', initialModelPosterior, finalModelPosterior, uniquePatientIDs(examplesToRecode(i)));
-end
-fclose(fid);
 
-% Create a medical history for each patient that has had their diabetes type status determined conclusively.
-% This is not needed when differentiating diabetes patients from non-diabetes patients.
-if (isType1Type2)
+    % Record predictions for ambiguous patients.
+    fid = fopen([subFolder '\AmbiguousPatientPosteriors.tsv'], 'w');
+    fprintf(fid, 'InitialModelPosterior\tFinalModelPosterior\tPatientID\n');
+    for i = 1:numel(examplesToRecode)
+        initialModelPosterior = initialModelPostProbs(i);
+        finalModelPosterior = finalModelPostProbs(i);
+        fprintf(fid, '%1.4f\t%1.4f\t%d\n', initialModelPosterior, finalModelPosterior, uniquePatientIDs(examplesToRecode(i)));
+    end
+    fclose(fid);
+
     % Create the directory to hold the patient records.
-    patientDir = 'PatientRecords';
-    if (exists(patientDir, 'dir') == 7)
+    patientDir = [subFolder '\DisambiguatedPatients'];
+    if (exist(patientDir, 'dir') == 7)
         % If the directory exists then delete it before creating it.
-        rmdir(patientDir);
+        rmdir(patientDir, 's');
     end
     mkdir(patientDir);
+    fid = fopen([patientDir '\_RecodingCutoffUsed.txt'], 'w');
+    fprintf(fid, 'Examples with posterior <= %.2f or >= %.2f are considered to be conclusively disambiguated.', recodingCutoff, 1 - recodingCutoff);
+    fclose(fid);
     
-    % Create the record for each patient.
+    % Create a medical history for each ambiguos patient that has had their diabetes type status predicted conclusively.
     for i = 1:numel(examplesToRecode)
-        if ((finalModelPosterior(i) <= recodingCutoff) | (finalModelPosterior(i) >= (1 - recodingCutoff)))
-            patientID = uniquePatientIDs(examplesToRecode(i);
-            patientRecord = dataMatrix(patientID, :);  % Get the subset of the dataset for the specific patient.
-            fid = fopen([patientDir '/Patient_' patientID '.tsv'], 'w');
-            fprintf(fid, 'Code\tCount\n');
+        predictedType1 = (finalModelPostProbs(i) >= (1 - recodingCutoff));
+        predictedType2 = (finalModelPostProbs(i) <= recodingCutoff);
+        if (predictedType2 || predictedType1)
+            if predictedType1
+                predictedClass = 'Type1';
+            else
+                predictedClass = 'Type2';
+            end
+            patientID = uniquePatientIDs(examplesToRecode(i));
+            patientRecord = dataMatrix(examplesToRecode(i), :);  % Get the subset of the dataset for the specific patient.
+            [unused, codeIndices, codeCounts] = find(patientRecord);  % Get the indices and counts of the codes related to the patient.
+            fid = fopen([patientDir '\Patient_' num2str(patientID) '_' predictedClass '.tsv'], 'w');
+            fprintf(fid, 'Code\tDescription\tCount\n');
+            for j = 1:numel(codeIndices)
+                codeOfInterest = cell2mat(uniqueCodes(codeIndices(j)));
+                fprintf(fid, '%s\t%s\t%d\n', codeOfInterest, query_dictionary(coding, codeOfInterest), codeCounts(j));
+            end
             fclose(fid);
         end
     end
