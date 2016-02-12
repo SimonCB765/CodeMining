@@ -1,0 +1,23 @@
+To run the model training simply run the main.m script.
+There are no command line flags, but there are variables within the script that can be changed to alter the running of the script.
+
+The basic flow of the script is to process the patient dataset, train and initial model (elastic net), determine which examples
+	in the dataset should be discarded and then train a second model (elastic net) on the non-discarded examples.
+The script creates a directory to hold all the results. These include:
+	Statistics about the dataset and model training.
+	Performance of the models.
+	Codes identified by both models as being discriminatory, along with the coefficients for the codes.
+	Disambiguation of medical records containing both type 1 and type 2 diabetes codes (if that analysis is chosen).
+
+PatientData.tsv
+	Data on the patients. There is no header, and each row has three columns. The first contains a unique ID for the patient,
+		the second has a clinical code and the third has a count of the number of times the code has appeared in the patient's medical record.
+	Each patient ID can (and does) appear on multiple rows.
+	Each clinical code can appear connected to multiple patients.
+	Together the rows for a given patient ID make up their medical history.
+CutDownPatientData.tsv
+	A random much smaller subset of the rows in PatientData.tsv used to test the scripts.
+coding.mat and coding.tsv
+	These files contain the mapping between clinical codes and their descriptions. The content is the same, just the formatting is different.
+	coding.tsv has no header and one row per code. Each row is formatted as Code\tDescription.
+	coding.mat is a Matlab object that can be loaded directly into Matlab.
