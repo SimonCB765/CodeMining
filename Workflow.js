@@ -40,7 +40,7 @@ var rawDataPosition = { x : xOffset, y : yOffset };
 var containerRawData = svg.append("g")
     .classed("rawData", true)
     .attr("transform", "translate(" + rawDataPosition.x + ", " + rawDataPosition.y + ")");
-createTable(containerRawData, 0, 0, rawDatasetDimensions.width, rawDatasetDimensions.height, "Raw Data");
+create_table(containerRawData, 0, 0, rawDatasetDimensions.width, rawDatasetDimensions.height, "Processed Data");
 
 // Create the processed data picture.
 xOffset += rawDatasetDimensions.width + hGapBetweenPictures;
@@ -48,20 +48,20 @@ var processedDataPosition = { x : xOffset, y : yOffset - (rawDatasetDimensions.h
 var containerProcessedData = svg.append("g")
     .classed("processedData", true)
     .attr("transform", "translate(" + processedDataPosition.x + ", " + processedDataPosition.y + ")");
-createTable(containerProcessedData, 0, 0, processedDatasetDimensions.width, processedDatasetDimensions.height, "Processed Data");
+create_table(containerProcessedData, 0, 0, processedDatasetDimensions.width, processedDatasetDimensions.height, "Training Data");
 
 // Create the unused data picture.
 var unusedDataPosition = { x : xOffset, y : yOffset + (rawDatasetDimensions.height * 7 / 6) - unusedDatasetDimensions.height };
 var containerProcessedData = svg.append("g")
     .classed("unusedData", true)
     .attr("transform", "translate(" + unusedDataPosition.x + ", " + unusedDataPosition.y + ")");
-createTable(containerProcessedData, 0, 0, unusedDatasetDimensions.width, unusedDatasetDimensions.height, "Unused Data");
+create_table(containerProcessedData, 0, 0, unusedDatasetDimensions.width, unusedDatasetDimensions.height, "Unused Data");
 
 // Create the arrows from the raw to processed and unused data.
 var arrowStartX = rawDataPosition.x + rawDatasetDimensions.width;
 var arrowStartY = rawDataPosition.y + (rawDatasetDimensions.height / 2);
-createArrow(svg, arrowStartX, arrowStartY, processedDataPosition.x, processedDataPosition.y + (processedDatasetDimensions.height / 2));
-createArrow(svg, arrowStartX, arrowStartY, unusedDataPosition.x, unusedDataPosition.y + (unusedDatasetDimensions.height / 2));
+create_arrow(svg, arrowStartX, arrowStartY, processedDataPosition.x, processedDataPosition.y + (processedDatasetDimensions.height / 2));
+create_arrow(svg, arrowStartX, arrowStartY, unusedDataPosition.x, unusedDataPosition.y + (unusedDatasetDimensions.height / 2));
 
 // Create the initial model picture.
 xOffset += processedDatasetDimensions.width + hGapBetweenPictures;
@@ -69,7 +69,7 @@ var initialModelPosition = { x : xOffset, y : processedDataPosition.y };
 var containerInitialModel = svg.append("g")
     .classed("initialModel", true)
     .attr("transform", "translate(" + initialModelPosition.x + ", " + initialModelPosition.y + ")");
-createModel(containerInitialModel, 0, 0, initialModelDimensions.width, initialModelDimensions.height, "Initial Model");
+create_model(containerInitialModel, 0, 0, initialModelDimensions.width, initialModelDimensions.height, "Initial Model");
 
 // Create the correctly classified data picture.
 xOffset += initialModelDimensions.width + (hGapBetweenPictures * 2);
@@ -77,14 +77,14 @@ var correctlyClassifiedPosition = { x : xOffset, y : processedDataPosition.y - (
 var containerCorrectlyClassified = svg.append("g")
     .classed("processedData", true)
     .attr("transform", "translate(" + correctlyClassifiedPosition.x + ", " + correctlyClassifiedPosition.y + ")");
-createTable(containerCorrectlyClassified, 0, 0, correctlyClassifiedDimensions.width, correctlyClassifiedDimensions.height, "Correctly Classified");
+create_table(containerCorrectlyClassified, 0, 0, correctlyClassifiedDimensions.width, correctlyClassifiedDimensions.height, "Correctly Classified");
 
 // Create the misclassified data picture.
 var misclassifiedPosition = { x : xOffset, y : correctlyClassifiedPosition.y + correctlyClassifiedDimensions.height + (misclassifiedDimensions.height * 2) };
 var containerMisclassified = svg.append("g")
     .classed("unusedData", true)
     .attr("transform", "translate(" + misclassifiedPosition.x + ", " + misclassifiedPosition.y + ")");
-createTable(containerMisclassified, 0, 0, misclassifiedDimensions.width, misclassifiedDimensions.height, "Misclassified");
+create_table(containerMisclassified, 0, 0, misclassifiedDimensions.width, misclassifiedDimensions.height, "Misclassified");
 
 // Create the arrows going in and out of the initial model.
 var processedToInitialArrow = { startX : processedDataPosition.x + processedDatasetDimensions.width,
@@ -102,12 +102,12 @@ var initialToMisclassifiedArrow = { startX : initialModelPosition.x + initialMod
                                     endX : misclassifiedPosition.x,
                                     endY : misclassifiedPosition.y + (misclassifiedDimensions.height / 2)
                                   };
-createArrow(svg, processedToInitialArrow.startX, processedToInitialArrow.startY, processedToInitialArrow.endX, processedToInitialArrow.endY);
-createArrow(svg, initialToCorrectArrow.startX, initialToCorrectArrow.startY, initialToCorrectArrow.endX, initialToCorrectArrow.endY);
+create_arrow(svg, processedToInitialArrow.startX, processedToInitialArrow.startY, processedToInitialArrow.endX, processedToInitialArrow.endY);
+create_arrow(svg, initialToCorrectArrow.startX, initialToCorrectArrow.startY, initialToCorrectArrow.endX, initialToCorrectArrow.endY);
 svg.append("path")
     .classed("arrow", true)
     .attr("d", "M" + (initialModelPosition.x + initialModelDimensions.width) + "," + (initialModelPosition.y + (initialModelDimensions.height / 2)) + "h" + hGapBetweenPictures);
-createArrow(svg, initialToMisclassifiedArrow.startX, initialToMisclassifiedArrow.startY, initialToMisclassifiedArrow.endX, initialToMisclassifiedArrow.endY);
+create_arrow(svg, initialToMisclassifiedArrow.startX, initialToMisclassifiedArrow.startY, initialToMisclassifiedArrow.endX, initialToMisclassifiedArrow.endY);
 
 // Create the line looping under the initial model.
 var start = { x : processedToInitialArrow.startX, y : processedToInitialArrow.startY };
@@ -134,17 +134,20 @@ var finalModelPosition = { x : correctlyClassifiedPosition.x + correctlyClassifi
 var containerFinalModel = svg.append("g")
     .classed("initialModel", true)
     .attr("transform", "translate(" + finalModelPosition.x + ", " + finalModelPosition.y + ")");
-createModel(containerFinalModel, 0, 0, finalModelDimensions.width, finalModelDimensions.height, "Final Model");
+create_model(containerFinalModel, 0, 0, finalModelDimensions.width, finalModelDimensions.height, "Final Model");
 
 // Add the arrow to the final model picture.
 var arrowToFinalModel = { startX : correctlyClassifiedPosition.x + correctlyClassifiedDimensions.width,
                           endX : correctlyClassifiedPosition.x + correctlyClassifiedDimensions.width + hGapBetweenPictures,
                           y : correctlyClassifiedPosition.y + (correctlyClassifiedDimensions.height / 2)
                         };
-createArrow(svg, arrowToFinalModel.startX, arrowToFinalModel.y, arrowToFinalModel.endX, arrowToFinalModel.y);
+create_arrow(svg, arrowToFinalModel.startX, arrowToFinalModel.y, arrowToFinalModel.endX, arrowToFinalModel.y);
 
-function createArrow(selection, startX, startY, endX, endY)
+function create_arrow(selection, startX, startY, endX, endY)
 {
+    // Add an arrow to selection starting at (startX, startY) and ending at (endX, endY). The tip of the arrow will be at (endX, endY), the
+    // size of the arrow head is taken into account when positioning the arrow.
+
     var arrow = selection.append("path")
         .classed("arrow", true);
     endX -= (arrowheadWidth * parseInt(arrow.style("stroke-width")));  // Determine the size of the arrowhead and move the end of the arrow's line as needed.
@@ -155,8 +158,11 @@ function createArrow(selection, startX, startY, endX, endY)
         .attr("marker-end", "url(#arrowhead)");
 }
 
-function createModel(selection, x, y, width, height, text)
+function create_model(selection, x, y, width, height, text)
 {
+    // Create a representative picture of a model in selection. The upper left corner of the model border will be at (x, y), with the bottom
+    // right corner at (x+width, y+height). The title over the model is supplied as the text argument.
+
     selection.append("rect")
         .attr("class", "modelEdge")
         .attr("x", x)
@@ -180,7 +186,17 @@ function createModel(selection, x, y, width, height, text)
     textToAdd.attr("y", y - (textBBox.height * 1 / 2));
 
     // Add data points.
-    var data = [ { x : 10, y : 10 }, { x : 20, y : 20 }, { x : 30, y : 30 }, { x : 40, y : 40 }, { x : 50, y : 50 }, { x : 60, y : 60 }, { x : 70, y : 70 } ];
+    var data = [ { x : x + (width * 05 / 100), y : y + (height * 67 / 100) }, { x : x + (width * 10 / 100), y : y + (height * 33 / 100) },
+                 { x : x + (width * 15 / 100), y : y + (height * 42 / 100) }, { x : x + (width * 20 / 100), y : y + (height * 86 / 100) },
+                 { x : x + (width * 25 / 100), y : y + (height * 76 / 100) }, { x : x + (width * 30 / 100), y : y + (height * 13 / 100) },
+                 { x : x + (width * 35 / 100), y : y + (height * 61 / 100) }, { x : x + (width * 40 / 100), y : y + (height * 30 / 100) },
+                 { x : x + (width * 45 / 100), y : y + (height * 52 / 100) }, { x : x + (width * 50 / 100), y : y + (height * 71 / 100) },
+                 { x : x + (width * 55 / 100), y : y + (height * 07 / 100) }, { x : x + (width * 60 / 100), y : y + (height * 33 / 100) },
+                 { x : x + (width * 65 / 100), y : y + (height * 82 / 100) }, { x : x + (width * 70 / 100), y : y + (height * 46 / 100) },
+                 { x : x + (width * 75 / 100), y : y + (height * 76 / 100) }, { x : x + (width * 80 / 100), y : y + (height * 13 / 100) },
+                 { x : x + (width * 85 / 100), y : y + (height * 61 / 100) }, { x : x + (width * 90 / 100), y : y + (height * 30 / 100) },
+                 { x : x + (width * 95 / 100), y : y + (height * 52 / 100) }
+               ];
     var datapoints = selection.selectAll("circle")
         .data(data)
             .enter()
@@ -191,17 +207,20 @@ function createModel(selection, x, y, width, height, text)
                 .attr("r", 3);
 
     // Add the line.
-    var start = { x : x + (width / 10), y : y + (height * 9 / 10) };
-    var end = { x : x + (width * 9 / 10), y : y + (height / 10) };
-    var control1 = { x : 40, y : 40 };
-    var control2 = { x : 50, y : 50 };
+    var start = { x : x + (width * 2 / 100), y : y + (height / 15) };
+    var end = { x : x + (width * 99 / 100), y : y + (height * 14 / 15) };
+    var control1 = { x : x + (width * 1 / 5), y : y + (height / 2) };
+    var control2 = { x : x + (width * 4 / 5), y : y + (height / 2) };
     var fitLine = selection.append("path")
         .classed("modeLine", true)
         .attr("d", "M" + start.x + "," + start.y + "C" + control1.x + "," + control1.y + "," + control2.x + "," + control2.y + "," + end.x + "," + end.y);
 }
 
-function createTable(selection, x, y, width, height, text)
+function create_table(selection, x, y, width, height, text)
 {
+    // Create a table in selection. The upper left corner of the table will be at (x, y), with the bottom
+    // right corner at (x+width, y+height). The title over the table is supplied as the text argument.
+
     selection.append("rect")
         .attr("class", "tableEdge")
         .attr("x", x)
