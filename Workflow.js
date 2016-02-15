@@ -1,5 +1,5 @@
-svgWidth = 1200;  // The width of the SVG element containing the diagram.
-svgHeight = 800;  // The height of the SVG element containing the diagram.
+svgWidth = 1020;  // The width of the SVG element containing the diagram.
+svgHeight = 300;  // The height of the SVG element containing the diagram.
 
 // Create the SVG element.
 var svg = d3.select("body")
@@ -23,7 +23,7 @@ arrowhead.append("path")
 
 // Define positioning variables.
 var hGapBetweenPictures = 100;
-var yOffset = 200;
+var yOffset = 100;
 var xOffset = 10;
 
 // Define dataset and model size variables.
