@@ -130,6 +130,22 @@ sparseSubsetCommonCodes = dataMatrix([positiveExamples' negativeExamples'], indi
 sparseSubsetTarget = [ones(numPositiveExamples, 1); zeros(numNegativeExamples, 1)];  % Target array for the sparse subset. 1s for the positive examples and 0s for negative examples.
 [entropyReordering, entropy] = rankfeatures(sparseSubsetCommonCodes', sparseSubsetTarget, 'Criterion', 'entropy');  % Calculate entropy for the codes. Transpose the sparse subset to calculate entropy for codes not examples.
 
+% Write out the entropy for each code that occurs in greater than 50 patient records.
+sortedEntropy = entropy(entropyReordering);
+codeIndicesSortedByEntropy = indicesOfCommonCodes(entropyReordering);
+codesSortedByEntropy = uniqueCodes(codeIndicesSortedByEntropy);
+fid = fopen([subFolder '\Entropy.tsv'], 'w');
+fprintf(fid, 'Code\tDescription\tEntropy\tPositivesOccursWith\tNegativesOccursWith\n');
+for i = 1:numel(entropy)
+    codeIndex = codeIndicesSortedByEntropy(i);
+    codeOfInterest = codesSortedByEntropy{i};
+    codeEntropy = sortedEntropy(i);
+    positiveOccurences = numel(find(dataMatrix(positiveExamples, codeIndex)));
+    negativeOccurences = numel(find(dataMatrix(negativeExamples, codeIndex)));
+    fprintf(fid, '%s\t%s\t%1.4f\t%d\t%d\n', codeOfInterest, query_dictionary(coding, codeOfInterest), codeEntropy, positiveOccurences, negativeOccurences);
+end
+fclose(fid);
+
 % Find the codes with infinite entropy, and therefore the ones that are only present in one class.
 indicesOfInfEntropyCodes = indicesOfCommonCodes(entropy == inf);  % The indices of the codes with infinite entropy.
 numberOfInfCodes = numel(indicesOfInfEntropyCodes);  % Number of codes with infinite entropy.
