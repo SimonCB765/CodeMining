@@ -100,7 +100,8 @@ if (isType1Type2)
     negativeExamples = setdiff(find(patientsWithType2), find(patientsWithType1));  % Indices of patients with ONLY type 2 diabetes.
     
     % Remove the codes used to determine type 1 and type 2 diabetes from the dataset to prevent their use as predictor variables.
-    dataMatrix(:, [type1DiabetesIndices; type2DiabetesIndices]) = [];
+    % This can be achieved by setting all counts of them to 0, as they will then not be picked up as occuring in enough people to warrant use.
+    dataMatrix(:, [type1DiabetesIndices; type2DiabetesIndices]) = 0;
 else
     diabeticPatients = full(dataMatrix(:, diabetesIndices) > 0);  % Boolean matrix. A 1 indicates that the patient is associated with the diabetes code.
     diabeticPatients = any(diabeticPatients, 2);  % Boolean array. A 1 indicates that the patient has diabetes.
@@ -109,7 +110,8 @@ else
     negativeExamples = setdiff((1:numel(uniquePatientIDs))', positiveExamples);  % Indices of patients without diabetes.
     
     % Remove the codes used to determine diabetes from the dataset to prevent their use as predictor variables.
-    dataMatrix(:, diabetesIndices) = [];
+    % This can be achieved by setting all counts of them to 0, as they will then not be picked up as occuring in enough people to warrant use.
+    dataMatrix(:, diabetesIndices) = 0;
 end
 numPositiveExamples = numel(positiveExamples);
 numNegativeExamples = numel(negativeExamples);
