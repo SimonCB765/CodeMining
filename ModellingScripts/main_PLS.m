@@ -40,6 +40,9 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
     % 2) discardThreshold is between 0-1
     % 3) CV folds is an integer
     % 4) outputDir is set to '/' if called as the empty string.
+    
+    % Setup the RNG to ensure that results are reproducible.
+    rng('default');
 
     % Setup the results directory.
     if (exist(outputDir, 'dir') == 7)
@@ -48,9 +51,30 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
     end
     mkdir(outputDir);
 
-    % Load the patient data and stick it in a sparse matrix.
+    % Load the patient data from the input file. The result will be a 1x3 cell array, with the first entry being the patient IDs, the second
+    % the codes and the third the counts.
     fidDataset = fopen(inputData, 'r');
     data = textscan(fidDataset, '%d %s %d');
     fclose(fidDataset);
+
+    % Determine unique patient IDs and codes, and create index mappings for each.
+    uniquePatientIDs = unique(data{1});  % A list of the unique patient IDs in the dataset.
+    patientIndexMap = containers.Map(uniquePatientIDs, 1:numel(uniquePatientIDs));  % A mapping of the patient IDs to their index in the uniquePatientIDs array.
+    uniqueCodes = unique(data{2});  % A list of the unique codes in the dataset.
+    codeIndexMap = containers.Map(uniqueCodes, 1:numel(uniqueCodes));  % A mapping of the codes to their index in the uniqueCodes array.
+
+    % Create a sparse matrix of the data.
+    % The matrix is created from three arrays: an array of row indices (sparseRows), an array of column indices (sparseCols) and an array of
+    % values. The values will all be ones, as we are only interested in the presence or absence of an association between a patient and a code.
+    % The matrix is created by saying that:
+    % M = zeroes(numel(sparseRows), numel(sparseCols))
+    % for i = 1:numel(sparseRows)
+    %     M(sparseRows(i), sparseCols(i)) = 1
+    % end
+    % Conceptually a zero in an entry indicates that their is no association between the patient and a code, i.e. the patient does not have that code
+    % in their medical history).
+    sparseRows = cell2mat(values(patientIndexMap, num2cell(data.id)));  % Array of row indices corresponding to patient IDs.
+    sparseCols = cell2mat(values(codeIndexMap, data.key));  % Array of column indices corresponding to codes.
+    dataMatrix = sparse(sparseRows, sparseCols, ones(numel(sparseCols), 2));
 
 end
