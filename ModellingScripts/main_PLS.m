@@ -50,6 +50,12 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
         rmdir(outputDir, 's');
     end
     mkdir(outputDir);
+    
+    % Create the mapping recording the description of each code.
+    fidMapping = fopen(codeMapping, 'r');
+    mapCodesToDescriptions = textscan(fidMapping, '%s %s', 'Delimiter', '\t');
+    fclose(fidMapping);
+    mapCodesToDescriptions = containers.Map(mapCodesToDescriptions{1}, mapCodesToDescriptions{2});
 
     % Load the patient data from the input file. The result will be a 1x3 cell array, with the first entry being the patient IDs, the second
     % the codes and the third the counts.
