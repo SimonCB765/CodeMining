@@ -1,4 +1,4 @@
-function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negativeCodes, negativeChildren, foldsToUse, discardThreshold, outputDir)
+function main_PLS(inputData, outputDir)%, codeMapping, positiveCodes, positiveChildren, negativeCodes, negativeChildren, foldsToUse, discardThreshold, outputDir)
     % Perform clinical code identification using partial least squares regression.
     %
     % Positive and negative examples for the model training will be determined based on the supplied codes.
@@ -73,8 +73,8 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
     % end
     % Conceptually a zero in an entry indicates that their is no association between the patient and a code, i.e. the patient does not have that code
     % in their medical history).
-    sparseRows = cell2mat(values(patientIndexMap, num2cell(data.id)));  % Array of row indices corresponding to patient IDs.
-    sparseCols = cell2mat(values(codeIndexMap, data.key));  % Array of column indices corresponding to codes.
-    dataMatrix = sparse(sparseRows, sparseCols, ones(numel(sparseCols), 2));
+    sparseRows = cell2mat(values(patientIndexMap, num2cell(data{1})));  % Array of row indices corresponding to patient IDs.
+    sparseCols = cell2mat(values(codeIndexMap, data{2}));  % Array of column indices corresponding to codes.
+    dataMatrix = sparse(sparseRows, sparseCols, ones(numel(sparseCols), 1));
 
 end
