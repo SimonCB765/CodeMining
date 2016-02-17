@@ -1,4 +1,4 @@
-function main_PLS(inputData, outputDir)%, codeMapping, positiveCodes, positiveChildren, negativeCodes, negativeChildren, foldsToUse, discardThreshold, outputDir)
+function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negativeCodes, negativeChildren, foldsToUse, discardThreshold, outputDir)
     % Perform clinical code identification using partial least squares regression.
     %
     % Positive and negative examples for the model training will be determined based on the supplied codes.
@@ -76,5 +76,17 @@ function main_PLS(inputData, outputDir)%, codeMapping, positiveCodes, positiveCh
     sparseRows = cell2mat(values(patientIndexMap, num2cell(data{1})));  % Array of row indices corresponding to patient IDs.
     sparseCols = cell2mat(values(codeIndexMap, data{2}));  % Array of column indices corresponding to codes.
     dataMatrix = sparse(sparseRows, sparseCols, ones(numel(sparseCols), 1));
+
+    % Determine the codes to use in partitioning the dataset into positive, negative and unused examples.
+    positiveCodes = strsplit(positiveCodes, ',');  % Split the string of positive codes into its constituent codes.
+    if positiveChildren
+        % If the children of the positive codes supplied need to be used as well, then get them.
+        positiveCodes = extract_child_codes(positiveCodes, uniqueCodes);
+    end
+    negativeCodes = strsplit(negativeCodes, ',');  % Split the string of positive codes into its constituent codes.
+    if negativeChildren
+        % If the children of the positive codes supplied need to be used as well, then get them.
+        negativeCodes = extract_child_codes(negativeCodes, uniqueCodes);
+    end
 
 end
