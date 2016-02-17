@@ -81,12 +81,14 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
     positiveCodes = strsplit(positiveCodes, ',');  % Split the string of positive codes into its constituent codes.
     if positiveChildren
         % If the children of the positive codes supplied need to be used as well, then get them.
-        positiveCodes = extract_child_codes(positiveCodes, uniqueCodes);
+        positiveCodes = extract_child_codes(positiveCodes, uniqueCodes)';  % Transpose to ensure positiveCodes is still a row array.
     end
+    positiveCodeIndices = cell2mat(values(codeIndexMap, positiveCodes))';  % Column array of the indices for the positive codes.
     negativeCodes = strsplit(negativeCodes, ',');  % Split the string of positive codes into its constituent codes.
     if negativeChildren
         % If the children of the positive codes supplied need to be used as well, then get them.
-        negativeCodes = extract_child_codes(negativeCodes, uniqueCodes);
+        negativeCodes = extract_child_codes(negativeCodes, uniqueCodes)';  % Transpose to ensure negativeCodes is still a row array.
     end
+    negativeCodeIndices = cell2mat(values(codeIndexMap, negativeCodes))';  % Column array of the indices for the negative codes.
 
 end
