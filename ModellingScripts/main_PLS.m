@@ -112,4 +112,18 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
     codeOccurrences = sum(dataMatrix, 1);  % Sparse matrix recording the number of patients each code occurs in.
     indicesOfCommonCodes = find(codeOccurrences > 50)';  % Column array of indices of the codes associated with over 50 patients.
 
+    % Write out statistics about the codes.
+    fidCodes = fopen([outputDir '\CodeStatistics.tsv'], 'w');
+    fprintf(fidCodes, 'Code\tDescription\tClass\tTotalOccurences\tOccursInPositive\tOccursInNegative\n');
+    for i = 1:numel(uniqueCodes)
+        codeOfInterest = uniqueCodes{i};
+        isCodePositive = any(strcmp(codeOfInterest, positiveCodes));
+        isCodeNegative = any(strcmp(codeOfInterest, negativeCodes));
+        codeClass = iff(isCodePositive, 'Positive', iff(isCodeNegative, 'Negative', 'Not_Used'));
+        patientsWithCode = dataMatrix(:, codeIndexMap(codeOfInterest));
+        fprintf(fidCodes, '%s\t%s\t%s\t%d\t%d\t%d\n', codeOfInterest, query_dictionary(mapCodesToDescriptions, codeOfInterest), codeClass, ...
+            nnz(patientsWithCode), nnz(patientsWithCode(positiveExamples, :)), nnz(patientsWithCode(negativeExamples, :)));
+    end
+    fclose(fidCodes);
+
 end
