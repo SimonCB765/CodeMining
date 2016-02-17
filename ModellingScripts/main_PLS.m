@@ -98,6 +98,8 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
     negativeExamples = find(negativeExamples);  % Record the indices of the patients in the dataset that are negative examples.
     ambiguousExamples = intersect(positiveExamples, negativeExamples);  % Ambiguous examples are those that have both positive and negative codes.
     positiveExamples = setdiff(positiveExamples, negativeExamples);  % Remove any negative examples from the positive ones.
+    numPositiveExamples = numel(positiveExamples);
     negativeExamples = setdiff(negativeExamples, positiveExamples);  % Remove any positive examples from the negative ones.
+    numNegativeExamples = numel(negativeExamples);
 
 end
