@@ -77,7 +77,7 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
     sparseCols = cell2mat(values(codeIndexMap, data{2}));  % Array of column indices corresponding to codes.
     dataMatrix = sparse(sparseRows, sparseCols, ones(numel(sparseCols), 1));
 
-    % Determine the codes to use in partitioning the dataset into positive, negative and unused examples.
+    % Determine the codes to use in partitioning the dataset into positive, negative and ambiguous examples.
     positiveCodes = strsplit(positiveCodes, ',');  % Split the string of positive codes into its constituent codes.
     if positiveChildren
         % If the children of the positive codes supplied need to be used as well, then get them.
@@ -90,5 +90,14 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
         negativeCodes = extract_child_codes(negativeCodes, uniqueCodes)';  % Transpose to ensure negativeCodes is still a row array.
     end
     negativeCodeIndices = cell2mat(values(codeIndexMap, negativeCodes))';  % Column array of the indices for the negative codes.
+
+    % Determine the indices of the positive, negative and ambiguous examples.
+    positiveExamples = any(dataMatrix(:, positiveCodeIndices), 2);  % Any patient that has a positive code is a positive example.
+    positiveExamples = find(positiveExamples);  % Record the indices of the patients in the dataset that are positive examples.
+    negativeExamples = any(dataMatrix(:, negativeCodeIndices), 2);  % Any patient that has a negative code is a negative example.
+    negativeExamples = find(negativeExamples);  % Record the indices of the patients in the dataset that are negative examples.
+    ambiguousExamples = intersect(positiveExamples, negativeExamples);  % Ambiguous examples are those that have both positive and negative codes.
+    positiveExamples = setdiff(positiveExamples, negativeExamples);  % Remove any negative examples from the positive ones.
+    negativeExamples = setdiff(negativeExamples, positiveExamples);  % Remove any positive examples from the negative ones.
 
 end
