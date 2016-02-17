@@ -102,4 +102,8 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
     negativeExamples = setdiff(negativeExamples, positiveExamples);  % Remove any positive examples from the negative ones.
     numNegativeExamples = numel(negativeExamples);
 
+    % Select only those codes that occur in more than 50 patient records.
+    codeOccurrences = sum(dataMatrix, 1);  % Sparse matrix recording the number of patients each code occurs in.
+    indicesOfCommonCodes = find(codeOccurrences > 50)';  % Column array of indices of the codes associated with over 50 patients.
+
 end
