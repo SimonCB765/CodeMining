@@ -1,4 +1,4 @@
-function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negativeCodes, negativeChildren, foldsToUse, discardThreshold, outputDir)
+function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negativeCodes, negativeChildren, foldsToUse, discardThreshold, maxComponents, outputDir)
     % Perform clinical code identification using partial least squares regression.
     %
     % Positive and negative examples for the model training will be determined based on the supplied codes.
@@ -32,6 +32,7 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
     %                    be discarded if their posterior probability is > discardThreshold. This is symmetric as the posterior here indicates the probability
     %                    of the class of the example being positive. Therefore, keeping negative examples with posterior < discardThreshold is the same
     %                    as keeping all negative examples with a > discardThreshold probability of being negative.
+    % maxComponents - The maximum number of components to use when determining the optimal number of components.
     % outputDir - The directory to save the results in (should be supplied without a trailing /). If outputDir is the empty string, then
     %             the results are saved in the directory the script is called from.
 
@@ -108,10 +109,6 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
     negativeExamples = setdiff(negativeExamples, positiveExamples);  % Remove any positive examples from the negative ones.
     numNegativeExamples = numel(negativeExamples);
 
-    % Select only those codes that occur in more than 50 patient records.
-    codeOccurrences = sum(dataMatrix, 1);  % Sparse matrix recording the number of patients each code occurs in.
-    indicesOfCommonCodes = find(codeOccurrences > 50)';  % Column array of indices of the codes associated with over 50 patients.
-
     % Write out statistics about the codes.
     fidCodes = fopen([outputDir '\CodeStatistics.tsv'], 'w');
     fprintf(fidCodes, 'Code\tDescription\tClass\tTotalOccurences\tOccursInPositive\tOccursInNegative\n');
@@ -125,5 +122,12 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
             nnz(patientsWithCode), nnz(patientsWithCode(positiveExamples, :)), nnz(patientsWithCode(negativeExamples, :)));
     end
     fclose(fidCodes);
+
+    % Select the codes that will be used for training.
+    % These are codes that occur in > 50 patient records and were not used to partition the dataset into positive, negative and ambiguous examples.
+    % These codes are removed as they either occur too infrequently to be reliable, or have artifically been made able to perfectly separate the classes.
+    codeOccurrences = sum(dataMatrix, 1);  % Sparse matrix recording the number of patients each code occurs in.
+    indicesOfTrainingCodes = find(codeOccurrences > 50)';  % Column array of indices of the codes associated with over 50 patients.
+    indicesOfTrainingCodes = setdiff(indicesOfTrainingCodes, union(positiveCodeIndices, negativeCodeIndices));  % Remove the codes used to determmine class membership.
 
 end
