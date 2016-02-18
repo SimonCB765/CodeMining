@@ -109,25 +109,26 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
     negativeExamples = setdiff(negativeExamples, positiveExamples);  % Remove any positive examples from the negative ones.
     numNegativeExamples = numel(negativeExamples);
 
-    % Write out statistics about the codes.
-    fidCodes = fopen([outputDir '\CodeStatistics.tsv'], 'w');
-    fprintf(fidCodes, 'Code\tDescription\tClass\tTotalOccurences\tOccursInPositive\tOccursInNegative\n');
-    for i = 1:numel(uniqueCodes)
-        codeOfInterest = uniqueCodes{i};
-        isCodePositive = any(strcmp(codeOfInterest, positiveCodes));
-        isCodeNegative = any(strcmp(codeOfInterest, negativeCodes));
-        codeClass = iff(isCodePositive, 'Positive', iff(isCodeNegative, 'Negative', 'Not_Used'));
-        patientsWithCode = dataMatrix(:, codeIndexMap(codeOfInterest));
-        fprintf(fidCodes, '%s\t%s\t%s\t%d\t%d\t%d\n', codeOfInterest, query_dictionary(mapCodesToDescriptions, codeOfInterest), codeClass, ...
-            nnz(patientsWithCode), nnz(patientsWithCode(positiveExamples, :)), nnz(patientsWithCode(negativeExamples, :)));
-    end
-    fclose(fidCodes);
-
     % Select the codes that will be used for training.
     % These are codes that occur in > 50 patient records and were not used to partition the dataset into positive, negative and ambiguous examples.
     % These codes are removed as they either occur too infrequently to be reliable, or have artifically been made able to perfectly separate the classes.
     codeOccurrences = sum(dataMatrix, 1);  % Sparse matrix recording the number of patients each code occurs in.
     indicesOfTrainingCodes = find(codeOccurrences > 50)';  % Column array of indices of the codes associated with over 50 patients.
     indicesOfTrainingCodes = setdiff(indicesOfTrainingCodes, union(positiveCodeIndices, negativeCodeIndices));  % Remove the codes used to determmine class membership.
+
+    % Write out statistics about the codes.
+    fidCodes = fopen([outputDir '\CodeStatistics.tsv'], 'w');
+    fprintf(fidCodes, 'Code\tDescription\tClass\tUsedForTraining\tTotalOccurences\tOccursInPositive\tOccursInNegative\n');
+    for i = 1:numel(uniqueCodes)
+        codeOfInterest = uniqueCodes{i};
+        isCodePositive = any(strcmp(codeOfInterest, positiveCodes));  % If the code is being used to determine positive examples.
+        isCodeNegative = any(strcmp(codeOfInterest, negativeCodes));  % If the code is being used to determine negative examples.
+        codeClass = iff(isCodePositive, 'Positive', iff(isCodeNegative, 'Negative', 'Not_Used'));
+        isCodeTraining = any(indicesOfTrainingCodes == i);  % Whether the code is to be used for training.
+        patientsWithCode = dataMatrix(:, codeIndexMap(codeOfInterest));
+        fprintf(fidCodes, '%s\t%s\t%s\t%s\t%d\t%d\t%d\n', codeOfInterest, query_dictionary(mapCodesToDescriptions, codeOfInterest), codeClass, ...
+            isCodeTraining, nnz(patientsWithCode), nnz(patientsWithCode(positiveExamples, :)), nnz(patientsWithCode(negativeExamples, :)));
+    end
+    fclose(fidCodes);
 
 end
