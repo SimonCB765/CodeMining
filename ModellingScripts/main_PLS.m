@@ -75,6 +75,12 @@ function main_PLS(parameterFile)
     end
     fclose(fidParams);
 
+    % Convert stored classes to more useful form.
+    classData = params('classes');
+    params('classNames') = classData(:, 1)';
+    params('classCodes') = classData(:, 2)';
+    params('classChildren') = classData(:, 3)';
+
     % Convert parameter values that have been read in from strings to the correct type.
     params('foldsToUse') = str2double(params('foldsToUse'));
     params('discardThreshold') = str2double(params('discardThreshold'));
