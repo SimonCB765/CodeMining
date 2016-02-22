@@ -94,6 +94,18 @@ function main_PLS(parameterFile)
     % 4) outputDir is set to '/' if called as the empty string.
     % 5) the folds, discard and components are numbers
     % 6) that there are at least two classes specified, and create a dummy one if not
+    %
+    % parameterErrors{end + 1} = sprintf('Class entry on line %d has %d elements.', currentLineNumber, numel(split));
+
+    if (~isempty(parameterErrors))
+        % If there's been an error when parsing the input.
+        errorFile = strcat(params('outputDir'), '\Errors.txt');
+        fidError = fopen(errorFile, 'w');
+        fprintf(fidError, cell2mat(strcat(parameterErrors, '\n')));
+        fclose(fidError);
+        error('ParameterParsing:ParsingFailed', ...
+            'Errors were encountered while parsing the input parameters.\nFor further information please see: %s', errorFile);
+    end
 
     % Setup the RNG to ensure that results are reproducible.
     rng('default');
@@ -198,5 +210,48 @@ function main_PLS(parameterFile)
     % Perform this after writing out the code information so that the written out information contains code occurence counts before ambiguous examples are removed.
     classExamples = cellfun(@(x) setdiff(x, ambiguousExamples), classExamples, 'UniformOutput', false);
     numClassExamples = cellfun(@(x) numel(x), classExamples);
+
+    %% Train the initial PLS-DA model.
+
+    % Determine the initial model's training matrix, target matrix and an array to partition the classes for cross validation.
+    % The target matrix T is set up so that it has one row for each example E and one column for each class C.
+    % The entry Tij is set to 1 if example i belongs to class j otherwise it is a 0.
+    initialTrainingMatrix = dataMatrix(cell2mat(classExamples'), indicesOfTrainingCodes);  % Subset of the dataset containing only examples and codes to use for training.
+    initialTrainingTarget = zeros(sum(numClassExamples), numberOfClasses);  % Class target matrix for training.
+    cumulativeExampleTotals = [0 cumsum(numClassExamples)];  % Cumulative total for examples in each class (with a 0 prepended).
+    cvPartitionArray = ones(sum(numClassExamples), 1);
+    for i = 1:numberOfClasses
+        % For each class index i, put a 1 in the entries in column i that correspond to the examples in the class.
+        % These entries will start 1 after the end of the examples of the previous class, as examples are ordered so that each class has contiguous entries.
+        initialTrainingTarget((cumulativeExampleTotals(i) + 1):cumulativeExampleTotals(i + 1), i) = 1;
+
+        % Set the entries corresponding to class i to i. The actual number is unimportant so long as each class is given a unique one.
+        cvPartitionArray((cumulativeExampleTotals(i) + 1):cumulativeExampleTotals(i + 1), :) = i;
+    end
+
+    % Create the initial model's cross validation partition.
+    initialCrossValPartition = cvpartition(cvPartitionArray, 'KFold', params('foldsToUse'));
+
+    % Train the initial model.
+    [~, ~, ~, ~, initialCoefficients, initialVarianceExplained, initialMSE] = ...
+        plsregress(initialTrainingMatrix, initialTrainingTarget, params('maxComponents'), 'CV', initialCrossValPartition);
+
+    % Determine the number of components that gives the smallest MSE.
+    [initialMinMSE, initialBestCompNum] = min(initialMSE(2, :));
+    initialBestCompNum = initialBestCompNum - 1;  % The number of components starts at 0, but the index returned starts at 1.
+
+    % Calculate the fitted response.
+    % This requires adding an initial column of 1s to the training matrix, as the returned coefficients have the intercept as the first entry.
+    % This is not a posterior. Each example gets a predicted value for each class that does not have to be between 0 and 1.
+    initialResponses = [ones(size(initialTrainingMatrix, 1), 1) initialTrainingMatrix] * initialCoefficients;
+
+    % In order to convert the response into a posterior, a straightforward approach is to train a naive Bayes classifier on the responses.
+    initialBayesClassifier = fitNaiveBayes(initialResponses, cvPartitionArray);
+
+    % We can now get the posteriors of the training examples.
+    % Each example has one posterior value for each class, with the posteriors across classes usmming to 1.
+    % The columns of posteriors are ordered in the same order as the classes
+    % appear in the parameter file.
+    initialPosteriors = posterior(initialBayesClassifier, initialResponses);
 
 end
