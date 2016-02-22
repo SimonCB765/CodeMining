@@ -77,10 +77,10 @@ function main_PLS(parameterFile)
 
     % Convert stored classes to more useful form.
     classData = params('classes');
-    params('classNames') = classData(:, 1)';
-    params('classCodes') = classData(:, 2)';
-    params('classChildren') = classData(:, 3)';
-    numberOfClasses = numel(params('classNames'));
+    classNames = classData(:, 1)';
+    classCodes = classData(:, 2)';
+    classChildren = classData(:, 3)';
+    numberOfClasses = numel(classNames);
 
     % Convert parameter values that have been read in from strings to the correct type.
     params('foldsToUse') = str2double(params('foldsToUse'));
@@ -138,8 +138,8 @@ function main_PLS(parameterFile)
 
     % Determine the codes to use for partitioning the dataset into separate classes.
     % Any codes that are not recorded in the dataset will be ignored at this point.
-    classCodes = cellfun(@(x) strsplit(x, ',')', params('classCodes'), 'UniformOutput', false);  % Codes used to determine membership of each class.
-    classCodes = cellfun(@(x, y) iff(y, extract_child_codes(x, uniqueCodes), x), classCodes, params('classChildren'), 'UniformOutput', false);  % Extract children of the codes if needed.
+    classCodes = cellfun(@(x) strsplit(x, ',')', classCodes, 'UniformOutput', false);  % Codes used to determine membership of each class.
+    classCodes = cellfun(@(x, y) iff(y, extract_child_codes(x, uniqueCodes), x), classCodes, classChildren, 'UniformOutput', false);  % Extract children of the codes if needed.
     classCodes = cellfun(@(x) x(codeIndexMap.isKey(x)), classCodes, 'UniformOutput', false);  % Remove codes that don't exist in the dataset.
     classCodeIndices = cellfun(@(x) cell2mat(values(codeIndexMap, x)), classCodes, 'UniformOutput', false);  % Indices of the codes used.
 
@@ -155,10 +155,6 @@ function main_PLS(parameterFile)
         ambiguousExamples = union(ambiguousExamples, intersect(classExamples{indexPair(1)}, classExamples{indexPair(2)}));
     end
 
-    % Generate the final sets of examples for each class by removing the ambiguous examples.
-    classExamples = cellfun(@(x) setdiff(x, ambiguousExamples), classExamples, 'UniformOutput', false);
-    numClassExamples = cellfun(@(x) numel(x), classExamples);
-
     % Select the codes that will be used for training.
     % These are codes that occur in > 50 patient records and were not used to partition the dataset into classes.
     % The removed codes either occur too infrequently to be reliable, or are able to perfectly separate the classes simply because they were chosen to separate them.
@@ -170,18 +166,37 @@ function main_PLS(parameterFile)
     end
 
     % Write out statistics about the codes.
-    fidCodes = fopen([params('outputDir') '\CodeStatistics.tsv'], 'w');
-    fprintf(fidCodes, 'Code\tDescription\tClass\tUsedForTraining\tTotalOccurences\tOccursInPositive\tOccursInNegative\n');
+    fidCodes = fopen(strcat(params('outputDir'), '\CodeStatistics.tsv'), 'w');
+    header = 'Code\tDescription\tClass\tUsedForTraining\tTotalOccurences';
+    for i = 1:numberOfClasses
+        header = strcat(header, sprintf('\tOccurencesIn%s', classNames{i}));
+    end
+    header = strcat(header, '\n');
+    fprintf(fidCodes, header);
     for i = 1:numel(uniqueCodes)
         codeOfInterest = uniqueCodes{i};
-        isCodePositive = any(strcmp(codeOfInterest, positiveCodes));  % If the code is being used to determine positive examples.
-        isCodeNegative = any(strcmp(codeOfInterest, negativeCodes));  % If the code is being used to determine negative examples.
-        codeClass = iff(isCodePositive, 'Positive', iff(isCodeNegative, 'Negative', 'Not_Used'));
-        isCodeTraining = any(indicesOfTrainingCodes == i);  % Whether the code is to be used for training.
-        patientsWithCode = dataMatrix(:, codeIndexMap(codeOfInterest));
-        fprintf(fidCodes, '%s\t%s\t%s\t%s\t%d\t%d\t%d\n', codeOfInterest, query_dictionary(mapCodesToDescriptions, codeOfInterest), codeClass, ...
-            isCodeTraining, nnz(patientsWithCode), nnz(patientsWithCode(positiveExamples, :)), nnz(patientsWithCode(negativeExamples, :)));
+        codeClass = cellfun(@(x) ~isempty(find(strcmp(x, codeOfInterest), 1)), classCodes);
+        codeClass = classNames(codeClass);
+        if (isempty(codeClass))
+            codeClass = '-';
+        else
+            codeClass = codeClass{1};
+        end
+        isCodeTraining = iff(any(indicesOfTrainingCodes == i), 'Y', 'N');  % Whether the code is to be used for training.
+        patientsWithCode = dataMatrix(:, codeIndexMap(codeOfInterest));  % Data slice of the patients that are associated with the code.
+        output = sprintf('%s\t%s\t%s\t%s\t%d', codeOfInterest, query_dictionary(mapCodesToDescriptions, codeOfInterest), ...
+            codeClass, isCodeTraining, nnz(patientsWithCode));
+        for j = 1:numberOfClasses
+            output = strcat(output, sprintf('\t%d', nnz(patientsWithCode(classExamples{j}, :))));
+        end
+        output = strcat(output, '\n');
+        fprintf(fidCodes, output);
     end
     fclose(fidCodes);
+
+    % Generate the final sets of examples for each class by removing the ambiguous examples.
+    % Perform this after writing out the code information so that the written out information contains code occurence counts before ambiguous examples are removed.
+    classExamples = cellfun(@(x) setdiff(x, ambiguousExamples), classExamples, 'UniformOutput', false);
+    numClassExamples = cellfun(@(x) numel(x), classExamples);
 
 end
