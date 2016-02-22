@@ -1,4 +1,4 @@
-function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negativeCodes, negativeChildren, foldsToUse, discardThreshold, maxComponents, outputDir)
+function main_PLS(parameterFile)
     % Perform clinical code identification using partial least squares regression.
     %
     % Positive and negative examples for the model training will be determined based on the supplied codes.
@@ -36,31 +36,76 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
     % outputDir - The directory to save the results in (should be supplied without a trailing /). If outputDir is the empty string, then
     %             the results are saved in the directory the script is called from.
 
-    % Check arguments are valid.
+    % Setup default values for the input parameters.
+    params = containers.Map();
+    params('inputData') = '';  % Mandatory argument.
+    params('codeMapping') = '';  % Mandatory argument.
+    params('classes') = [];  % Mandatory argument.
+    params('foldsToUse') = 10;  % Optional argument.
+    params('discardThreshold') = 0.0;  % Optional argument.
+    params('maxComponents') = 10;  % Optional argument.
+    params('outputDir') = '/';  % Optional argument.
+
+    % Setup the cell array to record error messages.
+    parameterErrors = {};
+
+    % Read the input parameters from the configuration file.
+    fidParams = fopen(parameterFile, 'r');
+    line = fgetl(fidParams);
+    currentLineNumber = 1;
+    while ischar(line)
+        % Loop until there are no more lines in the file.
+        split = strsplit(line, '\t');
+        if (strcmp(split{1}, 'Class'))
+            % If the line contains the values for a class parameter.
+            if (numel(split) ~= 4)
+                % There must be 4 entries on the line.
+                parameterErrors(end + 1) = ['Class entry on line ' currentLineNumber ' has ' numel(splits) ' elements.'];
+            else
+                split{4} = iff(strcmpi(split{4}, 'true'), true, false);
+                params('classes') = [params('classes'); split(2:end)];
+            end
+        else
+            % If the line contains the value for a non-class parameter.
+            params(split{1}) = split{2};
+        end
+
+        line = fgetl(fidParams);  % Get the next line from the file.
+        currentLineNumber = currentLineNumber + 1;
+    end
+    fclose(fidParams);
+
+    % Convert parameter values that have been read in from strings to the correct type.
+    params('foldsToUse') = str2double(params('foldsToUse'));
+    params('discardThreshold') = str2double(params('discardThreshold'));
+    params('maxComponents') = str2double(params('maxComponents'));
+
+    % Check that the input parameters are all the correct type, contain valid values and are present (if mandatory).
     % 1) check that the codes aren't both empty yadda yadda
     % 2) discardThreshold is between 0-1
     % 3) CV folds is an integer
     % 4) outputDir is set to '/' if called as the empty string.
-    
+    % 5) the folds, discard and components are numbers
+    % 6) that there are at least two classes specified, and create a dummy one if not
+
     % Setup the RNG to ensure that results are reproducible.
     rng('default');
 
     % Setup the results directory.
-    if (exist(outputDir, 'dir') == 7)
-        % If the output directory already exists, then delete it before creating it.
-        rmdir(outputDir, 's');
+    if (exist(outputDir, 'dir') ~= 7)
+        % If the output directory does not exist, then create it.
+        mkdir(outputDir);
     end
-    mkdir(outputDir);
-    
+
     % Create the mapping recording the description of each code.
-    fidMapping = fopen(codeMapping, 'r');
+    fidMapping = fopen(params('codeMapping'), 'r');
     mapCodesToDescriptions = textscan(fidMapping, '%s %s', 'Delimiter', '\t');
     fclose(fidMapping);
     mapCodesToDescriptions = containers.Map(mapCodesToDescriptions{1}, mapCodesToDescriptions{2});
 
     % Load the patient data from the input file. The result will be a 1x3 cell array, with the first entry being the patient IDs, the second
     % the codes and the third the counts.
-    fidDataset = fopen(inputData, 'r');
+    fidDataset = fopen(params('inputData'), 'r');
     data = textscan(fidDataset, '%d %s %d');
     fclose(fidDataset);
 
@@ -117,7 +162,7 @@ function main_PLS(inputData, codeMapping, positiveCodes, positiveChildren, negat
     indicesOfTrainingCodes = setdiff(indicesOfTrainingCodes, union(positiveCodeIndices, negativeCodeIndices));  % Remove the codes used to determmine class membership.
 
     % Write out statistics about the codes.
-    fidCodes = fopen([outputDir '\CodeStatistics.tsv'], 'w');
+    fidCodes = fopen([params('outputDir') '\CodeStatistics.tsv'], 'w');
     fprintf(fidCodes, 'Code\tDescription\tClass\tUsedForTraining\tTotalOccurences\tOccursInPositive\tOccursInNegative\n');
     for i = 1:numel(uniqueCodes)
         codeOfInterest = uniqueCodes{i};
