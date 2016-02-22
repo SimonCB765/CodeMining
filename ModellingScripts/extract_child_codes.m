@@ -9,7 +9,7 @@ function [codeList] = extract_child_codes(inputCodes, codesToCheck)
     % inputCodes - Cell array of the codes whose children are to be found.
     % codesToCheck - Cell array of the codes that need to be checked for childhood.
 
-    codeList = cellfun(@(x) check_code_is_child(x), codesToCheck);
+    codeList = cell2mat(cellfun(@(x) check_code_is_child(x), codesToCheck, 'UniformOutput', false));
     codeList = codesToCheck(codeList);
 
     function [isChild] = check_code_is_child(codeBeingChecked)
@@ -22,7 +22,7 @@ function [codeList] = extract_child_codes(inputCodes, codesToCheck)
         % Check whether the code is a match for any of the codes in the input list.
         % A code is a child if at least one pattern matches (i.e. if not all matches are empty).
         codeMatches = regexp(codeBeingCheckedCopies, strcat({'^'}, inputCodes));
-        isChild = ~all(cellfun(@isempty, codeMatches), 2);  % Check if there is any match at all.
+        isChild = ~all(cellfun(@isempty, codeMatches));  % Check if there is any match at all.
     end
 
 end
