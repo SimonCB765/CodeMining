@@ -80,6 +80,7 @@ function main_PLS(parameterFile)
     params('classNames') = classData(:, 1)';
     params('classCodes') = classData(:, 2)';
     params('classChildren') = classData(:, 3)';
+    numberOfClasses = numel(params('classNames'));
 
     % Convert parameter values that have been read in from strings to the correct type.
     params('foldsToUse') = str2double(params('foldsToUse'));
@@ -135,37 +136,38 @@ function main_PLS(parameterFile)
     sparseCols = cell2mat(values(codeIndexMap, data{2}));  % Array of column indices corresponding to codes.
     dataMatrix = sparse(sparseRows, sparseCols, ones(numel(sparseCols), 1));
 
-    % Determine the codes to use in partitioning the dataset into positive, negative and ambiguous examples.
-    positiveCodes = strsplit(positiveCodes, ',');  % Split the string of positive codes into its constituent codes.
-    if positiveChildren
-        % If the children of the positive codes supplied need to be used as well, then get them.
-        positiveCodes = extract_child_codes(positiveCodes, uniqueCodes)';  % Transpose to ensure positiveCodes is still a row array.
-    end
-    positiveCodeIndices = cell2mat(values(codeIndexMap, positiveCodes))';  % Column array of the indices for the positive codes.
-    negativeCodes = strsplit(negativeCodes, ',');  % Split the string of positive codes into its constituent codes.
-    if negativeChildren
-        % If the children of the positive codes supplied need to be used as well, then get them.
-        negativeCodes = extract_child_codes(negativeCodes, uniqueCodes)';  % Transpose to ensure negativeCodes is still a row array.
-    end
-    negativeCodeIndices = cell2mat(values(codeIndexMap, negativeCodes))';  % Column array of the indices for the negative codes.
+    % Determine the codes to use for partitioning the dataset into separate classes.
+    % Any codes that are not recorded in the dataset will be ignored at this point.
+    classCodes = cellfun(@(x) strsplit(x, ',')', params('classCodes'), 'UniformOutput', false);  % Codes used to determine membership of each class.
+    classCodes = cellfun(@(x, y) iff(y, extract_child_codes(x, uniqueCodes), x), classCodes, params('classChildren'), 'UniformOutput', false);  % Extract children of the codes if needed.
+    classCodes = cellfun(@(x) x(codeIndexMap.isKey(x)), classCodes, 'UniformOutput', false);  % Remove codes that don't exist in the dataset.
+    classCodeIndices = cellfun(@(x) cell2mat(values(codeIndexMap, x)), classCodes, 'UniformOutput', false);  % Indices of the codes used.
 
-    % Determine the indices of the positive, negative and ambiguous examples.
-    positiveExamples = any(dataMatrix(:, positiveCodeIndices), 2);  % Any patient that has a positive code is a positive example.
-    positiveExamples = find(positiveExamples);  % Record the indices of the patients in the dataset that are positive examples.
-    negativeExamples = any(dataMatrix(:, negativeCodeIndices), 2);  % Any patient that has a negative code is a negative example.
-    negativeExamples = find(negativeExamples);  % Record the indices of the patients in the dataset that are negative examples.
-    ambiguousExamples = intersect(positiveExamples, negativeExamples);  % Ambiguous examples are those that have both positive and negative codes.
-    positiveExamples = setdiff(positiveExamples, negativeExamples);  % Remove any negative examples from the positive ones.
-    numPositiveExamples = numel(positiveExamples);
-    negativeExamples = setdiff(negativeExamples, positiveExamples);  % Remove any positive examples from the negative ones.
-    numNegativeExamples = numel(negativeExamples);
+    % Determine the examples containing the class specific codes.
+    classExamples = cellfun(@(x) any(dataMatrix(:, x), 2), classCodeIndices, 'UniformOutput', false);  % Subsets of the dataset containing examples of each class.
+    classExamples = cellfun(@(x) find(x), classExamples, 'UniformOutput', false);  % Indices of the examples in each class.
+
+    % Determine the ambiguous examples.
+    ambiguousExamples = [];  % The examples that occur in at least two of the classes.
+    indexCombinations = nchoosek(1:numberOfClasses, 2);  % Get all pairs of index combinations. Each row contains a pair.
+    for row = 1:numberOfClasses
+        indexPair = indexCombinations(row, :);
+        ambiguousExamples = union(ambiguousExamples, intersect(classExamples{indexPair(1)}, classExamples{indexPair(2)}));
+    end
+
+    % Generate the final sets of examples for each class by removing the ambiguous examples.
+    classExamples = cellfun(@(x) setdiff(x, ambiguousExamples), classExamples, 'UniformOutput', false);
+    numClassExamples = cellfun(@(x) numel(x), classExamples);
 
     % Select the codes that will be used for training.
-    % These are codes that occur in > 50 patient records and were not used to partition the dataset into positive, negative and ambiguous examples.
-    % These codes are removed as they either occur too infrequently to be reliable, or have artifically been made able to perfectly separate the classes.
+    % These are codes that occur in > 50 patient records and were not used to partition the dataset into classes.
+    % The removed codes either occur too infrequently to be reliable, or are able to perfectly separate the classes simply because they were chosen to separate them.
     codeOccurrences = sum(dataMatrix, 1);  % Sparse matrix recording the number of patients each code occurs in.
     indicesOfTrainingCodes = find(codeOccurrences > 50)';  % Column array of indices of the codes associated with over 50 patients.
-    indicesOfTrainingCodes = setdiff(indicesOfTrainingCodes, union(positiveCodeIndices, negativeCodeIndices));  % Remove the codes used to determmine class membership.
+    for i = 1:numberOfClasses
+        % For each class, remove the codes used to determine the examples in the class.
+        indicesOfTrainingCodes = setdiff(indicesOfTrainingCodes, classCodeIndices{i});
+    end
 
     % Write out statistics about the codes.
     fidCodes = fopen([params('outputDir') '\CodeStatistics.tsv'], 'w');
