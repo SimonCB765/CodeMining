@@ -142,7 +142,7 @@ function main_PLS(parameterFile)
     % for i = 1:numel(sparseRows)
     %     M(sparseRows(i), sparseCols(i)) = 1
     % end
-    % Conceptually a zero in an entry indicates that their is no association between the patient and a code, i.e. the patient does not have that code
+    % Conceptually a zero in an entry indicates that there is no association between the patient and a code, i.e. the patient does not have that code
     % in their medical history).
     sparseRows = cell2mat(values(patientIndexMap, num2cell(data{1})));  % Array of row indices corresponding to patient IDs.
     sparseCols = cell2mat(values(codeIndexMap, data{2}));  % Array of column indices corresponding to codes.
@@ -162,7 +162,7 @@ function main_PLS(parameterFile)
     % Determine the ambiguous examples.
     ambiguousExamples = [];  % The examples that occur in at least two of the classes.
     indexCombinations = nchoosek(1:numberOfClasses, 2);  % Get all pairs of index combinations. Each row contains a pair.
-    for row = 1:numberOfClasses
+    for row = 1:size(indexCombinations, 1)
         indexPair = indexCombinations(row, :);
         ambiguousExamples = union(ambiguousExamples, intersect(classExamples{indexPair(1)}, classExamples{indexPair(2)}));
     end
