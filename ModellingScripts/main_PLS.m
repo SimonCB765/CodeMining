@@ -282,8 +282,10 @@ function main_PLS(parameterFile)
     fidInitPost = fopen(initialPosteriorFile, 'w');
     fprintf(fidInitPost, header);
     for i = 1:numberOfClasses
+        currentClassName = classNames{i};
+        lastIndexOfPreviousClass = cumulativeExampleTotals(i);
         for j = 1:numClassExamples(i)
-            fprintf(fidInitPost, formatString, uniquePatientIDs(classExamples{i}(j)), classNames{i}, initialPosteriors(j, :));
+            fprintf(fidInitPost, formatString, uniquePatientIDs(classExamples{i}(j)), currentClassName, initialPosteriors(lastIndexOfPreviousClass + j, :));
         end
     end
     fclose(fidInitPost);
@@ -370,8 +372,10 @@ function main_PLS(parameterFile)
     fidFinalPost = fopen(finalPosteriorFile, 'w');
     fprintf(fidFinalPost, header);
     for i = 1:numberOfClasses
+        currentClassName = classNames{i};
+        lastIndexOfPreviousClass = cumulativeExampleTotals(i);
         for j = 1:numClassExamples(i)
-            fprintf(fidFinalPost, formatString, uniquePatientIDs(classExamples{i}(j)), classNames{i}, finalPosteriors(j, :));
+            fprintf(fidInitPost, formatString, uniquePatientIDs(classExamples{i}(j)), currentClassName, finalPosteriors(lastIndexOfPreviousClass + j, :));
         end
     end
     fclose(fidFinalPost);
