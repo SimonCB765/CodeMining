@@ -211,6 +211,20 @@ function main_PLS(parameterFile)
     classExamples = cellfun(@(x) setdiff(x, ambiguousExamples), classExamples, 'UniformOutput', false);
     numClassExamples = cellfun(@(x) numel(x), classExamples);
 
+    % Check whether any classes have no examples.
+    missingClasses = classNames(numClassExamples == 0);
+    if (~isempty(missingClasses))
+        % There are missing classes.
+        errorFile = strcat(params('outputDir'), '\Errors.txt');
+        fidError = fopen(errorFile, 'w');
+        for i = 1:numel(missingClasses)
+            fprintf(fidError, 'Class %s contains no examples following the removal of ambiguous examples.', missingClasses{i});
+        end
+        fclose(fidError);
+        error('InitialModel:NoExamples', ...
+            'Errors were encountered when forming the training set.\nFor further information please see: %s', errorFile);
+    end
+
     %% Train the initial PLS-DA model.
 
     % Determine the initial model's training matrix, target matrix and an array to partition the classes for cross validation.
