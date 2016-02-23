@@ -275,10 +275,29 @@ function main_PLS(parameterFile)
     fclose(fidInitPost);
 
     % Determine training examples to use in training the final model.
-    % The examples to use will be ones where the probabilitiy of at least one class is above the discard threshold.
-    chosenExampleMask = any(initialPosteriors > params('discardThreshold'), 2);
+    % The examples to use will be ones where the probabilitiy of it belonging to its class is above the discard threshold.
+    chosenExampleMask = false(sum(numClassExamples), 1);
+    for i = 1:numberOfClasses
+        classExampleSubset = (cumulativeExampleTotals(i) + 1):cumulativeExampleTotals(i + 1);  % Indices of the subset of the training examples belonging to the current class.
+        classMask = initialPosteriors(classExampleSubset, i) > params('discardThreshold'); % Boolean array indicating whether an example's posterior is greater than the discard threshold.
+        chosenExampleMask(classExampleSubset) = classMask;
+    end
     classExamples = cellfun(@(x, y) x(chosenExampleMask((cumulativeExampleTotals(y) + 1):cumulativeExampleTotals(y + 1))), classExamples, num2cell(1:numberOfClasses), 'UniformOutput', false);
     numClassExamples = cellfun(@(x) numel(x), classExamples);
+
+    % Check whether any classes have no examples now.
+    missingClasses = classNames(numClassExamples == 0);
+    if (~isempty(missingClasses))
+        % There are missing classes.
+        errorFile = strcat(params('outputDir'), '\Errors.txt');
+        fidError = fopen(errorFile, 'w');
+        for i = 1:numel(missingClasses)
+            fprintf(fidError, 'Class %s contains no examples with posterior above the discard threshold.', missingClasses{i});
+        end
+        fclose(fidError);
+        error('InitialModel:NoExamples', ...
+            'Errors were encountered following the discarding of examples.\nFor further information please see: %s', errorFile);
+    end
 
     %% Train the final PLS-DA model.
 
