@@ -260,4 +260,51 @@ function main_PLS(parameterFile)
     classExamples = cellfun(@(x, y) x(chosenExampleMask((cumulativeExampleTotals(y) + 1):cumulativeExampleTotals(y + 1))), classExamples, num2cell(1:numberOfClasses), 'UniformOutput', false);
     numClassExamples = cellfun(@(x) numel(x), classExamples);
 
+    %% Train the final PLS-DA model.
+
+    % Determine the final model's training matrix, target matrix and an array to partition the classes for cross validation.
+    % The target matrix T is set up so that it has one row for each example E and one column for each class C.
+    % The entry Tij is set to 1 if example i belongs to class j otherwise it is a 0.
+    finalTrainingMatrix = dataMatrix(cell2mat(classExamples'), indicesOfTrainingCodes);  % Subset of the dataset containing only examples and codes to use for training.
+    finalTrainingTarget = zeros(sum(numClassExamples), numberOfClasses);  % Class target matrix for training.
+    cumulativeExampleTotals = [0 cumsum(numClassExamples)];  % Cumulative total for examples in each class (with a 0 prepended).
+    cvPartitionArray = ones(sum(numClassExamples), 1);
+    for i = 1:numberOfClasses
+        % For each class index i, put a 1 in the entries in column i that correspond to the examples in the class.
+        % These entries will start 1 after the end of the examples of the previous class, as examples are ordered so that each class has contiguous entries.
+        finalTrainingTarget((cumulativeExampleTotals(i) + 1):cumulativeExampleTotals(i + 1), i) = 1;
+
+        % Set the entries corresponding to class i to i. The actual number is unimportant so long as each class is given a unique one.
+        cvPartitionArray((cumulativeExampleTotals(i) + 1):cumulativeExampleTotals(i + 1), :) = i;
+    end
+
+    % Create the final model's cross validation partition.
+    finalCrossValPartition = cvpartition(cvPartitionArray, 'KFold', params('foldsToUse'));
+
+    % Train the final model.
+    [~, ~, ~, ~, ~, ~, finalMSE] = ...
+        plsregress(finalTrainingMatrix, finalTrainingTarget, params('maxComponents'), 'CV', finalCrossValPartition);
+
+    % Determine the number of components that gives the smallest MSE.
+    [finalMinMSE, finalBestCompNum] = min(finalMSE(2, :));
+    finalBestCompNum = finalBestCompNum - 1;  % The number of components starts at 0, but the index returned starts at 1.
+
+    % Retrain the model using the best number of components.
+    [~, ~, ~, ~, finalCoefficients, finalVarianceExplained, finalMSE] = ...
+        plsregress(finalTrainingMatrix, finalTrainingTarget, finalBestCompNum, 'CV', finalCrossValPartition);
+
+    % Calculate the fitted response.
+    % This requires adding an initial column of 1s to the training matrix, as the returned coefficients have the intercept as the first entry.
+    % This is not a posterior. Each example gets a predicted value for each class that does not have to be between 0 and 1.
+    finalResponses = [ones(size(finalTrainingMatrix, 1), 1) finalTrainingMatrix] * finalCoefficients;
+
+    % In order to convert the response into a posterior, a straightforward approach is to train a naive Bayes classifier on the responses.
+    finalBayesClassifier = fitNaiveBayes(finalResponses, cvPartitionArray);
+
+    % We can now get the posteriors of the training examples.
+    % Each example has one posterior value for each class, with the posteriors across classes usmming to 1.
+    % The columns of posteriors are ordered in the same order as the classes
+    % appear in the parameter file.
+    finalPosteriors = posterior(finalBayesClassifier, finalResponses);
+
 end
