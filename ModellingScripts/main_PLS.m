@@ -233,12 +233,16 @@ function main_PLS(parameterFile)
     initialCrossValPartition = cvpartition(cvPartitionArray, 'KFold', params('foldsToUse'));
 
     % Train the initial model.
-    [~, ~, ~, ~, initialCoefficients, initialVarianceExplained, initialMSE] = ...
+    [~, ~, ~, ~, ~, ~, initialMSE] = ...
         plsregress(initialTrainingMatrix, initialTrainingTarget, params('maxComponents'), 'CV', initialCrossValPartition);
 
     % Determine the number of components that gives the smallest MSE.
-    [initialMinMSE, initialBestCompNum] = min(initialMSE(2, :));
+    [~, initialBestCompNum] = min(initialMSE(2, :));
     initialBestCompNum = initialBestCompNum - 1;  % The number of components starts at 0, but the index returned starts at 1.
+
+    % Retrain the model using the best number of components.
+    [~, ~, ~, ~, initialCoefficients, initialVarianceExplained, initialMSE] = ...
+    plsregress(initialTrainingMatrix, initialTrainingTarget, initialBestCompNum, 'CV', initialCrossValPartition);
 
     % Calculate the fitted response.
     % This requires adding an initial column of 1s to the training matrix, as the returned coefficients have the intercept as the first entry.
@@ -250,9 +254,25 @@ function main_PLS(parameterFile)
 
     % We can now get the posteriors of the training examples.
     % Each example has one posterior value for each class, with the posteriors across classes usmming to 1.
-    % The columns of posteriors are ordered in the same order as the classes
-    % appear in the parameter file.
+    % The columns of posteriors are ordered in the same order as the classes appear in the parameter file.
     initialPosteriors = posterior(initialBayesClassifier, initialResponses);
+
+    % Record the posteriors for the initial model's training examples.
+    initialPosteriorFile = strcat(params('outputDir'), '\InitialPosteriors.tsv');
+    header = 'PatientID\tClass';
+    for i = 1:numberOfClasses
+        header = strcat(header, sprintf('\t%s', classNames{i}));
+    end
+    header = strcat(header, '\n');
+    formatString = strcat('%d\t%s', repmat('\t%1.4f', 1, numberOfClasses), '\n');
+    fidInitPost = fopen(initialPosteriorFile, 'w');
+    fprintf(fidInitPost, header);
+    for i = 1:numberOfClasses
+        for j = 1:numClassExamples(i)
+            fprintf(fidInitPost, formatString, uniquePatientIDs(classExamples{i}(j)), classNames{i}, initialPosteriors(j, :));
+        end
+    end
+    fclose(fidInitPost);
 
     % Determine training examples to use in training the final model.
     % The examples to use will be ones where the probabilitiy of at least one class is above the discard threshold.
@@ -286,7 +306,7 @@ function main_PLS(parameterFile)
         plsregress(finalTrainingMatrix, finalTrainingTarget, params('maxComponents'), 'CV', finalCrossValPartition);
 
     % Determine the number of components that gives the smallest MSE.
-    [finalMinMSE, finalBestCompNum] = min(finalMSE(2, :));
+    [~, finalBestCompNum] = min(finalMSE(2, :));
     finalBestCompNum = finalBestCompNum - 1;  % The number of components starts at 0, but the index returned starts at 1.
 
     % Retrain the model using the best number of components.
@@ -303,9 +323,25 @@ function main_PLS(parameterFile)
 
     % We can now get the posteriors of the training examples.
     % Each example has one posterior value for each class, with the posteriors across classes usmming to 1.
-    % The columns of posteriors are ordered in the same order as the classes
-    % appear in the parameter file.
+    % The columns of posteriors are ordered in the same order as the classes appear in the parameter file.
     finalPosteriors = posterior(finalBayesClassifier, finalResponses);
+
+    % Record the posteriors for the final model's training examples.
+    finalPosteriorFile = strcat(params('outputDir'), '\FinalPosteriors.tsv');
+    header = 'PatientID\tClass';
+    for i = 1:numberOfClasses
+        header = strcat(header, sprintf('\t%s', classNames{i}));
+    end
+    header = strcat(header, '\n');
+    formatString = strcat('%d\t%s', repmat('\t%1.4f', 1, numberOfClasses), '\n');
+    fidFinalPost = fopen(finalPosteriorFile, 'w');
+    fprintf(fidFinalPost, header);
+    for i = 1:numberOfClasses
+        for j = 1:numClassExamples(i)
+            fprintf(fidFinalPost, formatString, uniquePatientIDs(classExamples{i}(j)), classNames{i}, finalPosteriors(j, :));
+        end
+    end
+    fclose(fidFinalPost);
 
     % Classify the ambiguous examples using both the intitial and final models.
     ambiguousDataset = dataMatrix(ambiguousExamples, indicesOfTrainingCodes);  % Subset of the dataset containing ambiguous examples.
