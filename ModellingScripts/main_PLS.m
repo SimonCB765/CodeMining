@@ -314,4 +314,21 @@ function main_PLS(parameterFile)
     ambiguousFinalResponses = [ones(numel(ambiguousExamples), 1) ambiguousDataset] * finalCoefficients;  % Responses for the ambiguous examples using the final model.
     ambiguousFinalPosteriors = posterior(finalBayesClassifier, ambiguousFinalResponses);  % Classify the examples using the naive Bayes classifier trained on the final responses.
 
+    % Record posteriors of the ambiguous patients.
+    ambiguousPosteriorFile = strcat(params('outputDir'), '\AmbiguousPatientPosteriors.tsv');
+    fidAmbiguous = fopen(ambiguousPosteriorFile, 'w');
+    initialModelHeader = '';
+    finalModelHeader = '';
+    for i = 1:numberOfClasses
+        initialModelHeader = strcat(initialModelHeader, sprintf('\tInitial_%s', classNames{i}));
+        finalModelHeader = strcat(finalModelHeader, sprintf('\tFinal_%s', classNames{i}));
+    end
+    header = strcat('PatientID', initialModelHeader, finalModelHeader, '\n');
+    fprintf(fidAmbiguous, header);
+    formatString = strcat('%d', repmat('\t%1.4f', 1, numberOfClasses), repmat('\t%1.4f', 1, numberOfClasses), '\n');
+    for i = 1:numel(ambiguousExamples)
+        fprintf(fidAmbiguous, formatString, uniquePatientIDs(i), ambiguousInitialPosteriors(i, :), ambiguousFinalPosteriors(i, :));
+    end
+    fclose(fidAmbiguous);
+
 end
