@@ -307,9 +307,11 @@ function main_PLS(parameterFile)
     % appear in the parameter file.
     finalPosteriors = posterior(finalBayesClassifier, finalResponses);
 
-    % Classify the ambiguous examples.
+    % Classify the ambiguous examples using both the intitial and final models.
     ambiguousDataset = dataMatrix(ambiguousExamples, indicesOfTrainingCodes);  % Subset of the dataset containing ambiguous examples.
-    ambiguousResponses = [ones(numel(ambiguousExamples), 1) ambiguousDataset] * finalCoefficients;  % Responses for the ambiguous examples.
-    ambiguousPosteriors = posterior(finalBayesClassifier, ambiguousResponses);  % Classify the examples using the naive Bayes classifier trained on the final responses.
+    ambiguousInitialResponses = [ones(numel(ambiguousExamples), 1) ambiguousDataset] * finalCoefficients;  % Responses for the ambiguous examples using the initial model.
+    ambiguousInitialPosteriors = posterior(finalBayesClassifier, ambiguousInitialResponses);  % Classify the examples using the naive Bayes classifier trained on the initial responses.
+    ambiguousFinalResponses = [ones(numel(ambiguousExamples), 1) ambiguousDataset] * finalCoefficients;  % Responses for the ambiguous examples using the final model.
+    ambiguousFinalPosteriors = posterior(finalBayesClassifier, ambiguousFinalResponses);  % Classify the examples using the naive Bayes classifier trained on the final responses.
 
 end
