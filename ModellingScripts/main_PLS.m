@@ -254,4 +254,10 @@ function main_PLS(parameterFile)
     % appear in the parameter file.
     initialPosteriors = posterior(initialBayesClassifier, initialResponses);
 
+    % Determine training examples to use in training the final model.
+    % The examples to use will be ones where the probabilitiy of at least one class is above the discard threshold.
+    chosenExampleMask = any(initialPosteriors > params('discardThreshold'), 2);
+    classExamples = cellfun(@(x, y) x(chosenExampleMask((cumulativeExampleTotals(y) + 1):cumulativeExampleTotals(y + 1))), classExamples, num2cell(1:numberOfClasses), 'UniformOutput', false);
+    numClassExamples = cellfun(@(x) numel(x), classExamples);
+
 end
