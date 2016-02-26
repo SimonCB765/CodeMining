@@ -1,1 +1,0 @@
-Examples with posterior <= 0.10 or >= 0.90 are considered to be conclusively disambiguated.

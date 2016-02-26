@@ -1,5 +1,0 @@
-Initial positive examples - 212
-Initial negative examples - 8349
-Final positive examples - 172
-Final negative examples - 7833
-Examples meeting both criteria - 307

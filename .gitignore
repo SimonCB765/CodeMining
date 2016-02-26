@@ -1,2 +1,5 @@
 # Ignore all files in the Data directory.
-Data\*
+Data/*
+
+# Ignore all files in the results directory.
+Results/*
