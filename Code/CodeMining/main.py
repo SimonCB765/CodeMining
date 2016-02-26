@@ -1,7 +1,11 @@
 import argparse
 import collections
+import functools
+import itertools
 import os
 import re
+from scipy import sparse
+from sklearn.cross_decomposition import PLSRegression
 import sys
 
 
@@ -89,6 +93,7 @@ def main(args):
         classes.append(classRecord)
     classNameOccurences = collections.Counter(classNames)  # Counts of all class names.
 
+    isCollectorClass = False
     if len(classesWithoutCodes) == 1:
         # There is one class that will contain all examples that do not belong to another class.
         isCollectorClass = True
@@ -119,7 +124,7 @@ def main(args):
     if not os.path.isdir(dirIndexedData):
         os.mkdir(dirIndexedData)
     fileIndexedDataset = dirIndexedData + "/IndexedPatientData.tsv"  # The indexed subset of the input dataset.
-    fileCodeIndices = dirIndexedData + "/CodeIndices.tsv"  # File containing the mapping from each code to its index in the indexed dataset.
+    filecodeToIndexMap = dirIndexedData + "/CodeIndices.tsv"  # File containing the mapping from each code to its index in the indexed dataset.
     filePatientIndices = dirIndexedData + "/PatientIndices.tsv"  # File containing the mapping from each patient ID to its index in the indexed dataset.
 
     #=======================================================#
@@ -142,12 +147,12 @@ def main(args):
 
     # Determine the codes that occur frequently enough to be used.
     codesToUse = set([i for i in codeFrequencies if codeFrequencies[i] >= minPatientsPerCode])
-    
+
     # Create and record the mapping from codes that are being used to their indices.
-    codeIndices = dict([(x, ind) for ind, x in enumerate(codesToUse)])
-    with open(fileCodeIndices, 'w') as writeCodeIndices:
-        for i in sorted(codeIndices):
-            writeCodeIndices.write("{0:s}\t{1:d}\n".format(i, codeIndices[i]))
+    codeToIndexMap = dict([(x, ind) for ind, x in enumerate(codesToUse)])
+    with open(filecodeToIndexMap, 'w') as writecodeToIndexMap:
+        for i in sorted(codeToIndexMap):
+            writecodeToIndexMap.write("{0:s}\t{1:d}\n".format(i, codeToIndexMap[i]))
 
     # Get codes for each class.
     mapCodesToClass = {}  # A mapping from the codes used to determine the classes to the class they are used to determine.
@@ -155,13 +160,13 @@ def main(args):
         if x["Codes"] and x["Child"]:
             # Only check child codes if there are codes representing the class and child codes are to be used.
             matchingCodes = extract_child_codes(x["Codes"], codesToUse)  # Get all codes being used that are children of the parent codes supplied.
-            matchingCodes = [codeIndices[i] for i in matchingCodes]  # Convert codes to code indices.
+            matchingCodes = [codeToIndexMap[i] for i in matchingCodes]  # Convert codes to code indices.
             classes[ind]["Codes"] = matchingCodes
             mapCodesToClass.update(dict([(i, x["Name"]) for i in matchingCodes]))
 
-    #=====================================================#
-    # Create an indexed dataset without infrequent codes. #
-    #=====================================================#
+    #================================================================================================#
+    # Create an indexed dataset without infrequent codes, and determine the examples for each class. #
+    #================================================================================================#
     # Generate the indexed dataset and the mapping from patient IDs to their respective indices.
     currentPatientIndex = -1  # Index for the current patient.
     currentPatientID = ''  # The ID of the current patient.
@@ -173,8 +178,8 @@ def main(args):
         for line in readDataset:
             lineChunks = line.split('\t')
             patientID = lineChunks[0]
-            codeIndex = codeIndices.get(lineChunks[1])
-            
+            codeIndex = codeToIndexMap.get(lineChunks[1])
+
             # Check whether the start of a new patient's record block has been found.
             if currentPatientID != patientID:
                 if isCollectorClass and (not isCurrentPatientUsed):
@@ -185,7 +190,7 @@ def main(args):
                 isCurrentPatientUsed = False
                 currentPatientIndex += 1
                 writePatientIndices.write("{0:s}\t{1:d}\n".format(patientID, currentPatientIndex))
-            
+
             # Check whether the line should be included in the indexed file.
             if codeIndex:
                 # If the code exists in the code index mapping (and is therefore frequent enough to use),
@@ -211,29 +216,65 @@ def main(args):
         print('\n'.join(emptyClasses))
         sys.exit()
 
-    print(classes)
-    print(mapCodesToClass)
-    print([(i, len(classExamples[i])) for i in classExamples])
-    print(isCollectorClass)
-    print(collectorClass)
+    # Determine ambiguous examples (those examples present in more than one class), and remove them from the class examples.
+    ambiguousExamples = set([])  # Examples appearing in more than one class.
+    classCombinations = list(itertools.combinations(classExamples, 2))  # All combinations of class pairs.
+    for i, j in classCombinations:
+        ambiguousExamples |= (classExamples[i] & classExamples[j])  # Add examples shared by classes i and j to the set of ambiguous examples.
+    for i in classExamples:
+        classExamples[i] -= ambiguousExamples
+    allExamplesUsed = functools.reduce(lambda x, y : x | y, classExamples.values())  # All example indices used in the training.
+
+    #=========================#
+    # Create the data matrix. #
+    #=========================#
+    numberOfRows = len(allExamplesUsed)  # The number of rows is the number of examples being used.
+    numberOfColumns = len(codesToUse)  # The number of columns is the number of codes being used.
+    dataMatrix = sparse.lil_matrix( (numberOfRows, numberOfColumns) )
+
+    print(numberOfRows, numberOfColumns)
+    print(list(allExamplesUsed)[-20:])
+
+    with open(fileIndexedDataset, 'r') as readIndexedDataset:
+        for line in readIndexedDataset:
+            lineChunks = (line.strip()).split('\t')
+            patient = int(lineChunks[0])
+            code = int(lineChunks[1])
+
+            # All lines in the indexed file contain codes that occur frequently enough to be used. The patient may not be one that is a member
+            # of the classes we are using, and therefore we need to check that the patient is of interest.
+            if patient in allExamplesUsed:
+                dataMatrix.data[patient].append(code)
+
+    print([ind for ind, i in enumerate(dataMatrix.data) if len(i) == 0])
+
+    # Convert the data matrix to a format that is better for computations.
+    dataMatrix = sparse.csc_matrix(dataMatrix)
+    
+    while True:
+        pass
+
+    #=================================#
+    # Train the initial PLS-DA model. #
+    #=================================#
 
 
 def extract_child_codes(parentCodes, allCodes):
     """Extract all codes that are beneath the parent codes in the code hierarchy.
-    
+
     A code (b) is 'beneath' another one (a) if b[:len(a)] == a.
     Example:
         parentCodes = ["ABC", "XYZ"]
         allCodes = ["ABCD", "ABC12", "1ABC", "AB", "XYZ", "XYZ01", "DEF12"]
         return = ["ABCD", "ABC12", "XYZ", "XYZ01"]
-    
+
     :param parentCodes:     The codes at the root of the hierarchy substree(s) to be extracted.
     :type parentCodes:      list
     :param allCodes:        The codes to search for children in. Each code should appear once.
     :type allCodes:         list
-    
+
     """
-    
+
     regex = re.compile('|'.join(parentCodes))  # Compiled regular expression pattern code1|code2|code3|...|codeN.
     return [i for i in allCodes if regex.match(i)]
 
