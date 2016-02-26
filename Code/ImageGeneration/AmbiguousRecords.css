@@ -1,0 +1,14 @@
+.firstModel { fill : orange; stroke : orange; }
+.secondModel { fill : purple; stroke : purple; }
+
+.bar { fill-opacity : 0.5; stroke : none; shape-rendering: crispEdges; }
+.line { fill : none; }
+
+.linelabel {}
+
+.axis path, .axis line { fill: none; stroke: black; shape-rendering: crispEdges; }
+.axis text { font-family: sans-serif; font-size: 11px; }
+
+.label {}
+
+.title {}
