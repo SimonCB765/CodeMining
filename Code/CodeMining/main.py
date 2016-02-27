@@ -224,7 +224,7 @@ def main(args):
                         nextAmbigIndex += 1
                     elif isCollectorClass:
                         # The patient did not belong to any classes, but there is a collector class.
-                        classExamples[collectorClass].add(currentPatientIndex)
+                        classExamples[collectorClass].add(nextPatientIndex)
                         writePatientIndices.write("{0:s}\t{1:d}\n".format(patientID, nextPatientIndex))
                         dataMatrix["Patients"].extend([nextPatientIndex] * len(currentPatientRecord))
                         dataMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
@@ -270,7 +270,7 @@ def main(args):
                 nextAmbigIndex += 1
             elif isCollectorClass:
                 # The patient did not belong to any classes, but there is a collector class.
-                classExamples[collectorClass].add(currentPatientIndex)
+                classExamples[collectorClass].add(nextPatientIndex)
                 writePatientIndices.write("{0:s}\t{1:d}\n".format(patientID, nextPatientIndex))
                 dataMatrix["Patients"].extend([nextPatientIndex] * len(currentPatientRecord))
                 dataMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
