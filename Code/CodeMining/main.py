@@ -93,7 +93,7 @@ def main(args):
         classes.append(classRecord)
     classNameOccurences = collections.Counter(classNames)  # Counts of all class names.
 
-    isCollectorClass = False
+    isCollectorClass = False  # Whether there is a class with no codes that will be used to collect all examples not belonging to the other classes.
     if len(classesWithoutCodes) == 1:
         # There is one class that will contain all examples that do not belong to another class.
         isCollectorClass = True
@@ -124,8 +124,10 @@ def main(args):
     if not os.path.isdir(dirIndexedData):
         os.mkdir(dirIndexedData)
     fileIndexedDataset = dirIndexedData + "/IndexedPatientData.tsv"  # The indexed subset of the input dataset.
-    filecodeToIndexMap = dirIndexedData + "/CodeIndices.tsv"  # File containing the mapping from each code to its index in the indexed dataset.
+    fileCodeIndices = dirIndexedData + "/CodeIndices.tsv"  # File containing the mapping from each code to its index in the indexed dataset.
     filePatientIndices = dirIndexedData + "/PatientIndices.tsv"  # File containing the mapping from each patient ID to its index in the indexed dataset.
+    fileAmbigDataset = dirIndexedData + "/IndexedAmbigData.tsv"  # File containing the indexed subset of the input dataset containing ambiguous patients.
+    fileAmbigIndices = dirIndexedData + "/AmbiguousPatientClasses.tsv"  # File containing ambiguous patients, their indices and their classes.
 
     #=======================================================#
     # Determine the codes in the dataset that will be used. #
@@ -150,12 +152,12 @@ def main(args):
 
     # Create and record the mapping from codes that are being used to their indices.
     codeToIndexMap = dict([(x, ind) for ind, x in enumerate(codesToUse)])
-    with open(filecodeToIndexMap, 'w') as writecodeToIndexMap:
+    with open(fileCodeIndices, 'w') as writeCodeIndices:
         for i in sorted(codeToIndexMap):
-            writecodeToIndexMap.write("{0:s}\t{1:d}\n".format(i, codeToIndexMap[i]))
+            writeCodeIndices.write("{0:s}\t{1:d}\n".format(i, codeToIndexMap[i]))
 
-    # Get codes for each class.
-    mapCodesToClass = {}  # A mapping from the codes used to determine the classes to the class they are used to determine.
+    # Get the codes that are to be used to indicate patients belonging to each class.
+    mapCodesToClass = {}  # A mapping from the codes to the class they are used to determine.
     for ind, x in enumerate(classes):
         if x["Codes"] and x["Child"]:
             # Only check child codes if there are codes representing the class and child codes are to be used.
@@ -164,50 +166,96 @@ def main(args):
             classes[ind]["Codes"] = matchingCodes
             mapCodesToClass.update(dict([(i, x["Name"]) for i in matchingCodes]))
 
-    #================================================================================================#
-    # Create an indexed dataset without infrequent codes, and determine the examples for each class. #
-    #================================================================================================#
-    # Generate the indexed dataset and the mapping from patient IDs to their respective indices.
-    currentPatientIndex = -1  # Index for the current patient.
-    currentPatientID = ''  # The ID of the current patient.
-    isCurrentPatientUsed = True  # Whether the current patient belongs to a class specified by supplied codes.
-                                 # This will immediately get set to False when reading the first line, bus needs to be True to prevent the first
-                                 # patient potentially being recorded in both the container class and another one.
-    classExamples = dict([(i["Name"], set([])) for i in classes])  # The indices of the examples for each class.
-    with open(fileDataset, 'r') as readDataset, open(fileIndexedDataset, 'w') as writeIndexedDataset, open(filePatientIndices, 'w') as writePatientIndices:
+    #=============================#
+    # Create the indexed dataset. #
+    #=============================#
+    # The indexed dataset will convert the original PatientID\tCode\tCount format of the input dataset to a
+    # PatientIndex\tCodeIndex\tCount format. In addition, the only lines from the original dataset that get added
+    # to the indexed dataset will be those that contain a code that occurs frequently enough to be used AND are
+    # for a patient belonging to one of the classes. Ambiguous patients (those that belong to more than one class)
+    # will be entered into a separate dataset.
+
+    nextPatientIndex = 0  # The index to be associated with the next patient to be recorded in the indexed dataset.
+    nextAmbigIndex = 0  # The index to be associated with the next ambiguous patient to be recorded in the ambiguous dataset.
+    currentPatientID = ''  # The ID of the current patient having their record examined.
+    currentPatientRecord = []  # A list containing all rows of the current patient's record with a code in codesToUse (i.e. a frequently occurring code).
+    classesOfPatient = set([])  # The classes that the current patient being looked at belongs to.
+    classExamples = dict([(i["Name"], set([])) for i in classes])  # The indices of the patients that belong to each class.
+    with open(fileDataset, 'r') as readDataset, open(fileIndexedDataset, 'w') as writeIndexedDataset, open(fileAmbigDataset, 'w') as writeAmbigDataset, \
+         open(filePatientIndices, 'w') as writePatientIndices, open(fileAmbigIndices, 'w') as writeAmbigIndices:
         for line in readDataset:
-            lineChunks = line.split('\t')
+            lineChunks = (line.strip()).split('\t')
             patientID = lineChunks[0]
             codeIndex = codeToIndexMap.get(lineChunks[1])
 
-            # Check whether the start of a new patient's record block has been found.
+            # Only write out a patient's record once a new patient is encountered.
+            # The old patient record will only be written out if the patient belongs to a class and
+            # their record contains a code in codesToUse (i.e. a frequently occurring code).
             if currentPatientID != patientID:
-                if isCollectorClass and (not isCurrentPatientUsed):
-                    # There is a class that will contain all patients not belonging to a class specified by supplied codes,
-                    # and the patient whose record has just finished did not belong to one of those classes.
-                    classExamples[collectorClass].add(currentPatientIndex)
+                # A new patient has been encountered.
+                if currentPatientRecord:
+                    # The patient has at least one entry in their record with a frequently occurring code (as currentPatientRecord only
+                    # contains lines from the patient's record that contain a code in codesToUse).
+                    if len(classesOfPatient) == 1:
+                        # The patient belongs to exactly ONE class.
+                        classExamples[classesOfPatient.pop()].add(nextPatientIndex)
+                        writePatientIndices.write("{0:s}\t{1:d}\n".format(patientID, nextPatientIndex))
+                        for i in currentPatientRecord:
+                            writeIndexedDataset.write("{0:d}\t{1:d}\t{2:s}\n".format(nextPatientIndex, i["Code"], i["Count"]))
+                        nextPatientIndex += 1
+                    elif len(classesOfPatient) > 1:
+                        # The patient is ambiguous as they belong to multiple classes.
+                        writeAmbigIndices.write("{0:s}\t{1:d}\t{2:s}\n".format(patientID, nextAmbigIndex, ','.join(classesOfPatient)))
+                        for i in currentPatientRecord:
+                            writeAmbigDataset.write("{0:d}\t{1:d}\t{2:s}\n".format(nextAmbigIndex, i["Code"], i["Count"]))
+                        nextAmbigIndex += 1
+                    elif isCollectorClass:
+                        # The patient did not belong to any classes, but there is a collector class.
+                        classExamples[collectorClass].add(currentPatientIndex)
+                        writePatientIndices.write("{0:s}\t{1:d}\n".format(patientID, nextPatientIndex))
+                        for i in currentPatientRecord:
+                            writeIndexedDataset.write("{0:d}\t{1:d}\t{2:s}\n".format(nextPatientIndex, i["Code"], i["Count"]))
+                        nextPatientIndex += 1
+                # Reset values for the next patient.
                 currentPatientID = patientID
-                isCurrentPatientUsed = False
-                currentPatientIndex += 1
-                writePatientIndices.write("{0:s}\t{1:d}\n".format(patientID, currentPatientIndex))
+                currentPatientRecord = []
+                classesOfPatient = set([])
 
-            # Check whether the line should be included in the indexed file.
+            # Check whether the current line should be included in the current patient's record.
             if codeIndex:
-                # If the code exists in the code index mapping (and is therefore frequent enough to use),
-                # then the line may need to be recorded in the indexed dataset.
-                writeIndexedDataset.write("{0:d}\t{1:d}\t{2:s}".format(currentPatientIndex, codeIndex, lineChunks[2]))
+                # The code exists in the codeToIndexMap mapping, is in codesToUse and therefore frequently occurring.
+                # We are therefore interested in this line, and it should be included in the patient's record.
+                currentPatientRecord.append({"Code" : codeIndex, "Count" : lineChunks[2]})
 
-                # Check whether the patient should be included as an example for one of the classes specified by supplied codes.
-                patientClass = mapCodesToClass.get(codeIndex)
+                # Check whether the patient belongs to a class based on the code on this line of their record.
+                patientClass = mapCodesToClass.get(codeIndex)  # The class of the patient (or None if the code does not indicate class membership).
                 if patientClass:
-                    # The code on the line is one of the codes used to determine the classes.
-                    classExamples[patientClass].add(currentPatientIndex)
-                    isCurrentPatientUsed = True
-    # Check whether the final patient needs to belong to the container class.
-    if isCollectorClass and (not isCurrentPatientUsed):
-        # There is a class that will contain all patients not belonging to a class specified by supplied codes,
-        # and the last patient did not belong to one of those classes.
-        classExamples[collectorClass].add(currentPatientIndex)
+                    classesOfPatient.add(patientClass)
+
+        # Handle the last patient (who can't get checked within the loop).
+        if currentPatientRecord:
+            # The patient has at least one entry in their record with a frequently occurring code (as currentPatientRecord only
+            # contains lines from the patient's record that contain a code in codesToUse).
+            if len(classesOfPatient) == 1:
+                # The patient belongs to exactly ONE class.
+                classExamples[classesOfPatient.pop()].add(nextPatientIndex)
+                writePatientIndices.write("{0:s}\t{1:d}\n".format(patientID, nextPatientIndex))
+                for i in currentPatientRecord:
+                    writeIndexedDataset.write("{0:d}\t{1:d}\t{2:s}\n".format(nextPatientIndex, i["Code"], i["Count"]))
+                nextPatientIndex += 1
+            elif len(classesOfPatient) > 1:
+                # The patient is ambiguous as they belong to multiple classes.
+                writeAmbigIndices.write("{0:s}\t{1:d}\t{2:s}\n".format(patientID, nextAmbigIndex, ','.join(classesOfPatient)))
+                for i in currentPatientRecord:
+                    writeAmbigDataset.write("{0:d}\t{1:d}\t{2:s}\n".format(nextAmbigIndex, i["Code"], i["Count"]))
+                nextAmbigIndex += 1
+            elif isCollectorClass:
+                # The patient did not belong to any classes, but there is a collector class.
+                classExamples[collectorClass].add(currentPatientIndex)
+                writePatientIndices.write("{0:s}\t{1:d}\n".format(patientID, nextPatientIndex))
+                for i in currentPatientRecord:
+                    writeIndexedDataset.write("{0:d}\t{1:d}\t{2:s}\n".format(nextPatientIndex, i["Code"], i["Count"]))
+                nextPatientIndex += 1
 
     # Check whether there are any classes without examples in them.
     emptyClasses = [i for i in classExamples if len(classExamples[i]) == 0]
@@ -216,14 +264,14 @@ def main(args):
         print('\n'.join(emptyClasses))
         sys.exit()
 
-    # Determine ambiguous examples (those examples present in more than one class), and remove them from the class examples.
-    ambiguousExamples = set([])  # Examples appearing in more than one class.
-    classCombinations = list(itertools.combinations(classExamples, 2))  # All combinations of class pairs.
-    for i, j in classCombinations:
-        ambiguousExamples |= (classExamples[i] & classExamples[j])  # Add examples shared by classes i and j to the set of ambiguous examples.
-    for i in classExamples:
-        classExamples[i] -= ambiguousExamples
-    allExamplesUsed = functools.reduce(lambda x, y : x | y, classExamples.values())  # All example indices used in the training.
+    print([(i, len(classExamples[i])) for i in classExamples])
+    print(nextAmbigIndex)
+
+    sys.exit()
+    T1 - 209
+    T2 - 8352
+    Ambig - 292
+    8561,1704
 
     #=========================#
     # Create the data matrix. #
@@ -250,7 +298,7 @@ def main(args):
 
     # Convert the data matrix to a format that is better for computations.
     dataMatrix = sparse.csc_matrix(dataMatrix)
-    
+
     while True:
         pass
 
