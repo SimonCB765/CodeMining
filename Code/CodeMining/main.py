@@ -2,6 +2,7 @@ import argparse
 import collections
 import functools
 import itertools
+import numpy
 import os
 import re
 from scipy import sparse
@@ -175,6 +176,14 @@ def main(args):
     # for a patient belonging to one of the classes. Ambiguous patients (those that belong to more than one class)
     # will be entered into a separate dataset.
 
+    # Define the initial formats for the training and ambiguous matrices.
+    # The "Patients" and "Codes" lists will contain paired patient and code indices to use when indexing the data matrices, and will be the same length.
+    # For example, (dataMatrix["Patients"][i], dataMatrix["Codes"][i]) will be an index into the data matrix indicating that the patient with index
+    # dataMatrix["Patients"][i] has code with index dataMatrix["Codes"][i] in their record.
+    # The lists will be used to construct sparse matrices for the training and predictions.
+    dataMatrix = {"Patients" : [], "Codes" : []}
+    ambiguousMatrix = {"Patients" : [], "Codes" : []}
+
     nextPatientIndex = 0  # The index to be associated with the next patient to be recorded in the indexed dataset.
     nextAmbigIndex = 0  # The index to be associated with the next ambiguous patient to be recorded in the ambiguous dataset.
     currentPatientID = ''  # The ID of the current patient having their record examined.
@@ -200,12 +209,16 @@ def main(args):
                         # The patient belongs to exactly ONE class.
                         classExamples[classesOfPatient.pop()].add(nextPatientIndex)
                         writePatientIndices.write("{0:s}\t{1:d}\n".format(patientID, nextPatientIndex))
+                        dataMatrix["Patients"].extend([nextPatientIndex] * len(currentPatientRecord))
+                        dataMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
                         for i in currentPatientRecord:
                             writeIndexedDataset.write("{0:d}\t{1:d}\t{2:s}\n".format(nextPatientIndex, i["Code"], i["Count"]))
                         nextPatientIndex += 1
                     elif len(classesOfPatient) > 1:
                         # The patient is ambiguous as they belong to multiple classes.
                         writeAmbigIndices.write("{0:s}\t{1:d}\t{2:s}\n".format(patientID, nextAmbigIndex, ','.join(classesOfPatient)))
+                        ambiguousMatrix["Patients"].extend([nextAmbigIndex] * len(currentPatientRecord))
+                        ambiguousMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
                         for i in currentPatientRecord:
                             writeAmbigDataset.write("{0:d}\t{1:d}\t{2:s}\n".format(nextAmbigIndex, i["Code"], i["Count"]))
                         nextAmbigIndex += 1
@@ -213,6 +226,8 @@ def main(args):
                         # The patient did not belong to any classes, but there is a collector class.
                         classExamples[collectorClass].add(currentPatientIndex)
                         writePatientIndices.write("{0:s}\t{1:d}\n".format(patientID, nextPatientIndex))
+                        dataMatrix["Patients"].extend([nextPatientIndex] * len(currentPatientRecord))
+                        dataMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
                         for i in currentPatientRecord:
                             writeIndexedDataset.write("{0:d}\t{1:d}\t{2:s}\n".format(nextPatientIndex, i["Code"], i["Count"]))
                         nextPatientIndex += 1
@@ -240,12 +255,16 @@ def main(args):
                 # The patient belongs to exactly ONE class.
                 classExamples[classesOfPatient.pop()].add(nextPatientIndex)
                 writePatientIndices.write("{0:s}\t{1:d}\n".format(patientID, nextPatientIndex))
+                dataMatrix["Patients"].extend([nextPatientIndex] * len(currentPatientRecord))
+                dataMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
                 for i in currentPatientRecord:
                     writeIndexedDataset.write("{0:d}\t{1:d}\t{2:s}\n".format(nextPatientIndex, i["Code"], i["Count"]))
                 nextPatientIndex += 1
             elif len(classesOfPatient) > 1:
                 # The patient is ambiguous as they belong to multiple classes.
                 writeAmbigIndices.write("{0:s}\t{1:d}\t{2:s}\n".format(patientID, nextAmbigIndex, ','.join(classesOfPatient)))
+                ambiguousMatrix["Patients"].extend([nextAmbigIndex] * len(currentPatientRecord))
+                ambiguousMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
                 for i in currentPatientRecord:
                     writeAmbigDataset.write("{0:d}\t{1:d}\t{2:s}\n".format(nextAmbigIndex, i["Code"], i["Count"]))
                 nextAmbigIndex += 1
@@ -253,6 +272,8 @@ def main(args):
                 # The patient did not belong to any classes, but there is a collector class.
                 classExamples[collectorClass].add(currentPatientIndex)
                 writePatientIndices.write("{0:s}\t{1:d}\n".format(patientID, nextPatientIndex))
+                dataMatrix["Patients"].extend([nextPatientIndex] * len(currentPatientRecord))
+                dataMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
                 for i in currentPatientRecord:
                     writeIndexedDataset.write("{0:d}\t{1:d}\t{2:s}\n".format(nextPatientIndex, i["Code"], i["Count"]))
                 nextPatientIndex += 1
@@ -264,43 +285,11 @@ def main(args):
         print('\n'.join(emptyClasses))
         sys.exit()
 
-    print([(i, len(classExamples[i])) for i in classExamples])
-    print(nextAmbigIndex)
-
-    sys.exit()
-    T1 - 209
-    T2 - 8352
-    Ambig - 292
-    8561,1704
-
-    #=========================#
-    # Create the data matrix. #
-    #=========================#
-    numberOfRows = len(allExamplesUsed)  # The number of rows is the number of examples being used.
-    numberOfColumns = len(codesToUse)  # The number of columns is the number of codes being used.
-    dataMatrix = sparse.lil_matrix( (numberOfRows, numberOfColumns) )
-
-    print(numberOfRows, numberOfColumns)
-    print(list(allExamplesUsed)[-20:])
-
-    with open(fileIndexedDataset, 'r') as readIndexedDataset:
-        for line in readIndexedDataset:
-            lineChunks = (line.strip()).split('\t')
-            patient = int(lineChunks[0])
-            code = int(lineChunks[1])
-
-            # All lines in the indexed file contain codes that occur frequently enough to be used. The patient may not be one that is a member
-            # of the classes we are using, and therefore we need to check that the patient is of interest.
-            if patient in allExamplesUsed:
-                dataMatrix.data[patient].append(code)
-
-    print([ind for ind, i in enumerate(dataMatrix.data) if len(i) == 0])
-
-    # Convert the data matrix to a format that is better for computations.
-    dataMatrix = sparse.csc_matrix(dataMatrix)
-
-    while True:
-        pass
+    # Convert the data matrices to an appropriate sparse matrix format.
+    dataMatrix = sparse.coo_matrix((numpy.ones(len(dataMatrix["Patients"])), (dataMatrix["Patients"], dataMatrix["Codes"])))
+    dataMatrix = sparse.csr_matrix(dataMatrix)  # CSR is more efficient for computations and has sorted row indices.
+    ambiguousMatrix = sparse.coo_matrix((numpy.ones(len(ambiguousMatrix["Patients"])), (ambiguousMatrix["Patients"], ambiguousMatrix["Codes"])))
+    ambiguousMatrix = sparse.csr_matrix(ambiguousMatrix)  # CSR is more efficient for computations and has sorted row indices.
 
     #=================================#
     # Train the initial PLS-DA model. #
