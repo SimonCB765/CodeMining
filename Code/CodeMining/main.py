@@ -2,6 +2,7 @@ import argparse
 import collections
 import functools
 import itertools
+import json
 import numpy
 import os
 import re
@@ -26,24 +27,24 @@ def main(args):
         epilog="===============Stuff about looking at the README and yadda yadda==========\nAssumptions on data - PAtientID\tCode pair only occurs once in file\nAll of a patients record is consecutive========")
     parser.add_argument("dataset", help="Location of the dataset to train the algorithm on.")
     parser.add_argument("codeMap", help="Location of the file containing the mapping between codes and their descriptions.")
-    parser.add_argument("-c", "--classes", required=True, action="append", help="=====divide 3 things by ; and code by ,====y/Y for get children========")
+    parser.add_argument("classes", help="Location of the JSON format file containing the class definitions.")
     parser.add_argument("-f", "--folds", type=int, default=10, help="Number of folds to use in the cross validation process that optimises the model.")
     parser.add_argument("-d", "--discard", type=float, default=0.0, help="=================================")
     parser.add_argument("-m", "--comp", type=int, default=10, help="Maximum number of PLS components to test.")
     parser.add_argument("-o", "--outDir", default="Results", help="Directory where the results should be recorded.")
     parser.add_argument("-i", "--infrequent", type=int, default=50, help="Minimum number of patients that a code must appear in before it will be used.")
-    parser.add_argument("-d", "--density", type=int, default=0, help="Minimum number of unique FREQUENTLY COCCURING codes that a patient must have in their record to be used.")
+    parser.add_argument("-c", "--codeDensity", type=int, default=0, help="Minimum number of unique FREQUENTLY COCCURING codes that a patient must have in their record to be used.")
     args = parser.parse_args()
 
     fileDataset = args.dataset
     fileCodeMap = args.codeMap
-    rawClasses = [i.split(';') for i in args.classes]
+    fileClasses = args.classes
     foldsToUse = args.folds
     discardThreshold = args.discard
     maxComponents = args.comp
     dirResults = args.outDir
     minPatientsPerCode = args.infrequent
-    codeDensity = args.density
+    codeDensity = args.codeDensity
 
     #========================================#
     # Process and validate the user's input. #
@@ -52,10 +53,10 @@ def main(args):
 
     if not os.path.isfile(fileDataset):
         # The input dataset must exist to continue.
-        errorsFound.append("The dataset file supplied does not exist.")
+        errorsFound.append("The dataset file does not exist.")
     if not os.path.isfile(fileCodeMap):
         # The mapping from codes to their descriptions must exist.
-        errorsFound.append("The file of code mappings supplied does not exist.")
+        errorsFound.append("The code mappings file does not exist.")
     if foldsToUse < 2:
         # Cross validation can only take place with at least 2 folds.
         errorsFound.append("A minimum of 2 cross validation folds is needed.")
@@ -73,41 +74,28 @@ def main(args):
             errorsFound.append("Error creating results directory: {0}".format(err))
 
     # Process the class information provided.
-    classesWithoutCodes = []  # Names of all classes without codes.
-    classNames = []  # Names of all classes.
-    classes = []  # The processed list of classes.
-    for i in rawClasses:
-        i = i[:3]  # Strip off anything more than the first three elements, as these have no meaning.
-        className = i[0]
-        classNames.append(className)
-        if len(i) == 1:
-            # If there is only one element of the list, then no codes were supplied for the class.
-            classesWithoutCodes.append(className)
-            i.extend([[], False])
-        elif len(i) == 2:
-            # If there are two elements in the list, then whether child codes should be considered has been left off.
-            i[1] = i[1].split(',')
-            i.append(False)
-        else:
-            # All three components of the class information are here, so convert the third to a boolean value.
-            i[1] = i[1].split(',')
-            i[2] = i[2].lower() == 'y'
-        classRecord = {"Name" : i[0], "Codes" : i[1], "Child" : i[2]}
-        classes.append(classRecord)
-    classNameOccurences = collections.Counter(classNames)  # Counts of all class names.
+    if not os.path.isfile(fileClasses):
+        # The mapping from codes to their descriptions must exist.
+        errorsFound.append("The file of classes does not exist.")
+    else:
+        readClasses = open(fileClasses, 'r')
+        jsonClasses = json.load(readClasses)
+        readClasses.close()
+        classesWithoutCodes = [i for i in jsonClasses if not jsonClasses[i]]  # Names of all classes without codes.
 
-    isCollectorClass = False  # Whether there is a class with no codes that will be used to collect all examples not belonging to the other classes.
-    if len(classesWithoutCodes) == 1:
-        # There is one class that will contain all examples that do not belong to another class.
-        isCollectorClass = True
-        collectorClass = classesWithoutCodes[0]
-    elif len(classesWithoutCodes) > 1:
-        # There can be at most one class without supplied codes.
-        errorsFound.append("The maximum number of classes without provided codes is 1. Classes without supplied codes were: {0:s}".format(','.join(classesWithoutCodes)))
-    if any([classNameOccurences[i] > 1 for i in classNameOccurences]):
-        # Not all class names are unique.
-        nonUniqueNames = [i for i in classNameOccurences if classNameOccurences[i] > 1]
-        errorsFound.append("Not all class names are unique. Classes without unique names were: {0:s}".format(','.join(nonUniqueNames)))
+        # Determine whether there are any errors in the class file itself.
+        isCollectorClass = False  # Whether there is a class with no codes that will be used to collect all examples not belonging to the other classes.
+        if len(classesWithoutCodes) == 1:
+            # There is one class that will contain all examples that do not belong to another class.
+            isCollectorClass = True
+            collectorClass = classesWithoutCodes[0]
+        elif len(classesWithoutCodes) > 1:
+            # There can be at most one class without supplied codes.
+            errorsFound.append("The maximum number of classes without provided codes is 1. Classes without supplied codes were: {0:s}".format(','.join(classesWithoutCodes)))
+        if len(set(jsonClasses)) < len(jsonClasses):
+            # Not all class names are unique.
+            nonUniqueNames = [i for i in classNameOccurences if classNameOccurences[i] > 1]
+            errorsFound.append("Not all class names are unique. Classes without unique names were: {0:s}".format(','.join(nonUniqueNames)))
 
     # Exit if errors were found.
     if errorsFound:
@@ -160,14 +148,20 @@ def main(args):
             writeCodeIndices.write("{0:s}\t{1:d}\n".format(i, codeToIndexMap[i]))
 
     # Get the codes that are to be used to indicate patients belonging to each class.
+    classes = {}  # A mapping from class names to the codes that define the class.
     mapCodesToClass = {}  # A mapping from the codes to the class they are used to determine.
-    for ind, x in enumerate(classes):
-        if x["Codes"] and x["Child"]:
-            # Only check child codes if there are codes representing the class and child codes are to be used.
-            matchingCodes = extract_child_codes(x["Codes"], codesToUse)  # Get all codes being used that are children of the parent codes supplied.
-            matchingCodes = [codeToIndexMap[i] for i in matchingCodes]  # Convert codes to code indices.
-            classes[ind]["Codes"] = matchingCodes
-            mapCodesToClass.update(dict([(i, x["Name"]) for i in matchingCodes]))
+    for i in jsonClasses:
+        classes[i] = []
+        for j in jsonClasses[i]:
+            if j.get("GetChildren") and (j["GetChildren"].lower() == 'y'):
+                # Get child codes of the current code if the class definition requests it.
+                matchingCodes = extract_child_codes([j["Code"]], codesToUse)  # Get all frequent codes that are children of the current code.
+                matchingCodes = [codeToIndexMap[k] for k in matchingCodes]  # Convert codes to code indices.
+            else:
+                # No need to get child codes, just use the parent.
+                matchingCodes = [codeToIndexMap[j["Code"]]]
+            classes[i].extend(matchingCodes)  # Add the codes to the list of codes defining class i.
+            mapCodesToClass.update(dict([(k, i) for k in matchingCodes]))  # Update with the class of the child codes found.
 
     #=============================#
     # Create the indexed dataset. #
@@ -191,7 +185,7 @@ def main(args):
     currentPatientID = ''  # The ID of the current patient having their record examined.
     currentPatientRecord = []  # A list containing all rows of the current patient's record with a code in codesToUse (i.e. a frequently occurring code).
     classesOfPatient = set([])  # The classes that the current patient being looked at belongs to.
-    classExamples = dict([(i["Name"], set([])) for i in classes])  # The indices of the patients that belong to each class.
+    classExamples = dict([(i, set([])) for i in classes])  # The indices of the patients that belong to each class.
     with open(fileDataset, 'r') as readDataset, open(fileIndexedDataset, 'w') as writeIndexedDataset, open(fileAmbigDataset, 'w') as writeAmbigDataset, \
          open(filePatientIndices, 'w') as writePatientIndices, open(fileAmbigIndices, 'w') as writeAmbigIndices:
         for line in readDataset:
@@ -250,8 +244,8 @@ def main(args):
                     classesOfPatient.add(patientClass)
 
         # Handle the last patient (who can't get checked within the loop).
-        if currentPatientRecord:
-            # The patient has at least one entry in their record with a frequently occurring code (as currentPatientRecord only
+        if len(currentPatientRecord) >= codeDensity:
+            # The patient has at least codeDensity entries in their record with a frequently occurring code (as currentPatientRecord only
             # contains lines from the patient's record that contain a code in codesToUse).
             if len(classesOfPatient) == 1:
                 # The patient belongs to exactly ONE class.
@@ -283,7 +277,7 @@ def main(args):
     # Check whether there are any classes without examples in them.
     emptyClasses = [i for i in classExamples if len(classExamples[i]) == 0]
     if emptyClasses:
-        print("\n\nThe following classes contain no examples:\n")
+        print("\n\nThe following classes contain no examples that are not ambiguous:\n")
         print('\n'.join(emptyClasses))
         sys.exit()
 
