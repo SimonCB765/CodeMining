@@ -126,22 +126,31 @@ def main(args):
     # Determine the codes in the dataset that will be used. #
     #=======================================================#
     # Determine the number of different patients that each code occurs with.
-    codeFrequencies = collections.defaultdict(int)  # Mapping recording the number of patients each code occurs with.
+    patientsPerCode = collections.defaultdict(int)  # Mapping recording the number of patients each code occurs with.
+    codesPerPatient = collections.defaultdict(int)  # Mapping recording the number of codes each patient occurs with.
     with open(fileDataset, 'r') as readDataset:
         for line in readDataset:
             # As each line records all occurrences of a patient and a specific code (i.e. the code/patient pair should appear nowhere else in the file),
             # you can simply add one to the record of the number of patients the code appears with.
             lineChunks = line.split('\t')
-            codeFrequencies[lineChunks[1]] += 1
+            patientsPerCode[lineChunks[1]] += 1
+            codesPerPatient[lineChunks[0]] += 1
 
     # Record the number of patients per code.
-    fileCodeFrequencies = dirResults + "/PatientsPerCode.tsv"  # File storing the number of patients each code is found in.
-    with open(fileCodeFrequencies, 'w') as writeCodeFrequencies:
-        for i in sorted(codeFrequencies):
-            writeCodeFrequencies.write("{0:s}\t{1:d}\n".format(i, codeFrequencies[i]))
+    filePatientsPerCode = dirResults + "/PatientsPerCode.tsv"  # File storing the number of patients each code is found in.
+    with open(filePatientsPerCode, 'w') as writePatientsPerCode:
+        for i in sorted(patientsPerCode):
+            writePatientsPerCode.write("{0:s}\t{1:d}\n".format(i, patientsPerCode[i]))
+
+    # Record the number of codes per patient.
+    fileCodesPerPatient = dirResults + "/CodesPerPatient.tsv"  # File storing the number of codes each patient is found in.
+    with open(fileCodesPerPatient, 'w') as writeCodesPerPatient:
+        for i in sorted(codesPerPatient):
+            writeCodesPerPatient.write("{0:s}\t{1:d}\n".format(i, codesPerPatient[i]))
+    del codesPerPatient  # Delete to free up space.
 
     # Determine the codes that occur frequently enough to be used.
-    codesToUse = set([i for i in codeFrequencies if codeFrequencies[i] >= minPatientsPerCode])
+    codesToUse = set([i for i in patientsPerCode if patientsPerCode[i] >= minPatientsPerCode])
 
     # Create and record the mapping from codes that are being used to their indices.
     codeToIndexMap = dict([(x, ind) for ind, x in enumerate(codesToUse)])
@@ -323,6 +332,32 @@ def main(args):
             singleClassCodes = codesInClass - codesNotInClass  # The codes only present in examples of class i.
             trainingCodeIndices -= singleClassCodes  # Remove the codes that are only present in class i from the list of codes to use for training.
     trainingCodeIndices = list(trainingCodeIndices)
+
+
+    import time
+    from sklearn.linear_model import ElasticNetCV
+    start = time.process_time()
+    print(start)
+    enet = ElasticNetCV(cv=4).fit(dataMatrix, targetVector)
+    end = time.process_time()
+    print(sorted(enet.coef_[enet.coef_ != 0.0])[:10])
+    print(enet.alpha_)
+    print(enet.intercept_)
+    print(start, end, end-start)
+
+    sys.exit()
+
+    # Create the target matrix for the initial model.
+    # This will be a matrix with one row per patient being used, and one column per class.
+    # targetMatrix[i, j] == 1 if patient i belongs to class j, else targetMatrix[i, j] == 0.
+    targetMatrix = numpy.zeros((dataMatrix.shape[0], len(classExamples)))
+    for i in range(dataMatrix.shape[0]):
+        targetMatrix[i, mapClassToNumber[mapPatientsToClass[i]]] = 1
+    print(targetMatrix)
+    print(sum(targetMatrix))
+    print(mapClassToNumber)
+    pls2 = PLSRegression(n_components=2)
+    pls2.fit(dataMatrix, targetMatrix)
 
 
 def extract_child_codes(parentCodes, allCodes):
