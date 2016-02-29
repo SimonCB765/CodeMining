@@ -32,6 +32,7 @@ def main(args):
     parser.add_argument("-m", "--comp", type=int, default=10, help="Maximum number of PLS components to test.")
     parser.add_argument("-o", "--outDir", default="Results", help="Directory where the results should be recorded.")
     parser.add_argument("-i", "--infrequent", type=int, default=50, help="Minimum number of patients that a code must appear in before it will be used.")
+    parser.add_argument("-d", "--density", type=int, default=0, help="Minimum number of unique FREQUENTLY COCCURING codes that a patient must have in their record to be used.")
     args = parser.parse_args()
 
     fileDataset = args.dataset
@@ -42,6 +43,7 @@ def main(args):
     maxComponents = args.comp
     dirResults = args.outDir
     minPatientsPerCode = args.infrequent
+    codeDensity = args.density
 
     #========================================#
     # Process and validate the user's input. #
@@ -202,8 +204,8 @@ def main(args):
             # their record contains a code in codesToUse (i.e. a frequently occurring code).
             if currentPatientID != patientID:
                 # A new patient has been encountered.
-                if currentPatientRecord:
-                    # The patient has at least one entry in their record with a frequently occurring code (as currentPatientRecord only
+                if len(currentPatientRecord) >= codeDensity:
+                    # The patient has at least codeDensity entries in their record with a frequently occurring code (as currentPatientRecord only
                     # contains lines from the patient's record that contain a code in codesToUse).
                     if len(classesOfPatient) == 1:
                         # The patient belongs to exactly ONE class.
