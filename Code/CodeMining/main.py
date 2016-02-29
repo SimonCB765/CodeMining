@@ -34,6 +34,7 @@ def main(args):
     parser.add_argument("-o", "--outDir", default="Results", help="Directory where the results should be recorded.")
     parser.add_argument("-i", "--infrequent", type=int, default=50, help="Minimum number of patients that a code must appear in before it will be used.")
     parser.add_argument("-c", "--codeDensity", type=int, default=0, help="Minimum number of unique FREQUENTLY COCCURING codes that a patient must have in their record to be used.")
+    parser.add_argument("-s", "--suppress", action='store_true', default=False, help="Whether codes that only appear in one class should not be used for training.")
     args = parser.parse_args()
 
     fileDataset = args.dataset
@@ -45,6 +46,7 @@ def main(args):
     dirResults = args.outDir
     minPatientsPerCode = args.infrequent
     codeDensity = args.codeDensity
+    isOneClassCodesIgnored = args.suppress
 
     #========================================#
     # Process and validate the user's input. #
@@ -293,11 +295,30 @@ def main(args):
     dataMatrix = sparse.coo_matrix((numpy.ones(len(dataMatrix["Patients"])), (dataMatrix["Patients"], dataMatrix["Codes"])))
     dataMatrix = sparse.csr_matrix(dataMatrix)  # CSR is more efficient for computations and has sorted row indices.
     ambiguousMatrix = sparse.coo_matrix((numpy.ones(len(ambiguousMatrix["Patients"])), (ambiguousMatrix["Patients"], ambiguousMatrix["Codes"])))
-    ambiguousMatrix = sparse.csr_matrix(ambiguousMatrix)  # CSR is more efficient for computations and has sorted row indices.
+    ambiguousMatrix = sparse.csc_matrix(ambiguousMatrix)  # CSC is more efficient for computations and has sorted column indices.
 
     #=================================#
     # Train the initial PLS-DA model. #
     #=================================#
+    # Create the target vector.
+    targetVector = []
+    for i in range(dataMatrix.shape[0]):
+        targetVector.append(mapClassToNumber[mapPatientsToClass[i]])
+    targetVector = numpy.array(targetVector)
+
+    # Determine which codes should be suppressed (if any).
+    trainingCodeIndices = set(codeToIndexMap.values())  # The indices of the codes to use for training.
+    if isOneClassCodesIgnored:
+        # Codes should not be used for training if they appear in only one class.
+        for i in classes:
+            # Find codes that are in class i and one of the other classes
+            examplesInClass = (targetVector == mapClassToNumber[i])  # Boolean array indicating whether an example is in class i.
+            examplesNotInClass = numpy.logical_not(examplesInClass)  # Boolean array indicating whether an example is NOT in class i.
+            codesInClass = set(sparse.find(dataMatrix[examplesInClass, :])[1])  # Indices of codes that are in an example of class i.
+            codesNotInClass = set(sparse.find(dataMatrix[examplesNotInClass, :])[1])  # Indices of codes that are in an example of class that is NOT i.
+            singleClassCodes = codesInClass - codesNotInClass  # The codes only present in examples of class i.
+            trainingCodeIndices -= singleClassCodes  # Remove the codes that are only present in class i from the list of codes to use for training.
+    trainingCodeIndices = list(trainingCodeIndices)
 
 
 def extract_child_codes(parentCodes, allCodes):
