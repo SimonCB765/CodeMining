@@ -291,11 +291,15 @@ def main(args):
         for j in classExamples[i]:
             mapPatientsToClass[j] = i
 
-    # Convert the data matrices to an appropriate sparse matrix format.
+    # Convert the data matrix to an appropriate sparse matrix format.
     dataMatrix = sparse.coo_matrix((numpy.ones(len(dataMatrix["Patients"])), (dataMatrix["Patients"], dataMatrix["Codes"])))
     dataMatrix = sparse.csr_matrix(dataMatrix)  # CSR is more efficient for computations and has sorted row indices.
-    ambiguousMatrix = sparse.coo_matrix((numpy.ones(len(ambiguousMatrix["Patients"])), (ambiguousMatrix["Patients"], ambiguousMatrix["Codes"])))
-    ambiguousMatrix = sparse.csc_matrix(ambiguousMatrix)  # CSC is more efficient for computations and has sorted column indices.
+
+    # Convert the ambiguous example matrix to an appropriate sparse matrix format (if there are any ambiguous examples).
+    isAmbiguousExamples = len(ambiguousMatrix["Patients"]) != 0
+    if isAmbiguousExamples:
+        ambiguousMatrix = sparse.coo_matrix((numpy.ones(len(ambiguousMatrix["Patients"])), (ambiguousMatrix["Patients"], ambiguousMatrix["Codes"])))
+        ambiguousMatrix = sparse.csc_matrix(ambiguousMatrix)  # CSC is more efficient for computations and has sorted column indices.
 
     #=================================#
     # Train the initial PLS-DA model. #
