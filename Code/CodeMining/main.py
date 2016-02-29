@@ -285,6 +285,14 @@ def main(args):
         print('\n'.join(emptyClasses))
         sys.exit()
 
+    # Create a mapping from patient indices to the class of the patient.
+    mapPatientsToClass = {}  # A mapping from the patient indices to the class they belong.
+    mapClassToNumber = {}  # A mapping from each class to the integer used to represent it.
+    for ind, i in enumerate(classExamples):
+        mapClassToNumber[i] = ind
+        for j in classExamples[i]:
+            mapPatientsToClass[j] = i
+
     # Convert the data matrices to an appropriate sparse matrix format.
     dataMatrix = sparse.coo_matrix((numpy.ones(len(dataMatrix["Patients"])), (dataMatrix["Patients"], dataMatrix["Codes"])))
     dataMatrix = sparse.csr_matrix(dataMatrix)  # CSR is more efficient for computations and has sorted row indices.
