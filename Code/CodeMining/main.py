@@ -1,11 +1,11 @@
 import argparse
 import collections
+import extract_child_codes
 import functools
 import itertools
 import json
 import numpy
 import os
-import re
 from scipy import sparse
 from sklearn.cross_decomposition import PLSRegression
 import sys
@@ -166,7 +166,7 @@ def main(args):
         for j in jsonClasses[i]:
             if j.get("GetChildren") and (j["GetChildren"].lower() == 'y'):
                 # Get child codes of the current code if the class definition requests it.
-                matchingCodes = extract_child_codes([j["Code"]], codesToUse)  # Get all frequent codes that are children of the current code.
+                matchingCodes = extract_child_codes.main([j["Code"]], codesToUse)  # Get all frequent codes that are children of the current code.
                 matchingCodes = [codeToIndexMap[k] for k in matchingCodes]  # Convert codes to code indices.
             else:
                 # No need to get child codes, just use the parent.
@@ -358,26 +358,6 @@ def main(args):
     print(mapClassToNumber)
     pls2 = PLSRegression(n_components=2)
     pls2.fit(dataMatrix, targetMatrix)
-
-
-def extract_child_codes(parentCodes, allCodes):
-    """Extract all codes that are beneath the parent codes in the code hierarchy.
-
-    A code (b) is 'beneath' another one (a) if b[:len(a)] == a.
-    Example:
-        parentCodes = ["ABC", "XYZ"]
-        allCodes = ["ABCD", "ABC12", "1ABC", "AB", "XYZ", "XYZ01", "DEF12"]
-        return = ["ABCD", "ABC12", "XYZ", "XYZ01"]
-
-    :param parentCodes:     The codes at the root of the hierarchy substree(s) to be extracted.
-    :type parentCodes:      list
-    :param allCodes:        The codes to search for children in. Each code should appear once.
-    :type allCodes:         list
-
-    """
-
-    regex = re.compile('|'.join(parentCodes))  # Compiled regular expression pattern code1|code2|code3|...|codeN.
-    return [i for i in allCodes if regex.match(i)]
 
 
 if __name__ == '__main__':
