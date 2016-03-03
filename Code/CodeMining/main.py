@@ -26,11 +26,7 @@ def main(args):
         description="===============PLS used for code mining==================",
         epilog="===============Stuff about looking at the README and yadda yadda==========\nAssumptions on data - PAtientID\tCode pair only occurs once in file\nAll of a patients record is consecutive========")
     parser.add_argument("dataset", help="Location of the dataset to train the algorithm on.")
-    parser.add_argument("codeMap", help="Location of the file containing the mapping between codes and their descriptions.")
     parser.add_argument("classes", help="Location of the JSON format file containing the class definitions.")
-    parser.add_argument("-f", "--folds", type=int, default=10, help="Number of folds to use in the cross validation process that optimises the model.")
-    parser.add_argument("-d", "--discard", type=float, default=0.0, help="=================================")
-    parser.add_argument("-m", "--comp", type=int, default=10, help="Maximum number of PLS components to test.")
     parser.add_argument("-o", "--outDir", default="Results", help="Directory where the results should be recorded.")
     parser.add_argument("-i", "--infrequent", type=int, default=50, help="Minimum number of patients that a code must appear in before it will be used.")
     parser.add_argument("-c", "--codeDensity", type=int, default=0, help="Minimum number of unique FREQUENTLY COCCURING codes that a patient must have in their record to be used.")
@@ -38,11 +34,7 @@ def main(args):
     args = parser.parse_args()
 
     fileDataset = args.dataset
-    fileCodeMap = args.codeMap
     fileClasses = args.classes
-    foldsToUse = args.folds
-    discardThreshold = args.discard
-    maxComponents = args.comp
     dirResults = args.outDir
     minPatientsPerCode = args.infrequent
     codeDensity = args.codeDensity
@@ -56,18 +48,6 @@ def main(args):
     if not os.path.isfile(fileDataset):
         # The input dataset must exist to continue.
         errorsFound.append("The dataset file does not exist.")
-    if not os.path.isfile(fileCodeMap):
-        # The mapping from codes to their descriptions must exist.
-        errorsFound.append("The code mappings file does not exist.")
-    if foldsToUse < 2:
-        # Cross validation can only take place with at least 2 folds.
-        errorsFound.append("A minimum of 2 cross validation folds is needed.")
-    if (discardThreshold < 0.0) or (discardThreshold > 1.0):
-        # It makes no sense to have a discard threshold outside the range [0.0, 1.0].
-        errorsFound.append("The discard threshold must be between 0.0 and 1.0.")
-    if maxComponents < 1:
-        # PLS needs at least one component.
-        errorsFound.append("The maximum number of components must be at least 1.")
     if not os.path.exists(dirResults):
         # If the results directory does not exist, then it must be able to be created.
         try:
@@ -105,13 +85,6 @@ def main(args):
         print('\n'.join(errorsFound))
         sys.exit()
 
-    # Extract the code mapping.
-    codeMapping = {}  # The mapping from codes to their descriptions.
-    with open(fileCodeMap, 'r') as readCodeMap:
-        for line in readCodeMap:
-            lineChunks = (line.strip()).split('\t')
-            codeMapping[lineChunks[0]] = lineChunks[1]
-
     # Setup directory to record the indexed dataset.
     dirIndexedData = dirResults + "/IndexedData"  # Directory containing the indexed subset of the input dataset.
     if not os.path.isdir(dirIndexedData):
@@ -136,21 +109,22 @@ def main(args):
             patientsPerCode[lineChunks[1]] += 1
             codesPerPatient[lineChunks[0]] += 1
 
-    # Record the number of patients per code.
-    filePatientsPerCode = dirResults + "/PatientsPerCode.tsv"  # File storing the number of patients each code is found in.
-    with open(filePatientsPerCode, 'w') as writePatientsPerCode:
-        for i in sorted(patientsPerCode):
-            writePatientsPerCode.write("{0:s}\t{1:d}\n".format(i, patientsPerCode[i]))
-
-    # Record the number of codes per patient.
-    fileCodesPerPatient = dirResults + "/CodesPerPatient.tsv"  # File storing the number of codes each patient is found in.
-    with open(fileCodesPerPatient, 'w') as writeCodesPerPatient:
-        for i in sorted(codesPerPatient):
-            writeCodesPerPatient.write("{0:s}\t{1:d}\n".format(i, codesPerPatient[i]))
-    del codesPerPatient  # Delete to free up space.
-
     # Determine the codes that occur frequently enough to be used.
     codesToUse = set([i for i in patientsPerCode if patientsPerCode[i] >= minPatientsPerCode])
+
+    # Record the number of patients per code and whether the code was used.
+    filePatientsPerCode = dirResults + "/CodeStats.tsv"  # File storing the number of patients each code is found in.
+    with open(filePatientsPerCode, 'w') as writePatientsPerCode:
+        writePatientsPerCode.write("Code\tNumPatients\tCodeUsed\n")
+        for i in sorted(patientsPerCode):
+            writePatientsPerCode.write("{0:s}\t{1:d}\t{2:s}\n".format(i, patientsPerCode[i], ('Y' if patientsPerCode[i] >= minPatientsPerCode else 'N')))
+
+    # Record the number of codes per patient.
+    fileCodesPerPatient = dirResults + "/PatientStats.tsv"  # File storing the number of codes each patient is found in.
+    with open(fileCodesPerPatient, 'w') as writeCodesPerPatient:
+        writeCodesPerPatient.write("Patient\tNumCodes\n")
+        for i in sorted(codesPerPatient):
+            writeCodesPerPatient.write("{0:s}\t{1:d}\n".format(i, codesPerPatient[i]))
 
     # Create and record the mapping from codes that are being used to their indices.
     codeToIndexMap = dict([(x, ind) for ind, x in enumerate(codesToUse)])
@@ -334,6 +308,8 @@ def main(args):
     trainingCodeIndices = list(trainingCodeIndices)
 
 
+    sys.exit()
+
     import time
     from sklearn.linear_model import ElasticNetCV
     start = time.process_time()
@@ -344,8 +320,6 @@ def main(args):
     print(enet.alpha_)
     print(enet.intercept_)
     print(start, end, end-start)
-
-    sys.exit()
 
     # Create the target matrix for the initial model.
     # This will be a matrix with one row per patient being used, and one column per class.
