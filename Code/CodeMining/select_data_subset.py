@@ -1,18 +1,13 @@
 import argparse
 import collections
 import extract_child_codes
-import functools
-import itertools
 import json
-import numpy
 import os
-from scipy import sparse
-from sklearn.cross_decomposition import PLSRegression
 import sys
 
 
-def main(args):
-    """Runs the code mining.
+def select_data_subset(args):
+    """Selects a subset of the input data that meets given criteria.
 
     :param args:    The command line arguments.
     :type args:     list
@@ -145,20 +140,10 @@ def main(args):
     # to the cut down dataset will be those that contain a code that occurs frequently enough to be used AND are
     # for a patient belonging to one of the classes. Ambiguous patients (those that belong to more than one class)
     # will be entered into a separate dataset.
-
-    # Define the initial formats for the training and ambiguous matrices.
-    # The "Patients" and "Codes" lists will contain paired patient and code indices to use when indexing the data matrices, and will be the same length.
-    # For example, (dataMatrix["Patients"][i], dataMatrix["Codes"][i]) will be an index into the data matrix indicating that the patient with index
-    # dataMatrix["Patients"][i] has code with index dataMatrix["Codes"][i] in their record.
-    # The lists will be used to construct sparse matrices for the training and predictions.
-    dataMatrix = {"Patients" : [], "Codes" : []}
-    ambiguousMatrix = {"Patients" : [], "Codes" : []}
-
     currentPatientID = ''  # The ID of the current patient having their record examined.
     currentPatientRecord = []  # A list containing all rows of the current patient's record with a code in codesToUse (i.e. a frequently occurring code).
     classesOfPatient = set([])  # The classes that the current patient being looked at belongs to.
     classExamples = dict([(i, set([])) for i in classes])  # The IDs of the patients that belong to each class.
-    
     with open(fileDataset, 'r') as readDataset, open(fileCutDownDataset, 'w') as writeCutDownDataset, \
          open(fileAmbigDataset, 'w') as writeAmbigDataset:
         for line in readDataset:
@@ -178,21 +163,15 @@ def main(args):
                     if len(classesOfPatient) == 1:
                         # The patient belongs to exactly ONE class.
                         classExamples[classesOfPatient.pop()].add(currentPatientID)
-                        dataMatrix["Patients"].extend([currentPatientID] * len(currentPatientRecord))
-                        dataMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
                         for i in currentPatientRecord:
                             writeCutDownDataset.write("{0:s}\t{1:s}\t{2:s}\n".format(currentPatientID, i["Code"], i["Count"]))
                     elif len(classesOfPatient) > 1:
                         # The patient is ambiguous as they belong to multiple classes.
-                        ambiguousMatrix["Patients"].extend([currentPatientID] * len(currentPatientRecord))
-                        ambiguousMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
                         for i in currentPatientRecord:
                             writeAmbigDataset.write("{0:s}\t{1:s}\t{2:s}\n".format(currentPatientID, i["Code"], i["Count"]))
                     elif isCollectorClass:
                         # The patient did not belong to any classes, but there is a collector class.
                         classExamples[collectorClass].add(currentPatientID)
-                        dataMatrix["Patients"].extend([currentPatientID] * len(currentPatientRecord))
-                        dataMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
                         for i in currentPatientRecord:
                             writeCutDownDataset.write("{0:s}\t{1:s}\t{2:s}\n".format(currentPatientID, i["Code"], i["Count"]))
                 # Reset values for the next patient.
@@ -218,21 +197,15 @@ def main(args):
             if len(classesOfPatient) == 1:
                 # The patient belongs to exactly ONE class.
                 classExamples[classesOfPatient.pop()].add(currentPatientID)
-                dataMatrix["Patients"].extend([currentPatientID] * len(currentPatientRecord))
-                dataMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
                 for i in currentPatientRecord:
                     writeCutDownDataset.write("{0:s}\t{1:s}\t{2:s}\n".format(currentPatientID, i["Code"], i["Count"]))
             elif len(classesOfPatient) > 1:
                 # The patient is ambiguous as they belong to multiple classes.
-                ambiguousMatrix["Patients"].extend([currentPatientID] * len(currentPatientRecord))
-                ambiguousMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
                 for i in currentPatientRecord:
                     writeAmbigDataset.write("{0:s}\t{1:s}\t{2:s}\n".format(currentPatientID, i["Code"], i["Count"]))
             elif isCollectorClass:
                 # The patient did not belong to any classes, but there is a collector class.
                 classExamples[collectorClass].add(currentPatientID)
-                dataMatrix["Patients"].extend([currentPatientID] * len(currentPatientRecord))
-                dataMatrix["Codes"].extend([i["Code"] for i in currentPatientRecord])
                 for i in currentPatientRecord:
                     writeCutDownDataset.write("{0:s}\t{1:s}\t{2:s}\n".format(currentPatientID, i["Code"], i["Count"]))
 
@@ -242,75 +215,6 @@ def main(args):
         print("\n\nThe following classes contain no examples that are not ambiguous:\n")
         print('\n'.join(emptyClasses))
         sys.exit(patientID)
-
-    sys.exit()
-
-    # Create a mapping from patient indices to the class of the patient.
-    mapPatientsToClass = {}  # A mapping from the patient indices to the class they belong.
-    mapClassToNumber = {}  # A mapping from each class to the integer used to represent it.
-    for ind, i in enumerate(classExamples):
-        mapClassToNumber[i] = ind
-        for j in classExamples[i]:
-            mapPatientsToClass[j] = i
-
-    # Convert the data matrix to an appropriate sparse matrix format.
-    dataMatrix = sparse.coo_matrix((numpy.ones(len(dataMatrix["Patients"])), (dataMatrix["Patients"], dataMatrix["Codes"])))
-    dataMatrix = sparse.csr_matrix(dataMatrix)  # CSR is more efficient for computations and has sorted row indices.
-
-    # Convert the ambiguous example matrix to an appropriate sparse matrix format (if there are any ambiguous examples).
-    isAmbiguousExamples = len(ambiguousMatrix["Patients"]) != 0
-    if isAmbiguousExamples:
-        ambiguousMatrix = sparse.coo_matrix((numpy.ones(len(ambiguousMatrix["Patients"])), (ambiguousMatrix["Patients"], ambiguousMatrix["Codes"])))
-        ambiguousMatrix = sparse.csc_matrix(ambiguousMatrix)  # CSC is more efficient for computations and has sorted column indices.
-
-    #=================================#
-    # Train the initial PLS-DA model. #
-    #=================================#
-    # Create the target vector.
-    targetVector = []
-    for i in range(dataMatrix.shape[0]):
-        targetVector.append(mapClassToNumber[mapPatientsToClass[i]])
-    targetVector = numpy.array(targetVector)
-
-    # Determine which codes should be suppressed (if any).
-    trainingCodeIndices = set(codeToIndexMap.values())  # The indices of the codes to use for training.
-    if isOneClassCodesIgnored:
-        # Codes should not be used for training if they appear in only one class.
-        for i in classes:
-            # Find codes that are in class i and one of the other classes
-            examplesInClass = (targetVector == mapClassToNumber[i])  # Boolean array indicating whether an example is in class i.
-            examplesNotInClass = numpy.logical_not(examplesInClass)  # Boolean array indicating whether an example is NOT in class i.
-            codesInClass = set(sparse.find(dataMatrix[examplesInClass, :])[1])  # Indices of codes that are in an example of class i.
-            codesNotInClass = set(sparse.find(dataMatrix[examplesNotInClass, :])[1])  # Indices of codes that are in an example of class that is NOT i.
-            singleClassCodes = codesInClass - codesNotInClass  # The codes only present in examples of class i.
-            trainingCodeIndices -= singleClassCodes  # Remove the codes that are only present in class i from the list of codes to use for training.
-    trainingCodeIndices = list(trainingCodeIndices)
-
-
-    sys.exit()
-
-    import time
-    from sklearn.linear_model import ElasticNetCV
-    start = time.process_time()
-    print(start)
-    enet = ElasticNetCV(cv=4).fit(dataMatrix, targetVector)
-    end = time.process_time()
-    print(sorted(enet.coef_[enet.coef_ != 0.0])[:10])
-    print(enet.alpha_)
-    print(enet.intercept_)
-    print(start, end, end-start)
-
-    # Create the target matrix for the initial model.
-    # This will be a matrix with one row per patient being used, and one column per class.
-    # targetMatrix[i, j] == 1 if patient i belongs to class j, else targetMatrix[i, j] == 0.
-    targetMatrix = numpy.zeros((dataMatrix.shape[0], len(classExamples)))
-    for i in range(dataMatrix.shape[0]):
-        targetMatrix[i, mapClassToNumber[mapPatientsToClass[i]]] = 1
-    print(targetMatrix)
-    print(sum(targetMatrix))
-    print(mapClassToNumber)
-    pls2 = PLSRegression(n_components=2)
-    pls2.fit(dataMatrix, targetMatrix)
 
 
 if __name__ == '__main__':
