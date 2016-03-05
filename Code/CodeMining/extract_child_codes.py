@@ -14,7 +14,7 @@ def main(parentCodes, allCodes):
     :param allCodes:        The codes to search for children in. Each code should appear once.
     :type allCodes:         list
     :returns :              The parent codes and their child codes.
-    :rtype :                 list
+    :rtype :                list
 
     """
 
