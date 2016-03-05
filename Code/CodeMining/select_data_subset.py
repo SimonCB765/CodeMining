@@ -79,6 +79,15 @@ def select_data_subset(fileDataset, jsonClasses, dirResults="Results", minPatien
             classes[i].extend(matchingCodes)  # Add the codes to the list of codes defining class i.
             mapCodesToClass.update(dict([(k, i) for k in matchingCodes]))  # Update with the class of the child codes found.
 
+    # Record parameters used.
+    fileParameters = dirResults + "/Parameters.txt"
+    with open(fileParameters, 'w') as writeParameters:
+        writeParameters.write("minPatientsPerCode: {0:d}\n".format(minPatientsPerCode))
+        writeParameters.write("codeDensity: {0:d}\n".format(codeDensity))
+        writeParameters.write("Classes:\n")
+        for i in classes:
+            writeParameters.write("\t{0:s}: {1:s}\n".format(i, (','.join(classes[i]) if classes[i] else "Collector")))
+
     #==============================#
     # Create the cut down dataset. #
     #==============================#
