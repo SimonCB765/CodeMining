@@ -99,6 +99,7 @@ if __name__ == '__main__':
     parser.add_argument("-d", "--discard", type=float, default=0.0, help="=================================")
     parser.add_argument("-m", "--comp", type=int, default=10, help="Maximum number of PLS components to test.")
     parser.add_argument("-o", "--outDir", default="Results", help="Directory where the results should be recorded.")
+    parser.add_argument("-s", "--suppress", action='store_true', default=False, help="Set to prevent codes that only appear in one class from being used for training.")
     args = parser.parse_args()
 
     fileDataset = args.dataset
@@ -108,6 +109,7 @@ if __name__ == '__main__':
     discardThreshold = args.discard
     maxComponents = args.comp
     dirResults = args.outDir
+    isOneClassCodesIgnored = args.suppress
 
     #========================================#
     # Process and validate the user's input. #
