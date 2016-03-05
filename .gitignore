@@ -3,3 +3,9 @@ Data/*
 
 # Ignore all files in the Results directory.
 Results/*
+
+# Ignore all files in the Papers directory.
+Papers/*
+
+# Ignore compiled Python files.
+*.pyc
