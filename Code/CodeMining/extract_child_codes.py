@@ -19,4 +19,4 @@ def main(parentCodes, allCodes):
     """
 
     regex = re.compile('|'.join(parentCodes))  # Compiled regular expression pattern code1|code2|code3|...|codeN.
-    return [i for i in allCodes if regex.match(i)]
+    return [i for i in allCodes if regex.match(i)]  # .match() only matches at the beginning of the string.
