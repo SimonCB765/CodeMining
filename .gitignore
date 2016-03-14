@@ -9,3 +9,6 @@ Papers/*
 
 # Ignore compiled Python files.
 *.pyc
+
+# Ignore PyCharm files.
+*.idea
