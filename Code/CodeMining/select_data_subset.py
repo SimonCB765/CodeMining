@@ -28,7 +28,13 @@ def select_data_subset(fileDataset, jsonClasses, dirResults="Results", minPatien
 
     # Setup the directory structure where the cut down dataset will be recorded.
     dirCutDownData = dirResults + "/CutDownData"  # Directory containing the cut down subset of the input dataset.
-    if not os.path.isdir(dirCutDownData):
+    if os.path.exists(dirCutDownData):
+        if not os.path.isdir(dirCutDownData):
+            # Location exists but is not a directory.
+            print("Location {0:s} exists but is not a directory.".format(dirCutDownData))
+            sys.exit()
+    else:
+        # Create the directory as the location is free.
         os.mkdir(dirCutDownData)
     fileCutDownDataset = dirCutDownData + "/CutDownPatientData.tsv"  # The cut down subset of the input dataset.
     fileAmbigDataset = dirCutDownData + "/AmbiguousPatientData.tsv"  # File containing patients that would be in the cut down dataset, but belong to multiple classes.
