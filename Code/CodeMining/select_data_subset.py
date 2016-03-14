@@ -1,9 +1,10 @@
-import argparse
+# Python imports.
 import collections
-import extract_child_codes
-import json
 import os
 import sys
+
+# User imports.
+import extract_child_codes
 
 
 def select_data_subset(fileDataset, jsonClasses, dirResults="Results", minPatientsPerCode=50, codeDensity=0, isCollectorClass=False, collectorClass=None):
@@ -178,72 +179,4 @@ def select_data_subset(fileDataset, jsonClasses, dirResults="Results", minPatien
         print('\n'.join(emptyClasses))
         sys.exit()
 
-
-if __name__ == '__main__':
-    #=========================#
-    # Parse the user's input. #
-    #=========================#
-    parser = argparse.ArgumentParser(
-        description="Parser to generate a specified subset of a dataset of clinical codes.",
-        epilog="For further details and requirements please see the README.")
-    parser.add_argument("dataset", help="Location of the dataset to generate the subset from.")
-    parser.add_argument("classes", help="Location of the JSON format file containing the class definitions.")
-    parser.add_argument("-o", "--outDir", default="Results", help="Directory where the subset and dataset statistics should be recorded.")
-    parser.add_argument("-i", "--infrequent", type=int, default=50, help="Minimum number of patients that a code must appear in before it will be kept in the subset.")
-    parser.add_argument("-c", "--codeDensity", type=int, default=0, help="Minimum number of unique FREQUENTLY COCCURING codes required for a patient before they are kept in the subset..")
-    args = parser.parse_args()
-
-    fileDataset = args.dataset  # File containing the input dataset to create the subset of.
-    fileClasses = args.classes  # JSON file containing the codes used to determine classes.
-    dirResults = args.outDir  # Location to save the generated subset.
-    minPatientsPerCode = args.infrequent  # The minimum number of patients that a code must be associated with before it is kept in the subset.
-    codeDensity = args.codeDensity  # The minimum number of unique codes in a patient's record meeting the minPatientsPerCode criterion needed before they are recorded in the subset.
-
-    #========================================#
-    # Process and validate the user's input. #
-    #========================================#
-    errorsFound = []  # List recording all error messages to display.
-
-    if not os.path.isfile(fileDataset):
-        # The input dataset must exist to continue.
-        errorsFound.append("The dataset file does not exist.")
-    if not os.path.exists(dirResults):
-        # If the results directory does not exist, then it must be able to be created.
-        try:
-            os.mkdir(dirResults)
-        except OSError as err:
-            errorsFound.append("Error creating results directory: {0}".format(err))
-
-    # Process the class information provided.
-    if not os.path.isfile(fileClasses):
-        # The mapping from codes to their descriptions must exist.
-        errorsFound.append("The file of classes does not exist.")
-    else:
-        readClasses = open(fileClasses, 'r')
-        jsonClasses = json.load(readClasses)
-        readClasses.close()
-        classesWithoutCodes = [i for i in jsonClasses if not jsonClasses[i]]  # Names of all classes without codes.
-
-        # Determine whether there are any errors in the class file itself.
-        isCollectorClass = False  # Whether there is a class with no codes that will be used to collect all examples not belonging to the other classes.
-        collectorClass = None  # The class to use as a collector.
-        if len(classesWithoutCodes) == 1:
-            # There is one class that will contain all examples that do not belong to another class.
-            isCollectorClass = True
-            collectorClass = classesWithoutCodes[0]
-        elif len(classesWithoutCodes) > 1:
-            # There can be at most one class without supplied codes.
-            errorsFound.append("The maximum number of classes without provided codes is 1. Classes without supplied codes were: {0:s}".format(','.join(classesWithoutCodes)))
-        if len(set(jsonClasses)) < len(jsonClasses):
-            # Not all class names are unique.
-            nonUniqueNames = [i for i in classNameOccurences if classNameOccurences[i] > 1]
-            errorsFound.append("Not all class names are unique. Classes without unique names were: {0:s}".format(','.join(nonUniqueNames)))
-
-    # Exit if errors were found.
-    if errorsFound:
-        print("\n\nThe following errors were encountered while parsing the input parameters:\n")
-        print('\n'.join(errorsFound))
-        sys.exit()
-
-    # Generate the subset.
-    select_data_subset(fileDataset, jsonClasses, dirResults, minPatientsPerCode, codeDensity, isCollectorClass, collectorClass)
+    return [fileCutDownDataset, fileAmbigDataset]

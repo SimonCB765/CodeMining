@@ -4,8 +4,10 @@ import string
 import sys
 
 
-def parse_and_clean(dataset, outputDir, delimiter='\t', colsToStripCommas=None, colsToRemove=None, colsToUnbookend=None):
+def parse_and_clean(dataset, resultsDir, delimiter='\t', colsToStripCommas=None, colsToRemove=None, colsToUnbookend=None):
     """Parses and cleans the input dataset.
+
+    No checking of the inputs is performed.
 
     Assumptions made about the input dataset:
     1) Each patient-code pair occurs only once in the file (i.e. appears on only one line).
@@ -13,8 +15,8 @@ def parse_and_clean(dataset, outputDir, delimiter='\t', colsToStripCommas=None, 
 
     :param dataset:             Location of the file containing the input dataset.
     :type dataset:              string
-    :param outputDir:           Location to save the cleaned dataset and statistics about it.
-    :type outputDir:            string
+    :param resultsDir:          Location to save the cleaned data and statistics about it.
+    :type resultsDir:           string
     :param delimiter:           String used to separate columns in the dataset file.
     :type delimiter:            string
     :param colsToStripCommas:   Indices of columns that contain commas that need stripping out.
@@ -30,23 +32,25 @@ def parse_and_clean(dataset, outputDir, delimiter='\t', colsToStripCommas=None, 
                                 entries in column 2 are bookended by 'n' (e.g. nXXXXn) and that this bookending
                                     only occurs around entries starting with a number (e.g. n1234n but NOT nabcdn)
     :type colsToUnbookend:      list of lists
+    :return :                   The location where the parsed and cleaned dataset was written out.
+    :rtype :                    string
 
     """
 
-    # Create the output directory if needed.
-    if os.path.exists(outputDir):
-        if not os.path.isdir(outputDir):
+    # Create the stats directory if needed.
+    if os.path.exists(resultsDir):
+        if not os.path.isdir(resultsDir):
             # Location exists but is not a directory.
-            print("Location {0:s} exists but is not a directory.".format(outputDir))
+            print("Location {0:s} exists but is not a directory.".format(resultsDir))
             sys.exit()
     else:
         # Create the directory as the location is free.
-        os.mkdir(outputDir)
+        os.mkdir(resultsDir)
 
-    # Create the output files.
-    fileCleanedDataset = outputDir + "/ParsedDataset.tsv"
-    fileCodesPerPatient = outputDir + "/CodesPerPatient.tsv"
-    filePatientsPerCode = outputDir + "/PatientsPerCode.tsv"
+    # Create the statistics output files.
+    fileCleanedDataset = resultsDir + "/CleanedData.tsv"
+    fileCodesPerPatient = resultsDir + "/CodesPerPatient.tsv"
+    filePatientsPerCode = resultsDir + "/PatientsPerCode.tsv"
 
     # Process the input arguments.
     colsToStripCommas = colsToStripCommas if colsToStripCommas else []
@@ -66,9 +70,9 @@ def parse_and_clean(dataset, outputDir, delimiter='\t', colsToStripCommas=None, 
 
             # Unbookend entries.
             for ind, i in enumerate(lineChunks):
-                if ((ind in colsToUnbookend) and (i[0] == i[-1] == colsToUnbookend[ind][0])):
-                    # The column is being unbookended and the first and last character of the entry are the same
-                    # as the bookending character.
+                if ((ind in colsToUnbookend) and (len(i) >= 3) and (i[0] == i[-1] == colsToUnbookend[ind][0])):
+                    # The column is being unbookended, contains at least 3 characters and the first and last
+                    # character of the entry are the same as the bookending character.
                     if ((i[1] in string.digits) or colsToUnbookend[ind][1]):
                         # The first character of the entry is a number or we're unbookending every entry in the column.
                         lineChunks[ind] = lineChunks[ind][1:-1]
@@ -90,3 +94,5 @@ def parse_and_clean(dataset, outputDir, delimiter='\t', colsToStripCommas=None, 
     with open(filePatientsPerCode, 'w') as writePatientsPerCode:
         for i in sorted(patientsPerCode):
             writePatientsPerCode.write("{0:s}\t{1:d}\n".format(i, patientsPerCode[i]))
+
+    return fileCleanedDataset
