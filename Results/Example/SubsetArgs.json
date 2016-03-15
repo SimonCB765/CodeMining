@@ -1,0 +1,32 @@
+{
+    "MinCodeFrequency" : 50,
+    "MinPatientFrequency" : 10,
+    "Classes" :
+    {
+        "ClassA" :
+        [
+            {
+                "Code": "A",
+                "GetChildren": "Y"
+            },
+            {
+                "Code": "2BBK",
+                "GetChildren": "N"
+            }
+        ],
+        "ClassB" :
+        [
+            {
+                "Code": "C10F",
+                "GetChildren": "Y"
+            }
+        ],
+        "ClassC" :
+        [
+            {
+                "Code": "C10E"
+            }
+        ],
+        "Collector" : []
+    }
+}

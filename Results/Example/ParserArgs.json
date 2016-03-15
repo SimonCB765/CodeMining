@@ -1,0 +1,18 @@
+{
+    "Delimiter" : "\t",
+    "StripCommas" : [0, 1],
+    "RemoveCols" : [],
+    "Unbookend" :
+    [
+        {
+            "Column" : 1,
+            "String" : "n",
+            "IntOnly" : true
+        },
+        {
+            "Column" : 2,
+            "String" : "t",
+            "IntOnly" : false
+        }
+    ]
+}
