@@ -62,7 +62,7 @@ def main(args):
             readParserArgs.close()
 
             # Check that the delimiter is a string.
-            if (("Delimiter" in parserArgs) and (not isinstance(parserArgs["Delimiter"], str))):
+            if (("Delimiter" in parserArgs) and (not is_string(parserArgs["Delimiter"]))):
                 errorsFound.append("The parser delimiter must be a string.")
 
             # Check that strip commas is a list of integers.
@@ -75,12 +75,12 @@ def main(args):
 
             # Check that the columns to unbookend argument is correctly formatted.
             if "Unbookend" in parserArgs:
-                for i in parserArgs["Unbookend"]:
+                for ind, i in enumerate(parserArgs["Unbookend"]):
                     if not (("Column" in i) and ("String" in i) and ("IntOnly" in i)):
-                        errorsFound.append("The parser columns to unbookend is incorrectly formatted. Please see the README for the correct formatting.")
+                        errorsFound.append("Entry number {0:d} in the list of parser columns to unbookend is missing information.".format(ind))
                         break
-                    elif ((not isinstance(i["Column"], int)) or (not isinstance(i["String"], str)) or (not isinstance(i["IntOnly"], bool))):
-                        errorsFound.append("The parser columns to unbookend is incorrectly formatted. Please see the README for the correct formatting.")
+                    elif ((not isinstance(i["Column"], int)) or (not is_string(i["String"])) or (not isinstance(i["IntOnly"], bool))):
+                        errorsFound.append("Entry number {0:d} in the list of parser columns to unbookend has incorrect types.".format(ind))
                         break
 
     # Process the subset generator arguments (if supplied).
@@ -155,6 +155,13 @@ def main(args):
         # Generate the subset.
         [fileDataset, ambiguousDataset] = select_data_subset.select_data_subset(fileDataset, subsetArgs["Classes"], dirResults, minPatientsPerCode,
                                                                                 codeDensity, isCollectorClass, collectorClass)
+
+
+def is_string(objectToCheck):
+    """Determine whether objectToCheck is a string in both Python 2.x and 3.x."""
+
+    majorVersion = sys.version_info[0]  # Determine major version number.
+    return isinstance(objectToCheck, str) if (majorVersion == 3) else isinstance(objectToCheck, basestring)
 
 
 if __name__ == '__main__':
