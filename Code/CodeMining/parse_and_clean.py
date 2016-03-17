@@ -63,6 +63,8 @@ def parse_and_clean(dataset, resultsDir, delimiter='\t', colsToStripCommas=None,
     patientsPerCode = collections.defaultdict(int)
     with open(dataset, 'r') as readDataset, open(fileCleanedDataset, 'w') as writeCleanData:
         for line in readDataset:
+            line = re.sub("^[^a-zA-Z0-9]*", '', line)  # Some lines start with garbage hexadecimal characters.
+                                                       # Remove these by removing non alphanumeric characters.
             lineChunks = (line.strip()).split(delimiter)
 
             # Strip commas.
