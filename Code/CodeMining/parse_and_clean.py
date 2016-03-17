@@ -85,7 +85,9 @@ def parse_and_clean(dataset, resultsDir, delimiter='\t', colsToStripCommas=None,
             patientsPerCode[lineChunks[1]] += 1
 
             # Rejoin the cleaned column entries, and then write them out.
-            writeCleanData.write('\t'.join(lineChunks) + '\n')
+            if all([len(i) > 0 for i in lineChunks]):
+                # Only write the line out if there are no blanks entries in it.
+                writeCleanData.write('\t'.join(lineChunks) + '\n')
 
     # Write out the records of patients per code and codes per patient.
     with open(fileCodesPerPatient, 'w') as writeCodesPerPatient:
