@@ -13,7 +13,6 @@ function [classExamples, classOfExamples, indicesOfTrainingExamples] = main_mini
     rng('default');
 
     % Determine the locations of the directories needed.
-    dirScript = pwd;  % Directory containing this script.
     dirProject = fileparts(pwd);  % Directory containing all code, data and results.
     dirData = strcat(dirProject, '/Data');  % Top level data directory.
     dirResults = strcat(dirProject, '/Results');  % Top level results directory.
@@ -186,7 +185,7 @@ function [classExamples, classOfExamples, indicesOfTrainingExamples] = main_mini
     if isColectorClass
         usedExamples = vertcat(classExamples{:});  % Examples that belong to a class already.
         availableExamples = setdiff(1:numel(uniquePatientIDs), usedExamples)';  % Examples that don't belong to a class.
-        classExamples{find(strcmp(classNames, collectorClass))} = availableExamples;
+        classExamples{strcmp(classNames, collectorClass)} = availableExamples;
     end
 
     % Select the codes that will be used for training.
@@ -238,9 +237,9 @@ function [classExamples, classOfExamples, indicesOfTrainingExamples] = main_mini
     missingClasses = classNames(numClassExamples == 0);
     if (~isempty(missingClasses))
         % There are missing classes.
-        errors = {}
+        errors = {};
         for i = 1:numel(missingClasses)
-            errors{end+1} = sprintf('Class %s contains no examples following the removal of ambiguous examples.', missingClasses{i})
+            errors{end+1} = sprintf('Class %s contains no examples following the removal of ambiguous examples.', missingClasses{i});
         end
         errorMessage = strjoin(errors, '\n');
         error(errorMessage);
