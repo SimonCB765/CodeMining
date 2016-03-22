@@ -1,8 +1,11 @@
-classdef RegMultinomialLogistic
+classdef RegMultinomialLogistic < handle
     % Class defining the methods used for performing regularised multinomial logistic regression.
 
     properties (SetAccess = private)
-        coefficients = [];  % Column vector of coefficients with an intercept as the first term.
+        coefficients = [];  % Matrix of coefficients (one column per class) with an intercept as the first term.
+        targetClasses = [];  % The classes sorted in the order of the columns in coefficients.
+                             % E.g. targetClasses(1) corresponds to the coefficients in coefficients(:, 1).
+        calc_logistic = @(data) 1./ (1 + exp(-data * weights));  % Calculate predicted values for logistic regression.
     end
     properties
         alpha = 0.01;
@@ -11,19 +14,37 @@ classdef RegMultinomialLogistic
         maxIter = 10;
     end
     methods
-        function calc_logistic(data)
-        end
-
-        function reset_coefficients()
+        function reset_coefficients(obj)
             % Resets the coefficients so the model can be retrained.
-            coefficients = [];
+            obj.coefficients = [];
         end
 
-        function test(testMatrix)
+        function set_parameters(obj, alpha, batchSize, lambda, maxIter)
+            % Convenience function to set all parameters at once.
+            obj.alpha = alpha;
+            obj.batchSize = batchSize;
+            obj.lambda = lambda;
+            obj.maxIter = maxIter;
         end
 
-        function train(trainingMatrix, target, referenceClass, recordDescent)
+        function [predictions] = test(obj, testMatrix)
+            % Generate predictions for examples in testMatrix.
+            %
+            % Keyword Arguments
+            % testMatrix - A NxM matrix of test examples. If there are C coefficients, then M + 1 == C.
+
+            numVariables = size(testMatrix, 1);
+            if numVariables ~= numel(obj.coefficients),
+                error('The test matrix has %d variables, but there are %d coefficients (including the bias).', ...
+                    numVariables, numel(obj.coefficients));
+            end;
+            predictions = obj.calc_logistic(testMatrix);
+        end
+
+        function train(obj, trainingMatrix, target, referenceClass, recordDescent)
             % Train the logistic regression model using a mini batch gradient descent approach.
+            %
+            % For multiple classes, the approach taken is a one vs all approach.
             %
             % Keyword Arguments
             % trainingMatrix - An NxM matrix containing the training examples.
@@ -36,9 +57,9 @@ classdef RegMultinomialLogistic
             if size(trainingMatrix, 1) ~= numel(target),
                 error('The training matrix and target vector have different numbers of examples.');
             end;
-            if isempty(coefficients)
-                % There should be one less set of coefficients than there are classes in the target array.
-                coefficients = zeros(1 + size(trainingMatrix, 2), numel(unique(target)) - 1);
+            if isempty(obj.coefficients)
+                % Create the matrix of coefficients. One column per class.
+                obj.coefficients = zeros(1 + size(trainingMatrix, 2), numel(unique(target)));
             end
             if nargin < 3 || isempty(referenceClass)
                 referenceClass = max(unique(target));
@@ -50,15 +71,6 @@ classdef RegMultinomialLogistic
     end
 
 end
-
-
-
-function h = reg_logistic_test(data, weights)
-
-n= size(data,1);
-data = [ones(n, 1) data]; %create the data matrix and add the bias
-%t = target(batch_begin(b):batch_end(b)); %target
-h = 1 ./ ( 1+ exp(- data * weights')); %logistic output
 
 
 function weights = reg_logistic_train(train_data, target, weights, alpha, lambda, batch_size, max_iter, debug)
