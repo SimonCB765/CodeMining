@@ -1,4 +1,4 @@
-function [classExamples, classOfExamples, indicesOfTrainingExamples] = main_mini_batch(fileParams)
+function [regLogModel, predictions, trainingTarget] = main_mini_batch(fileParams)
     % Perform clinical code identification using logistic regression.
     %
     % Checking is performed to ensure that the required parameters are present in the parameter file,
@@ -112,9 +112,10 @@ function [classExamples, classOfExamples, indicesOfTrainingExamples] = main_mini
     % Check whether there is a collector class.
     classesWithCodes = cellfun(@(x) numel(classCodes.(x)), classNames) == 0;
     numberNonCodeClasses = sum(classesWithCodes) == 1;
+    isCollectorClass = false;
     if numberNonCodeClasses == 1
         % There is a class with no codes. This class will contain all examples not belonging to another class.
-        isColectorClass = true;
+        isCollectorClass = true;
         collectorClass = classNames(classesWithCodes);
     elseif numberNonCodeClasses > 1
         % There are too many classes without codes.
@@ -157,7 +158,11 @@ function [classExamples, classOfExamples, indicesOfTrainingExamples] = main_mini
     % in their medical history).
     sparseRows = cell2mat(values(patientIndexMap, num2cell(data{1})));  % Array of row indices corresponding to patient IDs.
     sparseCols = cell2mat(values(codeIndexMap, data{2}));  % Array of column indices corresponding to codes.
+
+%%%%%
     dataMatrix = sparse(sparseRows, sparseCols, ones(numel(sparseCols), 1));
+%    dataMatrix = sparse(sparseRows, sparseCols, double(data{3}));
+%%%%%%
 
     % Determine the codes to use for partitioning the dataset into separate classes.
     % Extract child codes if needed, and discard codes that are not recorded in the dataset.
@@ -182,7 +187,7 @@ function [classExamples, classOfExamples, indicesOfTrainingExamples] = main_mini
     end
 
     % Add the examples for the collector class.
-    if isColectorClass
+    if isCollectorClass
         usedExamples = vertcat(classExamples{:});  % Examples that belong to a class already.
         availableExamples = setdiff(1:numel(uniquePatientIDs), usedExamples)';  % Examples that don't belong to a class.
         classExamples{strcmp(classNames, collectorClass)} = availableExamples;
@@ -245,30 +250,60 @@ function [classExamples, classOfExamples, indicesOfTrainingExamples] = main_mini
         error(errorMessage);
     end
 
-    % Create arrays that record the class of each example and the indices of the training examples.
+    % Remove the codes used to determine class membership from the dataset.
+    % Need to transpose the class code indices cell array as there is only a guarantee that they have the same number of columns,
+    % while a 1xN cell array would need all cells to have the same number of rows before cell2mat can be used.
+    dataMatrix(:, cell2mat(classCodeIndices')) = 0;
+
+    % Create an array that records the class of each example and one that records the indices of the training examples.
     classOfExamples = zeros(size(dataMatrix, 1), 1);
     for i = 1:numberOfClasses
         classOfExamples(classExamples{i}) = i;
     end
     indicesOfTrainingExamples = cell2mat(classExamples');
 
+    % Determine the model's training matrix and target array.
+    trainingMatrix = dataMatrix(indicesOfTrainingExamples, indicesOfTrainingCodes);  % Data subset containing only examples and codes to use for training.
+    trainingTarget = classOfExamples(indicesOfTrainingExamples);
+
     % Train the model.
     if cvFolds == 0
         % Training if cross validation is not being used.
-        % Determine the model's training matrix and target array.
-        trainingMatrix = dataMatrix(indicesOfTrainingExamples, indicesOfTrainingCodes);  % Subset of the dataset containing only examples and codes to use for training.
-        trainingTarget = classOfExamples(indicesOfTrainingExamples);
+
+        % Create the model and set its parameters.
+        regLogModel = RegMultinomialLogistic();
+
+        % Train the model.
+        regLogModel.train(trainingMatrix, trainingTarget, []);
+
+        % Generate the training set predictions.
+        predictions = regLogModel.test(trainingMatrix);
     else
         % Training if cross validation is being used.
+
         % Create cross validation partitions.
-        cvPartitionArray = classOfExamples(indicesOfTrainingExamples);
-        crossValPartition = cvpartition(cvPartitionArray, 'KFold', params('foldsToUse'));
+        crossValPartitions = cvpartition(trainingTarget, 'KFold', cvFolds);
+
+        % Generate the record of the class prediction for each example in the training set.
+        predictions = zeros(numel(trainingTarget), numberOfClasses);
 
         % Perform the training.
-        for i = 1:crossValPartition.NumTestSets
+        for i = 1:crossValPartitions.NumTestSets
             % Determine the model's training matrix and target array.
-            trainingMatrix = dataMatrix(crossValPartition.training(1), indicesOfTrainingCodes);  % Subset of the dataset containing only examples and codes to use for training.
-            trainingTarget = classOfExamples(crossValPartition.training(1));
+            cvTrainingMatrix = trainingMatrix(crossValPartitions.training(i), :);  % Subset of training examples in this fold.
+            cvTrainingTarget = trainingTarget(crossValPartitions.training(i));
+
+            % Create the model.
+            regLogModel = RegMultinomialLogistic();
+
+            % Train the model.
+            regLogModel.train(cvTrainingMatrix, cvTrainingTarget, []);
+
+            % Generate the predictions for this test fold.
+            cvTestMatrix = trainingMatrix(crossValPartitions.test(i), :);
+            cvPredictions = regLogModel.test(cvTestMatrix);
+            predictions(crossValPartitions.test(i), :) = cvPredictions;
         end
     end
+
 end
