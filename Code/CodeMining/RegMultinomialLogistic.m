@@ -48,9 +48,9 @@ classdef RegMultinomialLogistic < handle
             %                   performance.maxProb - Nx1 array of the maximum probability classification for each of the N examples.
             %                                         Determined as the class with the model with the highest prediction value.
             %                   performance.thresholds - The thresholds used.
-            %                   performance.sensitivities - TxK array of the sensitivity of each model at each threshold.
-            %                   performance.specificities - TxK array of the specificity of each model at each threshold.
-            %                   performance.gMeans - Tx1 array of the G-Mean of the K models at each threshold.
+            %                   performance.sensitivities - TxK matrix of the sensitivity of each model at each threshold.
+            %                   performance.specificities - TxK matrix of the specificity of each model at each threshold.
+            %                   performance.gMeans - TxK matrix of the G-Mean of each model at each threshold.
 
             % Convert the target classes into a matrix with the same number of columns as there are classes.
             % Each column will correspond to a single class. Given target, the array of classes, the matrix of classes (targetMatrix)
@@ -71,7 +71,7 @@ classdef RegMultinomialLogistic < handle
             % Calculate metrics for each threshold.
             sensitivities = zeros(numel(thresholds), numel(classes));
             specificities = zeros(numel(thresholds), numel(classes));
-            gMeans = zeros(numel(thresholds), 1);
+            gMeans = zeros(numel(thresholds), numel(classes));
             for i = 1:numel(thresholds)
                 % Calculate for each model which examples would be classed as positive and which negative if you were
                 % using the current threshold.
@@ -90,8 +90,8 @@ classdef RegMultinomialLogistic < handle
                 specificity = trueNegatives ./ (trueNegatives + falseNegatives);
                 specificity(isnan(specificity)) = 0;
                 specificities(i, :) = specificity;
-                gMean = nthroot(prod(sensitivity), numel(classes));
-                gMeans(i) = gMean;
+                gMean = sqrt(sensitivity .* specificity);
+                gMeans(i, :) = gMean;
             end
 
             % Determine the AUC for each model.
@@ -158,7 +158,7 @@ classdef RegMultinomialLogistic < handle
             % Keyword Arguments
             % trainingMatrix - An NxM matrix containing the training examples.
             % target - An Nx1 vector of classes. The classes should be ordered so that target(i) contains the class of example trainingMatrix(i).
-            % recordOfDescent - An array recording the G-Mean for each batch.
+            % recordOfDescent - An array recording the maximum probability classification error at the start of each batch.
 
             % Check parameters and initialise variables.
             if size(trainingMatrix, 1) ~= numel(target),
@@ -222,14 +222,11 @@ classdef RegMultinomialLogistic < handle
                     predictions = obj.calc_logistic(miniBatchTrain);
                     predictionErrors = predictions - miniBatchTarget;  % Difference between predicted value and actual class value.
 
-                    % Determine the G-Mean at the start of this batch with a threshold of 0.5.
+                    % Determine the maximum probability error at the start of this batch with a threshold of 0.5.
                     miniBatchClasses = target(partitions.test(i));
                     performance = obj.calculate_performance(predictions, miniBatchClasses, [0.5]);
-                    recordOfDescent = [recordOfDescent performance.gMeans];
-                    if performance.gMeans == 1
-                        % The weights can't be improved anymore if the G-Mean is 1.
-                        return
-                    end
+                    maxProbError = sum(miniBatchClasses ~= performance.maxProb) / miniBatchSize;
+                    recordOfDescent = [recordOfDescent maxProbError];
 
                     % Update the coefficients.
                     % This process is somewhat complicated to account for the possibility of multiple classes.
