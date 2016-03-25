@@ -303,40 +303,51 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
     %%%%%%%%%%%%%%%%%%%
     if cvFolds == 0
         % Training if cross validation is not being used.
-
-        % Create the model and set its parameters.
-        regLogModel = RegMultinomialLogistic([], 1000);
-
-        % Train the model.
-        recordOfDescent = regLogModel.train(trainingMatrix, trainingTarget, []);
-
-        % Generate the training set predictions.
-        predictions = regLogModel.test(trainingMatrix);
+        for numIter = 1:numel(maxIterValues)
+            for bSize = 1:numel(batchSizeValues)
+                for aVal = 1:numel(alphaValues)
+                    for lVal = 1:numel(lambdaValues)
+                        % Create model, train model and make predictions on the training set.
+                        regLogModel = RegMultinomialLogistic(alphaValues(aVal), batchSizeValues(bSize), lambdaValues(lVal), maxIterValues(numIter));
+                        recordOfDescent = regLogModel.train(trainingMatrix, trainingTarget, []);
+                        predictions = regLogModel.test(trainingMatrix);
+                    end
+                end
+            end
+        end
     else
         % Training if cross validation is being used.
 
         % Create cross validation partitions.
         crossValPartitions = cvpartition(trainingTarget, 'KFold', cvFolds);
 
-        % Generate the record of the class prediction for each example in the training set.
-        predictions = zeros(numel(trainingTarget), numberOfClasses);
+        for numIter = 1:numel(maxIterValues)
+            for bSize = 1:numel(batchSizeValues)
+                for aVal = 1:numel(alphaValues)
+                    for lVal = 1:numel(lambdaValues)
+                        % Generate the record of the class prediction for each example in the full training set.
+                        predictions = zeros(numel(trainingTarget), numberOfClasses);
 
-        % Perform the training.
-        for i = 1:crossValPartitions.NumTestSets
-            % Determine the model's training matrix and target array.
-            cvTrainingMatrix = trainingMatrix(crossValPartitions.training(i), :);  % Subset of training examples in this fold.
-            cvTrainingTarget = trainingTarget(crossValPartitions.training(i));
+                        % Perform the training.
+                        for i = 1:crossValPartitions.NumTestSets
+                            % Determine the model's training matrix and target array.
+                            cvTrainingMatrix = trainingMatrix(crossValPartitions.training(i), :);  % Subset of training examples in this fold.
+                            cvTrainingTarget = trainingTarget(crossValPartitions.training(i));
 
-            % Create the model.
-            regLogModel = RegMultinomialLogistic();
+                            % Create the model.
+                            regLogModel = RegMultinomialLogistic(alphaValues(aVal), batchSizeValues(bSize), lambdaValues(lVal), maxIterValues(numIter));
 
-            % Train the model.
-            recordOfDescent = regLogModel.train(cvTrainingMatrix, cvTrainingTarget, []);
+                            % Train the model.
+                            recordOfDescent = regLogModel.train(cvTrainingMatrix, cvTrainingTarget, []);
 
-            % Generate the predictions for this test fold.
-            cvTestMatrix = trainingMatrix(crossValPartitions.test(i), :);
-            cvPredictions = regLogModel.test(cvTestMatrix);
-            predictions(crossValPartitions.test(i), :) = cvPredictions;
+                            % Generate the predictions for this test fold.
+                            cvTestMatrix = trainingMatrix(crossValPartitions.test(i), :);
+                            cvPredictions = regLogModel.test(cvTestMatrix);
+                            predictions(crossValPartitions.test(i), :) = cvPredictions;
+                        end
+                    end
+                end
+            end
         end
 
 end
