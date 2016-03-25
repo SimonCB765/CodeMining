@@ -174,17 +174,14 @@ classdef RegMultinomialLogistic < handle
                 % Training has been performed before.
                 % Check that the training matrix provided has the correct number of variables.
                 if (size(trainingMatrix, 2) + 1) ~= size(obj.coefficients, 1)
-                    error('The training matrix contains %d variables, while there are %d coefficients already initialised.', ...
-                        size(trainingMatrix, 2), size(obj.coefficients, 1));
+                    error('The training matrix contains %d variables, while there are %d coefficients already initialised (including the bias).', ...
+                        size(trainingMatrix, 2) - 1, size(obj.coefficients, 1));
                 end
 
                 % Handle any classes in target that are not in obj.targetClasses.
                 missingClasses = setdiff(uniqueClasses, obj.targetClasses);  % Classes in target but not in obj.targetClasses.
-                if ~isempty(missingClasses)
-                    % There are new classes in this training set.
-                    obj.targetClasses = [obj.targetClasses missingClasses];  % Extend the array of classes.
-                    obj.coefficients = [obj.coefficients zeros(numel(obj.coefficients), numel(missingClasses))];  % Extend the coefficients.
-                end
+                missingClasses = sprintf('%d ', missingClasses);
+                error('The following classes were previously used to train the models, but are not in the current training set: %s', missingClasses);
             else
                 % Training has not been performed before, so perform basic initialisation.
                 obj.targetClasses = uniqueClasses;
