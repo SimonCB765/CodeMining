@@ -226,6 +226,10 @@ classdef RegMultinomialLogistic < handle
                     miniBatchClasses = target(partitions.test(i));
                     performance = obj.calculate_performance(predictions, miniBatchClasses, [0.5]);
                     recordOfDescent = [recordOfDescent performance.gMeans];
+                    if performance.gMeans == 1
+                        % The weights can't be improved anymore if the G-Mean is 1.
+                        return
+                    end
 
                     % Update the coefficients.
                     % This process is somewhat complicated to account for the possibility of multiple classes.
