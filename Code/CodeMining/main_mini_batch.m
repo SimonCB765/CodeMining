@@ -1,4 +1,4 @@
-function [regLogModel, predictions, trainingTarget] = main_mini_batch(fileParams)
+function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini_batch(fileParams)
     % Perform clinical code identification using logistic regression.
     %
     % Checking is performed to ensure that the required parameters are present in the parameter file,
@@ -305,10 +305,10 @@ function [regLogModel, predictions, trainingTarget] = main_mini_batch(fileParams
         % Training if cross validation is not being used.
 
         % Create the model and set its parameters.
-        regLogModel = RegMultinomialLogistic();
+        regLogModel = RegMultinomialLogistic([], 1000);
 
         % Train the model.
-        regLogModel.train(trainingMatrix, trainingTarget, []);
+        recordOfDescent = regLogModel.train(trainingMatrix, trainingTarget, []);
 
         % Generate the training set predictions.
         predictions = regLogModel.test(trainingMatrix);
@@ -331,7 +331,7 @@ function [regLogModel, predictions, trainingTarget] = main_mini_batch(fileParams
             regLogModel = RegMultinomialLogistic();
 
             % Train the model.
-            regLogModel.train(cvTrainingMatrix, cvTrainingTarget, []);
+            recordOfDescent = regLogModel.train(cvTrainingMatrix, cvTrainingTarget, []);
 
             % Generate the predictions for this test fold.
             cvTestMatrix = trainingMatrix(crossValPartitions.test(i), :);

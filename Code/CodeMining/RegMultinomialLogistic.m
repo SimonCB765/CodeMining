@@ -150,7 +150,7 @@ classdef RegMultinomialLogistic < handle
             predictions = obj.calc_logistic(testMatrix);
         end
 
-        function train(obj, trainingMatrix, target, recordDescent)
+        function [recordOfDescent] = train(obj, trainingMatrix, target, recordOfDescent)
             % Train the logistic regression model using a mini-batch gradient descent approach.
             %
             % For multiple classes, the approach taken is a one vs all approach.
@@ -158,14 +158,14 @@ classdef RegMultinomialLogistic < handle
             % Keyword Arguments
             % trainingMatrix - An NxM matrix containing the training examples.
             % target - An Nx1 vector of classes. The classes should be ordered so that target(i) contains the class of example trainingMatrix(i).
-            % recordDescent - Whether the gradient descent should be recorded. Defaults to not recording.
+            % recordOfDescent - An array recording the G-Mean for each batch.
 
             % Check parameters and initialise variables.
             if size(trainingMatrix, 1) ~= numel(target),
                 error('The training matrix contains %d examples, while the target vector has %d.', size(trainingMatrix, 1), numel(target));
             end;
-            if nargin < 4 || isempty(recordDescent)
-                recordDescent = false;
+            if nargin < 4
+                recordOfDescent = [];
             end
 
             % Set up the coefficients.
@@ -224,6 +224,11 @@ classdef RegMultinomialLogistic < handle
                     % Calculate the logistic output (predictions for each training example).
                     predictions = obj.calc_logistic(miniBatchTrain);
                     predictionErrors = predictions - miniBatchTarget;  % Difference between predicted value and actual class value.
+
+                    % Determine the G-Mean at the start of this batch with a threshold of 0.5.
+                    miniBatchClasses = target(partitions.test(i));
+                    performance = obj.calculate_performance(predictions, miniBatchClasses, [0.5]);
+                    recordOfDescent = [recordOfDescent performance.gMeans];
 
                     % Update the coefficients.
                     % This process is somewhat complicated to account for the possibility of multiple classes.
