@@ -5,7 +5,7 @@ classdef RegMultinomialLogistic < handle
         alpha = 0.01;  % Gradient descent learning rate.
         batchSize = 100;  % Size of the mini-batch.
         coefficients = [];  % Matrix of coefficients (one column per class) with an intercept as the first term.
-        lambda = 0.1;  % Regularisation parameter.
+        lambda = 0.01;  % Regularisation parameter.
         maxIter = 10;  % Maximum number of iterations.
         targetClasses = [];  % The classes sorted in the order of the columns in coefficients.
                              % E.g. targetClasses(1) corresponds to the coefficients in coefficients(:, 1).

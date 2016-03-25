@@ -10,24 +10,30 @@ function [regLogModel, predictions, trainingTarget] = main_mini_batch(fileParams
     % fileParams - JSON format file containing function arguments.
 
     % Setup the RNG to ensure that results are reproducible.
-    rng('default');
+    rng(0, 'twister');
 
-    % Determine the locations of the directories needed.
+    %%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Check Input Parameters %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Load the parameters.
     dirProject = fileparts(pwd);  % Directory containing all code, data and results.
-    dirData = strcat(dirProject, '/Data');  % Top level data directory.
-    dirResults = strcat(dirProject, '/Results');  % Top level results directory.
     dirLibrary = strcat(dirProject, '/Lib');  % Top level library directory.
     addpath(strcat(dirLibrary, '/JSONLab'));  % Make JSONLab available.
     addpath(strcat(dirLibrary, '/DETconf'));  % Make evaluation function available.
-
-    % Parse and check the parameters.
     params = loadjson(fileParams);
+
+    % Check parameters that need to be present.
     errorsFound = {};
-    if ~isfield(params, 'DataLocation')
-        errorsFound{size(errorsFound, 2) + 1} = 'A field called DataLocation must be present in the parameter file.';
+    if ~isfield(params, 'DataLocation') && ~isfield(params, 'WorkspaceLocation')
+        errorsFound{size(errorsFound, 2) + 1} = 'A field called DataLocation or WorkplaceLocation must be present in the parameter file.';
+    end
+    if isfield(params, 'DataLocation') && (exist(params.DataLocation, 'file') ~= 2)
+        errorsFound{size(errorsFound, 2) + 1} = 'A dataset location was provided, but the file does not exist.';
     end
     if ~isfield(params, 'CodeMapping')
         errorsFound{size(errorsFound, 2) + 1} = 'A field called CodeMapping must be present in the parameter file.';
+    elseif exist(params.CodeMapping, 'file') ~= 2
+        errorsFound{size(errorsFound, 2) + 1} = 'The location provided for the code mapping file does not contain a file.';
     end
     if ~isfield(params, 'ResultsLocation')
         errorsFound{size(errorsFound, 2) + 1} = 'A field called ResultsLocation must be present in the parameter file.';
@@ -35,29 +41,40 @@ function [regLogModel, predictions, trainingTarget] = main_mini_batch(fileParams
     if ~isfield(params, 'Classes')
         errorsFound{size(errorsFound, 2) + 1} = 'A field called Classes must be present in the parameter file.';
     end
-    if ~isfield(params, 'Lambda')
-        errorsFound{size(errorsFound, 2) + 1} = 'A field called Lambda must be present in the parameter file.';
-    end
-    if ~isfield(params, 'Alpha')
-        errorsFound{size(errorsFound, 2) + 1} = 'A field called Alpha must be present in the parameter file.';
-    end
     if size(errorsFound, 2) > 0
         % There was an error found, so display them and quit.
         errorMessage = strjoin(errorsFound, '\n');
         error(errorMessage);
     end
 
-    % Load the simple non-class parameters.
-    fileDataset = strcat(dirData, '/', params.DataLocation);  % Location of the dataset used for training.
-    fileCodeMap = strcat(dirData, '/', params.CodeMapping);  % Location of the file containing the mapping between codes and descriptions.
-    dirOutput = strcat(dirResults, '/', params.ResultsLocation);  % Location of the directory to write the results to.
-    lambdaValues = params.Lambda;
-    alphaValues = params.Alpha;
+    % Determine whether the data will be loaded from a .mat file or by parsing a text file, and whether the created matrix should be saved.
+    isSaveWorkspace = isfield(params, 'WorkspaceLocation');  % Whether the workspace should be saved if it does not already exist.
+    isLoadWorkspace = isSaveWorkspace && (exist(params.WorkspaceLocation, 'file') == 2);  % Whether the data should be loaded from a .mat file.
+
+    % Load simple non-class parameters.
+    fileCodeMap = params.CodeMapping;  % Location of the file containing the mapping between codes and descriptions.
+    dirOutput = params.ResultsLocation;  % Location of the directory to write the results to.
+    lambdaValues = [0.01];  % Regularisation parameter values.
+    if isfield(params, 'Lambda')
+        lambdaValues = params.Lambda;
+    end
+    alphaValues = [0.01];  % Gradient descent learning rates.
+    if isfield(params, 'Alpha')
+        alphaValues = params.Alpha;
+    end
+    batchSizeValues = [100];  % Batch sizes for the mini batch.
+    if isfield(params, 'BatchSize')
+        batchSizeValues = params.BatchSize;
+    end
+    maxIterValues = [10];  % Maximum numbers of mini batch iterations.
+    if isfield(params, 'MaxIter')
+        maxIterValues = params.MaxIter;
+    end
     codeOccurrences = 0;  % The number of patients each code must appear in to be used in the model.
     if isfield(params, 'CodeOccurrences')
         codeOccurrences = params.CodeOccurrences;
     end
-    cvFolds = 0;
+    cvFolds = 0;  % Number of cross validation folds to use.
     if isfield(params, 'CVFolds')
         cvFolds = params.CVFolds;
         if cvFolds < 2
@@ -134,35 +151,47 @@ function [regLogModel, predictions, trainingTarget] = main_mini_batch(fileParams
     fclose(fidMapping);
     mapCodesToDescriptions = containers.Map(mapCodesToDescriptions{1}, mapCodesToDescriptions{2});
 
-    % Load the patient data from the input file. The result will be a 1x3 cell array,
-    % with the first entry being the patient IDs, the second the codes and the third the counts.
-    fidDataset = fopen(fileDataset, 'r');
-    data = textscan(fidDataset, '%d%s%d', 'Delimiter', '\t');
-    fclose(fidDataset);
+    %%%%%%%%%%%%%%%%%%%%%%
+    % Create Data Matrix %
+    %%%%%%%%%%%%%%%%%%%%%%
+    if isLoadWorkspace
+        % Load the workspace.
+        load(params.WorkspaceLocation);
+    else
+        % Load the patient data from the input file. The result will be a 1x3 cell array,
+        % with the first entry being the patient IDs, the second the codes and the third the counts.
+        fileDataset = params.DataLocation;  % Location of the dataset used for training.
+        fidDataset = fopen(fileDataset, 'r');
+        data = textscan(fidDataset, '%d%s%d', 'Delimiter', '\t');
+        fclose(fidDataset);
 
-    % Determine unique patient IDs and codes, and create index mappings for each.
-    uniquePatientIDs = unique(data{1});  % A list of the unique patient IDs in the dataset.
-    patientIndexMap = containers.Map(uniquePatientIDs, 1:numel(uniquePatientIDs));  % A mapping of the patient IDs to their index in the uniquePatientIDs array.
-    uniqueCodes = unique(data{2});  % A list of the unique codes in the dataset.
-    codeIndexMap = containers.Map(uniqueCodes, 1:numel(uniqueCodes));  % A mapping of the codes to their index in the uniqueCodes array.
+        % Determine unique patient IDs and codes, and create index mappings for each.
+        uniquePatientIDs = unique(data{1});  % A list of the unique patient IDs in the dataset.
+        patientIndexMap = containers.Map(uniquePatientIDs, 1:numel(uniquePatientIDs));  % A mapping of the patient IDs to their index in the uniquePatientIDs array.
+        uniqueCodes = unique(data{2});  % A list of the unique codes in the dataset.
+        codeIndexMap = containers.Map(uniqueCodes, 1:numel(uniqueCodes));  % A mapping of the codes to their index in the uniqueCodes array.
 
-    % Create a sparse matrix of the data.
-    % The matrix is created from three arrays: an array of row indices (sparseRows), an array of column indices (sparseCols) and an array of
-    % values. The values will all be ones, as we are only interested in the presence or absence of an association between a patient and a code.
-    % The matrix is created by saying that:
-    % M = zeroes(numel(sparseRows), numel(sparseCols))
-    % for i = 1:numel(sparseRows)
-    %     M(sparseRows(i), sparseCols(i)) = 1
-    % end
-    % Conceptually a zero in an entry indicates that there is no association between the patient and a code, i.e. the patient does not have that code
-    % in their medical history).
-    sparseRows = cell2mat(values(patientIndexMap, num2cell(data{1})));  % Array of row indices corresponding to patient IDs.
-    sparseCols = cell2mat(values(codeIndexMap, data{2}));  % Array of column indices corresponding to codes.
-
+        % Create a sparse matrix of the data.
+        % The matrix is created from three arrays: an array of row indices (sparseRows), an array of column indices (sparseCols) and an array of
+        % values. The values will all be ones, as we are only interested in the presence or absence of an association between a patient and a code.
+        % The matrix is created by saying that:
+        % M = zeroes(numel(sparseRows), numel(sparseCols))
+        % for i = 1:numel(sparseRows)
+        %     M(sparseRows(i), sparseCols(i)) = 1
+        % end
+        % Conceptually a zero in an entry indicates that there is no association between the patient and a code, i.e. the patient does not have that code
+        % in their medical history).
+        sparseRows = cell2mat(values(patientIndexMap, num2cell(data{1})));  % Array of row indices corresponding to patient IDs.
+        sparseCols = cell2mat(values(codeIndexMap, data{2}));  % Array of column indices corresponding to codes.
 %%%%%
-    dataMatrix = sparse(sparseRows, sparseCols, ones(numel(sparseCols), 1));
-%    dataMatrix = sparse(sparseRows, sparseCols, double(data{3}));
+        dataMatrix = sparse(sparseRows, sparseCols, ones(numel(sparseCols), 1));
+%        dataMatrix = sparse(sparseRows, sparseCols, double(data{3}));
 %%%%%%
+        % Save the loaded data.
+        if isSaveWorkspace
+            save(params.WorkspaceLocation, 'uniquePatientIDs', 'patientIndexMap', 'uniqueCodes', 'codeIndexMap', 'dataMatrix');
+        end
+    end
 
     % Determine the codes to use for partitioning the dataset into separate classes.
     % Extract child codes if needed, and discard codes that are not recorded in the dataset.
@@ -304,6 +333,5 @@ function [regLogModel, predictions, trainingTarget] = main_mini_batch(fileParams
             cvPredictions = regLogModel.test(cvTestMatrix);
             predictions(crossValPartitions.test(i), :) = cvPredictions;
         end
-    end
 
 end
