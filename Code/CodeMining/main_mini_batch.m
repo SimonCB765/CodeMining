@@ -193,6 +193,9 @@ function [regLogModel, predictions, trainingTarget] = main_mini_batch(fileParams
         end
     end
 
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Determine Codes and Examples to Use %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Determine the codes to use for partitioning the dataset into separate classes.
     % Extract child codes if needed, and discard codes that are not recorded in the dataset.
     % The arrays are:
@@ -295,7 +298,9 @@ function [regLogModel, predictions, trainingTarget] = main_mini_batch(fileParams
     trainingMatrix = dataMatrix(indicesOfTrainingExamples, indicesOfTrainingCodes);  % Data subset containing only examples and codes to use for training.
     trainingTarget = classOfExamples(indicesOfTrainingExamples);
 
-    % Train the model.
+    %%%%%%%%%%%%%%%%%%%
+    % Train the Model %
+    %%%%%%%%%%%%%%%%%%%
     if cvFolds == 0
         % Training if cross validation is not being used.
 

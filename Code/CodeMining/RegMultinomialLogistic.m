@@ -34,6 +34,84 @@ classdef RegMultinomialLogistic < handle
             obj.set_parameters(alpha, batchSize, lambda, maxIter);
         end
 
+        function [performance] = calculate_performance(obj, predictions, target, thresholds)
+            % Determine the performance of a classifier.
+            %
+            % Keyword Arguments
+            % predictions - NxK matrix of predictions (N examples K classes).
+            % target - Nx1 column vector of target values. Target values should be integers, with the smallest integer
+            %          corresponding to the first column in predictions, and the largest the last.
+            % thresholds - Array of T thresholds to calculate performance metrics for. All values must be in the range [0, 1].
+            %
+            % performance - A struct containing 6 fields:
+            %                   performance.AUC - Kx1 array of the AUC for each of the K models trained.
+            %                   performance.maxProb - Nx1 array of the maximum probability classification for each of the N examples.
+            %                                         Determined as the class with the model with the highest prediction value.
+            %                   performance.thresholds - The thresholds used.
+            %                   performance.sensitivities - TxK array of the sensitivity of each model at each threshold.
+            %                   performance.specificities - TxK array of the specificity of each model at each threshold.
+            %                   performance.gMeans - Tx1 array of the G-Mean of the K models at each threshold.
+
+            % Convert the target classes into a matrix with the same number of columns as there are classes.
+            % Each column will correspond to a single class. Given target, the array of classes, the matrix of classes (targetMatrix)
+            % will be organised so that targetMatrix(i, 1) == 1 if target(i) contains the first class.
+            % Otherwise targetMatrix(i, 1) == -1. For example:
+            %   target == [1 2 3 2 1]
+            %                  [1 0 0]
+            %                  [0 1 0]
+            %   targetMatrix = [0 0 1]
+            %                  [0 1 0]
+            %                  [1 0 0]
+            classes = unique(target);
+            targetMatrix = zeros(numel(target), numel(classes));
+            for i = 1:numel(classes)
+                targetMatrix(target == classes(i), i) = 1;
+            end
+
+            % Calculate metrics for each threshold.
+            sensitivities = zeros(numel(thresholds), numel(classes));
+            specificities = zeros(numel(thresholds), numel(classes));
+            gMeans = zeros(numel(thresholds), 1);
+            for i = 1:numel(thresholds)
+                % Calculate for each model which examples would be classed as positive and which negative if you were
+                % using the current threshold.
+                calculatedClasses = predictions >= thresholds(i);
+
+                % Determine base measures.
+                truePositives = sum(targetMatrix & calculatedClasses) / size(predictions, 1);
+                falsePositives = sum(~targetMatrix & calculatedClasses) / size(predictions, 1);
+                trueNegatives = sum(~targetMatrix & ~calculatedClasses) / size(predictions, 1);
+                falseNegatives = sum(targetMatrix & ~calculatedClasses) / size(predictions, 1);
+
+                % Determine composite measures.
+                sensitivity = truePositives ./ (truePositives + falsePositives);
+                sensitivity(isnan(sensitivity)) = 0;
+                sensitivities(i, :) = sensitivity;
+                specificity = trueNegatives ./ (trueNegatives + falseNegatives);
+                specificity(isnan(specificity)) = 0;
+                specificities(i, :) = specificity;
+                gMean = nthroot(prod(sensitivity), numel(classes));
+                gMeans(i) = gMean;
+            end
+
+            % Determine the AUC for each model.
+            AUCs = zeros(numel(classes), 1);
+            for i = 1:numel(classes)
+                [~, ~, ~, AUC] = perfcurve(targetMatrix(:, i), predictions(:, i), 1);
+                AUCs(i) = AUC;
+            end
+            performance.AUC = AUCs;
+
+            % Determine the maximum probability classifications.
+            [~, column] = max(predictions, [], 2);
+            performance.maxProb = classes(column);
+
+            performance.thresholds = thresholds;
+            performance.sensitivities = sensitivities;
+            performance.specificities = specificities;
+            performance.gMeans = gMeans;
+        end
+
         function reset_coefficients(obj)
             % Resets the coefficients.
             obj.coefficients = [];
@@ -60,6 +138,8 @@ classdef RegMultinomialLogistic < handle
             %
             % Keyword Arguments
             % testMatrix - A NxM matrix of test examples. If there are C coefficients, then M + 1 == C.
+            %
+            % predictions - The posterior predictions for each of the K logistic regression models trained.
 
             numVariables = size(testMatrix, 2);
             if numVariables + 1 ~= size(obj.coefficients, 1),
