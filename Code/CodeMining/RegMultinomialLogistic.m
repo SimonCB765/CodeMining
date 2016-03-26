@@ -43,14 +43,15 @@ classdef RegMultinomialLogistic < handle
             %          corresponding to the first column in predictions, and the largest the last.
             % thresholds - Array of T thresholds to calculate performance metrics for. All values must be in the range [0, 1].
             %
-            % performance - A struct containing 6 fields:
+            % performance - A struct containing 7 fields:
             %                   performance.AUC - Kx1 array of the AUC for each of the K models trained.
             %                   performance.maxProb - Nx1 array of the maximum probability classification for each of the N examples.
             %                                         Determined as the class with the model with the highest prediction value.
             %                   performance.thresholds - The thresholds used.
             %                   performance.sensitivities - TxK matrix of the sensitivity of each model at each threshold.
             %                   performance.specificities - TxK matrix of the specificity of each model at each threshold.
-            %                   performance.gMeans - TxK matrix of the G-Mean of each model at each threshold.
+            %                   performance.modelGMeans - TxK matrix of the G-Mean of each model at each threshold.
+            %                   performance.gMean - The G-Mean of the maximum probability classifications.
 
             % Convert the target classes into a matrix with the same number of columns as there are classes.
             % Each column will correspond to a single class. Given target, the array of classes, the matrix of classes (targetMatrix)
@@ -71,7 +72,7 @@ classdef RegMultinomialLogistic < handle
             % Calculate metrics for each threshold.
             sensitivities = zeros(numel(thresholds), numel(classes));
             specificities = zeros(numel(thresholds), numel(classes));
-            gMeans = zeros(numel(thresholds), numel(classes));
+            modelGMeans = zeros(numel(thresholds), numel(classes));
             for i = 1:numel(thresholds)
                 % Calculate for each model which examples would be classed as positive and which negative if you were
                 % using the current threshold.
@@ -91,8 +92,12 @@ classdef RegMultinomialLogistic < handle
                 specificity(isnan(specificity)) = 0;
                 specificities(i, :) = specificity;
                 gMean = sqrt(sensitivity .* specificity);
-                gMeans(i, :) = gMean;
+                modelGMeans(i, :) = gMean;
             end
+            performance.thresholds = thresholds;
+            performance.sensitivities = sensitivities;
+            performance.specificities = specificities;
+            performance.modelGMeans = modelGMeans;
 
             % Determine the AUC for each model.
             AUCs = zeros(numel(classes), 1);
@@ -104,12 +109,18 @@ classdef RegMultinomialLogistic < handle
 
             % Determine the maximum probability classifications.
             [~, column] = max(predictions, [], 2);
-            performance.maxProb = classes(column);
+            maxProbPred = classes(column);
+            performance.maxProb = maxProbPred;
 
-            performance.thresholds = thresholds;
-            performance.sensitivities = sensitivities;
-            performance.specificities = specificities;
-            performance.gMeans = gMeans;
+            % Determine the G-Mean for the set of models using the maximum probability classifications.
+            numClassPredictions = arrayfun(@(x) sum(maxProbPred == x), classes);  % The number of predictions for each class (both correct and not).
+            correctPredictions = maxProbPred == target;  % Boolean array indicating examples correctly predicted.
+            classesOfCorrectPreds = target(correctPredictions);  % Array containing the class of each example predicted correctly.
+            numCorrectPredictions = arrayfun(@(x) sum(classesOfCorrectPreds == x), classes);  % Number of examples from each class predicted correctly.
+            classSensitivity = numCorrectPredictions ./ numClassPredictions;  % The sensitivity of the maximum probability classification for each class.
+            gMean = nthroot(prod(classSensitivity), numel(classes));  % The G-Mean of the maximum probability classification.
+            gMean = iff(isnan(gMean), 0, gMean);  % Convert NaNs to 0s.
+            performance.gMean = gMean;
         end
 
         function reset_coefficients(obj)
