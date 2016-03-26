@@ -82,6 +82,10 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
             cvFolds = 0;
         end
     end
+    dataNorm = 0;  % Normalisation mode to use.
+    if isfield(params, 'DataNorm')
+        dataNorm = params.DataNorm;
+    end
 
     % Load the class parameters.
     % classCodes and classChildren will be structs with one element per class.
@@ -183,15 +187,16 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
         % in their medical history).
         sparseRows = cell2mat(values(patientIndexMap, num2cell(data{1})));  % Array of row indices corresponding to patient IDs.
         sparseCols = cell2mat(values(codeIndexMap, data{2}));  % Array of column indices corresponding to codes.
-%%%%%
-        dataMatrix = sparse(sparseRows, sparseCols, ones(numel(sparseCols), 1));
-%        dataMatrix = sparse(sparseRows, sparseCols, double(data{3}));
-%%%%%%
+        dataMatrix = sparse(sparseRows, sparseCols, double(data{3}));
+
         % Save the loaded data.
         if isSaveWorkspace
             save(params.WorkspaceLocation, 'uniquePatientIDs', 'patientIndexMap', 'uniqueCodes', 'codeIndexMap', 'dataMatrix');
         end
     end
+    
+    % Normalise the data matrix.
+    dataMatrix = normalise_data_matrix(dataMatrix, dataNorm);
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Determine Codes and Examples to Use %
@@ -317,10 +322,7 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
         end
     else
         % Training if cross validation is being used.
-
-        % Create cross validation partitions.
-        crossValPartitions = cvpartition(trainingTarget, 'KFold', cvFolds);
-
+        crossValPartitions = cvpartition(trainingTarget, 'KFold', cvFolds);  % Create cross validation partitions.
         for numIter = 1:numel(maxIterValues)
             for bSize = 1:numel(batchSizeValues)
                 for aVal = 1:numel(alphaValues)
