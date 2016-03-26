@@ -254,8 +254,7 @@ classdef RegMultinomialLogistic < handle
                     % and multiply the mini batch by the replicated errors.
                     % We can then use the result of this to update the class' one vs all model coefficients.
                     for j = 1:numel(obj.targetClasses)
-                        replicatedPredictions = repmat(predictionErrors(:, j), 1, numberCoefficients); % Replicate the ith class' prediction errors.
-                        nonRegularisedTerm = replicatedPredictions .* miniBatchTrain;  % Non-regularised portion of the gradient descent equation.
+                        nonRegularisedTerm = bsxfun(@times, miniBatchTrain, predictionErrors(:, j));  % Non-regularised portion of the gradient descent equation.
                         regularisationTerm = (obj.lambda / miniBatchSize) * obj.coefficients(:, j);  % Regularised portion of the gradient descent equation.
                         obj.coefficients(:, j) = obj.coefficients(:, j) - (obj.alpha * ((sum(nonRegularisedTerm) / miniBatchSize)' + regularisationTerm));
                     end
