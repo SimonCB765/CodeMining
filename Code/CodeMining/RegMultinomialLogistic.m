@@ -69,43 +69,52 @@ classdef RegMultinomialLogistic < handle
                 targetMatrix(target == classes(i), i) = 1;
             end
 
-            % Calculate metrics for each threshold.
-            sensitivities = zeros(numel(thresholds), numel(classes));
-            specificities = zeros(numel(thresholds), numel(classes));
-            modelGMeans = zeros(numel(thresholds), numel(classes));
-            for i = 1:numel(thresholds)
-                % Calculate for each model which examples would be classed as positive and which negative if you were
-                % using the current threshold.
-                calculatedClasses = predictions >= thresholds(i);
+            if (nargin < 3) || isempty(thresholds)
+                % Skip calculating all but the overall G-Mean and the maximum probability classification.
+                performance.thresholds = [];
+                performance.sensitivities = [];
+                performance.specificities = [];
+                performance.modelGMeans = []
+                performance.AUC = []
+            else
+                % Calculate metrics for each threshold.
+                sensitivities = zeros(numel(thresholds), numel(classes));
+                specificities = zeros(numel(thresholds), numel(classes));
+                modelGMeans = zeros(numel(thresholds), numel(classes));
+                for i = 1:numel(thresholds)
+                    % Calculate for each model which examples would be classed as positive and which negative if you were
+                    % using the current threshold.
+                    calculatedClasses = predictions >= thresholds(i);
 
-                % Determine base measures.
-                truePositives = sum(targetMatrix & calculatedClasses) / size(predictions, 1);
-                falsePositives = sum(~targetMatrix & calculatedClasses) / size(predictions, 1);
-                trueNegatives = sum(~targetMatrix & ~calculatedClasses) / size(predictions, 1);
-                falseNegatives = sum(targetMatrix & ~calculatedClasses) / size(predictions, 1);
+                    % Determine base measures.
+                    truePositives = sum(targetMatrix & calculatedClasses) / size(predictions, 1);
+                    falsePositives = sum(~targetMatrix & calculatedClasses) / size(predictions, 1);
+                    trueNegatives = sum(~targetMatrix & ~calculatedClasses) / size(predictions, 1);
+                    falseNegatives = sum(targetMatrix & ~calculatedClasses) / size(predictions, 1);
 
-                % Determine composite measures.
-                sensitivity = truePositives ./ (truePositives + falsePositives);
-                sensitivity(isnan(sensitivity)) = 0;
-                sensitivities(i, :) = sensitivity;
-                specificity = trueNegatives ./ (trueNegatives + falseNegatives);
-                specificity(isnan(specificity)) = 0;
-                specificities(i, :) = specificity;
-                gMean = sqrt(sensitivity .* specificity);
-                modelGMeans(i, :) = gMean;
+                    % Determine composite measures.
+                    sensitivity = truePositives ./ (truePositives + falsePositives);
+                    sensitivity(isnan(sensitivity)) = 0;
+                    sensitivities(i, :) = sensitivity;
+                    specificity = trueNegatives ./ (trueNegatives + falseNegatives);
+                    specificity(isnan(specificity)) = 0;
+                    specificities(i, :) = specificity;
+                    gMean = sqrt(sensitivity .* specificity);
+                    modelGMeans(i, :) = gMean;
+                end
+                performance.thresholds = thresholds;
+                performance.sensitivities = sensitivities;
+                performance.specificities = specificities;
+                performance.modelGMeans = modelGMeans;
+
+                % Determine the AUC for each model.
+                AUCs = zeros(numel(classes), 1);
+                for i = 1:numel(classes)
+                    [~, ~, ~, AUC] = perfcurve(targetMatrix(:, i), predictions(:, i), 1);
+                    AUCs(i) = AUC;
+                end
+                performance.AUC = AUCs;
             end
-            performance.thresholds = thresholds;
-            performance.sensitivities = sensitivities;
-            performance.specificities = specificities;
-            performance.modelGMeans = modelGMeans;
-
-            % Determine the AUC for each model.
-            AUCs = zeros(numel(classes), 1);
-            for i = 1:numel(classes)
-                [~, ~, ~, AUC] = perfcurve(targetMatrix(:, i), predictions(:, i), 1);
-                AUCs(i) = AUC;
-            end
-            performance.AUC = AUCs;
 
             % Determine the maximum probability classifications.
             [~, column] = max(predictions, [], 2);
@@ -220,7 +229,15 @@ classdef RegMultinomialLogistic < handle
             while (currentIter <= obj.maxIter)
                 % Generate the data permutation. The test sets of cvpartition(target, 'KFold', k) will give indices of the examples to
                 % include in each mini-batch. The batches will also be stratified.
-                partitions = cvpartition(target, 'KFold', ceil(numel(target) / obj.batchSize));
+                numBatches = ceil(numel(target) / obj.batchSize);
+                if numBatches < 2
+                    % If the number of batches to create is less than two, then you can't use cvpartition.
+                    % Basically mini-batch isn't needed, and you want to do full batch gradient descent.
+                    partitions.NumTestSets = 1;
+                    partitions.test = @(x) logical(ones(numel(target), 1));
+                else
+                    partitions = cvpartition(target, 'KFold', numBatches);
+                end
 
                 for i = 1:partitions.NumTestSets
                     % Determine training batch data, target classes and number of examples for this batch.
