@@ -194,7 +194,7 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
             save(params.WorkspaceLocation, 'uniquePatientIDs', 'patientIndexMap', 'uniqueCodes', 'codeIndexMap', 'dataMatrix');
         end
     end
-    
+
     % Normalise the data matrix.
     dataMatrix = normalise_data_matrix(dataMatrix, dataNorm);
 
@@ -233,7 +233,7 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
     % Select the codes that will be used for training.
     % These codes occur in enough patients and were not used to partition the dataset into classes.
     patientsPerCode = sum(dataMatrix, 1);  % Sparse matrix recording the number of patients each code occurs in.
-    indicesOfTrainingCodes = find(patientsPerCode > codeOccurrences)';  % Column array of indices of the codes associated with over 50 patients.
+    indicesOfTrainingCodes = find(patientsPerCode >= codeOccurrences)';  % Column array of indices of the codes associated with over 50 patients.
     for i = 1:numberOfClasses
         % For each class, remove the indices of the codes used to determine the examples in the class from the array of training code indices.
         indicesOfTrainingCodes = setdiff(indicesOfTrainingCodes, classCodeIndices{i});
@@ -249,8 +249,8 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
     fprintf(fidCodes, header);
     for i = 1:numel(uniqueCodes)
         codeOfInterest = uniqueCodes{i};
-        codeDescription = query_dictionary(mapCodesToDescriptions, codeOfInterest);  % Some code descriptions contain % signs that need escaping.
-        codeDescription = strrep(codeDescription, '%', '%%');
+        codeDescription = query_dictionary(mapCodesToDescriptions, codeOfInterest);
+        codeDescription = strrep(codeDescription, '%', '%%');  % Some code descriptions contain % signs that need escaping.
         codeClass = cellfun(@(x) ~isempty(find(strcmp(x, codeOfInterest), 1)), classCodes);
         codeClass = classNames(codeClass);
         if (isempty(codeClass))
@@ -287,11 +287,6 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
         error(errorMessage);
     end
 
-    % Remove the codes used to determine class membership from the dataset.
-    % Need to transpose the class code indices cell array as there is only a guarantee that they have the same number of columns,
-    % while a 1xN cell array would need all cells to have the same number of rows before cell2mat can be used.
-    dataMatrix(:, cell2mat(classCodeIndices')) = 0;
-
     % Create an array that records the class of each example and one that records the indices of the training examples.
     classOfExamples = zeros(size(dataMatrix, 1), 1);
     for i = 1:numberOfClasses
@@ -308,20 +303,82 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
     %%%%%%%%%%%%%%%%%%%
     if cvFolds == 0
         % Training if cross validation is not being used.
+        fidPerformance = fopen(strcat(dirOutput, '/Performance.tsv'), 'w');
+        fprintf(fidPerformance, 'NumIterations\tBatchSize\tAlpha\tLambda\tFinalGMean\tDescent\n');
         for numIter = 1:numel(maxIterValues)
             for bSize = 1:numel(batchSizeValues)
                 for aVal = 1:numel(alphaValues)
                     for lVal = 1:numel(lambdaValues)
-                        % Create model, train model and make predictions on the training set.
+                        % Create, train and evaluate model on the training set.
                         regLogModel = RegMultinomialLogistic(alphaValues(aVal), batchSizeValues(bSize), lambdaValues(lVal), maxIterValues(numIter));
                         recordOfDescent = regLogModel.train(trainingMatrix, trainingTarget, []);
                         predictions = regLogModel.test(trainingMatrix);
+                        performance = regLogModel.calculate_performance(predictions, trainingTarget, [0.5]);
+
+                        % Record information about the model.
+                        descentString = sprintf('%1.4f,', recordOfDescent);
+                        descentString = descentString(1:end-1);  % Strip off the final comma that was added.
+                        fprintf(fidPerformance, '%d\t%d\t%1.4f\t%1.4f\t%1.4f\t%s\n', maxIterValues(numIter), batchSizeValues(bSize), ...
+                            alphaValues(aVal), lambdaValues(lVal), performance.gMean, descentString);
                     end
                 end
             end
         end
+        fclose(fidPerformance);
+
+        % Record the predictions for the final model trained.
+        fidPredictions = fopen(strcat(dirOutput, '/Predictions.tsv'), 'w');
+        header = 'PatientID\tClass\tMaxProbClass';
+        for i = 1:numberOfClasses
+            header = strcat(header, sprintf('\t%s_Posterior', classNames{i}));
+        end
+        header = strcat(header, '\n');
+        fprintf(fidPredictions, header);
+        for i = 1:numel(uniquePatientIDs)
+            patientID = uniquePatientIDs(i);  % Get the ID of the patient.
+            patientIndex = patientIndexMap(patientID);  % Get the patient's index in the data matrix, prediction matrix and target array.
+            patientClass = classNames{trainingTarget(patientIndex)};  % Get the actual class of the patient.
+            patientPredClass = classNames{performance.maxProb(patientIndex)};  % Get the predicted class of the patient.
+            patientPredictions = predictions(patientIndex, :);  % Get the posteriors from each model for the patient.
+            patientPredictions = sprintf('%1.4f\t', patientPredictions);
+            patientPredictions = patientPredictions(1:end-1);  % Strip off the final tab that was added.
+            fprintf(fidPredictions, '%d\t%s\t%s\t%s\n', patientID, patientClass, patientPredClass, patientPredictions);
+        end
+        fclose(fidPredictions);
+
+        % Record the coefficients for the final model trained.
+        fidCoefficients = fopen(strcat(dirOutput, '/Coefficients.tsv'), 'w');
+        header = 'Code\tDescription';
+        for i = 1:numberOfClasses
+            header = strcat(header, sprintf('\t%s_Coefficient', classNames{i}));
+        end
+        header = strcat(header, '\n');
+        fprintf(fidCoefficients, header);
+        for i = 1:numel(uniqueCodes)
+            code = uniqueCodes{i};  % Get the code.
+            codeDescription = query_dictionary(mapCodesToDescriptions, code);  % Get the code's description.
+            codeDescription = strrep(codeDescription, '%', '%%');  % Some code descriptions contain % signs that need escaping.
+            codeUsedForTraining = i == indicesOfTrainingCodes;  % Boolean array indicating whether the code was used for training.
+            if sum(codeUsedForTraining) ~= 0
+                % The code was used for training, so it has coefficients.
+                codeIndex = find(codeUsedForTraining);
+                codeIndex = codeIndex(1);  % Get the index of the code in terms of the coefficients.
+                coefficients = regLogModel.coefficients(codeIndex + 1, :);  % Add one as the coefficients have the bias term as the first entry.
+                coefficients = sprintf('%1.4f\t', coefficients);
+            else
+                % The code wasn't used for training, so has no coefficients.
+                coefficients = repmat(sprintf('0\t'), 1, numberOfClasses);
+            end
+            coefficients = coefficients(1:end-1);  % Strip off the final tab that was added.
+            fprintf(fidCoefficients, '%s\t%s\t%s\n', code, codeDescription, coefficients);
+        end
+        fclose(fidCoefficients);
     else
         % Training if cross validation is being used.
+        fidPerformance = fopen(strcat(dirOutput, '/CVPerformance.tsv'), 'w');
+        foldHeader = sprintf('Fold%d\t', 1:cvFolds);
+        foldHeader = foldHeader(1:end-1);  % Strip off the final tab that was added.
+        fprintf(fidPerformance, 'NumIterations\tBatchSize\tAlpha\tLambda\t%s\n', foldHeader);
         crossValPartitions = cvpartition(trainingTarget, 'KFold', cvFolds);  % Create cross validation partitions.
         for numIter = 1:numel(maxIterValues)
             for bSize = 1:numel(batchSizeValues)
@@ -329,27 +386,53 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
                     for lVal = 1:numel(lambdaValues)
                         % Generate the record of the class prediction for each example in the full training set.
                         predictions = zeros(numel(trainingTarget), numberOfClasses);
+                        maxProbClass = zeros(numel(trainingTarget), 1);
+                        fprintf(fidPerformance, '%d\t%d\t%1.4f\t%1.4f', maxIterValues(numIter), batchSizeValues(bSize), alphaValues(aVal), lambdaValues(lVal));
 
                         % Perform the training.
                         for i = 1:crossValPartitions.NumTestSets
-                            % Determine the model's training matrix and target array.
-                            cvTrainingMatrix = trainingMatrix(crossValPartitions.training(i), :);  % Subset of training examples in this fold.
-                            cvTrainingTarget = trainingTarget(crossValPartitions.training(i));
-
-                            % Create the model.
-                            regLogModel = RegMultinomialLogistic(alphaValues(aVal), batchSizeValues(bSize), lambdaValues(lVal), maxIterValues(numIter));
-
-                            % Train the model.
-                            recordOfDescent = regLogModel.train(cvTrainingMatrix, cvTrainingTarget, []);
-
-                            % Generate the predictions for this test fold.
+                            % Determine the model's training/testing matrix and target/testing array.
+                            cvTrainingMatrix = trainingMatrix(crossValPartitions.training(i), :);
                             cvTestMatrix = trainingMatrix(crossValPartitions.test(i), :);
+                            cvTrainingTarget = trainingTarget(crossValPartitions.training(i));
+                            cvTestTarget = trainingTarget(crossValPartitions.test(i));
+
+                            % Create, train and evaluate the model.
+                            regLogModel = RegMultinomialLogistic(alphaValues(aVal), batchSizeValues(bSize), lambdaValues(lVal), maxIterValues(numIter));
+                            recordOfDescent = regLogModel.train(cvTrainingMatrix, cvTrainingTarget, []);
                             cvPredictions = regLogModel.test(cvTestMatrix);
+                            performance = regLogModel.calculate_performance(cvPredictions, cvTestTarget, [0.5]);
+
+                            % Record the model's performance.
                             predictions(crossValPartitions.test(i), :) = cvPredictions;
+                            maxProbClass(crossValPartitions.test(i)) = performance.maxProb;
+                            fprintf(fidPerformance, '\t%1.4f', performance.gMean);
                         end
+                        fprintf(fidPerformance, '\n');
                     end
                 end
             end
         end
+        fclose(fidPerformance);
+
+        % Record the predictions for the final set of CV folds.
+        fidPredictions = fopen(strcat(dirOutput, '/CVPredictions.tsv'), 'w');
+        header = 'PatientID\tClass\tMaxProbClass';
+        for i = 1:numberOfClasses
+            header = strcat(header, sprintf('\t%s_Posterior', classNames{i}));
+        end
+        header = strcat(header, '\n');
+        fprintf(fidPredictions, header);
+        for i = 1:numel(uniquePatientIDs)
+            patientID = uniquePatientIDs(i);  % Get the ID of the patient.
+            patientIndex = patientIndexMap(patientID);  % Get the patient's index in the data matrix, prediction matrix and target array.
+            patientClass = classNames{trainingTarget(patientIndex)};  % Get the actual class of the patient.
+            patientPredClass = classNames{maxProbClass(patientIndex)};  % Get the predicted class of the patient.
+            patientPredictions = predictions(patientIndex, :);  % Get the posteriors from each model for the patient.
+            patientPredictions = sprintf('%1.4f\t', patientPredictions);
+            patientPredictions = patientPredictions(1:end-1);  % Strip off the final tab that was added.
+            fprintf(fidPredictions, '%d\t%s\t%s\t%s\n', patientID, patientClass, patientPredClass, patientPredictions);
+        end
+        fclose(fidPredictions);
 
 end
