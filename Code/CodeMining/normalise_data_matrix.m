@@ -33,7 +33,7 @@ function [dataMatrix] = normalise_data_matrix(dataMatrix, normMethod, normParam)
             documentTermCounts = sum(dataMatrix, 2);  % Total sum of term counts for each example.
             scaledTermCounts = bsxfun(@rdivide, dataMatrix, documentTermCounts);  % Term counts for each example scaled by the example's total term counts.
             docsTermOccursIn = sum(dataMatrix ~= 0);  % The number of documents in which each term occurs.
-            idf = log(size(dataMatrix, 1), 1) ./ docsTermOccursIn);  % The IDF for each term. The base of the logarithm doesn't matter.
+            idf = log(size(dataMatrix, 1) ./ docsTermOccursIn);  % The IDF for each term. The base of the logarithm doesn't matter.
             idf(isnan(idf)) = 0;  % If a term doesn't occur in any documents then it causes a NaN from a divide by zero error.
             dataMatrix = scaledTermCounts * diag(idf);
         case 3
