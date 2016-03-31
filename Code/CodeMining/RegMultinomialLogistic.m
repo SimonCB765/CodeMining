@@ -57,7 +57,7 @@ classdef RegMultinomialLogistic < handle
 
             % Determine the maximum probability classifications.
             [~, column] = max(predictions, [], 2);
-            maxProbPred = classes(column);
+            maxProbPred = obj.targetClasses(column);
             performance.maxProb = maxProbPred;
 
             if (nargin < 3) || isempty(thresholds)
@@ -79,16 +79,15 @@ classdef RegMultinomialLogistic < handle
                 %   targetMatrix = [0 0 1]
                 %                  [0 1 0]
                 %                  [1 0 0]
-                classes = unique(target);
-                targetMatrix = zeros(numel(target), numel(classes));
-                for i = 1:numel(classes)
-                    targetMatrix(target == classes(i), i) = 1;
+                targetMatrix = zeros(numel(target), numel(obj.targetClasses));
+                for i = 1:numel(obj.targetClasses)
+                    targetMatrix(target == obj.targetClasses(i), i) = 1;
                 end
 
                 % Calculate metrics for each threshold.
-                sensitivities = zeros(numel(thresholds), numel(classes));
-                specificities = zeros(numel(thresholds), numel(classes));
-                modelGMeans = zeros(numel(thresholds), numel(classes));
+                sensitivities = zeros(numel(thresholds), numel(obj.targetClasses));
+                specificities = zeros(numel(thresholds), numel(obj.targetClasses));
+                modelGMeans = zeros(numel(thresholds), numel(obj.targetClasses));
                 for i = 1:numel(thresholds)
                     % Calculate for each model which examples would be classed as positive and which negative if you were
                     % using the current threshold.
@@ -116,20 +115,20 @@ classdef RegMultinomialLogistic < handle
                 performance.modelGMeans = modelGMeans;
 
                 % Determine the AUC for each model.
-                AUCs = zeros(numel(classes), 1);
-                for i = 1:numel(classes)
+                AUCs = zeros(numel(obj.targetClasses), 1);
+                for i = 1:numel(obj.targetClasses)
                     [~, ~, ~, AUC] = perfcurve(targetMatrix(:, i), predictions(:, i), 1);
                     AUCs(i) = AUC;
                 end
                 performance.AUC = AUCs;
 
                 % Determine the G-Mean for the set of models using the maximum probability classifications.
-                numClassPredictions = arrayfun(@(x) sum(maxProbPred == x), classes);  % The number of predictions for each class (both correct and not).
+                numClassPredictions = arrayfun(@(x) sum(maxProbPred == x), obj.targetClasses);  % The number of predictions for each class (both correct and not).
                 correctPredictions = maxProbPred == target;  % Boolean array indicating examples correctly predicted.
                 classesOfCorrectPreds = target(correctPredictions);  % Array containing the class of each example predicted correctly.
-                numCorrectPredictions = arrayfun(@(x) sum(classesOfCorrectPreds == x), classes);  % Number of examples from each class predicted correctly.
+                numCorrectPredictions = arrayfun(@(x) sum(classesOfCorrectPreds == x), obj.targetClasses);  % Number of examples from each class predicted correctly.
                 classSensitivity = numCorrectPredictions ./ numClassPredictions;  % The sensitivity of the maximum probability classification for each class.
-                gMean = nthroot(prod(classSensitivity), numel(classes));  % The G-Mean of the maximum probability classification.
+                gMean = nthroot(prod(classSensitivity), numel(obj.targetClasses));  % The G-Mean of the maximum probability classification.
                 gMean = iff(isnan(gMean), 0, gMean);  % Convert NaNs to 0s.
                 performance.gMean = gMean;
             end
@@ -257,9 +256,9 @@ classdef RegMultinomialLogistic < handle
                     predictions = obj.calc_logistic(miniBatchTrain);
                     predictionErrors = predictions - miniBatchTarget;  % Difference between predicted value and actual class value.
 
-                    % Determine the maximum probability error at the start of this batch with a threshold of 0.5.
+                    % Determine the maximum probability error at the start of this batch.
                     miniBatchClasses = target(partitions.test(i));
-                    performance = obj.calculate_performance(predictions, miniBatchClasses, [0.5]);
+                    performance = obj.calculate_performance(predictions, miniBatchClasses, []);
                     maxProbError = sum(miniBatchClasses ~= performance.maxProb) / miniBatchSize;
                     recordOfDescent = [recordOfDescent maxProbError];
 
