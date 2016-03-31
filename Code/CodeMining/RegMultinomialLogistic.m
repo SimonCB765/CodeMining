@@ -72,7 +72,7 @@ classdef RegMultinomialLogistic < handle
                 % Convert the target classes into a matrix with the same number of columns as there are classes.
                 % Each column will correspond to a single class. Given target, the array of classes, the matrix of classes (targetMatrix)
                 % will be organised so that targetMatrix(i, 1) == 1 if target(i) contains the first class.
-                % Otherwise targetMatrix(i, 1) == -1. For example:
+                % Otherwise targetMatrix(i, 1) == 0. For example:
                 %   target == [1 2 3 2 1]
                 %                  [1 0 0]
                 %                  [0 1 0]
@@ -218,7 +218,7 @@ classdef RegMultinomialLogistic < handle
             % Convert the classes into a matrix with the same number of columns as there are classes.
             % Each column will correspond to a single class. Given target, the array of classes, the matrix of classes (targetMatrix)
             % will be organised so that targetMatrix(i, 1) == 1 if target(i) contains the first class.
-            % Otherwise targetMatrix(i, 1) == -1. For example:
+            % Otherwise targetMatrix(i, 1) == 0. For example:
             %   target == [1 2 3 2 1]
             %                  [1 0 0]
             %                  [0 1 0]
