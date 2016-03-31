@@ -1,4 +1,4 @@
-function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini_batch(fileParams)
+function [ambiguousExamples] = main_mini_batch(fileParams)
     % Perform clinical code identification using logistic regression.
     %
     % Checking is performed to ensure that the required parameters are present in the parameter file,
@@ -77,14 +77,14 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
     cvFolds = 0;  % Number of cross validation folds to use.
     if isfield(params, 'CVFolds')
         cvFolds = params.CVFolds;
-        if cvFolds < 2
-            % No way to use cross validation with less than two folds.
-            cvFolds = 0;
-        end
     end
     dataNorm = 0;  % Normalisation mode to use.
     if isfield(params, 'DataNorm')
         dataNorm = params.DataNorm;
+    end
+    discardThreshold = 0;  % Threshold to use when determining which examples to discard before training the second model.
+    if isfield(params, 'DiscardThreshold')
+        discardThreshold = params.DiscardThreshold;
     end
 
     % Load the class parameters.
@@ -298,87 +298,180 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
     trainingMatrix = dataMatrix(indicesOfTrainingExamples, indicesOfTrainingCodes);  % Data subset containing only examples and codes to use for training.
     trainingTarget = classOfExamples(indicesOfTrainingExamples);
 
+    % Convert the classes in the training target array into a matrix with the same number of columns as there are classes.
+    % Each column will correspond to a single class. Given trainingTarget, the array of classes, the matrix of classes (targetMatrix)
+    % will be organised so that targetMatrix(i, 1) == 1 if trainingTarget(i) contains the first class.
+    % Otherwise targetMatrix(i, 1) == 0. For example:
+    %   target == [1 2 3 2 1]
+    %                  [1 0 0]
+    %                  [0 1 0]
+    %   targetMatrix = [0 0 1]
+    %                  [0 1 0]
+    %                  [1 0 0]
+    targetMatrix = logical(zeros(numel(trainingTarget), numberOfClasses));
+    for i = 1:numberOfClasses
+        targetMatrix(trainingTarget == i, i) = 1;
+    end
+
     %%%%%%%%%%%%%%%%%%%
     % Train the Model %
     %%%%%%%%%%%%%%%%%%%
     if cvFolds == 0
         % Training if cross validation is not being used.
-        fidPerformance = fopen(strcat(dirOutput, '/Performance.tsv'), 'w');
-        fprintf(fidPerformance, 'NumIterations\tBatchSize\tAlpha\tLambda\tFinalGMean\tDescent\n');
+        fidPerformanceFirst = fopen(strcat(dirOutput, '/Performance_FirstModel.tsv'), 'w');
+        fidPerformanceSecond = fopen(strcat(dirOutput, '/Performance_SecondModel.tsv'), 'w');
+        fprintf(fidPerformanceFirst, 'NumIterations\tBatchSize\tAlpha\tLambda\tFinalGMean\tDescent\n');
+        fprintf(fidPerformanceSecond, 'NumIterations\tBatchSize\tAlpha\tLambda\tFinalGMean\tDescent\n');
         for numIter = 1:numel(maxIterValues)
             for bSize = 1:numel(batchSizeValues)
                 for aVal = 1:numel(alphaValues)
                     for lVal = 1:numel(lambdaValues)
-                        % Create, train and evaluate model on the training set.
-                        regLogModel = RegMultinomialLogistic(alphaValues(aVal), batchSizeValues(bSize), lambdaValues(lVal), maxIterValues(numIter));
-                        recordOfDescent = regLogModel.train(trainingMatrix, trainingTarget, []);
-                        predictions = regLogModel.test(trainingMatrix);
-                        performance = regLogModel.calculate_performance(predictions, trainingTarget, [0.5]);
+                        % Create, train and evaluate the first model on the training set.
+                        regLogModelFirst = RegMultinomialLogistic(alphaValues(aVal), batchSizeValues(bSize), lambdaValues(lVal), maxIterValues(numIter));
+                        recordOfDescentFirst = regLogModelFirst.train(trainingMatrix, trainingTarget, []);
+                        predictionsFirst = regLogModelFirst.test(trainingMatrix);
+                        performanceFirst = regLogModelFirst.calculate_performance(predictionsFirst, trainingTarget, [0.5]);
 
-                        % Record information about the model.
-                        descentString = sprintf('%1.4f,', recordOfDescent);
-                        descentString = descentString(1:end-1);  % Strip off the final comma that was added.
-                        fprintf(fidPerformance, '%d\t%d\t%1.4f\t%1.4f\t%1.4f\t%s\n', maxIterValues(numIter), batchSizeValues(bSize), ...
-                            alphaValues(aVal), lambdaValues(lVal), performance.gMean, descentString);
+                        % Record information about the performance of the first model.
+                        descentStringFirst = sprintf('%1.4f,', recordOfDescentFirst);
+                        descentStringFirst = descentStringFirst(1:end-1);  % Strip off the final comma that was added.
+                        fprintf(fidPerformanceFirst, '%d\t%d\t%1.4f\t%1.4f\t%1.4f\t%s\n', maxIterValues(numIter), batchSizeValues(bSize), ...
+                            alphaValues(aVal), lambdaValues(lVal), performanceFirst.gMean, descentStringFirst);
+
+                        % Remove the observations with posterior probabilities worse than the discard threshold.
+                        % Also determine the new indices of the original training examples in the cut down set of good examples.
+                        % This is calculated by taking the cumulative sum of a binary array indicating the good examples.
+                        % Taking only those indices that indicate good examples (i.e. are not a 0 in goodExamples), then the cumsum
+                        % indicates the new index of those examples in the cut down training set.
+                        %                [0]             [1]
+                        %                [1]             [1]
+                        % goodExamples = [0]    cumsum = [1]
+                        %                [1]             [2]
+                        %                [1]             [3]
+                        goodExamples = predictionsFirst(targetMatrix) >= discardThreshold;
+                        newIndices = cumsum(goodExamples);
+                        trainingMatrixSecond = trainingMatrix(goodExamples, :);
+                        trainingTargetSecond = trainingTarget(goodExamples);
+                        if numel(unique(trainingTargetSecond)) < numberOfClasses
+                            % The prediction errors of the first model have caused all examples of (at least) one class to be removed from the dataset.
+                            % Skip training the second model and writing out predictions/coefficients.
+                            disp('WARNING: All examples of one class have been removed for having poor predictions.')
+                            fprintf(fidPerformanceSecond, '%d\t%d\t%1.4f\t%1.4f\t-\t-\n', maxIterValues(numIter), batchSizeValues(bSize), ...
+                                alphaValues(aVal), lambdaValues(lVal));
+                        else
+                            % Create, train and evaluate the second model using the cut down training set.
+                            % The performance evaluation is actually performed on the whole training set rather than the cut down one.
+                            regLogModelSecond = RegMultinomialLogistic(alphaValues(aVal), batchSizeValues(bSize), lambdaValues(lVal), maxIterValues(numIter));
+                            recordOfDescentSecond = regLogModelSecond.train(trainingMatrixSecond, trainingTargetSecond, []);
+                            predictionsSecond = regLogModelSecond.test(trainingMatrix);
+                            performanceSecond = regLogModelSecond.calculate_performance(predictionsSecond, trainingTarget, [0.5]);
+
+                            % Record information about the second model.
+                            descentStringSecond = sprintf('%1.4f,', recordOfDescentSecond);
+                            descentStringSecond = descentStringSecond(1:end-1);  % Strip off the final comma that was added.
+                            fprintf(fidPerformanceSecond, '%d\t%d\t%1.4f\t%1.4f\t%1.4f\t%s\n', maxIterValues(numIter), batchSizeValues(bSize), ...
+                                alphaValues(aVal), lambdaValues(lVal), performanceSecond.gMean, descentStringSecond);
+
+                            % Record the model posteriors and predictions.
+                            fidPredictions = fopen(strcat(dirOutput, '/Predictions.tsv'), 'w');
+                            headerFirstModel = '\tFirstModel_MaxProbClass';
+                            headerSecondModel = '\tSecondModel_MaxProbClass';
+                            for i = 1:numberOfClasses
+                                headerFirstModel = strcat(headerFirstModel, sprintf('\tFirstModel_%s_Posterior', classNames{i}));
+                                headerSecondModel = strcat(headerSecondModel, sprintf('\tSecondModel_%s_Posterior', classNames{i}));
+                            end
+                            header = strcat('PatientID\tClass', headerFirstModel, '\tDiscarded', headerSecondModel, '\n');
+                            fprintf(fidPredictions, header);
+                            for i = 1:numel(indicesOfTrainingExamples)
+                                patientID = uniquePatientIDs(indicesOfTrainingExamples(i));  % Get the ID of the patient.
+                                patientClass = classNames{trainingTarget(i)};  % Get the actual class of the patient.
+                                firstModelPredClass = classNames{performanceFirst.maxProb(i)};  % Get the predicted class of the patient.
+                                firstModelPosteriors = predictionsFirst(i, :);  % Get the posteriors for the patient.
+                                firstModelPosteriors = sprintf('%1.4f\t', firstModelPosteriors);
+                                firstModelPosteriors = firstModelPosteriors(1:end-1);  % Strip off the final tab that was added.
+                                discarded = iff(goodExamples(i), 'N', 'Y');  % Whether the patient was not used for training the second model.
+                                secondModelPredClass = classNames{performanceSecond.maxProb(i)};  % Get the predicted class of the patient.
+                                secondModelPosteriors = predictionsSecond(i, :);  % Get the posteriors for the patient.
+                                secondModelPosteriors = sprintf('%1.4f\t', secondModelPosteriors);
+                                secondModelPosteriors = secondModelPosteriors(1:end-1);  % Strip off the final tab that was added.
+                                fprintf(fidPredictions, '%d\t%s\t%s\t%s\t%s\t%s\t%s\n', patientID, patientClass, firstModelPredClass, firstModelPosteriors, ...
+                                    discarded, secondModelPredClass, secondModelPosteriors);
+                            end
+                            fclose(fidPredictions);
+
+                            % Record the model coefficients.
+                            fidCoefficients = fopen(strcat(dirOutput, '/Coefficients.tsv'), 'w');
+                            headerFirstModel = '';
+                            headerSecondModel = '';
+                            for i = 1:numberOfClasses
+                                headerFirstModel = strcat(headerFirstModel, sprintf('\tFirstModel_%s_Coefficient', classNames{i}));
+                                headerSecondModel = strcat(headerSecondModel, sprintf('\tSecondModel_%s_Coefficient', classNames{i}));
+                            end
+                            header = strcat('Code\tDescription', headerFirstModel, headerSecondModel, '\n');
+                            fprintf(fidCoefficients, header);
+                            for i = 1:numel(uniqueCodes)
+                                code = uniqueCodes{i};  % Get the code.
+                                codeDescription = query_dictionary(mapCodesToDescriptions, code);  % Get the code's description.
+                                codeDescription = strrep(codeDescription, '%', '%%');  % Some code descriptions contain % signs that need escaping.
+                                codeUsedForTraining = i == indicesOfTrainingCodes;  % Boolean array indicating whether the code was used for training.
+                                if sum(codeUsedForTraining) ~= 0
+                                    % The code was used for training, so it has coefficients.
+                                    codeIndex = find(codeUsedForTraining);
+                                    codeIndex = codeIndex(1);  % Get the index of the code in terms of the coefficients.
+                                    coefficientsFirst = regLogModelFirst.coefficients(codeIndex + 1, :);  % Add one as the coefficients have the bias term as the first entry.
+                                    coefficientsSecond = regLogModelSecond.coefficients(codeIndex + 1, :);  % Add one as the coefficients have the bias term as the first entry.
+                                    coefficients = sprintf('%1.4f\t', [coefficientsFirst coefficientsSecond]);
+                                else
+                                    % The code wasn't used for training, so has no coefficients.
+                                    coefficients = repmat(sprintf('0\t'), 1, numberOfClasses * 2);
+                                end
+                                coefficients = coefficients(1:end-1);  % Strip off the final tab that was added.
+                                fprintf(fidCoefficients, '%s\t%s\t%s\n', code, codeDescription, coefficients);
+                            end
+                            fclose(fidCoefficients);
+
+                            % Record the predictions of the ambiguous examples using the models.
+                            ambigData = dataMatrix(ambiguousExamples, indicesOfTrainingCodes);  % Data subset containing only ambiguous examples.
+                            ambigPredsFirst = regLogModelFirst.test(ambigData);
+                            ambigPerfFirst = regLogModelFirst.calculate_performance(ambigPredsFirst, [], []);
+                            ambigPredsSecond = regLogModelSecond.test(ambigData);
+                            ambigPerfSecond = regLogModelSecond.calculate_performance(ambigPredsSecond, [], []);
+                            fidAmbigPredictions = fopen(strcat(dirOutput, '/AmbiguousPredictions.tsv'), 'w');
+                            headerFirstModel = '\tFirstModel_MaxProbClass';
+                            headerSecondModel = '\tSecondModel_MaxProbClass';
+                            for i = 1:numberOfClasses
+                                headerFirstModel = strcat(headerFirstModel, sprintf('\tFirstModel_%s_Posterior', classNames{i}));
+                                headerSecondModel = strcat(headerSecondModel, sprintf('\tSecondModel_%s_Posterior', classNames{i}));
+                            end
+                            header = strcat('PatientID', headerFirstModel, '\tDiscarded', headerSecondModel, '\n');
+                            fprintf(fidAmbigPredictions, header);
+                            for i = 1:numel(ambiguousExamples)
+                                patientID = ambiguousExamples(i);  % Get the ID of the patient.
+                                firstModelPredClass = classNames{ambigPerfFirst.maxProb(i)};  % Get the predicted class of the patient.
+                                firstModelPosteriors = ambigPredsFirst(i, :);  % Get the posteriors for the patient.
+                                firstModelPosteriors = sprintf('%1.4f\t', firstModelPosteriors);
+                                firstModelPosteriors = firstModelPosteriors(1:end-1);  % Strip off the final tab that was added.
+                                secondModelPredClass = classNames{ambigPerfSecond.maxProb(i)};  % Get the predicted class of the patient.
+                                secondModelPosteriors = ambigPredsSecond(i, :);  % Get the posteriors for the patient.
+                                secondModelPosteriors = sprintf('%1.4f\t', secondModelPosteriors);
+                                secondModelPosteriors = secondModelPosteriors(1:end-1);  % Strip off the final tab that was added.
+                                fprintf(fidAmbigPredictions, '%d\t%s\t%s\t%s\t%s\n', patientID, firstModelPredClass, firstModelPosteriors, ...
+                                    secondModelPredClass, secondModelPosteriors);
+                            end
+                            fclose(fidAmbigPredictions);
+                        end
                     end
                 end
             end
         end
-        fclose(fidPerformance);
-
-        % Record the predictions for the final model trained.
-        fidPredictions = fopen(strcat(dirOutput, '/Predictions.tsv'), 'w');
-        header = 'PatientID\tClass\tMaxProbClass';
-        for i = 1:numberOfClasses
-            header = strcat(header, sprintf('\t%s_Posterior', classNames{i}));
-        end
-        header = strcat(header, '\n');
-        fprintf(fidPredictions, header);
-        for i = 1:numel(uniquePatientIDs)
-            patientID = uniquePatientIDs(i);  % Get the ID of the patient.
-            patientIndex = patientIndexMap(patientID);  % Get the patient's index in the data matrix, prediction matrix and target array.
-            patientClass = classNames{trainingTarget(patientIndex)};  % Get the actual class of the patient.
-            patientPredClass = classNames{performance.maxProb(patientIndex)};  % Get the predicted class of the patient.
-            patientPredictions = predictions(patientIndex, :);  % Get the posteriors from each model for the patient.
-            patientPredictions = sprintf('%1.4f\t', patientPredictions);
-            patientPredictions = patientPredictions(1:end-1);  % Strip off the final tab that was added.
-            fprintf(fidPredictions, '%d\t%s\t%s\t%s\n', patientID, patientClass, patientPredClass, patientPredictions);
-        end
-        fclose(fidPredictions);
-
-        % Record the coefficients for the final model trained.
-        fidCoefficients = fopen(strcat(dirOutput, '/Coefficients.tsv'), 'w');
-        header = 'Code\tDescription';
-        for i = 1:numberOfClasses
-            header = strcat(header, sprintf('\t%s_Coefficient', classNames{i}));
-        end
-        header = strcat(header, '\n');
-        fprintf(fidCoefficients, header);
-        for i = 1:numel(uniqueCodes)
-            code = uniqueCodes{i};  % Get the code.
-            codeDescription = query_dictionary(mapCodesToDescriptions, code);  % Get the code's description.
-            codeDescription = strrep(codeDescription, '%', '%%');  % Some code descriptions contain % signs that need escaping.
-            codeUsedForTraining = i == indicesOfTrainingCodes;  % Boolean array indicating whether the code was used for training.
-            if sum(codeUsedForTraining) ~= 0
-                % The code was used for training, so it has coefficients.
-                codeIndex = find(codeUsedForTraining);
-                codeIndex = codeIndex(1);  % Get the index of the code in terms of the coefficients.
-                coefficients = regLogModel.coefficients(codeIndex + 1, :);  % Add one as the coefficients have the bias term as the first entry.
-                coefficients = sprintf('%1.4f\t', coefficients);
-            else
-                % The code wasn't used for training, so has no coefficients.
-                coefficients = repmat(sprintf('0\t'), 1, numberOfClasses);
-            end
-            coefficients = coefficients(1:end-1);  % Strip off the final tab that was added.
-            fprintf(fidCoefficients, '%s\t%s\t%s\n', code, codeDescription, coefficients);
-        end
-        fclose(fidCoefficients);
+        fclose(fidPerformanceFirst);
+        fclose(fidPerformanceSecond);
     else
         % Training if cross validation is being used.
-        fidPerformance = fopen(strcat(dirOutput, '/CVPerformance.tsv'), 'w');
+        fidPerformanceFirst = fopen(strcat(dirOutput, '/CVPerformance_FirstModel.tsv'), 'w');
         foldHeader = sprintf('Fold%d\t', 1:cvFolds);
         foldHeader = foldHeader(1:end-1);  % Strip off the final tab that was added.
-        fprintf(fidPerformance, 'NumIterations\tBatchSize\tAlpha\tLambda\t%s\n', foldHeader);
+        fprintf(fidPerformanceFirst, 'NumIterations\tBatchSize\tAlpha\tLambda\t%s\n', foldHeader);
         crossValPartitions = cvpartition(trainingTarget, 'KFold', cvFolds);  % Create cross validation partitions.
         for numIter = 1:numel(maxIterValues)
             for bSize = 1:numel(batchSizeValues)
@@ -387,7 +480,7 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
                         % Generate the record of the class prediction for each example in the full training set.
                         predictions = zeros(numel(trainingTarget), numberOfClasses);
                         maxProbClass = zeros(numel(trainingTarget), 1);
-                        fprintf(fidPerformance, '%d\t%d\t%1.4f\t%1.4f', maxIterValues(numIter), batchSizeValues(bSize), alphaValues(aVal), lambdaValues(lVal));
+                        fprintf(fidPerformanceFirst, '%d\t%d\t%1.4f\t%1.4f', maxIterValues(numIter), batchSizeValues(bSize), alphaValues(aVal), lambdaValues(lVal));
 
                         % Perform the training.
                         for i = 1:crossValPartitions.NumTestSets
@@ -406,14 +499,14 @@ function [regLogModel, predictions, trainingTarget, recordOfDescent] = main_mini
                             % Record the model's performance.
                             predictions(crossValPartitions.test(i), :) = cvPredictions;
                             maxProbClass(crossValPartitions.test(i)) = performance.maxProb;
-                            fprintf(fidPerformance, '\t%1.4f', performance.gMean);
+                            fprintf(fidPerformanceFirst, '\t%1.4f', performance.gMean);
                         end
-                        fprintf(fidPerformance, '\n');
+                        fprintf(fidPerformanceFirst, '\n');
                     end
                 end
             end
         end
-        fclose(fidPerformance);
+        fclose(fidPerformanceFirst);
 
         % Record the predictions for the final set of CV folds.
         fidPredictions = fopen(strcat(dirOutput, '/CVPredictions.tsv'), 'w');
