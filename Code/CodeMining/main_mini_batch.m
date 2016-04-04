@@ -1,4 +1,4 @@
-function [ambiguousExamples] = main_mini_batch(fileParams)
+function [data] = main_mini_batch(fileParams)
     % Perform clinical code identification using logistic regression.
     %
     % Checking is performed to ensure that the required parameters are present in the parameter file,
@@ -19,7 +19,6 @@ function [ambiguousExamples] = main_mini_batch(fileParams)
     dirProject = fileparts(pwd);  % Directory containing all code, data and results.
     dirLibrary = strcat(dirProject, '/Lib');  % Top level library directory.
     addpath(strcat(dirLibrary, '/JSONLab'));  % Make JSONLab available.
-    addpath(strcat(dirLibrary, '/DETconf'));  % Make evaluation function available.
     params = loadjson(fileParams);
 
     % Check parameters that need to be present.
@@ -468,10 +467,10 @@ function [ambiguousExamples] = main_mini_batch(fileParams)
         fclose(fidPerformanceSecond);
     else
         % Training if cross validation is being used.
-        fidPerformanceFirst = fopen(strcat(dirOutput, '/CVPerformance_FirstModel.tsv'), 'w');
+        fidPerformance = fopen(strcat(dirOutput, '/CVPerformance.tsv'), 'w');
         foldHeader = sprintf('Fold%d\t', 1:cvFolds);
         foldHeader = foldHeader(1:end-1);  % Strip off the final tab that was added.
-        fprintf(fidPerformanceFirst, 'NumIterations\tBatchSize\tAlpha\tLambda\t%s\n', foldHeader);
+        fprintf(fidPerformance, 'NumIterations\tBatchSize\tAlpha\tLambda\t%s\tMaxProbError\n', foldHeader);
         crossValPartitions = cvpartition(trainingTarget, 'KFold', cvFolds);  % Create cross validation partitions.
         for numIter = 1:numel(maxIterValues)
             for bSize = 1:numel(batchSizeValues)
@@ -480,7 +479,7 @@ function [ambiguousExamples] = main_mini_batch(fileParams)
                         % Generate the record of the class prediction for each example in the full training set.
                         predictions = zeros(numel(trainingTarget), numberOfClasses);
                         maxProbClass = zeros(numel(trainingTarget), 1);
-                        fprintf(fidPerformanceFirst, '%d\t%d\t%1.4f\t%1.4f', maxIterValues(numIter), batchSizeValues(bSize), alphaValues(aVal), lambdaValues(lVal));
+                        fprintf(fidPerformance, '%d\t%d\t%1.4f\t%1.4f', maxIterValues(numIter), batchSizeValues(bSize), alphaValues(aVal), lambdaValues(lVal));
 
                         % Perform the training.
                         for i = 1:crossValPartitions.NumTestSets
@@ -499,33 +498,17 @@ function [ambiguousExamples] = main_mini_batch(fileParams)
                             % Record the model's performance.
                             predictions(crossValPartitions.test(i), :) = cvPredictions;
                             maxProbClass(crossValPartitions.test(i)) = performance.maxProb;
-                            fprintf(fidPerformanceFirst, '\t%1.4f', performance.gMean);
+                            fprintf(fidPerformance, '\t%1.4f', performance.gMean);
                         end
-                        fprintf(fidPerformanceFirst, '\n');
+
+                        % Calculate the maximum probability error.
+                        maxProbError = sum(trainingTarget ~= maxProbClass) / numel(trainingTarget);
+                        fprintf(fidPerformance, '\t%1.4f', maxProbError);
+                        fprintf(fidPerformance, '\n');
                     end
                 end
             end
         end
-        fclose(fidPerformanceFirst);
-
-        % Record the predictions for the final set of CV folds.
-        fidPredictions = fopen(strcat(dirOutput, '/CVPredictions.tsv'), 'w');
-        header = 'PatientID\tClass\tMaxProbClass';
-        for i = 1:numberOfClasses
-            header = strcat(header, sprintf('\t%s_Posterior', classNames{i}));
-        end
-        header = strcat(header, '\n');
-        fprintf(fidPredictions, header);
-        for i = 1:numel(uniquePatientIDs)
-            patientID = uniquePatientIDs(i);  % Get the ID of the patient.
-            patientIndex = patientIndexMap(patientID);  % Get the patient's index in the data matrix, prediction matrix and target array.
-            patientClass = classNames{trainingTarget(patientIndex)};  % Get the actual class of the patient.
-            patientPredClass = classNames{maxProbClass(patientIndex)};  % Get the predicted class of the patient.
-            patientPredictions = predictions(patientIndex, :);  % Get the posteriors from each model for the patient.
-            patientPredictions = sprintf('%1.4f\t', patientPredictions);
-            patientPredictions = patientPredictions(1:end-1);  % Strip off the final tab that was added.
-            fprintf(fidPredictions, '%d\t%s\t%s\t%s\n', patientID, patientClass, patientPredClass, patientPredictions);
-        end
-        fclose(fidPredictions);
+        fclose(fidPerformance);
 
 end
