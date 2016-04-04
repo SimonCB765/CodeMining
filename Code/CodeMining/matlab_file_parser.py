@@ -22,6 +22,11 @@ def dataset_parser(fileData, delimiter='\t'):
     with open(fileData, 'r') as fidData:
         for line in fidData:
             chunks = (line.strip()).split(delimiter)
+
+            # Some entries have blank codes. Reject these.
+            if (chunks[1] == '') or chunks[1].isspace():
+                continue
+
             patientIDs.append(int(chunks[0]))
             codes.append(chunks[1])
             counts.append(int(chunks[2]))
