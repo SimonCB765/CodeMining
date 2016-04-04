@@ -1,4 +1,4 @@
-function [data] = main_mini_batch(fileParams)
+function main_mini_batch(fileParams)
     % Perform clinical code identification using logistic regression.
     %
     % Checking is performed to ensure that the required parameters are present in the parameter file,
@@ -148,11 +148,16 @@ function [data] = main_mini_batch(fileParams)
         mkdir(outputDir);
     end
 
-    % Create the mapping recording the description of each code.
-    fidMapping = fopen(fileCodeMap, 'r');
-    mapCodesToDescriptions = textscan(fidMapping, '%s%s', 'Delimiter', '\t');
-    fclose(fidMapping);
-    mapCodesToDescriptions = containers.Map(mapCodesToDescriptions{1}, mapCodesToDescriptions{2});
+    % Create the mapping recording the description of each code. The results will be a struct with the two following entries:
+    %   Codes contains the codes.
+    %   Descriptions contains the description of each code.
+    % Each entry is an 1xN cell array.
+    codeData = py.matlab_file_parser.codelist_parser(fileCodeMap);
+    codeData = struct(codeData);  % Convert py.dict to Matlab struct.
+    codeData = structfun(@(x) cell(x), codeData, 'UniformOutput', false);  % Convert each entry from py.list to Matlab cell array.
+    codeData.Codes = cellfun(@(x) char(x), codeData.Codes, 'UniformOutput', false);  % Convert the codes from py.str to Matlab char.
+    codeData.Descriptions = cellfun(@(x) char(x), codeData.Descriptions, 'UniformOutput', false);  % Convert the descriptions from py.str to Matlab char.
+    mapCodesToDescriptions = containers.Map(codeData.Codes, codeData.Descriptions);
 
     %%%%%%%%%%%%%%%%%%%%%%
     % Create Data Matrix %
@@ -161,17 +166,26 @@ function [data] = main_mini_batch(fileParams)
         % Load the workspace.
         load(params.WorkspaceLocation);
     else
-        % Load the patient data from the input file. The result will be a 1x3 cell array,
-        % with the first entry being the patient IDs, the second the codes and the third the counts.
-        fileDataset = params.DataLocation;  % Location of the dataset used for training.
-        fidDataset = fopen(fileDataset, 'r');
-        data = textscan(fidDataset, '%d%s%d', 'Delimiter', '\t');
-        fclose(fidDataset);
+        % Add the current directory to the Python path if needed.
+        if count(py.sys.path, '') == 0
+            insert(py.sys.path, int32(0), '');
+        end
+
+        % Load the patient data from the input file. The results will be a struct with the three following entries:
+        %   IDs contains the patientIDs.
+        %   Codes contains the codes.
+        %   Counts contains the number of times the code occurred with the given patient.
+        % Each entry is an 1xN cell array.
+        fileDataset = params.DataLocation;
+        data = py.matlab_file_parser.dataset_parser(fileDataset);
+        data = struct(data);  % Convert py.dict to Matlab struct.
+        data = structfun(@(x) cell(x), data, 'UniformOutput', false);  % Convert each entry from py.list to Matlab cell array.
+        data.Codes = cellfun(@(x) char(x), data.Codes, 'UniformOutput', false);  % Convert the codes from py.str to Matlab char.
 
         % Determine unique patient IDs and codes, and create index mappings for each.
-        uniquePatientIDs = unique(data{1});  % A list of the unique patient IDs in the dataset.
+        uniquePatientIDs = unique(cell2mat(data.IDs));  % A list of the unique patient IDs in the dataset.
         patientIndexMap = containers.Map(uniquePatientIDs, 1:numel(uniquePatientIDs));  % A mapping of the patient IDs to their index in the uniquePatientIDs array.
-        uniqueCodes = unique(data{2});  % A list of the unique codes in the dataset.
+        uniqueCodes = unique(data.Codes);  % A list of the unique codes in the dataset.
         codeIndexMap = containers.Map(uniqueCodes, 1:numel(uniqueCodes));  % A mapping of the codes to their index in the uniqueCodes array.
 
         % Create a sparse matrix of the data.
@@ -184,9 +198,9 @@ function [data] = main_mini_batch(fileParams)
         % end
         % Conceptually a zero in an entry indicates that there is no association between the patient and a code, i.e. the patient does not have that code
         % in their medical history).
-        sparseRows = cell2mat(values(patientIndexMap, num2cell(data{1})));  % Array of row indices corresponding to patient IDs.
-        sparseCols = cell2mat(values(codeIndexMap, data{2}));  % Array of column indices corresponding to codes.
-        dataMatrix = sparse(sparseRows, sparseCols, double(data{3}));
+        sparseRows = cell2mat(values(patientIndexMap, data.IDs));  % Array of row indices corresponding to patient IDs.
+        sparseCols = cell2mat(values(codeIndexMap, data.Codes));  % Array of column indices corresponding to codes.
+        dataMatrix = sparse(sparseRows, sparseCols, double(cell2mat(data.Counts)));  % Sparse matrices need doubles, and double() can't take a cell array.
 
         % Save the loaded data.
         if isSaveWorkspace
