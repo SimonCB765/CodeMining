@@ -44,8 +44,7 @@ classdef RegMultinomialLogistic < handle
             % thresholds - Array of T thresholds to calculate performance metrics for. All values must be in the range [0, 1].
             %
             % Return Values
-            % performance - A struct containing 7 fields:
-            %                   performance.AUC - Kx1 array of the AUC for each of the K models trained.
+            % performance - A struct containing 6 fields:
             %                   performance.maxProb - Nx1 array of the maximum probability classification for each of the N examples.
             %                                         Determined as the class with the model with the highest prediction value.
             %                   performance.thresholds - The thresholds used.
@@ -113,14 +112,6 @@ classdef RegMultinomialLogistic < handle
                 performance.sensitivities = sensitivities;
                 performance.specificities = specificities;
                 performance.modelGMeans = modelGMeans;
-
-                % Determine the AUC for each model.
-                AUCs = zeros(numel(obj.targetClasses), 1);
-                for i = 1:numel(obj.targetClasses)
-                    [~, ~, ~, AUC] = perfcurve(targetMatrix(:, i), predictions(:, i), 1);
-                    AUCs(i) = AUC;
-                end
-                performance.AUC = AUCs;
 
                 % Determine the G-Mean for the set of models using the maximum probability classifications.
                 numClassPredictions = arrayfun(@(x) sum(maxProbPred == x), obj.targetClasses);  % The number of predictions for each class (both correct and not).
