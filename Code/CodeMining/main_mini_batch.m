@@ -18,7 +18,7 @@ function main_mini_batch(fileParams)
     % Load the parameters.
     dirProject = fileparts(fileparts(pwd));  % Directory containing all code, data and results.
     dirLibrary = strcat(dirProject, '/Lib');  % Top level library directory.
-    addpath(strcat(dirLibrary, '/JSONLab'));  % Make JSONLab available.
+    addpath(strcat(dirLibrary, '/JSONlab'));  % Make JSONLab available.
     params = loadjson(fileParams);
 
     % Check parameters that need to be present.
