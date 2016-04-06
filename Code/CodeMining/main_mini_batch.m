@@ -148,6 +148,11 @@ function main_mini_batch(fileParams)
         mkdir(outputDir);
     end
 
+    % Add the current directory to the Python path if needed.
+    if count(py.sys.path, '') == 0
+        insert(py.sys.path, int32(0), '');
+    end
+
     % Create the mapping recording the description of each code. The results will be a struct with the two following entries:
     %   Codes contains the codes.
     %   Descriptions contains the description of each code.
@@ -166,11 +171,6 @@ function main_mini_batch(fileParams)
         % Load the workspace.
         load(params.WorkspaceLocation);
     else
-        % Add the current directory to the Python path if needed.
-        if count(py.sys.path, '') == 0
-            insert(py.sys.path, int32(0), '');
-        end
-
         % Load the patient data from the input file. The results will be a struct with the three following entries:
         %   IDs contains the patientIDs.
         %   Codes contains the codes.
