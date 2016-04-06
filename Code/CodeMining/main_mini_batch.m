@@ -145,7 +145,7 @@ function main_mini_batch(fileParams)
     % Setup the output directory.
     if (exist(dirOutput, 'dir') ~= 7)
         % If the output directory does not exist, then create it.
-        mkdir(outputDir);
+        mkdir(dirOutput);
     end
 
     % Add the current directory to the Python path if needed.
