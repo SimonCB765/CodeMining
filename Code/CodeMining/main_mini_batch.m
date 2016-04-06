@@ -340,9 +340,8 @@ function main_mini_batch(fileParams)
                 for aVal = 1:numel(alphaValues)
                     for lVal = 1:numel(lambdaValues)
                         % Display current test.
-                        disp(strcat({'Current time - '}, datestr(now)));
-                        disp(sprintf('\tNow running - Iterations=%d\tBatch Size=%d\tAlpha=%1.4f\tLambda=%1.4f', ...
-                            maxIterValues(numIter), batchSizeValues(bSize), alphaValues(aVal), lambdaValues(lVal)))
+                        disp(sprintf('Now running - Iterations=%d    Batch Size=%d    Alpha=%1.4f    Lambda=%1.4f    Time=%s', ...
+                            maxIterValues(numIter), batchSizeValues(bSize), alphaValues(aVal), lambdaValues(lVal), datestr(now)));
 
                         % Create, train and evaluate the first model on the training set.
                         regLogModelFirst = RegMultinomialLogistic(alphaValues(aVal), batchSizeValues(bSize), lambdaValues(lVal), maxIterValues(numIter));
@@ -496,9 +495,8 @@ function main_mini_batch(fileParams)
                 for aVal = 1:numel(alphaValues)
                     for lVal = 1:numel(lambdaValues)
                         % Display current test.
-                        disp(strcat({'Current time - '}, datestr(now)));
-                        disp(sprintf('\tNow running - Iterations=%d\tBatch Size=%d\tAlpha=%1.4f\tLambda=%1.4f', ...
-                            maxIterValues(numIter), batchSizeValues(bSize), alphaValues(aVal), lambdaValues(lVal)))
+                        disp(sprintf('Now running - Iterations=%d    Batch Size=%d    Alpha=%1.4f    Lambda=%1.4f    Time=%s', ...
+                            maxIterValues(numIter), batchSizeValues(bSize), alphaValues(aVal), lambdaValues(lVal), datestr(now)));
 
                         % Generate the record of the class prediction for each example in the full training set.
                         predictions = zeros(numel(trainingTarget), numberOfClasses);
