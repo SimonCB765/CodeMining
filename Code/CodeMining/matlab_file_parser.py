@@ -29,7 +29,7 @@ def dataset_parser(fileData, delimiter='\t'):
 
             patientIDs.append(int(chunks[0]))
             codes.append(chunks[1])
-            counts.append(int(chunks[2]))
+            counts.append(int(chunks[2].replace(',', '')))  # Some counts are over 1,000 and have commas in them.
     return {"IDs" : patientIDs, "Codes" : codes, "Counts" : counts}
 
 
