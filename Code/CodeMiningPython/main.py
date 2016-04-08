@@ -1,16 +1,15 @@
 # Python imports.
 import argparse
-import json
-import os
 import sys
 
 # User imports.
-import parse_and_clean
-import select_data_subset
+import clean_data
+import code_mining
+import parse_parameters
 
 
 def main(args):
-    """Run the code mining.
+    """Run the data cleaning and code mining.
 
     :param args:    The list of arguments to the program.
     :type args:     list
@@ -21,171 +20,35 @@ def main(args):
     # Parse the user's input. #
     #=========================#
     parser = argparse.ArgumentParser(
-        description="......................................",
-        epilog="For further details and requirements please see the README.")
-    parser.add_argument("dataset", help="Location of the dataset to generate the subset from.")
-    parser.add_argument("outDir", help="Directory where the subset and dataset statistics should be recorded.")
-    parser.add_argument("-p", "--parse", type=str, default=None, help="Location of the JSON format file containing the parser arguments.")
-    parser.add_argument("-s", "--subset", type=str, default=None, help="Location of the JSON format file containing the subset arguments.")
+        description="................Perform clinical code identification using logistic regression................",
+        epilog="Checking is performed to ensure that the required parameters are present in the parameter file,"
+               " but no checking of correctness is performed. Please see the README for information on "
+               "the parameters and the functionality.")
+    parser.add_argument("params", help="Location of the parameter file.")
     args = parser.parse_args()
+    fileParams = args.params  # File containing the parameters to use.
+    parsedParameters = parse_parameters.main(fileParams)
 
-    fileDataset = args.dataset  # File containing the input dataset to create the subset of.
-    dirResults = args.outDir  # Location to save the generated subset.
-    fileParserArgs = args.parse  # JSON file containing the arguments for the dataset parser/cleaner.
-    fileSubsetArgs = args.subset  # JSON file containing the arguments for the subset generator.
+    #=================#
+    # Clean the Data. #
+    #=================#
+    if "CleaningArgs" in parsedParameters:
+        print("Now cleaning the data.")
+        cleanerArgs = parsedParameters["CleaningArgs"]
+        clean_data.main(cleanerArgs["DirtyDataLocation"], cleanerArgs["CleanDataLocation"],
+                        cleanerArgs["Delimiter"], cleanerArgs["StripCommas"],
+                        cleanerArgs["RemoveCols"], cleanerArgs["Unbookend"])
 
-    #========================================#
-    # Process and validate the user's input. #
-    #========================================#
-    errorsFound = []  # List recording all error messages to display.
-
-    if not os.path.isfile(fileDataset):
-        # The input dataset must exist to continue.
-        errorsFound.append("The dataset file does not exist.")
-    if os.path.exists(dirResults):
-        if not os.path.isdir(dirResults):
-            # Results directory location exists but is not a directory.
-            errorsFound.append("The output directory location exists but is not a directory.")
-    else:
-        # Create the results directory as the location is free.
-        os.mkdir(dirResults)
-
-    # Process the parser arguments (if supplied).
-    if fileParserArgs:
-        if not os.path.exists(fileParserArgs):
-            # Parser arguments were supplied, but the location is invalid.
-            errorsFound.append("The parser argument file location is not valid.")
-        else:
-            # Arguments supplied, so check them.
-            readParserArgs = open(fileParserArgs, 'r')
-            parserArgs = json.load(readParserArgs)
-            readParserArgs.close()
-            parserArgs = json_to_ascii(parserArgs)  # Convert all unicode characters to ascii (only needed for Python < 3).
-
-            # Check that the delimiter is a string.
-            if (("Delimiter" in parserArgs) and (not is_string(parserArgs["Delimiter"]))):
-                errorsFound.append("The parser delimiter must be a string.")
-
-            # Check that strip commas is a list of integers.
-            if (("StripCommas" in parserArgs) and (not all([isinstance(i, int) for i in parserArgs["StripCommas"]]))):
-                errorsFound.append("The parser columns to strip commas from must be a list of integers.")
-
-            # Check that the list of columns to remove is a list of integers.
-            if (("RemoveCols" in parserArgs) and (not all([isinstance(i, int) for i in parserArgs["RemoveCols"]]))):
-                errorsFound.append("The parser columns to remove must be a list of integers.")
-
-            # Check that the columns to unbookend argument is correctly formatted.
-            if "Unbookend" in parserArgs:
-                for ind, i in enumerate(parserArgs["Unbookend"]):
-                    if not (("Column" in i) and ("String" in i) and ("IntOnly" in i)):
-                        errorsFound.append("Entry number {0:d} in the list of parser columns to unbookend is missing information.".format(ind))
-                        break
-                    elif ((not isinstance(i["Column"], int)) or (not is_string(i["String"])) or (not isinstance(i["IntOnly"], bool))):
-                        errorsFound.append("Entry number {0:d} in the list of parser columns to unbookend has incorrect types.".format(ind))
-                        break
-
-    # Process the subset generator arguments (if supplied).
-    if fileSubsetArgs:
-        if not os.path.exists(fileSubsetArgs):
-            # Subset arguments were supplied, but the location is invalid.
-            errorsFound.append("The subset argument file location is not valid.")
-        else:
-            # Arguments supplied, so check them.
-            readSubsetArgs = open(fileSubsetArgs, 'r')
-            subsetArgs = json.load(readSubsetArgs)
-            readSubsetArgs.close()
-
-            # Check that the minimum number of patients a code needs to occur with is an integer.
-            if (("MinCodeFrequency" in subsetArgs) and (not isinstance(subsetArgs["MinCodeFrequency"], int))):
-                errorsFound.append("The minimum number of patients a code needs to occur with must be an integer.")
-
-            # Check that the minimum number of frequently occurring codes a patient needs to occur with is an integer.
-            if (("MinPatientFrequency" in subsetArgs) and (not isinstance(subsetArgs["MinPatientFrequency"], int))):
-                errorsFound.append("The minimum number of frequently occurring codes a patient needs to occur with must be an integer.")
-
-            # Check the class information.
-            if "Classes" not in subsetArgs:
-                errorsFound.append("No class information was supplied in the subset generation arguments.")
-            else:
-                classesWithoutCodes = [i for i in subsetArgs["Classes"] if not subsetArgs["Classes"][i]]  # Names of all classes without codes.
-                if len(classesWithoutCodes) > 1:
-                    # There can be at most one class without supplied codes.
-                    errorsFound.append("The maximum number of classes without provided codes is 1. Classes without supplied codes were: {0:s}".format(','.join(classesWithoutCodes)))
-
-    # Exit if errors were found.
-    if errorsFound:
-        print("\n\nThe following errors were encountered while parsing the input parameters:\n")
-        print('\n'.join(errorsFound))
-        sys.exit()
-
-    # Parse and clean the dataset if required.
-    if fileParserArgs:
-        # Load the arguments for the parser.
-        readParserArgs = open(fileParserArgs, 'r')
-        parserArgs = json.load(readParserArgs)
-        readParserArgs.close()
-        parserArgs = json_to_ascii(parserArgs)  # Convert all unicode characters to ascii (only needed for Python < 3).
-
-        # Process the arguments.
-        delimiter = '\t' if ("Delimiter" not in parserArgs) else parserArgs["Delimiter"]
-        colsToStripCommas = [] if ("StripCommas" not in parserArgs) else parserArgs["StripCommas"]
-        colsToRemove = [] if ("RemoveCols" not in parserArgs) else parserArgs["RemoveCols"]
-        colsToUnbookend = [] if ("Unbookend" not in parserArgs) else [[i["Column"], i["String"], i["IntOnly"]] for i in parserArgs["Unbookend"]]
-        dirCleaned = dirResults + "/CleanedData"
-
-        # Clean the data.
-        fileDataset = parse_and_clean.parse_and_clean(fileDataset, dirCleaned, delimiter, colsToStripCommas, colsToRemove, colsToUnbookend)
-
-    # Generate the subset if required.
-    if fileSubsetArgs:
-        # Load the arguments for the subset generation.
-        readSubsetArgs = open(fileSubsetArgs, 'r')
-        subsetArgs = json.load(readSubsetArgs)
-        readSubsetArgs.close()
-
-        # Process the arguments.
-        minPatientsPerCode = 0 if ("MinCodeFrequency" not in subsetArgs) else subsetArgs["MinCodeFrequency"]
-        codeDensity = 0 if ("MinPatientFrequency" not in subsetArgs) else subsetArgs["MinPatientFrequency"]
-        isCollectorClass = False  # Whether there is a class with no codes that will be used to collect all examples not belonging to the other classes.
-        collectorClass = None  # The class to use as a collector.
-        classesWithoutCodes = [i for i in subsetArgs["Classes"] if not subsetArgs["Classes"][i]]  # Names of all classes without codes.
-        if len(classesWithoutCodes) == 1:
-            # There is one class that will contain all examples that do not belong to another class.
-            isCollectorClass = True
-            collectorClass = classesWithoutCodes[0]
-
-        # Generate the subset.
-        [fileDataset, ambiguousDataset] = select_data_subset.select_data_subset(fileDataset, subsetArgs["Classes"], dirResults, minPatientsPerCode,
-                                                                                codeDensity, isCollectorClass, collectorClass)
-
-
-def is_string(objectToCheck):
-    """Determine whether objectToCheck is a string in both Python 2.x and 3.x."""
-
-    majorVersion = sys.version_info[0]  # Determine major version number.
-    return isinstance(objectToCheck, str) if (majorVersion == 3) else isinstance(objectToCheck, basestring)
-
-
-def json_to_ascii(jsonObject):
-    """Convert a JSON object from unicode to ascii strings.
-
-    This will recurse through all levels of the JSON dictionary, and therefore may hit Python's recursion limit.
-    To avoid this use object_hook in the json.load() function instead.
-
-    """
-
-    if isinstance(jsonObject, dict):
-        # If the current part of the JSON oobject is a dictionary, then make all its keys and values ascii if needed.
-        return dict([(json_to_ascii(key), json_to_ascii(value)) for key, value in jsonObject.iteritems()])
-    elif isinstance(jsonObject, list):
-        # If the current part of the JSON object is a list, then make all its elements ascii if needed.
-        return [json_to_ascii(i) for i in jsonObject]
-    elif isinstance(jsonObject, unicode):
-        # If you've reached a unicode string convert it to ascii.
-        return jsonObject.encode('utf-8')
-    else:
-        # You've reached a non-unicode terminus (e.g. an integer or null).
-        return jsonObject
+    #======================#
+    # Perform Code Mining. #
+    #======================#
+    if "MiningArgs" in parsedParameters:
+        print("Now starting code mining.")
+        miningArgs = parsedParameters["MiningArgs"]
+        code_mining.main(miningArgs["DataLocation"], miningArgs["CodeMapping"], miningArgs["ResultsLocation"],
+                         miningArgs["Classes"], miningArgs["Lambda"], miningArgs["Alpha"], miningArgs["BatchSize"],
+                         miningArgs["MaxIter"], miningArgs["CodeOccurrences"], miningArgs["PatientOccurences"],
+                         miningArgs["CVFolds"], miningArgs["DataNorm"], miningArgs["DiscardThreshold"])
 
 
 if __name__ == '__main__':
