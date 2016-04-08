@@ -8,7 +8,7 @@ function [dataMatrix] = normalise_data_matrix(dataMatrix, normMethod, normParam)
     % normMethod - The method to use for normalisation. The acceptable values are:
     %                  0  - Leave the matrix as is. This is the default method.
     %                  1  - Convert the matrix to a binary representation. Each non-zero entry in the matrix is converted to a one.
-    %    2  - Convert the matrix to a tf-idf representation. Each non-zero entry in the matrix is converted to its tf-idf one.
+    %                  2  - Convert the matrix to a tf-idf representation. Each non-zero entry in the matrix is converted to its tf-idf one.
     %                  3* - Make each column of the matrix have 0 mean.
     %                  4  - Make each column of the matrix have unit variance.
     %                  5* - Standardise each column (combine methods 3 and 4).
