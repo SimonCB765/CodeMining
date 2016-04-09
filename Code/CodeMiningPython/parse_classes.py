@@ -33,20 +33,30 @@ def find_patients(dataMatrix, classData, mapCodeToIndex):
     # For each class determine the indices of the codes that define the class, and the patients in the class.
     # Any codes in the parameter list that do not appear in the dataset will be ignored.
     classExamples = {}
+    collectorClass = None
+    allClassExamples = set([])
     for i in classData:
         # Get variable indices.
-        classCodeIndices = [j for j in classData[i] if j[-1] != '.']
-        getChildren = [j[:-1] for j in classData[i] if j[-1] == '.']  # Need to get children for any code ending in '.'.
-        getChildren = extract_child_codes.main(getChildren, mapCodeToIndex.keys())
-        classCodeIndices.extend(getChildren)
-        classCodeIndices = [mapCodeToIndex.get(j, None) for j in classCodeIndices]
-        classCodeIndices = [j for j in classCodeIndices if j]  # Remove all None values from the list of indices.
+        if classData[i]:
+            # If the class has codes (and is therefore not a collector class for remaining examples).
+            classCodeIndices = [j for j in classData[i] if j[-1] != '.']
+            getChildren = [j[:-1] for j in classData[i] if j[-1] == '.']  # Need to get children for any code ending in '.'.
+            getChildren = extract_child_codes.main(getChildren, mapCodeToIndex.keys())
+            classCodeIndices.extend(getChildren)
+            classCodeIndices = [mapCodeToIndex.get(j, None) for j in classCodeIndices]
+            classCodeIndices = [j for j in classCodeIndices if j]  # Remove all None values from the list of indices.
 
-        # Determine patients. For a dense matrix np.where(dataMatrix > 0) could be used, but np.where
-        # doesn't work for sparse matrices.
-        classSubset = dataMatrix[:, classCodeIndices] > 0  # Subset of the dataset containing the class's examples.
-        exampleIndices = set(np.nonzero(classSubset)[0])  # The indices of the patients in the class.
-        classExamples[i] = exampleIndices
+            print(i, getChildren)
+
+            # Determine patients. For a dense matrix np.where(dataMatrix > 0) could be used, but np.where
+            # doesn't work for sparse matrices.
+            classSubset = dataMatrix[:, classCodeIndices] > 0  # Subset of the dataset containing the class's examples.
+            exampleIndices = set(np.nonzero(classSubset)[0])  # The indices of the patients in the class.
+            classExamples[i] = exampleIndices
+            allClassExamples |= exampleIndices
+        else:
+            classExamples[i] = set([])
+            collectorClass = i
 
     # Determine the ambiguous examples.
     ambiguousExamples = set([])
@@ -58,6 +68,10 @@ def find_patients(dataMatrix, classData, mapCodeToIndex):
         classExamples[i] -= ambiguousExamples
         classExamples[i] = sorted(classExamples[i])
     classExamples["Ambiguous"] = sorted(ambiguousExamples)
+
+    # Setup the collector class if needed.
+    if collectorClass:
+        classExamples[collectorClass] = set(range(dataMatrix.shape[0])) - allClassExamples
 
     return classExamples
 
