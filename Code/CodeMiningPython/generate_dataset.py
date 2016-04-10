@@ -51,14 +51,14 @@ def main(fileDataset, dirOutput, mapCodeToDescr, normMethod=0, normParam=None):
         if p not in uniquePatients:
             currentPatientIndex += 1
             uniquePatients[p] = currentPatientIndex
-        patientIDs[ind] = currentPatientIndex
+        patientIDs[ind] = uniquePatients[p]
         codesPerPatient[p] += 1
 
         # Handle codes.
         if c not in uniqueCodes:
             currentCodeIndex += 1
             uniqueCodes[c] = currentCodeIndex
-        codes[ind] = currentCodeIndex
+        codes[ind] = uniqueCodes[c]
         patientsPerCode[c] += 1
 
     # Write out the records of patients per code and codes per patient.
@@ -74,7 +74,7 @@ def main(fileDataset, dirOutput, mapCodeToDescr, normMethod=0, normParam=None):
 
     # Generate the sparse matrix. Use CSC matrix for normalisation as it gives fast column operations.
     # Use CSR for learning as it gives fast row operations.
-    dt = np.dtype("Float64")  # 64-bit floating-point number
+    dt = np.dtype("Float64")  # 64-bit floating-point number.
     sparseMatrix = sparse.coo_matrix((counts, (patientIDs, codes)), dtype=dt)  # Create the sparse matrix.
     sparseMatrix = sparse.csc_matrix(sparseMatrix, dtype=dt)  # Convert to CSC format for normalisation.
     sparseMatrix = normalise_data_matrix.main(sparseMatrix, normMethod, normParam)  # Normalise the data.
