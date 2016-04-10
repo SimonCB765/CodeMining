@@ -10,7 +10,7 @@ from scipy import sparse
 import normalise_data_matrix
 
 
-def main(fileDataset, dirOutput, normMethod=0, normParam=None):
+def main(fileDataset, dirOutput, mapCodeToDescr, normMethod=0, normParam=None):
     """Generate a normalised sparse matrix from a data file.
 
     Each line in the input file is expected to have 3 columns:
@@ -23,6 +23,8 @@ def main(fileDataset, dirOutput, normMethod=0, normParam=None):
     :type fileDataset:      str
     :param dirOutput:       The location to save information about the dataset.
     :type dirOutput:        str
+    :param mapCodeToDescr:  The mapping from codes to their descriptions.
+    :type mapCodeToDescr:   dict
     :param normMethod:      The code for the normalisation method to use.
     :type normMethod:       int
     :param normParam:       The parameters (if any) needed for the normalisation method.
@@ -66,7 +68,8 @@ def main(fileDataset, dirOutput, normMethod=0, normParam=None):
     filePatientsPerCode = dirOutput + "/PatientsPerCode.tsv"
     with open(filePatientsPerCode, 'w') as writePatientsPerCode:
         for i in sorted(patientsPerCode):
-            writePatientsPerCode.write("{0:s}\t{1:d}\n".format(i, patientsPerCode[i]))
+            writePatientsPerCode.write("{0:s}\t{1:s}\t{2:d}\n".format(i, mapCodeToDescr.get(i, "Unknown code."),
+                                                                      patientsPerCode[i]))
 
     # Generate the sparse matrix. Use CSC matrix for normalisation as it gives fast column operations.
     # Use CSR for learning as it gives fast row operations.
