@@ -43,8 +43,10 @@ def find_patients(dataMatrix, classData, mapCodeToIndex, isCodesRemoved=True):
         if classData[i]:
             # If the class has codes (and is therefore not a collector class for remaining examples).
             classCodeIndices = [j for j in classData[i] if j[-1] != '.']
-            getChildren = [j[:-1] for j in classData[i] if j[-1] == '.']  # Need to get children for any code ending in '.'.
-            getChildren = extract_child_codes.main(getChildren, mapCodeToIndex.keys())
+            getChildren = [j[:-1] for j in classData[i] if j[-1] == '.']  # Need child codes for any code ending in '.'.
+            if getChildren:
+                # If there are any children to get.
+                getChildren = extract_child_codes.main(getChildren, mapCodeToIndex.keys())
             classCodeIndices.extend(getChildren)
             classCodeIndices = [mapCodeToIndex.get(j, None) for j in classCodeIndices]
             classCodeIndices = [j for j in classCodeIndices if j]  # Remove all None values from the list of indices.
