@@ -204,13 +204,13 @@ def main(fileParams):
             else:
                 procMiningArgs["CodeOccurrences"] = miningArgs["CodeOccurrences"]
 
-        procMiningArgs["PatientOccurences"] = 0  # Default to accepting all patients.
-        if "PatientOccurences" in miningArgs:
+        procMiningArgs["PatientOccurrences"] = 0  # Default to accepting all patients.
+        if "PatientOccurrences" in miningArgs:
             # The minimum number of codes a patient needs to occur with must be an integer.
-            if not isinstance(miningArgs["PatientOccurences"], numbers.Integral):
+            if not isinstance(miningArgs["PatientOccurrences"], numbers.Integral):
                 errorsFound.append("The minimum number of codes a patient needs to occur with must be an integer.")
             else:
-                procMiningArgs["PatientOccurences"] = miningArgs["PatientOccurences"]
+                procMiningArgs["PatientOccurrences"] = miningArgs["PatientOccurrences"]
 
         procMiningArgs["CVFolds"] = 0  # Default to not using cross validation.
         if "CVFolds" in miningArgs:
