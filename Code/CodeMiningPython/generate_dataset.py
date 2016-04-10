@@ -4,6 +4,7 @@
 import collections
 
 # 3rd party imports.
+import numpy as np
 from scipy import sparse
 
 # User imports.
@@ -73,10 +74,11 @@ def main(fileDataset, dirOutput, mapCodeToDescr, normMethod=0, normParam=None):
 
     # Generate the sparse matrix. Use CSC matrix for normalisation as it gives fast column operations.
     # Use CSR for learning as it gives fast row operations.
-    sparseMatrix = sparse.coo_matrix((counts, (patientIDs, codes)))  # Create the sparse matrix.
-    sparseMatrix = sparse.csc_matrix(sparseMatrix)  # Convert to CSC format for normalisation.
+    dt = np.dtype("Float64")  # 64-bit floating-point number
+    sparseMatrix = sparse.coo_matrix((counts, (patientIDs, codes)), dtype=dt)  # Create the sparse matrix.
+    sparseMatrix = sparse.csc_matrix(sparseMatrix, dtype=dt)  # Convert to CSC format for normalisation.
     sparseMatrix = normalise_data_matrix.main(sparseMatrix, normMethod, normParam)  # Normalise the data.
-    sparseMatrix = sparse.csr_matrix(sparseMatrix)  # Convert to CSR for code mining.
+    sparseMatrix = sparse.csr_matrix(sparseMatrix, dtype=dt)  # Convert to CSR for code mining.
 
     return sparseMatrix, uniquePatients, uniqueCodes
 
