@@ -72,7 +72,7 @@ def find_patients(dataMatrix, classData, mapCodeToIndex, isCodesRemoved=True):
 
     # Setup the collector class if needed.
     if collectorClass:
-        classExamples[collectorClass] = set(range(dataMatrix.shape[0])) - allClassExamples
+        classExamples[collectorClass] = sorted(set(range(dataMatrix.shape[0])) - allClassExamples)
 
     # Remove the codes used to determine class membership.
     if isCodesRemoved:
