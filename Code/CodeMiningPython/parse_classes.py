@@ -10,7 +10,7 @@ import numpy as np
 import extract_child_codes
 
 
-def find_patients(dataMatrix, classData, mapCodeToIndex):
+def find_patients(dataMatrix, classData, mapCodeToIndex, isCodesRemoved=True):
     """Determine the indices of the patients in each class.
 
     Patients are deemed to be in a class if they have a nonzero value for a code belonging to the class.
@@ -25,16 +25,19 @@ def find_patients(dataMatrix, classData, mapCodeToIndex):
     :type classData:        dict
     :param mapCodeToIndex:  A mapping from codes to their indices in the dataset.
     :type mapCodeToIndex:   dict
-    :return :               The lists of which examples belong to which class, and which examples are ambiguous.
+    :param isCodesRemoved:  Whether the codes used to determine class membership should be zeroed out of the dataset.
+    :type isCodesRemoved:   bool
+    :return :               The (possibly altered) data matrix and the lists of which examples belong to which class,
+                                and which examples are ambiguous.
     :rtype :                dict
 
     """
 
     # For each class determine the indices of the codes that define the class, and the patients in the class.
     # Any codes in the parameter list that do not appear in the dataset will be ignored.
-    classExamples = {}
-    collectorClass = None
-    allClassExamples = set([])
+    classExamples = {}  # Dictionary to hold the mapping from class name to the indices of the examples in the class.
+    collectorClass = None  # The name of the class that will collect all remaining examples.
+    allClassExamples = set([])  # The examples belonging to a class.
     for i in classData:
         # Get variable indices.
         if classData[i]:
@@ -45,8 +48,6 @@ def find_patients(dataMatrix, classData, mapCodeToIndex):
             classCodeIndices.extend(getChildren)
             classCodeIndices = [mapCodeToIndex.get(j, None) for j in classCodeIndices]
             classCodeIndices = [j for j in classCodeIndices if j]  # Remove all None values from the list of indices.
-
-            print(i, getChildren)
 
             # Determine patients. For a dense matrix np.where(dataMatrix > 0) could be used, but np.where
             # doesn't work for sparse matrices.
@@ -73,7 +74,11 @@ def find_patients(dataMatrix, classData, mapCodeToIndex):
     if collectorClass:
         classExamples[collectorClass] = set(range(dataMatrix.shape[0])) - allClassExamples
 
-    return classExamples
+    # Remove the codes used to determine class membership.
+    if isCodesRemoved:
+        dataMatrix[:, list(allClassExamples)] = 0
+
+    return dataMatrix, classExamples
 
 
 def check_validity(classDict):
