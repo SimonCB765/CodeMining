@@ -173,11 +173,11 @@ def main(fileParams):
             else:
                 procMiningArgs["Lambda"] = miningArgs["Lambda"]
 
-        procMiningArgs["Alpha"] = [0.01]  # Default to only using an alpha value of 0.1.
-        if "Alpha" in miningArgs:
+        procMiningArgs["ElasticNetMixing"] = [0.15]  # Default to only using an alpha value of 0.1.
+        if "ElasticNetMixing" in miningArgs:
             # The list of alpha values must contain only floats and integers.
             if not all([isinstance(i, numbers.Real) for i in miningArgs["Alpha"]]):
-                errorsFound.append("MINING: The alpha values must be a list of floats.")
+                errorsFound.append("MINING: The elastic net mixing values must be a list of floats.")
             else:
                 procMiningArgs["Alpha"] = miningArgs["Alpha"]
 
@@ -189,7 +189,7 @@ def main(fileParams):
             else:
                 procMiningArgs["BatchSize"] = miningArgs["BatchSize"]
 
-        procMiningArgs["MaxIter"] = [10]  # Default to only using a maximum iteration value of 10.
+        procMiningArgs["MaxIter"] = [5]  # Default to only using a maximum iteration value of 10.
         if "MaxIter" in miningArgs:
             if not all([isinstance(i, numbers.Integral) for i in miningArgs["MaxIter"]]):
                 errorsFound.append("MINING: The maximum iteration values must be a list of integers.")

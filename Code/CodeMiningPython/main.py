@@ -46,9 +46,10 @@ def main(args):
         print("Now starting code mining.")
         miningArgs = parsedParameters["MiningArgs"]
         code_mining.main(miningArgs["DataLocation"], miningArgs["CodeMapping"], miningArgs["ResultsLocation"],
-                         miningArgs["Classes"], miningArgs["Lambda"], miningArgs["Alpha"], miningArgs["BatchSize"],
-                         miningArgs["MaxIter"], miningArgs["CodeOccurrences"], miningArgs["PatientOccurrences"],
-                         miningArgs["CVFolds"], miningArgs["DataNorm"], miningArgs["DiscardThreshold"])
+                         miningArgs["Classes"], miningArgs["Lambda"], miningArgs["ElasticNetMixing"],
+                         miningArgs["BatchSize"], miningArgs["MaxIter"], miningArgs["CodeOccurrences"],
+                         miningArgs["PatientOccurrences"], miningArgs["CVFolds"], miningArgs["DataNorm"],
+                         miningArgs["DiscardThreshold"])
 
 
 if __name__ == '__main__':
