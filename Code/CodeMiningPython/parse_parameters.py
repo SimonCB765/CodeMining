@@ -173,13 +173,13 @@ def main(fileParams):
             else:
                 procMiningArgs["Lambda"] = miningArgs["Lambda"]
 
-        procMiningArgs["ElasticNetMixing"] = [0.15]  # Default to only using an alpha value of 0.1.
+        procMiningArgs["ElasticNetMixing"] = [0.15]  # Default to only using a maxing value of 0.1.
         if "ElasticNetMixing" in miningArgs:
-            # The list of alpha values must contain only floats and integers.
-            if not all([isinstance(i, numbers.Real) for i in miningArgs["Alpha"]]):
+            # The list of elastic net mixing values must contain only floats and integers.
+            if not all([isinstance(i, numbers.Real) for i in miningArgs["ElasticNetMixing"]]):
                 errorsFound.append("MINING: The elastic net mixing values must be a list of floats.")
             else:
-                procMiningArgs["Alpha"] = miningArgs["Alpha"]
+                procMiningArgs["ElasticNetMixing"] = miningArgs["ElasticNetMixing"]
 
         procMiningArgs["BatchSize"] = [500]  # Default to only using a batch size of 500.
         if "BatchSize" in miningArgs:
