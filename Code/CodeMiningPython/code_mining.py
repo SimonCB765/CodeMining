@@ -2,7 +2,9 @@
 
 # Python imports.
 import datetime
+import math
 import os
+import random
 import sys
 
 # 3rd party imports.
@@ -104,7 +106,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
     if cvFolds == 0:
         # Training if no testing is needed.
-        # TODO : add he complicated stuff to train the initial and the second model
+        # TODO : add the complicated stuff to train the initial and the second model
         pass
     else:
         # Training if cross validation is to be performed.
@@ -112,6 +114,30 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
         # Never generate fewer than 2 folds. If one was requested, then generate 2 and use one for training and
         # the other for testing.
         partitionsToGenerate = cvFolds if cvFolds > 1 else 2
+
+        # Generate the stratified cross validation folds.
+        partitions = np.array(partition_dataset.main(allExampleClasses, partitionsToGenerate, True))
+
+        # Generate the permutations of each partition to use. We want on permutation per iteration, as we will use
+        # these to shuffle our training examples. Calculating these upfront will cause each combination of parameters
+        # to use the same permutations of the cross validation folds.
+        permutations = {}
+        maxNumIterations = max(numIters)  # Maximum number of iterations used.
+        for i in range(cvFolds):
+            # Determine the number of training examples used for this fold. The number is the total number of
+            # available examples minus the number of testing.
+            trainingExamples = (partitions != i) & trainingExampleMask
+            trainingInPart = sum(trainingExamples)
+
+            # Generate a list containing copies of the indices for the training examples in this fold.
+            # If there are 10 training examples for this fold and the maximum number of iterations is 5, then
+            # indexLists will contain 5 copies of the integers 0..9.
+            indexLists = [list(range(trainingInPart)) for _ in range(maxNumIterations)]
+
+            # Finally, shuffle the index lists to generate the permutations.
+            for j in range(maxNumIterations):
+                random.shuffle(indexLists[j])
+            permutations[i] = indexLists
 
         with open(dirResults + "/CVPerformance.tsv", 'w') as fidPerformance:
             # Write the header for the output file.
@@ -132,40 +158,56 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 fidPerformance.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}\t"
                                      .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
 
-                # Run the desired number of training iterations.
-                for _ in range(numIterations):
-                    # Generate the stratified cross validation folds.
-                    partitions = np.array(partition_dataset.main(allExampleClasses, partitionsToGenerate, True))
-
-                    # Generate the array to hold the predictions.
+                # Train and test on each fold if cFolds > 1. Otherwise, train on one fold and test on the other.
+                for i in range(cvFolds):
+                    # Create the array to hold the predictions.
                     predictions = np.zeros(dataMatrix.shape[0])
 
-                    # Train and test on each fold if cFolds > 1. Otherwise, train on one fold and test on the other.
-                    for i in range(cvFolds):
-                        # Determine training and testing example masks.
-                        trainingExamples = (partitions != i) & trainingExampleMask
-                        testingExamples = (partitions == i) & trainingExampleMask
+                    # Determine training and testing example masks.
+                    trainingExamples = (partitions != i) & trainingExampleMask
+                    testingExamples = (partitions == i) & trainingExampleMask
 
-                        # Create training and testing matrices and class arrays.
-                        trainingMatrix = dataMatrix[trainingExamples, :]
-                        trainingClasses = allExampleClasses[trainingExamples]
-                        testingMatrix = dataMatrix[testingExamples, :]
-                        testingClasses = allExampleClasses[testingExamples]
+                    # Create training and testing matrices and class arrays.
+                    trainingMatrix = dataMatrix[trainingExamples, :]
+                    trainingClasses = allExampleClasses[trainingExamples]
+                    numTrainingExamples = trainingMatrix.shape[0]
+                    testingMatrix = dataMatrix[testingExamples, :]
+                    testingClasses = allExampleClasses[testingExamples]
 
-                        # Train the model.
-                        classifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
-                                                   l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
-                                                   learning_rate="optimal", class_weight=None)
-                        classifier.fit(trainingMatrix, trainingClasses)
+                    # Create the model.
+                    classifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
+                                               l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
+                                               learning_rate="optimal", class_weight=None)
 
-                        # Record the model's predictions on this fold.
-                        testPredictions = classifier.predict(testingMatrix)
-                        predictions[testingExamples] = testPredictions
-                        predictionError = 1 - (sum(testPredictions == testingClasses) / testingClasses.shape[0])
-                        fidPerformance.write("\t{0:1.4f}".format(predictionError))
+                    # Run the desired number of training iterations.
+                    for j in range(numIterations):
+                        # Shuffle the training matrix and class array for this iteration.
+                        trainingMatrix = trainingMatrix[permutations[i][j], :]
+                        trainingClasses = trainingClasses[permutations[i][j]]
 
-                    # Record error of predictions.
-                    examplesUsed = predictions != 0
-                    totalPredictionError = predictions[examplesUsed] == allExampleClasses[examplesUsed]
-                    totalPredictionError = 1 - (sum(totalPredictionError) / sum(examplesUsed))
-                    fidPerformance.write("\t{0:1.4f}\n".format(totalPredictionError))
+                        # Run through the batches.
+                        for k in range(math.ceil(numTrainingExamples / batchSize)):
+                            # Determine the indices to access the batch. Sparse matrices throw errors if you try
+                            # to index beyond the maximum index, so prevent this.
+                            startIndex = k * batchSize
+                            stopIndex = min((k + 1) * batchSize, numTrainingExamples - 1)
+
+                            # Generate the training matrix and class array for the batch.
+                            batchTrainingMatrix = trainingMatrix[startIndex:stopIndex, :]
+                            batchTrainingClasses = trainingClasses[startIndex:stopIndex]
+
+                            # Train the model on the batch.
+                            classifier.partial_fit(batchTrainingMatrix, batchTrainingClasses, [1,2])
+                            print(classifier.t_)
+
+                    # Record the model's predictions on this fold.
+                    testPredictions = classifier.predict(testingMatrix)
+                    predictions[testingExamples] = testPredictions
+                    predictionError = 1 - (sum(testPredictions == testingClasses) / testingClasses.shape[0])
+                    fidPerformance.write("\t{0:1.4f}".format(predictionError))
+
+                # Record error of predictions across all folds using this parameter combination.
+                examplesUsed = predictions != 0
+                totalPredictionError = predictions[examplesUsed] == allExampleClasses[examplesUsed]
+                totalPredictionError = 1 - (sum(totalPredictionError) / sum(examplesUsed))
+                fidPerformance.write("\t{0:1.4f}\n".format(totalPredictionError))
