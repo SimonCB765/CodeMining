@@ -86,6 +86,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             classCode[currentCode] = i
             allExampleClasses[classExamples[i]] = currentCode
             currentCode += 1
+    classesUsed = [i for i in classCode]
 
     # Determine a mask for the examples that will be used for training. Any example with a class of 0 is not
     # used for training as the real classes begin at 1.
@@ -141,10 +142,15 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
         with open(dirResults + "/CVPerformance.tsv", 'w') as fidPerformance:
             # Write the header for the output file.
-            fidPerformance.write("NumIterations\tBatchSize\tLambda\tENetRatio\t{0:s}\tTotalError\n"
-                                 .format('\t'.join(["Fold_{0:d}_Error".format(i) for i in range(cvFolds)])))
+            if cvFolds == 1:
+                # If there is only one fold, then record the descent and the test performance.
+                fidPerformance.write("NumIterations\tBatchSize\tLambda\tENetRatio\tTestError\tDescent\n")
+            else:
+                # If there is more than one fold, then only record the performance on each test fold.
+                fidPerformance.write("NumIterations\tBatchSize\tLambda\tENetRatio\t{0:s}\tTotalError\n"
+                                     .format('\t'.join(["Fold_{0:d}_Error".format(i) for i in range(cvFolds)])))
 
-            for params in paramCombos[:1]:
+            for params in paramCombos:
                 # Define the parameters for this run.
                 numIterations = params[0]
                 batchSize = params[1]
@@ -162,6 +168,9 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 for i in range(cvFolds):
                     # Create the array to hold the predictions.
                     predictions = np.zeros(dataMatrix.shape[0])
+
+                    # Create the list to hold the descent.
+                    descent = []
 
                     # Determine training and testing example masks.
                     trainingExamples = (partitions != i) & trainingExampleMask
@@ -197,17 +206,27 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                             batchTrainingClasses = trainingClasses[startIndex:stopIndex]
 
                             # Train the model on the batch.
-                            classifier.partial_fit(batchTrainingMatrix, batchTrainingClasses, [1,2])
-                            print(classifier.t_)
+                            classifier.partial_fit(batchTrainingMatrix, batchTrainingClasses, classes=classesUsed)
 
-                    # Record the model's predictions on this fold.
+                            # Record the descent if only one fold is being used.
+                            if cvFolds == 1:
+                                testPredictions = classifier.predict(testingMatrix)
+                                predictionError = 1 - (sum(testPredictions == testingClasses) / testingClasses.shape[0])
+                                descent.append(predictionError)
+
+                    # Record the model's predictions on this fold. If only one fod is being used, then this
+                    # will be the test error on the holdout portion.
                     testPredictions = classifier.predict(testingMatrix)
                     predictions[testingExamples] = testPredictions
                     predictionError = 1 - (sum(testPredictions == testingClasses) / testingClasses.shape[0])
                     fidPerformance.write("\t{0:1.4f}".format(predictionError))
 
-                # Record error of predictions across all folds using this parameter combination.
-                examplesUsed = predictions != 0
-                totalPredictionError = predictions[examplesUsed] == allExampleClasses[examplesUsed]
-                totalPredictionError = 1 - (sum(totalPredictionError) / sum(examplesUsed))
-                fidPerformance.write("\t{0:1.4f}\n".format(totalPredictionError))
+                if cvFolds == 1:
+                    # If only one fold, then record the descent.
+                    fidPerformance.write("\t{0:s}\n".format(','.join(["{0:1.4f}".format(i) for i in descent])))
+                else:
+                    # Record error of predictions across all folds using this parameter combination.
+                    examplesUsed = predictions != 0
+                    totalPredictionError = predictions[examplesUsed] == allExampleClasses[examplesUsed]
+                    totalPredictionError = 1 - (sum(totalPredictionError) / sum(examplesUsed))
+                    fidPerformance.write("\t{0:1.4f}\n".format(totalPredictionError))
