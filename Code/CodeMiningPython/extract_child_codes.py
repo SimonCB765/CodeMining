@@ -9,10 +9,10 @@ def main(parentCodes, allCodes):
         allCodes = ["ABCD", "ABC12", "1ABC", "AB", "XYZ", "XYZ01", "DEF12"]
         return = ["ABCD", "ABC12", "XYZ", "XYZ01"]
 
-    :param parentCodes:     The codes at the root of the hierarchy substree(s) to be extracted.
-    :type parentCodes:      list
+    :param parentCodes:     The codes at the root of the hierarchy subtree(s) to be extracted.
+    :type parentCodes:      iterable of strings that can be supplied to join()
     :param allCodes:        The codes to search for children in. Each code should appear once.
-    :type allCodes:         list
+    :type allCodes:         list-like
     :returns :              The parent codes and their child codes.
     :rtype :                list
 
