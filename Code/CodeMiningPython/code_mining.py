@@ -208,7 +208,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                         trainingClasses = trainingClasses[permutations[i][j]]
 
                         # Run through the batches.
-                        for k in range(math.ceil(numTrainingExamples / batchSize)):
+                        for k in range(int(math.ceil(numTrainingExamples / batchSize))):
                             # Determine the indices to access the batch. Sparse matrices throw errors if you try
                             # to index beyond the maximum index, so prevent this.
                             startIndex = k * batchSize
