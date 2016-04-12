@@ -27,9 +27,9 @@ def find_patients(dataMatrix, classData, mapCodeToIndex, isCodesRemoved=True):
     :type mapCodeToIndex:   dict
     :param isCodesRemoved:  Whether the codes used to determine class membership should be zeroed out of the dataset.
     :type isCodesRemoved:   bool
-    :return :               The (possibly altered) data matrix and the lists of which examples belong to which class,
-                                and which examples are ambiguous.
-    :rtype :                dict
+    :return :               The lists of which examples belong to which class and which examples are ambiguous, along
+                                with a list of the indices of the codes used to determine class membership.
+    :rtype :                dict, list
 
     """
 
@@ -38,6 +38,7 @@ def find_patients(dataMatrix, classData, mapCodeToIndex, isCodesRemoved=True):
     classExamples = {}  # Dictionary to hold the mapping from class name to the indices of the examples in the class.
     collectorClass = None  # The name of the class that will collect all remaining examples.
     allClassExamples = set([])  # The examples belonging to a class.
+    allClassIndices = []  # Indices of all codes used in determining class membership.
     for i in classData:
         # Get variable indices.
         if classData[i]:
@@ -50,6 +51,7 @@ def find_patients(dataMatrix, classData, mapCodeToIndex, isCodesRemoved=True):
             classCodeIndices.extend(getChildren)
             classCodeIndices = [mapCodeToIndex.get(j, None) for j in classCodeIndices]
             classCodeIndices = [j for j in classCodeIndices if j]  # Remove all None values from the list of indices.
+            allClassIndices.extend(classCodeIndices)
 
             # Determine patients. For a dense matrix np.where(dataMatrix > 0) could be used, but np.where
             # doesn't work for sparse matrices.
@@ -76,11 +78,7 @@ def find_patients(dataMatrix, classData, mapCodeToIndex, isCodesRemoved=True):
     if collectorClass:
         classExamples[collectorClass] = sorted(set(range(dataMatrix.shape[0])) - allClassExamples)
 
-    # Remove the codes used to determine class membership.
-    if isCodesRemoved:
-        dataMatrix[:, list(allClassExamples)] = 0
-
-    return dataMatrix, classExamples
+    return classExamples, allClassIndices
 
 
 def check_validity(classDict):

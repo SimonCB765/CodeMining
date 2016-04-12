@@ -63,34 +63,42 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
     # Generate the mapping from codes to their descriptions.
     mapCodeToDescr = generate_code_mapping.main(fileCodeMapping)
 
-    # Generate the data matrix, initia array of classes and two index mappings.
+    # Generate the data matrix and two index mappings.
     # The code to index mapping maps codes to their indices in the data matrix.
     # The patient to index mapping maps patients to their indices in the data matrix.
     dataMatrix, mapPatientToInd, mapCodeToInd = generate_dataset.main(fileDataset, dirResults, mapCodeToDescr)
-    allExampleClasses = np.zeros(dataMatrix.shape[0])
 
+    # Determine the examples in each class.
+    # classExamples is a dictionary with an entry for each class (and one for "Ambiguous" examples) that contains
+    # a list of the examples belonging to that class.
+    # classCodeIndices is a list of the indices of the codes used to determine class membership.
+    classExamples, classCodeIndices = parse_classes.find_patients(dataMatrix, classData,
+                                                                  mapCodeToInd, isCodesRemoved=True)
+
+    # Determine the class of each example, and map the classes from their names to an integer representation.
+    # A class integer of 0 is used to indicate that an example does not belong to any class, and is therefore
+    # not used in the training.
+    allExampleClasses = np.zeros(dataMatrix.shape[0])  # The integer class code for each example.
+    mapClassToIntRep = {}  # Mapping from the integer code used to reference each class to the class it references.
+    currentCode = 1
+    for i in classExamples:
+        if i != "Ambiguous":
+            mapClassToIntRep[currentCode] = i
+            allExampleClasses[classExamples[i]] = currentCode
+            currentCode += 1
+    classesUsed = [i for i in mapClassToIntRep]  # List of containing the integer code for every class in the dataset.
+
+    # Calculate masks for the patients and the codes. These will be used to select only those patients and codes
+    # that are to be used for training/testing.
+    patientIndicesToUse = np.ones(dataMatrix.shape[0], dtype=bool)
+    patientIndicesToUse[allExampleClasses == 0] = 0  # Mask out the patients that have no class.
+    codeIndicesToUse = np.ones(dataMatrix.shape[1], dtype=bool)
+    codeIndicesToUse[classCodeIndices] = 0  # Mask out the codes used to calculate class membership.
     # TODO: Remove the codes and patient that don't occur frequently enough.
     # TODO: Repeatedly remove patients and codes from data matrix until not patients
     # TODO: or code have too few connections.
     # TODO: basically repeatedly remove codes with < codeOccurrence patients they occur in
     # TODO: and patients wih < patientOccurrences codes they occur in
-
-    # Determine the examples in each class along with the class of each example.
-    # classExamples is a dictionary with an entry for each class (and one for "Ambiguous" examples) that contains
-    # a list of the examples belonging to that class.
-    dataMatrix, classExamples = parse_classes.find_patients(dataMatrix, classData, mapCodeToInd, isCodesRemoved=True)
-    classCode = {}  # Mapping from the integer code used to reference each class to the class it references.
-    currentCode = 1
-    for i in classExamples:
-        if i != "Ambiguous":
-            classCode[currentCode] = i
-            allExampleClasses[classExamples[i]] = currentCode
-            currentCode += 1
-    classesUsed = [i for i in classCode]
-
-    # Determine a mask for the examples that will be used for training. Any example with a class of 0 is not
-    # used for training as the real classes begin at 1.
-    trainingExampleMask = allExampleClasses != 0
 
     # Check whether there are any classes (besides the ambiguous class) with no examples.
     noExampleClasses = [i for i in classExamples if (len(classExamples[i]) == 0 and i != "Ambiguous")]
@@ -126,8 +134,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
         maxNumIterations = max(numIters)  # Maximum number of iterations used.
         for i in range(cvFolds):
             # Determine the number of training examples used for this fold. The number is the total number of
-            # available examples minus the number of testing.
-            trainingExamples = (partitions != i) & trainingExampleMask
+            # training examples minus the number used in this fold (as these will be used for testing).
+            trainingExamples = (partitions != i) & patientIndicesToUse
             trainingInPart = sum(trainingExamples)
 
             # Generate a list containing copies of the indices for the training examples in this fold.
@@ -173,14 +181,18 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                     descent = []
 
                     # Determine training and testing example masks.
-                    trainingExamples = (partitions != i) & trainingExampleMask
-                    testingExamples = (partitions == i) & trainingExampleMask
+                    trainingExamples = (partitions != i) & patientIndicesToUse
+                    testingExamples = (partitions == i) & patientIndicesToUse
 
                     # Create training and testing matrices and class arrays.
+                    # Generate training and testing matrices in two steps as scipy sparse matrices can not be sliced
+                    # in the same operation with different length arrays.
                     trainingMatrix = dataMatrix[trainingExamples, :]
+                    trainingMatrix = trainingMatrix[:, codeIndicesToUse]
                     trainingClasses = allExampleClasses[trainingExamples]
                     numTrainingExamples = trainingMatrix.shape[0]
                     testingMatrix = dataMatrix[testingExamples, :]
+                    testingMatrix = testingMatrix[:, codeIndicesToUse]
                     testingClasses = allExampleClasses[testingExamples]
 
                     # Create the model.
@@ -190,7 +202,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
                     # Run the desired number of training iterations.
                     for j in range(numIterations):
-                        # Shuffle the training matrix and class array for this iteration.
+                        # Shuffle the training matrix and class array for this iteration. All examples and codes in
+                        # trainingMatrix will still be used, just the order of the examples changes.
                         trainingMatrix = trainingMatrix[permutations[i][j], :]
                         trainingClasses = trainingClasses[permutations[i][j]]
 
@@ -201,7 +214,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                             startIndex = k * batchSize
                             stopIndex = min((k + 1) * batchSize, numTrainingExamples - 1)
 
-                            # Generate the training matrix and class array for the batch.
+                            # Generate the training matrix and class array for the batch. A subset is only used for the
+                            # examples, all codes in the training matrix will be used.
                             batchTrainingMatrix = trainingMatrix[startIndex:stopIndex, :]
                             batchTrainingClasses = trainingClasses[startIndex:stopIndex]
 
