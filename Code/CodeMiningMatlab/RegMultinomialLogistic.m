@@ -99,10 +99,10 @@ classdef RegMultinomialLogistic < handle
                     falseNegatives = sum(targetMatrix & ~calculatedClasses) / size(predictions, 1);
 
                     % Determine composite measures.
-                    sensitivity = truePositives ./ (truePositives + falsePositives);
+                    sensitivity = truePositives ./ (truePositives + falseNegatives);
                     sensitivity(isnan(sensitivity)) = 0;
                     sensitivities(i, :) = sensitivity;
-                    specificity = trueNegatives ./ (trueNegatives + falseNegatives);
+                    specificity = trueNegatives ./ (trueNegatives + falsePositives);
                     specificity(isnan(specificity)) = 0;
                     specificities(i, :) = specificity;
                     gMean = sqrt(sensitivity .* specificity);
