@@ -3,7 +3,7 @@
     {
         "DataLocation" : "/home/networkusers/sb0080/Datasets/RCGP/RCGPCleaned.tsv",
         "CodeMapping" : "/home/networkusers/sb0080/Datasets/CodeMap.tsv",
-        "ResultsLocation" : "/home/networkusers/sb0080/GitHub/CodeMining/Results/RCGP_Full_eGFR",
+        "ResultsLocation" : "/home/networkusers/sb0080/GitHub/CodeMining/Results/CodeMiningPython/RCGP_Full_eGFR",
         "Lambda" : [0.0001, 0.001, 0.01, 0.1, 1, 10],
         "ElasticNetMixing" : [0, 0.1, 0.5, 0.9, 1],
         "BatchSize" : [500, 750, 1000],
