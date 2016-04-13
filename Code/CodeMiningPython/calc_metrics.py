@@ -34,7 +34,8 @@ def calc_g_mean(predictions, targets):
 
         # Calculate sensitivity.
         truePositives = sum(predictedAsClass & examplesInClass)
+        numClassExamples = float(numClassExamples)  # Cast to float makes sensitivity a float in Python 2.x and 3.x.
         sensitivities.append(truePositives / numClassExamples)
 
     # Calculate G mean.
-    return np.power(np.prod(sensitivities), 1. / len(classes))  # Cast 1 to a float to ensure both 2.x and 3.x work.
+    return np.power(np.prod(sensitivities), 1. / len(classes))  # Cast 1 to float to ensure Python 2.x and 3.x work.
