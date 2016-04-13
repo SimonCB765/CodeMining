@@ -12,6 +12,7 @@ import numpy as np
 from sklearn.linear_model import SGDClassifier
 
 # User imports.
+import calc_metrics
 import generate_code_mapping
 import generate_dataset
 import parse_classes
@@ -152,11 +153,11 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             # Write the header for the output file.
             if cvFolds == 1:
                 # If there is only one fold, then record the descent and the test performance.
-                fidPerformance.write("NumIterations\tBatchSize\tLambda\tENetRatio\tTestError\tDescent\n")
+                fidPerformance.write("NumIterations\tBatchSize\tLambda\tENetRatio\tTestGMean\tDescentGMean\n")
             else:
                 # If there is more than one fold, then only record the performance on each test fold.
-                fidPerformance.write("NumIterations\tBatchSize\tLambda\tENetRatio\t{0:s}\tTotalError\n"
-                                     .format('\t'.join(["Fold_{0:d}_Error".format(i) for i in range(cvFolds)])))
+                fidPerformance.write("NumIterations\tBatchSize\tLambda\tENetRatio\t{0:s}\tTotalGMean\n"
+                                     .format('\t'.join(["Fold_{0:d}_GMean".format(i) for i in range(cvFolds)])))
 
             for params in paramCombos:
                 # Define the parameters for this run.
@@ -210,7 +211,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                         # Run through the batches.
                         for k in range(int(math.ceil(numTrainingExamples / batchSize))):
                             # Determine the indices to access the batch. Sparse matrices throw errors if you try
-                            # to index beyond the maximum index, so prevent this.
+                            # to index beyond the maximum index, so prevent this by truncating stopIndex.
                             startIndex = k * batchSize
                             stopIndex = min((k + 1) * batchSize, numTrainingExamples - 1)
 
@@ -225,22 +226,23 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                             # Record the descent if only one fold is being used.
                             if cvFolds == 1:
                                 testPredictions = classifier.predict(testingMatrix)
-                                predictionError = 1 - (sum(testPredictions == testingClasses) / testingClasses.shape[0])
-                                descent.append(predictionError)
+                                gMean = calc_metrics.calc_g_mean(testPredictions, testingClasses)
+                                descent.append(gMean)
 
-                    # Record the model's predictions on this fold. If only one fod is being used, then this
-                    # will be the test error on the holdout portion.
+                    # Record the model's performance on this fold. If only one fold is being used, then this
+                    # will be the G mean on the holdout portion.
                     testPredictions = classifier.predict(testingMatrix)
                     predictions[testingExamples] = testPredictions
-                    predictionError = 1 - (sum(testPredictions == testingClasses) / testingClasses.shape[0])
-                    fidPerformance.write("\t{0:1.4f}".format(predictionError))
+                    gMean = calc_metrics.calc_g_mean(testPredictions, testingClasses)
+                    fidPerformance.write("\t{0:1.4f}".format(gMean))
 
                 if cvFolds == 1:
                     # If only one fold, then record the descent.
                     fidPerformance.write("\t{0:s}\n".format(','.join(["{0:1.4f}".format(i) for i in descent])))
                 else:
-                    # Record error of predictions across all folds using this parameter combination.
+                    # Record G mean of predictions across all folds using this parameter combination.
+                    # If the predicted class of any example is 0, then the example did not actually have its class predicted.
+                    # This is due to the fact that real class integer representations begin at 1.
                     examplesUsed = predictions != 0
-                    totalPredictionError = predictions[examplesUsed] == allExampleClasses[examplesUsed]
-                    totalPredictionError = 1 - (sum(totalPredictionError) / sum(examplesUsed))
-                    fidPerformance.write("\t{0:1.4f}\n".format(totalPredictionError))
+                    gMean = calc_metrics.calc_g_mean(predictions[examplesUsed], allExampleClasses[examplesUsed])
+                    fidPerformance.write("\t{0:1.4f}\n".format(gMean))
