@@ -170,7 +170,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 print("Now - Iters={0:d}  Batch={1:d}  Lambda={2:1.4f}  ENet={3:1.4f}  Time={4:s}"
                       .format(numIterations, batchSize, lambdaVal, elasticNetRatio,
                               datetime.datetime.strftime(datetime.datetime.now(), "%x %X")))
-                fidPerformance.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}\t"
+                fidPerformance.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}"
                                      .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
 
                 # Train and test on each fold if cFolds > 1. Otherwise, train on one fold and test on the other.
