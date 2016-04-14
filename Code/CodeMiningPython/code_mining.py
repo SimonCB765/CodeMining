@@ -2,14 +2,12 @@
 
 # Python imports.
 import datetime
-import math
 import os
 import random
 import sys
 
 # 3rd party imports.
 import numpy as np
-from sklearn.linear_model import SGDClassifier
 
 # User imports.
 import calc_metrics
@@ -17,6 +15,7 @@ import generate_code_mapping
 import generate_dataset
 import parse_classes
 import partition_dataset
+import train_model
 
 
 def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,), elasticNetMixing=(0.15,),
@@ -149,53 +148,23 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 fidPerformanceSecond.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}"
                                      .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
 
-                # Create the list to hold the descent.
-                descent = []
-
                 # Create the training matrix and class array.
                 # Generate the training matrix in two steps as scipy sparse matrices can not be sliced
                 # in the same operation with different length arrays.
-                trainingMatrix = dataMatrix[patientIndicesToUse, :]
-                trainingMatrix = trainingMatrix[:, codeIndicesToUse]
-                trainingClasses = allExampleClasses[patientIndicesToUse]
-                numTrainingExamples = trainingMatrix.shape[0]
+                firstTrainingMatrix = dataMatrix[patientIndicesToUse, :]
+                firstTrainingMatrix = firstTrainingMatrix[:, codeIndicesToUse]
+                firstTrainingClasses = allExampleClasses[patientIndicesToUse]
 
-                # Create the first model.
-                firstClassifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
-                                           l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
-                                           learning_rate="optimal", class_weight=None)
+                # Train the first model.
+                firstClassifier, descent = train_model.mini_batch_e_net(
+                    firstTrainingMatrix, firstTrainingClasses, classesUsed, permutations, lambdaVal, elasticNetRatio,
+                    batchSize, numIterations)
 
-                # Run the desired number of training iterations.
-                for i in range(numIterations):
-                    # Shuffle the training matrix and class array for this iteration. All examples and codes in
-                    # trainingMatrix will still be used, just the order of the examples changes.
-                    trainingMatrix = trainingMatrix[permutations[i], :]
-                    trainingClasses = trainingClasses[permutations[i]]
-
-                    # Run through the batches.
-                    for j in range(int(math.ceil(numTrainingExamples / batchSize))):
-                        # Determine the indices to access the batch. Sparse matrices throw errors if you try
-                        # to index beyond the maximum index, so prevent this by truncating stopIndex.
-                        startIndex = j * batchSize
-                        stopIndex = min((j + 1) * batchSize, numTrainingExamples - 1)
-
-                        # Generate the training matrix and class array for the batch. A subset is only used for the
-                        # examples, all codes in the training matrix will be used.
-                        batchTrainingMatrix = trainingMatrix[startIndex:stopIndex, :]
-                        batchTrainingClasses = trainingClasses[startIndex:stopIndex]
-
-                        # Train the model on the batch.
-                        firstClassifier.partial_fit(batchTrainingMatrix, batchTrainingClasses, classes=classesUsed)
-
-                        # Record the descent.
-                        trainingPredictions = firstClassifier.predict(trainingMatrix)
-                        gMean = calc_metrics.calc_g_mean(trainingPredictions, trainingClasses)
-                        descent.append(gMean)
-
-                # Record the first model's performance.
-                trainingPredictions = firstClassifier.predict(trainingMatrix)
-                gMean = calc_metrics.calc_g_mean(trainingPredictions, trainingClasses)
+                # Record the first model's performance and descent.
+                trainingPredictions = firstClassifier.predict(firstTrainingMatrix)
+                gMean = calc_metrics.calc_g_mean(trainingPredictions, firstTrainingClasses)
                 fidPerformanceFirst.write("\t{0:1.4f}".format(gMean))
+                fidPerformanceFirst.write("\t{0:s}\n".format(','.join(["{0:1.4f}".format(i) for i in descent])))
     else:
         # Training if cross validation is to be performed.
 
@@ -205,7 +174,6 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
         # Generate the stratified cross validation folds.
         partitions = np.array(partition_dataset.main(allExampleClasses, partitionsToGenerate, True))
-
 
         # Generate the permutations of each partition to use. The permutations will define the shuffling of the
         # training data that we will use. Calculating these upfront will cause each combination of parameters
@@ -252,72 +220,20 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 fidPerformance.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}"
                                      .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
 
-                # Train and test on each fold if cFolds > 1. Otherwise, train on one fold and test on the other.
-                for i in range(cvFolds):
-                    # Create the array to hold the predictions.
-                    predictions = np.zeros(dataMatrix.shape[0])
+                # Cut the data matrix down to a matrix containing only the codes to be used.
+                dataMatrixSubset = dataMatrix[:, codeIndicesToUse]
 
-                    # Create the list to hold the descent.
-                    descent = []
+                # Train and test on each fold if cvFolds > 1. Otherwise, train on one fold and test on the other.
+                classifier, descent, performanceOverFolds, predictions = train_model.mini_batch_e_net_cv(
+                    dataMatrixSubset, allExampleClasses, patientIndicesToUse, partitions, classesUsed, permutations,
+                        lambdaVal, elasticNetRatio, batchSize, numIterations, cvFolds)
 
-                    # Determine training and testing example masks.
-                    trainingExamples = (partitions != i) & patientIndicesToUse
-                    testingExamples = (partitions == i) & patientIndicesToUse
-
-                    # Create training and testing matrices and class arrays.
-                    # Generate training and testing matrices in two steps as scipy sparse matrices can not be sliced
-                    # in the same operation with different length arrays.
-                    trainingMatrix = dataMatrix[trainingExamples, :]
-                    trainingMatrix = trainingMatrix[:, codeIndicesToUse]
-                    trainingClasses = allExampleClasses[trainingExamples]
-                    numTrainingExamples = trainingMatrix.shape[0]
-                    testingMatrix = dataMatrix[testingExamples, :]
-                    testingMatrix = testingMatrix[:, codeIndicesToUse]
-                    testingClasses = allExampleClasses[testingExamples]
-
-                    # Create the model.
-                    classifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
-                                               l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
-                                               learning_rate="optimal", class_weight=None)
-
-                    # Run the desired number of training iterations.
-                    for j in range(numIterations):
-                        # Shuffle the training matrix and class array for this iteration. All examples and codes in
-                        # trainingMatrix will still be used, just the order of the examples changes.
-                        trainingMatrix = trainingMatrix[permutations[i][j], :]
-                        trainingClasses = trainingClasses[permutations[i][j]]
-
-                        # Run through the batches.
-                        for k in range(int(math.ceil(numTrainingExamples / batchSize))):
-                            # Determine the indices to access the batch. Sparse matrices throw errors if you try
-                            # to index beyond the maximum index, so prevent this by truncating stopIndex.
-                            startIndex = k * batchSize
-                            stopIndex = min((k + 1) * batchSize, numTrainingExamples - 1)
-
-                            # Generate the training matrix and class array for the batch. A subset is only used for the
-                            # examples, all codes in the training matrix will be used.
-                            batchTrainingMatrix = trainingMatrix[startIndex:stopIndex, :]
-                            batchTrainingClasses = trainingClasses[startIndex:stopIndex]
-
-                            # Train the model on the batch.
-                            classifier.partial_fit(batchTrainingMatrix, batchTrainingClasses, classes=classesUsed)
-
-                            # Record the descent if only one fold is being used.
-                            if cvFolds == 1:
-                                testPredictions = classifier.predict(testingMatrix)
-                                gMean = calc_metrics.calc_g_mean(testPredictions, testingClasses)
-                                descent.append(gMean)
-
-                    # Record the model's performance on this fold. If only one fold is being used, then this
-                    # will be the G mean on the holdout portion.
-                    testPredictions = classifier.predict(testingMatrix)
-                    predictions[testingExamples] = testPredictions
-                    gMean = calc_metrics.calc_g_mean(testPredictions, testingClasses)
-                    fidPerformance.write("\t{0:1.4f}".format(gMean))
+                # Write out the performance of the model over all folds.
+                fidPerformance.write("\t{0:s}".format('\t'.join(["{0:1.4F}".format(i) for i in performanceOverFolds])))
 
                 if cvFolds == 1:
                     # If only one fold, then record the descent.
-                    fidPerformance.write("\t{0:s}\n".format(','.join(["{0:1.4f}".format(i) for i in descent])))
+                    fidPerformance.write("\t{0:s}\n".format(','.join(["{0:1.4f}".format(i) for i in descent[0]])))
                 else:
                     # Record G mean of predictions across all folds using this parameter combination.
                     # If the predicted class of any example is 0, then the example did not actually have its class predicted.
