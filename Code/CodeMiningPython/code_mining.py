@@ -116,8 +116,86 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
     if cvFolds == 0:
         # Training if no testing is needed.
-        # TODO : add the complicated stuff to train the initial and the second model
-        pass
+
+        # Generate the permutations of the data to use. The permutations will define the shuffling of the training
+        # data that we will use. Calculating these upfront will cause each combination of parameters
+        # to use the same permutations.
+        numTrainingExamples = sum(patientIndicesToUse)  # The number of training examples we're using.
+        maxNumIterations = max(numIters)  # Maximum number of iterations used.
+        permutations = [list(range(numTrainingExamples)) for _ in range(maxNumIterations)]
+        for i in permutations:
+            random.shuffle(i)
+
+        with open(dirResults + "/Performance_First.tsv", 'w') as fidPerformanceFirst, \
+                open(dirResults + "/Performance_Second.tsv", 'w') as fidPerformanceSecond:
+
+            # Write the header for the output files.
+            fidPerformanceFirst.write("NumIterations\tBatchSize\tLambda\tENetRatio\tTestGMean\tDescentGMean\n")
+            fidPerformanceSecond.write("NumIterations\tBatchSize\tLambda\tENetRatio\tTestGMean\tDescentGMean\n")
+
+            for params in paramCombos:
+                # Define the parameters for this run.
+                numIterations = params[0]
+                batchSize = params[1]
+                lambdaVal = params[2]
+                elasticNetRatio = params[3]
+
+                # Display a status update and record current round.
+                print("Now - Iters={0:d}  Batch={1:d}  Lambda={2:1.4f}  ENet={3:1.4f}  Time={4:s}"
+                      .format(numIterations, batchSize, lambdaVal, elasticNetRatio,
+                              datetime.datetime.strftime(datetime.datetime.now(), "%x %X")))
+                fidPerformanceFirst.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}"
+                                     .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
+                fidPerformanceSecond.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}"
+                                     .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
+
+                # Create the list to hold the descent.
+                descent = []
+
+                # Create the training matrix and class array.
+                # Generate the training matrix in two steps as scipy sparse matrices can not be sliced
+                # in the same operation with different length arrays.
+                trainingMatrix = dataMatrix[patientIndicesToUse, :]
+                trainingMatrix = trainingMatrix[:, codeIndicesToUse]
+                trainingClasses = allExampleClasses[patientIndicesToUse]
+                numTrainingExamples = trainingMatrix.shape[0]
+
+                # Create the first model.
+                firstClassifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
+                                           l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
+                                           learning_rate="optimal", class_weight=None)
+
+                # Run the desired number of training iterations.
+                for i in range(numIterations):
+                    # Shuffle the training matrix and class array for this iteration. All examples and codes in
+                    # trainingMatrix will still be used, just the order of the examples changes.
+                    trainingMatrix = trainingMatrix[permutations[i], :]
+                    trainingClasses = trainingClasses[permutations[i]]
+
+                    # Run through the batches.
+                    for j in range(int(math.ceil(numTrainingExamples / batchSize))):
+                        # Determine the indices to access the batch. Sparse matrices throw errors if you try
+                        # to index beyond the maximum index, so prevent this by truncating stopIndex.
+                        startIndex = j * batchSize
+                        stopIndex = min((j + 1) * batchSize, numTrainingExamples - 1)
+
+                        # Generate the training matrix and class array for the batch. A subset is only used for the
+                        # examples, all codes in the training matrix will be used.
+                        batchTrainingMatrix = trainingMatrix[startIndex:stopIndex, :]
+                        batchTrainingClasses = trainingClasses[startIndex:stopIndex]
+
+                        # Train the model on the batch.
+                        firstClassifier.partial_fit(batchTrainingMatrix, batchTrainingClasses, classes=classesUsed)
+
+                        # Record the descent.
+                        trainingPredictions = firstClassifier.predict(trainingMatrix)
+                        gMean = calc_metrics.calc_g_mean(trainingPredictions, trainingClasses)
+                        descent.append(gMean)
+
+                # Record the first model's performance.
+                trainingPredictions = firstClassifier.predict(trainingMatrix)
+                gMean = calc_metrics.calc_g_mean(trainingPredictions, trainingClasses)
+                fidPerformanceFirst.write("\t{0:1.4f}".format(gMean))
     else:
         # Training if cross validation is to be performed.
 
@@ -128,9 +206,10 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
         # Generate the stratified cross validation folds.
         partitions = np.array(partition_dataset.main(allExampleClasses, partitionsToGenerate, True))
 
-        # Generate the permutations of each partition to use. We want on permutation per iteration, as we will use
-        # these to shuffle our training examples. Calculating these upfront will cause each combination of parameters
-        # to use the same permutations of the cross validation folds.
+
+        # Generate the permutations of each partition to use. The permutations will define the shuffling of the
+        # training data that we will use. Calculating these upfront will cause each combination of parameters
+        # to use the same permutations.
         permutations = {}
         maxNumIterations = max(numIters)  # Maximum number of iterations used.
         for i in range(cvFolds):
