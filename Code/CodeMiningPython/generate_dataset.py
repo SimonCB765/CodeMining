@@ -31,6 +31,8 @@ def main(fileDataset, dirOutput, mapCodeToDescr, normMethod=0, normParam=None):
     :param normParam:       The parameters (if any) needed for the normalisation method.
     :type normParam:        list
     :return :               The sparse matrix and the index mappings for the patients and codes.
+                                The code index mapping maps from codes to indices, the patient index mapping
+                                from indices to patient IDs.
     :rtype :                scipy.sparse.csr_matrix, dict and dict
 
     """
