@@ -64,9 +64,9 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
     mapCodeToDescr = generate_code_mapping.main(fileCodeMapping)
 
     # Generate the data matrix and two index mappings.
-    # The code to index mapping maps codes to their indices in the data matrix.
-    # The patient to index mapping maps patients to their indices in the data matrix.
-    dataMatrix, mapPatientToInd, mapCodeToInd = generate_dataset.main(fileDataset, dirResults, mapCodeToDescr,
+    # The code to index mapping maps codes to their column indices in the data matrix.
+    # The index to patient mapping maps row indices for the data matrix to the patient they correspond to.
+    dataMatrix, mapIndToPatient, mapCodeToInd = generate_dataset.main(fileDataset, dirResults, mapCodeToDescr,
                                                                       dataNormVal)
 
     # Determine the examples in each class.
@@ -81,14 +81,14 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
     # not used in the training.
     allExampleClasses = np.empty(dataMatrix.shape[0])  # The integer class code for each example.
     allExampleClasses.fill(np.nan)
-    mapClassToIntRep = {}  # Mapping from the integer code used to reference each class to the class it references.
+    mapIntRepToClass = {}  # Mapping from the integer code used to reference each class to the class it references.
     currentCode = 0
     for i in classExamples:
         if i != "Ambiguous":
-            mapClassToIntRep[currentCode] = i
+            mapIntRepToClass[currentCode] = i
             allExampleClasses[classExamples[i]] = currentCode
             currentCode += 1
-    classesUsed = [i for i in mapClassToIntRep]  # List containing the integer code for every class in the dataset.
+    classesUsed = [i for i in mapIntRepToClass]  # List containing the integer code for every class in the dataset.
 
     # Calculate masks for the patients and the codes. These will be used to select only those patients and codes
     # that are to be used for training/testing.
@@ -160,6 +160,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
                 # Record the first model's performance and descent.
                 firstPredictions = firstClassifier.predict(firstTrainingMatrix)
+                firstPosteriors = firstClassifier.predict_proba(firstTrainingMatrix)
                 gMean = calc_metrics.calc_g_mean(firstPredictions, firstTrainingClasses)
                 fidPerformanceFirst.write("\t{0:1.4f}".format(gMean))
                 fidPerformanceFirst.write("\t{0:s}\n".format(','.join(["{0:1.4f}".format(i) for i in descent])))
@@ -183,7 +184,6 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 # The matrix of posteriors contains one column per class, and each example has a posterior for each
                 # class. Examples are considered to be good examples if the posterior of their actual class
                 # is greater than the discard threshold provided.
-                firstPosteriors = firstClassifier.predict_proba(firstTrainingMatrix)
                 largeEnoughPost = firstPosteriors > discardThreshold  # Posteriors larger than the discard threshold.
                 goodExamples = np.any(trainingClassesMatrix * largeEnoughPost, axis=1)
 
@@ -209,10 +209,94 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                         batchSize=batchSize, numIterations=numIterations)
 
                     # Record the second model's performance and descent.
-                    secondPredictions = secondClassifier.predict(secondTrainingMatrix)
-                    gMean = calc_metrics.calc_g_mean(secondPredictions, secondTrainingClasses)
+                    secondPredictions = secondClassifier.predict(firstTrainingMatrix)
+                    secondPosteriors = secondClassifier.predict_proba(firstTrainingMatrix)
+                    gMean = calc_metrics.calc_g_mean(secondPredictions, firstTrainingClasses)
                     fidPerformanceSecond.write("\t{0:1.4f}".format(gMean))
                     fidPerformanceSecond.write("\t{0:s}\n".format(','.join(["{0:1.4f}".format(i) for i in descent])))
+
+                    # Record the posteriors and predictions of the models.
+                    with open(dirResults + "/Predictions.tsv", 'w') as fidPredictions, \
+                            open(dirResults + "/Posteriors.tsv", 'w') as fidPosteriors:
+                        # Write the headers.
+                        fidPredictions.write("PatientID\tClass\tFirstModelClass\tSecondModelClass\n")
+                        fidPosteriors.write("PatientID\t{0:s}\t{1:s}\n".format(
+                            '\t'.join(["FirstModel_{0:s}".format(mapIntRepToClass[i]) for i in classesUsed]),
+                            '\t'.join(["SecondModel_{0:s}".format(mapIntRepToClass[i]) for i in classesUsed])))
+
+                        # Write out the results
+                        indicesOfUsedPatients = np.array(range(dataMatrix.shape[0]))
+                        indicesOfUsedPatients = indicesOfUsedPatients[patientIndicesToUse]
+                        for ind, i in enumerate(indicesOfUsedPatients):
+                            patientID = mapIndToPatient[i]
+                            realClass = mapIntRepToClass[allExampleClasses[i]]
+                            firstModelClass = mapIntRepToClass[firstPredictions[ind]]
+                            firstModelPosteriors = firstPosteriors[ind, :]
+                            secondModelClass = mapIntRepToClass[secondPredictions[ind]]
+                            secondModelPosteriors = secondPosteriors[ind, :]
+
+                            fidPredictions.write("{0:s}\t{1:s}\t{2:s}\t{3:s}\n".format(
+                                patientID, realClass, firstModelClass, secondModelClass))
+                            fidPosteriors.write("{0:s}\t{1:s}\t{2:s}\n".format(patientID,
+                                '\t'.join(["{0:1.4f}".format(firstModelPosteriors[i]) for i in classesUsed]),
+                                '\t'.join(["{0:1.4f}".format(secondModelPosteriors[i]) for i in classesUsed])))
+
+                    # Record the coefficients of the models.
+                    with open(dirResults + "/Coefficients.tsv", 'w') as fidCoefs:
+                        # Write out the header.
+                        if len(classesUsed) == 2:
+                            # If there are two classes, then there is only one coefficient per code.
+                            fidCoefs.write("Code\tDescription\tFirstModel\tSecondModel\n")
+                        else:
+                            # If there are more than two classes, then there is one coefficient per class per code.
+                            fidCoefs.write("Code\tDescription\t{0:s}\t{1:s}\n".format(
+                                '\t'.join(["FirstModel_{0:s}_Coef".format(mapIntRepToClass[i]) for i in classesUsed]),
+                                '\t'.join(["SecondModel_{0:s}_Coef".format(mapIntRepToClass[i]) for i in classesUsed])))
+
+                        # Reverse the code to index mapping.
+                        mapIndToCode = {v : k for k, v in mapCodeToInd.items()}
+
+                        # Write out the coefficients.
+                        indicesOfUsedCodes = np.array(range(dataMatrix.shape[1]))
+                        indicesOfUsedCodes = indicesOfUsedCodes[codeIndicesToUse]
+                        for ind, i in enumerate(indicesOfUsedCodes):
+                            code = mapIndToCode[i]
+                            firstModelCoefs = firstClassifier.coef_[:, ind]
+                            secondModelCoefs = secondClassifier.coef_[:, ind]
+                            if len(classesUsed) == 2:
+                                fidCoefs.write("{0:s}\t{1:s}\t{2:1.4f}\t{3:1.4f}\n".format(
+                                    code, mapCodeToDescr.get(code, "Unknown Code"), firstModelCoefs[0],
+                                    secondModelCoefs[0]))
+                            else:
+                                fidCoefs.write("{0:s}\t{1:s}\t{2:s}\t{3:s}\n".format(
+                                    code, mapCodeToDescr.get(code, "Unknown Code"),
+                                    '\t'.join(["{0:1.4f}".format(firstModelCoefs[i]) for i in classesUsed]),
+                                    '\t'.join(["{0:1.4f}".format(secondModelCoefs[i]) for i in classesUsed])))
+
+                    # Record the predictions on the ambiguous examples.
+                    ambiguousExamples = classExamples["Ambiguous"]
+                    ambiguousMatrix = dataMatrix[ambiguousExamples, :]
+                    ambiguousMatrix = ambiguousMatrix[:, codeIndicesToUse]
+                    with open(dirResults + "/Ambiguous.tsv", 'w') as fidAmbig:
+                        # Write out the header.
+                        fidAmbig.write("PatientID\tFirstModelClass\t{0:s}\tSecondModelClass\t{1:s}\n".format(
+                            '\t'.join(["FirstModel_{0:s}_Post".format(mapIntRepToClass[i]) for i in classesUsed]),
+                            '\t'.join(["SecondModel_{0:s}_Post".format(mapIntRepToClass[i]) for i in classesUsed])))
+
+                        # Generate the predictions.
+                        firstModelAmbigPred = firstClassifier.predict(ambiguousMatrix)
+                        firstModelAmigPosts = firstClassifier.predict_proba(ambiguousMatrix)
+                        secondModelAmbigPred = secondClassifier.predict(ambiguousMatrix)
+                        secondModelAmigPosts = secondClassifier.predict_proba(ambiguousMatrix)
+
+                        # Write out the predictions.
+                        for ind, i in enumerate(ambiguousExamples):
+                            patientID = mapIndToPatient[i]
+                            fidAmbig.write("{0:s}\t{1:s}\t{2:s}\t{3:s}\t{4:s}\n".format(
+                                patientID, mapIntRepToClass[firstModelAmbigPred[ind]],
+                                '\t'.join(["{0:1.4f}".format(firstModelAmigPosts[ind, i]) for i in classesUsed]),
+                                mapIntRepToClass[secondModelAmbigPred[ind]],
+                                '\t'.join(["{0:1.4f}".format(secondModelAmigPosts[ind, i]) for i in classesUsed])))
     else:
         # Training if cross validation is to be performed.
 
