@@ -13,6 +13,12 @@ import numpy as np
 def main(Y, numPartitions=2, isStratified=False):
     """Partition a dataset into CV folds.
 
+    Observations with all their target values in Y equal to np.nan are treated as if the observation has no class.
+    In the case of a 1 dimensional Y, this mean the single entry for the observation is np.nan. In the case of 2 or
+    greater dimensional Y, this means that all entries on the row corresponding to the observation are np.nan.
+    This can be useful if some observations are to be ignored, as you can simply set their targets to
+    np.nan rather than removing them from the dataset.
+
     The partitioning will work when Y contains more than one column (i.e. more than one target variable).
 
     When multiple columns are present, stratified fold generation takes each column to represent a different class.
@@ -68,7 +74,7 @@ def main(Y, numPartitions=2, isStratified=False):
         # Determine the classes present.
         if numTargets == 1:
             # Y is a column vector, so determine classes from the unique values of Y.
-            differentClasses = np.unique(Y)  # Get the classes.
+            differentClasses = np.unique(Y[~np.isnan(Y)])  # Get the classes.
 
             # Check if there are enough classes to perform stratified fold generation.
             if differentClasses.shape[0] == 1:
@@ -78,7 +84,7 @@ def main(Y, numPartitions=2, isStratified=False):
             # Assign an index to each class starting at 0, and determine the class index of each example.
             classMembership = Y.tolist()  # Create the list to hold the class index for each observation.
             classMapping = dict([(i, ind) for ind, i in enumerate(differentClasses)])  # Map values in Y to class index.
-            classMembership = [classMapping[i] for i in classMembership]
+            classMembership = [(np.nan if np.isnan(i) else classMapping[i]) for i in classMembership]
         else:
             # Multiple target variables are present. Each column in Y is taken to be a separate response variable.
             nonzeroResponse = np.nonzero(tempY)
@@ -133,9 +139,19 @@ def main(Y, numPartitions=2, isStratified=False):
         # Randomise the list -> [7, 4, 8, 1, 5, 6, 9, 2, 3, 0]
         # Partition the indices -> [[7, 1, 9, 0], [4, 5, 2], [8, 6, 3]] (if cvFolds == 3)
         # Assign partition groupings according to original indices -> [0, 0, 1, 2, 1, 1, 2, 0, 2, 0]
-        exampleIndices = list(range(numExamples))  # List containing the index of each example.
-        random.shuffle(exampleIndices)  # Randomise the order of the indices.
-        partitionedIndices = [exampleIndices[i::numPartitions] for i in range(numPartitions)]
+
+        # Create the list containing the indices of the non NaN observations.
+        if numTargets == 1:
+            validIndices = [i for i in range(numExamples) if ~np.isnan(Y[i])]
+        else:
+            # An observation is treated as a NaN observation if all target values are NaN.
+            allIndices = np.array(list(range(numExamples)))  # List containing the index of each example.
+            validIndices = np.all(np.isnan(Y), axis=1)  # Observations where all their targets are not NaN.
+            validIndices = allIndices[validIndices]
+
+        # Create the partitions.
+        random.shuffle(validIndices)  # Randomise the order of the indices.
+        partitionedIndices = [validIndices[i::numPartitions] for i in range(numPartitions)]
         partition = [0] * numExamples  # Create the list to hold the partition number for each example.
         for ind, i in enumerate(partitionedIndices):
             for j in i:
