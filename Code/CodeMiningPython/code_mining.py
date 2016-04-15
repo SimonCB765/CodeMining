@@ -3,7 +3,6 @@
 # Python imports.
 import datetime
 import os
-import random
 import sys
 
 # 3rd party imports.
@@ -119,15 +118,6 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
     if cvFolds == 0:
         # Training if no testing is needed.
 
-        # Generate the permutations of the data to use. The permutations will be used to shuffle the data between
-        # iterations of the mini batch training. Calculating these upfront will cause each combination of parameters
-        # to use the same permutations.
-        numTrainingExamples = sum(patientIndicesToUse)  # The number of training examples we're using.
-        maxNumIterations = max(numIters)  # Maximum number of iterations used.
-        permutations = [list(range(numTrainingExamples)) for _ in range(maxNumIterations)]
-        for i in permutations:
-            random.shuffle(i)
-
         with open(dirResults + "/Performance_First.tsv", 'w') as fidPerformanceFirst, \
                 open(dirResults + "/Performance_Second.tsv", 'w') as fidPerformanceSecond:
 
@@ -165,8 +155,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
                 # Train the first model.
                 descent = train_model.mini_batch_e_net(
-                    firstClassifier, firstTrainingMatrix, firstTrainingClasses, classesUsed, permutations,
-                    batchSize=batchSize, numIterations=numIterations)
+                    firstClassifier, firstTrainingMatrix, firstTrainingClasses, classesUsed, batchSize=batchSize,
+                    numIterations=numIterations)
 
                 # Record the first model's performance and descent.
                 firstPredictions = firstClassifier.predict(firstTrainingMatrix)
@@ -200,7 +190,6 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 # Determine the training set for the second model.
                 secondTrainingMatrix = firstTrainingMatrix[goodExamples, :]
                 secondTrainingClasses = firstTrainingClasses[goodExamples]
-                numTrainingExamples = firstTrainingMatrix.shape[0]
 
                 if len(np.unique(secondTrainingClasses)) < len(classesUsed):
                     # The prediction errors of the first model have caused all examples of (at least) one class to be
@@ -216,7 +205,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
                     # Train the second model.
                     descent = train_model.mini_batch_e_net(
-                        secondClassifier, secondTrainingMatrix, secondTrainingClasses, classesUsed, permutations,
+                        secondClassifier, secondTrainingMatrix, secondTrainingClasses, classesUsed,
                         batchSize=batchSize, numIterations=numIterations)
 
                     # Record the second model's performance and descent.
@@ -233,28 +222,6 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
         # Generate the stratified cross validation folds.
         stratifiedFolds = np.array(partition_dataset.main(allExampleClasses, foldsToGenerate, True))
-
-        # Generate the permutations of each fold. The permutations will be used to shuffle the data between
-        # iterations of the mini batch training. Calculating these upfront will cause each combination of parameters
-        # to use the same permutations.
-        permutations = {}
-        maxNumIterations = max(numIters)  # Maximum number of iterations used.
-        for i in range(cvFolds):
-            # Determine the number of training examples used for this fold. The number is the total number of
-            # training examples minus the number used in this fold (as these will be used for testing).
-            trainingExamples = (stratifiedFolds != i) & patientIndicesToUse
-            numTrainingExamples = sum(trainingExamples)
-
-            # Generate a list containing the initial permutations of the training examples for this fold. The intial
-            # permutations will be the identity permutation.
-            # If there are 10 training examples for this fold and the maximum number of iterations is 5, then
-            # indexLists will contain 5 copies of the integers 0..9 (ordered from 0 to 9).
-            indexLists = [list(range(numTrainingExamples)) for _ in range(maxNumIterations)]
-
-            # Finally, shuffle the index lists to generate the permutations.
-            for j in range(maxNumIterations):
-                random.shuffle(indexLists[j])
-            permutations[i] = indexLists
 
         with open(dirResults + "/CVPerformance.tsv", 'w') as fidPerformance:
             # Write the header for the output file.
@@ -291,7 +258,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 # Train and test on each fold if cvFolds > 1. Otherwise, train on one fold and test on the other.
                 descent, performanceOfEachFold, predictions = train_model.mini_batch_e_net_cv(
                     classifier, dataMatrixSubset, allExampleClasses, patientIndicesToUse, stratifiedFolds, classesUsed,
-                    permutations, batchSize, numIterations, cvFolds)
+                    batchSize, numIterations, cvFolds)
 
                 # Write out the performance of the model over all folds.
                 fidPerformance.write("\t{0:s}".format('\t'.join(["{0:1.4F}".format(i) for i in performanceOfEachFold])))

@@ -2,6 +2,7 @@
 
 # Python imports.
 import math
+import random
 
 # 3rd party imports.
 import numpy as np
@@ -10,7 +11,7 @@ import numpy as np
 import calc_metrics
 
 
-def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, permutations, testingMatrix=None, testingClasses=None,
+def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, testingMatrix=None, testingClasses=None,
                      batchSize=500, numIterations=5):
     """
 
@@ -20,13 +21,15 @@ def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, per
 
     descent = []  # The list recording the gradient descent.
     numTrainingExamples = trainingMatrix.shape[0]  # The number of training examples in the dataset.
+    permutedIndices = list(range(numTrainingExamples))  # List containing the indices of all training examples.
 
     # Run the desired number of training iterations.
     for i in range(numIterations):
         # Shuffle the training matrix and class array for this iteration. All examples and codes in
         # trainingMatrix will still be used, just the order of the examples changes.
-        permTrainingMatrix = trainingMatrix[permutations[i], :]
-        permTrainingClasses = targetClasses[permutations[i]]
+        random.shuffle(permutedIndices)
+        permTrainingMatrix = trainingMatrix[permutedIndices, :]
+        permTrainingClasses = targetClasses[permutedIndices]
 
         # Run through the batches.
         for j in range(int(math.ceil(numTrainingExamples / batchSize))):
@@ -57,7 +60,7 @@ def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, per
     return descent
 
 
-def mini_batch_e_net_cv(classifier, dataMatrix, targetClasses, patientIndicesToUse, folds, classesUsed, permutations,
+def mini_batch_e_net_cv(classifier, dataMatrix, targetClasses, patientIndicesToUse, folds, classesUsed,
                         batchSize=500, numIterations=5, cvFolds=2):
     """
 
@@ -90,7 +93,7 @@ def mini_batch_e_net_cv(classifier, dataMatrix, targetClasses, patientIndicesToU
         testingClasses = targetClasses[testingExamples]
 
         # Train the model and record the descent on this fold.
-        foldDescent = mini_batch_e_net(classifier, trainingMatrix, trainingClasses, classesUsed, permutations[i],
+        foldDescent = mini_batch_e_net(classifier, trainingMatrix, trainingClasses, classesUsed,
                                                    testingMatrix, testingClasses, batchSize, numIterations)
         descent.append(foldDescent)
 
