@@ -13,9 +13,26 @@ import calc_metrics
 
 def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, testingMatrix=None, testingClasses=None,
                      batchSize=500, numIterations=5):
-    """
+    """Run mini batch training for elastic net regularised logistic regression.
 
-    :return :
+    :param classifier:          The classifier to train.
+    :type classifier:           SGDClassifier
+    :param trainingMatrix:      The matrix to use for training.
+    :type trainingMatrix:       numpy array
+    :param targetClasses:       The array of target classes for the examples in targetMatrix.
+    :type targetClasses:        numpy array
+    :param classesUsed:         The unique classes across the whole dataset.
+    :type classesUsed:          list
+    :param testingMatrix:       The matrix of examples to use for testing.
+    :type testingMatrix:        numpy array
+    :param testingClasses:      The target classes for the examples in testingMatrix.
+    :type testingClasses:       numpy array
+    :param batchSize:           The size of the mini batches to use.
+    :type batchSize:            int
+    :param numIterations:       The number of mini batch iterations to run.
+    :type numIterations@        int
+    :return :                   The record of the gradient descent for each mini batch used.
+    :rtype :                    list
 
     """
 
@@ -62,17 +79,31 @@ def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, tes
 
 def mini_batch_e_net_cv(classifier, dataMatrix, targetClasses, patientIndicesToUse, folds, classesUsed,
                         batchSize=500, numIterations=5, cvFolds=2):
-    """
+    """Run mini batch training for elastic net regularised logistic regression using cross validation.
 
-    :param trainingMatrix:
-    :param targetClasses:
-    :param classesUsed:
-    :param permutations:
-    :param lambdaVal:
-    :param elasticNetRatio:
-    :param batchSize:
-    :param numIterations:
-    :return :
+    :param classifier:          The classifier to train.
+    :type classifier:           SGDClassifier
+    :param dataMatrix:          The matrix to split into CV folds.
+    :type dataMatrix:           numpy array
+    :param targetClasses:       The array of target classes for the examples in targetMatrix.
+    :type targetClasses:        numpy array
+    :param patientIndicesToUse: Boolean indicator of the examples in the dataMatrix to use. Should have one
+                                    entry for each example in dataMatrix.
+    :type patientIndicesToUse:  numpy logical array
+    :param folds:               An array indicating the fold that each example is in. Each example should
+                                    have an integer value indicating the fold.
+    :type folds:                numpy array
+    :param classesUsed:         The unique classes across the whole dataset.
+    :type classesUsed:          list
+    :param batchSize:           The size of the mini batches to use.
+    :type batchSize:            int
+    :param numIterations:       The number of mini batch iterations to run.
+    :type numIterations@        int
+    :param cvFolds:             The number of CV folds to perform.
+    :type cvFolds:              int
+    :return :                   The record of the gradient descent for each mini batch used, the performance of the
+                                    classifier on each fold and the predictions of the classifier on all examples used.
+    :rtype :                    list, list, list
 
     """
 
