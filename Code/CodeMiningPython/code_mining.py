@@ -169,10 +169,61 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                     batchSize=batchSize, numIterations=numIterations)
 
                 # Record the first model's performance and descent.
-                trainingPredictions = firstClassifier.predict(firstTrainingMatrix)
-                gMean = calc_metrics.calc_g_mean(trainingPredictions, firstTrainingClasses)
+                firstPredictions = firstClassifier.predict(firstTrainingMatrix)
+                gMean = calc_metrics.calc_g_mean(firstPredictions, firstTrainingClasses)
                 fidPerformanceFirst.write("\t{0:1.4f}".format(gMean))
                 fidPerformanceFirst.write("\t{0:s}\n".format(','.join(["{0:1.4f}".format(i) for i in descent])))
+
+                # Convert the target array into a matrix with the same number of columns as there are classes.
+                # Each column will correspond to a single class. Given array of target classes, trainingClasses, the
+                # target matrix, trainingClassesMatrix, will be organised so that
+                # trainingClassesMatrix[i, j] == 1 if trainingClasses[i] is equal to j. Otherwise
+                # trainingClassesMatrix[i, j] == 0. For example:
+                #   trainingClasses == [1 2 3 2 1]
+                #                            [1 0 0]
+                #                            [0 1 0]
+                #   trainingClassesMatrix == [0 0 1]
+                #                            [0 1 0]
+                #                            [1 0 0]
+                trainingClassesMatrix = np.zeros((firstTrainingMatrix.shape[0], len(classesUsed)))
+                for i in range(len(firstTrainingClasses)):
+                    trainingClassesMatrix[i, firstTrainingClasses[i]] = 1
+
+                # Remove examples with posterior probability below the discard threshold.
+                # The matrix of posteriors contains one column per class, and each example has a posterior for each
+                # class. Examples are considered to be good examples if the posterior of their actual class
+                # is greater than the discard threshold provided.
+                firstPosteriors = firstClassifier.predict_proba(firstTrainingMatrix)
+                largeEnoughPost = firstPosteriors > discardThreshold  # Posteriors larger than the discard threshold.
+                goodExamples = np.any(trainingClassesMatrix * largeEnoughPost, axis=1)
+
+                # Determine the training set for the second model.
+                secondTrainingMatrix = firstTrainingMatrix[goodExamples, :]
+                secondTrainingClasses = firstTrainingClasses[goodExamples]
+                numTrainingExamples = firstTrainingMatrix.shape[0]
+
+                if len(np.unique(secondTrainingClasses)) < len(classesUsed):
+                    # The prediction errors of the first model have caused all examples of (at least) one class to be
+                    # removed from the dataset. Skip training the second model.
+                    print('WARNING: All examples of one class have been removed for having poor predictions.')
+                    fidPerformanceSecond.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}\t-\t-\n"
+                                               .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
+                else:
+                    # Create the second model.
+                    secondClassifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
+                                                     l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
+                                                     learning_rate="optimal", class_weight=None)
+
+                    # Train the second model.
+                    descent = train_model.mini_batch_e_net(
+                        secondClassifier, secondTrainingMatrix, secondTrainingClasses, classesUsed, permutations,
+                        batchSize=batchSize, numIterations=numIterations)
+
+                    # Record the second model's performance and descent.
+                    secondPredictions = secondClassifier.predict(secondTrainingMatrix)
+                    gMean = calc_metrics.calc_g_mean(secondPredictions, secondTrainingClasses)
+                    fidPerformanceSecond.write("\t{0:1.4f}".format(gMean))
+                    fidPerformanceSecond.write("\t{0:s}\n".format(','.join(["{0:1.4f}".format(i) for i in descent])))
     else:
         # Training if cross validation is to be performed.
 
