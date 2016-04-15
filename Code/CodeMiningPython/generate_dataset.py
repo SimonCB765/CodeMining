@@ -43,15 +43,14 @@ def main(fileDataset, dirOutput, mapCodeToDescr, normMethod=0, normParam=None):
     codesPerPatient = collections.defaultdict(int)  # Records the number of unique codes for each patient.
     patientsPerCode = collections.defaultdict(int)  # Records the number of unique patients for each code.
     currentPatientIndex = -1
-    uniquePatients = set([])
-    patientIndices = {}
+    uniquePatients = {}
     currentCodeIndex = -1
     uniqueCodes = {}
     for ind, (p, c) in enumerate(zip(patientIDs, codes)):
         # Handle patients.
         if p not in uniquePatients:
             currentPatientIndex += 1
-            patientIndices[currentPatientIndex] = p
+            uniquePatients[p] = currentPatientIndex
         patientIDs[ind] = uniquePatients[p]
         codesPerPatient[p] += 1
 
@@ -81,7 +80,10 @@ def main(fileDataset, dirOutput, mapCodeToDescr, normMethod=0, normParam=None):
     sparseMatrix = normalise_data_matrix.main(sparseMatrix, normMethod, normParam)  # Normalise the data.
     sparseMatrix = sparse.csr_matrix(sparseMatrix, dtype=dt)  # Convert to CSR for code mining.
 
-    return sparseMatrix, patientIndices, uniqueCodes
+    # Invert patient to index mapping.
+    uniquePatients = {v : k for k, v in uniquePatients.items()}
+
+    return sparseMatrix, uniquePatients, uniqueCodes
 
 
 def parse_dataset(fileData, delimiter='\t'):
