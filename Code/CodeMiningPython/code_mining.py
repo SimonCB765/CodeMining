@@ -76,22 +76,23 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                                                                   mapCodeToInd, isCodesRemoved=True)
 
     # Determine the class of each example, and map the classes from their names to an integer representation.
-    # A class integer of 0 is used to indicate that an example does not belong to any class, and is therefore
+    # A class of NaN is used to indicate that an example does not belong to any class, and is therefore
     # not used in the training.
-    allExampleClasses = np.zeros(dataMatrix.shape[0])  # The integer class code for each example.
+    allExampleClasses = np.empty(dataMatrix.shape[0])  # The integer class code for each example.
+    allExampleClasses.fill(np.nan)
     mapClassToIntRep = {}  # Mapping from the integer code used to reference each class to the class it references.
-    currentCode = 1
+    currentCode = 0
     for i in classExamples:
         if i != "Ambiguous":
             mapClassToIntRep[currentCode] = i
             allExampleClasses[classExamples[i]] = currentCode
             currentCode += 1
-    classesUsed = [i for i in mapClassToIntRep]  # List of containing the integer code for every class in the dataset.
+    classesUsed = [i for i in mapClassToIntRep]  # List containing the integer code for every class in the dataset.
 
     # Calculate masks for the patients and the codes. These will be used to select only those patients and codes
     # that are to be used for training/testing.
     patientIndicesToUse = np.ones(dataMatrix.shape[0], dtype=bool)
-    patientIndicesToUse[allExampleClasses == 0] = 0  # Mask out the patients that have no class.
+    patientIndicesToUse[np.isnan(allExampleClasses)] = 0  # Mask out the patients that have no class.
     codeIndicesToUse = np.ones(dataMatrix.shape[1], dtype=bool)
     codeIndicesToUse[classCodeIndices] = 0  # Mask out the codes used to calculate class membership.
     # TODO: Remove the codes and patient that don't occur frequently enough.
@@ -107,8 +108,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
         print("Only class {0:s} has any examples.".format(haveExamples[0]))
         sys.exit()
     elif noExampleClasses:
-        print("The following classes have no unambiguous examples and will be unused: {0:s}".format(
-            ','.join(noExampleClasses)))
+        print("The following classes have no unambiguous examples and will be unused: {0:s}"
+            .format(','.join(noExampleClasses)))
 
     # Create all combinations of parameters that will be used.
     paramCombos = [[i, j, k, l] for i in numIters for j in batchSizes for k in lambdaVals for l in elasticNetMixing]
@@ -116,8 +117,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
     if cvFolds == 0:
         # Training if no testing is needed.
 
-        # Generate the permutations of the data to use. The permutations will define the shuffling of the training
-        # data that we will use. Calculating these upfront will cause each combination of parameters
+        # Generate the permutations of the data to use. The permutations will be used to shuffle the data between
+        # iterations of the mini batch training. Calculating these upfront will cause each combination of parameters
         # to use the same permutations.
         numTrainingExamples = sum(patientIndicesToUse)  # The number of training examples we're using.
         maxNumIterations = max(numIters)  # Maximum number of iterations used.
@@ -148,7 +149,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 fidPerformanceSecond.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}"
                                      .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
 
-                # Create the training matrix and class array.
+                # Create the training matrix and target class array.
                 # Generate the training matrix in two steps as scipy sparse matrices can not be sliced
                 # in the same operation with different length arrays.
                 firstTrainingMatrix = dataMatrix[patientIndicesToUse, :]
@@ -170,26 +171,27 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
         # Never generate fewer than 2 folds. If one was requested, then generate 2 and use one for training and
         # the other for testing.
-        partitionsToGenerate = cvFolds if cvFolds > 1 else 2
+        foldsToGenerate = cvFolds if cvFolds > 1 else 2
 
         # Generate the stratified cross validation folds.
-        partitions = np.array(partition_dataset.main(allExampleClasses, partitionsToGenerate, True))
+        stratifiedFolds = np.array(partition_dataset.main(allExampleClasses, foldsToGenerate, True))
 
-        # Generate the permutations of each partition to use. The permutations will define the shuffling of the
-        # training data that we will use. Calculating these upfront will cause each combination of parameters
+        # Generate the permutations of each fold. The permutations will be used to shuffle the data between
+        # iterations of the mini batch training. Calculating these upfront will cause each combination of parameters
         # to use the same permutations.
         permutations = {}
         maxNumIterations = max(numIters)  # Maximum number of iterations used.
         for i in range(cvFolds):
             # Determine the number of training examples used for this fold. The number is the total number of
             # training examples minus the number used in this fold (as these will be used for testing).
-            trainingExamples = (partitions != i) & patientIndicesToUse
-            trainingInPart = sum(trainingExamples)
+            trainingExamples = (stratifiedFolds != i) & patientIndicesToUse
+            numTrainingExamples = sum(trainingExamples)
 
-            # Generate a list containing copies of the indices for the training examples in this fold.
+            # Generate a list containing the initial permutations of the training examples for this fold. The intial
+            # permutations will be the identity permutation.
             # If there are 10 training examples for this fold and the maximum number of iterations is 5, then
-            # indexLists will contain 5 copies of the integers 0..9.
-            indexLists = [list(range(trainingInPart)) for _ in range(maxNumIterations)]
+            # indexLists will contain 5 copies of the integers 0..9 (ordered from 0 to 9).
+            indexLists = [list(range(numTrainingExamples)) for _ in range(maxNumIterations)]
 
             # Finally, shuffle the index lists to generate the permutations.
             for j in range(maxNumIterations):
@@ -225,7 +227,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
                 # Train and test on each fold if cvFolds > 1. Otherwise, train on one fold and test on the other.
                 classifier, descent, performanceOverFolds, predictions = train_model.mini_batch_e_net_cv(
-                    dataMatrixSubset, allExampleClasses, patientIndicesToUse, partitions, classesUsed, permutations,
+                    dataMatrixSubset, allExampleClasses, patientIndicesToUse, stratifiedFolds, classesUsed, permutations,
                         lambdaVal, elasticNetRatio, batchSize, numIterations, cvFolds)
 
                 # Write out the performance of the model over all folds.
