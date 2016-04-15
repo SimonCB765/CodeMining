@@ -67,7 +67,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
     # Generate the data matrix and two index mappings.
     # The code to index mapping maps codes to their indices in the data matrix.
     # The patient to index mapping maps patients to their indices in the data matrix.
-    dataMatrix, mapPatientToInd, mapCodeToInd = generate_dataset.main(fileDataset, dirResults, mapCodeToDescr)
+    dataMatrix, mapPatientToInd, mapCodeToInd = generate_dataset.main(fileDataset, dirResults, mapCodeToDescr,
+                                                                      dataNormVal)
 
     # Determine the examples in each class.
     # classExamples is a dictionary with an entry for each class (and one for "Ambiguous" examples) that contains
