@@ -5,14 +5,13 @@ import math
 
 # 3rd party imports.
 import numpy as np
-from sklearn.linear_model import SGDClassifier
 
 # User imports.
 import calc_metrics
 
 
-def mini_batch_e_net(trainingMatrix, targetClasses, classesUsed, permutations, testingMatrix=None, testingClasses=None,
-                     lambdaVal=0.01, elasticNetRatio=0.15, batchSize=500, numIterations=5):
+def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, permutations, testingMatrix=None, testingClasses=None,
+                     batchSize=500, numIterations=5):
     """
 
     :return :
@@ -21,11 +20,6 @@ def mini_batch_e_net(trainingMatrix, targetClasses, classesUsed, permutations, t
 
     descent = []  # The list recording the gradient descent.
     numTrainingExamples = trainingMatrix.shape[0]  # The number of training examples in the dataset.
-
-    # Create the model.
-    classifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
-                               l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
-                               learning_rate="optimal", class_weight=None)
 
     # Run the desired number of training iterations.
     for i in range(numIterations):
@@ -41,8 +35,8 @@ def mini_batch_e_net(trainingMatrix, targetClasses, classesUsed, permutations, t
             startIndex = j * batchSize
             stopIndex = min((j + 1) * batchSize, numTrainingExamples - 1)
 
-            # Generate the training matrix and class array for the batch. A subset is only used for the
-            # examples, all codes in the training matrix will be used.
+            # Generate the training matrix and class array for the batch. This will contain a subset of the examples,
+            # but all the codes in the training matrix.
             batchTrainingMatrix = permTrainingMatrix[startIndex:stopIndex, :]
             batchTrainingClasses = permTrainingClasses[startIndex:stopIndex]
 
@@ -51,7 +45,7 @@ def mini_batch_e_net(trainingMatrix, targetClasses, classesUsed, permutations, t
 
             # Record the descent by predicting on the entire training matrix (not just the permuted
             # mini batch) if there is no test set. Otherwise predict on the test set.
-            if testingMatrix == None:
+            if testingMatrix is None:
                 trainingPredictions = classifier.predict(trainingMatrix)
                 gMean = calc_metrics.calc_g_mean(trainingPredictions, targetClasses)
                 descent.append(gMean)
@@ -60,11 +54,11 @@ def mini_batch_e_net(trainingMatrix, targetClasses, classesUsed, permutations, t
                 gMean = calc_metrics.calc_g_mean(testPredictions, testingClasses)
                 descent.append(gMean)
 
-    return classifier, descent
+    return descent
 
 
-def mini_batch_e_net_cv(dataMatrix, targetClasses, patientIndicesToUse, partitions, classesUsed, permutations,
-                        lambdaVal=0.01, elasticNetRatio=0.15, batchSize=500, numIterations=5, cvFolds=2):
+def mini_batch_e_net_cv(classifier, dataMatrix, targetClasses, patientIndicesToUse, folds, classesUsed, permutations,
+                        batchSize=500, numIterations=5, cvFolds=2):
     """
 
     :param trainingMatrix:
@@ -79,33 +73,31 @@ def mini_batch_e_net_cv(dataMatrix, targetClasses, patientIndicesToUse, partitio
 
     """
 
-    performanceOverFolds = []  # Create a list to record the performance for each fold.
+    performanceOfEachFold = []  # Create a list to record the performance for each fold.
     descent = []  # Create a list to record the gradient descent for each fold.
-    predictions = np.zeros(dataMatrix.shape[0])  # Create the array to hold the predictions of all examples.
+    predictions = np.empty(dataMatrix.shape[0])  # Create the array to hold the predictions of all examples.
+    predictions.fill(np.nan)
 
     for i in range(cvFolds):
-        # Determine training and testing example masks.
-        trainingExamples = (partitions != i) & patientIndicesToUse
-        testingExamples = (partitions == i) & patientIndicesToUse
+        # Determine training and testing example masks for this fold.
+        trainingExamples = (folds != i) & patientIndicesToUse
+        testingExamples = (folds == i) & patientIndicesToUse
 
-        # Create training and testing matrices and class arrays.
-        # Generate training and testing matrices in two steps as scipy sparse matrices can not be sliced
-        # in the same operation with different length arrays.
+        # Create training and testing matrices and target class arrays for this fold.
         trainingMatrix = dataMatrix[trainingExamples, :]
         trainingClasses = targetClasses[trainingExamples]
         testingMatrix = dataMatrix[testingExamples, :]
         testingClasses = targetClasses[testingExamples]
 
         # Train the model and record the descent on this fold.
-        classifier, foldDescent = mini_batch_e_net(trainingMatrix, trainingClasses, classesUsed, permutations[i],
-                                                   testingMatrix, testingClasses, lambdaVal, elasticNetRatio,
-                                                   batchSize, numIterations)
+        foldDescent = mini_batch_e_net(classifier, trainingMatrix, trainingClasses, classesUsed, permutations[i],
+                                                   testingMatrix, testingClasses, batchSize, numIterations)
         descent.append(foldDescent)
 
         # Record the model's performance on this fold. If only one fold is being used, then this
-        # will be the G mean on the holdout portion.
+        # will be the performance on the holdout portion.
         testPredictions = classifier.predict(testingMatrix)
         predictions[testingExamples] = testPredictions
-        performanceOverFolds.append(calc_metrics.calc_g_mean(testPredictions, testingClasses))
+        performanceOfEachFold.append(calc_metrics.calc_g_mean(testPredictions, testingClasses))
 
-    return classifier, descent, performanceOverFolds, predictions
+    return descent, performanceOfEachFold, predictions

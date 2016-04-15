@@ -8,6 +8,7 @@ import sys
 
 # 3rd party imports.
 import numpy as np
+from sklearn.linear_model import SGDClassifier
 
 # User imports.
 import calc_metrics
@@ -150,16 +151,21 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                                      .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
 
                 # Create the training matrix and target class array.
-                # Generate the training matrix in two steps as scipy sparse matrices can not be sliced
-                # in the same operation with different length arrays.
+                # Generate the training matrix in two steps as scipy sparse matrices can only be sliced along
+                # both axes in the same operation with arrays of the same length.
                 firstTrainingMatrix = dataMatrix[patientIndicesToUse, :]
                 firstTrainingMatrix = firstTrainingMatrix[:, codeIndicesToUse]
                 firstTrainingClasses = allExampleClasses[patientIndicesToUse]
 
+                # Create the first model.
+                firstClassifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
+                                                l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
+                                                learning_rate="optimal", class_weight=None)
+
                 # Train the first model.
-                firstClassifier, descent = train_model.mini_batch_e_net(
-                    firstTrainingMatrix, firstTrainingClasses, classesUsed, permutations, lambdaVal, elasticNetRatio,
-                    batchSize, numIterations)
+                descent = train_model.mini_batch_e_net(
+                    firstClassifier, firstTrainingMatrix, firstTrainingClasses, classesUsed, permutations,
+                    batchSize=batchSize, numIterations=numIterations)
 
                 # Record the first model's performance and descent.
                 trainingPredictions = firstClassifier.predict(firstTrainingMatrix)
@@ -225,21 +231,26 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 # Cut the data matrix down to a matrix containing only the codes to be used.
                 dataMatrixSubset = dataMatrix[:, codeIndicesToUse]
 
+                # Create the model.
+                classifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
+                                           l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
+                                           learning_rate="optimal", class_weight=None)
+
                 # Train and test on each fold if cvFolds > 1. Otherwise, train on one fold and test on the other.
-                classifier, descent, performanceOverFolds, predictions = train_model.mini_batch_e_net_cv(
-                    dataMatrixSubset, allExampleClasses, patientIndicesToUse, stratifiedFolds, classesUsed, permutations,
-                        lambdaVal, elasticNetRatio, batchSize, numIterations, cvFolds)
+                descent, performanceOfEachFold, predictions = train_model.mini_batch_e_net_cv(
+                    classifier, dataMatrixSubset, allExampleClasses, patientIndicesToUse, stratifiedFolds, classesUsed,
+                    permutations, batchSize, numIterations, cvFolds)
 
                 # Write out the performance of the model over all folds.
-                fidPerformance.write("\t{0:s}".format('\t'.join(["{0:1.4F}".format(i) for i in performanceOverFolds])))
+                fidPerformance.write("\t{0:s}".format('\t'.join(["{0:1.4F}".format(i) for i in performanceOfEachFold])))
 
                 if cvFolds == 1:
                     # If only one fold, then record the descent.
                     fidPerformance.write("\t{0:s}\n".format(','.join(["{0:1.4f}".format(i) for i in descent[0]])))
                 else:
                     # Record G mean of predictions across all folds using this parameter combination.
-                    # If the predicted class of any example is 0, then the example did not actually have its class predicted.
-                    # This is due to the fact that real class integer representations begin at 1.
-                    examplesUsed = predictions != 0
+                    # If the predicted class of any example is NaN, then the example did not actually have its class
+                    # predicted.
+                    examplesUsed = ~np.isnan(predictions)
                     gMean = calc_metrics.calc_g_mean(predictions[examplesUsed], allExampleClasses[examplesUsed])
                     fidPerformance.write("\t{0:1.4f}\n".format(gMean))
