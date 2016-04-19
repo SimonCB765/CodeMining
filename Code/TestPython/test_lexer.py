@@ -20,9 +20,10 @@ class SuccessTests(unittest.TestCase):
         results = [
             [('CODE', 'CODE1')],
             [('CODE', 'CODE1.')],
-            [('CODE', 'C1'), 'AND_OP', ('CODE', 'c2'), 'OR_OP', ('CODE', 'c3')],
-            [('NUM', 3), 'GT_OP', ('NUM', 7)],
-            [('CODE', 'D.'), 'LT_OP', ('NUM', 5), 'NOT_OP', ('NUM', 6), 'GT_OP', 'NOT_OP', ('CODE', 'FF')]]
+            [('CODE', 'C1'), ('AND_OP', '&'), ('CODE', 'c2'), ('OR_OP', '|'), ('CODE', 'c3')],
+            [('NUM', 3), ('COMP_OP', '>'), ('NUM', 7)],
+            [('CODE', 'D.'), ('COMP_OP', '<'), ('NUM', 5), ('NOT_OP', '~'), ('NUM', 6), ('COMP_OP', '>'),
+                ('NOT_OP', '~'), ('CODE', 'FF')]]
 
         for i in zip(tests, results):
             lexer = ClassLexer.ClassLexer(i[0])  # Create the lexer.

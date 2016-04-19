@@ -8,7 +8,7 @@ class ClassLexer(object):
     """Class to perform the tokenisation of an input string."""
 
     operators = {
-                '<' : 'LT_OP', '>' : 'GT_OP', '<=' : 'LTE_OP', '>=' : 'GTE_OP', '!=' : 'NE_OP', '==' : 'EQ_OP',
+                '<' : 'COMP_OP', '>' : 'COMP_OP', '<=' : 'COMP_OP', '>=' : 'COMP_OP', '!=' : 'COMP_OP', '==' : 'COMP_OP',
                 '|' : 'OR_OP', '&' : 'AND_OP', '~' : 'NOT_OP',
                 '(' : 'L_PAREN', ')' : 'R_PAREN'
                 }
@@ -47,9 +47,9 @@ class ClassLexer(object):
         nextChar = self.classString[currentPos]
 
         if (currentChar + nextChar) in self.operators:
-            return currentPos + 2, self.operators[currentChar + nextChar]
+            return currentPos + 2, currentChar + nextChar
         else:
-            return currentPos + 1, self.operators[currentChar]
+            return currentPos + 1, currentChar
 
     def tokenise(self):
         currentPos = 0  # Current position in the string during scanning.
@@ -76,8 +76,8 @@ class ClassLexer(object):
                 self.tokenised.append(('CODE', returnedValue))
             elif self.is_operator(self.classString[currentPos]):
                 # The beginning of a comparison operator has been found.
-                currentPos, returnedToken = self.scan_operator(currentPos)
-                self.tokenised.append(returnedToken)
+                currentPos, returnedValue = self.scan_operator(currentPos)
+                self.tokenised.append((self.operators[returnedValue], returnedValue))
             else:
                 return self.tokenised, 'Unexpected character {0:s} at index {1:d}.'\
                     .format(self.classString[currentPos], currentPos)
