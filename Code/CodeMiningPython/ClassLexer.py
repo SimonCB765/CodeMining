@@ -4,7 +4,7 @@
 import re
 
 
-def ClassLexer(object):
+class ClassLexer(object):
     """Class to perform the tokenisation of an input string."""
 
     operators = {
@@ -17,46 +17,17 @@ def ClassLexer(object):
         self.classString = classString  # The string to tokenise.
         self.tokenised = []  # Tokenisation of the classString.
 
-    def is_alphanumeric(self, char):
+    @staticmethod
+    def is_alphanumeric(char):
         return re.match('[0-9a-zA-Z]', char)
 
-    def is_operator(self, char):
+    @staticmethod
+    def is_operator(char):
         return re.match('[><!=|&~)(]', char)
 
     def reset(self, classString):
         self.classString = classString
         self.tokenised = []
-
-    def scan(self):
-        currentPos = 0  # Current position in the string during scanning.
-
-        while currentPos < len(self.classString):
-
-            if self.classString[currentPos].isspace():
-                # The current position is a whitespace character, so skip it.
-                currentPos += 1
-            elif self.classString[currentPos] == '#':
-                # The start of a number has been found.
-                currentPos += 1
-                returnedPos, returnedValue = scan_number(self.classString, currentPos)
-                if returnedPos == -1:
-                    # '#' was found, but the next character was not a digit.
-                    return self.tokenised, 'Expected a digit at index {0:d}, got {1:s} instead.'\
-                        .format(currentPos, returnedValue)
-                else:
-                    currentPos = returnedPos
-                    self.tokenised.append('NUM')
-            elif is_alphanumeric(self.classString[currentPos]):
-                # A code has been found.
-                currentPos, returnedValue = scan_code(self.classString, currentPos)
-                self.tokenised.append('CODE')
-            elif is_operator(self.classString[currentPos]):
-                # The beginning of a comparison operator has been found.
-                currentPos, returnedToken = scan_operator(self.classString, currentPos)
-                self.tokenised.append(returnedToken)
-            else:
-                return self.tokenised, 'Unexpected character {0:s} at index {1:d}.'\
-                    .format(self.classString[currentPos], currentPos)
 
     def scan_code(self, currentPos):
         codeMatch = re.match('[0-9a-zA-Z]+\.{0,1}', self.classString[currentPos:])
@@ -75,7 +46,38 @@ def ClassLexer(object):
         currentChar = self.classString[currentPos]
         nextChar = self.classString[currentPos]
 
-        if (currentChar + nextChar) in operators:
-            return currentPos + 2, operators[currentChar + nextChar]
+        if (currentChar + nextChar) in self.operators:
+            return currentPos + 2, self.operators[currentChar + nextChar]
         else:
-            return currentPos + 1, operators[currentChar]
+            return currentPos + 1, self.operators[currentChar]
+
+    def tokenise(self):
+        currentPos = 0  # Current position in the string during scanning.
+
+        while currentPos < len(self.classString):
+
+            if self.classString[currentPos].isspace():
+                # The current position is a whitespace character, so skip it.
+                currentPos += 1
+            elif self.classString[currentPos] == '#':
+                # The start of a number has been found.
+                currentPos += 1
+                returnedPos, returnedValue = self.scan_number(currentPos)
+                if returnedPos == -1:
+                    # '#' was found, but the next character was not a digit.
+                    return self.tokenised, 'Expected a digit at index {0:d}, got {1:s} instead.'\
+                        .format(currentPos, returnedValue)
+                else:
+                    currentPos = returnedPos
+                    self.tokenised.append('NUM')
+            elif self.is_alphanumeric(self.classString[currentPos]):
+                # A code has been found.
+                currentPos, returnedValue = self.scan_code(currentPos)
+                self.tokenised.append('CODE')
+            elif self.is_operator(self.classString[currentPos]):
+                # The beginning of a comparison operator has been found.
+                currentPos, returnedToken = self.scan_operator(currentPos)
+                self.tokenised.append(returnedToken)
+            else:
+                return self.tokenised, 'Unexpected character {0:s} at index {1:d}.'\
+                    .format(self.classString[currentPos], currentPos)
