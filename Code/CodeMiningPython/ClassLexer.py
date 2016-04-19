@@ -69,11 +69,11 @@ class ClassLexer(object):
                         .format(currentPos, returnedValue)
                 else:
                     currentPos = returnedPos
-                    self.tokenised.append('NUM')
+                    self.tokenised.append(('NUM', int(returnedValue)))
             elif self.is_alphanumeric(self.classString[currentPos]):
                 # A code has been found.
                 currentPos, returnedValue = self.scan_code(currentPos)
-                self.tokenised.append('CODE')
+                self.tokenised.append(('CODE', returnedValue))
             elif self.is_operator(self.classString[currentPos]):
                 # The beginning of a comparison operator has been found.
                 currentPos, returnedToken = self.scan_operator(currentPos)
