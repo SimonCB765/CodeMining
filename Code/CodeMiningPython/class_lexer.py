@@ -1,7 +1,14 @@
+"""Simple lexer to tokenise a class definition."""
+
+# Python imports.
 import re
 
 
-OPERATORS = {'<' : 'LT_OP', '>' : 'GT_OP', '<=' : 'LTE_OP', '>=' : 'GTE_OP', '!=' : 'NE_OP', '==' : 'EQ_OP', '|' : 'OR_OP', '&' : 'AND_OP', '~' : 'NOT_OP'}
+OPERATORS = {
+                '<' : 'LT_OP', '>' : 'GT_OP', '<=' : 'LTE_OP', '>=' : 'GTE_OP', '!=' : 'NE_OP', '==' : 'EQ_OP',
+                '|' : 'OR_OP', '&' : 'AND_OP', '~' : 'NOT_OP',
+                '(' : 'L_PAREN', ')' : 'R_PAREN'
+            }
 
 
 def is_alphanumeric(char):
@@ -9,7 +16,7 @@ def is_alphanumeric(char):
 
 
 def is_operator(char):
-    return re.match('[<>!=|&~]', char)
+    return re.match('[><!=|&~)(]', char)
 
 
 def scan(input):
@@ -19,8 +26,8 @@ def scan(input):
     while currentPos < len(input):
 
         if input[currentPos].isspace():
-            # The current position is a whitespace character, so skip it and all contiguous whitespace.
-            currentPos = scan_whitespace(input, currentPos)
+            # The current position is a whitespace character, so skip it.
+            currentPos += 1
         elif input[currentPos] == '#':
             # The start of a number has been found.
             currentPos += 1
@@ -68,12 +75,3 @@ def scan_operator(input, currentPos):
         return currentPos + 2, OPERATORS[currentChar + nextChar]
     else:
         return currentPos + 1, OPERATORS[currentChar]
-
-
-def scan_whitespace(input, currentPos):
-    # Return the next spot to start looking at the input. This is the current position plus the point at which
-    # the contiguous whitespace ends. So if the string is 123__456 (where _ represents a space), then this function
-    # would be called with currentPos == 3, and the match would be performed on the string '__456' so the match would
-    # end at index 2, and you would return 3 + 2 = 5 as the position to continue the lexer from.
-    whitespaceMatch = re.match('\s', input[currentPos:])  # Contiguous whitespace in input starting at currentPos.
-    return currentPos + whitespaceMatch.end(0)
