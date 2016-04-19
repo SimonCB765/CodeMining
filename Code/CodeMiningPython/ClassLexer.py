@@ -69,7 +69,7 @@ class ClassLexer(object):
                         .format(currentPos, returnedValue)
                 else:
                     currentPos = returnedPos
-                    self.tokenised.append(('NUM', int(returnedValue)))
+                    self.tokenised.append(('NUM', returnedValue))
             elif self.is_alphanumeric(self.classString[currentPos]):
                 # A code has been found.
                 currentPos, returnedValue = self.scan_code(currentPos)
