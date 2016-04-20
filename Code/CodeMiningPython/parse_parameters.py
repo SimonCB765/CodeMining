@@ -47,7 +47,8 @@ def main(fileParams):
         #=======================#
         # Check that the dirty data location exists.
         if "DirtyDataLocation" not in cleanerArgs:
-            errorsFound.append("CLEANING: There must be a field called DirtyDataLocation in the CleanerArgs field entry.")
+            errorsFound.append("CLEANING: There must be a field called DirtyDataLocation in the CleanerArgs "
+                               "field entry.")
         elif not os.path.isfile(cleanerArgs["DirtyDataLocation"]):
             errorsFound.append("CLEANING: The dirty dataset location is not a file.")
         else:
@@ -56,7 +57,8 @@ def main(fileParams):
         # Check that the location to write the cleaned data out to does not exist.
         isCleanDataLocValid = False
         if "CleanDataLocation" not in cleanerArgs:
-            errorsFound.append("CLEANING: There must be a field called CleanDataLocation in the CleanerArgs field entry.")
+            errorsFound.append("CLEANING: There must be a field called CleanDataLocation in the CleanerArgs "
+                               "field entry.")
         elif os.path.exists(cleanerArgs["CleanDataLocation"]):
             errorsFound.append("CLEANING: The location to save the cleaned dataset already exists.")
         else:
@@ -200,7 +202,8 @@ def main(fileParams):
         if "CodeOccurrences" in miningArgs:
             # The minimum number of patients a code needs to occur with must be an integer.
             if not isinstance(miningArgs["CodeOccurrences"], numbers.Integral):
-                errorsFound.append("The minimum number of patients a code needs to occur with must be an integer.")
+                errorsFound.append("MINING: The minimum number of patients a code needs to occur with must "
+                                   "be an integer.")
             else:
                 procMiningArgs["CodeOccurrences"] = miningArgs["CodeOccurrences"]
 
@@ -208,15 +211,16 @@ def main(fileParams):
         if "PatientOccurrences" in miningArgs:
             # The minimum number of codes a patient needs to occur with must be an integer.
             if not isinstance(miningArgs["PatientOccurrences"], numbers.Integral):
-                errorsFound.append("The minimum number of codes a patient needs to occur with must be an integer.")
+                errorsFound.append("MINING: The minimum number of codes a patient needs to occur with must "
+                                   "be an integer.")
             else:
                 procMiningArgs["PatientOccurrences"] = miningArgs["PatientOccurrences"]
 
-        procMiningArgs["CVFolds"] = 0  # Default to not using cross validation.
+        procMiningArgs["CVFolds"] = [0]  # Default to not using cross validation.
         if "CVFolds" in miningArgs:
-            # The number of cross validation folds to use must be an integer.
-            if not isinstance(miningArgs["CVFolds"], numbers.Integral):
-                errorsFound.append("The number of cross validation folds must be an integer.")
+            # The list of cross validation folds must contain only integers.
+            if not all([isinstance(i, numbers.Integral) for i in miningArgs["CVFolds"]]):
+                errorsFound.append("MINING: The number of cross validation folds must be a list of integers.")
             else:
                 procMiningArgs["CVFolds"] = miningArgs["CVFolds"]
 
@@ -224,7 +228,7 @@ def main(fileParams):
         if "DataNorm" in miningArgs:
             # The data normalisation value must be an integer.
             if not isinstance(miningArgs["DataNorm"], numbers.Integral):
-                errorsFound.append("The data normalisation value must be an integer.")
+                errorsFound.append("MINING: The data normalisation value must be an integer.")
             else:
                 procMiningArgs["DataNorm"] = miningArgs["DataNorm"]
 
@@ -232,7 +236,7 @@ def main(fileParams):
         if "DiscardThreshold" in miningArgs:
             # The discard threshold must be a float.
             if not isinstance(miningArgs["DiscardThreshold"], numbers.Real):
-                errorsFound.append("The discard threshold must be a float.")
+                errorsFound.append("MINING: The discard threshold must be a float.")
             else:
                 procMiningArgs["DiscardThreshold"] = miningArgs["DiscardThreshold"]
 

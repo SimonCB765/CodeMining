@@ -19,7 +19,7 @@ import train_model
 
 
 def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,), elasticNetMixing=(0.15,),
-         batchSizes=(500,), numIters=(5,), codeOccurrences=0, patientOccurrences=0, cvFolds=0,
+         batchSizes=(500,), numIters=(5,), codeOccurrences=0, patientOccurrences=0, cvFolds=(0,),
          dataNormVal=0, discardThreshold=0.0):
     """Perform the clinical code mining.
 
@@ -115,7 +115,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
     # Create all combinations of parameters that will be used.
     paramCombos = [[i, j, k, l] for i in numIters for j in batchSizes for k in lambdaVals for l in elasticNetMixing]
 
-    if cvFolds == 0:
+    if cvFolds[0] == 0:
         # Training if no testing is needed.
 
         with open(dirResults + "/Performance_First.tsv", 'w') as fidPerformanceFirst, \
