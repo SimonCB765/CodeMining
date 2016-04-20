@@ -81,3 +81,5 @@ class ClassLexer(object):
             else:
                 return self.tokenised, 'Unexpected character {0:s} at index {1:d}.'\
                     .format(self.classString[currentPos], currentPos)
+
+        self.tokenised.append(('EOF', 'EOF'))
