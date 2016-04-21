@@ -127,7 +127,7 @@ def main(Y, indicesToUse=None, numPartitions=2, isStratified=False):
             occurrences = sum(classMembership == i)
             if occurrences < numPartitions:
                 print("WARNING: class {0:d} occurs {1:d} times, and will not appear in each of "
-                      "the {2:d} folds.".format(i, occurrences, numPartitions))
+                      "the {2:d} folds.".format(int(i), occurrences, numPartitions))
 
         # Determine the partitions.
         # Assume the subset of examples used is ->
