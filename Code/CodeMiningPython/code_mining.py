@@ -331,17 +331,28 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                                            l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
                                            learning_rate="optimal", class_weight=None)
 
-                # Train and test on each fold if cvFolds > 1. Otherwise, train on one fold and test on the other.
-                descent, performanceOfEachFold, predictions = train_model.mini_batch_e_net_cv(
-                    classifier, dataMatrixSubset, allExampleClasses, patientIndicesToUse, stratifiedFolds, classesUsed,
-                    batchSize, numIterations, cvFolds)
+                # Determine training and testing example masks. Training examples are the examples in the first
+                # fold, while testing examples are those in the second.
+                trainingExamples = (stratifiedFolds == 0)
+                testingExamples = (stratifiedFolds == 1)
+
+                # Create training and testing matrices and target class arrays for this fold.
+                trainingMatrix = dataMatrixSubset[trainingExamples, :]
+                trainingClasses = allExampleClasses[trainingExamples]
+                testingMatrix = dataMatrixSubset[testingExamples, :]
+                testingClasses = allExampleClasses[testingExamples]
+
+                # Train the model on this fold.
+                descent = train_model.mini_batch_e_net(classifier, trainingMatrix, trainingClasses, classesUsed,
+                                                       testingMatrix, testingClasses, batchSize, numIterations)
+
+                # Record the model's performance.
+                testPredictions = classifier.predict(testingMatrix)
+                testPerformance = calc_metrics.calc_g_mean(testPredictions, testingClasses)
 
                 # Write out the performance of the model over all folds and the descent.
-                fidPerformance.write("\t{0:s}".format('\t'.join(["{0:1.4F}".format(i) for i in performanceOfEachFold])))
-
-                fidPerformance.write("\t{0:s}\t{0:s}\n"
-                                     .format('\t'.join(["{0:1.4F}".format(i) for i in performanceOfEachFold]))
-                                     .format(','.join(["{0:1.4f}".format(i) for i in descent[0]])))
+                fidPerformance.write("\t{0:1.4f}\t{0:s}\n"
+                                     .format(testPerformance, ','.join(["{0:1.4f}".format(i) for i in descent[0]])))
     else:
         # Training if nested cross validation is to be performed.
 
