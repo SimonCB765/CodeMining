@@ -68,7 +68,7 @@ def main(Y, indicesToUse=None, numPartitions=2, isStratified=False):
         print("{0:d} partitions were request, while the minimum is 2.".format(numPartitions))
 
     # Determine indices to partition.
-    indicesToPartition = np.array(indicesToUse) if indicesToUse else np.array([i for i in range(numExamples)])
+    indicesToPartition = np.array(indicesToUse) if indicesToUse is not None else np.array([i for i in range(numExamples)])
 
     # Generate the partition.
     if isStratified:
