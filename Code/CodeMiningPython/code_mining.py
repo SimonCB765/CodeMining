@@ -445,9 +445,14 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                     fidPerformance.write("\t{0:1.4f}".format(gMean))
                     paramComboPerformance.append(gMean)
 
-                    # Write out the performance of the model for each folds.
+                    # Write out the performance of the model for each fold.
                     fidPerformance.write("\t{0:s}\n"
                                          .format('\t'.join(["{0:1.4F}".format(i) for i in performanceOfEachFold])))
+
+                    # Determine best parameter combo from the internal folds. If there are two combinations
+                    # of parameters that give the best performance, then take the one that comes first.
+                    indexOfBestPerformance = paramComboPerformance.index(max(paramComboPerformance))
+                    bestInternalParams = paramCombos[indexOfBestPerformance]
 
 
 
@@ -459,7 +464,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
             # Determine best parameter set from the inner folds.
 
-            # Train each out fold with best params from its inner fold.
+            # Train each out fold with best params from its inner fold. <- AM HERE
 
             # Evaluate outer fold performance
             # Use ROC curve somewhere in here
