@@ -306,7 +306,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
         # Generate the stratified cross validation folds.
         foldsToGenerate = 2
-        stratifiedFolds = np.array(partition_dataset.main(allExampleClasses, foldsToGenerate, True))
+        stratifiedFolds = np.array(partition_dataset.main(allExampleClasses,
+                                                          numPartitions=foldsToGenerate, isStratified=True))
 
         with open(dirResults + "/CVPerformance.tsv", 'w') as fidPerformance:
             # Write the header for the output file. Record the descent and the test performance.
