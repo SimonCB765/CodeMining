@@ -349,14 +349,14 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
         dataMatrixSubset = dataMatrix[:, codeIndicesToUse]
 
         # Determine the number of external and internal folds to use.
-        numberExternalfolds= cvFolds[0]
-        numberInternalFolds = cvFolds[0] if len(cvFolds) < 2 else cvFolds[1]
+        numberExternalFolds= cvFolds[0]
+        numberInternalFolds = cvFolds[0] if (len(cvFolds) < 2) else cvFolds[1]
 
         # Generate the external CV folds using stratified partitioning of the data.
-        externalFolds = partition_dataset.main(allExampleClasses, numPartitions=numberExternalfolds, isStratified=True)
+        externalFolds = partition_dataset.main(allExampleClasses, numPartitions=numberExternalFolds, isStratified=True)
 
         # Perform external CV.
-        for eCV in range(numberExternalfolds):
+        for eCV in range(numberExternalFolds):
             # Display a status update.
             print("Starting external CV fold {0:d} at {1:s}."
                   .format(eCV, datetime.datetime.strftime(datetime.datetime.now(), "%x %X")))
@@ -367,15 +367,17 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             examplesInExternalFold = (~np.isnan(externalFolds)) & (externalFolds == eCV)
             externalFoldExampleIndices = np.nonzero(examplesInExternalFold)[0]
             internalFolds = partition_dataset.main(allExampleClasses, indicesToUse=externalFoldExampleIndices,
-                                                   numPartitions=numberExternalfolds, isStratified=True)
+                                                   numPartitions=numberInternalFolds, isStratified=True)
 
-            # Perform internal CV.
-            for iCV in range(numberInternalFolds):
-                # Display a status update.
-                print("\tStarting internal CV fold {0:d} at {1:s}."
-                      .format(iCV, datetime.datetime.strftime(datetime.datetime.now(), "%x %X")))
+            # Setup the record of the performance of each parameter combination.
+            paramComboPerformance = []
 
-                # Perform a grid search over all parameter combinations.
+            # Perform a grid search over all parameter combinations.
+            with open(dirResults + "/ExternalFold_{0:d}.tsv".format(eCV), 'w') as fidPerformance:
+                # Write the header.
+                fidPerformance.write("NumIterations\tBatchSize\tLambda\tENetRatio\tTotalGMean\t{0:s}\n".format(
+                    '\t'.join(["Fold_{0:d}_GMean".format(i) for i in range(numberInternalFolds)])))
+
                 for params in paramCombos:
                     # Define the parameters for this run.
                     numIterations = params[0]
@@ -384,19 +386,56 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                     elasticNetRatio = params[3]
 
                     # Display a status update and record current round.
-                    print("\t\tIters={0:d}  Batch={1:d}  Lambda={2:1.6f}  ENet={3:1.6f}  Time={4:s}"
+                    print("\tIter={0:d}  Batch={1:d}  Lam={2:1.5f}  ENet={3:1.5f}  Time={4:s}"
                           .format(numIterations, batchSize, lambdaVal, elasticNetRatio,
                                   datetime.datetime.strftime(datetime.datetime.now(), "%x %X")))
+                    fidPerformance.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}"
+                                         .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
 
-                    # Create the model.
-                    classifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
-                                               l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
-                                               learning_rate="optimal", class_weight=None)
+                    performanceOfEachFold = []  # Create a list to record the performance for each internal fold.
+                    predictions = np.empty(dataMatrix.shape[0])  # Holds predictions for all examples in external fold.
+                    predictions.fill(np.nan)
 
-                    # Train and test on each fold if cvFolds > 1. Otherwise, train on one fold and test on the other.
-                    descent, performanceOfEachFold, predictions = train_model.mini_batch_e_net_cv(
-                        classifier, dataMatrixSubset, allExampleClasses, examplesInExternalFold, internalFolds,
-                        classesUsed, batchSize, numIterations, numberInternalFolds)
+                    # Perform the internal cross validation.
+                    for iCV in range(numberInternalFolds):
+
+                        # Create the model.
+                        classifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
+                                                   l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
+                                                   learning_rate="optimal", class_weight=None)
+
+                        # Determine training and testing example masks for this fold. Training examples are those
+                        # examples in this external CV fold that are not in the internal CV fold. Testing examples
+                        # are examples in the external fold that are in this internal fold.
+                        trainingExamples = (internalFolds != iCV) & examplesInExternalFold
+                        testingExamples = (internalFolds == iCV) & examplesInExternalFold
+
+                        # Create training and testing matrices and target class arrays for this fold.
+                        trainingMatrix = dataMatrixSubset[trainingExamples, :]
+                        trainingClasses = allExampleClasses[trainingExamples]
+                        testingMatrix = dataMatrixSubset[testingExamples, :]
+                        testingClasses = allExampleClasses[testingExamples]
+
+                        # Train the model on this fold.
+                        _ = train_model.mini_batch_e_net(classifier, trainingMatrix, trainingClasses, classesUsed,
+                                                         testingMatrix, testingClasses, batchSize, numIterations)
+
+                        # Record the model's performance on this fold.
+                        testPredictions = classifier.predict(testingMatrix)
+                        predictions[testingExamples] = testPredictions
+                        performanceOfEachFold.append(calc_metrics.calc_g_mean(testPredictions, testingClasses))
+
+                    # Record G mean of predictions across all folds using this parameter combination.
+                    # If the predicted class of any example is NaN, then the example did not actually have its class
+                    # predicted.
+                    examplesUsed = ~np.isnan(predictions)
+                    gMean = calc_metrics.calc_g_mean(predictions[examplesUsed], allExampleClasses[examplesUsed])
+                    fidPerformance.write("\t{0:1.4f}".format(gMean))
+                    paramComboPerformance.append(gMean)
+
+                    # Write out the performance of the model for each folds.
+                    fidPerformance.write("\t{0:s}\n"
+                                         .format('\t'.join(["{0:1.4F}".format(i) for i in performanceOfEachFold])))
 
 
 
@@ -412,50 +451,3 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
             # Evaluate outer fold performance
             # Use ROC curve somewhere in here
-
-
-            with open(dirResults + "/CVPerformance.tsv", 'w') as fidPerformance:
-                # Write the header for the output file.
-                if cvFolds == 1:
-                    # If there is only one fold, then record the descent and the test performance.
-                    fidPerformance.write("NumIterations\tBatchSize\tLambda\tENetRatio\tTestGMean\tDescentGMean\n")
-                else:
-                    # If there is more than one fold, then only record the performance on each test fold.
-                    fidPerformance.write("NumIterations\tBatchSize\tLambda\tENetRatio\t{0:s}\tTotalGMean\n"
-                                         .format('\t'.join(["Fold_{0:d}_GMean".format(i) for i in range(cvFolds)])))
-
-                for params in paramCombos:
-                    # Define the parameters for this run.
-                    numIterations = params[0]
-                    batchSize = params[1]
-                    lambdaVal = params[2]
-                    elasticNetRatio = params[3]
-
-                    # Cut the data matrix down to a matrix containing only the codes to be used.
-                    dataMatrixSubset = dataMatrix[:, codeIndicesToUse]
-
-                    # Create the model.
-                    classifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
-                                               l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
-                                               learning_rate="optimal", class_weight=None)
-
-                    # Train and test on each fold if cvFolds > 1. Otherwise, train on one fold and test on the other.
-                    descent, performanceOfEachFold, predictions = train_model.mini_batch_e_net_cv(
-                        classifier, dataMatrixSubset, allExampleClasses, patientIndicesToUse, stratifiedFolds,
-                        classesUsed,
-                        batchSize, numIterations, cvFolds)
-
-                    # Write out the performance of the model over all folds.
-                    fidPerformance.write(
-                        "\t{0:s}".format('\t'.join(["{0:1.4F}".format(i) for i in performanceOfEachFold])))
-
-                    if cvFolds == 1:
-                        # If only one fold, then record the descent.
-                        fidPerformance.write("\t{0:s}\n".format(','.join(["{0:1.4f}".format(i) for i in descent[0]])))
-                    else:
-                        # Record G mean of predictions across all folds using this parameter combination.
-                        # If the predicted class of any example is NaN, then the example did not actually have its class
-                        # predicted.
-                        examplesUsed = ~np.isnan(predictions)
-                        gMean = calc_metrics.calc_g_mean(predictions[examplesUsed], allExampleClasses[examplesUsed])
-                        fidPerformance.write("\t{0:1.4f}\n".format(gMean))
