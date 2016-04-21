@@ -102,7 +102,7 @@ def main(Y, indicesToUse=None, numPartitions=2, isStratified=False):
             # Assign an integer (starting at 0) to each class, and determine the (integer) class of each example
             # in the set of examples that are being partitioned.
             for ind, i in enumerate(differentClasses):
-                classMembership[classMembership == i] = ind
+                classMembership[Y == i] = ind
         else:
             # Multiple target variables are present. Each column in Y is taken to be a separate response variable.
             Y[np.isnan(Y)] = 0  # Set all NaN values to 0 to treat those entries as not being the class of the example.
