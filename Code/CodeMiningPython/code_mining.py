@@ -352,8 +352,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 testPerformance = calc_metrics.calc_g_mean(testPredictions, testingClasses)
 
                 # Write out the performance of the model over all folds and the descent.
-                fidPerformance.write("\t{0:1.4f}\t{0:s}\n"
-                                     .format(testPerformance, ','.join(["{0:1.4f}".format(i) for i in descent[0]])))
+                fidPerformance.write("\t{0:1.4f}\t{1:s}\n"
+                                     .format(testPerformance, ','.join(["{0:1.4f}".format(i) for i in descent])))
     else:
         # Training if nested cross validation is to be performed.
 
