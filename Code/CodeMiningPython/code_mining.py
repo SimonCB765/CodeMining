@@ -309,7 +309,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
         stratifiedFolds = np.array(partition_dataset.main(allExampleClasses,
                                                           numPartitions=foldsToGenerate, isStratified=True))
 
-        with open(dirResults + "/CVPerformance.tsv", 'w') as fidPerformance:
+        with open(dirResults + "/HoldOutPerformance.tsv", 'w') as fidPerformance:
             # Write the header for the output file. Record the descent and the test performance.
             fidPerformance.write("NumIterations\tBatchSize\tLambda\tENetRatio\tTestGMean\tDescentGMean\n")
 
