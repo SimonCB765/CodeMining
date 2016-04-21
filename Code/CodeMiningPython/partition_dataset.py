@@ -92,7 +92,7 @@ def main(Y, indicesToUse=None, numPartitions=2, isStratified=False):
         # Determine the classes present.
         if numTargets == 1:
             # Y is a column vector, so determine classes from the unique values of Y.
-            differentClasses = np.unique(~np.isnan(Y))  # Get the classes.
+            differentClasses = np.unique(Y[~np.isnan(Y)])  # Get the classes.
 
             # Check if there are enough classes to perform stratified fold generation.
             if differentClasses.shape[0] == 1:
