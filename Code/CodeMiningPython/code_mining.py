@@ -449,10 +449,29 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                     fidPerformance.write("\t{0:s}\n"
                                          .format('\t'.join(["{0:1.4F}".format(i) for i in performanceOfEachFold])))
 
-                    # Determine best parameter combo from the internal folds. If there are two combinations
-                    # of parameters that give the best performance, then take the one that comes first.
-                    indexOfBestPerformance = paramComboPerformance.index(max(paramComboPerformance))
-                    bestInternalParams = paramCombos[indexOfBestPerformance]
+            # Determine best parameter combo from the internal folds. If there are two combinations
+            # of parameters that give the best performance, then take the one that comes first.
+            indexOfBestPerformance = paramComboPerformance.index(max(paramComboPerformance))
+            bestInternalParams = paramCombos[indexOfBestPerformance]
+
+            # Determine training and testing example masks for this external fold. Training examples are all examples
+            # not in this external fold, testing examples are the ones in this external fold.
+            trainingExamples = (~np.isnan(externalFolds)) & (externalFolds != eCV)
+            testingExamples = (~np.isnan(externalFolds)) & (externalFolds == eCV)
+
+            # Create training and testing matrices and target class arrays for this fold.
+            trainingMatrix = dataMatrixSubset[trainingExamples, :]
+            trainingClasses = allExampleClasses[trainingExamples]
+            testingMatrix = dataMatrixSubset[testingExamples, :]
+            testingClasses = allExampleClasses[testingExamples]
+
+            # Train a model on this external CV fold using the optimal parameters from the internal folds.
+            optimalIterations, optimalBatchSize, optimalLambda, optimalENetRatio = bestInternalParams
+            classifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=optimalLambda,
+                                       l1_ratio=optimalENetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
+                                       learning_rate="optimal", class_weight=None)
+            _ = train_model.mini_batch_e_net(classifier, trainingMatrix, trainingClasses, classesUsed, testingMatrix,
+                                             testingClasses, optimalBatchSize, optimalIterations)
 
 
 
