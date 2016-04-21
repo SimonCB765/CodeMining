@@ -367,6 +367,14 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
         # Generate the external CV folds using stratified partitioning of the data.
         externalFolds = partition_dataset.main(allExampleClasses, numPartitions=numberExternalFolds, isStratified=True)
 
+        # Create the array to hold predictions for all examples when using the external CV folds for testing.
+        externalPredictions = np.empty(dataMatrix.shape[0])
+        externalPredictions.fill(np.nan)
+
+        # Create the file to record the external CV results.
+        fidExternalPerformance = open(dirResults + "/ExternalFoldResults.tsv", 'w')
+        fidExternalPerformance.write("ExternalFold\tNumIterations\tBatchSize\tLambda\tENetRatio\tGMean\n")
+
         # Perform external CV.
         for eCV in range(numberExternalFolds):
             # Display a status update.
@@ -377,8 +385,9 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             # have a class of np.nan (as they aren't being used at all) and have their partition equal to the
             # external fold being used currently.
             examplesInExternalFold = (~np.isnan(externalFolds)) & (externalFolds == eCV)
-            externalFoldExampleIndices = np.nonzero(examplesInExternalFold)[0]
-            internalFolds = partition_dataset.main(allExampleClasses, indicesToUse=externalFoldExampleIndices,
+            examplesNotInExternalFold = (~np.isnan(externalFolds)) & (externalFolds != eCV)
+            nonExternalFoldExampleIndices = np.nonzero(examplesNotInExternalFold)[0]
+            internalFolds = partition_dataset.main(allExampleClasses, indicesToUse=nonExternalFoldExampleIndices,
                                                    numPartitions=numberInternalFolds, isStratified=True)
 
             # Setup the record of the performance of each parameter combination.
@@ -419,8 +428,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                         # Determine training and testing example masks for this fold. Training examples are those
                         # examples in this external CV fold that are not in the internal CV fold. Testing examples
                         # are examples in the external fold that are in this internal fold.
-                        trainingExamples = (internalFolds != iCV) & examplesInExternalFold
-                        testingExamples = (internalFolds == iCV) & examplesInExternalFold
+                        trainingExamples = (internalFolds != iCV) & examplesNotInExternalFold
+                        testingExamples = (internalFolds == iCV) & examplesNotInExternalFold
 
                         # Create training and testing matrices and target class arrays for this fold.
                         trainingMatrix = dataMatrixSubset[trainingExamples, :]
@@ -456,8 +465,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
             # Determine training and testing example masks for this external fold. Training examples are all examples
             # not in this external fold, testing examples are the ones in this external fold.
-            trainingExamples = (~np.isnan(externalFolds)) & (externalFolds != eCV)
-            testingExamples = (~np.isnan(externalFolds)) & (externalFolds == eCV)
+            trainingExamples = examplesNotInExternalFold
+            testingExamples = examplesInExternalFold
 
             # Create training and testing matrices and target class arrays for this fold.
             trainingMatrix = dataMatrixSubset[trainingExamples, :]
@@ -472,6 +481,16 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                                        learning_rate="optimal", class_weight=None)
             _ = train_model.mini_batch_e_net(classifier, trainingMatrix, trainingClasses, classesUsed, testingMatrix,
                                              testingClasses, optimalBatchSize, optimalIterations)
+
+            # Record the model's performance on this external fold.
+            testPredictions = classifier.predict(testingMatrix)
+            externalPredictions[testingExamples] = testPredictions
+            gMean = calc_metrics.calc_g_mean(testPredictions, testingClasses)
+            fidExternalPerformance.write("{0:d}\t{1:d}\t{2:d}\t{3:1.4f}\t{4:1.4f}\t{5:1.4f}\n".format(
+                eCV, optimalIterations, optimalBatchSize, optimalLambda, optimalENetRatio, gMean))
+
+        # Close external CV results file.
+        fidExternalPerformance.close()
 
 
 
