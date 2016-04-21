@@ -297,6 +297,51 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                                 '\t'.join(["{0:1.4f}".format(firstModelAmigPosts[ind, i]) for i in classesUsed]),
                                 mapIntRepToClass[secondModelAmbigPred[ind]],
                                 '\t'.join(["{0:1.4f}".format(secondModelAmigPosts[ind, i]) for i in classesUsed])))
+    elif cvFolds[0] == 1:
+        # Perform a non-nested hold out testing of the performance.
+        # Train on a random half of the data and test on the remainder.
+
+        # Generate the stratified cross validation folds.
+        foldsToGenerate = 2
+        stratifiedFolds = np.array(partition_dataset.main(allExampleClasses, foldsToGenerate, True))
+
+    with open(dirResults + "/CVPerformance.tsv", 'w') as fidPerformance:
+        # Write the header for the output file. Record the descent and the test performance.
+        fidPerformance.write("NumIterations\tBatchSize\tLambda\tENetRatio\tTestGMean\tDescentGMean\n")
+
+        for params in paramCombos:
+            # Define the parameters for this run.
+            numIterations = params[0]
+            batchSize = params[1]
+            lambdaVal = params[2]
+            elasticNetRatio = params[3]
+
+            # Display a status update and record current round.
+            print("Now - Iters={0:d}  Batch={1:d}  Lambda={2:1.4f}  ENet={3:1.4f}  Time={4:s}"
+                  .format(numIterations, batchSize, lambdaVal, elasticNetRatio,
+                          datetime.datetime.strftime(datetime.datetime.now(), "%x %X")))
+            fidPerformance.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}"
+                                 .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
+
+            # Cut the data matrix down to a matrix containing only the codes to be used.
+            dataMatrixSubset = dataMatrix[:, codeIndicesToUse]
+
+            # Create the model.
+            classifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
+                                       l1_ratio=elasticNetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
+                                       learning_rate="optimal", class_weight=None)
+
+            # Train and test on each fold if cvFolds > 1. Otherwise, train on one fold and test on the other.
+            descent, performanceOfEachFold, predictions = train_model.mini_batch_e_net_cv(
+                classifier, dataMatrixSubset, allExampleClasses, patientIndicesToUse, stratifiedFolds, classesUsed,
+                batchSize, numIterations, cvFolds)
+
+            # Write out the performance of the model over all folds and the descent.
+            fidPerformance.write("\t{0:s}".format('\t'.join(["{0:1.4F}".format(i) for i in performanceOfEachFold])))
+
+            fidPerformance.write("\t{0:s}\t{0:s}\n"
+                                 .format('\t'.join(["{0:1.4F}".format(i) for i in performanceOfEachFold]))
+                                 .format(','.join(["{0:1.4f}".format(i) for i in descent[0]])))
     else:
         # Training if cross validation is to be performed.
 
