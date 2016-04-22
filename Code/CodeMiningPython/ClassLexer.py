@@ -3,14 +3,17 @@
 # Python imports.
 import re
 
+# User imports.
+from . import tokens
+
 
 class ClassLexer(object):
     """Class to perform the tokenisation of an input string."""
 
     operators = {
-                '<' : 'COMP_OP', '>' : 'COMP_OP', '<=' : 'COMP_OP', '>=' : 'COMP_OP', '!=' : 'COMP_OP', '==' : 'COMP_OP',
-                '|' : 'OR_OP', '&' : 'AND_OP', '~' : 'NOT_OP',
-                '(' : 'L_PAREN', ')' : 'R_PAREN'
+                '<' : tokens.LessThanToken, '>' : tokens.GreaterThanToken, '<=' : tokens.LessThanEqualToken, '>=' : tokens.GreaterThanEqualToken, '!=' : tokens.NotEqualToken, '==' : tokens.EqualToken,
+                '|' : tokens.OrToken, '&' : tokens.AndToken, '~' : tokens.NotToken,
+                '(' : tokens.LParenToken, ')' : tokens.RParenToken
                 }
 
     def __init__(self, classString):
@@ -69,17 +72,17 @@ class ClassLexer(object):
                         .format(currentPos, returnedValue)
                 else:
                     currentPos = returnedPos
-                    self.tokenised.append(('NUM', returnedValue))
+                    self.tokenised.append(tokens.NumLiteralToken(returnedValue))
             elif self.is_alphanumeric(self.classString[currentPos]):
                 # A code has been found.
                 currentPos, returnedValue = self.scan_code(currentPos)
-                self.tokenised.append(('CODE', returnedValue))
+                self.tokenised.append(tokens.CodeLiteralToken(returnedValue))
             elif self.is_operator(self.classString[currentPos]):
                 # The beginning of a comparison operator has been found.
                 currentPos, returnedValue = self.scan_operator(currentPos)
-                self.tokenised.append((self.operators[returnedValue], returnedValue))
+                self.tokenised.append(self.operators[returnedValue]())
             else:
                 return self.tokenised, 'Unexpected character {0:s} at index {1:d}.'\
                     .format(self.classString[currentPos], currentPos)
 
-        self.tokenised.append(('EOF', 'EOF'))
+        self.tokenised.append(tokens.EOFToken())
