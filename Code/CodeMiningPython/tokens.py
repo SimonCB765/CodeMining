@@ -1,26 +1,38 @@
 """Tokens for the class definition tokeniser."""
 
-class NumLiteralToken(object):
-    def __init__(self, value):
-        self.value = int(value)
+#================#
+# Special Tokens #
+#================#
+class EOFToken(object):
+    lbp = 0
 
+#================#
+# Literal Tokens #
+#================#
 class CodeLiteralToken(object):
     def __init__(self, value):
         self.value = value
 
+class NumLiteralToken(object):
+    def __init__(self, value):
+        self.value = int(value)
+
+#================#
+# Logical Tokens #
+#================#
 class AndToken(object):
     lbp = 10
-
-class OrToken(object):
-    lbp = 5
 
 class NotToken(object):
     lbp = 15
 
-class LessThanToken(object):
-    lbp = 20
+class OrToken(object):
+    lbp = 5
 
-class LessThanEqualToken(object):
+#===================#
+# Comparison Tokens #
+#===================#
+class EqualToken(object):
     lbp = 20
 
 class GreaterThanToken(object):
@@ -29,7 +41,10 @@ class GreaterThanToken(object):
 class GreaterThanEqualToken(object):
     lbp = 20
 
-class EqualToken(object):
+class LessThanToken(object):
+    lbp = 20
+
+class LessThanEqualToken(object):
     lbp = 20
 
 class NotEqualToken(object):
@@ -40,6 +55,3 @@ class LParenToken(object):
 
 class RParenToken(object):
     lbp = 1
-
-class EOFToken(object):
-    lbp = 0
