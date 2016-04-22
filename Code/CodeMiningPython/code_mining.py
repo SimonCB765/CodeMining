@@ -8,6 +8,7 @@ import sys
 # 3rd party imports.
 import numpy as np
 from sklearn.linear_model import SGDClassifier
+from sklearn import metrics
 
 # User imports.
 import calc_metrics
@@ -367,9 +368,12 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
         # Generate the external CV folds using stratified partitioning of the data.
         externalFolds = partition_dataset.main(allExampleClasses, numPartitions=numberExternalFolds, isStratified=True)
 
-        # Create the array to hold predictions for all examples when using the external CV folds for testing.
+        # Create the arrays to hold the predictions and posteriors for all examples when using the external
+        # CV folds for testing.
         externalPredictions = np.empty(dataMatrix.shape[0])
         externalPredictions.fill(np.nan)
+        externalPosteriors = np.empty((dataMatrix.shape[0], len(classesUsed)))
+        externalPosteriors.fill(np.nan)
 
         # Create the file to record the external CV results.
         fidExternalPerformance = open(dirResults + "/ExternalFoldResults.tsv", 'w')
@@ -485,6 +489,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             # Record the model's performance on this external fold.
             testPredictions = classifier.predict(testingMatrix)
             externalPredictions[testingExamples] = testPredictions
+            testPosteriors = classifier.predict_proba(testingMatrix)
+            externalPosteriors[testingExamples, :] = testPosteriors
             gMean = calc_metrics.calc_g_mean(testPredictions, testingClasses)
             fidExternalPerformance.write("{0:d}\t{1:d}\t{2:d}\t{3:1.4f}\t{4:1.4f}\t{5:1.4f}\n".format(
                 eCV, optimalIterations, optimalBatchSize, optimalLambda, optimalENetRatio, gMean))
@@ -493,16 +499,31 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
         fidExternalPerformance.close()
 
 
+        # Record G mean, AUC and ROC for the external folds.
+        with open(dirResults + "/FinalPerformance.tsv", 'w') as fidFinalPerformance:
+            # Calculate G mean of the entire nested procedure.
+            finalGMean = calc_metrics.calc_g_mean(externalPredictions[~np.isnan(externalPredictions)],
+                                                  allExampleClasses[~np.isnan(allExampleClasses)])
+            fidFinalPerformance.write("G mean over all external folds - {0:1.4f}\n".format(finalGMean))
 
-        # Generate outer folds.
+            # Calculate ROC curve for the final external CV predictions.
+            for i in classesUsed:
+                # Create arrays containing the real class of each example and the posterior probability of the
+                # positive class (class i).
+                trueClasses = allExampleClasses[patientIndicesToUse]
+                posPosteriors = externalPosteriors[patientIndicesToUse, i]
 
-            # Generate inner folds.
+                # Calculate ROC curve values.
+                falsePosRates, truePosRates, thresholds = metrics.roc_curve(trueClasses, posPosteriors, pos_label=i)
 
-                # Grid search for each inner fold.
+                # Calculate the AUC.
+                binaryIndicator = (trueClasses == i) * 1
+                auc = metrics.roc_auc_score(binaryIndicator, posPosteriors)
 
-            # Determine best parameter set from the inner folds.
-
-            # Train each out fold with best params from its inner fold. <- AM HERE
-
-            # Evaluate outer fold performance
-            # Use ROC curve somewhere in here
+                # Write out the ROC results for the class.
+                fidFinalPerformance.write("{0:s} AUC\t{1:1.4f}\n{2:s} FPR\t{3:s}\n{4:s} TPR\t{5:s}\n"
+                                          "{6:s} thresholds\t{7:s}\n"
+                    .format(mapIntRepToClass[i], auc,
+                            mapIntRepToClass[i], ','.join(["{0:1.4f}".format(i) for i in falsePosRates]),
+                            mapIntRepToClass[i], ','.join(["{0:1.4f}".format(i) for i in truePosRates]),
+                            mapIntRepToClass[i], ','.join(["{0:1.4f}".format(i) for i in thresholds])))
