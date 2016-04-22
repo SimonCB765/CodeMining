@@ -11,7 +11,8 @@ class ClassLexer(object):
     """Class to perform the tokenisation of an input string."""
 
     operators = {
-                '<' : tokens.LessThanToken, '>' : tokens.GreaterThanToken, '<=' : tokens.LessThanEqualToken, '>=' : tokens.GreaterThanEqualToken, '!=' : tokens.NotEqualToken, '==' : tokens.EqualToken,
+                '<' : tokens.LessThanToken, '>' : tokens.GreaterThanToken, '<=' : tokens.LessThanEqualToken,
+                '>=' : tokens.GreaterThanEqualToken, '!=' : tokens.NotEqualToken, '==' : tokens.EqualToken,
                 '|' : tokens.OrToken, '&' : tokens.AndToken, '~' : tokens.NotToken,
                 '(' : tokens.LParenToken, ')' : tokens.RParenToken
                 }
