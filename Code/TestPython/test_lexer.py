@@ -4,31 +4,29 @@
 import unittest
 
 # User imports.
-from CodeMiningPython import ClassLexer
-from CodeMiningPython import tokens
+from CodeMiningPython import class_parser
 
 
 class SuccessTests(unittest.TestCase):
     """Tests where the lexer should perform a successful tokenisation."""
 
     def test_simple_defs(self):
+        symbolTable = class_parser.create_class_def_symbol_table()
         tests = [
             "CODE1",
             "CODE1.",
             "C1 & c2 | c3",
             "#3 > #7",
             "D. < #5 ~ #6 > ~ FF"]
-        results = [
-            [tokens.CodeLiteralToken("CODE1"), tokens.EOFToken()],
-            [tokens.CodeLiteralToken("CODE1."), tokens.EOFToken()],
-            [tokens.CodeLiteralToken("C1"), tokens.AndToken(), tokens.CodeLiteralToken("c2"), tokens.OrToken(),
-                tokens.CodeLiteralToken("c3"), tokens.EOFToken()],
-            [tokens.NumLiteralToken("7"), tokens.GreaterThanToken(), tokens.NumLiteralToken("7"), tokens.EOFToken()],
-            [tokens.CodeLiteralToken("D"), tokens.LessThanToken(), tokens.NumLiteralToken("5"), tokens.NotToken(),
-                tokens.NumLiteralToken("6"), tokens.GreaterThanToken(), tokens.NotToken(),
-                tokens.CodeLiteralToken("FF"), tokens.EOFToken()]]
+        expectedResults = [
+            [("CODE", "CODE1"), ("EOF", "EOF")],
+            [("CODE", "CODE1."), ("EOF", "EOF")],
+            [("CODE", "C1"), ('&', '&'), ("CODE", "c2"), ('|', '|'), ("CODE", "c3"), ("EOF", "EOF")],
+            [("NUM", '3'), ('>', '>'), ("NUM", '7'), ("EOF", "EOF")],
+            [("CODE", "D."), ('<', '<'), ("NUM", '5'), ('~', '~'), ("NUM", '6'), ('>', '>'), ('~', '~'),
+                ("CODE", "FF"), ("EOF", "EOF")]
+        ]
 
-        for i in zip(tests, results):
-            lexer = ClassLexer.ClassLexer(i[0])  # Create the lexer.
-            lexer.tokenise()  # Tokenise the input.
-            self.assertEqual([type(j) for j in lexer.tokenised], [type(j) for j in i[1]])
+        for i in zip(tests, expectedResults):
+            testResult = [(j.tokenType, j.value) for j in class_parser.ClassParser._tokeniser(i[0], symbolTable)]
+            self.assertEqual(testResult, i[1])

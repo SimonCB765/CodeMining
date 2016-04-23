@@ -4,21 +4,23 @@
 import unittest
 
 # User imports.
-from CodeMiningPython import ClassParser
+from CodeMiningPython import class_parser
 
 
 class CompletionTests(unittest.TestCase):
     """Class to check the successful completion of the parsing."""
 
     def test_completion(self):
-        parser = ClassParser.ClassParser("AAA > #45 & ~ B. < CC | DDDD.")
+        symbolTable = class_parser.create_class_def_symbol_table()
+
         print("AAA > #45 & ~ B. < CC | DDDD.")
-        parser.parse()
-        parser.reset('A | B | C')
-        print('A | B | C')
-        parser.parse()
-        parser.reset('~A')
-        print('~A')
-        parser.parse()
-        #parser.reset('~#5')
-        #parser.parse()
+        class_parser.main("AAA > #45 & ~ B. < CC | DDDD.", symbolTable)
+        print("\n\n")
+        print("A | B | C")
+        class_parser.main("A | B | C", symbolTable)
+        print("\n\n")
+        print("~A")
+        class_parser.main("~A", symbolTable)
+        print("\n\n")
+        print("~A")
+        class_parser.main("~#5", symbolTable)
