@@ -1,6 +1,6 @@
-"""TOPD parser for a class definition string.
+"""TDOP parser for a class definition string.
 
-See http://effbot.org/zone/simple-top-down-parsing.htm for more details on TOPD parsers.
+See http://effbot.org/zone/simple-top-down-parsing.htm for more details on TDOP parsers.
 
 The grammar that this parser parsers is:
 
@@ -54,7 +54,7 @@ def create_class_def_symbol_table():
     infix_token_factory(symbolTable, "<=", 20)  # Add the less than or equal token.
     infix_token_factory(symbolTable, "!=", 20)  # Add the not equal token.
 
-    token_factory(symbolTable, '(', 1)  # Add the left parenthesis token.
+    container_token_factory(symbolTable, '(', ')', 1)  # Add the left parenthesis token.
     token_factory(symbolTable, ')', 1)  # Add the not parenthesis token.
 
     return symbolTable
@@ -71,10 +71,10 @@ class BaseToken(object):
     lbp = 0  # The left binding power of the token.
 
     def nud(self):
-        raise SyntaxError("Syntax error ({0:s}).".format(self.tokenType))
+        raise SyntaxError("Syntax error '{0:s}'.".format(self.tokenType))
 
     def led(self, left):
-        raise SyntaxError("Unknown operator ({0:s}).".format(self.tokenType))
+        raise SyntaxError("Unknown operator '{0:s}'.".format(self.tokenType))
 
     def pretty_print(self, indent=0, indentType="  "):
         if self.tokenType in ["CODE", "NUM"]:
@@ -90,6 +90,13 @@ class BaseToken(object):
 
     def __repr__(self):
         return self.pretty_print()
+
+def container_token_factory(symbolTable, tokenType, advanceTo, bindingPower=0):
+    def nud(self):
+        expr = ClassParser.expression(bindingPower)
+        ClassParser.advance(advanceTo)
+        return expr
+    token_factory(symbolTable, tokenType).nud = nud
 
 def infix_token_factory(symbolTable, tokenType, bindingPower=0):
     def led(self, left):
@@ -150,6 +157,13 @@ class ClassParser(object):
 
     # Define the current token being consumed.
     currentToken = None
+
+    @classmethod
+    def advance(cls, tokenType=None):
+        """Checks that the current token has the expected token type, and then advances to the next token."""
+        if tokenType and cls.currentToken.tokenType != tokenType:
+            raise SyntaxError("Expected '{0:s}', but got '{1:s}'.".format(tokenType, cls.currentToken.tokenType))
+        cls.currentToken = next(cls.tokenGenerator)
 
     @classmethod
     def expression(cls, rightBindingPower=0):
