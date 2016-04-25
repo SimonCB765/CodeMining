@@ -44,8 +44,14 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
     :type codeOccurrences:      int
     :param patientOccurrences:  The minimum number of different codes a patient must co-occur with to be used.
     :type patientOccurrences:   int
-    :param cvFolds:             The number of cross validation folds to use.
-    :type cvFolds:              int
+    :param cvFolds:             The number of cross validation folds to use. Can be interpreted in one of four ways:
+                                    If cvFolds == [], then the sequential model training is performed.
+                                    If cvFolds[0] == 0, then the best parameter combination is determined using
+                                        K fold cross validation, where K = cvFolds[1] (default to 10).
+                                    If cvFolds[0] == 1, then holdout testing of the parameter combinations is performed.
+                                    If cvFolds[0] > 1, the nested cross validation is performed. cvFolds[0] is the
+                                        number of external folds to use, and cvFolds[1] the number of internal folds.
+    :type cvFolds:              list-like
     :param dataNormVal:         The data normalisation code to use.
     :type dataNormVal:          int
     :param discardThreshold:    The posterior probability that an example must have to be included in the final model.
@@ -128,10 +134,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
             for params in paramCombos:
                 # Define the parameters for this run.
-                numIterations = params[0]
-                batchSize = params[1]
-                lambdaVal = params[2]
-                elasticNetRatio = params[3]
+                numIterations, batchSize, lambdaVal, elasticNetRatio = params
 
                 # Display a status update and record current round.
                 print("Now - Iters={0:d}  Batch={1:d}  Lambda={2:1.4f}  ENet={3:1.4f}  Time={4:s}"
@@ -307,8 +310,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
         # Generate the stratified cross validation folds.
         foldsToGenerate = 2
-        stratifiedFolds = np.array(partition_dataset.main(allExampleClasses,
-                                                          numPartitions=foldsToGenerate, isStratified=True))
+        stratifiedFolds = np.array(partition_dataset.main(allExampleClasses, numPartitions=foldsToGenerate,
+                                                          isStratified=True))
 
         with open(dirResults + "/HoldOutPerformance.tsv", 'w') as fidPerformance:
             # Write the header for the output file. Record the descent and the test performance.
@@ -316,10 +319,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
             for params in paramCombos:
                 # Define the parameters for this run.
-                numIterations = params[0]
-                batchSize = params[1]
-                lambdaVal = params[2]
-                elasticNetRatio = params[3]
+                numIterations, batchSize, lambdaVal, elasticNetRatio = params
 
                 # Display a status update and record current round.
                 print("Now - Iters={0:d}  Batch={1:d}  Lambda={2:1.4f}  ENet={3:1.4f}  Time={4:s}"
@@ -405,10 +405,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
                 for params in paramCombos:
                     # Define the parameters for this run.
-                    numIterations = params[0]
-                    batchSize = params[1]
-                    lambdaVal = params[2]
-                    elasticNetRatio = params[3]
+                    numIterations, batchSize, lambdaVal, elasticNetRatio = params
 
                     # Display a status update and record current round.
                     print("\tIter={0:d}  Batch={1:d}  Lam={2:1.5f}  ENet={3:1.5f}  Time={4:s}"
@@ -497,7 +494,6 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
         # Close external CV results file.
         fidExternalPerformance.close()
-
 
         # Record G mean, AUC and ROC for the external folds.
         with open(dirResults + "/FinalPerformance.tsv", 'w') as fidFinalPerformance:
