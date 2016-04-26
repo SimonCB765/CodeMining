@@ -126,24 +126,13 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
     if len(cvFolds) == 0:
         # Training if no testing is needed.
 
-        with open(dirResults + "/Performance_First.tsv", 'w') as fidPerformanceFirst, \
-                open(dirResults + "/Performance_Second.tsv", 'w') as fidPerformanceSecond:
+        with open(dirResults + "/FinalPerformance.tsv", 'w') as fidPerformance:
 
             # Write the header for the output files.
-            fidPerformanceFirst.write("NumIterations\tBatchSize\tLambda\tENetRatio\tTestGMean\tDescentGMean\n")
-            fidPerformanceSecond.write("NumIterations\tBatchSize\tLambda\tENetRatio\tTestGMean\tDescentGMean\n")
+            fidPerformance.write("Model\tNumIterations\tBatchSize\tLambda\tENetRatio\tTestGMean\tDescentGMean\n")
 
             # Determine the parameters to use. Only use the first combination in the list.
             numIterations, batchSize, lambdaVal, elasticNetRatio = paramCombos[0]
-
-            # Display a status update and record current round.
-            print("Now - Iters={0:d}  Batch={1:d}  Lambda={2:1.5f}  ENet={3:1.2f}  Time={4:s}"
-                  .format(numIterations, batchSize, lambdaVal, elasticNetRatio,
-                          datetime.datetime.strftime(datetime.datetime.now(), "%x %X")))
-            fidPerformanceFirst.write("{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}"
-                                 .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
-            fidPerformanceSecond.write("{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}"
-                                 .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
 
             # Create the training matrix and target class array.
             # Generate the training matrix in two steps as scipy sparse matrices can only be sliced along
@@ -166,8 +155,11 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             firstPredictions = firstClassifier.predict(firstTrainingMatrix)
             firstPosteriors = firstClassifier.predict_proba(firstTrainingMatrix)
             gMean = CodeMiningPython.calc_metrics.calc_g_mean(firstPredictions, firstTrainingClasses)
-            fidPerformanceFirst.write("\t{0:1.4f}".format(gMean))
-            fidPerformanceFirst.write("\t{0:s}\n".format(','.join(["{0:1.4f}".format(i) for i in descent])))
+
+            # Record information about the model performance.
+            fidPerformance.write("FirstModel\t{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}\t{4:1.4f}\t{5:s}\n"
+                                 .format(numIterations, batchSize, lambdaVal, elasticNetRatio, gMean,
+                                         ','.join(["{0:1.4f}".format(i) for i in descent])))
 
             # Convert the target array into a matrix with the same number of columns as there are classes.
             # Each column will correspond to a single class. Given array of target classes, trainingClasses, the
@@ -199,8 +191,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 # The prediction errors of the first model have caused all examples of (at least) one class to be
                 # removed from the dataset. Skip training the second model.
                 print('WARNING: All examples of one class have been removed for having poor predictions.')
-                fidPerformanceSecond.write("{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}\t-\t-\n"
-                                           .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
+                fidPerformance.write("SecondModel\t{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}\t-\t-\n"
+                                     .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
             else:
                 # Create the second model.
                 secondClassifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=lambdaVal,
@@ -216,8 +208,11 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 secondPredictions = secondClassifier.predict(firstTrainingMatrix)
                 secondPosteriors = secondClassifier.predict_proba(firstTrainingMatrix)
                 gMean = CodeMiningPython.calc_metrics.calc_g_mean(secondPredictions, firstTrainingClasses)
-                fidPerformanceSecond.write("\t{0:1.4f}".format(gMean))
-                fidPerformanceSecond.write("\t{0:s}\n".format(','.join(["{0:1.4f}".format(i) for i in descent])))
+
+                # Record information about the model performance.
+                fidPerformance.write("SecondModel\t{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}\t{4:1.4f}\t{5:s}\n"
+                                     .format(numIterations, batchSize, lambdaVal, elasticNetRatio, gMean,
+                                             ','.join(["{0:1.4f}".format(i) for i in descent])))
 
                 # Record the posteriors and predictions of the models.
                 with open(dirResults + "/Predictions.tsv", 'w') as fidPredictions, \
