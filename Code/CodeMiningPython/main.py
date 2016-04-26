@@ -5,9 +5,9 @@ import argparse
 import sys
 
 # User imports.
-from . import clean_data
-from . import code_mining
-from . import parse_parameters
+import CodeMiningPython.clean_data
+import CodeMiningPython.code_mining
+import CodeMiningPython.parse_parameters
 
 
 def main(args):
@@ -29,7 +29,7 @@ def main(args):
     parser.add_argument("params", help="Location of the parameter file.")
     args = parser.parse_args()
     fileParams = args.params  # File containing the parameters to use.
-    parsedParameters = parse_parameters.main(fileParams)
+    parsedParameters = CodeMiningPython.parse_parameters.main(fileParams)
 
     #=================#
     # Clean the Data. #
@@ -37,9 +37,9 @@ def main(args):
     if "CleaningArgs" in parsedParameters:
         print("Now cleaning the data.")
         cleanerArgs = parsedParameters["CleaningArgs"]
-        clean_data.main(cleanerArgs["DirtyDataLocation"], cleanerArgs["CleanDataLocation"],
-                        cleanerArgs["Delimiter"], cleanerArgs["StripCommas"],
-                        cleanerArgs["RemoveCols"], cleanerArgs["Unbookend"])
+        CodeMiningPython.clean_data.main(cleanerArgs["DirtyDataLocation"], cleanerArgs["CleanDataLocation"],
+                                         cleanerArgs["Delimiter"], cleanerArgs["StripCommas"],
+                                         cleanerArgs["RemoveCols"], cleanerArgs["Unbookend"])
 
     #======================#
     # Perform Code Mining. #
@@ -47,12 +47,9 @@ def main(args):
     if "MiningArgs" in parsedParameters:
         print("Now starting code mining.")
         miningArgs = parsedParameters["MiningArgs"]
-        code_mining.main(miningArgs["DataLocation"], miningArgs["CodeMapping"], miningArgs["ResultsLocation"],
-                         miningArgs["Classes"], miningArgs["Lambda"], miningArgs["ElasticNetMixing"],
-                         miningArgs["BatchSize"], miningArgs["MaxIter"], miningArgs["CodeOccurrences"],
-                         miningArgs["PatientOccurrences"], miningArgs["CVFolds"], miningArgs["DataNorm"],
-                         miningArgs["DiscardThreshold"])
-
-
-if __name__ == '__main__':
-    main(sys.argv[1:])
+        CodeMiningPython.code_mining.main(miningArgs["DataLocation"], miningArgs["CodeMapping"],
+                                          miningArgs["ResultsLocation"], miningArgs["Classes"],
+                                          miningArgs["Lambda"], miningArgs["ElasticNetMixing"],
+                                          miningArgs["BatchSize"], miningArgs["MaxIter"], miningArgs["CodeOccurrences"],
+                                          miningArgs["PatientOccurrences"], miningArgs["CVFolds"],
+                                          miningArgs["DataNorm"], miningArgs["DiscardThreshold"])

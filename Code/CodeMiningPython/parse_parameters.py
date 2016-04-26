@@ -7,7 +7,7 @@ import os
 import sys
 
 # User imports.
-from . import parse_classes
+import CodeMiningPython.parse_classes
 
 # Globals
 PYVERSION = sys.version_info[0]  # Determine major version number.
@@ -158,7 +158,7 @@ def main(fileParams):
         if "Classes" not in miningArgs:
             errorsFound.append("MINING: There must be a field called Classes in the MiningArgs field entry.")
         else:
-            classValidity = parse_classes.check_validity(miningArgs["Classes"])
+            classValidity = CodeMiningPython.parse_classes.check_validity(miningArgs["Classes"])
             if not classValidity[0]:
                 errorsFound.append(classValidity[1])
             else:

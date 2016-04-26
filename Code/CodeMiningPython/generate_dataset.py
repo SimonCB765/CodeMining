@@ -8,7 +8,7 @@ import numpy as np
 from scipy import sparse
 
 # User imports.
-from . import normalise_data_matrix
+import CodeMiningPython.normalise_data_matrix
 
 
 def main(fileDataset, dirOutput, mapCodeToDescr, normMethod=0, normParam=None):
@@ -79,7 +79,7 @@ def main(fileDataset, dirOutput, mapCodeToDescr, normMethod=0, normParam=None):
     dt = np.dtype("Float64")  # 64-bit floating-point number.
     sparseMatrix = sparse.coo_matrix((counts, (patientIDs, codes)), dtype=dt)  # Create the sparse matrix.
     sparseMatrix = sparse.csc_matrix(sparseMatrix, dtype=dt)  # Convert to CSC format for normalisation.
-    sparseMatrix = normalise_data_matrix.main(sparseMatrix, normMethod, normParam)  # Normalise the data.
+    sparseMatrix = CodeMiningPython.normalise_data_matrix.main(sparseMatrix, normMethod, normParam)
     sparseMatrix = sparse.csr_matrix(sparseMatrix, dtype=dt)  # Convert to CSR for code mining.
 
     # Invert patient to index mapping.

@@ -8,7 +8,7 @@ import random
 import numpy as np
 
 # User imports.
-from . import calc_metrics
+import CodeMiningPython.calc_metrics
 
 
 def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, testingMatrix=None, testingClasses=None,
@@ -67,11 +67,11 @@ def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, tes
             # mini batch) if there is no test set. Otherwise predict on the test set.
             if testingMatrix is None:
                 trainingPredictions = classifier.predict(trainingMatrix)
-                gMean = calc_metrics.calc_g_mean(trainingPredictions, targetClasses)
+                gMean = CodeMiningPython.calc_metrics.calc_g_mean(trainingPredictions, targetClasses)
                 descent.append(gMean)
             else:
                 testPredictions = classifier.predict(testingMatrix)
-                gMean = calc_metrics.calc_g_mean(testPredictions, testingClasses)
+                gMean = CodeMiningPython.calc_metrics.calc_g_mean(testPredictions, testingClasses)
                 descent.append(gMean)
 
     return descent
