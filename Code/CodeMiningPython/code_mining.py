@@ -126,10 +126,10 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
     if len(cvFolds) == 0:
         # Training if no testing is needed.
 
-        with open(dirResults + "/FinalPerformance.tsv", 'w') as fidPerformance:
+        with open(dirResults + "/FinalModelPerformance.tsv", 'w') as fidPerformance:
 
             # Write the header for the output files.
-            fidPerformance.write("Model\tNumIterations\tBatchSize\tLambda\tENetRatio\tTestGMean\tDescentGMean\n")
+            fidPerformance.write("Model\tNumIterations\tBatchSize\tLambda\tENetRatio\tTrainingGMean\tDescentGMean\n")
 
             # Determine the parameters to use. Only use the first combination in the list.
             numIterations, batchSize, lambdaVal, elasticNetRatio = paramCombos[0]
@@ -176,6 +176,11 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             for i in range(len(firstTrainingClasses)):
                 trainingClassesMatrix[i, firstTrainingClasses[i]] = 1
 
+            # TODO
+            # TODO
+            # TODO fix this comment to make it clearer what is happening
+            # TODO
+            # TODO
             # Remove examples with posterior probability below the discard threshold.
             # The matrix of posteriors contains one column per class, and each example has a posterior for each
             # class. Examples are considered to be good examples if the posterior of their actual class
@@ -205,8 +210,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                     batchSize=batchSize, numIterations=numIterations)
 
                 # Record the second model's performance and descent.
-                secondPredictions = secondClassifier.predict(firstTrainingMatrix)
-                secondPosteriors = secondClassifier.predict_proba(firstTrainingMatrix)
+                secondPredictions = secondClassifier.predict(secondTrainingMatrix)
+                secondPosteriors = secondClassifier.predict_proba(secondTrainingMatrix)
                 gMean = CodeMiningPython.calc_metrics.calc_g_mean(secondPredictions, firstTrainingClasses)
 
                 # Record information about the model performance.
@@ -215,11 +220,9 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                                              ','.join(["{0:1.4f}".format(i) for i in descent])))
 
                 # Record the posteriors and predictions of the models.
-                with open(dirResults + "/Predictions.tsv", 'w') as fidPredictions, \
-                        open(dirResults + "/Posteriors.tsv", 'w') as fidPosteriors:
+                with open(dirResults + "/FinalModelPredictions.tsv", 'w') as fidPredictions:
                     # Write the headers.
-                    fidPredictions.write("PatientID\tClass\tFirstModelClass\tSecondModelClass\n")
-                    fidPosteriors.write("PatientID\t{0:s}\t{1:s}\n".format(
+                    fidPredictions.write("PatientID\tClass\tFirstModelClass\tSecondModelClass\t{0:s}\t{1:s}\n".format(
                         '\t'.join(["FirstModel_{0:s}".format(mapIntRepToClass[i]) for i in classesUsed]),
                         '\t'.join(["SecondModel_{0:s}".format(mapIntRepToClass[i]) for i in classesUsed])))
 
@@ -231,14 +234,22 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                         realClass = mapIntRepToClass[allExampleClasses[i]]
                         firstModelClass = mapIntRepToClass[firstPredictions[ind]]
                         firstModelPosteriors = firstPosteriors[ind, :]
-                        secondModelClass = mapIntRepToClass[secondPredictions[ind]]
-                        secondModelPosteriors = secondPosteriors[ind, :]
-
-                        fidPredictions.write("{0:s}\t{1:s}\t{2:s}\t{3:s}\n".format(
-                            patientID, realClass, firstModelClass, secondModelClass))
-                        fidPosteriors.write("{0:s}\t{1:s}\t{2:s}\n".format(patientID,
-                            '\t'.join(["{0:1.4f}".format(firstModelPosteriors[i]) for i in classesUsed]),
-                            '\t'.join(["{0:1.4f}".format(secondModelPosteriors[i]) for i in classesUsed])))
+                        if goodExamples[ind]:
+                            # If the example was a 'good' example and was used for training the second model, then
+                            # there will be a prediction for it.
+                            secondModelClass = mapIntRepToClass[secondPredictions[ind]]
+                            secondModelPosteriors = secondPosteriors[ind, :]
+                            fidPredictions.write("{0:s}\t{1:s}\t{2:s}\t{3:s}\t{4:s}\t{5:s}\n".format(
+                                patientID, realClass, firstModelClass, secondModelClass,
+                                '\t'.join(["{0:1.4f}".format(firstModelPosteriors[i]) for i in classesUsed]),
+                                '\t'.join(["{0:1.4f}".format(secondModelPosteriors[i]) for i in classesUsed])))
+                        else:
+                            # The example was not a 'good' example, and therefore has no predicted class as it wasn't
+                            # used to train the second model.
+                            fidPredictions.write("{0:s}\t{1:s}\t{2:s}\t-\t{3:s}\t{4:s}\n".format(
+                                patientID, realClass, firstModelClass,
+                                '\t'.join(["{0:1.4f}".format(firstModelPosteriors[i]) for i in classesUsed]),
+                                '\t'.join(['-' for i in classesUsed])))
 
                 # Record the coefficients of the models.
                 indicesOfCodesUsed = np.array(range(dataMatrix.shape[1]))  # The indices of the codes used for training.
