@@ -137,12 +137,12 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             numIterations, batchSize, lambdaVal, elasticNetRatio = paramCombos[0]
 
             # Display a status update and record current round.
-            print("Now - Iters={0:d}  Batch={1:d}  Lambda={2:1.4f}  ENet={3:1.4f}  Time={4:s}"
+            print("Now - Iters={0:d}  Batch={1:d}  Lambda={2:1.5f}  ENet={3:1.2f}  Time={4:s}"
                   .format(numIterations, batchSize, lambdaVal, elasticNetRatio,
                           datetime.datetime.strftime(datetime.datetime.now(), "%x %X")))
-            fidPerformanceFirst.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}"
+            fidPerformanceFirst.write("{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}"
                                  .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
-            fidPerformanceSecond.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}"
+            fidPerformanceSecond.write("{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}"
                                  .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
 
             # Create the training matrix and target class array.
@@ -199,7 +199,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 # The prediction errors of the first model have caused all examples of (at least) one class to be
                 # removed from the dataset. Skip training the second model.
                 print('WARNING: All examples of one class have been removed for having poor predictions.')
-                fidPerformanceSecond.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}\t-\t-\n"
+                fidPerformanceSecond.write("{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}\t-\t-\n"
                                            .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
             else:
                 # Create the second model.
@@ -286,7 +286,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 print("\tIter={0:d}  Batch={1:d}  Lam={2:1.5f}  ENet={3:1.5f}  Time={4:s}"
                       .format(numIterations, batchSize, lambdaVal, elasticNetRatio,
                               datetime.datetime.strftime(datetime.datetime.now(), "%x %X")))
-                fidParamOpt.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}"
+                fidParamOpt.write("{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}"
                                      .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
 
                 performanceOfEachFold = []  # Create a list to record the performance for each fold.
@@ -360,10 +360,10 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 numIterations, batchSize, lambdaVal, elasticNetRatio = params
 
                 # Display a status update and record current round.
-                print("Now - Iters={0:d}  Batch={1:d}  Lambda={2:1.4f}  ENet={3:1.4f}  Time={4:s}"
+                print("Now - Iters={0:d}  Batch={1:d}  Lambda={2:1.5f}  ENet={3:1.2f}  Time={4:s}"
                       .format(numIterations, batchSize, lambdaVal, elasticNetRatio,
                               datetime.datetime.strftime(datetime.datetime.now(), "%x %X")))
-                fidPerformance.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}"
+                fidPerformance.write("{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}"
                                      .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
 
                 # Create the model.
@@ -449,7 +449,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                     print("\tIter={0:d}  Batch={1:d}  Lam={2:1.5f}  ENet={3:1.5f}  Time={4:s}"
                           .format(numIterations, batchSize, lambdaVal, elasticNetRatio,
                                   datetime.datetime.strftime(datetime.datetime.now(), "%x %X")))
-                    fidPerformance.write("{0:d}\t{1:d}\t{2:1.4f}\t{3:1.4f}"
+                    fidPerformance.write("{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}"
                                          .format(numIterations, batchSize, lambdaVal, elasticNetRatio))
 
                     performanceOfEachFold = []  # Create a list to record the performance for each internal fold.
@@ -527,7 +527,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             testPosteriors = classifier.predict_proba(testingMatrix)
             externalPosteriors[testingExamples, :] = testPosteriors
             gMean = calc_metrics.calc_g_mean(testPredictions, testingClasses)
-            fidExternalPerformance.write("{0:d}\t{1:d}\t{2:d}\t{3:1.4f}\t{4:1.4f}\t{5:1.4f}\n".format(
+            fidExternalPerformance.write("{0:d}\t{1:d}\t{2:d}\t{3:1.5f}\t{4:1.2f}\t{5:1.4f}\n".format(
                 eCV, optimalIterations, optimalBatchSize, optimalLambda, optimalENetRatio, gMean))
 
         # Close external CV results file.
