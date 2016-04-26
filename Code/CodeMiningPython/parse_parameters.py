@@ -7,7 +7,7 @@ import os
 import sys
 
 # User imports.
-import parse_classes
+from . import parse_classes
 
 # Globals
 PYVERSION = sys.version_info[0]  # Determine major version number.

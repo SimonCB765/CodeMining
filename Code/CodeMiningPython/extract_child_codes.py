@@ -1,4 +1,8 @@
+"""Code to extract ontological children of the supplied Read v2 codes."""
+
+# Python imports.
 import re
+
 
 def main(parentCodes, allCodes):
     """Extract all codes that are beneath the parent codes in the code hierarchy.

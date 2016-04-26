@@ -8,7 +8,7 @@ import numpy as np
 from scipy import sparse
 
 # User imports.
-import normalise_data_matrix
+from . import normalise_data_matrix
 
 
 def main(fileDataset, dirOutput, mapCodeToDescr, normMethod=0, normParam=None):

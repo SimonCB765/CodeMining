@@ -1,11 +1,13 @@
+"""Code to control the running of the entire code mining process."""
+
 # Python imports.
 import argparse
 import sys
 
 # User imports.
-import clean_data
-import code_mining
-import parse_parameters
+from . import clean_data
+from . import code_mining
+from . import parse_parameters
 
 
 def main(args):

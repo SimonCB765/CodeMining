@@ -1,5 +1,6 @@
 """Generates the mapping from codes to their descriptions."""
 
+
 def main(fileCodes, delimiter='\t'):
     """Generates code list mappings.
 

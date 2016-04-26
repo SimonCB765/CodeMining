@@ -1,4 +1,8 @@
-"""Test the partitioning of the data."""
+"""Test the partitioning of the data.
+
+To run this unittest run the command "python -m unittest TestPython.test_partitioning" from the Code directory.
+
+"""
 
 # Python imports.
 import unittest
@@ -10,7 +14,7 @@ import numpy as np
 from CodeMiningPython import partition_dataset
 
 
-class CompletitionTest(unittest.TestCase):
+class CompletionTest(unittest.TestCase):
     """Tests whether the partitioning succeeds."""
 
     def test_simple(self):

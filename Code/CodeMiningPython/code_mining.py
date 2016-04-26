@@ -11,13 +11,13 @@ from sklearn.linear_model import SGDClassifier
 from sklearn import metrics
 
 # User imports.
-import calc_metrics
-import generate_code_mapping
-import generate_dataset
-import parse_classes
-import partition_dataset
-import results_recording
-import train_model
+from . import calc_metrics
+from . import generate_code_mapping
+from . import generate_dataset
+from . import parse_classes
+from . import partition_dataset
+from . import results_recording
+from . import train_model
 
 
 def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,), elasticNetMixing=(0.15,),

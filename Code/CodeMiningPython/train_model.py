@@ -8,7 +8,7 @@ import random
 import numpy as np
 
 # User imports.
-import calc_metrics
+from . import calc_metrics
 
 
 def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, testingMatrix=None, testingClasses=None,

@@ -4,7 +4,7 @@ import os
 import sys
 
 # User imports.
-import extract_child_codes
+from . import extract_child_codes
 
 
 def select_data_subset(fileDataset, jsonClasses, dirResults="Results", minPatientsPerCode=50, codeDensity=0, isCollectorClass=False, collectorClass=None):

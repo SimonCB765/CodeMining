@@ -7,7 +7,7 @@ import itertools
 import numpy as np
 
 # User imports.
-import extract_child_codes
+from . import extract_child_codes
 
 
 def find_patients(dataMatrix, classData, mapCodeToIndex, isCodesRemoved=True):

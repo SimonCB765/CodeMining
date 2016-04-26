@@ -3,6 +3,7 @@
 # 3rd party imports.
 import numpy as np
 
+
 def calc_g_mean(predictions, targets):
     """Calculate the G(eometric) mean of a set of class predictions.
 
