@@ -12,7 +12,8 @@ import re
 import string
 
 
-def main(fileDataset, fileCleanedDataset, delimiter='\t', colsToStripCommas=None, colsToRemove=None, colsToUnbookend=None):
+def main(fileDataset, fileCleanedDataset, delimiter='\t', colsToStripCommas=None, colsToRemove=None,
+         colsToUnbookend=None):
     """Parses and cleans the input dataset.
 
     No checking of the inputs is performed.
