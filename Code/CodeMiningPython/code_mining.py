@@ -212,7 +212,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 # Record the second model's performance and descent.
                 secondPredictions = secondClassifier.predict(secondTrainingMatrix)
                 secondPosteriors = secondClassifier.predict_proba(secondTrainingMatrix)
-                gMean = CodeMiningPython.calc_metrics.calc_g_mean(secondPredictions, firstTrainingClasses)
+                gMean = CodeMiningPython.calc_metrics.calc_g_mean(secondPredictions, secondTrainingClasses)
 
                 # Record information about the model performance.
                 fidPerformance.write("SecondModel\t{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}\t{4:1.4f}\t{5:s}\n"
