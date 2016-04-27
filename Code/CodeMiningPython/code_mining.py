@@ -228,28 +228,38 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
                     # Write out the results
                     indicesOfPatientsUsed = np.array(range(dataMatrix.shape[0]))
-                    indicesOfPatientsUsed = indicesOfPatientsUsed[patientIndicesToUse]
-                    for ind, i in enumerate(indicesOfPatientsUsed):
+                    firstClassifierPatientIndices = indicesOfPatientsUsed[patientIndicesToUse]
+                    secondClassifierPatientIndices = firstClassifierPatientIndices[goodExamples]
+                    for ind, i in enumerate(firstClassifierPatientIndices):
                         patientID = mapIndToPatient[i]
                         realClass = mapIntRepToClass[allExampleClasses[i]]
                         firstModelClass = mapIntRepToClass[firstPredictions[ind]]
                         firstModelPosteriors = firstPosteriors[ind, :]
-                        if goodExamples[ind]:
+
+                        # As the second model is likely to have only a subset of the examples used to train the first
+                        # model, finding the predictions for the second model is more involved.
+                        # First we need to determine whether the current example i was a 'good' example and so
+                        # was used to train the second model. This can be done by finding the index of example i
+                        # within the array of example indices used to train the second model.
+                        # Next we use this index to index into the predictions and posteriors from the second model.
+                        secondModelExampleIndex = np.where(secondClassifierPatientIndices == i)[0]
+                        if secondModelExampleIndex:
                             # If the example was a 'good' example and was used for training the second model, then
                             # there will be a prediction for it.
-                            secondModelClass = mapIntRepToClass[secondPredictions[ind]]
-                            secondModelPosteriors = secondPosteriors[ind, :]
+                            secondModelExampleIndex = secondModelExampleIndex.astype("int")[0]  # Extract int index.
+                            secondModelClass = mapIntRepToClass[secondPredictions[secondModelExampleIndex]]
+                            secondModelPosteriors = secondPosteriors[secondModelExampleIndex, :]
                             fidPredictions.write("{0:s}\t{1:s}\t{2:s}\t{3:s}\t{4:s}\t{5:s}\n".format(
                                 patientID, realClass, firstModelClass, secondModelClass,
-                                '\t'.join(["{0:1.4f}".format(firstModelPosteriors[i]) for i in classesUsed]),
-                                '\t'.join(["{0:1.4f}".format(secondModelPosteriors[i]) for i in classesUsed])))
+                                '\t'.join(["{0:1.4f}".format(firstModelPosteriors[j]) for j in classesUsed]),
+                                '\t'.join(["{0:1.4f}".format(secondModelPosteriors[j]) for j in classesUsed])))
                         else:
                             # The example was not a 'good' example, and therefore has no predicted class as it wasn't
                             # used to train the second model.
                             fidPredictions.write("{0:s}\t{1:s}\t{2:s}\t-\t{3:s}\t{4:s}\n".format(
                                 patientID, realClass, firstModelClass,
-                                '\t'.join(["{0:1.4f}".format(firstModelPosteriors[i]) for i in classesUsed]),
-                                '\t'.join(['-' for i in classesUsed])))
+                                '\t'.join(["{0:1.4f}".format(firstModelPosteriors[j]) for j in classesUsed]),
+                                '\t'.join(['-' for _ in classesUsed])))
 
                 # Record the coefficients of the models.
                 indicesOfCodesUsed = np.array(range(dataMatrix.shape[1]))  # The indices of the codes used for training.
