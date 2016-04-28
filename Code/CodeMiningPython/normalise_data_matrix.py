@@ -42,6 +42,8 @@ def main(matrix, normMethod=0, normParam=None):
         7 : make_lp_norm
     }
 
+    # Get and apply the desired normalisation function.
+    # If the normalisation function requested doesn't exist, then perform no normalisation.
     normFunc = normalisationChoice.get(normMethod, lambda x, y :  x)
     return normFunc(matrix, normParam)
 
@@ -83,15 +85,68 @@ def make_standardised(matrix, normParam=None):
 
 
 def make_tf_idf(matrix, normParam=None):
-    """Convert matrix to a tf-idf representation."""
+    """Convert matrix to a tf-idf representation.
 
+    The matrix is interpreted with "documents" being the rows and "terms" being the columns.
+
+    Conversion to tf-idf without scipy sparse matrices losing their sparsity at some point during the
+    computation requires avoiding some vectorised operations, and therefore is slower than with
+    dense matrices.
+
+    """
+
+    # Calculating tf-idf is fairly straightforward, but in order to prevent the sparse matrix becoming dense at
+    # some point during the computation requires some convoluted and non-vectorised computations.
+
+    # First get the sum of items in each row of the matrix. This is analogous to the total number of terms in a document.
     termsInEachDocument = matrix.sum(axis=1)  # Total sum of term counts for each example.
-    termsInEachDocument = termsInEachDocument[:, None]  # Reshape to column vector.
-    scaledTerms = matrix / termsInEachDocument  # Term counts for each example scaled by the example's total counts.
-    docsTermOccursIn = np.sum(matrix != 0, axis=0)  # The number of example in which each term occurs.
-    idf = np.log(matrix.shape[0] / docsTermOccursIn)  # The IDF for each term. The base of the logarithm doesn't matter.
+
+    # Convert the total term counts to a list in order to simplify the scaling of the term counts.
+    termsInEachDocument = [i[0] for i in termsInEachDocument.tolist()]
+
+    # Scale the individual counts for each term in a document by the total number of terms in the document.
+    # This has to be (moderately) non-vectorised in order to prevent loss of sparsity, which makes it (slightly) slower.
+    scaledTerms = matrix.copy()  # Term counts for each document scaled by the document's total counts.
+    for ind, i in enumerate(termsInEachDocument):
+        if i:
+            # Prevent division by zero.
+
+            # Although appearing more vectorised, the equation:
+            # scaledTerms[ind, :] /= i
+            # is substantially slower than than the one used. It also warns about alterations to the sparsity structure,
+            # which I assume is due to the zero values in the sparse matrix being touched (although as the operation
+            # being used is division, they won't change). I assume this is also the reason that it is slow.
+
+            # Instead we will get the indices of the non-zero values in the row (i.e. the terms that this document
+            # contains), and scale only those terms by the total number of terms in the document.
+            nonzeroRowValues = scaledTerms[ind, :].nonzero()  # Get the indices of the non-zero values in the row.
+            scaledTerms[ind, nonzeroRowValues[1]] /= i  # Scale the term counts in the input matrix's copy.
+
+    # Determine the number of documents in which each term occurs.
+    # Need to index like [0] as an array made from a matrix becomes a 2 dimensional array.
+    # In this case it would be a 1xN array, while we want a 1 dimensional array.
+    docsTermOccursIn = np.array((matrix != 0).sum(axis=0))[0]
+
+    # Calculate the idf for each term.
+    # This is the log of the total number of documents divided by the number of documents containing the term.
+    idf = np.log(matrix.shape[0] / docsTermOccursIn)  # The idf for each term. The base of the logarithm doesn't matter.
     idf[idf == np.inf] = 0  # If a term doesn't occur in any documents it causes an inf from a divide by zero error.
-    return np.dot(scaledTerms, np.diag(idf))
+
+    # Calculate the tf-idf.
+    # This is the term frequency multiplied by the idf of the term.
+    for ind, i in enumerate(idf):
+        # Although appearing more vectorised, the equation:
+        # scaledTerms[:, ind] *= i
+        # is substantially slower than than the one used. It also warns about alterations to the sparsity structure,
+        # which I assume is due to the zero values in the sparse matrix being touched (although as the operation
+        # being used is division, they won't change). I assume this is also the reason that it is slow.
+
+        # Instead we will get the indices of the non-zero values in the column (i.e. the documents that this term
+        # occurs in), and multiply only those document's values or the term by the idf for the term.
+        nonzeroColValues = scaledTerms[:, ind].nonzero()  # Get the indices of the non-zero values in the column.
+        scaledTerms[nonzeroColValues[0], ind] *= i  # Multiply the scaled terms counts by the idf for the term.
+
+    return scaledTerms
 
 
 def make_unit_variance(matrix, normParam=None):
