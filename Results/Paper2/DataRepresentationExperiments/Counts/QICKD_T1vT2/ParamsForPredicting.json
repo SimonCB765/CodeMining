@@ -3,15 +3,15 @@
     {
         "DataLocation" : "/home/networkusers/sb0080/Datasets/QICKD/QICKDCleaned.tsv",
         "CodeMapping" : "/home/networkusers/sb0080/Datasets/CodeMap.tsv",
-        "ResultsLocation" : "/home/networkusers/sb0080/GitHub/CodeMining/Results/Paper2/DataRepresentationExperiments/Binary/QICKD_T1vT2",
-        "Lambda" : [],
-        "ElasticNetMixing" : [],
-        "BatchSize" : [],
-        "MaxIter" : [],
+        "ResultsLocation" : "/home/networkusers/sb0080/GitHub/CodeMining/Results/Paper1/QICKD_T1vT2",
+        "Lambda" : [0.0001],
+        "ElasticNetMixing" : [0.5],
+        "BatchSize" : [1000],
+        "MaxIter" : [30],
         "CodeOccurrences" : 0,
         "PatientOccurences" : 0,
         "CVFolds" : [],
-        "DataNorm" : 1,
+        "DataNorm" : 0,
         "DiscardThreshold": 0,
         "Classes" :
         {
