@@ -10,7 +10,7 @@
         "MaxIter" : [20, 30],
         "CodeOccurrences" : 0,
         "PatientOccurences" : 0,
-        "CVFolds" : [10, 10],
+        "CVFolds" : [0, 10],
         "DataNorm" : 0,
         "DiscardThreshold": 0,
         "Classes" :
