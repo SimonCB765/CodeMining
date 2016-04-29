@@ -100,7 +100,7 @@ def make_tf_idf(matrix, normParam=None):
 
     # Convert the total term counts to a list in order to simplify the scaling of the term counts.
     termsInEachDocument = [i[0] for i in termsInEachDocument.tolist()]
-    
+
     # Taking the input matrix to be A, create a new sparse matrix B, such that B[i, j] == 0 if A[i, j] == 0,
     # and B[i, j] = (1 / termsInEachDocument[i]) if A[i, j] != 0. All non-zero entries in row i of matrix B
     # will therefore contain the inverse of the total number of terms in document i.
@@ -116,18 +116,21 @@ def make_tf_idf(matrix, normParam=None):
     # Need to index like [0] as an array made from a matrix becomes a 2 dimensional array.
     # In this case it would be a 1xN array, while we want a 1 dimensional array.
     docsTermOccursIn = np.array((matrix != 0).sum(axis=0))[0]
+    docsTermOccursIn[docsTermOccursIn == 0] = np.inf  # Prevent divide by 0 errors when calculating the idf.
 
     # Calculate the idf for each term.
     # This is the log of the total number of documents divided by the number of documents containing the term.
+    # If a term doesn't occur in any documents, then it will be represented by a np.inf entry. The log of x / np.inf
+    # is equivalent to log(0), which is -inf. Therefore convert these values to 0s.
     idf = np.log(matrix.shape[0] / docsTermOccursIn)  # The idf for each term. The logarithm base doesn't matter.
-    idf[idf == np.inf] = 0  # If a term doesn't occur in any documents it causes an inf from a divide by zero error.
-    
+    idf[idf == -np.inf] = 0  # Terms that didn't occur are converted to an idf of 0.
+
     # Taking the matrix of scaled terms to be A, create a sparse matrix B, such that B[i, j] == 0 if A[i, j] == 0,
     # and B[i, j] == idf[j] if A[i, j] != 0. All non-zero entries in column j of matrix B will therefore contain
     # the idf for term j.
     tfidfMat = sparse.coo_matrix(([idf[i] for i in nonZeroValues[1]], (nonZeroValues[0], nonZeroValues[1])))
     tfidfMat = sparse.csr_matrix(tfidfMat)
-    
+
     # Calculate the idf.
     tfidfMat = scaledTerms.multiply(tfidfMat)
 
