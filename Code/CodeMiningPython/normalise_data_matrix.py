@@ -116,6 +116,7 @@ def make_tf_idf(matrix, normParam=None):
     # Need to index like [0] as an array made from a matrix becomes a 2 dimensional array.
     # In this case it would be a 1xN array, while we want a 1 dimensional array.
     docsTermOccursIn = np.array((matrix != 0).sum(axis=0))[0]
+    docsTermOccursIn = docsTermOccursIn.astype("float32")  # Convert array to floats so you can make entries np.inf.
     docsTermOccursIn[docsTermOccursIn == 0] = np.inf  # Prevent divide by 0 errors when calculating the idf.
 
     # Calculate the idf for each term.
