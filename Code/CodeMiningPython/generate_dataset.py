@@ -74,13 +74,11 @@ def main(fileDataset, dirOutput, mapCodeToDescr, normMethod=0, normParam=None):
             writePatientsPerCode.write("{0:s}\t{1:s}\t{2:d}\n".format(i, mapCodeToDescr.get(i, "Unknown code."),
                                                                       patientsPerCode[i]))
 
-    # Generate the sparse matrix. Use CSC matrix for normalisation as it gives fast column operations.
-    # Use CSR for learning as it gives fast row operations.
+    # Generate the sparse matrix.
     dt = np.dtype("Float64")  # 64-bit floating-point number.
     sparseMatrix = sparse.coo_matrix((counts, (patientIDs, codes)), dtype=dt)  # Create the sparse matrix.
-    sparseMatrix = sparse.csc_matrix(sparseMatrix, dtype=dt)  # Convert to CSC format for normalisation.
+    sparseMatrix = sparse.csr_matrix(sparseMatrix, dtype=dt)  # Convert to CSR format.
     sparseMatrix = CodeMiningPython.normalise_data_matrix.main(sparseMatrix, normMethod, normParam)
-    sparseMatrix = sparse.csr_matrix(sparseMatrix, dtype=dt)  # Convert to CSR for code mining.
 
     # Invert patient to index mapping.
     uniquePatients = {v : k for k, v in uniquePatients.items()}
