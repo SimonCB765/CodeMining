@@ -15,8 +15,8 @@
         "DiscardThreshold": 0,
         "Classes" :
         {
-            "Type1" : ["C10E."],
-            "Type2" : ["C10F."]
+            "Diabetes" : ["C10E.", "C10F."],
+            "Negative" : []
         }
     }
 }
