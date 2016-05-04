@@ -1,0 +1,23 @@
+{
+    "DataLocation" : "../path/to/data",
+    "CodeMapping" : "../path/to/mapping",
+    "ResultsLocation" : "../path/to/results",
+    "WorkspaceLocation" : "../path/to/matfile",
+    "Classes" :
+    {
+        "Diabetes" :
+        [
+            {"Code" : "C10E", "GetChildren" : "Y"},
+            {"Code" : "C10F", "GetChildren" : "Y"}
+        ],
+        "NonDiabetes" : []
+    },
+    "Lambda" : [0.0001, 0.001, 0.01, 0.1, 1, 10],
+    "Alpha" : [0.0001, 0.001, 0.01, 0.1, 1, 10],
+    "BatchSize" : [50, 100, 250, 500, 750, 1000],
+    "MaxIter" : [1, 2, 5, 10, 15, 20],
+    "CodeOccurrences" : 0,
+    "CVFolds" : 2,
+    "DataNorm" : 0,
+    "DiscardThreshold": 0.2
+}

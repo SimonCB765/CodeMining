@@ -1,0 +1,37 @@
+{
+    "CleanerArgs" :
+    {
+        "DirtyDataLocation" : "../path/to/dirty/data",
+        "CleanDataLocation" : "../path/to/clean/data",
+        "Delimiter" : "\t",
+        "StripCommas" : [0, 1],
+        "RemoveCols" : [3],
+        "Unbookend" :
+        [
+            {"Column" : 1, "String" : "n", "IntOnly" : true},
+            {"Column" : 2, "String" : "t", "IntOnly" : false}
+        ]
+    },
+    "MiningArgs" :
+    {
+        "DataLocation" : "../path/to/data",
+        "CodeMapping" : "../path/to/mapping",
+        "ResultsLocation" : "../path/to/results",
+        "Lambda" : [0.0001, 0.001, 0.01, 0.1, 1, 10],
+        "ElasticNetMixing" : [0, 0.1, 0.5, 0.9, 1],
+        "BatchSize" : [50, 100, 250, 500, 750, 1000],
+        "MaxIter" : [1, 2, 5, 10, 15, 20],
+        "CodeOccurrences" : 50,
+        "PatientOccurences" : 10,
+        "CVFolds" : [2, 2],
+        "DataNorm" : 0,
+        "DiscardThreshold": 0.2,
+        "Classes" :
+        {
+            "ClassA" : ["A.", "2BBK"],
+            "ClassB" : ["C10F."],
+            "ClassC" : ["C10E"],
+            "Negative" : []
+        }
+    }
+}

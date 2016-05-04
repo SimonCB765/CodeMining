@@ -1,0 +1,4 @@
+Identify possible multi (>2) class problems. May have to include class/example weighting for some.
+	Type 1 vs. Type 2 vs. Non-diabetes
+	CKD - Stage 1 vs. Stage 2 vs. Stage 3 vs. Stage 4
+		Will need to ensure that Stage x include only examples where x is the greatest stage reached.
