@@ -12,8 +12,6 @@ import numpy as np
 def main(Y, indicesToUse=None, numPartitions=2, isStratified=False):
     """Partition a dataset into CV folds.
 
-    return partition values that are np.nan are ones not in partition
-
     The partitioning will work when Y contains more than one column (i.e. more than one target variable).
     When multiple columns are present, stratified generation takes each column to represent a different class.
     Each row in the matrix should therefore have a single non-zero value. The column with the non-zero value
@@ -23,8 +21,11 @@ def main(Y, indicesToUse=None, numPartitions=2, isStratified=False):
     It will work for real valued Ys, but only when there are enough entries in Y with the same value.
     However, it will not function correctly for real valued Ys when there is more than one column in Y.
 
+    Examples in the returned partition array with their value set to np.nan are to be treated as
+    if they are not in any partition. These examples should be ignored in any use of the partition array.
+
     Examples with all their target values in Y equal to np.nan are treated as if the example has no class.
-    In the case of a 1 dimensional Y, this mean the single entry for the example is np.nan. In the case of 2 or
+    In the case of a 1 dimensional Y, this means the single entry for the example is np.nan. In the case of 2 or
     greater dimensional Y, this means that all entries on the row corresponding to the example are np.nan.
     This can be useful if some examples are to be ignored, as you can simply set their target values to
     np.nan rather than removing them from the dataset.
