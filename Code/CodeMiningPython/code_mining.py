@@ -239,14 +239,12 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                         # As the second model is likely to have only a subset of the examples used to train the first
                         # model, finding the predictions for the second model is more involved.
                         # First we need to determine whether the current example i was a 'good' example and so
-                        # was used to train the second model. This can be done by finding the index of example i
-                        # within the array of example indices used to train the second model.
-                        # Next we use this index to index into the predictions and posteriors from the second model.
-                        secondModelExampleIndex = np.where(secondClassifierPatientIndices == i)[0]
-                        if secondModelExampleIndex:
+                        # was used to train the second model.
+                        if goodExamples[ind]:
                             # If the example was a 'good' example and was used for training the second model, then
                             # there will be a prediction for it.
-                            secondModelExampleIndex = secondModelExampleIndex.astype("int")[0]  # Extract int index.
+                            secondModelExampleIndex = np.where(secondClassifierPatientIndices == i)[0]
+                            secondModelExampleIndex = secondModelExampleIndex.astype("int")[0]  # Extract the index.
                             secondModelClass = mapIntRepToClass[secondPredictions[secondModelExampleIndex]]
                             secondModelPosteriors = secondPosteriors[secondModelExampleIndex, :]
                             fidPredictions.write("{0:s}\t{1:s}\t{2:s}\t{3:s}\t{4:s}\t{5:s}\n".format(
