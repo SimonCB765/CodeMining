@@ -1,14 +1,15 @@
 {
-    "CleanerArgs" :
-    {
-        "DirtyDataLocation" : "/home/networkusers/sb0080/Datasets/QICKD/QICKDDump.tsv",
-        "CleanDataLocation" : "/home/networkusers/sb0080/Datasets/QICKD/QICKDCleaned.tsv",
-        "Delimiter" : "\t",
-        "StripCommas" : [0, 2],
-        "RemoveCols" : [],
-        "Unbookend" :
-        [
-            {"Column" : 1, "String" : "n", "IntOnly" : true}
-        ]
-    }
+  "CleanerArgs" :
+  {
+    "DirtyDataLocation" : "/home/networkusers/sb0080/Datasets/QICKD/QICKDDump.tsv",
+    "CleanDataLocation" : "/home/networkusers/sb0080/Datasets/QICKD/QICKDCleaned.tsv",
+    "CodeColumn" : 1,
+    "Delimiter" : "\t",
+    "StripCommas" : [0, 2],
+    "RemoveCols" : [],
+    "Unbookend" :
+    [
+      {"Column" : 1, "String" : "n", "IntOnly" : true}
+    ]
+  }
 }

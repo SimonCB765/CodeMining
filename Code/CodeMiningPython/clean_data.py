@@ -12,7 +12,7 @@ import re
 import string
 
 
-def main(fileDataset, fileCleanedDataset, delimiter='\t', colsToStripCommas=None, colsToRemove=None,
+def main(fileDataset, fileCleanedDataset, codeColumn, delimiter='\t', colsToStripCommas=None, colsToRemove=None,
          colsToUnbookend=None):
     """Parses and cleans the input dataset.
 
@@ -26,6 +26,8 @@ def main(fileDataset, fileCleanedDataset, delimiter='\t', colsToStripCommas=None
     :type fileDataset:          string
     :param fileCleanedDataset:  Location to save the cleaned data to.
     :type fileCleanedDataset:   string
+    :param codeColumn:          The column in which the codes occur.
+    :type codeColumn            int
     :param delimiter:           String used to separate columns in the dataset file.
     :type delimiter:            string
     :param colsToStripCommas:   Indices of columns that contain commas that need stripping out.
@@ -69,6 +71,17 @@ def main(fileDataset, fileCleanedDataset, delimiter='\t', colsToStripCommas=None
                     if ((i[1] in string.digits) or colsToUnbookend[ind][1]):
                         # The first character of the entry is a number or we're unbookending every entry in the column.
                         lineChunks[ind] = lineChunks[ind][1:-1]
+
+            # Clean the codes in the code column.
+            code = lineChunks[codeColumn]
+            termCodePresent = re.search("-[0-9]*$", code)
+            emisReqPresent = re.search("^EMISREQ\|", code)
+            if termCodePresent:
+                # If the code looks something like AAA-##, then strip off the hyphen and the trailing numbers.
+                lineChunks[codeColumn] = code[:termCodePresent.start()]
+            elif emisReqPresent:
+                # If the code looks something like EMISREQ|440.., then strip off the EMISREQ|.
+                lineChunks[codeColumn] = code[emisReqPresent.end():]
 
             # Remove columns.
             lineChunks = [i for ind, i in enumerate(lineChunks) if not ind in colsToRemove]
