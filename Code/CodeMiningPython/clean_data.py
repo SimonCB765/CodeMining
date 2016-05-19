@@ -74,6 +74,8 @@ def main(fileDataset, fileCleanedDataset, codeColumn, delimiter='\t', colsToStri
 
             # Clean the codes in the code column.
             code = lineChunks[codeColumn]
+            trailingFullStops = re.search("[.]*$", code)
+            code = code[:trailingFullStops.start()]  # Strip off any trailing full stops.
             termCodePresent = re.search("-[0-9]*$", code)
             emisReqPresent = re.search("^EMISREQ\|", code)
             if termCodePresent:
