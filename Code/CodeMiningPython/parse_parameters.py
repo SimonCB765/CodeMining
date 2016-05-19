@@ -65,6 +65,14 @@ def main(fileParams):
             isCleanDataLocValid = True
             procCleanerArgs["CleanDataLocation"] = cleanerArgs["CleanDataLocation"]
 
+        # Check that the code column is an integer.
+        if "CodeColumn" not in cleanerArgs:
+            errorsFound.append("CLEANING: There must be a field called CodeColumn in the CleanerArgs field entry.")
+        elif not isinstance(cleanerArgs["CodeColumn"], numbers.Integral):
+            errorsFound.append("CLEANING: The code column must be an integer.")
+        else:
+            procCleanerArgs["CodeColumn"] = cleanerArgs["CodeColumn"]
+
         #======================#
         # Optional Parameters. #
         #======================#

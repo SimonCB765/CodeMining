@@ -38,8 +38,9 @@ def main(args):
         print("Now cleaning the data.")
         cleanerArgs = parsedParameters["CleaningArgs"]
         CodeMiningPython.clean_data.main(cleanerArgs["DirtyDataLocation"], cleanerArgs["CleanDataLocation"],
-                                         cleanerArgs["Delimiter"], cleanerArgs["StripCommas"],
-                                         cleanerArgs["RemoveCols"], cleanerArgs["Unbookend"])
+                                         cleanerArgs["CodeColumn"], cleanerArgs["Delimiter"],
+                                         cleanerArgs["StripCommas"], cleanerArgs["RemoveCols"],
+                                         cleanerArgs["Unbookend"])
 
     #======================#
     # Perform Code Mining. #

@@ -1,15 +1,16 @@
 {
-    "CleanerArgs" :
-    {
-        "DirtyDataLocation" : "/home/networkusers/sb0080/Datasets/RCGP/RCGPDump.tsv",
-        "CleanDataLocation" : "/home/networkusers/sb0080/Datasets/RCGP/RCGPCleaned.tsv",
-        "Delimiter" : "\t",
-        "StripCommas" : [0, 3],
-        "RemoveCols" : [2],
-        "Unbookend" :
-        [
-            {"Column" : 1, "String" : "n", "IntOnly" : true},
-            {"Column" : 2, "String" : "n", "IntOnly" : false}
-        ]
-    }
+  "CleanerArgs" :
+  {
+    "DirtyDataLocation" : "/home/networkusers/sb0080/Datasets/RCGP/RCGPDump.tsv",
+    "CleanDataLocation" : "/home/networkusers/sb0080/Datasets/RCGP/RCGPCleaned.tsv",
+    "CodeColumn" : 1,
+    "Delimiter" : "\t",
+    "StripCommas" : [0, 3],
+    "RemoveCols" : [2],
+    "Unbookend" :
+    [
+      {"Column" : 1, "String" : "n", "IntOnly" : true},
+      {"Column" : 2, "String" : "n", "IntOnly" : false}
+    ]
+  }
 }
