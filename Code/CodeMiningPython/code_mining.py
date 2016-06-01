@@ -579,9 +579,9 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 auc = metrics.roc_auc_score(binaryIndicator, posPosteriors)
 
                 # Write out the ROC results for the class.
-                fidFinalPerformance.write("{0:s} AUC\t{1:1.4f}\n{2:s} FPR\t{3:s}\n{4:s} TPR\t{5:s}\n"
-                                          "{6:s} thresholds\t{7:s}\n"
+                fidFinalPerformance.write("{0:s} AUC\t{1:1.4f}\n{0:s} FPR\t{2:s}\n{0:s} TPR\t{3:s}\n"
+                                          "{0:s} thresholds\t{4:s}\n"
                     .format(mapIntRepToClass[i], auc,
-                            mapIntRepToClass[i], ','.join(["{0:1.4f}".format(i) for i in falsePosRates]),
-                            mapIntRepToClass[i], ','.join(["{0:1.4f}".format(i) for i in truePosRates]),
-                            mapIntRepToClass[i], ','.join(["{0:1.4f}".format(i) for i in thresholds])))
+                            ','.join(["{0:1.4f}".format(j) for j in falsePosRates]),
+                            ','.join(["{0:1.4f}".format(j) for j in truePosRates]),
+                            ','.join(["{0:1.4f}".format(j) for j in thresholds])))
