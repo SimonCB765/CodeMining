@@ -14,15 +14,23 @@ var svg = d3.select("body")
         .attr("transform", "translate(" + svgMargin.left + ", " + svgMargin.top + ")");
 
 // Read the data in.
-var dataAccessorFunction = function(d)
+d3.text(dataset, function(text)
     {
-        return {First : +d.FirstModel, Second : +d.SecondModel};
-    }
-d3.tsv("/Data/DisambiguationResults.tsv", dataAccessorFunction, function(error, data)
-    {
-        // Sort the data by the value of the first model, and then add an index.
-        data = data.sort(function(a, b) { return d3.ascending(a.First, b.First); });
-        data = data.map(function(d, index) { return {First : d.First, Second : d.Second, index : index}; });
+        var data = [];
+        var rows = text.split("\n");  // Rows of the file.
+        var header = rows[0].split("\t");  // The file header.
+        var numberClasses = (header.length - 3) / 2;  // Two columns per class, and three unrelated to class.
+        var chosenClass = header[2].match(/_.*_/)[0];  // The class that will have the posteriors plotted.
+        chosenClass = chosenClass.substring(1, chosenClass.length - 1);
+        for (i = 1; i < rows.length - 1; i++)
+        {
+            var chunks = rows[i].split("\t");
+            var datum = {};
+            datum["PatientID"] = parseInt(chunks[0]);
+            datum["Initial"] = parseFloat(chunks[2]);
+            datum["Final"] = parseFloat(chunks[2 + 1 + numberClasses]);
+            data.push(datum);
+        }
 
         // Create the figure for the line graph.
         var lineGraphContainer = svg.append("g").attr("transform", "translate(" + figureMargin.left + ", " + figureMargin.top + ")");
@@ -44,14 +52,14 @@ function createHistogram(figureContainer, dataArray, figureTitle)
     // Bin the data.
     var numberOfBins = 10;
     var modelOneBinned = d3.layout.histogram()
-        .value(function(d) { return d.First; })
+        .value(function(d) { return d.Initial; })
         .bins(numberOfBins)
         .frequency(true)
         .range([0, 1])
         (dataArray);
     var maxCountFirstModel = d3.max(modelOneBinned, function(d) { return d.y; });
     var modelTwoBinned = d3.layout.histogram()
-        .value(function(d) { return d.Second; })
+        .value(function(d) { return d.Final; })
         .bins(numberOfBins)
         .frequency(true)
         .range([0, 1])
@@ -106,9 +114,9 @@ function createHistogram(figureContainer, dataArray, figureTitle)
         .attr("x", yAxisLabelLoc.x)
         .attr("y", yAxisLabelLoc.y)
         .attr("transform", "rotate(-90, " + yAxisLabelLoc.x + ", " + yAxisLabelLoc.y + ")")
-        .text("Number of .....");
+        .text("Number of Examples");
 
-    // Add the histogram for the first model.
+    // Add the histogram for the initial model.
     var modelOneBars = figureContainer.selectAll(".modelOneBar")
         .data(modelOneBinned)
         .enter()
@@ -122,7 +130,7 @@ function createHistogram(figureContainer, dataArray, figureTitle)
         .attr("width", function(d) { return ((xScale(d.x + d.dx) - xScale(d.x)) / 2) - binOffset; })
         .attr("height", function(d) { return yScale(0) - yScale(d.y); });
 
-    // Add the histogram for the second model.
+    // Add the histogram for the final model.
     var modelTwoBars = figureContainer.selectAll(".modelTwoBar")
         .data(modelTwoBinned)
         .enter()
@@ -182,7 +190,7 @@ function createLineGraph(figureContainer, dataArray, figureTitle)
         .attr("text-anchor", "middle")
         .attr("x", ((figureWidth - figurePadding.left - figurePadding.right) / 2) + figurePadding.left)
         .attr("y", figureHeight - (figurePadding.bottom / 4))
-        .text("Sample Index");
+        .text("Example Index");
     yAxisLabelLoc = { x : figurePadding.left / 3, y : ((figureHeight - figurePadding.top - figurePadding.bottom) / 2) + figurePadding.top };
     var yAxisLabel = figureContainer.append("text")
         .attr("class", "label")
@@ -192,35 +200,25 @@ function createLineGraph(figureContainer, dataArray, figureTitle)
         .attr("transform", "rotate(-90, " + yAxisLabelLoc.x + ", " + yAxisLabelLoc.y + ")")
         .text("Posterior Probability");
 
-    // Add the lines for the data.
+    // Add the line for the initial model after sorting the data in ascending order of the initial model posterior.
+    dataArray = dataArray.sort(function(a, b) { return d3.ascending(a.Initial, b.Initial); });
     var dataPathFirstModel = "M" + xScale(0) + "," + yScale(0);
-    dataArray.forEach(function(d)
+    dataArray.forEach(function(d, index)
     {
-        dataPathFirstModel += "L" + xScale(d.index) + "," + yScale(d.First) + "h1";
+        dataPathFirstModel += "L" + xScale(index) + "," + yScale(d.Initial) + "h1";
     });
     var dataLineFirstModel = figureContainer.append("path")
         .classed("firstModel line", true)
         .attr("d", dataPathFirstModel);
+
+    // Add the line for the final model after sorting the data in ascending order of the final model posterior.
+    dataArray = dataArray.sort(function(a, b) { return d3.ascending(a.Final, b.Final); });
     var dataPathSecondModel = "M" + xScale(0) + "," + yScale(0);
-    dataArray.forEach(function(d)
+    dataArray.forEach(function(d, index)
     {
-        dataPathSecondModel += "L" + xScale(d.index) + "," + yScale(d.Second) + "h1";
+        dataPathSecondModel += "L" + xScale(index) + "," + yScale(d.Final) + "h1";
     });
     var dataLineSecondModel = figureContainer.append("path")
         .classed("secondModel line", true)
         .attr("d", dataPathSecondModel);
-
-    // Add line labels.
-    var modelOneLineLabel = figureContainer.append("text")
-        .attr("class", "linelabel")
-        .attr("text-anchor", "end")
-        .attr("x", xScale(75))
-        .attr("y", yScale(dataArray[77].First))
-        .text("Model One");
-    var modelTwoLineLabel = figureContainer.append("text")
-        .attr("class", "linelabel")
-        .attr("text-anchor", "start")
-        .attr("x", xScale(87))
-        .attr("y", yScale(dataArray[82].Second))
-        .text("Model Two");
 }
