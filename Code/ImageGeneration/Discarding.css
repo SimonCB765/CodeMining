@@ -4,3 +4,5 @@
 .label {}
 
 .title {}
+
+.line { fill: none; stroke: black; }
