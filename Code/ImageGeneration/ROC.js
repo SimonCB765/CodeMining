@@ -29,9 +29,71 @@ d3.text(dataset, function(text)
             }
         }
 
-        console.log(data);
         create_ROC_curve(svg, data);
     });
+
+// Create a legend for the figure.
+function create_legend(figureContainer, labels, legendHeight, legendWidth, legendXLoc, legendYLoc)
+{
+    var itemPadding = 10;  // The padding between the legend border and the items.
+
+    // Create the legend container.
+	var legend = figureContainer.append("g")
+	    .classed("legend", true)
+	    .attr("transform", "translate(" + legendXLoc + "," + legendYLoc + ")");
+
+    // Create the legend items container.
+    var legendItems = legend.append("g")
+        .classed("legendItems", true);
+
+    // Create the legend labels and lines.
+    var labelSpacing = legendHeight / (labels.length + 1)
+	for (i = 0; i < labels.length; i++)
+	{
+	    legendItems.append("text")
+	        .attr("legendLabel", true)
+            .attr("x", "5em")
+            .attr("y", (i + 1) + "em")
+            .text(labels[i]);
+	}
+
+	return legend
+}
+
+// Create a legend for the figure.
+function create_legend2(figureContainer, labels, legendHeight, legendWidth, legendXLoc, legendYLoc)
+{
+    // Create the legend container.
+	var legend = figureContainer.append("g")
+	    .classed("legend", true)
+	    .attr("transform", "translate(" + legendXLoc + "," + legendYLoc + ")");
+
+	// Create the legend border.
+	legend.append("rect")
+	    .classed("legendBorder", true)
+	    .attr("x", 0)
+	    .attr("y", 0)
+	    .attr("height", (labels.length + 1) + "em")
+	    .attr("width", legendWidth);
+
+    // Create the legend label container.
+    var legendLabels = legend.append("g")
+        .classed("legendItems", true);
+
+    // Create the legend labels.
+    var labelSpacing = legendHeight / (labels.length + 1)
+	for (i = 0; i < labels.length; i++)
+	{
+	    legendLabels.append("text")
+	        .attr("legendLabel", true)
+            //.attr("text-anchor", "middle")
+            .attr("x", "5em")
+            .attr("y", (i + 1) + "em")
+            .text(labels[i]);
+	}
+
+	return legend
+}
 
 // Generate the ROC curves for all classes.
 function create_ROC_curve(figureContainer, data)
@@ -111,25 +173,5 @@ function create_ROC_curve(figureContainer, data)
 	}
 
 	// Create the legend.
-	var legendHeight = 100;
-	var legendWidth = 200;
-	var legend = svg.append("g")
-	    .classed("legend", true)
-	    .attr("transform", "translate(" + xScale(0.7) + "," + yScale(0.3) + ")");
-	legend.append("rect")
-	    .attr("x", 0)
-	    .attr("y", 0)
-	    .attr("height", legendHeight)
-	    .attr("width", legendWidth);
-    var labelNumber = 1;
-    var labelSpacing = legendHeight / (Object.keys(data).length + 1)
-	for (var i in data)
-	{
-	    legend.append("text")
-            .attr("text-anchor", "middle")
-            .attr("x", legendWidth * 2 / 3)
-            .attr("y", labelSpacing * labelNumber)
-            .text(i);
-        labelNumber++;
-	}
+	var legend = create_legend(figureContainer, Object.keys(data), 100, 200, xScale(0.7), yScale(0.3));
 }
