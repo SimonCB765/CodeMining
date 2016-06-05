@@ -27,12 +27,9 @@ function create_path_legend(figureContainer, labels, legendXLoc, legendYLoc, ite
     var maxItemWidth = 0;  // The width of the widest label/glyph rows (used to determine borer width).
 	for (i = 0; i < labels.length; i++)
 	{
-	    // Add the label on this row. Set the label to hang down from the row so that you can specify the location
-	    // of the start of the text by the top left hand corner. This allows easier positioning to make the border
-	    // look like it has uniform padding at the top and bottom.
+	    // Add the label on this row.
 	    var label = legendItems.append("text")
 	        .classed("legend-label", true)
-	        .attr("dominant-baseline", "hanging")
             .attr("x", pathLength + itemPadding)  // X position is itemPadding pixels away from the end of the path.
             .attr("y", cumulativeItemHeight)  // Y position is relative to the preceding labels.
             .text(labels[i]);
@@ -58,9 +55,9 @@ function create_path_legend(figureContainer, labels, legendXLoc, legendYLoc, ite
 
     // Reposition the label items so that they will sit in the middle of the border (as the border is fixed to have
     // a specific top left corner position by the function arguments). The X position is simply shifted by the
-    // desired padding. However, the Y position will need t0 be altered slightly as the hanging baseline does not
-    // prevent the text going higher than desired. The items may therefore have to be shifted down farther than
-    // the item padding dictates in order to get a uniform padding between the rows and the border.
+    // desired padding. However, the Y position may need to be altered slightly to prevent the text going higher than
+    // desired. The items may therefore have to be shifted down farther than the item padding dictates in order to get
+    // a uniform padding between the rows and the border.
 	legendItems
         .attr("transform", "translate(" + itemPadding + "," + (itemPadding - legendItems.node().getBBox().y)+ ")")
 
