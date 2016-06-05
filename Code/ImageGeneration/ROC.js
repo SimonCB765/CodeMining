@@ -33,9 +33,10 @@ d3.text(dataset, function(text)
     });
 
 // Create a legend for the figure.
-function create_legend(figureContainer, labels, legendHeight, legendWidth, legendXLoc, legendYLoc)
+function create_legend(figureContainer, labels, legendXLoc, legendYLoc)
 {
     var itemPadding = 10;  // The padding between the legend border and the items.
+    var pathLength = 50;  // The Euclidean distance between the path start and end.
 
     // Create the legend container.
 	var legend = figureContainer.append("g")
@@ -47,50 +48,45 @@ function create_legend(figureContainer, labels, legendHeight, legendWidth, legen
         .classed("legendItems", true);
 
     // Create the legend labels and lines.
-    var labelSpacing = legendHeight / (labels.length + 1)
+    var cumulativeLabelHeight = 0;
+    var maxItemWidth = 0;
 	for (i = 0; i < labels.length; i++)
 	{
-	    legendItems.append("text")
+	    // Add the label.
+	    var label = legendItems.append("text")
 	        .attr("legendLabel", true)
-            .attr("x", "5em")
-            .attr("y", (i + 1) + "em")
+	        .attr("dominant-baseline", "hanging")
+            .attr("x", pathLength + itemPadding)
+            .attr("y", cumulativeLabelHeight)
             .text(labels[i]);
+        var labelSize = label.node().getBBox();
+
+        // Add the glyph.
+        var glyphStart = {"x": 0, "y": labelSize.y + (0.5 * labelSize.height)};
+        var glyphEnd = {"x": glyphStart.x + pathLength, "y": glyphStart.y}
+        var glyphPath = "M" + glyphStart.x + "," + glyphStart.y +
+            "C" + (glyphStart.x + (pathLength / 3)) + "," + (labelSize.y) + "," + (glyphStart.x + (pathLength * 2 / 3)) + "," + (labelSize.y + labelSize.height) + "," + glyphEnd.x + "," + glyphEnd.y;
+        var glyph = legendItems.append("path")
+            .classed("legendGlyph", true)
+            .classed(labels[i].replace(/ /g, "_"), true)
+            .attr("d", glyphPath);
+
+        maxItemWidth = Math.max(maxItemWidth, labelSize.width + itemPadding + glyph.node().getBBox().width)
+        cumulativeLabelHeight += itemPadding + labelSize.height;
 	}
 
-	return legend
-}
+	legendItems
+        .attr("transform", "translate(" + itemPadding + "," + (itemPadding - legendItems.node().getBBox().y)+ ")")
 
-// Create a legend for the figure.
-function create_legend2(figureContainer, labels, legendHeight, legendWidth, legendXLoc, legendYLoc)
-{
-    // Create the legend container.
-	var legend = figureContainer.append("g")
-	    .classed("legend", true)
-	    .attr("transform", "translate(" + legendXLoc + "," + legendYLoc + ")");
+	console.log(legendItems.node().getBBox());
 
 	// Create the legend border.
 	legend.append("rect")
 	    .classed("legendBorder", true)
 	    .attr("x", 0)
 	    .attr("y", 0)
-	    .attr("height", (labels.length + 1) + "em")
-	    .attr("width", legendWidth);
-
-    // Create the legend label container.
-    var legendLabels = legend.append("g")
-        .classed("legendItems", true);
-
-    // Create the legend labels.
-    var labelSpacing = legendHeight / (labels.length + 1)
-	for (i = 0; i < labels.length; i++)
-	{
-	    legendLabels.append("text")
-	        .attr("legendLabel", true)
-            //.attr("text-anchor", "middle")
-            .attr("x", "5em")
-            .attr("y", (i + 1) + "em")
-            .text(labels[i]);
-	}
+	    .attr("height", legendItems.node().getBBox().height + (itemPadding * 2))
+	    .attr("width", maxItemWidth + (2 * itemPadding));
 
 	return legend
 }
@@ -173,5 +169,5 @@ function create_ROC_curve(figureContainer, data)
 	}
 
 	// Create the legend.
-	var legend = create_legend(figureContainer, Object.keys(data), 100, 200, xScale(0.7), yScale(0.3));
+	var legend = create_legend(figureContainer, Object.keys(data), xScale(0.6), yScale(0.3));
 }
