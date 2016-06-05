@@ -110,5 +110,5 @@ function create_ROC_curve(figureContainer, data)
 	}
 
 	// Create the legend.
-	var legend = create_legend(figureContainer, Object.keys(data), xScale(0.6), yScale(0.3));
+	var legend = create_path_legend(figureContainer, Object.keys(data), xScale(0.6), yScale(0.3));
 }
