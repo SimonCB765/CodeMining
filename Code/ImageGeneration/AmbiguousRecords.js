@@ -199,7 +199,7 @@ function create_histogram(figureContainer, dataArray, figureTitle)
         .data(modelOneBinned)
         .enter()
             .append("g")
-                .classed("firstModel bar", true)
+                .classed("Initial_Model bar", true)
                 .attr("transform", function(d) { return "translate(" + (xScale(d.x) + binOffset) + ", " + yScale(d.y) + ")"; });
     modelOneBars.append("rect")
         .attr("x", 0)
@@ -213,7 +213,7 @@ function create_histogram(figureContainer, dataArray, figureTitle)
         .data(modelTwoBinned)
         .enter()
             .append("g")
-                .classed("finalModel bar", true)
+                .classed("Final_Model bar", true)
                 //.attr("transform", function(d) { return "translate(" + xScale(d.x) + ", " + yScale(d.y) + ")"; });
                 .attr("transform", function(d) { return "translate(" + xScale(d.x + (d.dx / 2)) + ", " + yScale(d.y) + ")"; });
     modelTwoBars.append("rect")
@@ -222,6 +222,9 @@ function create_histogram(figureContainer, dataArray, figureTitle)
         //.attr("width", function(d) { return xScale(d.x + d.dx) - xScale(d.x) - 1; })
         .attr("width", function(d) { return ((xScale(d.x + d.dx) - xScale(d.x)) / 2) - binOffset; })
         .attr("height", function(d) { return yScale(0) - yScale(d.y); });
+
+    // Add the legend.
+    var legend = create_square_legend(figureContainer, ["Initial Model", "Final Model"], xScale(0.3), yScale(maxCount * 2 / 3))
 }
 
 function create_line_graph(figureContainer, dataArray, figureTitle)
@@ -286,7 +289,7 @@ function create_line_graph(figureContainer, dataArray, figureTitle)
         dataPathFirstModel += "L" + xScale(index) + "," + yScale(d.Initial) + "h1";
     });
     var dataLineFirstModel = figureContainer.append("path")
-        .classed("firstModel line", true)
+        .classed("Initial_Model line", true)
         .attr("d", dataPathFirstModel);
 
     // Add the line for the final model after sorting the data in ascending order of the final model posterior.
@@ -297,6 +300,9 @@ function create_line_graph(figureContainer, dataArray, figureTitle)
         dataPathSecondModel += "L" + xScale(index) + "," + yScale(d.Final) + "h1";
     });
     var dataLineSecondModel = figureContainer.append("path")
-        .classed("finalModel line", true)
+        .classed("Final_Model line", true)
         .attr("d", dataPathSecondModel);
+
+    // Add the legend.
+    var legend = create_path_legend(figureContainer, ["Initial Model", "Final Model"], xScale(dataArray.length / 10), yScale(0.7))
 }

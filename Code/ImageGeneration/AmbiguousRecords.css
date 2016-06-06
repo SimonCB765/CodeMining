@@ -1,5 +1,5 @@
-.firstModel { fill : orange; stroke : orange; }
-.finalModel { fill : purple; stroke : purple; }
+.Initial_Model { fill : orange; stroke : orange; }
+.Final_Model { fill : purple; stroke : purple; }
 
 .bar { fill-opacity : 0.5; stroke : none; shape-rendering: crispEdges; }
 .line { fill : none; }
@@ -12,3 +12,9 @@
 .label {}
 
 .title {}
+
+/*
+Legend redefinitions.
+*/
+.legend-label { font-size: 16px; }
+.legend-glyphPath { fill: none; }
