@@ -2,6 +2,7 @@
 Contents:
 _legend   -> style declarations applicable to all legends.
 _path     -> style declarations for the legend with glyphs that are path elements.
+_square   -> style declarations for the legend with glyphs that are squares (rect elements).
 */
 
 /*
@@ -15,3 +16,8 @@ _legend
 _path
 */
 .legend-glyphPath { fill: none; stroke-width: 2; }
+
+/*
+_square
+*/
+.legend-glyphSquare { stroke-width: 0; }
