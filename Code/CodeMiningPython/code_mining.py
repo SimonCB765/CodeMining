@@ -126,7 +126,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
     if len(cvFolds) == 0:
         # Training if no testing is needed.
 
-        with open(dirResults + "/FinalModelPerformance.tsv", 'w') as fidPerformance:
+        with open(dirResults + "/BothModelDescentResults.tsv", 'w') as fidPerformance:
 
             # Write the header for the output files.
             fidPerformance.write("Model\tNumIterations\tBatchSize\tLambda\tENetRatio\tTrainingGMean\tDescentGMean\n")
@@ -220,7 +220,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                                              ','.join(["{0:1.4f}".format(i) for i in descent])))
 
                 # Record the posteriors and predictions of the models.
-                with open(dirResults + "/FinalModelPredictions.tsv", 'w') as fidPredictions:
+                with open(dirResults + "/BothModelPredictions.tsv", 'w') as fidPredictions:
                     # Write the headers.
                     fidPredictions.write("PatientID\tClass\tFirstModelClass\tSecondModelClass\t{0:s}\t{1:s}\n".format(
                         '\t'.join(["FirstModel_{0:s}".format(mapIntRepToClass[i]) for i in classesUsed]),
@@ -433,7 +433,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
         externalPosteriors.fill(np.nan)
 
         # Create the file to record the external CV results.
-        fidExternalPerformance = open(dirResults + "/ExternalFoldResults.tsv", 'w')
+        fidExternalPerformance = open(dirResults + "/ExternalFold_FoldResults.tsv", 'w')
         fidExternalPerformance.write("ExternalFold\tNumIterations\tBatchSize\tLambda\tENetRatio\tGMean\n")
 
         # Perform external CV.
@@ -558,11 +558,11 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
         fidExternalPerformance.close()
 
         # Record G mean, AUC and ROC for the external folds.
-        with open(dirResults + "/FinalPerformance.tsv", 'w') as fidFinalPerformance:
+        with open(dirResults + "/ExternalFold_OverallPerformance.tsv", 'w') as fidOverallPerformance:
             # Calculate G mean of the entire nested procedure.
             finalGMean = CodeMiningPython.calc_metrics.calc_g_mean(externalPredictions[~np.isnan(externalPredictions)],
                                                                    allExampleClasses[~np.isnan(allExampleClasses)])
-            fidFinalPerformance.write("G mean over all external folds - {0:1.4f}\n".format(finalGMean))
+            fidOverallPerformance.write("G mean over all external folds - {0:1.4f}\n".format(finalGMean))
 
             # Calculate ROC curve for the final external CV predictions.
             for i in classesUsed:
@@ -579,8 +579,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 auc = metrics.roc_auc_score(binaryIndicator, posPosteriors)
 
                 # Write out the ROC results for the class.
-                fidFinalPerformance.write("{0:s} AUC\t{1:1.4f}\n{0:s} FPR\t{2:s}\n{0:s} TPR\t{3:s}\n"
-                                          "{0:s} thresholds\t{4:s}\n"
+                fidOverallPerformance.write("{0:s} AUC\t{1:1.4f}\n{0:s} FPR\t{2:s}\n{0:s} TPR\t{3:s}\n"
+                                            "{0:s} thresholds\t{4:s}\n"
                     .format(mapIntRepToClass[i], auc,
                             ','.join(["{0:1.4f}".format(j) for j in falsePosRates]),
                             ','.join(["{0:1.4f}".format(j) for j in truePosRates]),
