@@ -40,86 +40,8 @@ d3.text(dataset, function(text)
         var xPosHisto = figureMargin.left + figureWidth + figureMargin.right + figureMargin.left;
         var histogramContainer = svg.append("g").attr("transform", "translate(" + xPosHisto + ", " + figureMargin.top + ")");
         create_histogram(histogramContainer, data, "Placeholder Title");
-        //create_posterior_comparison(histogramContainer, data, "Placeholder Title");
     }
 );
-
-function create_posterior_comparison(figureContainer, dataArray, figureTitle)
-{
-    // Define positioning variables.
-    var figurePadding = {top: 40, right: 5, bottom: 50, left: 60};  // Padding around the graph in the figure to allow for titles and labelling axes.
-
-    // Create scales for the figure.
-    var xScale = d3.scale.linear()
-        .domain([0, dataArray.length + 1])  // Add 1 to allow for the final datapoint to have space for a line.
-        .range([figurePadding.left, figureWidth - figurePadding.right]);
-    var yScale = d3.scale.linear()
-        .domain([-1.0, 1.0])
-        .range([figureHeight - figurePadding.bottom, figurePadding.top]);
-
-    // Add the axes for the figure.
-    var xAxis = d3.svg.axis()
-        .scale(xScale)
-        .orient("bottom");
-    xAxis = figureContainer.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(0, " + (figureHeight - figurePadding.bottom) + ")")
-        .call(xAxis);
-    var yAxis = d3.svg.axis()
-        .scale(yScale)
-        .orient("left");
-    yAxis = figureContainer.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(" + figurePadding.left + ", 0)")
-        .call(yAxis);
-
-    // Add the title to the figure.
-    var title = figureContainer.append("text")
-        .attr("class", "title")
-        .attr("text-anchor", "middle")
-        .attr("x", ((figureWidth - figurePadding.left - figurePadding.right) / 2) + figurePadding.left)
-        .attr("y", figurePadding.top * 3 / 4)
-        .text(figureTitle);
-
-    // Add the labels on the axes. To rotate the label on the y axis we use a transformation. As this will alter the coordinate system being used
-    // to place the text, we perform the rotation around the point where the text is centered. This causes the text to rotate but not move.
-    var xAxisLabel = figureContainer.append("text")
-        .attr("class", "label")
-        .attr("text-anchor", "middle")
-        .attr("x", ((figureWidth - figurePadding.left - figurePadding.right) / 2) + figurePadding.left)
-        .attr("y", figureHeight - (figurePadding.bottom / 4))
-        .text("Example Index");
-    yAxisLabelLoc = { x : figurePadding.left / 3, y : ((figureHeight - figurePadding.top - figurePadding.bottom) / 2) + figurePadding.top };
-    var yAxisLabel = figureContainer.append("text")
-        .attr("class", "label")
-        .attr("text-anchor", "middle")
-        .attr("x", yAxisLabelLoc.x)
-        .attr("y", yAxisLabelLoc.y)
-        .attr("transform", "rotate(-90, " + yAxisLabelLoc.x + ", " + yAxisLabelLoc.y + ")")
-        .text("Posterior Probability");
-
-    // Sort the data in ascending order of the initial model posterior.
-    dataArray = dataArray.sort(function(a, b) { return d3.ascending(a.Initial - a.Final, b.Initial - b.Final); });
-
-    // Add the model posteriors.
-    var finalPosteriors = figureContainer.selectAll(".finalModel")
-        .data(dataArray)
-        .enter()
-            .append("circle")
-            .classed("finalModel", true)
-            .attr("cx", function(d, index) { return xScale(index); })
-            .attr("cy", function(d) { return yScale(d.Initial - d.Final); })
-            .attr("r", function(d) { return (d.Initial - d.Final == 0) ? 0 : 1; });
-    var initialPosteriors = figureContainer.selectAll(".firstModel")
-        .data(dataArray)
-        .enter()
-            .append("circle")
-            .classed("firstModel", true)
-            .attr("cx", function(d, index) { return xScale(index); })
-            .attr("cy", function(d) { return yScale(d.Initial); })
-            .attr("r", function(d) { return (d.Initial - d.Final == 0) ? 0 : 1; });
-
-}
 
 function create_histogram(figureContainer, dataArray, figureTitle)
 {
