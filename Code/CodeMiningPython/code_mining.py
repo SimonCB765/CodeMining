@@ -104,9 +104,10 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
     patientIndicesToUse[np.isnan(allExampleClasses)] = 0  # Mask out the patients that have no class.
     codeIndicesToUse = np.ones(dataMatrix.shape[1], dtype=bool)
     codeIndicesToUse[classCodeIndices] = 0  # Mask out the codes used to calculate class membership.
+
     # TODO: Remove the codes and patient that don't occur frequently enough.
-    # TODO: Repeatedly remove patients and codes from data matrix until not patients
-    # TODO: or code have too few connections.
+    # TODO: Repeatedly remove patients and codes from data matrix until no patients
+    # TODO: or codes have too few connections.
     # TODO: basically repeatedly remove codes with < codeOccurrence patients they occur in
     # TODO: and patients wih < patientOccurrences codes they occur in
 
@@ -176,11 +177,6 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             for i in range(len(firstTrainingClasses)):
                 trainingClassesMatrix[i, firstTrainingClasses[i]] = 1
 
-            # TODO
-            # TODO
-            # TODO fix this comment to make it clearer what is happening
-            # TODO
-            # TODO
             # Remove examples with posterior probability below the discard threshold.
             # The matrix of posteriors contains one column per class, and each example has a posterior for each
             # class. Examples are considered to be good examples if the posterior of their actual class
