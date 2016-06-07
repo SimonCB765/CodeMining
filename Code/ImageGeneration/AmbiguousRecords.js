@@ -33,12 +33,16 @@ d3.text(dataset, function(text)
         }
 
         // Create the figure for the line graph.
-        var lineGraphContainer = svg.append("g").attr("transform", "translate(" + figureMargin.left + ", " + figureMargin.top + ")");
+        var lineGraphContainer = svg.append("g")
+            .classed("lineGraph", true)
+            .attr("transform", "translate(" + figureMargin.left + ", " + figureMargin.top + ")");
         create_line_graph(lineGraphContainer, data, "Ambiguous Example Posteriors");
 
         // Create the figure for the histogram.
         var xPosHisto = figureMargin.left + figureWidth + figureMargin.right + figureMargin.left;
-        var histogramContainer = svg.append("g").attr("transform", "translate(" + xPosHisto + ", " + figureMargin.top + ")");
+        var histogramContainer = svg.append("g")
+            .classed("histogram", true)
+            .attr("transform", "translate(" + xPosHisto + ", " + figureMargin.top + ")");
         create_histogram(histogramContainer, data, "Ambiguous Example Posteriors");
     }
 );

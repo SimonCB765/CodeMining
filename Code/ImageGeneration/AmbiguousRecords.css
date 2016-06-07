@@ -1,5 +1,7 @@
-.Initial_Model { fill : orange; stroke : orange; }
-.Final_Model { fill : purple; stroke : purple; }
+.lineGraph .Initial_Model { fill : none; stroke : orange; }
+.lineGraph .Final_Model { fill : none; stroke : purple; }
+.histogram .Initial_Model { fill : orange; stroke : orange; }
+.histogram .Final_Model { fill : purple; stroke : purple; }
 
 .bar { fill-opacity : 0.5; stroke : none; shape-rendering: crispEdges; }
 .line { fill : none; }
@@ -17,4 +19,3 @@
 Legend redefinitions.
 */
 .legend-label { font-size: 16px; }
-.legend-glyphPath { fill: none; }
