@@ -119,11 +119,33 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
         .attr("d", dataPath);
 
     // Add the threshold discard line.
-    var discardStart = {"x": xScale(-(dataArray.length + 1) * 0.05), "y": yScale(cutoff)};
-    var discardEnd = {"x": xScale((dataArray.length + 1) * 1.05), "y": yScale(cutoff)};
+    var discardStart = {"x": xScale(-(dataArray.length + 1) * 0.02), "y": yScale(cutoff)};
+    var discardEnd = {"x": xScale((dataArray.length + 1) * 1.02), "y": yScale(cutoff)};
     var discardPath = "M" + discardStart["x"] + "," + discardStart["y"] + "L" + discardEnd["x"] + "," + discardEnd["y"];
     var discardLine = figureContainer.append("line")
-        .classed("line", true)
+        .classed("discard", true)
+        .attr("x1", discardStart["x"])
+        .attr("y1", discardStart["y"])
+        .attr("x2", discardEnd["x"])
+        .attr("y2", discardEnd["y"]);
+
+    // Find the index of the first example to have a posterior above 0.05.
+    var keptIndex = 0;
+    for (i = 0; i < dataArray.length; i++)
+    {
+        if (dataArray[i][classToPlot] > 0.05)
+        {
+            keptIndex = i;
+            break;
+        }
+    }
+
+    // Add the vertical example discard line.
+    var discardStart = {"x": xScale(keptIndex), "y": yScale(-0.02)};
+    var discardEnd = {"x": xScale(keptIndex), "y": yScale(1.02)};
+    var discardPath = "M" + discardStart["x"] + "," + discardStart["y"] + "L" + discardEnd["x"] + "," + discardEnd["y"];
+    var discardLine = figureContainer.append("line")
+        .classed("discard", true)
         .attr("x1", discardStart["x"])
         .attr("y1", discardStart["y"])
         .attr("x2", discardEnd["x"])

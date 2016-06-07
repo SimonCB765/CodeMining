@@ -6,3 +6,5 @@
 .title {}
 
 .line { fill: none; stroke: black; }
+
+.discard { fill: none; stroke: black; stroke-width: 1; }
