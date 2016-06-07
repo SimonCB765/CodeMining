@@ -67,22 +67,6 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
         .domain([0.0, 1.0])
         .range([figureHeight - figurePadding.bottom, figurePadding.top]);
 
-    // Add the axes for the figure.
-    var xAxis = d3.svg.axis()
-        .scale(xScale)
-        .orient("bottom");
-    xAxis = figureContainer.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(0, " + (figureHeight - figurePadding.bottom) + ")")
-        .call(xAxis);
-    var yAxis = d3.svg.axis()
-        .scale(yScale)
-        .orient("left");
-    yAxis = figureContainer.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(" + figurePadding.left + ", 0)")
-        .call(yAxis);
-
     // Add the title to the figure.
     var title = figureContainer.append("text")
         .attr("class", "title")
@@ -108,15 +92,35 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
         .attr("transform", "rotate(-90, " + yAxisLabelLoc.x + ", " + yAxisLabelLoc.y + ")")
         .text("Posterior Probability");
 
-    // Add the line for the class of interest.
-    var dataPath = "M" + xScale(0) + "," + yScale(0);
-    dataArray.forEach(function(d, index)
+    // Find the index of the first example to have a posterior above 0.05.
+    var keptIndex = 0;
+    for (i = 0; i < dataArray.length + 1; i++)
     {
-        dataPath += "L" + xScale(index) + "," + yScale(d[classToPlot]) + "h1";
-    });
-    var dataLine = figureContainer.append("path")
-        .classed(classToPlot + " line", true)
-        .attr("d", dataPath);
+        if (dataArray[i][classToPlot] > 0.05)
+        {
+            keptIndex = i;
+            break;
+        }
+    }
+
+    // Add the discard area. Add this first so that it will not be on top of any of the other lines (discard and axes).
+    var discardArea = figureContainer.append("rect")
+        .classed("discardArea", true)
+        .attr("x", xScale(0))
+        .attr("y", yScale(cutoff))
+        .attr("width", xScale(keptIndex) - xScale(0))
+        .attr("height", yScale(0) - yScale(cutoff));
+
+    // Add the vertical example discard line.
+    var discardStart = {"x": xScale(keptIndex), "y": yScale(-0.02)};
+    var discardEnd = {"x": xScale(keptIndex), "y": yScale(1.02)};
+    var discardPath = "M" + discardStart["x"] + "," + discardStart["y"] + "L" + discardEnd["x"] + "," + discardEnd["y"];
+    var discardLine = figureContainer.append("line")
+        .classed("discard", true)
+        .attr("x1", discardStart["x"])
+        .attr("y1", discardStart["y"])
+        .attr("x2", discardEnd["x"])
+        .attr("y2", discardEnd["y"]);
 
     // Add the threshold discard line.
     var discardStart = {"x": xScale(-(dataArray.length + 1) * 0.02), "y": yScale(cutoff)};
@@ -129,25 +133,29 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
         .attr("x2", discardEnd["x"])
         .attr("y2", discardEnd["y"]);
 
-    // Find the index of the first example to have a posterior above 0.05.
-    var keptIndex = 0;
-    for (i = 0; i < dataArray.length; i++)
+    // Add the line for the class of interest.
+    var dataPath = "M" + xScale(0) + "," + yScale(0);
+    dataArray.forEach(function(d, index)
     {
-        if (dataArray[i][classToPlot] > 0.05)
-        {
-            keptIndex = i;
-            break;
-        }
-    }
+        dataPath += "L" + xScale(index) + "," + yScale(d[classToPlot]) + "h1";
+    });
+    var dataLine = figureContainer.append("path")
+        .classed(classToPlot + " line", true)
+        .attr("d", dataPath);
 
-    // Add the vertical example discard line.
-    var discardStart = {"x": xScale(keptIndex), "y": yScale(-0.02)};
-    var discardEnd = {"x": xScale(keptIndex), "y": yScale(1.02)};
-    var discardPath = "M" + discardStart["x"] + "," + discardStart["y"] + "L" + discardEnd["x"] + "," + discardEnd["y"];
-    var discardLine = figureContainer.append("line")
-        .classed("discard", true)
-        .attr("x1", discardStart["x"])
-        .attr("y1", discardStart["y"])
-        .attr("x2", discardEnd["x"])
-        .attr("y2", discardEnd["y"]);
+    // Add the axes for the figure.
+    var xAxis = d3.svg.axis()
+        .scale(xScale)
+        .orient("bottom");
+    xAxis = figureContainer.append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(0, " + (figureHeight - figurePadding.bottom) + ")")
+        .call(xAxis);
+    var yAxis = d3.svg.axis()
+        .scale(yScale)
+        .orient("left");
+    yAxis = figureContainer.append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(" + figurePadding.left + ", 0)")
+        .call(yAxis);
 }

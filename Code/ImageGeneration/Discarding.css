@@ -8,3 +8,5 @@
 .line { fill: none; stroke: black; }
 
 .discard { fill: none; stroke: black; stroke-width: 1; }
+
+.discardArea { fill: #d3d3d3; stroke: none; }
