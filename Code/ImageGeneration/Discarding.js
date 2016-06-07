@@ -40,12 +40,12 @@ d3.text(dataset, function(text)
 
         // Create the left discard graph.
         var discardContainer = svg.append("g").attr("transform", "translate(" + figureMargin.left + ", " + figureMargin.top + ")");
-        create_discard_graph(discardContainer, data, classesUsed[0], "PLACEHOLDER TITLE", cutoff);
+        create_discard_graph(discardContainer, data, classesUsed[0], classesUsed[0] + " Posteriors", cutoff);
 
         // Create the right discard graph.
         var xPosRightGraph = figureMargin.left + figureWidth + figureMargin.right + figureMargin.left;
         discardContainer = svg.append("g").attr("transform", "translate(" + xPosRightGraph + ", " + figureMargin.top + ")");
-        create_discard_graph(discardContainer, data, classesUsed[1], "PLACEHOLDER TITLE", cutoff);
+        create_discard_graph(discardContainer, data, classesUsed[1], classesUsed[1] + " Posteriors", cutoff);
     }
 );
 
