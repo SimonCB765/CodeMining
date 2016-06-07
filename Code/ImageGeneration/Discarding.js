@@ -35,7 +35,6 @@ d3.text(dataset, function(text)
             }
             data.push(datum);
         }
-        console.log(datum);
         classesUsed = Array.from(classesUsed);
 
         // Create the left discard graph.
@@ -118,4 +117,15 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
     var dataLine = figureContainer.append("path")
         .classed(classToPlot + " line", true)
         .attr("d", dataPath);
+
+    // Add the threshold discard line.
+    var discardStart = {"x": xScale(-(dataArray.length + 1) * 0.05), "y": yScale(cutoff)};
+    var discardEnd = {"x": xScale((dataArray.length + 1) * 1.05), "y": yScale(cutoff)};
+    var discardPath = "M" + discardStart["x"] + "," + discardStart["y"] + "L" + discardEnd["x"] + "," + discardEnd["y"];
+    var discardLine = figureContainer.append("line")
+        .classed("line", true)
+        .attr("x1", discardStart["x"])
+        .attr("y1", discardStart["y"])
+        .attr("x2", discardEnd["x"])
+        .attr("y2", discardEnd["y"]);
 }
