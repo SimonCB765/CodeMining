@@ -5,6 +5,8 @@
 
 .title {}
 
+.cutoffText { font-family: sans-serif; font-size: 11px; }
+
 .line { fill: none; stroke: black; }
 
 .discard { fill: none; stroke: black; stroke-width: 1; }

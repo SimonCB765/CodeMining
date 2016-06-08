@@ -123,8 +123,8 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
         .attr("y2", discardEnd["y"]);
 
     // Add the threshold discard line.
-    var discardStart = {"x": xScale(-(dataArray.length + 1) * 0.02), "y": yScale(cutoff)};
-    var discardEnd = {"x": xScale((dataArray.length + 1) * 1.02), "y": yScale(cutoff)};
+    var discardStart = {"x": xScale(-(dataArray.length + 1) * 0.04), "y": yScale(cutoff)};
+    var discardEnd = {"x": xScale((dataArray.length + 1) * 1.03), "y": yScale(cutoff)};
     var discardPath = "M" + discardStart["x"] + "," + discardStart["y"] + "L" + discardEnd["x"] + "," + discardEnd["y"];
     var discardLine = figureContainer.append("line")
         .classed("discard", true)
@@ -132,6 +132,14 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
         .attr("y1", discardStart["y"])
         .attr("x2", discardEnd["x"])
         .attr("y2", discardEnd["y"]);
+    var cutoffText = figureContainer.append("text")
+        .attr("class", "cutoffText")
+        .attr("text-anchor", "end")
+        .attr("x", discardStart["x"])
+        .attr("y", discardStart["y"])
+        .attr("dx", -3)
+        .attr("dy", ".32em")
+        .text(cutoff);
 
     // Add the line for the class of interest.
     var dataPath = "M" + xScale(0) + "," + yScale(0);
