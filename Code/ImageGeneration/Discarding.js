@@ -144,9 +144,12 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
         .attr("d", dataPath);
 
     // Add the axes for the figure.
+    var xAxisTicks = xScale.ticks();
+    xAxisTicks.push(keptIndex);  // Add the index of the final kept example to the set of axis ticks.
     var xAxis = d3.svg.axis()
         .scale(xScale)
-        .orient("bottom");
+        .orient("bottom")
+        .tickValues(xAxisTicks);
     xAxis = figureContainer.append("g")
         .attr("class", "axis")
         .attr("transform", "translate(0, " + (figureHeight - figurePadding.bottom) + ")")
