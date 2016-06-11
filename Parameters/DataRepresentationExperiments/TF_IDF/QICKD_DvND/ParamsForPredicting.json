@@ -12,7 +12,7 @@
         "PatientOccurences" : 0,
         "CVFolds" : [],
         "DataNorm" : 1,
-        "DiscardThreshold": 0,
+        "DiscardThreshold": 0.05,
         "Classes" :
         {
             "Diabetes" : ["C10E.", "C10F."],
