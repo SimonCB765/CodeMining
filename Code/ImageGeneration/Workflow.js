@@ -77,14 +77,14 @@ var correctlyClassifiedPosition = { x : xOffset, y : processedDataPosition.y - (
 var containerCorrectlyClassified = svg.append("g")
     .classed("processedData", true)
     .attr("transform", "translate(" + correctlyClassifiedPosition.x + ", " + correctlyClassifiedPosition.y + ")");
-create_table(containerCorrectlyClassified, 0, 0, correctlyClassifiedDimensions.width, correctlyClassifiedDimensions.height, "Correctly Classified");
+create_table(containerCorrectlyClassified, 0, 0, correctlyClassifiedDimensions.width, correctlyClassifiedDimensions.height, "Posterior Above\nThreshold");
 
 // Create the misclassified data picture.
 var misclassifiedPosition = { x : xOffset, y : correctlyClassifiedPosition.y + correctlyClassifiedDimensions.height + (misclassifiedDimensions.height * 2) };
 var containerMisclassified = svg.append("g")
     .classed("unusedData", true)
     .attr("transform", "translate(" + misclassifiedPosition.x + ", " + misclassifiedPosition.y + ")");
-create_table(containerMisclassified, 0, 0, misclassifiedDimensions.width, misclassifiedDimensions.height, "Misclassified");
+create_table(containerMisclassified, 0, 0, misclassifiedDimensions.width, misclassifiedDimensions.height, "Discarded");
 
 // Create the arrows going in and out of the initial model.
 var processedToInitialArrow = { startX : processedDataPosition.x + processedDatasetDimensions.width,
@@ -238,10 +238,31 @@ function create_table(selection, x, y, width, height, text)
     // Add text.
     var textToAdd = selection.append("text")
         .attr("text-anchor", "middle")
-        .attr("x", width / 2)
-        .text(text);
-    var textBBox = textToAdd.node().getBBox();
-    textToAdd.attr("y", y - (textBBox.height * 1 / 2));
+        .attr("x", width / 2);
+    if (text.indexOf("\n") > -1)
+    {
+        // If the text has a line break in it.
+        var chunks = text.split("\n");
+        for (i = 0; i < chunks.length; i++)
+        {
+            textToAdd.append("tspan")
+                .attr("x", width / 2)
+                .attr("dy", "1em")
+                .text(chunks[i]);
+        }
+        var textBBox = textToAdd.node().getBBox();
+        console.log(text);
+        console.log(textBBox);
+        textToAdd.attr("y", y - (textBBox.height * 1.2));
+    }
+    else
+    {
+        textToAdd.text(text);
+        var textBBox = textToAdd.node().getBBox();
+        console.log(text);
+        console.log(textBBox);
+        textToAdd.attr("y", y - (textBBox.height * 1 / 2));
+    }
 
     // Add rows.
     var numberRows = 1;
