@@ -3,7 +3,7 @@
 
 .label {}
 
-.title {}
+.title { font-size: 20px; }
 
 .cutoffText { font-family: sans-serif; font-size: 11px; }
 

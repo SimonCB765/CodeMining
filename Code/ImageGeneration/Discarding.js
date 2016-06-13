@@ -1,5 +1,5 @@
-var figureWidth = 400;  // Height of the entire figure including labels and title.
-var figureHeight = 400;  // Width of the entire figure including labels and title.
+var figureWidth = 600;  // Height of the entire figure including labels and title.
+var figureHeight = 600;  // Width of the entire figure including labels and title.
 var figureMargin = {top: 10, right: 10, bottom: 10, left: 10};  // Margin around each individual figure.
 var svgWidth = (figureWidth + figureMargin.left + figureMargin.right) * 2;  // Width of the SVG element needed to hold both figures and their padding.
 var svgHeight = figureHeight + figureMargin.top + figureMargin.bottom;  // Height of the SVG element needed to hold both figures and their padding.
@@ -39,12 +39,12 @@ d3.text(dataset, function(text)
 
         // Create the left discard graph.
         var discardContainer = svg.append("g").attr("transform", "translate(" + figureMargin.left + ", " + figureMargin.top + ")");
-        create_discard_graph(discardContainer, data, classesUsed[0], classesUsed[0] + " Posteriors", cutoff);
+        create_discard_graph(discardContainer, data, classesUsed[0], "(a)", cutoff);
 
         // Create the right discard graph.
         var xPosRightGraph = figureMargin.left + figureWidth + figureMargin.right + figureMargin.left;
         discardContainer = svg.append("g").attr("transform", "translate(" + xPosRightGraph + ", " + figureMargin.top + ")");
-        create_discard_graph(discardContainer, data, classesUsed[1], classesUsed[1] + " Posteriors", cutoff);
+        create_discard_graph(discardContainer, data, classesUsed[1], "(b)", cutoff);
     }
 );
 
@@ -63,6 +63,15 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
     var xScale = d3.scale.linear()
         .domain([0, dataArray.length + 1])  // Add 1 to allow for the final datapoint to have space for a line.
         .range([figurePadding.left, figureWidth - figurePadding.right]);
+    if (dataArray.length > 5000)
+    {
+        // Add an axis break on the X axis.
+        var breakStart = 2500;
+        var breakEnd = 40500;
+        var xAxisTicks = break_axis(
+            xScale, [0, dataArray.length + 1], [figurePadding.left, figureWidth - figurePadding.right], breakStart,
+            breakEnd);
+    }
     var yScale = d3.scale.linear()
         .domain([0.0, 1.0])
         .range([figureHeight - figurePadding.bottom, figurePadding.top]);
@@ -112,8 +121,8 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
         .attr("height", yScale(0) - yScale(cutoff));
 
     // Add the vertical example discard line.
-    var discardStart = {"x": xScale(keptIndex), "y": yScale(-0.02)};
-    var discardEnd = {"x": xScale(keptIndex), "y": yScale(1.02)};
+    var discardStart = {"x": xScale(keptIndex), "y": yScale(-0.01)};
+    var discardEnd = {"x": xScale(keptIndex), "y": yScale(1.01)};
     var discardPath = "M" + discardStart["x"] + "," + discardStart["y"] + "L" + discardEnd["x"] + "," + discardEnd["y"];
     var discardLine = figureContainer.append("line")
         .classed("discard", true)
@@ -123,8 +132,8 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
         .attr("y2", discardEnd["y"]);
 
     // Add the threshold discard line.
-    var discardStart = {"x": xScale(-(dataArray.length + 1) * 0.04), "y": yScale(cutoff)};
-    var discardEnd = {"x": xScale((dataArray.length + 1) * 1.03), "y": yScale(cutoff)};
+    var discardStart = {"x": figurePadding.left - 6, "y": yScale(cutoff)};
+    var discardEnd = {"x": figureWidth - figurePadding.right + 6, "y": yScale(cutoff)};
     var discardPath = "M" + discardStart["x"] + "," + discardStart["y"] + "L" + discardEnd["x"] + "," + discardEnd["y"];
     var discardLine = figureContainer.append("line")
         .classed("discard", true)
@@ -152,7 +161,10 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
         .attr("d", dataPath);
 
     // Add the axes for the figure.
-    var xAxisTicks = xScale.ticks();
+    if (typeof xAxisTicks === 'undefined')
+    {
+        var xAxisTicks = xScale.ticks();
+    }
     xAxisTicks.push(keptIndex);  // Add the index of the final kept example to the set of axis ticks.
     var xAxis = d3.svg.axis()
         .scale(xScale)
