@@ -36,14 +36,14 @@ d3.text(dataset, function(text)
         var lineGraphContainer = svg.append("g")
             .classed("lineGraph", true)
             .attr("transform", "translate(" + figureMargin.left + ", " + figureMargin.top + ")");
-        create_line_graph(lineGraphContainer, data, "Ambiguous Example Posteriors");
+        create_line_graph(lineGraphContainer, data, "");
 
         // Create the figure for the histogram.
         var xPosHisto = figureMargin.left + figureWidth + figureMargin.right + figureMargin.left;
         var histogramContainer = svg.append("g")
             .classed("histogram", true)
             .attr("transform", "translate(" + xPosHisto + ", " + figureMargin.top + ")");
-        create_histogram(histogramContainer, data, "Ambiguous Example Posteriors");
+        create_histogram(histogramContainer, data, "");
     }
 );
 
@@ -78,22 +78,6 @@ function create_histogram(figureContainer, dataArray, figureTitle)
     var yScale = d3.scale.linear()
         .domain([0, maxCount])
         .range([figureHeight - figurePadding.bottom, figurePadding.top]);
-
-    // Add the axes for the figure.
-    var xAxis = d3.svg.axis()
-        .scale(xScale)
-        .orient("bottom");
-    xAxis = figureContainer.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(0, " + (figureHeight - figurePadding.bottom) + ")")
-        .call(xAxis);
-    var yAxis = d3.svg.axis()
-        .scale(yScale)
-        .orient("left");
-    yAxis = figureContainer.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(" + figurePadding.left + ", 0)")
-        .call(yAxis);
 
     // Add the title to the figure.
     var title = figureContainer.append("text")
@@ -148,6 +132,22 @@ function create_histogram(figureContainer, dataArray, figureTitle)
         //.attr("width", function(d) { return xScale(d.x + d.dx) - xScale(d.x) - 1; })
         .attr("width", function(d) { return ((xScale(d.x + d.dx) - xScale(d.x)) / 2) - binOffset; })
         .attr("height", function(d) { return yScale(0) - yScale(d.y); });
+
+    // Add the axes for the figure.
+    var xAxis = d3.svg.axis()
+        .scale(xScale)
+        .orient("bottom");
+    xAxis = figureContainer.append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(0, " + (figureHeight - figurePadding.bottom) + ")")
+        .call(xAxis);
+    var yAxis = d3.svg.axis()
+        .scale(yScale)
+        .orient("left");
+    yAxis = figureContainer.append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(" + figurePadding.left + ", 0)")
+        .call(yAxis);
 
     // Add the legend.
     var legend = create_square_legend(figureContainer, ["Initial Model", "Final Model"], xScale(0.3), yScale(maxCount * 2 / 3))
@@ -212,7 +212,10 @@ function create_line_graph(figureContainer, dataArray, figureTitle)
     var dataPathFirstModel = "M" + xScale(0) + "," + yScale(0);
     dataArray.forEach(function(d, index)
     {
-        dataPathFirstModel += "L" + xScale(index) + "," + yScale(d.Initial) + "h1";
+        if (index % 2 === 0)
+        {
+            dataPathFirstModel += "L" + xScale(index) + "," + yScale(d.Initial) + "h1";
+        }
     });
     var dataLineFirstModel = figureContainer.append("path")
         .classed("Initial_Model line", true)
