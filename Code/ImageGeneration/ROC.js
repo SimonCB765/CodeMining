@@ -76,22 +76,22 @@ function create_ROC_curve(figureContainer, data)
         .attr("transform", "rotate(-90, " + yAxisLabelLoc.x + ", " + yAxisLabelLoc.y + ")")
         .text("True Positive Rate");
 
-    // Add the title to the figure.
-    var title = figureContainer.append("text")
-        .classed("title", true)
-        .attr("text-anchor", "middle")
-        .attr("x", (svgWidth + figureOffset.left) / 2)
-        .attr("y", 0)
-        .text("Training Set ROC Curves");
+//    // Add the title to the figure.
+//    var title = figureContainer.append("text")
+//        .classed("title", true)
+//        .attr("text-anchor", "middle")
+//        .attr("x", (svgWidth + figureOffset.left) / 2)
+//        .attr("y", 0)
+//        .text("Training Set ROC Curves");
 
-    // Add the dashed line between (0, 0) and (1, 1).
-    svg.append("line")
-        .attr("x1", xScale(0))
-        .attr("y1", yScale(0))
-        .attr("x2", xScale(1))
-        .attr("y2", yScale(1))
-        .attr("stroke-dasharray", "10,10")
-        .style("stroke", "black");
+//    // Add the dashed line between (0, 0) and (1, 1).
+//    svg.append("line")
+//        .attr("x1", xScale(0))
+//        .attr("y1", yScale(0))
+//        .attr("x2", xScale(1))
+//        .attr("y2", yScale(1))
+//        .attr("stroke-dasharray", "10,10")
+//        .style("stroke", "black");
 
     // Create the line generator.
     var line = d3.svg.line()
@@ -110,5 +110,5 @@ function create_ROC_curve(figureContainer, data)
 	}
 
 	// Create the legend.
-	var legend = create_path_legend(figureContainer, Object.keys(data), xScale(0.6), yScale(0.3));
+	var legend = create_path_legend(figureContainer, Object.keys(data), xScale(0.55), yScale(0.35));
 }

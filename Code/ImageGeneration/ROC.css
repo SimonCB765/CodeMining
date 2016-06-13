@@ -4,6 +4,5 @@
 .label { font-family: sans-serif; font-size: 20px; }
 .title { font-family: sans-serif; font-size: 24px; }
 
-.ROC { fill: none; stroke: black; }
-.Type_1_Diabetes { stroke: black; }
-.Type_2_Diabetes { stroke: red; }
+.Type_1_Diabetes { stroke-dasharray: 15,5; fill: none; stroke: black; }
+.Type_2_Diabetes { fill: none; stroke: black; }
