@@ -12,3 +12,6 @@
 .discard { fill: none; stroke: black; stroke-width: 1; }
 
 .discardArea { fill: #d3d3d3; stroke: none; }
+
+.breakIcon { fill: none; stroke: black; stroke-width: 2; }
+.maskIcon { fill: white; stroke: none; }

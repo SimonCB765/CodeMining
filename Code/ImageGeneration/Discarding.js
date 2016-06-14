@@ -70,7 +70,7 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
         var breakEnd = 40500;
         var xAxisTicks = break_axis(
             xScale, [0, dataArray.length + 1], [figurePadding.left, figureWidth - figurePadding.right], breakStart,
-            breakEnd);
+            breakEnd, rangeDivider=50);
     }
     var yScale = d3.scale.linear()
         .domain([0.0, 1.0])
@@ -185,41 +185,36 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
     // Add the break indicator to the X axis and the data line if needed.
     if (dataArray.length > 5000)
     {
-        // Two options: clip-path and mask
-        // clip-path will keep only stuff inside the path
-        //      https://sarasoueidan.com/blog/css-svg-clipping/
-        // mask will keep everything in the area that has a white fill
-        // mask would just involve a white rect with the bit to remove added in the correct spot in the correct way
-        //      with a non-white fill.
-        // I would then add the actual shape to the correct spot
-        // for each thing to mask out, get the dimensions of it and set the rect to be that size (+ 1 or so in each
-        // direction maybe), then place my non-white filled object in the correct location.
-
-        // axis domain is like 6 height, but this starts from the axis and goes down (or left int he case of the y axis)
-        //      so will need to do something like start at x=0 y=-height and have the white mask rect be height*2
-        //      or maybe just do something like add 1 or 2 or 5 to each dimension to cover everything
-
-        var breakLineSeparation = 10;
-        var breakLineLength = 20;
-        //var breakIcon = "M 132, 177 C 192, 167, 272, 207, 332, 197" + "M 132, 167 C 192, 157, 272, 197, 332, 187";
-        var maskIcon = "M 132, 177" +
-                       "C 192, 167, 272, 207, 332, 197" +
-                       "L 332, 187" +
-                       "C 272, 197, 192, 157, 132, 167" +
+        var breakLineSeparation = xScale(breakEnd) - xScale(breakStart);
+        var breakLineLength = 30;
+        var breakLineY = breakLineLength / 5;
+        var maskIcon = "M0,0" +
+                       "C" + (breakLineLength / 3) + "," + (-breakLineY / 2) + "," + (breakLineLength * 2 / 3) + "," + (breakLineY * 3 / 2) + "," + breakLineLength + "," + breakLineY +
+                       "L" + breakLineLength + "," + (breakLineY + breakLineSeparation) +
+                       "C" + (breakLineLength * 2 / 3) + "," + ((breakLineY * 3 / 2) + breakLineSeparation) + "," + (breakLineLength / 3) + "," + ((-breakLineY / 2) + breakLineSeparation) + "," + 0 + "," + breakLineSeparation +
                        "Z";
-        var breakFig = figureContainer.append("g")
-            .attr("transform", "scale(0.1, 1)")
-            //.attr("transform", "matrix(" + (1 / breakLineLength) + " 0 0 1 100 100)")
-            .attr("transform", "translate(100, 100)")
-            ;
+        var breakIcon = "M0,0" +
+                        "C" + (breakLineLength / 3) + "," + (-breakLineY / 2) + "," + (breakLineLength * 2 / 3) + "," + (breakLineY * 3 / 2) + "," + breakLineLength + "," + breakLineY +
+                        "M" + breakLineLength + "," + (breakLineY + breakLineSeparation) +
+                        "C" + (breakLineLength * 2 / 3) + "," + ((breakLineY * 3 / 2) + breakLineSeparation) + "," + (breakLineLength / 3) + "," + ((-breakLineY / 2) + breakLineSeparation) + "," + 0 + "," + breakLineSeparation;
+        var defs = figureContainer.append("defs");
+        var breakFig = defs.append("g")
+            .attr("id", "breakIcon");
         breakFig.append("path")
-            .attr("d", maskIcon)
-            .style("fill", "orange")
-            .style("stroke", "black")
-            .style("stroke-width", 2);
-
-
-        console.log(figureContainer.select(".line").node().getBBox());
-        console.log(figureContainer.select(".axis .domain").node().getBBox());
+            .classed("maskIcon", true)
+            .attr("transform", "rotate(90)")
+            .attr("d", maskIcon);
+        breakFig.append("path")
+            .classed("breakIcon", true)
+            .attr("transform", "rotate(90)")
+            .attr("d", breakIcon);
+        figureContainer.append("use")
+            .attr("x", xScale(breakStart) + (breakLineSeparation * 3 / 2))
+            .attr("y", (yScale(0) - (breakLineLength / 2)))
+            .attr("xlink:href", "#breakIcon");
+        figureContainer.append("use")
+            .attr("x", xScale(breakStart) + (breakLineSeparation * 3 / 2))
+            .attr("y", (yScale(1) - (breakLineLength / 2)))
+            .attr("xlink:href", "#breakIcon");
     }
 }
