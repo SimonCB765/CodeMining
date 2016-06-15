@@ -1,9 +1,8 @@
 .axis path, .axis line { fill: none; stroke: black; shape-rendering: crispEdges; }
 .axis text { font-family: sans-serif; font-size: 11px; }
 
-.label {}
-
-.title { font-size: 20px; }
+.label { font-family: Times New Roman; font-size: 20px; }
+.title { font-family: Times New Roman; font-size: 24px; }
 
 .cutoffText { font-family: sans-serif; font-size: 11px; }
 
@@ -13,5 +12,5 @@
 
 .discardArea { fill: #d3d3d3; stroke: none; }
 
-.breakIcon { fill: none; stroke: black; stroke-width: 2; }
+.breakIcon { fill: none; stroke: black; stroke-width: 1; }
 .maskIcon { fill: white; stroke: none; }

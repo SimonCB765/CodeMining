@@ -9,4 +9,4 @@
 .tableInternal { fill : white; stroke : none; }
 .tableLine { fill : none; stroke : gray; stroke-width : 1px; shape-rendering: crispEdges; }
 
-text {}
+text { font-family: Times New Roman; font-size: 17px; }
