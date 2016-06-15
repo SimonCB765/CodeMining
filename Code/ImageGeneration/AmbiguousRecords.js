@@ -116,7 +116,7 @@ function create_histogram(figureContainer, dataArray, figureTitle)
         .attr("y", 0)
         //.attr("width", function(d) { return xScale(d.x + d.dx) - xScale(d.x) - 1; })
         .attr("width", function(d) { return ((xScale(d.x + d.dx) - xScale(d.x)) / 2) - binOffset; })
-        .attr("height", function(d) { return yScale(0) - yScale(d.y); });
+        .attr("height", function(d) { return Math.ceil(yScale(0) - yScale(d.y)); });
 
     // Add the histogram for the final model.
     var modelTwoBars = figureContainer.selectAll(".modelTwoBar")
@@ -131,7 +131,7 @@ function create_histogram(figureContainer, dataArray, figureTitle)
         .attr("y", 0)
         //.attr("width", function(d) { return xScale(d.x + d.dx) - xScale(d.x) - 1; })
         .attr("width", function(d) { return ((xScale(d.x + d.dx) - xScale(d.x)) / 2) - binOffset; })
-        .attr("height", function(d) { return yScale(0) - yScale(d.y); });
+        .attr("height", function(d) { return Math.ceil(yScale(0) - yScale(d.y)); });
 
     // Add the axes for the figure.
     var xAxis = d3.svg.axis()
