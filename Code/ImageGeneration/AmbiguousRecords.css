@@ -1,14 +1,10 @@
-.label { font-family: Times New Roman; font-size: 17px; }
-
-.lineGraph .Initial_Model { fill: none; stroke: black; stroke-dasharray: 10,5; }
-.lineGraph .Final_Model { fill: none; stroke: black; }
-.histogram .Initial_Model { fill: none; stroke: black; }
-.histogram .Final_Model { fill: black; stroke: black; }
-
-.bar { shape-rendering: crispEdges; }
-
 .axis path, .axis line { fill: none; stroke: black; shape-rendering: crispEdges; }
 .axis text { font-family: sans-serif; font-size: 11px; }
+
+.label { font-family: Times New Roman; font-size: 18px; }
+
+.Initial_Model { fill: none; stroke: black; stroke-dasharray: 10,5; }
+.Final_Model { fill: none; stroke: black; }
 
 /*
 Legend redefinitions.
