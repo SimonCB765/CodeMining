@@ -1,7 +1,7 @@
 var figureOffset = {top: 10, right: 10, bottom: 40, left: 40};  // The offset of the figures within the SVG element (to allow for things like axes, titles, etc.).
 var svgMargin = {top: 20, right: 20, bottom: 20, left: 20};  // The margin around the whole set of figures.
-var svgWidth = 600 + svgMargin.left + svgMargin.right;  // Width of the SVG element needed to hold the figure.
-var svgHeight = 600 + svgMargin.top + svgMargin.bottom;  // Height of the SVG element needed to hold the figure.
+var svgWidth = 400 + svgMargin.left + svgMargin.right;  // Width of the SVG element needed to hold the figure.
+var svgHeight = 400 + svgMargin.top + svgMargin.bottom;  // Height of the SVG element needed to hold the figure.
 
 // Create the SVG element.
 var svg = d3.select("body")
@@ -110,5 +110,5 @@ function create_ROC_curve(figureContainer, data)
 	}
 
 	// Create the legend.
-	var legend = create_path_legend(figureContainer, Object.keys(data), xScale(0.55), yScale(0.35));
+	var legend = create_path_legend(figureContainer, Object.keys(data), xScale(0.45), yScale(0.45));
 }
