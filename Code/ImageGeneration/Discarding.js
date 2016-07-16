@@ -1,5 +1,5 @@
-var figureWidth = 600;  // Height of the entire figure including labels and title.
-var figureHeight = 600;  // Width of the entire figure including labels and title.
+var figureWidth = 400;  // Height of the entire figure including labels and title.
+var figureHeight = 400;  // Width of the entire figure including labels and title.
 var figureMargin = {top: 10, right: 10, bottom: 10, left: 10};  // Margin around each individual figure.
 var svgWidth = (figureWidth + figureMargin.left + figureMargin.right) * 2;  // Width of the SVG element needed to hold both figures and their padding.
 var svgHeight = figureHeight + figureMargin.top + figureMargin.bottom;  // Height of the SVG element needed to hold both figures and their padding.
@@ -163,9 +163,10 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
     // Add the axes for the figure.
     if (typeof xAxisTicks === 'undefined')
     {
+        // If it is undefined then a break has not been added to the axis, as breaking the axis alters the ticks.
         var xAxisTicks = xScale.ticks();
     }
-    xAxisTicks.push(keptIndex);  // Add the index of the final kept example to the set of axis ticks.
+    xAxisTicks.push(keptIndex);  // Add the index of the first kept example to the set of axis ticks.
     var xAxis = d3.svg.axis()
         .scale(xScale)
         .orient("bottom")
@@ -173,10 +174,15 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
     xAxis = figureContainer.append("g")
         .attr("class", "axis")
         .attr("transform", "translate(0, " + (figureHeight - figurePadding.bottom) + ")")
-        .call(xAxis);
+        .call(xAxis)
+        .select("text")
+        .attr("x", -8);
+    var yAxisTicks = yScale.ticks();
+    yAxisTicks.splice(yAxisTicks.indexOf(0), 1);  // Remove the 0 from the y axis.
     var yAxis = d3.svg.axis()
         .scale(yScale)
-        .orient("left");
+        .orient("left")
+        .tickValues(yAxisTicks);
     yAxis = figureContainer.append("g")
         .attr("class", "axis")
         .attr("transform", "translate(" + figurePadding.left + ", 0)")
@@ -186,7 +192,7 @@ function create_discard_graph(figureContainer, dataArray, classToPlot, figureTit
     if (dataArray.length > 5000)
     {
         var breakLineSeparation = xScale(breakEnd) - xScale(breakStart);
-        var breakLineLength = 30;
+        var breakLineLength = 25;
         var breakLineY = breakLineLength / 5;
         var maskIcon = "M0,0" +
                        "C" + (breakLineLength / 3) + "," + (-breakLineY / 2) + "," + (breakLineLength * 2 / 3) + "," + (breakLineY * 3 / 2) + "," + breakLineLength + "," + breakLineY +
