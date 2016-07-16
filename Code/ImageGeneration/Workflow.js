@@ -1,4 +1,4 @@
-svgWidth = 1020;  // The width of the SVG element containing the diagram.
+svgWidth = 850;  // The width of the SVG element containing the diagram.
 svgHeight = 300;  // The height of the SVG element containing the diagram.
 
 // Create the SVG element.
@@ -22,12 +22,12 @@ arrowhead.append("path")
     .attr("d", "M0,0V" + arrowheadHeight + "L" + arrowheadWidth + "," + (arrowheadHeight / 2) + "Z");
 
 // Define positioning variables.
-var hGapBetweenPictures = 100;
+var hGapBetweenPictures = 80;
 var yOffset = 100;
-var xOffset = 10;
+var xOffset = 15;
 
 // Define dataset and model size variables.
-var rawDatasetDimensions = { height : 150, width : 100 };
+var rawDatasetDimensions = { height : 120, width : 80 };
 var processedDatasetDimensions = { height : rawDatasetDimensions.height * 2 / 3, width : rawDatasetDimensions.width };
 var unusedDatasetDimensions = { height : rawDatasetDimensions.height / 3, width : rawDatasetDimensions.width };
 var initialModelDimensions = processedDatasetDimensions;
@@ -71,7 +71,7 @@ var containerInitialModel = svg.append("g")
     .attr("transform", "translate(" + initialModelPosition.x + ", " + initialModelPosition.y + ")");
 create_model(containerInitialModel, 0, 0, initialModelDimensions.width, initialModelDimensions.height, "Initial Model");
 
-// Create the correctly classified data picture.
+// Create the posterior above threshold data picture.
 xOffset += initialModelDimensions.width + (hGapBetweenPictures * 2);
 var correctlyClassifiedPosition = { x : xOffset, y : processedDataPosition.y - (correctlyClassifiedDimensions.height / 2) };
 var containerCorrectlyClassified = svg.append("g")
@@ -79,7 +79,7 @@ var containerCorrectlyClassified = svg.append("g")
     .attr("transform", "translate(" + correctlyClassifiedPosition.x + ", " + correctlyClassifiedPosition.y + ")");
 create_table(containerCorrectlyClassified, 0, 0, correctlyClassifiedDimensions.width, correctlyClassifiedDimensions.height, "Posterior Above\nThreshold");
 
-// Create the misclassified data picture.
+// Create the discarded data picture.
 var misclassifiedPosition = { x : xOffset, y : correctlyClassifiedPosition.y + correctlyClassifiedDimensions.height + (misclassifiedDimensions.height * 2) };
 var containerMisclassified = svg.append("g")
     .classed("unusedData", true)
