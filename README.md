@@ -1,3 +1,14 @@
+Currently only journal table format data is processable
+
+Add intended contents of the two processed files (counts and binary)
+
+
+
+
+
+
+
+
 *Code Mining Parameters*
 [] == just take the one param set and generate the models
     only takes the first combination, so really just give it the optimal params and be done with it

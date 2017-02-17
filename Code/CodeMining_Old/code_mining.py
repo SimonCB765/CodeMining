@@ -11,13 +11,13 @@ from sklearn.linear_model import SGDClassifier
 from sklearn import metrics
 
 # User imports.
-import CodeMiningPython.calc_metrics
-import CodeMiningPython.generate_code_mapping
-import CodeMiningPython.generate_dataset
-import CodeMiningPython.parse_classes
-import CodeMiningPython.partition_dataset
-import CodeMiningPython.results_recording
-import CodeMiningPython.train_model
+import CodeMining_Old.calc_metrics
+import CodeMining_Old.generate_code_mapping
+import CodeMining_Old.generate_dataset
+import CodeMining_Old.parse_classes
+import CodeMining_Old.partition_dataset
+import CodeMining_Old.results_recording
+import CodeMining_Old.train_model
 
 
 def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,), elasticNetMixing=(0.15,),
@@ -69,19 +69,19 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             sys.exit()
 
     # Generate the mapping from codes to their descriptions.
-    mapCodeToDescr = CodeMiningPython.generate_code_mapping.main(fileCodeMapping)
+    mapCodeToDescr = CodeMining_Old.generate_code_mapping.main(fileCodeMapping)
 
     # Generate the data matrix and two index mappings.
     # The index to patient mapping maps row indices for the data matrix to the patient they correspond to.
     # The code to index mapping maps codes to their column indices in the data matrix.
-    dataMatrix, mapIndToPatient, mapCodeToInd = CodeMiningPython.generate_dataset.main(
+    dataMatrix, mapIndToPatient, mapCodeToInd = CodeMining_Old.generate_dataset.main(
         fileDataset, dirResults, mapCodeToDescr, dataNormVal)
 
     # Determine the examples in each class.
     # classExamples is a dictionary with an entry for each class (and one for "Ambiguous" examples) that contains
     # a list of the examples belonging to that class.
     # classCodeIndices is a list of the indices of the codes used to determine class membership.
-    classExamples, classCodeIndices = CodeMiningPython.parse_classes.find_patients(
+    classExamples, classCodeIndices = CodeMining_Old.parse_classes.find_patients(
         dataMatrix, classData, mapCodeToInd, isCodesRemoved=True)
 
     # Determine the class of each example, and map the classes from their names to an integer representation.
@@ -148,14 +148,14 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                                             learning_rate="optimal", class_weight=None)
 
             # Train the first model.
-            descent = CodeMiningPython.train_model.mini_batch_e_net(
+            descent = CodeMining_Old.train_model.mini_batch_e_net(
                 firstClassifier, firstTrainingMatrix, firstTrainingClasses, classesUsed, batchSize=batchSize,
                 numIterations=numIterations)
 
             # Record the first model's performance and descent.
             firstPredictions = firstClassifier.predict(firstTrainingMatrix)
             firstPosteriors = firstClassifier.predict_proba(firstTrainingMatrix)
-            gMean = CodeMiningPython.calc_metrics.calc_g_mean(firstPredictions, firstTrainingClasses)
+            gMean = CodeMining_Old.calc_metrics.calc_g_mean(firstPredictions, firstTrainingClasses)
 
             # Record information about the model performance.
             fidPerformance.write("FirstModel\t{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}\t{4:1.4f}\t{5:s}\n"
@@ -201,14 +201,14 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                                                  learning_rate="optimal", class_weight=None)
 
                 # Train the second model.
-                descent = CodeMiningPython.train_model.mini_batch_e_net(
+                descent = CodeMining_Old.train_model.mini_batch_e_net(
                     secondClassifier, secondTrainingMatrix, secondTrainingClasses, classesUsed,
                     batchSize=batchSize, numIterations=numIterations)
 
                 # Record the second model's performance and descent.
                 secondPredictions = secondClassifier.predict(secondTrainingMatrix)
                 secondPosteriors = secondClassifier.predict_proba(secondTrainingMatrix)
-                gMean = CodeMiningPython.calc_metrics.calc_g_mean(secondPredictions, secondTrainingClasses)
+                gMean = CodeMining_Old.calc_metrics.calc_g_mean(secondPredictions, secondTrainingClasses)
 
                 # Record information about the model performance.
                 fidPerformance.write("SecondModel\t{0:d}\t{1:d}\t{2:1.5f}\t{3:1.2f}\t{4:1.4f}\t{5:s}\n"
@@ -258,7 +258,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 # Record the coefficients of the models.
                 indicesOfCodesUsed = np.array(range(dataMatrix.shape[1]))  # The indices of the codes used for training.
                 indicesOfCodesUsed = indicesOfCodesUsed[codeIndicesToUse]
-                CodeMiningPython.results_recording.record_coefficients(
+                CodeMining_Old.results_recording.record_coefficients(
                     firstClassifier, secondClassifier, mapIntRepToClass, indicesOfCodesUsed, mapCodeToInd,
                     mapCodeToDescr, dirResults + "/Coefficients.tsv")
 
@@ -266,7 +266,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 ambiguousExamples = classExamples["Ambiguous"]  # Indices of the ambiguous examples.
                 ambiguousMatrix = dataMatrix[ambiguousExamples, :]
                 ambiguousMatrix = ambiguousMatrix[:, codeIndicesToUse]
-                CodeMiningPython.results_recording.record_ambiguous(
+                CodeMining_Old.results_recording.record_ambiguous(
                     firstClassifier, secondClassifier, ambiguousExamples, ambiguousMatrix, mapIntRepToClass,
                     mapIndToPatient, dirResults + "/Ambiguous.tsv")
     elif cvFolds[0] == 0:
@@ -277,7 +277,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
         # Generate the stratified cross validation folds.
         foldsToGenerate = cvFolds[1] if len(cvFolds) > 1 else 10
-        stratifiedFolds = np.array(CodeMiningPython.partition_dataset.main(
+        stratifiedFolds = np.array(CodeMining_Old.partition_dataset.main(
             allExampleClasses, numPartitions=foldsToGenerate, isStratified=True))
 
         # Setup the record of the performance of each parameter combination.
@@ -322,22 +322,22 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                     testingClasses = allExampleClasses[testingExamples]
 
                     # Train the model on this fold.
-                    _ = CodeMiningPython.train_model.mini_batch_e_net(
+                    _ = CodeMining_Old.train_model.mini_batch_e_net(
                         classifier, trainingMatrix, trainingClasses, classesUsed, testingMatrix, testingClasses,
                         batchSize, numIterations)
 
                     # Record the model's performance on this fold.
                     testPredictions = classifier.predict(testingMatrix)
                     predictions[testingExamples] = testPredictions
-                    performanceOfEachFold.append(CodeMiningPython.calc_metrics.calc_g_mean(testPredictions,
-                                                                                           testingClasses))
+                    performanceOfEachFold.append(CodeMining_Old.calc_metrics.calc_g_mean(testPredictions,
+                                                                                         testingClasses))
 
                 # Record G mean of predictions across all folds using this parameter combination.
                 # If the predicted class of any example is NaN, then the example did not actually have its class
                 # predicted.
                 examplesUsed = ~np.isnan(predictions)
-                gMean = CodeMiningPython.calc_metrics.calc_g_mean(predictions[examplesUsed],
-                                                                  allExampleClasses[examplesUsed])
+                gMean = CodeMining_Old.calc_metrics.calc_g_mean(predictions[examplesUsed],
+                                                                allExampleClasses[examplesUsed])
                 fidParamOpt.write("\t{0:1.4f}".format(gMean))
                 paramComboPerformance.append(gMean)
 
@@ -361,7 +361,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
 
         # Generate the stratified cross validation folds.
         foldsToGenerate = 2
-        stratifiedFolds = np.array(CodeMiningPython.partition_dataset.main(
+        stratifiedFolds = np.array(CodeMining_Old.partition_dataset.main(
             allExampleClasses, numPartitions=foldsToGenerate, isStratified=True))
 
         with open(dirResults + "/HoldOutPerformance.tsv", 'w') as fidPerformance:
@@ -396,13 +396,13 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                 testingClasses = allExampleClasses[testingExamples]
 
                 # Train the model on this fold.
-                descent = CodeMiningPython.train_model.mini_batch_e_net(
+                descent = CodeMining_Old.train_model.mini_batch_e_net(
                     classifier, trainingMatrix, trainingClasses, classesUsed, testingMatrix, testingClasses,
                     batchSize, numIterations)
 
                 # Record the model's performance.
                 testPredictions = classifier.predict(testingMatrix)
-                testPerformance = CodeMiningPython.calc_metrics.calc_g_mean(testPredictions, testingClasses)
+                testPerformance = CodeMining_Old.calc_metrics.calc_g_mean(testPredictions, testingClasses)
 
                 # Write out the performance of the model over all folds and the descent.
                 fidPerformance.write("\t{0:1.4f}\t{1:s}\n"
@@ -418,7 +418,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
         numberInternalFolds = cvFolds[0] if (len(cvFolds) < 2) else cvFolds[1]
 
         # Generate the external CV folds using stratified partitioning of the data.
-        externalFolds = CodeMiningPython.partition_dataset.main(
+        externalFolds = CodeMining_Old.partition_dataset.main(
             allExampleClasses, numPartitions=numberExternalFolds, isStratified=True)
 
         # Create the arrays to hold the predictions and posteriors for all examples when using the external
@@ -444,7 +444,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             examplesInExternalFold = (~np.isnan(externalFolds)) & (externalFolds == eCV)
             examplesNotInExternalFold = (~np.isnan(externalFolds)) & (externalFolds != eCV)
             nonExternalFoldExampleIndices = np.nonzero(examplesNotInExternalFold)[0]
-            internalFolds = CodeMiningPython.partition_dataset.main(
+            internalFolds = CodeMining_Old.partition_dataset.main(
                 allExampleClasses, indicesToUse=nonExternalFoldExampleIndices, numPartitions=numberInternalFolds,
                 isStratified=True)
 
@@ -493,22 +493,22 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
                         testingClasses = allExampleClasses[testingExamples]
 
                         # Train the model on this fold.
-                        _ = CodeMiningPython.train_model.mini_batch_e_net(
+                        _ = CodeMining_Old.train_model.mini_batch_e_net(
                             classifier, trainingMatrix, trainingClasses, classesUsed, testingMatrix, testingClasses,
                             batchSize, numIterations)
 
                         # Record the model's performance on this fold.
                         testPredictions = classifier.predict(testingMatrix)
                         predictions[testingExamples] = testPredictions
-                        performanceOfEachFold.append(CodeMiningPython.calc_metrics.calc_g_mean(testPredictions,
-                                                                                               testingClasses))
+                        performanceOfEachFold.append(CodeMining_Old.calc_metrics.calc_g_mean(testPredictions,
+                                                                                             testingClasses))
 
                     # Record G mean of predictions across all folds using this parameter combination.
                     # If the predicted class of any example is NaN, then the example did not actually have its class
                     # predicted.
                     examplesUsed = ~np.isnan(predictions)
-                    gMean = CodeMiningPython.calc_metrics.calc_g_mean(predictions[examplesUsed],
-                                                                      allExampleClasses[examplesUsed])
+                    gMean = CodeMining_Old.calc_metrics.calc_g_mean(predictions[examplesUsed],
+                                                                    allExampleClasses[examplesUsed])
                     fidPerformance.write("\t{0:1.4f}".format(gMean))
                     paramComboPerformance.append(gMean)
 
@@ -537,7 +537,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             classifier = SGDClassifier(loss="log", penalty="elasticnet", alpha=optimalLambda,
                                        l1_ratio=optimalENetRatio, fit_intercept=True, n_iter=1, n_jobs=1,
                                        learning_rate="optimal", class_weight=None)
-            _ = CodeMiningPython.train_model.mini_batch_e_net(
+            _ = CodeMining_Old.train_model.mini_batch_e_net(
                 classifier, trainingMatrix, trainingClasses, classesUsed, testingMatrix, testingClasses,
                 optimalBatchSize, optimalIterations)
 
@@ -546,7 +546,7 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
             externalPredictions[testingExamples] = testPredictions
             testPosteriors = classifier.predict_proba(testingMatrix)
             externalPosteriors[testingExamples, :] = testPosteriors
-            gMean = CodeMiningPython.calc_metrics.calc_g_mean(testPredictions, testingClasses)
+            gMean = CodeMining_Old.calc_metrics.calc_g_mean(testPredictions, testingClasses)
             fidExternalPerformance.write("{0:d}\t{1:d}\t{2:d}\t{3:1.5f}\t{4:1.2f}\t{5:1.4f}\n".format(
                 eCV, optimalIterations, optimalBatchSize, optimalLambda, optimalENetRatio, gMean))
 
@@ -556,8 +556,8 @@ def main(fileDataset, fileCodeMapping, dirResults, classData, lambdaVals=(0.01,)
         # Record G mean, AUC and ROC for the external folds.
         with open(dirResults + "/ExternalFold_OverallPerformance.tsv", 'w') as fidOverallPerformance:
             # Calculate G mean of the entire nested procedure.
-            finalGMean = CodeMiningPython.calc_metrics.calc_g_mean(externalPredictions[~np.isnan(externalPredictions)],
-                                                                   allExampleClasses[~np.isnan(allExampleClasses)])
+            finalGMean = CodeMining_Old.calc_metrics.calc_g_mean(externalPredictions[~np.isnan(externalPredictions)],
+                                                                 allExampleClasses[~np.isnan(allExampleClasses)])
             fidOverallPerformance.write("G mean over all external folds - {0:1.4f}\n".format(finalGMean))
 
             # Calculate ROC curve for the final external CV predictions.

@@ -4,7 +4,7 @@ import os
 import sys
 
 # User imports.
-import CodeMiningPython.extract_child_codes
+import CodeMining_Old.extract_child_codes
 
 
 def select_data_subset(fileDataset, jsonClasses, dirResults="Results", minPatientsPerCode=50, codeDensity=0, isCollectorClass=False, collectorClass=None):
@@ -79,7 +79,7 @@ def select_data_subset(fileDataset, jsonClasses, dirResults="Results", minPatien
         for j in jsonClasses[i]:
             if j.get("GetChildren") and (j["GetChildren"].lower() == 'y'):
                 # Get child codes of the current code if the class definition requests it.
-                matchingCodes = CodeMiningPython.extract_child_codes.main([j["Code"]], codesToUse)  # Get all frequent codes that are children of the current code.
+                matchingCodes = CodeMining_Old.extract_child_codes.main([j["Code"]], codesToUse)  # Get all frequent codes that are children of the current code.
             else:
                 # No need to get child codes, just use the parent.
                 matchingCodes = [j["Code"]]

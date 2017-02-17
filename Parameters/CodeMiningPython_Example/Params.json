@@ -1,17 +1,4 @@
 {
-    "CleanerArgs" :
-    {
-        "DirtyDataLocation" : "../path/to/dirty/data",
-        "CleanDataLocation" : "../path/to/clean/data",
-        "Delimiter" : "\t",
-        "StripCommas" : [0, 1],
-        "RemoveCols" : [3],
-        "Unbookend" :
-        [
-            {"Column" : 1, "String" : "n", "IntOnly" : true},
-            {"Column" : 2, "String" : "t", "IntOnly" : false}
-        ]
-    },
     "MiningArgs" :
     {
         "DataLocation" : "../path/to/data",

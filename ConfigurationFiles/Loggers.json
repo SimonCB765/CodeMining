@@ -1,0 +1,56 @@
+{
+  "disable_existing_loggers": false,
+  "formatters": {
+    "default": {
+      "format": "%(name)s\t%(levelname)s\t%(message)s"
+    },
+    "timed": {
+      "datefmt": "%Y-%m-%d %H:%M:%S",
+      "format": "%(name)s\t%(levelname)s\t%(asctime)s\t%(message)s"
+    }
+  },
+  "handlers": {
+    "console": {
+      "class": "logging.StreamHandler",
+      "formatter": "default",
+      "level": "CRITICAL"
+    },
+    "file": {
+      "class": "logging.FileHandler",
+      "filename": "placeholder",
+      "formatter": "default",
+      "level": "DEBUG"
+    },
+    "file_timed": {
+      "class": "logging.FileHandler",
+      "filename": "placeholder",
+      "formatter": "timed",
+      "level": "DEBUG"
+    }
+  },
+  "incremental": false,
+  "loggers": {
+    "__main__": {
+      "handlers": ["console", "file"],
+      "level": "DEBUG"
+    },
+    "CodeMining": {
+      "handlers": ["console", "file_timed"],
+      "level": "DEBUG"
+    },
+    "DataProcessing": {
+      "handlers": ["console", "file_timed"],
+      "level": "DEBUG"
+    },
+    "Libraries": {
+      "handlers": ["console", "file"],
+      "level": "DEBUG"
+    },
+    "Utilities": {
+      "handlers": ["console", "file"],
+      "level": "DEBUG"
+    }
+  },
+  "root": {},
+  "version": 1
+}

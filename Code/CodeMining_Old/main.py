@@ -5,9 +5,9 @@ import argparse
 import sys
 
 # User imports.
-import CodeMiningPython.clean_data
-import CodeMiningPython.code_mining
-import CodeMiningPython.parse_parameters
+import CodeMining_Old.clean_data
+import CodeMining_Old.code_mining
+import CodeMining_Old.parse_parameters
 
 
 def main(args):
@@ -29,7 +29,7 @@ def main(args):
     parser.add_argument("params", help="Location of the parameter file.")
     args = parser.parse_args()
     fileParams = args.params  # File containing the parameters to use.
-    parsedParameters = CodeMiningPython.parse_parameters.main(fileParams)
+    parsedParameters = CodeMining_Old.parse_parameters.main(fileParams)
 
     #=================#
     # Clean the Data. #
@@ -37,10 +37,10 @@ def main(args):
     if "CleaningArgs" in parsedParameters:
         print("Now cleaning the data.")
         cleanerArgs = parsedParameters["CleaningArgs"]
-        CodeMiningPython.clean_data.main(cleanerArgs["DirtyDataLocation"], cleanerArgs["CleanDataLocation"],
-                                         cleanerArgs["CodeColumn"], cleanerArgs["Delimiter"],
-                                         cleanerArgs["StripCommas"], cleanerArgs["RemoveCols"],
-                                         cleanerArgs["Unbookend"])
+        CodeMining_Old.clean_data.main(cleanerArgs["DirtyDataLocation"], cleanerArgs["CleanDataLocation"],
+                                       cleanerArgs["CodeColumn"], cleanerArgs["Delimiter"],
+                                       cleanerArgs["StripCommas"], cleanerArgs["RemoveCols"],
+                                       cleanerArgs["Unbookend"])
 
     #======================#
     # Perform Code Mining. #
@@ -48,9 +48,9 @@ def main(args):
     if "MiningArgs" in parsedParameters:
         print("Now starting code mining.")
         miningArgs = parsedParameters["MiningArgs"]
-        CodeMiningPython.code_mining.main(miningArgs["DataLocation"], miningArgs["CodeMapping"],
-                                          miningArgs["ResultsLocation"], miningArgs["Classes"],
-                                          miningArgs["Lambda"], miningArgs["ElasticNetMixing"],
-                                          miningArgs["BatchSize"], miningArgs["MaxIter"], miningArgs["CodeOccurrences"],
-                                          miningArgs["PatientOccurrences"], miningArgs["CVFolds"],
-                                          miningArgs["DataNorm"], miningArgs["DiscardThreshold"])
+        CodeMining_Old.code_mining.main(miningArgs["DataLocation"], miningArgs["CodeMapping"],
+                                        miningArgs["ResultsLocation"], miningArgs["Classes"],
+                                        miningArgs["Lambda"], miningArgs["ElasticNetMixing"],
+                                        miningArgs["BatchSize"], miningArgs["MaxIter"], miningArgs["CodeOccurrences"],
+                                        miningArgs["PatientOccurrences"], miningArgs["CVFolds"],
+                                        miningArgs["DataNorm"], miningArgs["DiscardThreshold"])

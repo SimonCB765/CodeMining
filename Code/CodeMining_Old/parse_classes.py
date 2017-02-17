@@ -7,7 +7,7 @@ import itertools
 import numpy as np
 
 # User imports.
-import CodeMiningPython.extract_child_codes
+import CodeMining_Old.extract_child_codes
 
 
 def find_patients(dataMatrix, classData, mapCodeToIndex, isCodesRemoved=True):
@@ -47,7 +47,7 @@ def find_patients(dataMatrix, classData, mapCodeToIndex, isCodesRemoved=True):
             getChildren = [j[:-1] for j in classData[i] if j[-1] == '.']  # Need child codes for any code ending in '.'.
             if getChildren:
                 # If there are any children to get.
-                getChildren = CodeMiningPython.extract_child_codes.main(getChildren, mapCodeToIndex.keys())
+                getChildren = CodeMining_Old.extract_child_codes.main(getChildren, mapCodeToIndex.keys())
             classCodeIndices.extend(getChildren)
             classCodeIndices = [mapCodeToIndex.get(j, None) for j in classCodeIndices]
             classCodeIndices = [j for j in classCodeIndices if j]  # Remove all None values from the list of indices.
