@@ -11,6 +11,7 @@ import shutil
 import sys
 
 # User imports.
+from CodeMining import code_mining
 from DataProcessing import JournalTable
 from Libraries.JsonschemaManipulation import Configuration
 
@@ -157,3 +158,4 @@ if not args.noProcess:
     fileInputData = fileProcessedData
 
 # Perform the code mining.
+code_mining.main(fileInputData, fileCodeMap, dirOutput, config)
