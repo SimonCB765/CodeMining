@@ -3,7 +3,6 @@
 # Python imports.
 from collections import defaultdict
 import logging
-import os
 
 # User imports.
 from . import parse_patient_entry
@@ -30,20 +29,9 @@ def main(fileJournalTable, fileProcessedData):
     patientHistory = defaultdict(int)  # The data for the current patient.
     uniqueCodes = set()  # The codes used in the dataset.
 
-    #TODO Remove
-    count = 0
-    #TODO Remove
-
     with open(fileJournalTable, 'r') as fidJournalTable, open(fileProcessedData, 'w') as fidProcessed:
         # Process journal table.
         for line in fidJournalTable:
-
-            #TODO Remove
-            if count > 100000:
-                break
-            count += 1
-            #TODO Remove
-
             if line.startswith("insert"):
                 # The line contains information about a row in the journal table.
                 entries = parse_patient_entry.main(line)
