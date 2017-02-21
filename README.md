@@ -2,6 +2,8 @@ Currently only journal table format data is processable
 
 Add intended contents of the two processed files (counts and binary)
 
+Add information on the parameters that can be specified in the JSON config file and the defaults the take.
+
 
 
 

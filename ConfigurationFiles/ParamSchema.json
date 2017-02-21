@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ParameterSchema",
+  "description": "A schema file defining the parameters used in running the code mining.",
+  "type": "object",
+
+  "properties": {
+    "BatchSize": {
+      "description": "The batch sizes to use.",
+      "default": [500],
+      "items": {"minimum": 0, "type": "integer"},
+      "minItems": 1,
+      "type": "array"
+    },
+    "CodesOccurWith": {
+      "description": "The minimum number of different codes a patient must co-occur with to be used.",
+      "default": 0,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "Classes": {
+      "description": "The information about the codes that define each class.",
+      "minProperties": 1,
+      "type": "object",
+
+      "patternProperties": {
+        "^[a-zA-Z]+$": {
+          "description": "A class definition comprising a set of codes.",
+          "items": {"type": "string"},
+          "type": "array"
+        }
+      }
+    },
+    "DiscardThreshold": {
+      "description": "The posterior probability that an example must have to be included in the final model.",
+      "default": 0.0,
+      "maximum": 1,
+      "minimum": 0,
+      "type": "number"
+    },
+    "Epoch": {
+      "description": "The number of epochs to use.",
+      "default": [5],
+      "items": {"minimum": 1, "type": "integer"},
+      "minItems": 1,
+      "type": "array"
+    },
+    "ElasticNetMixing": {
+      "description": "The elastic net mixing values to use.",
+      "default": [0.15],
+      "items": {"maximum": 1, "minimum": 0, "type": "number"},
+      "minItems": 1,
+      "type": "array"
+    },
+    "Lambda": {
+      "description": "The learning rates to use.",
+      "default": [0.01],
+      "items": {"minimum": 0, "type": "number"},
+      "minItems": 1,
+      "type": "array"
+    },
+    "PatientsOccurWith": {
+      "description": "The minimum number of different patients a code must co-occur with to be used.",
+      "default": 0,
+      "minimum": 0,
+      "type": "integer"
+    }
+  },
+
+  "required": ["Classes"]
+}

@@ -12,6 +12,10 @@ import sys
 
 # User imports.
 from DataProcessing import JournalTable
+from Libraries.JsonschemaManipulation import Configuration
+
+# 3rd party import.
+import jsonschema
 
 
 # ====================== #
@@ -24,8 +28,14 @@ parser = argparse.ArgumentParser(description="Identify clinical codes for concep
 parser.add_argument("input", help="The location of the file containing the input data. If data processing is being "
                                   "run, then this should contain an unprocessed dataset. If no processing is being "
                                   "run, then this should contain a processed dataset.")
+parser.add_argument("config", help="The location of the JSON file containing the configuration parameters to use. For "
+                                   "information on the parameters that can be used please see the README.")
 
 # Optional arguments.
+parser.add_argument("-c", "--coding",
+                    help="The location of the file containing the mapping between codes and their descriptions. "
+                         "Default: a file called Coding.tsv in the Data directory.",
+                    type=str)
 parser.add_argument("-n", "--noProcess",
                     action="store_true",
                     help="Whether the data should be prevented from being processed. Default: data will be processed.")
@@ -50,6 +60,8 @@ dirTop = os.path.abspath(os.path.join(dirCode, os.pardir))
 dirResults = os.path.join(dirTop, "Results")
 dirOutput = os.path.join(dirResults, "{:s}".format(datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")))
 dirOutput = args.output if args.output else dirOutput
+dirConfiguration = os.path.join(dirTop, "ConfigurationFiles")
+dirData = os.path.join(dirTop, "Data")
 isErrors = False  # Whether any errors were found.
 
 # Create the output directory.
@@ -79,10 +91,49 @@ logConfigInfo["handlers"]["file_timed"]["filename"] = fileLogOutput
 logging.config.dictConfig(logConfigInfo)
 logger = logging.getLogger("__main__")
 
+# Create the configuration object.
+config = Configuration.Configuration()
+
+# Validate the configuration parameters and set defaults.
+fileSchema = os.path.join(dirConfiguration, "ParamSchema.json")
+if not os.path.isfile(args.config):
+    logger.error("The supplied location of the configuration file is not a file.")
+    isErrors = True
+else:
+    # Set user configuration parameters validated against the base schema.
+    try:
+        config.set_from_json(args.config, fileSchema)
+    except jsonschema.SchemaError as e:
+        exceptionInfo = sys.exc_info()
+        logger.error(
+            "The schema is not a valid JSON schema. Please correct any changes made to the "
+            "schema or download the original and save it at {:s}.\n{:s}".format(fileSchema, str(exceptionInfo[1]))
+        )
+        isErrors = True
+    except jsonschema.ValidationError as e:
+        exceptionInfo = sys.exc_info()
+        logger.error(
+            "The configuration file is not valid against the schema.\n{:s}".format(str(exceptionInfo[1]))
+        )
+        isErrors = True
+    except jsonschema.RefResolutionError as e:
+        exceptionInfo = sys.exc_info()
+        logger.error(
+            "The schema contains an invalid reference. Please correct any changes made to the "
+            "schema or download the original and save it at {:s}.\n{:s}".format(fileSchema, str(exceptionInfo[1]))
+        )
+        isErrors = True
+
 # Validate the input location.
-inputContent = args.input
-if not os.path.exists(inputContent):
-    logger.error("The input location does not exist.")
+fileInputData = args.input
+if not os.path.isfile(fileInputData):
+    logger.error("The location containing the input data is not a file.")
+    isErrors = True
+
+# Validate the code description mapping file.
+fileCodeMap = args.coding if args.coding else os.path.join(dirData, "Coding.tsv")
+if not os.path.isfile(fileCodeMap):
+    logger.error("The location containing the mapping from codes to descriptions is not a file.")
     isErrors = True
 
 # Display errors if any were found.
@@ -102,7 +153,7 @@ if not args.noProcess:
     fileProcessedData = os.path.join(dirOutput, "{:s}_Processed.tsv".format(fileInputName))
 
     # Process the data.
-    JournalTable.process_table.main(inputContent, fileProcessedData)
-    inputContent = fileProcessedData
+    JournalTable.process_table.main(fileInputData, fileProcessedData)
+    fileInputData = fileProcessedData
 
 # Perform the code mining.

@@ -1,0 +1,15 @@
+{
+  "BatchSize": [500],
+  "CodesOccurWith": 0,
+  "Classes": {
+    "ClassA": ["A.", "2BBK"],
+    "ClassB": ["C10F."],
+    "ClassC": ["C10E"],
+    "Negative": []
+  },
+  "DiscardThreshold": 0.0,
+  "Epoch": [5],
+  "ElasticNetMixing": [0.15],
+  "Lambda": [0.01],
+  "PatientsOccurWith": 0
+}

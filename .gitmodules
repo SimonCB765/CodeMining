@@ -1,0 +1,3 @@
+[submodule "Code/Libraries/JsonschemaManipulation"]
+	path = Code/Libraries/JsonschemaManipulation
+	url = https://github.com/SimonCB765/JsonschemaManipulation.git
