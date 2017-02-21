@@ -1,5 +1,6 @@
-# Ignore all files in the Data directory.
+# Ignore all files in the Data directory except the file of code mappings.
 Data/*
+!Data/Coding.tsv
 
 # Ignore all files in the Results directory.
 Results/*
