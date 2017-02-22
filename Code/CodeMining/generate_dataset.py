@@ -8,7 +8,7 @@ import numpy as np
 from scipy import sparse
 
 
-def main(fileDataset, dirOutput, mapCodeToDescr):
+def main(fileDataset, dirOutput, mapCodeToDescr, config):
     """Generate a normalised sparse matrix from a data file.
 
     Each line in the input file is expected to have 3 columns:
@@ -23,6 +23,8 @@ def main(fileDataset, dirOutput, mapCodeToDescr):
     :type dirOutput:        str
     :param mapCodeToDescr:  The mapping from codes to their descriptions.
     :type mapCodeToDescr:   dict
+    :param config:          The JSON-like object containing the configuration parameters to use.
+    :type config:           JsonschemaManipulation.Configuration
     :return :               The sparse matrix and the bidirectional index mappings for the patients and codes.
     :rtype :                scipy.sparse.csr_matrix, dict, dict
 
@@ -32,14 +34,42 @@ def main(fileDataset, dirOutput, mapCodeToDescr):
     # patientIDs[i] is a patient who has been associated with the code codes[i] counts[i] times.
     patientIDs, codes, counts = parse_dataset(fileDataset)
 
+    # Determine the number of codes each patient is associated with and the number of patients each code is associated
+    # with.
+    codesPerPatient = collections.defaultdict(int)  # Records the number of unique codes for each patient.
+    for i in patientIDs:
+        codesPerPatient[i] += 1
+    patientsPerCode = collections.defaultdict(int)  # Records the number of unique patients for each code.
+    for i in codes:
+        patientsPerCode[i] += 1
+
+    # Write out the records of patients per code and codes per patient.
+    fileCodesPerPatient = dirOutput + "/CodesPerPatient.tsv"
+    with open(fileCodesPerPatient, 'w') as writeCodesPerPatient:
+        for i in sorted(codesPerPatient):
+            writeCodesPerPatient.write("{0:s}\t{1:d}\n".format(i, codesPerPatient[i]))
+    filePatientsPerCode = dirOutput + "/PatientsPerCode.tsv"
+    with open(filePatientsPerCode, 'w') as writePatientsPerCode:
+        for i in sorted(patientsPerCode):
+            writePatientsPerCode.write(
+                "{0:s}\t{1:s}\t{2:d}\n".format(i, mapCodeToDescr.get(i, "Unknown code."), patientsPerCode[i])
+            )
+
+    # Generate the lists of patient IDs, codes and counts where the patients and codes are frequent enough in the data.
+    codesOccurWith = config.get_param(["CodesOccurWith"])[1]
+    patientsOccurWith = config.get_param(["PatientsOccurWith"])[1]
+    filteredData = [
+        (i, j, k) for i, j, k in zip(patientIDs, codes, counts)
+        if (codesPerPatient[i] > codesOccurWith and patientsPerCode[j] > patientsOccurWith)
+    ]
+    patientIDs, codes, counts = map(list, zip(*filteredData))
+
     # Create bidirectional mappings between patients and their row indices in the data matrix and between codes and
     # their column indices in the data matrix.
     mapPatientIndices = {}
     currentPatientIndex = 0
-    codesPerPatient = collections.defaultdict(int)  # Records the number of unique codes for each patient.
     mapCodeIndices = {}
     currentCodeIndex = 0
-    patientsPerCode = collections.defaultdict(int)  # Records the number of unique patients for each code.
     for ind, (i, j) in enumerate(zip(patientIDs, codes)):
         # Add the patient if they haven't already been seen.
         if i not in mapPatientIndices:
@@ -56,22 +86,6 @@ def main(fileDataset, dirOutput, mapCodeToDescr):
         # Convert the patient ID and code to their numeric index.
         patientIDs[ind] = mapPatientIndices[i]
         codes[ind] = mapCodeIndices[j]
-
-        # Update the code per patient and patient per code records.
-        codesPerPatient[i] += 1
-        patientsPerCode[j] += 1
-
-    # Write out the records of patients per code and codes per patient.
-    fileCodesPerPatient = dirOutput + "/CodesPerPatient.tsv"
-    with open(fileCodesPerPatient, 'w') as writeCodesPerPatient:
-        for i in sorted(codesPerPatient):
-            writeCodesPerPatient.write("{0:s}\t{1:d}\n".format(i, codesPerPatient[i]))
-    filePatientsPerCode = dirOutput + "/PatientsPerCode.tsv"
-    with open(filePatientsPerCode, 'w') as writePatientsPerCode:
-        for i in sorted(patientsPerCode):
-            writePatientsPerCode.write(
-                "{0:s}\t{1:s}\t{2:d}\n".format(i, mapCodeToDescr.get(i, "Unknown code."), patientsPerCode[i])
-            )
 
     # Generate the sparse matrix.
     dt = np.dtype("Float64")  # 64-bit floating-point number.
