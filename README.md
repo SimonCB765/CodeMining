@@ -4,6 +4,8 @@ Add intended contents of the two processed files (counts and binary)
 
 Add information on the parameters that can be specified in the JSON config file and the defaults the take.
 
+Note that patients and codes may still not be frequent enough after removal, as you could remove a code that makes a new patient now have too few codes.
+Using only one of the parameters will give the expected result.
 
 
 
