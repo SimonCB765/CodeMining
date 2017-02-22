@@ -18,8 +18,8 @@
       "minimum": 0,
       "type": "integer"
     },
-    "Classes": {
-      "description": "The information about the codes that define each class.",
+    "CaseDefinitions": {
+      "description": "The information about the codes that define each case.",
       "minProperties": 1,
       "type": "object",
 

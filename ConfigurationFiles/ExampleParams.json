@@ -1,10 +1,10 @@
 {
   "BatchSize": [500],
   "CodesOccurWith": 0,
-  "Classes": {
-    "ClassA": ["A.", "2BBK"],
-    "ClassB": ["C10F."],
-    "ClassC": ["C10E"],
+  "CaseDefinitions": {
+    "CaseA": ["A.", "2BBK"],
+    "CaseB": ["C10F."],
+    "CaseC": ["C10E"],
     "Negative": []
   },
   "DiscardThreshold": 0.0,
