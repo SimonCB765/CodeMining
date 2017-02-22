@@ -125,6 +125,21 @@ else:
         )
         isErrors = True
 
+# Validate that only one case definition (at most) contains no codes and add the collector case definition if there
+# is only one case defined.
+caseDefs = config.get_param(["CaseDefinitions"])[1]
+emptyCaseDefs = [i for i, j in caseDefs.items() if not j]
+if len(emptyCaseDefs) > 1:
+    logger.error("There were multiple case definitions defined without codes, only one can be defined in this manner.")
+    isErrors = True
+elif len(caseDefs) == 1 and emptyCaseDefs:
+    logger.error("The only case definition contains no codes. There must be at least one case defined with codes.")
+    isErrors = True
+elif len(caseDefs) == 1 and not emptyCaseDefs:
+    # There was only one case defined, so add a collector case.
+    caseDefs["RemainderCases"] = []
+    config.set_param(["CaseDefinitions"], caseDefs, overwrite=True)
+
 # Validate the input location.
 fileInputData = args.input
 if not os.path.isfile(fileInputData):
