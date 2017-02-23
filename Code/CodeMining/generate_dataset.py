@@ -63,10 +63,11 @@ def main(fileDataset, dirOutput, mapCodeToDescr, config):
     :type mapCodeToDescr:   dict
     :param config:          The JSON-like object containing the configuration parameters to use.
     :type config:           JsonschemaManipulation.Configuration
-    :return:                The sparse matrix, bidirectional index mappings for the patients and codes and a mapping
-                            from case names to the IDs of the patients that meet the case definition. Patients that are
-                            ambiguous (i.e. meet multiple case definitions) are added to a separate "Ambiguous" case.
-    :rtype:                 scipy.sparse.csr_matrix, dict, dict, dict
+    :return:                The sparse matrix, bidirectional index mappings for the patients and codes, a mapping from
+                            case names to the codes defining the case and a mapping from case names to the IDs of the
+                            patients that meet the case definition. Patients that are ambiguous (i.e. meet multiple
+                            case definitions) are added to a separate "Ambiguous" case.
+    :rtype:                 scipy.sparse.csr_matrix, dict, dict, dict, dict
 
     """
 
@@ -165,7 +166,7 @@ def main(fileDataset, dirOutput, mapCodeToDescr, config):
         cases[i] = j - ambiguousPatients
     cases["Ambiguous"] = ambiguousPatients
 
-    return sparseMatrix, mapPatientIndices, mapCodeIndices, cases
+    return sparseMatrix, mapPatientIndices, mapCodeIndices, caseDefs, cases
 
 
 def parse_dataset(fileData):
