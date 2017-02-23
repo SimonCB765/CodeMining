@@ -1,11 +1,14 @@
 """Perform the code mining."""
 
 # Python imports.
+import logging
+import sys
 
 # User imports.
 from . import generate_dataset
 
-# 3rd party imports.
+# Globals.
+LOGGER = logging.getLogger(__name__)
 
 
 def main(fileDataset, fileCodeMapping, dirResults, config):
@@ -30,16 +33,27 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
             chunks = (line.strip()).split('\t')
             mapCodeToDescr[chunks[0]] = chunks[1]
 
-    # Generate the data matrix and two index mappings.
+    # Generate the data matrix, two index mappings and the case mapping.
     # The patient index map is a bidirectional mapping between patients and their row indices in the data matrix.
     # The code index map is a bidirectional mapping between codes and their column indices in the data matrix.
-    sparseMatrix, mapPatientIndices, mapCodeIndices = generate_dataset.main(
+    # The case mapping records which patients meet which case definition. Ambiguous patients are added to a separate
+    #   Ambiguous case.
+    sparseMatrix, mapPatientIndices, mapCodeIndices, cases = generate_dataset.main(
         fileDataset, dirResults, mapCodeToDescr, config
     )
 
+    # Check whether there are any cases with no patients (the ambiguous patient case does not need accounting for as
+    # it is only in the case definition when there are ambiguous patients).
+    noExampleCases = [i for i, j in cases.items() if len(j) == 0]
+    if noExampleCases:
+        LOGGER.error("The following cases have no unambiguous patients: {:s}".format(
+            ','.join(noExampleCases))
+        )
+        print("\nErrors were encountered following case identification. Please see the log file for details.\n")
+        sys.exit()
 
 
-    import sys
+
     sys.exit()
 
 
@@ -72,22 +86,6 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
     patientIndicesToUse[np.isnan(allExampleClasses)] = 0  # Mask out the patients that have no class.
     codeIndicesToUse = np.ones(dataMatrix.shape[1], dtype=bool)
     codeIndicesToUse[classCodeIndices] = 0  # Mask out the codes used to calculate class membership.
-
-    # TODO: Remove the codes and patient that don't occur frequently enough.
-    # TODO: Repeatedly remove patients and codes from data matrix until no patients
-    # TODO: or codes have too few connections.
-    # TODO: basically repeatedly remove codes with < codeOccurrence patients they occur in
-    # TODO: and patients wih < patientOccurrences codes they occur in
-
-    # Check whether there are any classes (besides the ambiguous class) with no examples.
-    noExampleClasses = [i for i in classExamples if (len(classExamples[i]) == 0 and i != "Ambiguous")]
-    haveExamples = [i for i in classExamples if (len(classExamples[i]) > 0 and i != "Ambiguous")]
-    if len(haveExamples) == 1:
-        print("Only class {0:s} has any examples.".format(haveExamples[0]))
-        sys.exit()
-    elif noExampleClasses:
-        print("The following classes have no unambiguous examples and will be unused: {0:s}"
-            .format(','.join(noExampleClasses)))
 
     # Create all combinations of parameters that will be used.
     paramCombos = [[i, j, k, l] for i in numIters for j in batchSizes for k in lambdaVals for l in elasticNetMixing]
