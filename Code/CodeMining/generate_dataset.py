@@ -2,10 +2,48 @@
 
 # Python imports.
 import collections
+import re
 
 # 3rd party imports.
 import numpy as np
 from scipy import sparse
+
+
+def expand_case_definitions(mapCodeToDescr, config):
+    """Expand the definition of each case by enumerating all codes that define it.
+
+    This will expand wildcards and remove trailing fullstops. For example, if you have a case definition:
+        ["ABC%", "XYZ.."]
+    and the entire set of available codes is:
+        ["ABCD", "ABC12", "1ABC", "AB", "XYZ", "XYZ01", "DEF12"]
+    this will result in an enumerated case definition of:
+        ["ABCD", "ABC12", "XYZ"]
+
+    :param mapCodeToDescr:  The mapping from codes to their descriptions.
+    :type mapCodeToDescr:   dict
+    :param config:          The JSON-like object containing the configuration parameters to use.
+    :type config:           JsonschemaManipulation.Configuration
+    :return:                The case definitions expanded to include all codes defining the cases.
+    :rtype:                 dict
+
+    """
+
+    # Determine the base case definitions.
+    caseDefs = config.get_param(["CaseDefinitions"])[1]
+
+    # Expand each case:
+    expandedDefs = {}
+    for i, j in caseDefs.items():
+        codes = [k.replace('.', '') for k in j]
+        codesToExpand = [k[:-1] for k in codes if k.endswith('%')]
+        baseCodes = [i for i in codes if i not in codesToExpand]
+        expandedCodes = []
+        if codesToExpand:
+            regex = re.compile('|'.join(codesToExpand))  # Compiled regular expression code1|code2|code3|...|codeN.
+            expandedCodes = [k for k in mapCodeToDescr.keys() if regex.match(k)]
+        expandedDefs[i] = set(baseCodes) | set(expandedCodes)
+
+    return expandedDefs
 
 
 def main(fileDataset, dirOutput, mapCodeToDescr, config):
@@ -25,10 +63,19 @@ def main(fileDataset, dirOutput, mapCodeToDescr, config):
     :type mapCodeToDescr:   dict
     :param config:          The JSON-like object containing the configuration parameters to use.
     :type config:           JsonschemaManipulation.Configuration
-    :return :               The sparse matrix and the bidirectional index mappings for the patients and codes.
-    :rtype :                scipy.sparse.csr_matrix, dict, dict
+    :return:                The sparse matrix and the bidirectional index mappings for the patients and codes.
+    :rtype:                 scipy.sparse.csr_matrix, dict, dict
 
     """
+
+    # Identify all codes that define each case.
+    caseDefs = expand_case_definitions(mapCodeToDescr, config)
+
+    # Determine if there is a collector case present.
+    collectorCase = None
+    for i, j in caseDefs.items():
+        if not j:
+            collectorCase = i
 
     # Extract the record of patients, codes and counts from the data file. The data is extracted such that
     # patientIDs[i] is a patient who has been associated with the code codes[i] counts[i] times.
@@ -67,30 +114,54 @@ def main(fileDataset, dirOutput, mapCodeToDescr, config):
     # Create bidirectional mappings between patients and their row indices in the data matrix and between codes and
     # their column indices in the data matrix.
     mapPatientIndices = {}
+    allPatients = set()  # The set of all patients in the dataset.
     currentPatientIndex = 0
     mapCodeIndices = {}
+    allCodes = set()  # The set of all codes in the dataset.
     currentCodeIndex = 0
+    cases = collections.defaultdict(set)  # Dictionary mapping case names to the IDs of patients meeting the definition.
     for ind, (i, j) in enumerate(zip(patientIDs, codes)):
         # Add the patient if they haven't already been seen.
         if i not in mapPatientIndices:
             mapPatientIndices[i] = currentPatientIndex
             mapPatientIndices[currentPatientIndex] = i
+            allPatients.add(i)
             currentPatientIndex += 1
 
         # Add the code if it hasn't already been seen.
         if j not in mapCodeIndices:
             mapCodeIndices[j] = currentCodeIndex
             mapCodeIndices[currentCodeIndex] = j
+            allCodes.add(i)
             currentCodeIndex += 1
 
         # Convert the patient ID and code to their numeric index.
         patientIDs[ind] = mapPatientIndices[i]
         codes[ind] = mapCodeIndices[j]
 
+        # Check whether the patient meets any case definitions.
+        for case, caseCodes in caseDefs.items():
+            if j in caseCodes:
+                cases[case].add(i)
+
     # Generate the sparse matrix.
     dt = np.dtype("Float64")  # 64-bit floating-point number.
     sparseMatrix = sparse.coo_matrix((counts, (patientIDs, codes)), dtype=dt)  # Create the sparse matrix.
     sparseMatrix = sparse.csr_matrix(sparseMatrix, dtype=dt)  # Convert to CSR format.
+
+    # Determine patients that are ambiguous and set up the collector case if there is onw.
+    ambiguousPatients = set(allPatients)
+    collectorPatients = set(allPatients)
+    for i, j in cases.items():
+        ambiguousPatients &= j
+        collectorPatients -= j
+    if collectorCase:
+        cases[collectorCase] = collectorPatients
+
+    # Remove ambiguous patients and move them to their own case.
+    for i, j in cases.items():
+        cases[i] = j - ambiguousPatients
+    cases["Ambiguous"] = ambiguousPatients
 
     return sparseMatrix, mapPatientIndices, mapCodeIndices
 

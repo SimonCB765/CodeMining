@@ -1,16 +1,11 @@
 """Perform the code mining."""
 
 # Python imports.
-import datetime
-import sys
-
-# 3rd party imports.
-import numpy as np
-from sklearn.linear_model import SGDClassifier
-from sklearn import metrics
 
 # User imports.
 from . import generate_dataset
+
+# 3rd party imports.
 
 
 def main(fileDataset, fileCodeMapping, dirResults, config):
@@ -38,10 +33,13 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
     # Generate the data matrix and two index mappings.
     # The patient index map is a bidirectional mapping between patients and their row indices in the data matrix.
     # The code index map is a bidirectional mapping between codes and their column indices in the data matrix.
-    sparseMatrix, mapPatientIndices, mapCodeIndices = generate_dataset.main(fileDataset, dirResults, mapCodeToDescr)
+    sparseMatrix, mapPatientIndices, mapCodeIndices = generate_dataset.main(
+        fileDataset, dirResults, mapCodeToDescr, config
+    )
 
 
 
+    import sys
     sys.exit()
 
 
