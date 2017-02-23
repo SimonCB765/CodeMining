@@ -1,12 +1,13 @@
 {
   "BatchSize": [500],
-  "CodesOccurWith": 0,
   "CaseDefinitions": {
     "CaseA": ["A.", "2BBK"],
     "CaseB": ["C10F."],
     "CaseC": ["C10E"],
     "Negative": []
   },
+  "CodesOccurWith": 0,
+  "CrossValFolds": [2],
   "DiscardThreshold": 0.0,
   "Epoch": [5],
   "ElasticNetMixing": [0.15],

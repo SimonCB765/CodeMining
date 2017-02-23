@@ -12,12 +12,6 @@
       "minItems": 1,
       "type": "array"
     },
-    "CodesOccurWith": {
-      "description": "The minimum number of different codes a patient must co-occur with to be used.",
-      "default": 0,
-      "minimum": 0,
-      "type": "integer"
-    },
     "CaseDefinitions": {
       "description": "The information about the codes that define each case.",
       "minProperties": 1,
@@ -30,6 +24,20 @@
           "type": "array"
         }
       }
+    },
+    "CodesOccurWith": {
+      "description": "The minimum number of different codes a patient must co-occur with to be used.",
+      "default": 0,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "CrossValFolds": {
+      "description": "The number of fold to use for cross validation. Provide two values for nested cross validation.",
+      "default": [2],
+      "items": {"minimum": 1, "type": "integer"},
+      "maxItems": 2,
+      "minItems": 1,
+      "type": "array"
     },
     "DiscardThreshold": {
       "description": "The posterior probability that an example must have to be included in the final model.",
