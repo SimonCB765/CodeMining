@@ -7,6 +7,9 @@ import sys
 # User imports.
 from . import generate_dataset
 
+# 3rd party imports.
+import numpy as np
+
 # Globals.
 LOGGER = logging.getLogger(__name__)
 
@@ -33,12 +36,13 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
             chunks = (line.strip()).split('\t')
             mapCodeToDescr[chunks[0]] = chunks[1]
 
-    # Generate the data matrix, two index mappings and the case mapping.
+    # Generate the data matrix, two index mappings, the mapping from case names to defining codes and the case mapping.
     # The patient index map is a bidirectional mapping between patients and their row indices in the data matrix.
     # The code index map is a bidirectional mapping between codes and their column indices in the data matrix.
+    # The case definition mapping records the codes that define each case.
     # The case mapping records which patients meet which case definition. Ambiguous patients are added to a separate
     #   Ambiguous case.
-    sparseMatrix, mapPatientIndices, mapCodeIndices, cases = generate_dataset.main(
+    dataMatrix, mapPatientIndices, mapCodeIndices, caseDefs, cases = generate_dataset.main(
         fileDataset, dirResults, mapCodeToDescr, config
     )
 
@@ -51,6 +55,19 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
         )
         print("\nErrors were encountered following case identification. Please see the log file for details.\n")
         sys.exit()
+
+    # Calculate masks for the patients and the codes. These will be used to select only those patients and codes
+    # that are to be used for training/testing.
+    patientsUsed = [
+        mapPatientIndices[k] for i, j in cases.items() if i is not "Ambiguous" for k in j if k in mapPatientIndices
+    ]
+    patientMask = np.zeros(dataMatrix.shape[0], dtype=bool)
+    patientMask[patientsUsed] = 1  # Set patients the meet a case definition to be used.
+    codesUsed = [
+        mapCodeIndices[k] for i, j in caseDefs.items() if i is not "Ambiguous" for k in j if k in mapCodeIndices
+    ]
+    codeMask = np.ones(dataMatrix.shape[1], dtype=bool)
+    codeMask[codesUsed] = 0  # Mask out the codes used to calculate case membership.
 
 
 
@@ -79,13 +96,6 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
             allExampleClasses[classExamples[i]] = currentCode
             currentCode += 1
     classesUsed = [i for i in mapIntRepToClass]  # List containing the integer code for every class in the dataset.
-
-    # Calculate masks for the patients and the codes. These will be used to select only those patients and codes
-    # that are to be used for training/testing.
-    patientIndicesToUse = np.ones(dataMatrix.shape[0], dtype=bool)
-    patientIndicesToUse[np.isnan(allExampleClasses)] = 0  # Mask out the patients that have no class.
-    codeIndicesToUse = np.ones(dataMatrix.shape[1], dtype=bool)
-    codeIndicesToUse[classCodeIndices] = 0  # Mask out the codes used to calculate class membership.
 
     # Create all combinations of parameters that will be used.
     paramCombos = [[i, j, k, l] for i in numIters for j in batchSizes for k in lambdaVals for l in elasticNetMixing]
