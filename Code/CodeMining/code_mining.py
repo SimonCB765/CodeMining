@@ -6,6 +6,7 @@ import sys
 
 # User imports.
 from . import generate_dataset
+from . import train_model
 
 # 3rd party imports.
 import numpy as np
@@ -56,49 +57,12 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
         print("\nErrors were encountered following case identification. Please see the log file for details.\n")
         sys.exit()
 
-    # Calculate masks for the patients and the codes. These will be used to select only those patients and codes
-    # that are to be used for training/testing.
-    patientsUsed = [
-        mapPatientIndices[k] for i, j in cases.items() if i is not "Ambiguous" for k in j if k in mapPatientIndices
-    ]
-    patientMask = np.zeros(dataMatrix.shape[0], dtype=bool)
-    patientMask[patientsUsed] = 1  # Set patients the meet a case definition to be used.
-    codesUsed = [
-        mapCodeIndices[k] for i, j in caseDefs.items() if i is not "Ambiguous" for k in j if k in mapCodeIndices
-    ]
-    codeMask = np.ones(dataMatrix.shape[1], dtype=bool)
-    codeMask[codesUsed] = 0  # Mask out the codes used to calculate case membership.
-
-
+    # Train the model.
+    train_model.main(dataMatrix, dirResults, mapPatientIndices, mapCodeIndices, caseDefs, cases, config)
 
     sys.exit()
 
-
-
-
-    # Determine the examples in each class.
-    # classExamples is a dictionary with an entry for each class (and one for "Ambiguous" examples) that contains
-    # a list of the examples belonging to that class.
-    # classCodeIndices is a list of the indices of the codes used to determine class membership.
-    classExamples, classCodeIndices = parse_classes.find_patients(
-        dataMatrix, classData, mapCodeToInd, isCodesRemoved=True)
-
-    # Determine the class of each example, and map the classes from their names to an integer representation.
-    # A class of NaN is used to indicate that an example does not belong to any class, and is therefore
-    # not used in the training.
-    allExampleClasses = np.empty(dataMatrix.shape[0])  # The integer class code for each example.
-    allExampleClasses.fill(np.nan)
-    mapIntRepToClass = {}  # Mapping from the integer code used to reference each class to the class it references.
-    currentCode = 0
-    for i in classExamples:
-        if i != "Ambiguous":
-            mapIntRepToClass[currentCode] = i
-            allExampleClasses[classExamples[i]] = currentCode
-            currentCode += 1
-    classesUsed = [i for i in mapIntRepToClass]  # List containing the integer code for every class in the dataset.
-
-    # Create all combinations of parameters that will be used.
-    paramCombos = [[i, j, k, l] for i in numIters for j in batchSizes for k in lambdaVals for l in elasticNetMixing]
+    print("\n")
 
     if len(cvFolds) == 0:
         # Training if no testing is needed.

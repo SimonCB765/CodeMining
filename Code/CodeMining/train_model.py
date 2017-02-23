@@ -1,4 +1,4 @@
-"""Methods for training models for the code mining."""
+"""Functions for training models for the code mining."""
 
 # Python imports.
 import math
@@ -8,7 +8,57 @@ import random
 import numpy as np
 
 # User imports.
-import CodeMining_Old.calc_metrics
+from . import calc_metrics
+
+
+def main(dataMatrix, dirResults, mapPatientIndices, mapCodeIndices, caseDefs, cases, config):
+    """Train models to perform the code mining.
+
+    :param dataMatrix:          The sparse matrix containing the data to use for training/testing.
+    :type dataMatrix:           scipy.sparse.csr_matrix
+    :param dirResults:          The location to store the results of the training/testing.
+    :type dirResults:           str
+    :param mapPatientIndices:   A bidirectional mapping between patients and their row indices in the data matrix.
+    :type mapPatientIndices:    dict
+    :param mapCodeIndices:      A bidirectional mapping between codes and their column indices in the data matrix.
+    :type mapCodeIndices:       dict
+    :param caseDefs:            A mapping between the case names and the codes that define the cases.
+    :type caseDefs:             dict
+    :param cases:               A mapping between the case names and the patients that meet the case definitions.
+    :type cases:                dict
+    :param config:              The JSON-like object containing the configuration parameters to use.
+    :type config:               JsonschemaManipulation.Configuration
+
+    """
+
+    # Calculate masks for the patients and the codes. These will be used to select only those patients and codes
+    # that are to be used for training/testing.
+    patientsUsed = [
+        mapPatientIndices[k] for i, j in cases.items() if i is not "Ambiguous" for k in j if k in mapPatientIndices
+    ]
+    patientMask = np.zeros(dataMatrix.shape[0], dtype=bool)
+    patientMask[patientsUsed] = 1  # Set patients the meet a case definition to be used.
+    codesUsed = [
+        mapCodeIndices[k] for i, j in caseDefs.items() if i is not "Ambiguous" for k in j if k in mapCodeIndices
+    ]
+    codeMask = np.ones(dataMatrix.shape[1], dtype=bool)
+    codeMask[codesUsed] = 0  # Mask out the codes used to calculate case membership.
+
+    # Create all combinations of parameters that will be used.
+    epochs = config.get_param(["Epoch"])[1]
+    batchSizes = config.get_param(["BatchSize"])[1]
+    lambdaVals = config.get_param(["Lambda"])[1]
+    elasticNetMixing = config.get_param(["ElasticNetMixing"])[1]
+    paramCombos = [[i, j, k, l] for i in epochs for j in batchSizes for k in lambdaVals for l in elasticNetMixing]
+
+    # Setup training.
+    cvFoldsToUse = config.get_param(["CrossValFolds"])
+    if len(cvFoldsToUse) == 1:
+        # Perform non-nested cross validation.
+        pass
+    else:
+        # Perform nested cross validation.
+        pass
 
 
 def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, testingMatrix=None, testingClasses=None,
@@ -67,11 +117,11 @@ def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, tes
             # mini batch) if there is no test set. Otherwise predict on the test set.
             if testingMatrix is None:
                 trainingPredictions = classifier.predict(trainingMatrix)
-                gMean = CodeMining_Old.calc_metrics.calc_g_mean(trainingPredictions, targetClasses)
+                gMean = calc_metrics.calc_g_mean(trainingPredictions, targetClasses)
                 descent.append(gMean)
             else:
                 testPredictions = classifier.predict(testingMatrix)
-                gMean = CodeMining_Old.calc_metrics.calc_g_mean(testPredictions, testingClasses)
+                gMean = calc_metrics.calc_g_mean(testPredictions, testingClasses)
                 descent.append(gMean)
 
     return descent
