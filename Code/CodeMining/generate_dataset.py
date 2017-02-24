@@ -128,7 +128,7 @@ def main(fileDataset, dirOutput, mapCodeToDescr, config):
         if i not in mapPatientIndices:
             mapPatientIndices[i] = currentPatientIndex
             mapPatientIndices[currentPatientIndex] = i
-            allPatients.add(i)
+            allPatients.add(currentPatientIndex)
             currentPatientIndex += 1
 
         # Add the code if it hasn't already been seen.
@@ -145,7 +145,7 @@ def main(fileDataset, dirOutput, mapCodeToDescr, config):
         # Check whether the patient meets any case definitions.
         for case, caseCodes in caseDefs.items():
             if j in caseCodes:
-                cases[case].add(i)
+                cases[case].add(mapPatientIndices[i])
 
     # Generate the sparse matrix.
     dt = np.dtype("Float64")  # 64-bit floating-point number.
