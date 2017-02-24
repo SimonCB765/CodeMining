@@ -34,13 +34,13 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
             chunks = (line.strip()).split('\t')
             mapCodeToDescr[chunks[0]] = chunks[1]
 
-    # Generate the data matrix, two index mappings, the mapping from case names to defining codes and the case mapping.
+    # Generate the data matrix, the IDs of the ambiguous patients, two index mappings, the mapping from case names to
+    # defining codes and the case mapping.
     # The patient index map is a bidirectional mapping between patients and their row indices in the data matrix.
     # The code index map is a bidirectional mapping between codes and their column indices in the data matrix.
     # The case definition mapping records the codes that define each case.
-    # The case mapping records which patients meet which case definition. Ambiguous patients are added to a separate
-    #   Ambiguous case.
-    dataMatrix, mapPatientIndices, mapCodeIndices, caseDefs, cases = generate_dataset.main(
+    # The case mapping records which patients meet which case definition.
+    dataMatrix, ambiguousPatients, mapPatientIndices, mapCodeIndices, caseDefs, cases = generate_dataset.main(
         fileDataset, dirResults, mapCodeToDescr, config
     )
 

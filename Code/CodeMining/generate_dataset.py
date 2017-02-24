@@ -164,9 +164,8 @@ def main(fileDataset, dirOutput, mapCodeToDescr, config):
     # Remove ambiguous patients and move them to their own case.
     for i, j in cases.items():
         cases[i] = j - ambiguousPatients
-    cases["Ambiguous"] = ambiguousPatients
 
-    return sparseMatrix, mapPatientIndices, mapCodeIndices, caseDefs, cases
+    return sparseMatrix, ambiguousPatients, mapPatientIndices, mapCodeIndices, caseDefs, cases
 
 
 def parse_dataset(fileData):
