@@ -8,6 +8,9 @@ import sys
 from . import generate_dataset
 from . import train_model
 
+# 3rd party imports.
+import numpy as np
+
 # Globals.
 LOGGER = logging.getLogger(__name__)
 
@@ -54,5 +57,15 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
         print("\nErrors were encountered following case identification. Please see the log file for details.\n")
         sys.exit()
 
+    # MAp case names to their integer representation and determine the integer case definition that each patient meets.
+    # A value of NaN is used to indicate that a patient does not meet any case definition, and is therefore not used.
+    dataClasses = np.empty(dataMatrix.shape[0])
+    dataClasses.fill(np.nan)
+    caseIntegerReps = {}
+    for ind, (i, j) in enumerate(cases.items()):
+        caseIntegerReps[i] = ind
+        patientIndices = [k for k in j]
+        dataClasses[patientIndices] = ind
+
     # Train the model.
-    train_model.main(dataMatrix, dirResults, mapPatientIndices, mapCodeIndices, caseDefs, cases, config)
+    train_model.main(dataMatrix, dataClasses, dirResults, mapPatientIndices, mapCodeIndices, caseDefs, cases, config)
