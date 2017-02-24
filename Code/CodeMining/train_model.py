@@ -19,7 +19,7 @@ from sklearn.linear_model import SGDClassifier
 LOGGER = logging.getLogger(__name__)
 
 
-def main(dataMatrix, dataClasses, dirResults, mapPatientIndices, mapCodeIndices, caseDefs, cases, config):
+def main(dataMatrix, dataClasses, dirResults, patientMask, codeMask, cases, config):
     """Train models to perform the code mining.
 
     :param dataMatrix:          The sparse matrix containing the data to use for training/testing.
@@ -28,29 +28,16 @@ def main(dataMatrix, dataClasses, dirResults, mapPatientIndices, mapCodeIndices,
     :type dataClasses:          np.array
     :param dirResults:          The location to store the results of the training/testing.
     :type dirResults:           str
-    :param mapPatientIndices:   A bidirectional mapping between patients and their row indices in the data matrix.
-    :type mapPatientIndices:    dict
-    :param mapCodeIndices:      A bidirectional mapping between codes and their column indices in the data matrix.
-    :type mapCodeIndices:       dict
-    :param caseDefs:            A mapping between the case names and the codes that define the cases.
-    :type caseDefs:             dict
+    :param patientMask:         A boolean mask indicating which patients are permissible to use for training/testing.
+    :type patientMask:          np.array
+    :param codeMask:            A boolean mask indicating which codes are permissible to use for training/testing.
+    :type codeMask:             np.array
     :param cases:               A mapping between the case names and the patients that meet the case definitions.
     :type cases:                dict
     :param config:              The JSON-like object containing the configuration parameters to use.
     :type config:               JsonschemaManipulation.Configuration
 
     """
-
-    # Calculate masks for the patients and the codes. These will be used to select only those patients and codes
-    # that are to be used for training/testing.
-    patientsUsed = [k for i, j in cases.items() for k in j if k in mapPatientIndices]
-    patientMask = np.zeros(dataMatrix.shape[0], dtype=bool)
-    patientMask[patientsUsed] = 1  # Set patients the meet a case definition to be used.
-    codesUsed = [
-        mapCodeIndices[k] for i, j in caseDefs.items() for k in j if k in mapCodeIndices
-    ]
-    codeMask = np.ones(dataMatrix.shape[1], dtype=bool)
-    codeMask[codesUsed] = 0  # Mask out the codes used to calculate case membership.
 
     # Create all combinations of parameters that will be used.
     epochs = config.get_param(["Epoch"])[1]

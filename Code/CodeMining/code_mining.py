@@ -67,5 +67,14 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
         patientIndices = [k for k in j]
         dataClasses[patientIndices] = ind
 
+    # Calculate masks for the patients and the codes. These will be used to select only those patients and codes
+    # that are to be used for training/testing.
+    patientsUsed = [k for i, j in cases.items() for k in j]
+    patientMask = np.zeros(dataMatrix.shape[0], dtype=bool)
+    patientMask[patientsUsed] = 1  # Set patients the meet a case definition to be used.
+    codesUsed = [k for i, j in caseDefs.items() for k in j]
+    codeMask = np.ones(dataMatrix.shape[1], dtype=bool)
+    codeMask[codesUsed] = 0  # Mask out the codes used to calculate case membership.
+
     # Train the model.
-    train_model.main(dataMatrix, dataClasses, dirResults, mapPatientIndices, mapCodeIndices, caseDefs, cases, config)
+    train_model.main(dataMatrix, dataClasses, dirResults, patientMask, codeMask, cases, config)
