@@ -1,14 +1,19 @@
 """Functions for training models for the code mining."""
 
 # Python imports.
+import logging
 import math
 import random
+
+# User imports.
+from . import calc_metrics
+from . import generate_CV_folds
 
 # 3rd party imports.
 import numpy as np
 
-# User imports.
-from . import calc_metrics
+# Globals.
+LOGGER = logging.getLogger(__name__)
 
 
 def main(dataMatrix, dirResults, mapPatientIndices, mapCodeIndices, caseDefs, cases, config):
@@ -31,13 +36,10 @@ def main(dataMatrix, dirResults, mapPatientIndices, mapCodeIndices, caseDefs, ca
 
     """
 
-    # Determine the indices of the patients meeting each case definition.
-    caseIndices = {i: {mapPatientIndices[k] for k in j} for i, j in cases.items()}
-
     # Calculate masks for the patients and the codes. These will be used to select only those patients and codes
     # that are to be used for training/testing.
     patientsUsed = [
-        k for i, j in caseIndices.items() if i is not "Ambiguous" for k in j
+        mapPatientIndices[k] for i, j in cases.items() if i is not "Ambiguous" for k in j if k in mapPatientIndices
     ]
     patientMask = np.zeros(dataMatrix.shape[0], dtype=bool)
     patientMask[patientsUsed] = 1  # Set patients the meet a case definition to be used.
@@ -55,13 +57,25 @@ def main(dataMatrix, dirResults, mapPatientIndices, mapCodeIndices, caseDefs, ca
     paramCombos = [[i, j, k, l] for i in epochs for j in batchSizes for k in lambdaVals for l in elasticNetMixing]
 
     # Setup training.
-    cvFoldsToUse = config.get_param(["CrossValFolds"])
+    cvFoldsToUse = config.get_param(["CrossValFolds"])[1]
     if len(cvFoldsToUse) == 1:
         # Perform non-nested cross validation.
-        pass
+
+        # Generate folds.
+        LOGGER.info("Now generating folds for non-nested cross validation.")
+        folds = generate_CV_folds.main(cases, cvFoldsToUse[0])
+
     else:
         # Perform nested cross validation.
-        pass
+
+        # Generate outer folds.
+        LOGGER.info("Now generating outer folds for nested cross validation.")
+        outerFolds = generate_CV_folds.main(cases, cvFoldsToUse[0])
+
+        # Perform inner cross validation.
+        for ind, (i, j) in enumerate(outerFolds.items()):
+            LOGGER.info("Now generating inner folds for outer fold {:d}.".format(ind))
+            innerFolds = generate_CV_folds.main(j, cvFoldsToUse[1])
 
 
 def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, testingMatrix=None, testingClasses=None,
