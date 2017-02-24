@@ -120,7 +120,6 @@ def main(fileDataset, dirOutput, mapCodeToDescr, config):
     allPatients = set()  # The set of all patients in the dataset.
     currentPatientIndex = 0
     mapCodeIndices = {}
-    allCodes = set()  # The set of all codes in the dataset.
     currentCodeIndex = 0
     cases = collections.defaultdict(set)  # Dictionary mapping case names to the IDs of patients meeting the definition.
     for ind, (i, j) in enumerate(zip(patientIDs, codes)):
@@ -135,7 +134,6 @@ def main(fileDataset, dirOutput, mapCodeToDescr, config):
         if j not in mapCodeIndices:
             mapCodeIndices[j] = currentCodeIndex
             mapCodeIndices[currentCodeIndex] = j
-            allCodes.add(i)
             currentCodeIndex += 1
 
         # Convert the patient ID and code to their numeric index.
@@ -164,6 +162,10 @@ def main(fileDataset, dirOutput, mapCodeToDescr, config):
     # Remove ambiguous patients and move them to their own case.
     for i, j in cases.items():
         cases[i] = j - ambiguousPatients
+
+    # Convert case definitions to numeric indices. This has the added effect of causing case definitions to only be
+    # recorded in terms of the codes that are actually in the dataset.
+    caseDefs = {i : {mapCodeIndices[k] for k in j if k in mapCodeIndices} for i, j in caseDefs.items()}
 
     return sparseMatrix, ambiguousPatients, mapPatientIndices, mapCodeIndices, caseDefs, cases
 
