@@ -31,10 +31,13 @@ def main(dataMatrix, dirResults, mapPatientIndices, mapCodeIndices, caseDefs, ca
 
     """
 
+    # Determine the indices of the patients meeting each case definition.
+    caseIndices = {i: {mapPatientIndices[k] for k in j} for i, j in cases.items()}
+
     # Calculate masks for the patients and the codes. These will be used to select only those patients and codes
     # that are to be used for training/testing.
     patientsUsed = [
-        mapPatientIndices[k] for i, j in cases.items() if i is not "Ambiguous" for k in j if k in mapPatientIndices
+        k for i, j in caseIndices.items() if i is not "Ambiguous" for k in j
     ]
     patientMask = np.zeros(dataMatrix.shape[0], dtype=bool)
     patientMask[patientsUsed] = 1  # Set patients the meet a case definition to be used.
