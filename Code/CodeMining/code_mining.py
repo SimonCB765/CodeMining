@@ -2,10 +2,12 @@
 
 # Python imports.
 import logging
+import os
 import sys
 
 # User imports.
 from . import generate_dataset
+from . import results_recording
 from . import train_model
 
 # 3rd party imports.
@@ -57,13 +59,14 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
         print("\nErrors were encountered following case identification. Please see the log file for details.\n")
         sys.exit()
 
-    # Map case names to their integer representation and determine the integer case definition that each patient meets.
+    # Map case the integers used to represent cases to the names of the cases they are representing and determine the
+    # integer case definition that each patient meets.
     # A value of NaN is used to indicate that a patient does not meet any case definition, and is therefore not used.
     dataClasses = np.empty(dataMatrix.shape[0])
     dataClasses.fill(np.nan)
     caseIntegerReps = {}
     for ind, (i, j) in enumerate(cases.items()):
-        caseIntegerReps[i] = ind
+        caseIntegerReps[ind] = i
         patientIndices = [k for k in j]
         dataClasses[patientIndices] = ind
 
@@ -72,9 +75,35 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
     patientsUsed = [k for i, j in cases.items() for k in j]
     patientMask = np.zeros(dataMatrix.shape[0], dtype=bool)
     patientMask[patientsUsed] = 1  # Set patients the meet a case definition to be used.
-    codesUsed = [k for i, j in caseDefs.items() for k in j]
+    codesUsedForCases = [k for i, j in caseDefs.items() for k in j]
     codeMask = np.ones(dataMatrix.shape[1], dtype=bool)
-    codeMask[codesUsed] = 0  # Mask out the codes used to calculate case membership.
+    codeMask[codesUsedForCases] = 0  # Mask out the codes used to calculate case membership.
 
     # Train the model.
-    train_model.main(dataMatrix, dataClasses, dirResults, patientMask, codeMask, cases, config)
+    classifier = train_model.main(dataMatrix, dataClasses, dirResults, patientMask, codeMask, cases, config)
+
+    # Record the coefficients of the trainined model.
+    fileCoefs = os.path.join(dirResults, "Coefficients.tsv")
+    caseNames = sorted([i for i in caseDefs])
+    with open(fileCoefs, 'w') as fidCoefs:
+        # Write out the header.
+        if len(caseNames) == 2:
+            # If there are two classes, then there is only one coefficient per code.
+            fidCoefs.write("Code\tDescription\tCoefficient\n")
+        else:
+            # If there are more than two classes, then there is one coefficient per class per code.
+            fidCoefs.write("Code\tDescription\t{:s}\n".format('\t'.join(caseNames)))
+
+        # Write out coefficients.
+        for ind, i in enumerate(np.flatnonzero(codeMask)):
+            code = mapCodeIndices[i]
+            coefficient = classifier.coef_[:, ind]
+            if len(caseNames) == 2:
+                fidCoefs.write("{:s}\t{:s}\t{:1.4f}\n".format(
+                    code, mapCodeToDescr.get(code, "Unknown Code"), coefficient
+                ))
+            else:
+                fidCoefs.write("{:s}\t{:s}\t{:s}\n".format(
+                    code, mapCodeToDescr.get(code, "Unknown Code"),
+                    '\t'.join(["{:1.4f}".format(coefficient[i]) for i in caseIntegerReps])
+                ))
