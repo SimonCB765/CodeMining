@@ -22,20 +22,22 @@ LOGGER = logging.getLogger(__name__)
 def main(dataMatrix, dataClasses, dirResults, patientMask, codeMask, cases, config):
     """Train models to perform the code mining.
 
-    :param dataMatrix:          The sparse matrix containing the data to use for training/testing.
-    :type dataMatrix:           scipy.sparse.csr_matrix
-    :param dataClasses:         The class (integer case) that each patient belongs to.
-    :type dataClasses:          np.array
-    :param dirResults:          The location to store the results of the training/testing.
-    :type dirResults:           str
-    :param patientMask:         A boolean mask indicating which patients are permissible to use for training/testing.
-    :type patientMask:          np.array
-    :param codeMask:            A boolean mask indicating which codes are permissible to use for training/testing.
-    :type codeMask:             np.array
-    :param cases:               A mapping between the case names and the patients that meet the case definitions.
-    :type cases:                dict
-    :param config:              The JSON-like object containing the configuration parameters to use.
-    :type config:               JsonschemaManipulation.Configuration
+    :param dataMatrix:      The sparse matrix containing the data to use for training/testing.
+    :type dataMatrix:       scipy.sparse.csr_matrix
+    :param dataClasses:     The class (integer case) that each patient belongs to.
+    :type dataClasses:      np.array
+    :param dirResults:      The location to store the results of the training/testing.
+    :type dirResults:       str
+    :param patientMask:     A boolean mask indicating which patients are permissible to use for training/testing.
+    :type patientMask:      np.array
+    :param codeMask:        A boolean mask indicating which codes are permissible to use for training/testing.
+    :type codeMask:         np.array
+    :param cases:           A mapping between the case names and the patients that meet the case definitions.
+    :type cases:            dict
+    :param config:          The JSON-like object containing the configuration parameters to use.
+    :type config:           JsonschemaManipulation.Configuration
+    :return:                The trained classifier.
+    :rtype:                 sklearn.linear_model.SGDClassifier
 
     """
 
@@ -56,11 +58,16 @@ def main(dataMatrix, dataClasses, dirResults, patientMask, codeMask, cases, conf
         folds = generate_CV_folds.main(cases, cvFoldsToUse[0])
 
         # Perform training.
-        filePerformance = os.path.join(dirResults, "Performance.tsv")
-        bestParamCombination, bestPerformance = perform_training(
+        filePerformance = os.path.join(dirResults, "Performance_Folds.tsv")
+        classifier, bestParamCombination, bestPerformance = perform_training(
             dataMatrix, dataClasses, folds, paramCombos, patientMask, codeMask, filePerformance
         )
 
+        # Train a final model with the best parameter combination found.
+        fileFinalPerformance = os.path.join(dirResults, "Performance_Final_Classifier.tsv")
+        classifier, bestParamCombination, bestPerformance = perform_training(
+            dataMatrix, dataClasses, {0: cases}, [bestParamCombination], patientMask, codeMask, fileFinalPerformance
+        )
     else:
         # Perform nested cross validation.
 
@@ -75,9 +82,11 @@ def main(dataMatrix, dataClasses, dirResults, patientMask, codeMask, cases, conf
 
             # Perform training.
             fileOutput = os.path.join(dirResults, "Performance_Fold_{:d}.tsv".format(ind))
-            bestParamCombination, bestPerformance = perform_training(
+            classifier, bestParamCombination, bestPerformance = perform_training(
                 dataMatrix, dataClasses, innerFolds, paramCombos, patientMask, codeMask, fileOutput
             )
+
+    return classifier
 
 
 def perform_training(dataMatrix, dataClasses, folds, paramCombos, patientMask, codeMask, filePerformance):
@@ -94,15 +103,15 @@ def perform_training(dataMatrix, dataClasses, folds, paramCombos, patientMask, c
     :param paramCombos:     A list of parameter combinations to use. Each entry is a list of
                                 number of epochs, batch size, lambda value, elastic net mixing
     :type paramCombos:      list
-    :param patientMask:
+    :param patientMask:     A boolean mask indicating which patients are permissible to use for training/testing.
     :type patientMask:      np.array
-    :param codeMask:
+    :param codeMask:        A boolean mask indicating which codes are permissible to use for training/testing.
     :type codeMask:         np.array
     :param filePerformance: The location to store the results of the training/testing.
     :type filePerformance:  str
-    :return:                The parameter combination that gave the best performance and the performance obtained using
-                                that parameter combination.
-    :rtype:                 list
+    :return:                The classifier, the parameter combination that gave the best performance and the performance
+                                obtained using that parameter combination.
+    :rtype:                 sklearn.linear_model.SGDClassifier, list, float
 
     """
 
@@ -147,6 +156,12 @@ def perform_training(dataMatrix, dataClasses, folds, paramCombos, patientMask, c
                 testingExamples = np.zeros(dataMatrix.shape[0], dtype=bool)
                 testingExamples[patientsInFold] = 1
 
+                # If only one fold is being used their will be no training examples as the current fold is used for
+                # testing and all others for training (and there are no other folds if there is only one fold). We
+                # therefore handle this special case by setting the training and testing sets to be identical.
+                if np.count_nonzero(trainingExamples) == 0:
+                    trainingExamples = testingExamples
+
                 # Create training and testing matrices and target class arrays for this fold by cutting down the data
                 # matrix and class vector to contain only those examples that are intended for training/testing.
                 trainingMatrix = dataMatrixSubset[trainingExamples, :]
@@ -171,7 +186,7 @@ def perform_training(dataMatrix, dataClasses, folds, paramCombos, patientMask, c
             # predicted.
             examplesUsed = ~np.isnan(predictions)
             gMean = calc_metrics.calc_g_mean(predictions[examplesUsed], dataClasses[examplesUsed])
-            fidPerformance.write("\t{:1.4f}".format(gMean))
+            fidPerformance.write("\tOverall G mean\t{:1.4f}".format(gMean))
             paramComboPerformance.append(gMean)
 
         # Determine best parameter combination. If there are two combinations
@@ -179,7 +194,7 @@ def perform_training(dataMatrix, dataClasses, folds, paramCombos, patientMask, c
         indexOfBestPerformance = paramComboPerformance.index(max(paramComboPerformance))
         bestParamCombination = paramCombos[indexOfBestPerformance]
 
-        return bestParamCombination, max(paramComboPerformance)
+        return classifier, bestParamCombination, max(paramComboPerformance)
 
 
 def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, testingMatrix, testingClasses,
