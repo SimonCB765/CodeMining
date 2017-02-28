@@ -192,4 +192,5 @@ if not args.noProcess:
     fileInputData = fileProcessedData
 
 # Perform the code mining.
+logger.info("Now performing code mining.")
 code_mining.main(fileInputData, fileCodeMap, dirOutput, config)

@@ -58,12 +58,14 @@ def main(dataMatrix, dataClasses, dirResults, patientMask, codeMask, cases, conf
         folds = generate_CV_folds.main(cases, cvFoldsToUse[0])
 
         # Perform training.
+        LOGGER.info("Now performing CV.")
         filePerformance = os.path.join(dirResults, "Performance_Folds.tsv")
         classifier, bestParamCombination, bestPerformance = perform_training(
             dataMatrix, dataClasses, folds, paramCombos, patientMask, codeMask, filePerformance
         )
 
         # Train a final model with the best parameter combination found.
+        LOGGER.info("Now training final model.")
         fileFinalPerformance = os.path.join(dirResults, "Performance_Final_Classifier.tsv")
         classifier, bestParamCombination, bestPerformance = perform_training(
             dataMatrix, dataClasses, {0: cases}, [bestParamCombination], patientMask, codeMask, fileFinalPerformance
@@ -81,6 +83,7 @@ def main(dataMatrix, dataClasses, dirResults, patientMask, codeMask, cases, conf
             innerFolds = generate_CV_folds.main(j, cvFoldsToUse[1])
 
             # Perform training.
+            LOGGER.info("Now performing CV.")
             fileOutput = os.path.join(dirResults, "Performance_Fold_{:d}.tsv".format(ind))
             classifier, bestParamCombination, bestPerformance = perform_training(
                 dataMatrix, dataClasses, innerFolds, paramCombos, patientMask, codeMask, fileOutput
@@ -128,6 +131,12 @@ def perform_training(dataMatrix, dataClasses, folds, paramCombos, patientMask, c
             numEpochs, batchSize, lambdaVal, elasticNetRatio = params
 
             # Write out the parameters used.
+            LOGGER.info(
+                "Epochs={:d}\tBatch Size={:d}\tLambda={:1.5f}\tENet={:1.5f}\tTime={:s}\n".format(
+                    numEpochs, batchSize, lambdaVal, elasticNetRatio,
+                    datetime.datetime.strftime(datetime.datetime.now(), "%x %X")
+                )
+            )
             fidPerformance.write(
                 "Epochs={:d}\tBatch Size={:d}\tLambda={:1.5f}\tENet={:1.5f}\tTime={:s}\n".format(
                     numEpochs, batchSize, lambdaVal, elasticNetRatio,
