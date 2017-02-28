@@ -7,7 +7,6 @@ import sys
 
 # User imports.
 from . import generate_dataset
-from . import results_recording
 from . import train_model
 
 # 3rd party imports.
@@ -39,8 +38,8 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
             chunks = (line.strip()).split('\t')
             mapCodeToDescr[chunks[0]] = chunks[1]
 
-    # Generate the data matrix, the IDs of the ambiguous patients, two index mappings, the mapping from case names to
-    # defining codes and the case mapping.
+    # Generate the data matrix, a mapping of IDs of the ambiguous patients to the cases they appear to meet the
+    # definitions of, two index mappings, the mapping from case names to defining codes and the case mapping.
     # The patient index map is a bidirectional mapping between patients and their row indices in the data matrix.
     # The code index map is a bidirectional mapping between codes and their column indices in the data matrix.
     # The case definition mapping records the codes that define each case.
@@ -59,7 +58,7 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
         print("\nErrors were encountered following case identification. Please see the log file for details.\n")
         sys.exit()
 
-    # Map case the integers used to represent cases to the names of the cases they are representing and determine the
+    # Map bidirectionally between case names and the integers used to represent them and determine the
     # integer case definition that each patient meets.
     # A value of NaN is used to indicate that a patient does not meet any case definition, and is therefore not used.
     dataClasses = np.empty(dataMatrix.shape[0])
@@ -67,6 +66,7 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
     caseIntegerReps = {}
     for ind, (i, j) in enumerate(cases.items()):
         caseIntegerReps[ind] = i
+        caseIntegerReps[i] = ind
         patientIndices = [k for k in j]
         dataClasses[patientIndices] = ind
 
@@ -82,7 +82,7 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
     # Train the model.
     classifier = train_model.main(dataMatrix, dataClasses, dirResults, patientMask, codeMask, cases, config)
 
-    # Record the coefficients of the trainined model.
+    # Record the coefficients of the trained model.
     fileCoefs = os.path.join(dirResults, "Coefficients.tsv")
     caseNames = sorted([i for i in caseDefs])
     with open(fileCoefs, 'w') as fidCoefs:
@@ -105,5 +105,26 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
             else:
                 fidCoefs.write("{:s}\t{:s}\t{:s}\n".format(
                     code, mapCodeToDescr.get(code, "Unknown Code"),
-                    '\t'.join(["{:1.4f}".format(coefficient[i]) for i in caseIntegerReps])
+                    '\t'.join(["{:1.4f}".format(coefficient[caseIntegerReps[i]]) for i in caseNames])
                 ))
+
+    # Record the predictions of the ambiguous patients.
+    fileAmbig = os.path.join(dirResults, "AmbiguousPatientPredictions.tsv")
+    with open(fileAmbig, 'w') as fidAmbig:
+        # Create the cutdown matrix of ambiguous patients.
+        ambigPatientMask = np.zeros(dataMatrix.shape[0], dtype=bool)
+        ambigPatientMask[sorted(ambiguousPatients)] = 1
+        ambigDataMatrix = dataMatrix[:, codeMask]
+        ambigDataMatrix = ambigDataMatrix[ambigPatientMask, :]
+
+        # Predict the cases the patients belong to.
+        predictions = classifier.predict(ambigDataMatrix)
+        posteriors = classifier.predict_proba(ambigDataMatrix)
+
+        # Write out the predictions.
+        fidAmbig.write("PatientID\tTrueCases\tPredictedCase\t{:s}\n".format('\t'.join(caseNames)))
+        for i, j, k in zip(ambiguousPatients, predictions, posteriors):
+            fidAmbig.write("{:s}\t{:s}\t{:s}\t{:s}\n".format(
+                mapPatientIndices[i], ','.join(sorted(ambiguousPatients[i])), caseIntegerReps[j],
+                '\t'.join(["{:1.4f}".format(k[caseIntegerReps[i]]) for i in caseNames])
+            ))
