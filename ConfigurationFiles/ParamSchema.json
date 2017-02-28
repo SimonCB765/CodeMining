@@ -39,13 +39,6 @@
       "minItems": 1,
       "type": "array"
     },
-    "DiscardThreshold": {
-      "description": "The posterior probability that an example must have to be included in the final model.",
-      "default": 0.0,
-      "maximum": 1,
-      "minimum": 0,
-      "type": "number"
-    },
     "Epoch": {
       "description": "The number of epochs to use.",
       "default": [5],
