@@ -45,8 +45,9 @@ parser.add_argument("-o", "--output",
                          "subdirectory in the Results directory.",
                     type=str)
 parser.add_argument("-p", "--processed",
-                    help="The location of the directory to save the processed data to. Only used if data processing is "
-                         "enabled. Default: a timestamped subdirectory in the Data directory.",
+                    help="The location of the file to save the processed data in. Only used if data processing is "
+                         "enabled. Default: a file called X_Processed.tsv in the Data directory, where X is the name"
+                         "of the input file.",
                     type=str)
 parser.add_argument("-w", "--overwrite",
                     action="store_true",
@@ -152,6 +153,28 @@ if not os.path.isfile(fileCodeMap):
     logger.error("The location containing the mapping from codes to descriptions is not a file.")
     isErrors = True
 
+# Validate the location to store the processed data.
+fileProcessedData = args.processed
+if not fileProcessedData:
+    # No location to save the processed data was provided, so create the file to hold the processed data.
+    fileInputName = os.path.splitext(os.path.basename(os.path.normpath(fileInputData)))[0]
+    fileProcessedData = os.path.join(dirData, "{:s}_Processed.tsv".format(fileInputName))
+else:
+    if not overwrite:
+        # Check that the provided file location does not exist.
+        if os.path.exists(fileProcessedData):
+            logger.error("The location provided for the processed data file already exists and overwriting is not "
+                         "enabled.")
+            isErrors = True
+    else:
+        # Check that the directory that the file is meant to be in exists.
+        containingDir = os.path.dirname(fileProcessedData)
+        os.makedirs(containingDir, exist_ok=True)
+        if not os.path.isdir(containingDir):
+            logger.error("The directory intended to contain the processed data file does not exist, so the "
+                         "processed data file can not be created.")
+            isErrors = True
+
 # Display errors if any were found.
 if isErrors:
     print("\nErrors were encountered while validating the input arguments. Please see the log file for details.\n")
@@ -163,10 +186,6 @@ if isErrors:
 if not args.noProcess:
     # The dataset needs processing.
     logger.info("Now processing the input dataset.")
-
-    # Create the directory to hold the processed data.
-    fileInputName = os.path.splitext(os.path.basename(os.path.normpath(args.input)))[0]
-    fileProcessedData = os.path.join(dirOutput, "{:s}_Processed.tsv".format(fileInputName))
 
     # Process the data.
     JournalTable.process_table.main(fileInputData, fileProcessedData)
