@@ -151,19 +151,19 @@ def main(fileDataset, dirOutput, mapCodeToDescr, config):
     sparseMatrix = sparse.csr_matrix(sparseMatrix, dtype=dt)  # Convert to CSR format.
 
     # Determine patients that are ambiguous and set up the collector case if there is onw.
-    ambiguousPatients = collections.defaultdict(int)
+    ambiguousPatients = collections.defaultdict(set)
     collectorPatients = set(allPatients)
     for caseName, patients in cases.items():
         collectorPatients -= patients
         for k in patients:
-            ambiguousPatients[k] += 1
-    ambiguousPatients = {i for i, j in ambiguousPatients.items() if j > 1}
+            ambiguousPatients[k] |= {caseName}
+    ambiguousPatients = {i: j for i, j in ambiguousPatients.items() if len(j) > 1}
     if collectorCase:
         cases[collectorCase] = collectorPatients
 
     # Remove ambiguous patients and move them to their own case.
     for i, j in cases.items():
-        cases[i] = j - ambiguousPatients
+        cases[i] = j - ambiguousPatients.keys()
 
     # Convert case definitions to numeric indices. This has the added effect of causing case definitions to only be
     # recorded in terms of the codes that are actually in the dataset.
