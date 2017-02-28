@@ -122,9 +122,29 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
         posteriors = classifier.predict_proba(ambigDataMatrix)
 
         # Write out the predictions.
-        fidAmbig.write("PatientID\tTrueCases\tPredictedCase\t{:s}\n".format('\t'.join(caseNames)))
-        for i, j, k in zip(ambiguousPatients, predictions, posteriors):
+        fidAmbig.write("PatientID\tTrueCases\tPredictedCase\t{:s}_Posterior\n".format('_Posterior\t'.join(caseNames)))
+        for i, j, k in zip(sorted(ambiguousPatients), predictions, posteriors):
             fidAmbig.write("{:s}\t{:s}\t{:s}\t{:s}\n".format(
                 mapPatientIndices[i], ','.join(sorted(ambiguousPatients[i])), caseIntegerReps[j],
+                '\t'.join(["{:1.4f}".format(k[caseIntegerReps[i]]) for i in caseNames])
+            ))
+
+    # Classify all patients not used for training the classifier (i.e. those meeting no case definition).
+    fileNonTraining = os.path.join(dirResults, "NoCasePatientPredictions.tsv")
+    with open(fileNonTraining, 'w') as fidNonTraining:
+        # Create the cutdown matrix of patients not used for training.
+        nonTrainingPatientMask = ~patientMask
+        nonTrainDataMatrix = dataMatrix[:, codeMask]
+        nonTrainDataMatrix = nonTrainDataMatrix[nonTrainingPatientMask, :]
+
+        # Predict the cases the patients belong to.
+        predictions = classifier.predict(nonTrainDataMatrix)
+        posteriors = classifier.predict_proba(nonTrainDataMatrix)
+
+        # Write out the predictions.
+        fidNonTraining.write("PatientID\tPredictedCase\t{:s}_Posterior\n".format('_Posterior\t'.join(caseNames)))
+        for i, j, k in zip(np.flatnonzero(nonTrainingPatientMask), predictions, posteriors):
+            fidNonTraining.write("{:s}\t{:s}\t{:s}\n".format(
+                mapPatientIndices[i], caseIntegerReps[j],
                 '\t'.join(["{:1.4f}".format(k[caseIntegerReps[i]]) for i in caseNames])
             ))
