@@ -44,6 +44,7 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
     # The code index map is a bidirectional mapping between codes and their column indices in the data matrix.
     # The case definition mapping records the codes that define each case.
     # The case mapping records which patients meet which case definition.
+    LOGGER.info("Now generating dataset.")
     dataMatrix, ambiguousPatients, mapPatientIndices, mapCodeIndices, caseDefs, cases = generate_dataset.main(
         fileDataset, dirResults, mapCodeToDescr, config
     )
@@ -97,15 +98,13 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
         # Write out coefficients.
         for ind, i in enumerate(np.flatnonzero(codeMask)):
             code = mapCodeIndices[i]
+            description = mapCodeToDescr.get(code, "Unknown Code")
             coefficient = classifier.coef_[:, ind]
             if len(caseNames) == 2:
-                fidCoefs.write("{:s}\t{:s}\t{:1.4f}\n".format(
-                    code, mapCodeToDescr.get(code, "Unknown Code"), coefficient
-                ))
+                fidCoefs.write("{:s}\t{:s}\t{:1.4f}\n".format(code, description, coefficient[0]))
             else:
                 fidCoefs.write("{:s}\t{:s}\t{:s}\n".format(
-                    code, mapCodeToDescr.get(code, "Unknown Code"),
-                    '\t'.join(["{:1.4f}".format(coefficient[caseIntegerReps[i]]) for i in caseNames])
+                    code, description, '\t'.join(["{:1.4f}".format(coefficient[caseIntegerReps[i]]) for i in caseNames])
                 ))
 
     # Record the predictions of the ambiguous patients.
