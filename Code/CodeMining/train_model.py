@@ -132,7 +132,7 @@ def perform_training(dataMatrix, dataClasses, folds, paramCombos, patientMask, c
 
             # Write out the parameters used.
             LOGGER.info(
-                "Epochs={:d}\tBatch Size={:d}\tLambda={:1.5f}\tENet={:1.5f}\tTime={:s}\n".format(
+                "Epochs={:d}\tBatch Size={:d}\tLambda={:1.5f}\tENet={:1.5f}\tTime={:s}".format(
                     numEpochs, batchSize, lambdaVal, elasticNetRatio,
                     datetime.datetime.strftime(datetime.datetime.now(), "%x %X")
                 )
