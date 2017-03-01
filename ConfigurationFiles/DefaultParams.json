@@ -1,0 +1,10 @@
+{
+  "BatchSize": [500],
+  "CodesOccurWith": 0,
+  "CrossValFolds": [2],
+  "Epoch": [5],
+  "ElasticNetMixing": [0.15],
+  "FileFormat": "code_count",
+  "Lambda": [0.01],
+  "PatientsOccurWith": 0
+}

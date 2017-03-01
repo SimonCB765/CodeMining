@@ -13,10 +13,13 @@ import sys
 # User imports.
 from CodeMining import code_mining
 import DataProcessing
-from Libraries.JsonschemaManipulation import Configuration
-
-# 3rd party import.
-import jsonschema
+importedJsonSchema = False
+try:
+    from Libraries.JsonschemaManipulation import Configuration
+    import jsonschema
+    importedJsonSchema = True
+except ImportError:
+    from CodeMining import Configuration
 
 
 # ====================== #
@@ -96,34 +99,49 @@ logger = logging.getLogger("__main__")
 # Create the configuration object.
 config = Configuration.Configuration()
 
-# Validate the configuration parameters and set defaults.
-fileSchema = os.path.join(dirConfiguration, "ParamSchema.json")
-if not os.path.isfile(args.config):
-    logger.error("The supplied location of the configuration file is not a file.")
-    isErrors = True
+if importedJsonSchema:
+    # The package (jsonschema) needed to import the configuration parameters is present.
+
+    # Validate the configuration parameters and set defaults.
+    fileSchema = os.path.join(dirConfiguration, "ParamSchema.json")
+    if not os.path.isfile(args.config):
+        logger.error("The supplied location of the configuration file is not a file.")
+        isErrors = True
+    else:
+        # Set user configuration parameters validated against the base schema.
+        try:
+            config.set_from_json(args.config, fileSchema)
+        except jsonschema.SchemaError as e:
+            exceptionInfo = sys.exc_info()
+            logger.error(
+                "The schema is not a valid JSON schema. Please correct any changes made to the "
+                "schema or download the original and save it at {:s}.\n{:s}".format(fileSchema, str(exceptionInfo[1]))
+            )
+            isErrors = True
+        except jsonschema.ValidationError as e:
+            exceptionInfo = sys.exc_info()
+            logger.error(
+                "The configuration file is not valid against the schema.\n{:s}".format(str(exceptionInfo[1]))
+            )
+            isErrors = True
+        except jsonschema.RefResolutionError as e:
+            exceptionInfo = sys.exc_info()
+            logger.error(
+                "The schema contains an invalid reference. Please correct any changes made to the "
+                "schema or download the original and save it at {:s}.\n{:s}".format(fileSchema, str(exceptionInfo[1]))
+            )
+            isErrors = True
 else:
-    # Set user configuration parameters validated against the base schema.
-    try:
-        config.set_from_json(args.config, fileSchema)
-    except jsonschema.SchemaError as e:
-        exceptionInfo = sys.exc_info()
-        logger.error(
-            "The schema is not a valid JSON schema. Please correct any changes made to the "
-            "schema or download the original and save it at {:s}.\n{:s}".format(fileSchema, str(exceptionInfo[1]))
-        )
-        isErrors = True
-    except jsonschema.ValidationError as e:
-        exceptionInfo = sys.exc_info()
-        logger.error(
-            "The configuration file is not valid against the schema.\n{:s}".format(str(exceptionInfo[1]))
-        )
-        isErrors = True
-    except jsonschema.RefResolutionError as e:
-        exceptionInfo = sys.exc_info()
-        logger.error(
-            "The schema contains an invalid reference. Please correct any changes made to the "
-            "schema or download the original and save it at {:s}.\n{:s}".format(fileSchema, str(exceptionInfo[1]))
-        )
+    # The jsonschema package is not present, so create a standalone configuration object.
+
+    # Set the configuration parameters.
+    fileDefaultParams = os.path.join(dirConfiguration, "DefaultParams.json")
+    config.set_from_json(fileDefaultParams)
+    config.set_from_json(args.config)
+
+    # Validate that the user supplied a case definitions entry.
+    if "CaseDefinitions" not in config._configParams:
+        logger.error("The input parameter file does not contain any case definitions.")
         isErrors = True
 
 # Validate that only one case definition (at most) contains no codes and add the collector case definition if there
