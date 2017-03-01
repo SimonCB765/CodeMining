@@ -2,11 +2,16 @@
 
 # Python imports.
 import collections
+import logging
 import re
+import sys
 
 # 3rd party imports.
 import numpy as np
 from scipy import sparse
+
+# Globals.
+LOGGER = logging.getLogger(__name__)
 
 
 def expand_case_definitions(mapCodeToDescr, config):
@@ -112,6 +117,11 @@ def main(fileDataset, dirOutput, mapCodeToDescr, config):
         (i, j, k) for i, j, k in zip(patientIDs, codes, counts)
         if (codesPerPatient[i] > codesOccurWith and patientsPerCode[j] > patientsOccurWith)
     ]
+    if not filteredData:
+        # If there are not patient/code pairs meeting the occurrence requirements raise an error.
+        LOGGER.error("There are no patient/code pairs that meet the occurrence requirements.")
+        print("\nThere are no patient/code pairs that meet the occurrence requirements.\n")
+        sys.exit()
     patientIDs, codes, counts = map(list, zip(*filteredData))
 
     # Create bidirectional mappings between patients and their row indices in the data matrix and between codes and
