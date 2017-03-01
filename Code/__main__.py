@@ -180,6 +180,11 @@ if isErrors:
     print("\nErrors were encountered while validating the input arguments. Please see the log file for details.\n")
     sys.exit()
 
+# Record a copy of the parameters used.
+with open(os.path.join(dirOutput, "Parameters.txt"), 'w') as fidParams:
+    for i, j in config._configParams.items():
+        fidParams.write("{:s}\t{:s}\n".format(i, str(j)))
+
 # =================== #
 # Run the Code Mining #
 # =================== #
