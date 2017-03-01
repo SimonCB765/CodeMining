@@ -53,6 +53,12 @@
       "minItems": 1,
       "type": "array"
     },
+    "FileFormat": {
+      "default": "code_count",
+      "description": "The format that the dataset to be processed is in.",
+      "enum": ["code_count", "journal_table"],
+      "type": "string"
+    },
     "Lambda": {
       "description": "The learning rates to use.",
       "default": [0.01],

@@ -12,7 +12,7 @@ import sys
 
 # User imports.
 from CodeMining import code_mining
-from DataProcessing import JournalTable
+import DataProcessing
 from Libraries.JsonschemaManipulation import Configuration
 
 # 3rd party import.
@@ -188,7 +188,11 @@ if not args.noProcess:
     logger.info("Now processing the input dataset.")
 
     # Process the data.
-    JournalTable.process_table.main(fileInputData, fileProcessedData)
+    inputDataFormat = config.get_param(["FileFormat"])[1]
+    if inputDataFormat == "code_count":
+        pass
+    elif inputDataFormat == "journal_table":
+        DataProcessing.JournalTable.process_table.main(fileInputData, fileProcessedData)
     fileInputData = fileProcessedData
 
 # Perform the code mining.
