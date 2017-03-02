@@ -41,7 +41,7 @@ def expand_case_definitions(mapCodeToDescr, config):
     for i, j in caseDefs.items():
         codes = [k.replace('.', '') for k in j]
         codesToExpand = [k[:-1] for k in codes if k.endswith('%')]
-        baseCodes = [i for i in codes if i not in codesToExpand]
+        baseCodes = [k for k in codes if k not in codesToExpand]
         expandedCodes = []
         if codesToExpand:
             regex = re.compile('|'.join(codesToExpand))  # Compiled regular expression code1|code2|code3|...|codeN.
