@@ -1,6 +1,7 @@
 """Functions for training models for the code mining."""
 
 # Python imports.
+from copy import deepcopy
 import datetime
 import logging
 import math
@@ -41,6 +42,9 @@ def main(dataMatrix, dataClasses, dirResults, patientMask, codeMask, cases, conf
 
     """
 
+    # Cut the data matrix down to a matrix containing only the codes to be used.
+    dataMatrixSubset = dataMatrix[:, codeMask]
+
     # Create all combinations of parameters that will be used.
     epochs = config.get_param(["Epoch"])[1]
     batchSizes = config.get_param(["BatchSize"])[1]
@@ -59,40 +63,88 @@ def main(dataMatrix, dataClasses, dirResults, patientMask, codeMask, cases, conf
 
         # Perform training.
         LOGGER.info("Now performing CV.")
-        filePerformance = os.path.join(dirResults, "Performance_Folds.tsv")
+        filePerformance = os.path.join(dirResults, "Performance_Parameter_Optimisation.tsv")
         classifier, bestParamCombination, bestPerformance = perform_training(
-            dataMatrix, dataClasses, folds, paramCombos, patientMask, codeMask, filePerformance
-        )
-
-        # Train a final model with the best parameter combination found.
-        LOGGER.info("Now training final model.")
-        fileFinalPerformance = os.path.join(dirResults, "Performance_Final_Classifier.tsv")
-        classifier, bestParamCombination, bestPerformance = perform_training(
-            dataMatrix, dataClasses, {0: cases}, [bestParamCombination], patientMask, codeMask, fileFinalPerformance
+            dataMatrixSubset, dataClasses, folds, paramCombos, patientMask, filePerformance
         )
     else:
         # Perform nested cross validation.
 
-        # Generate outer folds.
+        # Create the outer folds by splitting the entire dataset.
         LOGGER.info("Now generating outer folds for nested cross validation.")
         outerFolds = generate_CV_folds.main(cases, cvFoldsToUse[0])
 
-        # Perform inner cross validation.
-        for ind, (i, j) in enumerate(outerFolds.items()):
-            LOGGER.info("Now generating inner folds for outer fold {:d}.".format(ind))
-            innerFolds = generate_CV_folds.main(j, cvFoldsToUse[1])
+        # Open the file to record the optimisation results.
+        fileParamCombos = os.path.join(dirResults, "Performance_All_Outer_Folds.tsv")
+        fidParamCombos = open(fileParamCombos, 'w')
 
-            # Perform training.
-            LOGGER.info("Now performing CV.")
-            fileOutput = os.path.join(dirResults, "Performance_Fold_{:d}.tsv".format(ind))
+        # Write out the header.
+        fidParamCombos.write("ExternalFold\tEpochs\tBatch Size\tLambda\tENet\tPerformance\n")
+
+        # Create array to hold the predictions on th outer folds.
+        predictions = np.empty(dataMatrixSubset.shape[0])  # Holds predictions for all examples.
+        predictions.fill(np.nan)
+
+        # Perform inner cross validation. This proceeds for fold i by:
+        #   1) Creating an inner set of cross validation folds from all external folds other than fold i.
+        #   2) Running a grid search using the inner folds generated to find an optimal parameter set.
+        #   3) Evaluating the classifier produced using said optimal parameter set on external fold i.
+        for ind, (i, j) in enumerate(outerFolds.items()):
+            # Create the inner set of cross validation folds.
+            LOGGER.info("Now generating inner folds for outer fold {:d}.".format(ind))
+            trainingPatients = deepcopy(cases)
+            patientsInFold = set()
+            for caseName, casePatients in j.items():
+                # Remove the patients in the external fold from the set of patients that will be used to create
+                # the inner folds.
+                trainingPatients[caseName] -= casePatients
+                patientsInFold |= casePatients
+            innerFolds = generate_CV_folds.main(trainingPatients, cvFoldsToUse[1])
+
+            # Perform the parameter grid search over the inner folds.
+            LOGGER.info("Now performing inner CV.")
+            fileOutput = os.path.join(dirResults, "Performance_Outer_Fold_{:d}.tsv".format(ind))
             classifier, bestParamCombination, bestPerformance = perform_training(
-                dataMatrix, dataClasses, innerFolds, paramCombos, patientMask, codeMask, fileOutput
+                dataMatrixSubset, dataClasses, innerFolds, paramCombos, patientMask, fileOutput
             )
+
+            # Write out the best parameter combination for this external fold.
+            fidParamCombos.write("{:d}\t{:d}\t{:d}\t{:1.4f}\t{:1.4f}\t{:1.4f}\n".format(
+                ind, bestParamCombination[0], bestParamCombination[1], bestParamCombination[2],
+                bestParamCombination[3], bestPerformance
+            ))
+
+            # Evaluate the classifier on the external fold.
+            patientsInFold = list(patientsInFold)
+            testingExamples = np.zeros(dataMatrixSubset.shape[0], dtype=bool)
+            testingExamples[patientsInFold] = 1
+            testingMatrix = dataMatrixSubset[testingExamples, :]
+            testPredictions = classifier.predict(testingMatrix)
+            predictions[testingExamples] = testPredictions
+
+        # Record the overall performance of the entire nested cross validation.
+        overallPerformance = calc_metrics.calc_g_mean(predictions, dataClasses)
+        fidParamCombos.write("\nOverall G mean\t{:1.4f}".format(overallPerformance))
+        fidParamCombos.close()
+
+        # Perform the actual parameter optimisation using the external folds.
+        LOGGER.info("Now performing CV.")
+        filePerformance = os.path.join(dirResults, "Performance_Parameter_Optimisation.tsv")
+        classifier, bestParamCombination, bestPerformance = perform_training(
+            dataMatrixSubset, dataClasses, outerFolds, paramCombos, patientMask, filePerformance
+        )
+
+    # Train a final model with the best parameter combination found.
+    LOGGER.info("Now training final model.")
+    fileFinalPerformance = os.path.join(dirResults, "Performance_Final_Classifier.tsv")
+    classifier, bestParamCombination, bestPerformance = perform_training(
+        dataMatrixSubset, dataClasses, {0: cases}, [bestParamCombination], patientMask, fileFinalPerformance
+    )
 
     return classifier
 
 
-def perform_training(dataMatrix, dataClasses, folds, paramCombos, patientMask, codeMask, filePerformance):
+def perform_training(dataMatrix, dataClasses, folds, paramCombos, patientMask, filePerformance):
     """Perform the cross validated training and testing.
 
     :param dataMatrix:      The sparse matrix containing the data to use for training/testing.
@@ -108,8 +160,6 @@ def perform_training(dataMatrix, dataClasses, folds, paramCombos, patientMask, c
     :type paramCombos:      list
     :param patientMask:     A boolean mask indicating which patients are permissible to use for training/testing.
     :type patientMask:      np.array
-    :param codeMask:        A boolean mask indicating which codes are permissible to use for training/testing.
-    :type codeMask:         np.array
     :param filePerformance: The location to store the results of the training/testing.
     :type filePerformance:  str
     :return:                The classifier, the parameter combination that gave the best performance and the performance
@@ -117,9 +167,6 @@ def perform_training(dataMatrix, dataClasses, folds, paramCombos, patientMask, c
     :rtype:                 sklearn.linear_model.SGDClassifier, list, float
 
     """
-
-    # Cut the data matrix down to a matrix containing only the codes to be used.
-    dataMatrixSubset = dataMatrix[:, codeMask]
 
     # Determine the classes used.
     classesUsed = np.unique(dataClasses[~np.isnan(dataClasses)])
@@ -173,9 +220,9 @@ def perform_training(dataMatrix, dataClasses, folds, paramCombos, patientMask, c
 
                 # Create training and testing matrices and target class arrays for this fold by cutting down the data
                 # matrix and class vector to contain only those examples that are intended for training/testing.
-                trainingMatrix = dataMatrixSubset[trainingExamples, :]
+                trainingMatrix = dataMatrix[trainingExamples, :]
                 trainingClasses = dataClasses[trainingExamples]
-                testingMatrix = dataMatrixSubset[testingExamples, :]
+                testingMatrix = dataMatrix[testingExamples, :]
                 testingClasses = dataClasses[testingExamples]
 
                 # Train the model on this fold and record performance.
