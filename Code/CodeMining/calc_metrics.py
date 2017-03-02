@@ -17,13 +17,13 @@ def calc_g_mean(predictions, targets):
     :type predictions:      numpy array (1 dimensional)
     :param targets:         The target classes for the examples.
     :type targets:          numpy array (1 dimensional)
-    :return :               The G mean.
-    :rtype :                float
+    :return:                The G mean.
+    :rtype:                 float
 
     """
 
     # Determine the target classes.
-    classes = np.unique(targets)
+    classes = np.unique(targets[~np.isnan(targets)])
 
     # Determine sensitivity for each class.
     sensitivities = []
