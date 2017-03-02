@@ -292,8 +292,12 @@ def mini_batch_e_net(classifier, trainingMatrix, targetClasses, classesUsed, tes
         permTrainingMatrix = trainingMatrix[permutedIndices, :]
         permTrainingClasses = targetClasses[permutedIndices]
 
+        # Determine the number of batches. Ensure that at least 1 batch is created even if it is smaller than the
+        # specified batch size.
+        numBatches = max(int(math.ceil(numTrainingExamples / batchSize)), 1)
+
         # Run through the batches.
-        for j in range(int(math.ceil(numTrainingExamples / batchSize))):
+        for j in range(numBatches):
             # Determine the indices to access the batch. Sparse matrices throw errors if you try
             # to index beyond the maximum index, so prevent this by truncating stopIndex.
             startIndex = j * batchSize
