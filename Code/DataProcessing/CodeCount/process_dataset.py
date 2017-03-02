@@ -28,9 +28,9 @@ def main(fileUnprocessedData, fileProcessedData, patientColumn, codeColumn, coun
     :type countColumn:              int
     :param delimiter:               String used to separate columns in the dataset file.
     :type delimiter:                string
-    :param colsToUnbookend:         Dictionary indicating which columns have characters bookending their entries, which
-                                        character is bookending the entries and whether only entries starting
-                                        with a number are bookended.
+    :param colsToUnbookend:         Dictionary mapping from indices of columns that have characters bookending their
+                                        entries to a list containing the character that is doing the bookending and
+                                        whether it is only entries starting with a number that are bookended.
                                     For example, if colsToUnbookend is {0 : ['*', False], 2 : ['n', True]], then:
                                         entries in column 0 are bookended by '*' (e.g. *XXXX*) and this bookending
                                             occurs around ALL entries (e.g. *1234* AND *abcd*)

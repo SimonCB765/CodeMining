@@ -217,7 +217,31 @@ if not args.noProcess:
     # Process the data.
     inputDataFormat = config.get_param(["FileFormat"])[1]
     if inputDataFormat == "code_count":
-        pass
+        # Validate that the user supplied column indices for the patient IDs, codes and counts.
+        isErrors = []
+        if "PatientColumn" not in config._configParams:
+            logger.error("The input parameter file does not contain an index for the patient column.")
+            isErrors = True
+        if "CodeColumn" not in config._configParams:
+            logger.error("The input parameter file does not contain an index for the code column.")
+            isErrors = True
+        if "CountColumn" not in config._configParams:
+            logger.error("The input parameter file does not contain an index for the code count column.")
+            isErrors = True
+
+        # Display errors if any were found.
+        if isErrors:
+            print(
+                "\nErrors were encountered while validating the input arguments. Please see the log file for details.\n"
+            )
+            sys.exit()
+
+        # Run the processing.
+        DataProcessing.CodeCount.process_dataset.main(
+            fileInputData, fileProcessedData, config._configParams["PatientColumn"], config._configParams["CodeColumn"],
+            config._configParams["CountColumn"], config._configParams["Delimiter"],
+            config._configParams["ColsToUnbookend"]
+        )
     elif inputDataFormat == "journal_table":
         DataProcessing.JournalTable.process_table.main(fileInputData, fileProcessedData)
     fileInputData = fileProcessedData

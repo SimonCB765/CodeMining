@@ -6,11 +6,16 @@
     "CaseC": ["C10E"],
     "Negative": []
   },
+  "CodeColumn": 1,
   "CodesOccurWith": 0,
+  "ColsToUnbookend": {},
+  "CountColumn": 2,
   "CrossValFolds": [2],
+  "Delimiter": "\t",
   "Epoch": [5],
   "ElasticNetMixing": [0.15],
   "FileFormat": "code_count",
   "Lambda": [0.01],
+  "PatientColumn": 0,
   "PatientsOccurWith": 0
 }

@@ -6,8 +6,8 @@
 
   "properties": {
     "BatchSize": {
-      "description": "The batch sizes to use.",
       "default": [500],
+      "description": "The batch sizes to use.",
       "items": {"minimum": 0, "type": "integer"},
       "minItems": 1,
       "type": "array"
@@ -25,30 +25,60 @@
         }
       }
     },
+    "CodeColumn": {
+      "default": 1,
+      "description": "The column index in which the codes are stored in the code count format dataset file.",
+      "minimum": 0,
+      "type": "integer"
+    },
     "CodesOccurWith": {
-      "description": "The minimum number of different codes a patient must co-occur with to be used.",
       "default": 0,
+      "description": "The minimum number of different codes a patient must co-occur with to be used.",
+      "minimum": 0,
+      "type": "integer"
+    },
+    "ColsToUnbookend": {
+      "default": {},
+      "description": "Indication of which columns have characters bookending their entries.",
+      "type": "object",
+
+      "patternProperties": {
+        "^[0-9]+$": {
+          "description": "How to unbookend a specific column.",
+          "items": [{"type": "string"}, {"type": "boolean"}],
+          "type": "array"
+        }
+      }
+    },
+    "CountColumn": {
+      "default": 2,
+      "description": "The column index in which the code counts are stored in the code count format dataset file.",
       "minimum": 0,
       "type": "integer"
     },
     "CrossValFolds": {
-      "description": "The number of fold to use for cross validation. Provide two values for nested cross validation.",
       "default": [2],
+      "description": "The number of fold to use for cross validation. Provide two values for nested cross validation.",
       "items": {"minimum": 1, "type": "integer"},
       "maxItems": 2,
       "minItems": 1,
       "type": "array"
     },
+    "Delimiter": {
+      "default": "\t",
+      "description": "String used to separate columns in the code count style dataset file.",
+      "type": "string"
+    },
     "Epoch": {
-      "description": "The number of epochs to use.",
       "default": [5],
+      "description": "The number of epochs to use.",
       "items": {"minimum": 1, "type": "integer"},
       "minItems": 1,
       "type": "array"
     },
     "ElasticNetMixing": {
-      "description": "The elastic net mixing values to use.",
       "default": [0.15],
+      "description": "The elastic net mixing values to use.",
       "items": {"maximum": 1, "minimum": 0, "type": "number"},
       "minItems": 1,
       "type": "array"
@@ -60,19 +90,25 @@
       "type": "string"
     },
     "Lambda": {
-      "description": "The learning rates to use.",
       "default": [0.01],
+      "description": "The learning rates to use.",
       "items": {"minimum": 0, "type": "number"},
       "minItems": 1,
       "type": "array"
     },
-    "PatientsOccurWith": {
-      "description": "The minimum number of different patients a code must co-occur with to be used.",
+    "PatientColumn": {
       "default": 0,
+      "description": "The column index in which the patient IDs are stored in the code count format dataset file.",
+      "minimum": 0,
+      "type": "integer"
+    },
+    "PatientsOccurWith": {
+      "default": 0,
+      "description": "The minimum number of different patients a code must co-occur with to be used.",
       "minimum": 0,
       "type": "integer"
     }
   },
 
-  "required": ["CaseDefinitions"]
+  "required": ["CaseDefinitions", "CodeColumn", "CountColumn", "PatientColumn"]
 }
