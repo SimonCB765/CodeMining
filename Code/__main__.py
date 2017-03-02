@@ -21,6 +21,10 @@ try:
 except ImportError:
     from CodeMining import Configuration
 
+# Set Python 2 alterations.
+PYVERSION = sys.version_info[1]
+if PYVERSION < 3:
+    FileNotFoundError = IOError  # FileNotFoundError does not exist in version 2.
 
 # ====================== #
 # Create Argument Parser #
@@ -187,11 +191,11 @@ else:
     else:
         # Check that the directory that the file is meant to be in exists.
         containingDir = os.path.dirname(fileProcessedData)
-        os.makedirs(containingDir, exist_ok=True)
-        if not os.path.isdir(containingDir):
-            logger.error("The directory intended to contain the processed data file does not exist, so the "
-                         "processed data file can not be created.")
-            isErrors = True
+        try:
+            os.makedirs(containingDir)
+        except FileExistsError as e:
+            # Directory already exists.
+            pass
 
 # Display errors if any were found.
 if isErrors:

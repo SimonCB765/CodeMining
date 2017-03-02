@@ -173,7 +173,7 @@ def main(fileDataset, dirOutput, mapCodeToDescr, config):
 
     # Remove ambiguous patients and move them to their own case.
     for i, j in cases.items():
-        cases[i] = j - ambiguousPatients.keys()
+        cases[i] = j - set(ambiguousPatients.keys())
 
     # Convert case definitions to numeric indices. This has the added effect of causing case definitions to only be
     # recorded in terms of the codes that are actually in the dataset.
