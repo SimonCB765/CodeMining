@@ -21,11 +21,6 @@ try:
 except ImportError:
     from CodeMining import Configuration
 
-# Set Python 2 alterations.
-PYVERSION = sys.version_info[1]
-if PYVERSION < 3:
-    FileNotFoundError = IOError  # FileNotFoundError does not exist in version 2.
-
 # ====================== #
 # Create Argument Parser #
 # ====================== #
@@ -76,17 +71,22 @@ isErrors = False  # Whether any errors were found.
 # Create the output directory.
 overwrite = args.overwrite
 if overwrite:
-    try:
+    if os.path.isdir(dirOutput):
+        # The output directory exists and needs overwriting.
         shutil.rmtree(dirOutput)
-    except FileNotFoundError:
-        # Can't remove the directory as it doesn't exist.
-        pass
-    os.makedirs(dirOutput)  # Attempt to make the output directory.
+        os.mkdir(dirOutput)
+    elif os.path.exists(dirOutput):
+        # The output location exists but is not a directory.
+        print("\nCan't continue as the output directory location contains a non-directory.\n")
+        sys.exit()
+    else:
+        # The output location does not exist, so create it.
+        os.makedirs(dirOutput)
 else:
     try:
         os.makedirs(dirOutput)  # Attempt to make the output directory.
     except FileExistsError as e:
-        # Directory already exists so can't continue.
+        # Location already exists so can't continue.
         print("\nCan't continue as the output directory location already exists and overwriting is not enabled.\n")
         sys.exit()
 
