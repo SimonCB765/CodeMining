@@ -116,17 +116,20 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
         ambigDataMatrix = dataMatrix[:, codeMask]
         ambigDataMatrix = ambigDataMatrix[ambigPatientMask, :]
 
-        # Predict the cases the patients belong to.
-        predictions = classifier.predict(ambigDataMatrix)
-        posteriors = classifier.predict_proba(ambigDataMatrix)
+        if np.sum(ambigPatientMask) > 0:
+            # There are some ambiguous patients.
 
-        # Write out the predictions.
-        fidAmbig.write("PatientID\tTrueCases\tPredictedCase\t{:s}_Posterior\n".format('_Posterior\t'.join(caseNames)))
-        for i, j, k in zip(sorted(ambiguousPatients), predictions, posteriors):
-            fidAmbig.write("{:s}\t{:s}\t{:s}\t{:s}\n".format(
-                mapPatientIndices[i], ','.join(sorted(ambiguousPatients[i])), caseIntegerReps[j],
-                '\t'.join(["{:1.4f}".format(k[caseIntegerReps[i]]) for i in caseNames])
-            ))
+            # Predict the cases the patients belong to.
+            predictions = classifier.predict(ambigDataMatrix)
+            posteriors = classifier.predict_proba(ambigDataMatrix)
+
+            # Write out the predictions.
+            fidAmbig.write("PatientID\tTrueCases\tPredictedCase\t{:s}_Posterior\n".format('_Posterior\t'.join(caseNames)))
+            for i, j, k in zip(sorted(ambiguousPatients), predictions, posteriors):
+                fidAmbig.write("{:s}\t{:s}\t{:s}\t{:s}\n".format(
+                    mapPatientIndices[i], ','.join(sorted(ambiguousPatients[i])), caseIntegerReps[j],
+                    '\t'.join(["{:1.4f}".format(k[caseIntegerReps[i]]) for i in caseNames])
+                ))
 
     # Classify all patients not used for training the classifier (i.e. those meeting no case definition).
     fileNonTraining = os.path.join(dirResults, "NoCasePatientPredictions.tsv")
