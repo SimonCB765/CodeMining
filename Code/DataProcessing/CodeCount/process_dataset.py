@@ -82,7 +82,7 @@ def main(fileUnprocessedData, fileProcessedData, patientColumn, codeColumn, coun
 
                     # Write out the patient's history sorted by date from oldest to newest.
                     fidProcessed.write("{:s}\t{:s}\n".format(
-                        patientID, '\t'.join(["{:s}:{:d}".format(i, patientHistory[i]) for i in patientHistory])
+                        patientID, '\t'.join(["{:s}:{:s}".format(i, patientHistory[i]) for i in patientHistory])
                     ))
 
                     # Reset the history and record of codes the patient has to prepare for the next patient.
