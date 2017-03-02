@@ -139,14 +139,17 @@ def main(fileDataset, fileCodeMapping, dirResults, config):
         nonTrainDataMatrix = dataMatrix[:, codeMask]
         nonTrainDataMatrix = nonTrainDataMatrix[nonTrainingPatientMask, :]
 
-        # Predict the cases the patients belong to.
-        predictions = classifier.predict(nonTrainDataMatrix)
-        posteriors = classifier.predict_proba(nonTrainDataMatrix)
+        if np.sum(nonTrainingPatientMask) > 0:
+            # There are some patients that weren't used for training.
 
-        # Write out the predictions.
-        fidNonTraining.write("PatientID\tPredictedCase\t{:s}_Posterior\n".format('_Posterior\t'.join(caseNames)))
-        for i, j, k in zip(np.flatnonzero(nonTrainingPatientMask), predictions, posteriors):
-            fidNonTraining.write("{:s}\t{:s}\t{:s}\n".format(
-                mapPatientIndices[i], caseIntegerReps[j],
-                '\t'.join(["{:1.4f}".format(k[caseIntegerReps[i]]) for i in caseNames])
-            ))
+            # Predict the cases the patients belong to.
+            predictions = classifier.predict(nonTrainDataMatrix)
+            posteriors = classifier.predict_proba(nonTrainDataMatrix)
+
+            # Write out the predictions.
+            fidNonTraining.write("PatientID\tPredictedCase\t{:s}_Posterior\n".format('_Posterior\t'.join(caseNames)))
+            for i, j, k in zip(np.flatnonzero(nonTrainingPatientMask), predictions, posteriors):
+                fidNonTraining.write("{:s}\t{:s}\t{:s}\n".format(
+                    mapPatientIndices[i], caseIntegerReps[j],
+                    '\t'.join(["{:1.4f}".format(k[caseIntegerReps[i]]) for i in caseNames])
+                ))
