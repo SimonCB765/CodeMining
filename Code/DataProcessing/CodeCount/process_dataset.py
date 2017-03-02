@@ -49,13 +49,14 @@ def main(fileUnprocessedData, fileProcessedData, patientColumn, codeColumn, coun
 
     # Process the input arguments.
     colsToUnbookend = colsToUnbookend if colsToUnbookend else {}
+    colsToUnbookend = {int(i): j for i, j in colsToUnbookend.items()}
 
     # Clean the input dataset.
     with open(fileUnprocessedData, 'r') as fidUnprocessed, open(fileProcessedData, 'w') as fidProcessed:
         for line in fidUnprocessed:
             # Remove non-alphanumeric characters as all patient IDs, codes and counts should contain only
             # alphanumeric characters.
-            line = re.sub("^[^a-zA-Z0-9]*", '', line)
+            line = re.sub("[^a-zA-Z0-9\t]+", '', line)
             lineChunks = (line.strip()).split(delimiter)
 
             # Unbookend entries.
@@ -68,9 +69,9 @@ def main(fileUnprocessedData, fileProcessedData, patientColumn, codeColumn, coun
                         lineChunks[ind] = lineChunks[ind][1:-1]
 
             # Extract the columns of interest.
-            patientID = line[patientColumn]
-            code = line[codeColumn]
-            count = line[countColumn]
+            patientID = lineChunks[patientColumn]
+            code = lineChunks[codeColumn]
+            count = lineChunks[countColumn]
 
             if patientID and code:
                 # The entry is valid as it has both a patient ID and code recorded for it.
@@ -82,7 +83,7 @@ def main(fileUnprocessedData, fileProcessedData, patientColumn, codeColumn, coun
 
                     # Write out the patient's history sorted by date from oldest to newest.
                     fidProcessed.write("{:s}\t{:s}\n".format(
-                        patientID, '\t'.join(["{:s}:{:s}".format(i, patientHistory[i]) for i in patientHistory])
+                        currentPatient, '\t'.join(["{:s}:{:s}".format(i, patientHistory[i]) for i in patientHistory])
                     ))
 
                     # Reset the history and record of codes the patient has to prepare for the next patient.
@@ -91,6 +92,11 @@ def main(fileUnprocessedData, fileProcessedData, patientColumn, codeColumn, coun
 
                 # Add the entry to the patient's history.
                 patientHistory[code] = count
+
+        # Write out the final patient's history.
+        fidProcessed.write("{:s}\t{:s}\n".format(
+            currentPatient, '\t'.join(["{:s}:{:s}".format(i, patientHistory[i]) for i in patientHistory])
+        ))
 
     # Write out the codes in the dataset.
     uniqueCodes = sorted(uniqueCodes)
